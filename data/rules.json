@@ -1,0 +1,1332 @@
+{
+  "cursedEnergy": {
+    "title": "Chú Lực Căn Bản & Thao Túng (Cursed Energy Fundamentals)",
+    "description": "Chú Lực là năng lượng tiêu cực sinh ra từ cảm xúc u ám của con người và là nền tảng cốt lõi của mọi chú thuật. Chú lực có thể được sử dụng trực tiếp qua các kỹ thuật thao túng căn bản hoặc dùng làm nhiên liệu kích hoạt Thuật Thức Bẩm Sinh.",
+    "basicManipulation": [
+      {
+        "name": "Cursed Strike (Chú Kích)",
+        "cost": "Lên đến Proficiency Bonus (PB) Chú lực",
+        "action": "Khi đánh trúng bằng đòn không vũ trang hoặc vũ khí cận chiến",
+        "effect": "Tiêu hao Chú lực lên đến PB để gây thêm 1d6 sát thương Necrotic cho mỗi điểm CE tiêu hao."
+      },
+      {
+        "name": "Cursesight (Cảm Ứng Chú Lực)",
+        "cost": "Miễn phí",
+        "action": "1 Action",
+        "effect": "Thực hiện kiểm tra Perception bằng CE modifier để cảm nhận chú lực hoặc tàn tích tàn dư trong phạm vi 30ft. DC bằng CE Save DC của đối thủ nếu họ đang che giấu. Cho phép lần theo vệt tàn tích và nhận diện chú lực của người quen."
+      },
+      {
+        "name": "Short Rest Regain (Hồi Phục Nghỉ Ngắn)",
+        "cost": "Tiêu hao Hit Dice",
+        "action": "Short Rest",
+        "effect": "Tiêu hao tối đa một nửa số Hit Dice tối đa để hồi phục 1 điểm CE cho mỗi Hit Dice tiêu hao."
+      },
+      {
+        "name": "Negative Emotion Recovery (Hồi Phục Từ Cảm Xúc Tiêu Cực)",
+        "cost": "Thực chiến hiểm nghèo",
+        "action": "Tự động kích hoạt khi gặp đại nạn",
+        "effect": "Chú lực sinh ra từ cảm xúc tiêu cực. Khi rơi vào hiểm cảnh chiến đấu tột cùng, Chú thuật sư hồi phục lượng CE bằng PB trong các tình huống: Thất bại 3 lần kiểm tra/Saving Throw trong 1 round; Mất 1/2 HP tối đa trong 1 đòn; Chịu đại thương tích; hoặc trải qua biến cố bi thương lớn (mất đồng đội, bạn bè tử trận)."
+      }
+    ],
+    "averageCE": [
+      {
+        "classification": "Thiên Dữ Chú Phược",
+        "ce": "0 CE",
+        "context": "Hoàn toàn không có chú lực, đổi lại bằng thể chất siêu phàm hoặc thiên bẩm vô song (Toji, Maki)."
+      },
+      {
+        "classification": "Người Thường",
+        "ce": "0.5 CE",
+        "context": "Chú lực cực thấp, hầu như không thể dò thấy; hoàn toàn không nhìn thấy chú linh."
+      },
+      {
+        "classification": "Người Thường Tuyệt Vọng",
+        "ce": "1 CE",
+        "context": "Bộc phát chú lực nhất thời khi trải qua cảm xúc mãnh liệt (sợ hãi tột cùng, đau đớn, tang thương)."
+      },
+      {
+        "classification": "Cấp 4 (Grade 4)",
+        "ce": "1–5 CE",
+        "context": "Chú lực yếu; có thể thanh tẩy chú linh hạ đẳng cấp thấp hoặc dùng kỹ thuật sơ cấp."
+      },
+      {
+        "classification": "Cấp 3 (Grade 3)",
+        "ce": "6–15 CE",
+        "context": "Chú lực trung bình; đủ khả năng tự vệ và tác chiến trước các chú linh thông thường."
+      },
+      {
+        "classification": "Cấp 2 (Grade 2)",
+        "ce": "16–30 CE",
+        "context": "Chú lực dồi dào; Chú thuật sư lành nghề thực hiện các nhiệm vụ nguy hiểm trung cấp."
+      },
+      {
+        "classification": "Cấp 1 (Grade 1)",
+        "ce": "31–50 CE",
+        "context": "Lượng chú lực tinh anh; trụ cột của giới Chú thuật và đối đầu chú linh thượng cấp."
+      },
+      {
+        "classification": "Đặc Cấp (Special Grade)",
+        "ce": "50+ CE",
+        "context": "Lượng chú lực khổng lồ vô tận; mối đe dọa cấp quốc gia hoặc thực thể siêu việt (Gojo, Sukuna, Yuta)."
+      }
+    ],
+    "cursedTechniques": {
+      "title": "Bản Chất Thuật Thức Chú Thuật",
+      "analogy": "Chú Lực ví như dòng điện thô, còn Thuật Thức chính là thiết bị gia dụng sử dụng dòng điện đó để tạo ra các hiện tượng và hiệu ứng cụ thể (lời giảng của Gojo Satoru cho Itadori Yuji).",
+      "categories": [
+        {
+          "name": "Thuật Thức Bẩm Sinh",
+          "desc": "Thuật thức được khắc sâu vào hồi não (vỏ não trước trán) của Chú thuật sư từ lúc chào đời và thường phát lộ vào độ tuổi 5–6. Tài năng của Chú thuật sư có đến 80% là do thiên bẩm bẩm sinh quyết định. Một người không thể học được thuật thức bẩm sinh mới nếu không sinh ra với nó (ngoại trừ các dị biệt đoạt xá, sao chép hoặc nuốt chú vật chứa linh hồn)."
+        },
+        {
+          "name": "Thuật Thức Gia Truyền",
+          "desc": "Những thuật thức bẩm sinh danh giá lưu truyền qua huyết thống các ngự tam gia (Vô Hạ Hạn của Gojo, Thập Chủng Ảnh của Zenin, Xích Huyết Thao Thuật của Kamo). Lợi thế là có sẵn cẩm nang bí truyền hướng dẫn từ tổ tiên, nhưng bất lợi là chiêu thức dễ bị đối thủ thấu triệt vì đã quá nổi tiếng qua hàng thế kỷ."
+        },
+        {
+          "name": "Thuật Thức Phi Bẩm Sinh",
+          "desc": "Các kỹ thuật chú thuật không phụ thuộc vào cấu tạo vỏ não bẩm sinh, bất kỳ ai có khả năng thao túng Chú lực và kiên trì rèn luyện đều có thể thi triển thành thạo: Kết giới Màn, Giản Dị Lãnh Địa, Lạc Hoa Tình, Chú Kích (Cursed Strike)."
+        },
+        {
+          "name": "Thuật Thức Mở Rộng",
+          "desc": "Các chiêu thức biến thể sáng tạo do Chú thuật sư tự đào sâu phát triển dựa trên nguyên lý gốc của thuật thức bẩm sinh (ví dụ: Hư Thức Tử của Satoru Gojo; Xuyên Huyết và Siêu Tân Tinh của Choso; Dực Vương của Eso)."
+        }
+      ]
+    },
+    "rawEnglish": "Cursed Energy\n\nCursed Energy is negative energy and the fundamental of cursed techniques. It can be used through direct manipulation or to power innate techniques. Your Cursed Energy maximum is dependent on your class and your CE score (Wisdom or Charisma). Expended cursed energy is regained on a long rest.\n\nBasic Cursed Energy Manipulation\n\nThere are countless applications for Cursed Energy. Your GM can allow characters to use the following to allow you to utilize cursed energy in inefficient, yet simple ways.\n\nCursed Strike. On a hit with an unarmed strike or melee weapon attack, you can spend Cursed Energy up to proficiency bonus to deal an additional d6 necrotic damage per CE.\n\nCursesight. As an action, you can make a Perception check using your CE modifier to sense cursed energy or residuals within 30 ft. The DC equals the target's CE save DC if the target was trying to conceal their cursed energy. You can track where a residual trail leads and you are aware of whose cursed energy it is if you are familiar.\n\nShort Rest Regain\n\nAs part of a short rest you can spend up to half your maximum hit dice to regain 1 CE per Hit Dice spent.\n\nNegative Emotion Recovery\n\nCursed Energy is produced by negative emotions. If you experience intense negative emotions, you might find your cursed energy responds to it. Your GM can choose to use any of these examples or create their own, regaining your proficiency bonus in CE during one of these situations. These only apply during combat when in genuine danger.\n\nIf you fail three ability checks or saving throws in one round.\n\nIf you lose half of your hit point maximum in one instance.\n\nIf you experience a major injury.\n\nIf you experience a traumatic event (GM decides) such as the loss of a friend."
+  },
+  "bindingVows": {
+    "title": "Ràng Buộc & Khế Ước Chú Thuật (Binding Vows • 縛り)",
+    "description": "Ràng Buộc (Binding Vows) là những khế ước chú thuật tự nguyện hoặc bẩm sinh do Chú thuật sư lập ra. Chúng trao cho người lập sức mạnh to lớn bằng cách đánh đổi những giới hạn hoặc sự hi sinh tương xứng. Tuy nhiên, hậu quả của việc phá vỡ ràng buộc là vô cùng tàn khốc.",
+    "soloVows": [
+      {
+        "name": "Overtime (Làm Thêm Giờ)",
+        "character": "Kento Nanami",
+        "vow": "Kìm hãm lượng chú lực trong giờ hành chính để bùng nổ vượt bậc khi làm thêm giờ.",
+        "tradeoff": "Từ 9:00 sáng đến 5:00 chiều: CE tối đa giảm bằng CE modifier và xúc xắc sát thương thuật thức giảm 1 bậc xúc xắc. Sau 5:00 chiều: bước vào Overtime, nhận CE tạm thời = 2 x CE modifier và xúc xắc sát thương tăng 2 bậc trong số giờ bằng PB. Đã lập thì không thể đổi trong 1 tuần làm việc."
+      },
+      {
+        "name": "Revealing One's Hand (Khai Triển Thủ Bài / Tiết Lộ Thuật Thức)",
+        "character": "Toàn bộ Chú thuật sư",
+        "vow": "Giải thích rõ ràng nguyên lý hoạt động và cơ chế thuật thức cho đối thủ có thể nghe hiểu.",
+        "tradeoff": "Nhận vĩnh viễn +3 bonus vào Attack Roll và Damage Roll của thuật thức được tiết lộ (kèm buff độc quyền do DM quy định) cho đến khi trận đấu kết thúc. Không thể tiết lộ lại cho cùng một mục tiêu hoặc người đã biết rõ thuật thức."
+      },
+      {
+        "name": "Immediate Activation (Kích Hoạt Khẩn Cấp)",
+        "character": "Ryomen Sukuna (Thế Giới Trảm)",
+        "vow": "Kích hoạt thuật thức ngay lập tức bỏ qua mọi điều kiện chuẩn bị thông thường trong tình thế ngàn cân treo sợi tóc.",
+        "tradeoff": "Có thể kích hoạt thuật thức như Reaction hoặc Free Action, bỏ qua mọi yêu cầu chuẩn bị ngoại trừ CE. BÙ LẠI: Vĩnh viễn tăng Action Cost của thuật thức lên 1 bậc (Free -> Bonus Action -> Action -> Full-Turn Action) và vĩnh viễn thêm một điều kiện tiên quyết nghiêm ngặt cho mọi lần dùng sau (ví dụ: bắt buộc phải Niệm Chú / Chanting hoặc Kết Ấn)."
+      },
+      {
+        "name": "Mind Over Matter (Ý Chí Thắng Thể Xác)",
+        "character": "Kỳ tài hi sinh chi thể",
+        "vow": "Vĩnh viễn từ bỏ khả năng sử dụng một chi thể trên cơ thể (không dùng chi giả).",
+        "tradeoff": "Với mỗi chi thể vĩnh viễn từ bỏ, nhận vĩnh viễn +5 vào lượng CE tối đa."
+      },
+      {
+        "name": "Favorite Enemy (Kẻ Thù Chỉ Định)",
+        "character": "Thợ săn Chú thuật sư",
+        "vow": "Dành 1 giờ huấn luyện để nghiên cứu và khắc chế riêng 1 kẻ địch xác định.",
+        "tradeoff": "Nhận Advantage trên đòn tấn công HOẶC giảm Saving Throw của mục tiêu bằng PB. BÙ LẠI: Mọi kẻ địch khác khi chịu thuật thức của bạn đều được cộng PB vào Saving Throw và đòn tấn công nhắm vào chúng phải chịu Disadvantage."
+      }
+    ],
+    "multiVows": [
+      {
+        "name": "Master and Servant (Chủ Nhân & Tôi Tớ)",
+        "req": "Tối thiểu 2 Chú thuật sư",
+        "desc": "Người làm 'Tôi tớ' chịu sự kìm hãm nghiêm ngặt do 'Chủ nhân' đặt ra (giảm CE max, giảm tầm xa, giảm xúc xắc sát thương, hoặc cấm dùng Giản Dị Lãnh Địa/Kết Giới). Khi Chủ nhân ra lệnh giải phóng bằng Action: các chỉ số của Tôi tớ được nhân đôi (gấp đôi CE max, gấp đôi tầm xa hoặc gấp đôi xúc xắc sát thương) trong số round bằng PB của Chủ nhân."
+      },
+      {
+        "name": "Taming (Thuần Phục Chú Linh)",
+        "req": "Chú thuật sư & Chú linh",
+        "desc": "Thuần phục một chú linh có CR ≤ PB bằng cách bỏ ra 8 giờ cho mỗi CR, kiểm tra Animal Handling DC 10 + 2*CR. Sau khi thành công, chú linh trở thành thuộc hạ điều khiển bằng Bonus Action. Nếu tấn công chú linh, khế ước lập tức tan vỡ."
+      }
+    ],
+    "dmGuidelines": [
+      {
+        "rule": "1. Không duyệt Ràng buộc Bật/Tắt",
+        "desc": "Không chấp nhận các ràng buộc có thể tuỳ ý bật tắt khi cần để né tránh nhược điểm. Ràng buộc đã lập phải duy trì ít nhất đến khi hoàn thành Long Rest."
+      },
+      {
+        "rule": "2. Phải có sự hi sinh thực chất",
+        "desc": "Một nhân vật cận chiến thuần tuý không thể nhận Advantage đòn đánh để đổi lấy Disadvantage trên đòn đánh Chú lực tầm xa mà họ không bao giờ dùng tới."
+      },
+      {
+        "rule": "3. Cảnh giác với việc tăng CE để đổi lấy DC quá cao",
+        "desc": "Tăng chi phí CE để đổi lấy việc tăng save DC có thể tạo ra các chiêu thức kết liễu trận đấu với DC không thể đỡ nổi."
+      },
+      {
+        "rule": "4. Tuyệt đối từ chối vô hiệu hoá Reaction",
+        "desc": "Reaction là cơ chế phòng thủ cốt lõi của hệ thống. Không thể đổi bất kỳ điều gì để lấy việc đối thủ không được dùng Reaction phản đòn."
+      },
+      {
+        "rule": "5. Cấm bắt chước",
+        "desc": "Không thể dùng ràng buộc để sao chép đặc tính từ một thuật thức bẩm sinh khác."
+      },
+      {
+        "rule": "6. Cấm ràng buộc cứu chết vô lý",
+        "desc": "Không chấp nhận các ràng buộc 'khi sắp chết thì tự động dịch chuyển xa vạn dặm' để làm vé thoát chết miễn phí."
+      },
+      {
+        "rule": "7. Tôn trọng quy tắc cốt lõi của thuật thức",
+        "desc": "Thuật thức có quy tắc riêng. Phá vỡ quy tắc chỉ được phép nếu cái giá phải trả lớn hơn gấp nhiều lần lợi ích nhận được."
+      },
+      {
+        "rule": "8. TUYỆT ĐỐI CẤM tăng Điểm Tinh Xảo (Refinement)",
+        "desc": "Refinement là thước đo trình độ kết giới thuần tuý qua khổ luyện. Không bất kỳ ràng buộc nào được phép cộng điểm Refinement."
+      },
+      {
+        "rule": "9. Ngăn chặn Metagaming",
+        "desc": "Nhân vật không thể lập các ràng buộc đòi hỏi kiến thức kết giới phức tạp mà bản thân nhân vật không hề có chuyên môn."
+      }
+    ],
+    "misfortuneTable": [
+      [
+        "1d6 Roll",
+        "Hậu Quả Khi Phá Vỡ Ràng Buộc (Misfortune)"
+      ],
+      [
+        "1",
+        "Cái Chết — Cái chết lập tức ập đến trừng phạt kẻ bội tín."
+      ],
+      [
+        "2",
+        "Mất Một Chi — Đứt lìa ngẫu nhiên một tay hoặc một chân."
+      ],
+      [
+        "3",
+        "Mất Một Giác Quan — 1d4: 1.Xúc giác, 2.Vị giác, 3.Khứu giác, 4.Thị giác."
+      ],
+      [
+        "4",
+        "Suy Giảm Căn Bản (-2 Stats) — Mọi chỉ số Ability Score bị giảm vĩnh viễn 2 điểm."
+      ],
+      [
+        "5",
+        "Phong Ấn Chú Lực — Hoàn toàn mất khả năng sử dụng Chú lực trong 8d4 ngày."
+      ],
+      [
+        "6",
+        "Tịch Thu Thuật Thức — Thuật thức bẩm sinh bị phong toả trong 6d4 ngày."
+      ]
+    ],
+    "rawEnglish": "Binding Vows\n\nPacts made by sorcerers and given to them at birth. These pacts hold great power and even greater consequences on breaking them.\n\nPersonal Vows\n\nBinding Vows made for yourself and your character will be an agreement between you and your GM, you deciding what you are willing to give and the GM deciding what to give you. You can only have as many binding vows as your proficiency bonus as a rule of thumb but feel free to ignore this.\n\nSolo Binding Vow Examples\n\nOvertime\n\nAt the cost of holding back while on the clock, when going overtime you get things done. At the cost of limiting your cursed energy during parts of the day, you can gain a bonus to your cursed energy during other parts. Your CE maximum is reduced by your CE modifier and your technique’s damage die decreases one tier from 9 AM to 5 PM.\n\nOnce this time ends, you go into Overtime. You gain temporary CE equal to twice your CE modifier and your technique’s damage die increases by two tiers. These benefits last for a number of hours equal to your proficiency bonus. Once you make this binding vow, you cannot change it until 1 workweek has passed.\n\nRevealing One’s Hand\n\nIf you reveal your cursed technique to a creature that can understand you, you gain a +3 bonus to attack and damage rolls made using your revealed technique, as well as a bonus given by the GM that depends on their technique. This ends once combat has ended and you cannot reveal your technique to the same creature more than once or a creature that already knows your technique.\n\nMind Over Matter\n\nFor every limb you give up the use of, you gain a +5 bonus to your CE maximum (no prosthetics).\n\nImmediate Activation\n\nYou need to use your cursed technique immediately, but can’t meet the usual activation requirements so you make a vow to use it without them. You create a vow to immediately use a technique that you know as either a reaction or free action just for using said technique for this vow, all other requirements besides cursed energy cost are ignored.\n\nHowever, you permanently increase the action cost of the technique by 1(free action-&gt; bonus action-&gt; action-&gt; full turn action) and add an additional requirement or prerequisite to use the technique for all subsequent uses of that technique (an example of an additional requirement or prerequisite would be now needing Chanting to use the technique). The increased action cost or additional requirement/prerequisite from this vow will be permanent as the technique has been permanently altered.\n\nFavorite Enemy\n\nYou train for 1 hour preparing yourself to fight against a creature you know. You create a vow where you choose 1 creature as your \"favorite enemy\", after that you will choose one of the following benefits for your cursed techniques:\n\nYou have advantage on attack rolls against that target.\n\nYou reduce the target's saving throws against your techniques by your proficiency bonus.\n\nHowever, any other creature besides your \"favorite enemy\" adds their proficiency bonus on saving throws against your cursed techniques(even if they already do), and your attack rolls will be at disadvantage against them.\n\nEven if you take this vow multiple times you cannot choose the same creature multiple times.\n\nMulti Binding Vow Example\n\nMaster and Servant\n\nRequires 2+ Sorcerers\n\nYou have a deep admiration and respect for someone, so much so that you can restrain yourself just to obey them. One of the members of the vow will be the \"master\" of the vow, while another will be the \"servant\". The servant will receive one of the following restrictions:\n\nTheir Cursed Energy' maximum will be reduced by a number decided by its master.\n\nTheir technique's range is reduced by a number of ft. that the master decides.(Cannot go lower than 5ft)\n\nTheir technique's damage is reduced by how many damage dice the master decides.(Cannot go lower than one dice)\n\nThey cannot use simple domains or barriers.\n\nThe servant will have this restraint until the master allows the servant to unleash its cursed energy as an action. The servant gains one of the following benefits depending on his restraint.\n\nTheir cursed energy maximum doubles(using the original value without the reduction), and they regain cursed energy equal to the cursed energy they lost.\n\nTheir technique's range doubles(using the original value without the reduction).\n\nTheir technique's damage dice doubles(using the original value without the reduction).\n\nThis lasts a number of rounds equal to the master's proficiency bonus, after which this vow can only be used again after a long rest.\n\nTamingRequires a Sorcerer and Cursed Spirit\n\nYou can attempt to tame a cursed spirit, forcing it to obey you by means of a vow.\n\nThe cursed spirit’s CR must be equal to or lower than your proficiency bonus. You must spend 8 hours per CR to tame the cursed spirit, in 8 hour periods. During each period, you must make an Animal Handling check DC 10 + twice the CR. On a failure, you must repeat the 8 hr period.\n\nOnce you finish the process, the cursed spirit can be commanded as a bonus action. If you attack or harm the cursed spirit, the vow is broken.\n\nMaking Your Own\n\nBinding vows can be very powerful, especially if a player bends the rules while creating one. To help maintain balance, here is a list of binding vow concepts to watch out for:\n\n1. Togglable Binding Vows\n\nA player might suggest a binding vow that can be activated or deactivated at will. For example: \"I am a limitless user, and I want my blue save DC to be increased by my CE modifier, but it can only affect one creature at a time. However, I can turn this vow on and off, so I don’t suffer any drawbacks.\"\n\nThis undermines the entire concept of binding vows because the player isn't truly sacrificing anything if they can simply toggle the effects off. For this, you can enforce a rule that it cannot be changed until completing a long rest once the vow has been made.\n\n2. Not Actually Giving Up Anything\n\nA player might suggest a binding vow where their melee-focused character gains advantage on all melee attack rolls but takes disadvantage on every cursed energy attack roll. Since the character isn’t reliant on CE attacks, this is not a genuine trade-off and doesn’t qualify as a fair vow.\n\n3. More Cursed Energy Cost\n\nA player might suggest a binding vow where they increase their cursed energy save DC in exchange for a higher cursed energy cost. While this might seem reasonable at first, it can quickly become unbalanced. Depending on the boosted feature, it could lead to encounter-ending abilities with impossibly high save DCs.\n\n4. Reaction Negation\n\nA player might suggest a binding vow where they lose something in return for making their cursed energy feature immune to reactions. This should be an automatic rejection, as reactions are a core mechanic of the supplement, and removing them entirely disrupts the balance of play, and completely bypasses most of the defense mechanics in the supplement.\n\n5. Mimicry\n\nA player might suggest a binding vow that allows their technique to mimic a feature from another technique. This should also be outright denied because it often doesn’t make logical sense and can quickly become overpowered.\n\n6. Death Saving\n\nA player might suggest a binding vow just as their character is about to die. For example: \"I lose all my cursed energy and fall unconscious, but my technique automatically activates, teleporting me miles away.\" This is extremely unbalanced and effectively acts as a \"get out of jail free\" card, with no meaningful consequences for the player.\n\n7. Rule Breaking\n\nA player might suggest a binding vow that completely ignores the rules of their technique. For example: Idles transfiguration transfigured creatures being primitive or limitless being only able to teleport once per turn. The techniques rules are there for a reason and would stay better if they weren't broken by a binding vow. However sometimes a vow that breaks your techniques rules can be made good if the downside heavily outweighs the benefits.\n\n8. Refinement Increasing\n\nA player might suggest a binding vow that increases their domain refinement. Under no circumstances should a vow like this ever be allowed. Not only is it incredibly overpowered but it doesn't make sense lore wise, as binding vows can only be used to amplify a sorcerer’s physicals, their cursed technique, or cursed energy in some sort of way, and the refinement of a barrier is based only on your expertise in putting one together.\n\n9. Metagaming\n\nA player might suggest a binding vow that their character couldn't possibly know about. For example: A character that doesn't have a barrier feat or levels in the Support Specialist class, making a binding vow for a complex binding vow for a barrier. For example: I vow that my barrier is reverse triangle shaped and any objects with cursed energy imbued into them can't pass through it at a certain time of the day but the HP of the barrier is reduced by 30 every round and it's cursed energy cost is increased by half of the original cost, despite not having any advanced barrier knowledge.\n\nConsequences of Breaking a Binding Vow\n\nA consequence feared by all from the weakest to the strongest. All sorcerers follow one rule; “Do not break a binding vow.”\n\nAfter breaking a multi binding vow, you lose any benefits from the vow, and either gain 5 levels of exhaustion for 10 days or a major misfortune falls upon you, rolling on the table below.\n\nRoll\n\nMisfortune\n\n1\n\nDeath.\n\n2\n\nYou lose a limb.\n\n3\n\nYou lose a sense(D4: 1.Touch, 2. Taste, 3. Smell, 4. Sight)\n\n4\n\nYour stats are reduced by 2.\n\n5\n\nYou cannot use Cursed Energy for 8d4 days.\n\n6\n\nYour Innate Technique is confiscated for 6d4 days.\n\nThe punishments can be avoided if both parties agree to end the vow."
+  },
+  "breakthroughs": {
+    "title": "Hắc Thiểm, The Zone & Đột Phá Chú Thuật",
+    "description": "Những khoảnh khắc giác ngộ đạt được khi tập trung tột độ hoặc cận kề cái chết, giúp Chú thuật sư thoáng thấy được bản chất cốt lõi của Chú lực.",
+    "blackFlash": {
+      "title": "Hắc Thiểm (Black Flash • 黒閃)",
+      "desc": "Hiện tượng bộc phát khi Chú lực được truyền vào đòn tấn công vật lý với sai số thời gian dưới 0.000001 giây (1 phần triệu giây), làm không gian biến dạng và chú lực lóe lên tia chớp đen thẫm.",
+      "mechanics": "Sau khi tung ra đòn Critical Hit (Natural 20), người chơi tung tiếp 1 xúc xắc d20 thứ hai. Nếu tiếp tục đạt Natural 20, đòn đánh kích hoạt HẮC THIỂM:\n• Gây gấp 3 lần sát thương Crit (lăn x3 xúc xắc thay vì x2).\n• Bỏ qua mọi Damage Resistances.\n• Đưa Chú thuật sư lập tức bước vào trạng thái The Zone (120% tiềm năng)!"
+    },
+    "theZone": {
+      "title": "Trạng Thái The Zone (120% Tiềm Năng • ゾーン)",
+      "desc": "Sau khi đạt được Đột phá (Breakthrough) hoặc tung Hắc Thiểm, Chú thuật sư bước vào trạng thái tập trung tuyệt đối. Việc thao túng chú lực trở nên tự nhiên như hơi thở.",
+      "duration": "Kéo dài 1 phút (Hiệu ứng CỘNG DỒN sau mỗi lần tung thêm Hắc Thiểm liên tiếp):",
+      "benefits": [
+        "Advantage trên mọi đòn tấn công.",
+        "+1 Critical Range (ví dụ Crit từ 19-20, hoặc 18-20 nếu đã có mở rộng).",
+        "+1 Black Flash Range (tăng cơ hội tiếp tục bùng nổ Hắc Thiểm liên hoàn).",
+        "Hồi phục lập tức Technique Burnout mà không cần chờ đợi.",
+        "Hồi phục hoàn toàn Quỹ Trị Liệu RCT.",
+        "Giảm 1 cấp Reduced Output."
+      ]
+    },
+    "rct": {
+      "title": "Phục Hồi Phản Chuyển (Reverse Cursed Technique • 反転術式)",
+      "awakening": "Thức tỉnh trong khoảnh khắc cận kề cái chết (khi bị đưa về 0 HP trong 1 đòn từ máu tối đa, hoặc thất bại 2 death saves rồi đổ ra Nat 20, hoặc roll d100 đạt 90+). Hoàn toàn không thể truyền dạy theo cách thông thường.",
+      "poolFormula": "Bể máu hồi phục = 5 x Level x CE modifier.",
+      "conversionRate": "1 CE = 10 HP hồi phục (trừ tương ứng từ bể máu). Sử dụng bằng Bonus Action hoặc Reaction khi nhận sát thương.",
+      "injuryHealing": "Xoá 1 chấn thương/tình trạng thể xác: 10 HP. Tái tạo 1 tái sinh chi bị đứt lìa: 20 HP.",
+      "recharge": "Mỗi 2 round hồi lại 10 HP vào bể máu. Tự động làm đầy hoàn toàn sau Long Rest.",
+      "soulDamage": "Có thể hồi phục máu tối đa bị mất do Soul Damage nếu sở hữu ít nhất Soul Awareness Cấp 6."
+    },
+    "awakenedProgression": [
+      {
+        "stage": "Skilled CE Manipulation (Tinh Thạo Thao Túng Chú Lực)",
+        "req": "CE 16+, 1 Breakthrough",
+        "strike": "Cursed Strike: Tiêu CE lên đến PB, gây thêm 1d8 necrotic damage / CE.",
+        "reinforce": "Cursed Reinforcement: Dùng Action tiêu CE lên đến CE mod, nhận 5 Temp HP / CE."
+      },
+      {
+        "stage": "Advanced CE Manipulation (Thao Túng Chú Lực Cao Cấp)",
+        "req": "Skilled Manipulation, 4 Breakthroughs",
+        "strike": "Cursed Strike: Gây thêm 1d12 necrotic damage / CE.",
+        "reinforce": "Cursed Reinforcement: Dùng Action, Bonus Action HOẶC Reaction, tiêu CE lên đến (CE mod + PB), nhận 5 Temp HP / CE.",
+        "efficiency": "Hiệu Suất: Giảm 1 CE chi phí cơ bản của mọi thuật thức (tối thiểu 1 CE)."
+      },
+      {
+        "stage": "Mastered CE Manipulation (Bậc Thầy Thao Túng Chú Lực)",
+        "req": "Advanced Manipulation, 8 Breakthroughs",
+        "strike": "Cursed Strike: Gây thêm 2d8 necrotic damage / CE, đồng thời có thể tiêu thêm CE lên đến PB để cộng thẳng vào Attack Roll.",
+        "efficiency": "Hiệu Suất Tối Thượng: Giảm 2 CE chi phí cơ bản của mọi thuật thức (tối thiểu 1 CE)."
+      }
+    ],
+    "classUnderstandings": [
+      {
+        "cls": "Juggernaut",
+        "feature": "Skilled Cursed Reinforcement",
+        "effect": "Khi dùng Cursed Reinforcement, nhận 10 Temp HP cho mỗi CE tiêu hao (dùng PB lần/ngày)."
+      },
+      {
+        "cls": "Scout",
+        "feature": "Reliable Skill",
+        "effect": "Khi thực hiện kiểm tra kỹ năng có proficiency, mọi kết quả từ 9 trở xuống được tính là 10."
+      },
+      {
+        "cls": "Strategist",
+        "feature": "Enhanced Creativity",
+        "effect": "Nhận thêm 2 tùy chọn Sáng Tạo Thuật Thức. Giảm 1 CE chi phí thuật thức số lần bằng PB mỗi ngày."
+      },
+      {
+        "cls": "Shikigami User",
+        "feature": "Cursed Bond",
+        "effect": "Thức thần đồng hành hoặc chú linh thuần phục có thể dùng Cursed Strike số lần bằng PB mỗi ngày (hưởng toàn bộ buff từ Awakened Understanding)."
+      },
+      {
+        "cls": "Support Specialist",
+        "feature": "Positive Energy Master",
+        "effect": "Sở hữu bể máu hồi phục riêng biệt bằng 2 x Level, dùng Bonus Action hồi máu cho bản thân hoặc chạm đồng minh từ cấp 5."
+      },
+      {
+        "cls": "Warrior",
+        "feature": "Destructive Cursed Strike",
+        "effect": "Khi dùng Cursed Strike, cộng thêm CE modifier vào sát thương necrotic số lần bằng 2 x PB mỗi ngày."
+      }
+    ],
+    "cursedPhysiology": {
+      "title": "Sinh Lý Chú Linh & Điểm Dị Tướng (Profane Points)",
+      "desc": "Năng lượng dương của RCT là chất độc chết người với Chú Linh (khiến Chú Linh không thể dùng RCT). Bù lại khi đạt Đột phá, Chú Linh nhận số Profane Points = Level (+1 mỗi khi lên cấp) để mua các đặc tính sinh học quái dị thích nghi chiến đấu.",
+      "attributes": [
+        {
+          "name": "Ability Improvement",
+          "cost": "1 pt",
+          "effect": "+1 vào một chỉ số Ability Score tự chọn (tối đa 1 lần mỗi 3 level)."
+        },
+        {
+          "name": "Darkvision",
+          "cost": "1 pt",
+          "effect": "Tầm nhìn bóng tối 60ft (tăng lên 120ft ở cấp 8)."
+        },
+        {
+          "name": "Increased Speed",
+          "cost": "1 pt",
+          "effect": "Tăng 5ft tốc độ di chuyển (tăng thêm 5ft ở cấp 10)."
+        },
+        {
+          "name": "Horrifying Form",
+          "cost": "1 pt",
+          "effect": "Proficiency hoặc Expertise kỹ năng Intimidation."
+        },
+        {
+          "name": "Ambush Predator",
+          "cost": "1 pt",
+          "effect": "Proficiency kỹ năng Stealth, Deception, Perception hoặc Survival."
+        },
+        {
+          "name": "Curse Weapon (Vũ Khí Tự Nhiên)",
+          "cost": "1 pt",
+          "effect": "Móng vuốt (Slashing), Nanh vuốt (Piercing), Nắm đấm sần sùi hoặc Đuôi (Bludgeoning), sát thương 1d6 + STR mod (1d8 ở cấp 5, 1d10 ở cấp 10)."
+        },
+        {
+          "name": "Curse Weapon: Claw (Vuốt Cào Chảy Máu)",
+          "cost": "2 pts",
+          "effect": "Buộc mục tiêu CON Save DC (8 + PB + STR/DEX), thất bại bị chảy máu nhận 1d4 slashing đầu lượt sau (1d6 ở cấp 10, tiêu 1 CE đổi sang necrotic)."
+        },
+        {
+          "name": "Curse Weapon: Fangs (Cắn Hạ Gục)",
+          "cost": "2 pts",
+          "effect": "Buộc mục tiêu STR Save DC (8 + PB + STR), thất bại bị kéo ngã Prone."
+        },
+        {
+          "name": "Curse Weapon: Gnarled Fist (Nắm Đấm Đẩy Lùi)",
+          "cost": "2 pts",
+          "effect": "Sát thương tăng lên 1d8 (1d10 ở cấp 5, 1d12 ở cấp 10). Buộc mục tiêu Str save, thất bại bị đẩy lùi 10ft (15ft ở cấp 5, đập tường chịu 1d4/2d4 bludgeoning)."
+        },
+        {
+          "name": "Curse Weapon: Tail (Quất Đuôi Đỡ Đòn)",
+          "cost": "2 pts",
+          "effect": "Tầm với tăng lên 10ft. Dùng Reaction quất đuôi cộng 1d6 vào AC để đỡ đòn (tiêu 1 CE cộng thêm +2/+4 AC)."
+        },
+        {
+          "name": "Poisonous Weapon",
+          "cost": "2 pts",
+          "effect": "Tiêu 1 CE buộc Con save, thất bại nhận 2d4 sát thương độc và bị Poisoned đến lượt sau (3d4 ở cấp 6, 4d4 ở cấp 12)."
+        },
+        {
+          "name": "Greater Cursesight",
+          "cost": "2 pts",
+          "effect": "+2 kiểm tra dò tìm Chú lực (+1 thêm ở cấp 5, 8, 12, 16)."
+        },
+        {
+          "name": "Powerful Build",
+          "cost": "2 pts",
+          "effect": "Tính là lớn hơn 1 size category khi xác định sức nâng, vác, kéo."
+        },
+        {
+          "name": "Additional Limbs (Tay/Chân Phụ)",
+          "cost": "3 pts",
+          "effect": "Thêm tay (+2 grapple, cầm vũ khí Light) hoặc thêm chân (+2 chống xô ngã, +5ft dash speed). Tối đa lấy 4 lần."
+        },
+        {
+          "name": "Size Increase (Tăng Kích Thước)",
+          "cost": "4 pts",
+          "effect": "Tăng 1 bậc size lên đến Gargantuan (+2 STR, -2 DEX, tăng xúc xắc tấn công lên đến d12)."
+        },
+        {
+          "name": "Flight (Bay Đôi Cánh Quái Dị)",
+          "cost": "6 pts",
+          "effect": "Cánh quái dị tốc độ bay 30ft. Nếu có Greater Flight, nhận thêm phản xạ Evasion khi bay."
+        },
+        {
+          "name": "Cursed Inventory (Kho Chứa Bụng Chú Linh)",
+          "cost": "3 pts",
+          "effect": "Học cách nuốt và lưu trữ đồ vật trong cơ thể như Toji worm; kẻ thù không thể cướp trừ khi bạn chết."
+        },
+        {
+          "name": "Multiple Eyes (Vạn Nhãn)",
+          "cost": "3 pts",
+          "effect": "Vô số mắt quái dị trên cơ thể; nhận Lợi thế trên Perception thị giác."
+        },
+        {
+          "name": "Cursed Armor (Giáp Vảy Chú Linh)",
+          "cost": "4 pts",
+          "effect": "Vảy sừng cứng cáp bọc cơ thể; nhận vĩnh viễn +2 AC."
+        },
+        {
+          "name": "Offensive Output",
+          "cost": "4 pts",
+          "effect": "Khi dùng Cursed Strike, gây thêm 1 necrotic damage / CE (tăng lên 2 ở cấp 10)."
+        },
+        {
+          "name": "Shifting Form (Thân Thể Biến Hoá)",
+          "cost": "4 pts",
+          "effect": "Cơ thể không có cấu trúc xương cứng, có thể chui qua khe hẹp 1 inch không bị ép; Lợi thế chống Grapple/Restrained."
+        },
+        {
+          "name": "General Understanding",
+          "cost": "5 pts",
+          "effect": "Nhận 1 Physical Feat hoặc Skill Feat tự chọn đủ điều kiện."
+        },
+        {
+          "name": "Cursed Energy Understanding",
+          "cost": "6 pts",
+          "effect": "Nhận 1 Cursed Energy Feat tự chọn đủ điều kiện."
+        },
+        {
+          "name": "Technique Understanding",
+          "cost": "8 pts",
+          "effect": "Nhận 1 Innate Technique Feat tự chọn đủ điều kiện."
+        }
+      ]
+    },
+    "rawEnglish": "Breakthroughs\n\nEvents reached either during extreme focus or moments near death, you manage to glimpse the core of cursed energy. Breakthroughs take one of two forms.\n\nBlack Flashes\n\nChanneling cursed energy into an attack within 0.000001, you cause a spatial distortion where cursed energy sparks black. This event is called a black flash.\n\nIn order to land a black flash, you must land a critical hit. After landing a critical hit, you roll a second d20, on a natural 20 you activate a black flash. This causes the melee attack to deal triple critical damage, rolling 3x the dice instead of 2x and ignore damage resistances.\n\nReverse Cursed Technique\n\nWish whoosh, reverse cursed technique processes negative energy into positive energy by taking two sources of cursed energy and multiplying them by one other. Impossible to teach normally.\n\nAfter almost dying, be it being reduced to 0 in one hit while at max HP, or failing two death saves and then rolling a nat 20. Those are moments where the GM can choose to bestow reverse cursed technique. Alternatively roll a d100, on a 90+ you gain Reverse Cursed Technique. Reverse Cursed Technique cannot be taught under any circumstances, not including extremely specific outliers like Soul Swap.\n\nYou learn to use your cursed energy in a completely opposite way, channeling positive energy instead of negative. You have a pool of healing you can use with your reverse cursed energy that's equal to 5 x your level x your Cursed Energy modifier. As a bonus action for cursed energy up to your CE Modifier, you can remove healing from that pool to regain hit points. You can also remove healing from the pool as a reaction to receiving damage once per round. For every 1 cursed energy spent, you regain 10 hit points, removing an equal amount from the pool. If you are suffering from a physical condition or injury such as a concussion or something else, one of these effects can be healed for every 10 hit points recovered with the reverse cursed technique. Limbs can be regenerated for 20 hit points.\n\nYou can use your Reverse Cursed Technique until your healing pool ends before getting burned out, during which you can't use RCT until your healing pool recovers. At the beginning of every two rounds, your healing pool recovers 10 hit points. Your healing pool automatically refills at the end of a long rest. You can remove maximum HP reductions from Soul Damage by spending healing if you have at least 6 levels of Soul Awareness.\n\nAwakened Understanding\n\nThe awakened state following a breakthrough causes a sorcerer to gain an increased understanding of their cursed energy. When a character lands a black flash or awakens reverse cursed technique, your DM can allow the following upgrades as your ability to use cursed energy improves dramatically (counting total Breakthroughs).\n\nSkilled Cursed Energy Manipulation\n\nPrerequisite: 16+ Cursed Energy score, 1 Breakthrough\n\nYou have focused on the basics, allowing you to directly manipulate cursed energy to great effect.\n\nCursed Strike. On a hit, you can spend up to your proficiency bonus, dealing an additional d8 necrotic damage per CE spent.\n\nCursed Reinforcement. As an action you can spend up to your Cursed Energy modifier to reinforce your body. You gain 5 temporary hit points per CE.\n\nAdvanced Cursed Energy Manipulation\n\nPrerequisite: Skilled Cursed Energy Manipulation, 4 Breakthroughs\n\nYou have perfected the basics of manipulating cursed energy, causing your effectiveness and efficiency to explode.\n\nCursed Strike. On a hit, you can spend up to your proficiency bonus, dealing an additional 1d12 necrotic damage per CE spent.\n\nCursed Reinforcement. As an action, bonus action, or reaction you can spend up to your Cursed Energy modifier + proficiency to reinforce your body. You gain 5 temporary hit points per CE.\n\nEfficiency. When using a cursed technique, the base cost decreases by 1 (min cost of 1).\n\nMastered Cursed Energy Manipulation\n\nPrerequisite: Advanced Cursed Energy Manipulation, 8 Breakthroughs\n\nCursed Strike. On a hit, you can spend up to your proficiency bonus, dealing an additional 2d8 necrotic damage per CE. Additionally, you can spend CE up to your proficiency to add to your attack roll.\n\nEfficiency. When using a cursed technique, the base cost decreases by 2 (min cost of 1).\n\nCursed Physiology\n\nPositive Energy is poisonous to a Cursed Spirit which removes their ability to ever use Reverse Cursed Technique. Cursed Spirits have an easier time healing directly with negative energy using Cursed Energy Affinity, but they are quickly overwhelmed by the difference in output.\n\nWhen a Cursed Spirit would normally unlock Reverse Cursed Technique, they instead gain an understanding unique to curses. They gain a number of Profane Points equal to their level and gain an additional point when they gain a level. At any time, you can spend any number of Profane Points you possess to gain a Cursed Physiology Attribute. Each Attribute has an individual cost and can only be taken once unless stated otherwise.\n\nAbility Improvement (1 point)\n\nYou gain a +1 to an ability score of your choice. You can choose this attribute multiple times, but only once for every 3 levels you have (E.g. level 9 can only have 3 Ability Improvement attributes).\n\nDarkvision (1 point)\n\nyou have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray. This increases to 120 feet at 8th level.\n\nIncreased Speed (1 point)\n\nWhether you are quadruped or have strong legs, your walking speed increases by 5 ft. This increases by 5 ft again at 10th level.\n\nHorrifying Form (1 point)\n\nYou are a terrifying curse and a horror to behold. You gain proficiency in Intimidation or expertise if you are already proficient.\n\nAmbush Predator (1 point)\n\nYou gain proficiency in either Stealth, Deception, Perception, or Survival.\n\nCurse Weapon (1 point)\n\nYou gain a natural weapon that takes the form of claws (slashing), fangs (piercing), or gnarled fists or a tail (bludgeoning). Your Curse Weapon deals 1d6 + your Strength modifier of its damage type. This increases to 1d8 at 5th level and 1d10 at 10th level. If you have a different unarmed strike dice, you can choose to use that for these natural weapons. You can choose this attribute multiple times, but must choose a different option each time.\n\nCurse Weapon: Claw (2 points)\n\nOnce per turn when you hit a creature with a claw attack, you can force the creature to take a Constitution saving throw (DC 8 + your proficiency bonus + your Strength or Dexterity modifier). On a failed save, the target bleeds and takes 1d4 slashing damage at the start of their next turn. This increases to 1d6 slashing damage at 10th level. You can spend 1 CE to make the extra damage necrotic. You must have the Cursed Weapon attribute and choose claw to take this attribute.\n\nCurse Weapon: Fangs (2 points)\n\nOnce per turn when you hit a creature with a fang attack, you can force the creature to take a Strength saving throw (DC 8 + your proficiency bonus + your Strength modifier). On a failed save, the target is dragged down and falls prone. You must have the Cursed Weapon attribute and choose fang to take this attribute.\n\nCurse Weapon: Gnarled Fist (2 points)\n\nThe bludgeoning damage of your gnarled fists become 1d8. This increases to 1d10 at 5th level and 1d12 at 10th level. Once per turn when you hit a creature with a gnarled fists attack, you can force the creature to take a Strength saving throw (DC 8 + your proficiency bonus + your Strength modifier). On a failed save, the target is pushed back 10 ft. If the target impacts a solid object or structure, it takes 1d4 bludgeoning damage. This increases to 15 ft at 5th level and the bludgeoning damage increases to 2d4 at 10th level. You must have the Cursed Weapon attribute and choose gnarled fist to take this attribute.\n\nCursed Weapon: Tail (2 points)\n\nThe reach of your tail increases to 10 ft. As a reaction to an attack roll, you can swipe your tail to roll a 1d6 and add it to your AC against the triggering attack, potentially causing it to miss. You can spend 1 CE to add a +2 to the number rolled. This becomes +4 at 10th level. You must have the Cursed Weapon attribute and choose tail to take this attribute.\n\nPoisonous Weapon (2 points)\n\nOnce per turn when you hit a creature with a natural weapon, you can spend 1 CE to force the target to make a Constitution saving throw (DC equals 8 + your proficiency bonus + your Constitution or CE modifier). On a failed save, the target takes 2d4 poison damage and is poisoned until the start of your next turn. The damage becomes 3d4 at 6th level and 4d4 at 12th level. You must have the Cursed Weapon attribute to choose this attribute.\n\nGreater Cursesight (2 points)\n\nYou gain a +2 bonus to ability checks to detect cursed energy. This bonus increases by +1 at 5th, 8th, 12th, and 16th level.\n\nPowerful Build (2 points)\n\nYou count as 1 size larger when determining your carrying capacity and the weight you can push, drag, or lift.\n\nAdditional Limbs (3 points)\n\nArm. You have an additional arm somewhere on your body. The additional arm can manipulate an object, open or close a door or container, pick up or set down a Tiny object, or wield a weapon that has the light property. This does not give you additional attacks, but does give you a +2 bonus on ability checks to grapple a creature.\n\nLeg. You have an additional leg somewhere on your body. This leg gives you a +2 bonus on ability checks and saving throws against being knocked prone or moved against your will. Your walking speed increases by 5 ft per additional leg you have when you take the dash action.\n\nYou can take this attribute multiple times, up to a total of four times.\n\nSize Increase (4 points)\n\nYour size increases by one size category up to Gargantuan. This causes a +2 increase to your Strength score and -2 penalty to your Dexterity score. Additionally, your unarmed strikes and natural weapons increase by one dice tier up to d12 (d4&lt;d8&lt;d10&lt;d12). You can take this attribute multiple times with stacking benefits, but the cost increases by 2 every time.\n\nFlight (6 points)\n\nYou sprout grotesque wings that give you a 30 ft fly speed. To use this speed, you cannot be wearing heavy armor or carrying more than your carry capacity. If you also have the Greater Flight Improvement attribute, you gain the Evasion feature while flying.\n\nFlight Improvement (3 points)\n\nYour fly speed can equal your walking speed if it is higher. You must have the Flight attribute to take this attribute.\n\nGreater Flight Improvement (4 points)\n\nYou gain a 30 ft fly speed that allows you to hover, so being stunned or knocked prone will not cause you to fall. If you are wearing heavy armor or carrying more than your carry capacity this speed is halved. If you do not have the Flight attribute, the cost of this feature increases by 3 points.\n\nCursed Inventory (3 points)\n\nYou have learned to store items within your body, which cannot normally be removed against your will unless you die. You can store objects that could reasonably fit within your body. Additionally, your carry capacity increases by 3 x your level. The total weight you can store in your body equals half your carry capacity.\n\nMultiple Eyes (3 points)\n\nYou have countless grotesque eyes on your body. You have advantage on Wisdom (Perception) checks that rely on sight.\n\nAlternate Movement (3 points)\n\nYou gain either a 10 ft burrow speed, a 30 ft climb speed, or a 30 ft swim speed. You can choose this attribute multiple times, but must choose a different option each time.\n\nAlternate Movement Improvement (2 points)\n\nYour climb or swim speed can equal your walking speed if it is higher. Your burrow speed increases to 10 ft and becomes 15 ft at 10th level. You must have the Alternate Movement attribute to take this. You can choose this attribute multiple times, but must choose a different option each time.\n\nCursed Armor (4 points)\n\nYou have strong scales or plating that protect you from harm. You gain a +2 bonus to AC.\n\nOffensive Output (4 points)\n\nWhen you use Cursed Strike, you deal an additional 1 necrotic damage per CE spent. If a feature alters the damage type of your cursed energy, it also changes this damage. This increases to 2 damage per CE spent at 10th level.\n\nShifting Form (4 points)\n\nYour body lacks a conventional structure. You can move through spaces as narrow as 1 inch without squeezing, provided you aren't wearing or carrying anything you cannot fit through. You also have advantage on saving throws against being grappled or restrained.\n\nGeneral Understanding (5 points)\n\nYou gain 1 Physical or Skill Feat of your choice that you qualify for. You can take this attribute multiple times, but must choose a different feat each time.\n\nCursed Energy Understanding (6 points)\n\nYou gain 1 Cursed Energy Feat of your choice that you qualify for. You can take this attribute multiple times, but must choose a different feat each time.\n\nTechnique Understanding (8 points)\n\nYou gain 1 Innate Technique Feat that you qualify for. You can take this attribute multiple times, but must choose a different feat each time.\n\nGreater Affinity (8 points)\n\nYour Cursed Energy Affinity feature is replaced by the Increased Affinity feature."
+  },
+  "domainExpansion": {
+    "title": "Bành Trướng Lãnh Địa & Điểm Tinh Xảo (Domain Expansion • 領域展開)",
+    "description": "Đỉnh cao tuyệt kỹ của Chú thuật sư. Bằng cách dùng kết giới dựng nên một không gian riêng biệt chứa đựng tâm cảnh nội tại và truyền dẫn thuật thức bẩm sinh vào kết giới, tạo ra đòn đánh tất trúng Sure-Hit.",
+    "basics": {
+      "cost": "20 Chú Lực",
+      "action": "Full-Turn Action (Action + Bonus Action + Toàn bộ di chuyển)",
+      "radius": "Bán kính 175ft (hình cầu bao quanh bản thân)",
+      "duration": "1 phút (trừ khi có tính năng kéo dài)",
+      "pushDamage": "Mọi sinh vật bên ngoài bị đẩy lùi chịu Xd6 bludgeoning damage (X = CE modifier) và thêm 1d4 mỗi vật thể va chạm.",
+      "barrierStats": "HP kết giới = 10 x CE modifier (+1 HP mỗi điểm Refinement). AC = 10 + CE mod + 1 mỗi 100 Refinement. Kháng sát thương từ bên trong, Vulnerable (chịu gấp đôi sát thương) từ bên ngoài."
+    },
+    "burnout": {
+      "title": "Technique Burnout",
+      "desc": "Sau khi kết thúc Lãnh địa, thuật thức bẩm sinh bị quá tải rơi vào trạng thái cháy thuật thức trong 1 phút hoặc đến khi tung Hắc Thiểm. Nhân vật chịu 2 cấp Exhaustion và chịu các hạn chế:",
+      "effects": [
+        {
+          "name": "Hiệu Ứng Phép Thuật (Magical Effects)",
+          "desc": "Mọi ảo ảnh hoặc hiệu ứng duy trì bởi thuật thức lập tức tan biến (ví dụ: ảo ảnh của Illusive Mirage)."
+        },
+        {
+          "name": "Trạng Thái Biến Thể (Forms)",
+          "desc": "Mọi dạng cường hoá bản thân hoặc trang bị lập tức chấm dứt (ví dụ: Khối lượng ảo của Star Rage)."
+        },
+        {
+          "name": "Thức Thần & Triệu Hồi (Summons)",
+          "desc": "Không thể triệu hồi mới. Thức thần đang có mặt bị rơi vào trạng thái Stunned, rơi ngã xuống đất nếu đang bay."
+        },
+        {
+          "name": "Vật Thể Tạo Tác (Creations)",
+          "desc": "Các tạo tác cần duy trì liên tục mất toàn bộ đặc tính phép thuật (trừ chú cụ vĩnh cửu rèn từ Construction)."
+        }
+      ],
+      "recovery": {
+        "title": "Hồi Phục Não Bộ Bằng RCT (Burnout Recovery)",
+        "req": "Sở hữu RCT và Điểm Tinh Xảo (Refinement) từ 750 trở lên",
+        "desc": "Dùng Reaction tiêu hao 4 CE để tự phá huỷ một phần não bộ rồi dùng Phản Chuyển tái tạo lập tức não mới, xoá bỏ Cháy thuật thức và Exhaustion. Yêu cầu kiểm tra CON Save DC 5. Thành công: hồi phục hoàn toàn; Thất bại: chảy máu mắt và mũi dữ dội, nhận 8d6 psychic damage và mất toàn bộ Action + Bonus Action cho đến lượt kế tiếp. Mỗi lần thành công liên tiếp trong ngày tăng DC thêm +5 (giảm 5 mỗi phút trôi qua, reset sau Long Rest)."
+      }
+    },
+    "refinementTable": [
+      [
+        "Điểm Tinh Xảo",
+        "Đặc Quyền Refinement",
+        "Mô Tả Hiệu Ứng"
+      ],
+      [
+        "1+",
+        "Domain Durability",
+        "Độ bền kết giới tăng lên: HP kết giới tăng thêm +1 cho mỗi điểm Refinement."
+      ],
+      [
+        "100",
+        "Barrier Resistance",
+        "Thay đổi tính chất: Chuyển sang Dễ tổn thương bên trong và Kháng sát thương bên ngoài, HOẶC tiêu thêm 5 CE để triệt tiêu mọi tính Dễ tổn thương cả trong lẫn ngoài."
+      ],
+      [
+        "200",
+        "Quicker Expansion",
+        "Bành trướng thần tốc: Mở lãnh địa chỉ tốn 1 Action thay vì Full-Turn Action."
+      ],
+      [
+        "300",
+        "Increased Potency",
+        "Uy lực bùng nổ: Mọi thuật thức triển khai trong lãnh địa được cộng thêm xúc xắc sát thương bằng CE modifier."
+      ],
+      [
+        "400",
+        "0.2 Second Expansion",
+        "Bành trướng 0.2 Giây (Gojo/Mahito): Mở lãnh địa chỉ kéo dài đến hết lượt, giảm nửa chi phí CE, đối thủ không thể dùng Reaction trừ khi DEX cao hơn CE score của bạn."
+      ],
+      [
+        "500",
+        "Lasting Domain",
+        "Duy trì bền bỉ: Thời gian duy trì lãnh địa tăng gấp đôi lên 2 phút."
+      ],
+      [
+        "600",
+        "Domain Amplification",
+        "Triển Duyên Lãnh Địa (Giản Diễm): Dùng Action tiêu 1/2 CE lãnh địa bao bọc cơ thể để vô hiệu hoá thuật thức đối thủ, xuyên thủng Vô Hạ Hạn, triệt tiêu Sure-hit của đối phương."
+      ],
+      [
+        "700",
+        "Efficient Expansions",
+        "Tiết kiệm chú lực: Giảm chi phí mở lãnh địa bằng CE modifier, chỉ chịu 1 cấp kiệt sức sau khi kết thúc."
+      ],
+      [
+        "800",
+        "Durable Barrier",
+        "Kết giới kiên cố: Miễn nhiễm sát thương phi ma pháp từ cả hai phía trong ngoài, nhân đôi điểm Refinement khi tính HP kết giới."
+      ],
+      [
+        "900",
+        "Compression",
+        "Nén Lãnh Địa (Gojo vs Sukuna): Dùng Bonus Action tiêu 5 CE nén kích thước bên ngoài thành quả cầu nhỏ bán kính 5ft (bên trong giữ nguyên). Đòn tấn công từ bên ngoài phải chịu Disadvantage."
+      ],
+      [
+        "1000",
+        "Total Mastery",
+        "Đỉnh cao tuyệt đối: Mở lãnh địa bằng Bonus Action, giảm PB chi phí CE; trong lãnh địa chiêu Action đổi thành Bonus Action, chiêu Bonus Action đổi thành Free Action. Kéo dài 3 phút."
+      ]
+    ],
+    "clashTable": [
+      [
+        "Chênh Lệch Điểm Refinement",
+        "Số Round Cần Thiết Để Phá Huỷ Lãnh Địa Đối Thủ"
+      ],
+      [
+        "10 Điểm",
+        "9 Round"
+      ],
+      [
+        "20 Điểm",
+        "8 Round"
+      ],
+      [
+        "30 Điểm",
+        "7 Round"
+      ],
+      [
+        "40 Điểm",
+        "6 Round"
+      ],
+      [
+        "50 Điểm",
+        "5 Round"
+      ],
+      [
+        "60 Điểm",
+        "4 Round"
+      ],
+      [
+        "70 Điểm",
+        "3 Round"
+      ],
+      [
+        "80 Điểm",
+        "2 Round"
+      ],
+      [
+        "90 Điểm",
+        "1 Round"
+      ],
+      [
+        "100+ Điểm",
+        "0 Round (Phá huỷ lập tức / Instantly Destroyed)"
+      ]
+    ],
+    "barrierlessDomain": {
+      "title": "Lãnh Địa Không Đóng Kín (Barrierless Domain • 神技)",
+      "req": "Đạt 1000 Điểm Refinement VÀ trải qua Đột phá (Breakthrough)",
+      "desc": "Vẽ bức tranh tuyệt mỹ lên chính không gian thực tế mà không cần dựng kết giới (Ryomen Sukuna - Phục Ma Ngự Hạp Tử, Kenjaku - Thai Tạng Biến Hoá).",
+      "benefits": [
+        "Bán kính mở rộng khổng lồ lên tới 655ft (khoảng 200 mét), có tâm điểm ở chính giữa.",
+        "Không có giới hạn thời gian 1 phút.",
+        "Không thể bị phá huỷ bằng cách đánh vỡ kết giới; chỉ bị giải trừ khi người thi triển chịu sát thương bằng 1/3 HP tối đa trong 1 đòn (DC 15 + 1/2 damage Con save).",
+        "Trong Va chạm Lãnh địa (Domain Clash), thuật thức có thể tấn công trực tiếp vào mặt ngoài kết giới của đối thủ (nơi kết giới mỏng manh nhất)."
+      ]
+    },
+    "incompleteDomains": {
+      "title": "Lãnh Địa Bán Hoàn Thiện (Incomplete Domains)",
+      "desc": "Mở lãnh địa khi chưa thể truyền dẫn thuật thức vào kết giới (Megumi Fushiguro - Khảm Hợp Ám Ế Đình). Điểm Refinement cố định bằng 0. Không có Sure-hit tuyệt đối mà chuyển thành Improved Hit (Lợi thế trên Attack roll và đối thủ Disadvantage trên Save). Thời gian Cháy thuật thức rút ngắn còn 5 round (30 giây)."
+    },
+    "barriers": {
+      "title": "Kết Giới Thuật & Màn (Barriers & Curtains)",
+      "description": "Nền tảng của thuật thức không gian. Mọi Chú thuật sư đều có thể học kết giới cơ bản dù không sở hữu thuật thức bẩm sinh đặc thù.",
+      "types": [
+        {
+          "name": "Màn (Curtain / Chōfuku)",
+          "kanji": "帳",
+          "cost": "5 Chú Lực (Action, duy trì tối đa 8 giờ)",
+          "desc": "Kết giới hình vòm màu đen buông xuống từ bầu trời để phong tỏa khu vực chiến trường. Tác dụng cốt lõi: Che giấu các hiện tượng siêu nhiên khỏi mắt người thường (\"Hóa bóng tối đậm hơn bóng tối, thanh lọc điều ô uế\"), phát tín hiệu cảnh báo khi có kẻ đột nhập hoặc áp đặt điều kiện ra/vào bằng Ràng Buộc."
+        },
+        {
+          "name": "Rào Chắn Phong Tỏa (Confinement Barrier)",
+          "kanji": "封印結界",
+          "cost": "Nghi thức (Ritual 10 phút, tiêu tốn 15 Chú Lực)",
+          "desc": "Kết giới cố định dựng quanh công trình hoặc cứ điểm (như Trường Chú Thuật Tokyo/Kyoto). Thường gắn kèm Chú vật làm lõi cắm neo (như kết giới của Tengen-sama), có thể thiết lập cấm Chú thuật sư cụ thể hoặc ngăn chặn Chú linh xâm nhập."
+        },
+        {
+          "name": "Giản Dị Lãnh Địa (Simple Domain / New Shadow Style)",
+          "kanji": "簡易領域",
+          "cost": "5 Chú Lực (Action hoặc Reaction, duy trì bằng Tập trung)",
+          "desc": "Kết giới nhỏ bao quanh cơ thể (bán kính 10–15 ft) do kiếm phái New Shadow Style sáng tạo để kẻ yếu chống lại Lãnh Địa. Tác dụng: Trung hòa và vô hiệu hóa hiệu ứng Đòn Trúng Tuyệt Đối (Sure-Hit) của Lãnh địa đối thủ. Đồng thời kích hoạt phản xạ chém tự động bất kỳ kẻ nào bước vào vòng tròn."
+        },
+        {
+          "name": "Lạc Hoa Tình",
+          "kanji": "落花の情",
+          "cost": "4 Chú Lực (Reaction khi bị trúng đòn Lãnh địa)",
+          "desc": "Bí truyền kết giới phòng ngự của Ngự Tam Gia (Gojo, Zen'in, Kamo): Phủ một lớp Chú lực phản ứng nhanh bao bọc thân thể. Ngay khoảnh khắc đòn Sure-Hit của Lãnh địa chạm vào, Chú lực tự động bộc phát phản kích để triệt tiêu đòn đánh."
+        }
+      ]
+    },
+    "rawEnglish": "Domain Expansion\n\nDomain Expansion is the most supreme technique of any jujutsu user. It is achieved by expanding one's innate domain with cursed energy while using a barrier to construct it inside a separate space. The caster then imbues their cursed technique within the barrier to complete the expansion, allowing them to deploy their ability all throughout the domain.\n\nDomain Basics\n\nAll domains are different from each other, varying in their hand signs or techniques. However, they all tend to follow the same base rules unless otherwise stated.\n\nExpanding Your Domain\n\nAll domains require a specific hand sign for their expansion to be activated, taking a Full Turn Action (Action + Bonus Action + Movement) to activate. All domains cost 20 Cursed Energy unless specified, and trap all creatures of your choice in a 175-foot radius circle centered on you, creating a barrier for 1 minute. The insides of a domain expansion vary from user to user, since it's like showing your soul to your opponents. Outside of your domain, its appearance is of a giant black sphere floating in the air.\n\nAll creatures outside your domain will receive Xd6 bludgeoning damage(X = CE modifier) and be pushed to the edge of the barrier. They received an additional 1d4 bludgeoning damage per object they collided with as the domain pushed them. In case the domain forces them against a wall, they must start holding their breath until the domain is closed or shrunk. Your barrier has domain hit points equal to 10 x your CE modifier, AC equal to 10 + your CE modifier + 1 per 100 refinement, and is vulnerable to damage from the outside and resistant to damage from the inside. Work with your GM to determine the environment and terrain of your domain.\n\nTechnique Burnout\n\nEven if the barrier or environment isn't fully formed, casting domain expansion causes the user's innate technique to become unstable for a short time afterward. Right after ending your domain expansion, you cannot use any innate technique features and gain 2 levels of exhaustion for 1 minute or until you land a black flash.\n\nLethal Domains\n\nDomains that are expanded to be lethal are constructed within a barrier imbued with the user's cursed technique. The caster's abilities are amplified and any cursed techniques deployed within the domain are guaranteed to hit their target. This sure-hit factor is derived from the barrier's embedded technique, which is what makes this type of domain considered lethal.\n\nSure Hit Effect\n\nWhile inside your domain radius, all of your innate techniques will be affected by a sure hit effect. No matter what your cursed energy attack roll is, it will be considered a hit. Creatures will automatically fail saving throws for your innate technique. This and any other effects of your domain only apply to targets that you choose inside it.\n\nNon-Lethal Domains\n\nIn the past, Domain Expansion was a more common technique because domains weren't constructed to be fatal. They only forced targets inside to obey the rules of the embedded cursed technique. In exchange for lacking a guaranteed hit, a Non-Lethal Domain has one of the following:\n\nPeace Treaty\n\nWhile inside Non-Lethal domains, no kinds of violence or harmful action is allowed while a condition is not completely followed through. After the condition is completed, the domain will end.\n\nAnti-Domain Clash\n\nBecause your domain has a peaceful condition, you cannot open it while another domain expansion is active, however lethal domain expansions cannot be opened as a reaction to your domain opening. You can use your reaction to open your domain against a lethal domain, in which case the clash is different. The domain with more refinement points instantly destroys the other. In the case of two non-lethal domains opening, the one with more refinement points will instantly win.\n\nDomain Refinement\n\nAs with every technique, Domain Expansion gets better with refinement and specialization. A refined domain and a normal domain are very different, while in the second case, most semi-grade 1 or above sorcerers could escape, a refined domain can bring trouble to even special-grade sorcerers.\n\nRefinement Points\n\nThe longer you refine your domain, the more refinement points you have. You start out with 1 refinement point, which defines many things about your domain. Your refinement limit is 1000 refinement points, only the elite of the elite have ever reached said point.\n\nRefinement Benefits\n\nThe more you refine your domain, the more versatile you can make it. Depending on your refinement points, you gain the following:\n\nBenefit\n\nDescription\n\nRefinement\n\nDomain Durability\n\nYour domain will increase in its durability the more refined it is. Your domain hit points are increased by +1 per refinement point you have.\n\n1+\n\nBarrier Resistance\n\nThe stronger the barrier of a domain on the inside, the weaker it is on the outside. You have realized this, and have found ways to get around it. As part of expanding your domain, you can decide if you want to make your barrier have vulnerability on the inside in exchange for it being resistant to all damage on the outside. In addition, you can spend additional 5 cursed energy when expanding your domain to make it perfectly balanced, making both outside and inside have no vulnerabilities or immunities.\n\n100\n\nQuicker Expansion\n\nThrough training, you have learned how to use your domain hand signs with more efficiency. Your domain now costs an action instead of a Full-Turn Action.\n\n200\n\nIncreased Potency\n\nWhile inside your domain, your techniques are at their strongest. While inside your domain, your cursed techniques and domain damage if any have additional dice equal to your Cursed Energy modifier.\n\n300\n\n0.2 Second Expansion\n\nYou have learned how to expand your domain so quickly that almost no one can react to it. As part of opening your domain, you can make it last only until the end of your turn. The cost for this domain expansion is halved, and it cannot be reacted to unless the creature has a higher Dexterity score than your CE score. When opening your domain this way, all creatures are targeted by its effects, too fast to choose.\n\n400\n\nLasting Domain\n\nWith great practice, you have learned how to make your domain last far longer than it normally would. Your domain now lasts for 2 minutes instead of 1.\n\n500\n\nDomain Amplification\n\nYou have learned how to utilize the power of a domain without actively using it. As an action for half as much Cursed Energy your domain requires, you can cover your body to \"wear\" your domain in order to neutralize cursed techniques for 1 minute. Once activated, you automatically negate any defensive technique, offensive technique, or spell that affects you, and you can bypass barriers such as infinity with melee attacks. You will also negate a domain's sure hit effect if you're inside one. In addition, you can not use your Innate Technique unless you dismiss Domain Amplification as a bonus action. Even if you dismiss it, for the minute you can reactivate it as a bonus action without spending the cursed energy again. This technique does not work against techniques on Maximum Output if the user has 51 or more higher refinement than you. If they are within 50 refinement of you, you have resistance to their technique, and if they have 51 or less refinement than you, you are immune to their techniques even if they use Maximum Output.\n\n600\n\nEfficient Expansions\n\nIt is no secret that opening and maintaining a domain is a very complicated job, requiring lots of cursed energy quantity, practice, and refinement. You have refined this with training, reducing your domain expansion cost by your Cursed Energy modifier. In addition, you only gain 1 level of exhaustion after your domain.\n\n700\n\nDurable Barrier\n\nYour domain barrier has become hard and quite unbreakable, making escape or forced entry almost impossible. Your domain will gain immunity to non-magical damage from both sides, however, it will still be resistant to all damages from the inside and vulnerable to all damages from the outside. In addition, your domain's refinement points are doubled when calculating your domain's hit points.\n\n800\n\nCompression\n\nYou have found a method to make your domain take up less space while making it harder to hit from the outside. As a bonus action while on your domain, you can spend 5 cursed energy to compress it, making the outside become a small circle of 5ft. Inside, however, will be the same size. Attack rolls against your domain on the outside are made with disadvantage, while barrierless domains must use this feature to target your domain on the outside. This lasts until the end of the domain.\n\n900\n\nTotal Mastery\n\nYou have reached the pinnacle of Jujutsu, mastering domain expansion. You have mastered your domain hand signs and can expand your domain as a bonus action instead of an action. You can reduce your domain expansion's cost by your proficiency bonus. While inside the domain, techniques that use an action can now be used as a bonus action, and techniques that take a bonus action can be used as a free action. Your domain now lasts for 3 minutes.\n\n1000\n\nIf you have RCT and Domain Refinement of 750 or higher, you gain:\n\nBurnout Recovery. You have realized the complicated issue of Technique Burnout can be solved in a simple fashion. Substitute your brain for a new one! Whilst under the effects of Technique Burnout, you can spend 4 cursed energy as a reaction to regain your Cursed Technique and remove the exhaustion from Burnout. You must succeed on a DC 5 Constitution saving throw. On a success, you remove Burnout without major consequences. On a failure, your eyes and nose start to bleed profusely as you take 8d6 psychic damage and cannot take actions or bonus actions until the start of your next turn. The Constitution saving throw DC increases by 5 for every success, being reduced by 5 for every minute that passes and resets on a long rest.\n\nMethods of Refinement\n\nThere are multiple ways of refining your domain, from training with yourself to clashing with other people's domains. Below is to list of how to gain refinement points:\n\nMethod\n\nDescription\n\nRewards\n\nTraining\n\nProbably the slowest method, but every little progress counts. Once per day, you can spend a number of Cursed Energy up to your Cursed Energy modifier to add to your refinement level. This Cursed Energy can only be regained the next day.\n\nX\n\nDomain Casualties\n\nOne of the quicker methods of refining your domain is to destroy opponents with your cursed techniques while inside it. If you reduce a creature to 0 hit points while it's inside your domain expansion, you will gain refinement points. The refinement points are only gained if the creature's CR was at least half of your level(rounded up).\n\n20/Creature\n\nDomain Superiority\n\nSubjugate another with your own. If you win in a domain clash, you gain refinement points from your domain superiority. You can only benefit from this once per month and not against the same creature.\n\n100 Points\n\nWeak Points\n\nAll kinds of barriers have a weak spot, domain expansions could not be different. You can only deal damage to a domain's hit points once you've found its weak spot unless you're outside the domain.\n\nFrom Inside\n\nBreaking a barrier from the inside is almost impossible, even if you do find the weak point of the barrier you'll still be targeted by the domain's constant effects. To break a domain from the inside, you must find its weak spot first by making a DC 30 Perception check. On a failure, the target cannot find a weak spot. On a success, you will find the domain's weak spot, now being able to target it for your attacks. The barrier has resistance to damage when attacked from inside.\n\nFrom Outside\n\nWhile breaking a barrier from inside is nearly impossible, breaking from the outside is a much easier task. You can normally target the domain with attacks. It automatically fails any saving throws, and is vulnerable to all damage other than psychic.\n\nForming a Weak Spot\n\nSometimes, even though it may seem like a disadvantage, you can forcefully enter a domain expansion by creating a weak spot, generally a hole of some sort. After you have reached at least 1/3rd of the domain's maximum hit points, you can take an action to make a Strength, Charisma, or Wisdom saving throw to forcefully open the domain. On a success, you will form a 10 ft by 10 ft hole in the domain that allows you and any creatures to enter inside the domain while you are concentrating. The moment any creature enters the domain they suffer the effects of the sure-hit.\n\nDomain Clashes\n\nTwo domains expanding at the same time cause a domain clash, a battle solely defined by who has the most refined domain and talent as a sorcerer.\n\nDomain Clash\n\nWhen a creature expands its domain, you can use your reaction to expand your own domain as well. The domain battle will be defined by the one with the most refinement points, being the defining factor in deciding the winner. However, even if you do have refinement points to destroy the opposing domain it will take a number of rounds equal to the amount of refinement points that you have above the opponent's domain. See the table below to see how much rounds it takes:\n\nRefinement Points Above\n\nRounds Needed\n\n10\n\n9\n\n20\n\n8\n\n30\n\n7\n\n40\n\n6\n\n50\n\n5\n\n60\n\n4\n\n70\n\n3\n\n80\n\n2\n\n90\n\n1\n\n100+\n\n0\n\nDuring a domain clash, the sure-hit effect of both domains will be negated. The domain clash creates a 350 foot area, where 175 feet of it will be within one domain's area while the other 175 feet is for the other’s domain. The loser's domain area will shrink by 15 ft per round passed. Once you break the enemy’s domain, your sure-hit effect immediately resumes.\n\nEqual Refinement Clash\n\nAlthough an extremely unlikely scenario. When two Domain Expansions of equal refinement clash, they completely nullify each other, not being able to overpower or be overpowered, so it's up to the two sorcerers to maintain their domain while bringing the opponent's down. As soon as one of the domain casters reach 1/3 (rounded down) of their maximum hit points they need to succeed in a DC 15 roll with no modifiers to maintain concentration on their domain. On a success, the domain is kept stable and they can keep going. On a failure, their domain breaks, giving in to the opponent's, and they suffer the after effects of Burnout from Domain Expansion.\n\nMultiple Domain Clashes\n\nA battle of two domain expansions is already hard to describe, now one of three or more is simply chaotic. When three or more domains are involved, the rules are the same, with the domains with less refinement being destroyed as soon as the necessary rounds pass. The barrier is expanded by 175 ft per domain involved, with the weaker domains getting reduced by 15 feet at the beginning of each round.\n\nBarrierless Domain\n\nYou have refined your domain expansion to new levels, making it become a true work of art. This can only be achieved by experiencing a breakthrough after reaching 1000 refinement points.\n\nDifferent Properties\n\nWhen you expand your domain, you can choose to not set up a barrier and remove the time limit. Your domain expansion radius increases to 655 feet, and it has a center at the middle. Your domain cannot be destroyed unless you receive 1/3rd of your maximum hit points in one instance, in which you must make a Constitution saving throw DC15 + half the damage. On a failure, the domain is destroyed. Your techniques still have a sure hit effect, however due to not having a barrier your domain is much simpler to escape. Also on a domain clash, your domain effects and cursed techniques can target the outside barrier of the other domain directly."
+  },
+  "maximumOutput": {
+    "title": "Cực Phiên & Quá Tải Xuất Lực (Maximum & Reduced Output)",
+    "description": "Khi đạt chỉ số Cursed Energy từ 20 trở lên, Chú thuật sư có thể giải phóng thuật thức với công suất tối đa (Maximum Output). Tuy nhiên, lạm dụng công suất cực hạn sẽ dẫn đến tình trạng suy sụp Chú lực (Reduced Output).",
+    "activation": {
+      "req": "Cursed Energy Score từ 20 trở lên, tiêu hao CE mức tối đa (tối thiểu 5 CE trước giảm trừ).",
+      "cost": "Tiêu tốn thêm 50% lượng CE cơ bản.",
+      "benefits": [
+        "Tăng 50% tầm thi triển (Range) của thuật thức (làm tròn lên bội số 5ft).",
+        "Tăng 50% số lượng xúc xắc sát thương (ví dụ: 10d10 tăng thêm 5d10 thành 15d10).",
+        "Tăng 50% Attack Bonus (+7 thành +11) HOẶC tăng Save DC thêm 1/2 PB.",
+        "Tăng 50% thời gian duy trì hiệu lực của thuật thức.",
+        "Đối với Thức Thần: Tăng 1 size category, gây thêm 1 xúc xắc necrotic damage, tăng 50% HP tối đa, và tăng Attack roll thêm 1/2 PB."
+      ]
+    },
+    "reducedOutputTable": [
+      [
+        "Cấp Độ Quá Tải",
+        "Giảm Xuất Lực",
+        "Hình Phạt Xúc Xắc / Phạm Vi / Giới Hạn"
+      ],
+      [
+        "Level 1",
+        "-1 Output",
+        "Giảm 1 CE trần công suất của các chiêu thức."
+      ],
+      [
+        "Level 2",
+        "-2 Output",
+        "Die Tier (-1): Mọi xúc xắc sát thương bị giảm 1 bậc (d12>d10>d8>d6>d4)."
+      ],
+      [
+        "Level 3",
+        "-3 Output",
+        "8 Max CE: Giới hạn tối đa chỉ được tiêu 8 CE cho một chiêu thức."
+      ],
+      [
+        "Level 4",
+        "-4 Output",
+        "Die Tier (-2): Mọi xúc xắc sát thương bị giảm 2 bậc."
+      ],
+      [
+        "Level 5",
+        "-5 Output",
+        "Area Penalty (75%): Bán kính và tầm xa vùng ảnh hưởng giảm còn 75%."
+      ],
+      [
+        "Level 6",
+        "-6 Output",
+        "6 Max CE & Die Tier (-3): Giới hạn tối đa 6 CE và giảm 3 bậc xúc xắc."
+      ],
+      [
+        "Level 7",
+        "-7 Output",
+        "Duration Reduction (50%): Mọi thời gian hiệu lực giảm 50% (tối thiểu 1 round)."
+      ],
+      [
+        "Level 8",
+        "-8 Output",
+        "Area Penalty (50%): Bán kính và tầm xa giảm còn 50%."
+      ],
+      [
+        "Level 9",
+        "-9 Output",
+        "3 Max CE & Die Tier (-4): Chỉ được dùng tối đa 3 CE, xúc xắc rơi về d4."
+      ]
+    ],
+    "recovery": "Nghỉ ngơi không sử dụng Chú lực trong 1 phút giúp giảm 1 tầng Quá Tải. Tung đòn Hắc Thiểm (Black Flash) lập tức giảm 1 tầng Quá Tải.",
+    "rawEnglish": "Maximum Output\n\nAfter reaching 20 Cursed Energy score, you have learned to use Maximum Output techniques with the highest possible cursed energy channeled into them. When spending the most possible CE (minimum 5 before any reductions), you can spend half the cursed energy cost an additional time to amplify the output of your techniques, using one of the following benefits (rounded up):\n\nThe technique's range is increased by half its original range rounded to the highest 5. For example, a technique with 10 feet of range would become a 15 feet range technique. This does not work with touch based techniques.\n\nOne of the technique's damage roll’s dice is increased by half of its original dice. For example, a technique with 10d10 damage die would add 5d10 die of damage to the total damage dice.\n\nThe technique's attack bonus is increased by half of its original bonus rounded up. For example, a technique with a +7 to hit would add a +4 to hit. DCs increase by half your proficiency bonus.\n\nThe technique's duration increase by half the original duration. Eg. techniques that last 1 minute now last 1 minute + 5 rounds.\n\nAnother value of your technique increases by half its original.\n\nIf using Maximum Output on a shikigami summoning technique (minimum 3 before any reductions), you instead choose one of the following:\n\nIncrease the size category by 1 and the shikigami deals an additional damage dice in necrotic on a hit.\n\nThe shikigami's hit points increase by half its original value.\n\nThe shikigami's attack bonus increases by half your proficiency bonus (rounded up).\n\nReduced Output\n\nIf you use Maximum Output more than once per round, you must make a DC 15 Cursed Energy check or gain a level of Reduced Output. This DC increases by 2 for every level of Reduced Output you have. Trying to use Maximum Output while you have a technique magnified by Maximum Output active also forces this check. The CE cost of Maximum Output increases by 2 CE per level of Reduced Output.\n\nReduced Output. This lowers the CE range of techniques (E.g. up to CE modifier or up to proficiency) by a penalty depending on level of Reduced Output.\n\nMax. At certain levels, you are also limited by the maximum amount of cursed energy you can spend at once. If a technique’s base cost is more than this max, you cannot use it.\n\nDie Tier Penalty. Depending on the value of your Die Tier Penalty, this reduces the tier of any damage dice you use with cursed energy or techniques, to a minimum of d4s\n\n(D12 &gt; D10 &gt; D8 &gt; D6 &gt; D4).\n\nArea Penalty. An Area Penalty reduces the diameter or radius values to 75% or 50% of their original value (rounded down, min 5 ft) as well as the range of any features. E.g. A Barrier cast with 8 levels of Reduced Output that would normally cover 100 ft, only covers 50 ft. A 50 ft blast would only be 25 ft, and so on.\n\nDuration Reduction. This reduces the duration of any cursed energy effects or techniques you use by 50%, to a minimum of 1 round.\n\nReduced Output Table\n\nLevel 1\n\n-1 Output\n\nLevel 2\n\n-2 Output, Die Tier(-1)\n\nLevel 3\n\n-3 Output, 8 Max\n\nLevel 4\n\n-4 Output, Die Tier(-2)\n\nLevel 5\n\n-5 Output, AP(75%)\n\nLevel 6\n\n-6 Output, 6 Max, Die Tier(-3)\n\nLevel 7\n\n-7 Output, DR(50%)\n\nLevel 8\n\n-8 Output, AP(50%)\n\nLevel 9\n\n-9 Output, 3 Max, Die Tier(-4)\n\nRemoving Reduced Output. For overusing Maximum Output, not using Cursed Energy for 1 minute lowers any levels of Reduced Output you have by 1. If a technique has a Reduced Output Effect, it will list when levels of Reduced Output disappear. Upon hitting a Black Flash, you reduce any levels of Reduced Output by 1."
+  },
+  "soulAwareness": {
+    "title": "Nhận Thức Linh Hồn & Sát Thương Linh Hồn (Soul Awareness)",
+    "description": "Linh hồn và thể xác gắn liền với nhau. Nhận thức được hình dạng của linh hồn cho phép Chú thuật sư tấn công trực tiếp vào căn nguyên sinh mệnh đối phương, bỏ qua thể xác và tạo ra vết thương không thể chữa lành bằng RCT thông thường.",
+    "awakeningConditions": [
+      "Vật chứa chung hai linh hồn (Two Souls: Yuji Itadori, Sukuna, Angel/Hana): DC 18 Arcana khi chịu sát thương linh hồn.",
+      "Sở hữu thuật thức bẩm sinh liên quan đến linh hồn (như Vô Tác Chuyển Biến của Mahito).",
+      "Tiếp xúc hoặc chịu đòn sát thương linh hồn (DC 15 + 2*Level Soul Awareness).",
+      "Được truyền dạy từ bậc thầy linh hồn (Spiritual Teaching)."
+    ],
+    "levels": [
+      [
+        "Cấp Độ",
+        "Kỹ Năng Linh Hồn",
+        "Hiệu Quả Chiến Đấu"
+      ],
+      [
+        "Level 1",
+        "Minor Soul Perception",
+        "Mỗi lượt 1 lần, đòn đánh cận chiến được tính là tấn công linh hồn (dùng PB lần/ngày)."
+      ],
+      [
+        "Level 2",
+        "Lesser Soul Guard",
+        "Khi dính sát thương linh hồn, tiêu CE lên đến CE mod để giảm 5 sát thương cho mỗi CE tiêu hao (dùng 2 lần/ngày)."
+      ],
+      [
+        "Level 3",
+        "Medium Soul Perception",
+        "Khi chạm vào mục tiêu, có thể phân biệt màu sắc và phẩm chất linh hồn của họ; nhận diện người quen qua linh hồn."
+      ],
+      [
+        "Level 4",
+        "Soul Harming",
+        "Mỗi lượt 1 lần, tiêu 5 CE để đòn đánh cận chiến bỏ qua mọi Damage Resistances (dùng PB lần/ngày)."
+      ],
+      [
+        "Level 5",
+        "Soul Knowledge",
+        "Có thể lập Ràng Buộc liên quan đến linh hồn bằng bài kiểm tra DC 25 Arcana."
+      ],
+      [
+        "Level 6",
+        "Major Soul Perception",
+        "TOÀN BỘ đòn tấn công tự động nhắm thẳng vào linh hồn. Cho phép dùng RCT hồi phục HP tối đa bị mất."
+      ],
+      [
+        "Level 7",
+        "Soul Anchoring",
+        "+4 bonus vào saving throw chống lại việc bị đoạt xác, thao túng hoặc biến đổi linh hồn (như Mahito)."
+      ],
+      [
+        "Level 8",
+        "Greater Soul Guard",
+        "Khi dính sát thương linh hồn, tiêu CE lên đến CE mod để giảm 10 sát thương cho mỗi CE tiêu hao (dùng 2 lần/ngày)."
+      ],
+      [
+        "Level 9",
+        "Greater Soul Harming",
+        "Tiêu 5 CE để đòn đánh bỏ qua Temp HP, bỏ qua Kháng cự và Miễn nhiễm sát thương của mục tiêu."
+      ],
+      [
+        "Level 10",
+        "Soul Removal",
+        "Khi chết, có thể tự đặt linh hồn mình ra ngoài vòng luân hồi; ngăn chặn mọi thuật thức hồi sinh hoặc giáng linh trái ý muốn."
+      ]
+    ],
+    "objectSoulLevels": [
+      [
+        "Cấp Độ",
+        "Kỹ Năng Linh Hồn Đồ Vật",
+        "Hiệu Quả Chiến Đấu (Maki / Toji)"
+      ],
+      [
+        "Level 1",
+        "Object Soul Perception",
+        "Khi tấn công công trình hoặc vật thể, đòn đánh bỏ qua Damage Threshold và Damage Reduction."
+      ],
+      [
+        "Level 2",
+        "Soul Shatter",
+        "Đòn đánh gây sát thương tối đa lên vật thể/công trình và coi AC của chúng thấp hơn 5 điểm."
+      ],
+      [
+        "Level 3",
+        "Greater Object Soul Perception",
+        "Bỏ qua các thuật thức cường hoá độ bền vật thể và nhận giác quan mù (Blindsight) 30ft."
+      ]
+    ],
+    "soulDamageRules": "Sát thương Linh Hồn (Soul Damage) trừ trực tiếp vào Max HP Reduction. RCT (Phản Chuyển) và Tái Sinh thông thường KHÔNG THỂ hồi phục sát thương linh hồn trừ khi người chữa trị có Soul Awareness từ Cấp 6 trở lên. Chi thể bị đứt do Soul Damage không thể mọc lại.",
+    "reincarnatedRules": {
+      "title": "Quy Tắc Chuyển Sinh & Đấu Tranh Linh Hồn (Reincarnated & Soul Contest)",
+      "description": "Các Chú thuật sư cổ đại (từ thời Heian hoặc Edo) phong ấn bản thân thành Chú Vật (Cursed Object) theo khế ước với Kenjaku để tái sinh vào thời hiện đại.",
+      "rules": [
+        {
+          "name": "Đấu Tranh Linh Hồn (Soul Contest)",
+          "desc": "Khi một người sống nuốt hoặc tiếp xúc sâu với Chú vật cổ đại, diễn ra cuộc đấu trí linh hồn: Vật chứa phải đổ Wisdom/CHA Save đối kháng với DC của Chú vật. Nếu thất bại, linh hồn cổ đại chiếm quyền kiểm soát thể xác hoàn toàn. Nếu thành công, vật chứa trở thành trường hợp hiếm hoi chế ngự được Chú vật (như Yuji Itadori)."
+        },
+        {
+          "name": "Ưu Thế Giác Ngộ Cổ Đại",
+          "desc": "Chú thuật sư chuyển sinh tự động nhận Soul Awareness Cấp 4 trở lên, hiểu rõ ranh giới linh hồn do từng trải qua quá trình tách - nhập thể xác, đồng thời giữ nguyên kinh nghiệm sử dụng Chú lực đỉnh cao từ thời kỳ hoàng kim."
+        }
+      ]
+    },
+    "rawEnglish": "The Zone\n\nAfter a jujutsu sorcerer successfully fully focuses themselves, they temporarily enter a heightened state known as \"The Zone\". In this state, manipulation of cursed energy becomes as natural as breathing to them.\n\nAfter achieving a breakthrough, you gain the Zone condition, giving you the following benefits for 1 minute (these benefits stack every black flash):\n\nAdvantage on attack rolls\n\n+1 Critical Range\n\n+1 Black Flash Range\n\nRecover Technique Burnout\n\nRecover Reverse Cursed Energy Pool\n\nLowers Reduced Output by 1 level\n\nRules of Thumb\n\nWhen exploring the world of Jujutsu Kaisen, it can be hard for the GM to remember most of the rules of this setting. Here are some rules of thumb to remember.\n\nGrading System\n\nGrade refers to the system that ranks jujutsu from grades one to four, and special grade. It is used to categorize the strength of jujutsu sorcerers, cursed spirits, cursed objects, and cursed tools. For sorcerers, the grading system not only determines their strength but also their value as sorcerers. The higher your Grade the harder the missions, but the rewards will also be greater. Curses are graded by the threat they pose to society, but Sorcerers are graded by their ability to exorcise curses. To increase your grade to Second or First grade, you must be recommended by two First Grades (Teachers cannot recommend their students). You are considered Semi First depending on your performance. You must then complete 3 missions with a First Grade Sorcerer. Upon satisfactory completion, you increase your grade.\n\nGrade\n\nDescription\n\nApprox CR Range\n\nBenchmark\n\nGrade 4\n\nLowest rank; weak sorcerers or spirits\n\nCR 1/8 – 1/2\n\nA wooden bat is enough\n\nGrade 3\n\nBasic sorcerers; competent against weak curses\n\nCR 1 – 3\n\nIf you have a handgun, you can rest easy\n\nGrade 2\n\nSkilled sorcerers with good techniques and combat sense\n\nCR 4 – 7\n\nClose call with a shotgun\n\nGrade 1\n\nVeteran sorcerers capable of handling powerful curses\n\nCR 8 – 16\n\nEven a tank might be insufficient\n\nSpecial Grade\n\nTop-tier sorcerers or curses; massive destructive power\n\nCR 17+\n\nCluster bombs might work\n\nCursed Tools\n\nAs with sorcerers and cursed spirits, cursed tools are categorized from Grade One to Four based on their power and potency. The higher the grade, the greater the advantage granted to the user in a jujutsu battle.\n\nGrade\n\nItem Rarity\n\nDescription / Power Level\n\nTypical Price Range\n\nGrade 4\n\nCommon\n\nSimple or weak cursed implements; minor enhancements or utility.\n\n$1,000 – $5,000\n\nGrade 3\n\nUncommon\n\nReliable tools with notable cursed energy; useful in combat.\n\n$5,000 – $50,000\n\nGrade 2\n\nRare\n\nStrong, well-crafted weapons imbued with potent cursed energy.\n\n$50,000 – $150,00\n\nGrade 1\n\nVery Rare\n\nElite-grade weapons used by top sorcerers; highly specialized powers.\n\n$150,000 – $1,000,000\n\nSpecial Grade\n\nLegendary\n\nUnique, immensely powerful artifacts; often one-of-a-kind and tied to history or great sorcerer.\n\n$3,000,000+\n\nCursed Techniques\n\nCursed Techniques are abilities fueled by cursed energy. If cursed energy is comparable to electricity, cursed techniques are the appliances that use that power to function. Different types include Innate Techniques, Barrier Techniques, Shikigami, and more.\n\nInnate Techniques. Innate Techniques are unique abilities congenitally engraved into the user's body from birth and will show signs at around 5-6 years old. When an individual refers to their own personal cursed technique, they are generally talking about their innate technique. All Innate Techniques are Cursed Techniques, but not all Cursed Techniques are Innate Techniques. For example, Technique Burnout causes the Innate Technique to be unusable immediately after a Domain Expansion. During this time, you cannot use Innate Technique features or Feats. However, you are still able to use features that use cursed energy outside of your Innate Technique, like Cursed Energy and Barrier feats.\n\nInherited Techniques. Inherited Techniques are Innate Techniques passed down to sorcerers in the same bloodline. While sorcerers who don't come from prominent clans can inherit innate techniques, e.g. Straw Doll Technique, those obtained hereditarily from the ancestors of the Big Three Families especially carry the title of inherited technique, e.g. Limitless. The Big Three Families have maintained their authority and prestige by passing down powerful techniques to their descendants. Therefore, a sorcerer with an inherited technique is guaranteed an important position in the family.\n\nInherited Technique users have the advantage of being equipped with a manual on how to use them. However, passing down a technique through generations also presents the issue of other groups learning how the ability works, along with its shortcomings.\n\nCombat. Any ability that enhances your attacks should cause those attacks to count as magical for the purposes of damaging cursed spirits/shikigami or overcoming resistances. Features will have action costs and prerequisites to follow in order to use the technique. Such as Cursed Speech requiring hearing, Ice Fall requiring you to fall prone, or Dowsing Vibrations requiring both feet on the ground. Without these, you cannot activate your technique. Techniques using a range e.g. up to CE modifier or proficiency, require at least 1 CE.\n\nTechnique Burnout\n\nThe Innate Technique is carved into the brain naturally and channels cursed energy into specific effects like an appliance using electricity. However, if too much cursed energy is used, the techniqu"
+  },
+  "combatAndLimbDamage": {
+    "title": "Bảng Đứt Chi & Thực Chiến Chú Thuật (Combat & Limb Damage)",
+    "limbDamageTable": [
+      [
+        "1d6 Roll",
+        "Bộ Phận Cơ Thể",
+        "Ngưỡng Sát Thương",
+        "Gãy Chi (Broken Limb)",
+        "Đứt Lìa Chi (Lost Limb)"
+      ],
+      [
+        "1",
+        "Chân Phải (Right Leg)",
+        "Con mod x Level",
+        "Tốc độ di chuyển giảm 1/2, không thể nhảy.",
+        "Mất chân phải: Tốc độ giảm 1/2, cần nạng/bò."
+      ],
+      [
+        "2",
+        "Chân Trái (Left Leg)",
+        "Con mod x Level",
+        "Tốc độ di chuyển giảm 1/2, không thể nhảy.",
+        "Mất chân trái: Tốc độ giảm 1/2, cần nạng/bò."
+      ],
+      [
+        "3",
+        "Tay Phải (Right Arm)",
+        "Con mod x Level",
+        "Disadvantage trên đòn đánh và skill.",
+        "Mất tay phải: Không thể cầm nắm hoặc đánh."
+      ],
+      [
+        "4",
+        "Tay Trái (Left Arm)",
+        "Con mod x Level",
+        "Disadvantage trên đòn đánh và skill.",
+        "Mất tay trái: Không thể cầm nắm hoặc đánh."
+      ],
+      [
+        "5",
+        "Thân Mình (Torso)",
+        "Con mod x (Level x 2)",
+        "Max HP bị giảm đi một nửa.",
+        "TỬ VONG ngay lập tức (trừ khi có thể sống không cần thân)."
+      ],
+      [
+        "6",
+        "Đầu (Head)",
+        "Con mod x (Level x 2)",
+        "Bất tỉnh nhân sự (Unconscious condition).",
+        "TỬ VONG ngay lập tức (bị chém đứt đầu)."
+      ]
+    ],
+    "curseNature": [
+      {
+        "trait": "Tàng Hình (Invisibility)",
+        "desc": "Cơ thể hoàn toàn tạo từ Chú lực siêu hình; người thường không thể nhìn thấy chú linh trừ khi rơi vào tình huống thập tử nhất sinh phát tiết cảm xúc cực độ."
+      },
+      {
+        "trait": "Kháng Phi Ma Pháp (Metaphysicality)",
+        "desc": "Miễn nhiễm hoàn toàn với mọi sát thương vật lý không bọc Chú lực. Đòn đánh không vũ trang của Chú thuật sư được tính là đòn đánh ma pháp."
+      },
+      {
+        "trait": "Điểm Yếu Năng Lượng Dương (RCT Weakness)",
+        "desc": "Chú linh kỵ năng lượng dương (sát thương Radiant). Không thể dùng RCT để chữa lành. Chú linh Cấp 3 trở xuống chịu Dễ tổn thương (Vulnerability) trước sát thương Radiant."
+      },
+      {
+        "trait": "Xuyên Tường (Permeability)",
+        "desc": "Chú linh Cấp 3 trở xuống có mật độ chú lực loãng nên có thể di chuyển xuyên qua sinh vật và vật thể như địa hình khó khăn (chịu 1d10 force nếu kết thúc lượt trong vật thể)."
+      }
+    ],
+    "shikigamiNature": [
+      {
+        "trait": "Bản Chất Thức Thần",
+        "desc": "Được triệu hồi qua vật trung gian; tàng hình với người thường và kháng sát thương phi ma pháp nhưng KHÔNG có điểm yếu năng lượng dương của Chú linh."
+      },
+      {
+        "trait": "Action Economy",
+        "desc": "Điều khiển bằng Free Action, thu hồi bằng Bonus Action. Chỉ có thể ra lệnh 1 lần mỗi lượt vì thức thần có action economy riêng."
+      }
+    ],
+    "heavenlyRestriction": [
+      {
+        "trait": "0 Chú Lực (Zero CE)",
+        "desc": "Hoàn toàn không có chú lực, không thể cảm nhận hoặc thi triển thuật thức dưới mọi hình thức."
+      },
+      {
+        "trait": "Nhìn Chú Linh",
+        "desc": "Không nhìn thấy chú linh bằng mắt thường nếu không đeo Chú cụ (Kính chú cụ Cấp 4). Có thể dùng Perception DC (18 - CR) để định vị qua giác quan cơ thể nhưng vẫn bị tính là đối thủ vô hình."
+      },
+      {
+        "trait": "Chiến Đấu",
+        "desc": "Bắt buộc phải dùng Chú Cụ (Cursed Tools) mới có thể gây sát thương lên Chú linh và Thức thần."
+      }
+    ],
+    "fallDamageTable": [
+      [
+        "Kích Cỡ (Size)",
+        "Sát Thương Ngã Mỗi 10ft (Tối đa 200ft)"
+      ],
+      [
+        "Tiny",
+        "1"
+      ],
+      [
+        "Small",
+        "1d4"
+      ],
+      [
+        "Medium",
+        "1d6"
+      ],
+      [
+        "Large",
+        "1d8"
+      ],
+      [
+        "Huge",
+        "1d10"
+      ],
+      [
+        "Gargantuan",
+        "1d12"
+      ]
+    ],
+    "conditions": [
+      {
+        "name": "Berserk (Cuồng Nộ / Mất Trí)",
+        "source": "Thức thần chưa thuần phục (Ten Shadows Trial), Cuồng hoá chú linh",
+        "effect": "Sinh vật mất hoàn toàn nhận thức phân biệt bạn thù, bắt buộc phải di chuyển và tấn công sinh vật gần nhất trong tầm mắt bằng toàn bộ năng lực sẵn có."
+      },
+      {
+        "name": "Technique Burnout (Cháy Thuật Thức)",
+        "source": "Hậu quả sau khi kết thúc Bành Trướng Lãnh Địa",
+        "effect": "Không thể sử dụng bất kỳ chiêu thức hay Feat nào thuộc Thuật Thức Bẩm Sinh; chịu 2 cấp Exhaustion trong 1 phút hoặc đến khi tung Hắc Thiểm."
+      },
+      {
+        "name": "The Zone (Trạng Thái 120% Tiềm Năng)",
+        "source": "Thức tỉnh sau khi tung Hắc Thiểm (Black Flash)",
+        "effect": "Advantage tấn công, +1 Crit Range, +1 Black Flash Range, xoá Burnout, hồi đầy Bể Máu RCT, giảm 1 tầng Reduced Output (kéo dài 1 phút, cộng dồn)."
+      },
+      {
+        "name": "Reduced Output (Quá Tải Giảm Xuất Lực)",
+        "source": "Lạm dụng Xuất Lực Cực Đại (Maximum Output)",
+        "effect": "Chịu các hình phạt từ Level 1 đến 9: Giảm bậc xúc xắc sát thương (d12>d10>d8>d6>d4), giảm 50%-75% bán kính vùng ảnh hưởng, giới hạn trần CE."
+      },
+      {
+        "name": "Broken Limb (Gãy Chi Thể)",
+        "source": "Sát thương vượt ngưỡng Con mod * Level theo Bảng Đứt Chi",
+        "effect": "Chân: Giảm 1/2 tốc độ di chuyển, không thể nhảy. Tay: Chịu Disadvantage trên toàn bộ đòn tấn công và bài kiểm tra kỹ năng sử dụng tay đó."
+      },
+      {
+        "name": "Lost Limb (Đứt Lìa Chi Thể)",
+        "source": "Sát thương gấp đôi ngưỡng theo Bảng Đứt Chi",
+        "effect": "Mất vĩnh viễn chi thể. Không thể cầm nắm hoặc di chuyển bình thường. Đòi hỏi RCT (Phản Chuyển) tiêu hao 20 HP trong bể máu để mọc lại."
+      },
+      {
+        "name": "Soul Damaged (Tổn Thương Linh Hồn)",
+        "source": "Soul Split Katana, Vô Tác Chuyển Biến (Mahito), Đòn đánh nhắm vào linh hồn",
+        "effect": "Trừ thẳng vào Max HP Reduction. RCT và khả năng hồi phục thông thường HOÀN TOÀN VÔ HIỆU (đòi hỏi người trị liệu có Soul Awareness Cấp 6+)."
+      },
+      {
+        "name": "Cursed Invisibility (Vô Hình Chú Thuật)",
+        "source": "Bản chất siêu hình của Chú Linh & Thức Thần",
+        "effect": "Tự động sở hữu trạng thái Vô Hình (Invisible) trước bất kỳ ai không có Chú lực hoặc không đeo kính Chú Cụ."
+      }
+    ],
+    "rawEnglish": "Limb Damage Table\n\nOnly specific features with limb removing effects use this table. Removing limbs requires double the required damage.\n\nRoll\n\nBody Part\n\nRequired Damage\n\nBroken Limb\n\nLost Limb\n\n1\n\nRight Leg\n\nCon mod*Level\n\nYour movement is halved and you can’t jump.\n\nYou lose your right leg.\n\n2\n\nLeft Leg\n\nCon mod*Level\n\nYour movement is halved and you can’t jump.\n\nYou lose your left leg.\n\n3\n\nRight Arm\n\nCon mod*Level\n\nSkill checks and attack rolls using this arm have disadvantage.\n\nSkill checks and attack rolls with this arm are impossible.\n\n4\n\nLeft Arm\n\nCon mod*Level\n\nSkill checks and attack rolls using this arm have disadvantage.\n\nSkill checks and attack rolls with this arm are impossible.\n\n5\n\nTorso\n\nCon mod*(Level*2)\n\nMax HP is halved.\n\nThe target dies unless it can live without a torso.\n\n6\n\nHead\n\nCon mod*(Level*2)\n\nThe target is unconscious.\n\nThe target dies unless it can live without a head."
+  },
+  "gradingAndDMRules": {
+    "title": "Hệ Thống Phân Cấp & Quy Tắc Tuỳ Chọn DM (Grading & DM Rules)",
+    "gradingTable": [
+      [
+        "Cấp Bậc (Grade)",
+        "Mô Tả & Đối Tượng",
+        "Khoảng CR",
+        "Thước Đo Chuẩn (Benchmark)"
+      ],
+      [
+        "Cấp 4 (Grade 4)",
+        "Cấp bậc thấp nhất; chú thuật sư sơ cấp hoặc chú linh yếu ớt.",
+        "CR 1/8 – 1/2",
+        "Cầm gậy bóng chày bằng gỗ là giải quyết xong."
+      ],
+      [
+        "Grade 3 (Cấp 3)",
+        "Chú thuật sư cơ bản; xử lý thành thạo các lời nguyền phổ thông.",
+        "CR 1 – 3",
+        "Có một khẩu súng ngắn trong tay là có thể yên tâm."
+      ],
+      [
+        "Grade 2 (Cấp 2)",
+        "Chú thuật sư tinh anh; kỹ năng chiến đấu và thuật thức vững vàng.",
+        "CR 4 – 7",
+        "Ngàn cân treo sợi tóc ngay cả khi có súng shotgun."
+      ],
+      [
+        "Grade 1 (Cấp 1)",
+        "Trụ cột chiến đấu; kỳ cựu xử lý các thảm hoạ lời nguyền nguy hiểm.",
+        "CR 8 – 16",
+        "Ngay cả một chiếc xe tăng bọc thép cũng hoàn toàn bất lực."
+      ],
+      [
+        "Đặc Cấp (Special Grade)",
+        "Đỉnh cao tuyệt đối; sức tàn phá huỷ diệt trên quy mô quốc gia.",
+        "CR 17+",
+        "Rải thảm bom chùm may ra mới mong tiêu diệt được."
+      ]
+    ],
+    "cursedToolPricing": [
+      [
+        "Phân Cấp Chú Cụ",
+        "Độ Hiếm",
+        "Mô Tả & Uy Lực",
+        "Khung Giá Tham Khảo"
+      ],
+      [
+        "Cấp 4 (Grade 4)",
+        "Common",
+        "Chú cụ cơ bản, tiện ích sinh hoạt hoặc hỗ trợ nhẹ.",
+        "$1,000 – $5,000"
+      ],
+      [
+        "Cấp 3 (Grade 3)",
+        "Uncommon",
+        "Chú cụ đáng tin cậy tích tụ chú lực tốt, hữu dụng thực chiến.",
+        "$5,000 – $50,000"
+      ],
+      [
+        "Cấp 2 (Grade 2)",
+        "Rare",
+        "Vũ khí chế tác tinh xảo chứa chú lực mạnh mẽ.",
+        "$50,000 – $150,000"
+      ],
+      [
+        "Cấp 1 (Grade 1)",
+        "Very Rare",
+        "Vũ khí siêu hạng của các Chú thuật sư Cấp 1; quyền năng chuyên sâu.",
+        "$150,000 – $1,000,000"
+      ],
+      [
+        "Đặc Cấp (Special Grade)",
+        "Legendary",
+        "Thần khí độc nhất vô nhị gắn liền với lịch sử Chú thuật thế giới.",
+        "$3,000,000+"
+      ]
+    ],
+    "dmOptionalRules": [
+      {
+        "name": "Crunchy Crits",
+        "desc": "Khi roll sát thương Critical Hit, thay vì nhân đôi số xúc xắc thì đổ xúc xắc bình thường và nhân đôi TOÀN BỘ kết quả (bao gồm cả chỉ số cộng phẳng flat modifier)."
+      },
+      {
+        "name": "Critical Saves",
+        "desc": "Đổ Nat 1 khi Saving Throw trước hiệu ứng sát thương sẽ nhận sát thương Crit. Ngược lại đổ Nat 20 sẽ hoàn toàn không chịu sát thương."
+      },
+      {
+        "name": "Clash (Đỡ Đòn & Phản Đòn)",
+        "desc": "Dùng Reaction thực hiện roll sát thương vũ khí cận chiến để trừ thẳng vào sát thương nhận vào. Nếu triệt tiêu hết sát thương, kẻ địch trong tầm phải chịu sát thương còn dư (PB lần/Long Rest)."
+      },
+      {
+        "name": "Calling Shots (Nhắm Bắn Điểm Yếu)",
+        "desc": "Chịu phạt -5 Attack Roll để nhắm vào bộ phận cụ thể. Nếu sát thương vượt quá Hit Die + CON mod của mục tiêu, gây tàn phế chi theo Bảng Đứt Chi."
+      },
+      {
+        "name": "Fight for your Life",
+        "desc": "Khi đổ Death Saving Throw, có thể nhận Advantage nhưng phải chịu 1 cấp Exhaustion (tối đa 5 cấp)."
+      },
+      {
+        "name": "Cursed Upon Death (Biến Thành Oán Linh Khi Chết)",
+        "desc": "Nếu một Chú thuật sư loài người bị giết mà KHÔNG sử dụng Chú lực, sau 1 tuần họ sẽ hồi sinh thành Oán Linh (Vengeful Spirit), STR/DEX/CON/CE +2, tâm trí giảm 4, nhận 1 level Indefinite Madness (DC 25 Wis save mỗi tuần để hồi phục)."
+      },
+      {
+        "name": "Phần Thưởng Nhiệm Vụ",
+        "desc": "Cấp 4: $500–2,000 | Cấp 3: $3,000–10,000 | Cấp 2: $10,000–25,000 | Cấp 1: $100,000–500,000 | Đặc cấp: $1,000,000+."
+      }
+    ],
+    "promotionSystem": {
+      "title": "Quy Trình Thăng Cấp Chú Thuật Sư (Promotion System)",
+      "steps": [
+        {
+          "stage": "Bước 1: Đề Cử (Recommendation)",
+          "rule": "Cần tối thiểu 2 Chú thuật sư Cấp 1 (hoặc Đặc cấp) đề cử. Giáo viên chủ nhiệm trực tiếp KHÔNG ĐƯỢC đề cử học trò của mình để đảm bảo tính khách quan."
+        },
+        {
+          "stage": "Bước 2: Giám Sát & Thăng Bán Cấp 1 (Semi-Grade 1)",
+          "rule": "Ứng viên được cử đi làm các nhiệm vụ thực địa Cấp 1 cùng một Chú thuật sư Cấp 1 dày dạn kinh nghiệm để đánh giá thực chiến. Nếu được phê duyệt, ứng viên được thăng lên Bán Cấp 1 (Semi-Grade 1)."
+        },
+        {
+          "stage": "Bước 3: Nhiệm Vụ Độc Lập (Solo Grade 1 Mission)",
+          "rule": "Ứng viên phải độc lập hoàn thành 1 nhiệm vụ tiêu diệt Chú linh Cấp 1 mà không có sự trợ giúp. Hoàn thành xuất sắc sẽ chính thức nhận danh hiệu Chú Thuật Sư Cấp 1."
+        },
+        {
+          "stage": "Ngoại Lệ: Đặc Cấp (Special Grade)",
+          "rule": "Không tuân theo bất kỳ quy trình thăng cấp hành chính nào. Danh hiệu Đặc Cấp do Cao Tầng chỉ định riêng cho các dị biệt sở hữu sức mạnh hủy diệt quy mô quốc gia (như Satoru Gojo, Suguru Geto, Yuta Okkotsu, Yuki Tsukumo)."
+        }
+      ]
+    },
+    "missionPayouts": [
+      {
+        "grade": "Cấp 4 (Grade 4)",
+        "payout": "$500 – $2,000",
+        "notes": "Nhiệm vụ tuần tra, dọn dẹp chú linh sơ cấp tại khu dân cư."
+      },
+      {
+        "grade": "Cấp 3 (Grade 3)",
+        "payout": "$3,000 – $10,000",
+        "notes": "Xử lý chú linh cấp thấp tại trường học, bệnh viện bỏ hoang."
+      },
+      {
+        "grade": "Cấp 2 / Bán Cấp 1",
+        "payout": "$10,000 – $25,000",
+        "notes": "Thanh trừng chú linh nguy hiểm có trí khôn hoặc thu hồi chú cụ thất lạc."
+      },
+      {
+        "grade": "Cấp 1 (Grade 1)",
+        "payout": "$100,000 – $500,000",
+        "notes": "Ứng phó thảm họa khẩn cấp, chú linh có thuật thức hoặc nguyền sư đào tẩu."
+      },
+      {
+        "grade": "Đặc Cấp (Special Grade)",
+        "payout": "$1,000,000+",
+        "notes": "Nhiệm vụ sinh tử bảo vệ an nguy quốc gia hoặc giải trừ chú vật phong ấn tối mật."
+      }
+    ],
+    "cursedSpiritsAndShikigami": {
+      "title": "Thực Thể Chú Thuật: Chú Linh & Thức Thần (Cursed Spirits & Shikigami)",
+      "cursedSpirits": {
+        "title": "Chú Linh (Cursed Spirits / Jurei)",
+        "kanji": "呪霊",
+        "origin": "Sinh ra từ sự tích tụ cảm xúc tiêu cực (sợ hãi, căm thù, oán giận) rò rỉ từ người thường không biết kiểm soát dòng chảy Chú lực.",
+        "rules": [
+          {
+            "name": "Cấu Tạo Thuần Chú Lực",
+            "desc": "Cơ thể chú linh không có thịt xương sinh học thông thường. Chúng miễn nhiễm hoàn toàn với các vết thương phàm tục (vũ khí không bọc Chú lực không thể diệt trừ hoàn toàn Chú linh)."
+          },
+          {
+            "name": "Hồi Máu Bằng Chú Lực Thường",
+            "desc": "Chú linh có thể tự vá lành vết thương và mọc lại chi thể đơn giản bằng cách tiêu hao Chú lực cơ bản (không cần học RCT)."
+          },
+          {
+            "name": "Độc Tố Của Phản Chuyển (RCT Vulnerability)",
+            "desc": "Năng lượng dương từ Thuật Thức RCT (Phản Chuyển) mang tính hủy diệt đối với Chú linh. Đòn đánh truyền RCT vào Chú linh gây sát thương cực lớn và phá hủy cấu trúc bản thể của chúng."
+          }
+        ]
+      },
+      "shikigami": {
+        "title": "Thức Thần (Shikigami)",
+        "kanji": "式神",
+        "origin": "Thực thể chiến đấu được Chú thuật sư triệu hồi và duy trì bằng Chú lực của bản thân thông qua vật trung gian.",
+        "rules": [
+          {
+            "name": "Vật Trung Gian (Mediums)",
+            "desc": "Cần phương tiện để triệu hồi: Bùa chú (Talismans), Bóng tối (Thập Chủng Ảnh Pháp Thuật), hoặc tóc/máu/chú cụ."
+          },
+          {
+            "name": "Cơ Chế Hành Động",
+            "desc": "Thức thần có thể hành động cùng lượt với chủ nhân. Ra lệnh cho Thức thần tấn công hoặc dùng kỹ năng tiêu tốn Bonus Action hoặc Action của người điều khiển."
+          },
+          {
+            "name": "Tập Trung & Tan Biến",
+            "desc": "Khi Chú thuật sư bị rơi vào trạng thái Unconscious hoặc cạn kiệt Chú lực, toàn bộ Thức thần lập tức tan biến. Thức thần bị phá hủy có thể triệu hồi lại sau Long Rest (riêng Thập Chủng Ảnh nếu Thức thần chết sẽ truyền thừa vĩnh viễn sang Thức thần khác)."
+          }
+        ]
+      }
+    },
+    "actionEconomy": {
+      "title": "Hệ Thống Hành Động Trong Lượt (Action Economy)",
+      "description": "Trong một vòng chiến đấu (round dài 6 giây), mỗi nhân vật có thể thực hiện:",
+      "components": [
+        {
+          "type": "Movement",
+          "desc": "Di chuyển tối đa bằng Tốc độ (Speed). Có thể chia nhỏ di chuyển trước và sau Action hoặc Bonus Action."
+        },
+        {
+          "type": "1 Action",
+          "desc": "Tấn công, Vận chú thuật, Dash, Dodge, Sử dụng chú cụ, Disengage."
+        },
+        {
+          "type": "1 Bonus Action",
+          "desc": "Kích hoạt chú lực bổ trợ, niệm thuật thức nhanh, ra lệnh Thức thần, hoặc các đòn thế phụ trợ của class."
+        },
+        {
+          "type": "1 Reaction",
+          "desc": "Dùng ngoài lượt của mình để phản ứng lại tác động: Đỡ đòn (Clash), Che chắn (Shield), Phản kích Opportunity Attack."
+        },
+        {
+          "type": "Full-Turn Action",
+          "desc": "Tiêu tốn TOÀN BỘ Movement, Action và Bonus Action trong lượt để tung các đại chiêu đòi hỏi tập trung tối đa (Bành Trướng Lãnh Địa, Giáng Linh Thuật, Coup de Grace)."
+        }
+      ]
+    },
+    "combatActions": [
+      {
+        "name": "Vận Chú Lực (Imbue / Channel CE)",
+        "type": "Bonus Action / Free",
+        "desc": "Truyền chú lực vào nắm đấm, vũ khí hoặc cơ thể để tăng sát thương hoặc phòng thủ."
+      },
+      {
+        "name": "Đỡ Đòn & Phản Đòn (Clash)",
+        "type": "Reaction",
+        "desc": "Khi bị tấn công cận chiến, dùng vũ khí roll sát thương để khấu trừ trực tiếp vào sát thương nhận vào. Nếu triệt tiêu hoàn toàn, gây sát thương thừa ngược lại kẻ địch."
+      },
+      {
+        "name": "Nhắm Điểm Yếu (Calling Shots)",
+        "type": "Action / Attack",
+        "desc": "Chịu phạt -5 Attack Roll để nhắm vào bộ phận hiểm yếu (Đầu, Cánh tay, Chân). Nếu sát thương vượt ngưỡng, kích hoạt Bảng Đứt Chi."
+      },
+      {
+        "name": "Dodge (Né Tránh)",
+        "type": "Action",
+        "desc": "Mọi đòn tấn công nhắm vào bạn bị Disadvantage, bạn nhận Advantage khi đổ Dexterity save cho đến đầu lượt tiếp theo."
+      },
+      {
+        "name": "Disengage (Rút Lui)",
+        "type": "Action",
+        "desc": "Di chuyển không kích hoạt Opportunity Attack của kẻ thù."
+      },
+      {
+        "name": "Ready Action",
+        "type": "Action",
+        "desc": "Chờ đợi điều kiện kích hoạt cụ thể để tung hành động bằng Reaction trước lượt tiếp theo."
+      }
+    ],
+    "fallingRules": {
+      "title": "Quy Tắc Rơi Tự Do & Va Chạm (Falling & Collisions)",
+      "speed": "500 ft / round",
+      "maxDistance": "200 ft (sát thương tối đa)",
+      "condition": "Rơi từ trên cao xuống sẽ bị trạng thái Prone trừ khi triệt tiêu hoàn toàn sát thương rơi.",
+      "damageTable": [
+        [
+          "Kích Cỡ Sinh Vật",
+          "Sát Thương / 10 ft Rơi",
+          "Tối Đa (200 ft)"
+        ],
+        [
+          "Tiny (Tí hon)",
+          "1 sát thương phẳng",
+          "20 sát thương"
+        ],
+        [
+          "Small (Nhỏ)",
+          "1d4 Bludgeoning",
+          "20d4 (TB 50)"
+        ],
+        [
+          "Medium (Trung bình - Người)",
+          "1d6 Bludgeoning",
+          "20d6 (TB 70)"
+        ],
+        [
+          "Large (Lớn)",
+          "1d8 Bludgeoning",
+          "20d8 (TB 90)"
+        ],
+        [
+          "Huge (Khổng lồ)",
+          "1d10 Bludgeoning",
+          "20d10 (TB 110)"
+        ],
+        [
+          "Gargantuan (Siêu khổng lồ)",
+          "1d12 Bludgeoning",
+          "20d12 (TB 130)"
+        ]
+      ],
+      "collisionRule": "Khi một sinh vật hoặc vật thể rơi đè lên một sinh vật khác: Sinh vật bị đè phải đổ DC 15 DEX Save. DC tăng thêm +2 cho mỗi bậc kích cỡ mà vật rơi lớn hơn mục tiêu. Nếu thất bại, sát thương rơi được chia đôi cho cả 2 bên và cả hai cùng bị Prone."
+    },
+    "rawEnglish": "Rules of Thumb\n\nWhen exploring the world of Jujutsu Kaisen, it can be hard for the GM to remember most of the rules of this setting. Here are some rules of thumb to remember.\n\nGrading System\n\nGrade refers to the system that ranks jujutsu from grades one to four, and special grade. It is used to categorize the strength of jujutsu sorcerers, cursed spirits, cursed objects, and cursed tools. For sorcerers, the grading system not only determines their strength but also their value as sorcerers. The higher your Grade the harder the missions, but the rewards will also be greater. Curses are graded by the threat they pose to society, but Sorcerers are graded by their ability to exorcise curses. To increase your grade to Second or First grade, you must be recommended by two First Grades (Teachers cannot recommend their students). You are considered Semi First depending on your performance. You must then complete 3 missions with a First Grade Sorcerer. Upon satisfactory completion, you increase your grade.\n\nGrade\n\nDescription\n\nApprox CR Range\n\nBenchmark\n\nGrade 4\n\nLowest rank; weak sorcerers or spirits\n\nCR 1/8 – 1/2\n\nA wooden bat is enough\n\nGrade 3\n\nBasic sorcerers; competent against weak curses\n\nCR 1 – 3\n\nIf you have a handgun, you can rest easy\n\nGrade 2\n\nSkilled sorcerers with good techniques and combat sense\n\nCR 4 – 7\n\nClose call with a shotgun\n\nGrade 1\n\nVeteran sorcerers capable of handling powerful curses\n\nCR 8 – 16\n\nEven a tank might be insufficient\n\nSpecial Grade\n\nTop-tier sorcerers or curses; massive destructive power\n\nCR 17+\n\nCluster bombs might work\n\nCursed Tools\n\nAs with sorcerers and cursed spirits, cursed tools are categorized from Grade One to Four based on their power and potency. The higher the grade, the greater the advantage granted to the user in a jujutsu battle.\n\nGrade\n\nItem Rarity\n\nDescription / Power Level\n\nTypical Price Range\n\nGrade 4\n\nCommon\n\nSimple or weak cursed implements; minor enhancements or utility.\n\n$1,000 – $5,000\n\nGrade 3\n\nUncommon\n\nReliable tools with notable cursed energy; useful in combat.\n\n$5,000 – $50,000\n\nGrade 2\n\nRare\n\nStrong, well-crafted weapons imbued with potent cursed energy.\n\n$50,000 – $150,00\n\nGrade 1\n\nVery Rare\n\nElite-grade weapons used by top sorcerers; highly specialized powers.\n\n$150,000 – $1,000,000\n\nSpecial Grade\n\nLegendary\n\nUnique, immensely powerful artifacts; often one-of-a-kind and tied to history or great sorcerer.\n\n$3,000,000+\n\nCursed Techniques\n\nCursed Techniques are abilities fueled by cursed energy. If cursed energy is comparable to electricity, cursed techniques are the appliances that use that power to function. Different types include Innate Techniques, Barrier Techniques, Shikigami, and more.\n\nInnate Techniques. Innate Techniques are unique abilities congenitally engraved into the user's body from birth and will show signs at around 5-6 years old. When an individual refers to their own personal cursed technique, they are generally talking about their innate technique. All Innate Techniques are Cursed Techniques, but not all Cursed Techniques are Innate Techniques. For example, Technique Burnout causes the Innate Technique to be unusable immediately after a Domain Expansion. During this time, you cannot use Innate Technique features or Feats. However, you are still able to use features that use cursed energy outside of your Innate Technique, like Cursed Energy and Barrier feats.\n\nInherited Techniques. Inherited Techniques are Innate Techniques passed down to sorcerers in the same bloodline. While sorcerers who don't come from prominent clans can inherit innate techniques, e.g. Straw Doll Technique, those obtained hereditarily from the ancestors of the Big Three Families especially carry the title of inherited technique, e.g. Limitless. The Big Three Families have maintained their authority and prestige by passing down powerful techniques to their descendants. Therefore, a sorcerer with an inherited technique is guaranteed an important position in the family.\n\nInherited Technique users have the advantage of being equipped with a manual on how to use them. However, passing down a technique through generations also presents the issue of other groups learning how the ability works, along with its shortcomings.\n\nCombat. Any ability that enhances your attacks should cause those attacks to count as magical for the purposes of damaging cursed spirits/shikigami or overcoming resistances. Features will have action costs and prerequisites to follow in order to use the technique. Such as Cursed Speech requiring hearing, Ice Fall requiring you to fall prone, or Dowsing Vibrations requiring both feet on the ground. Without these, you cannot activate your technique. Techniques using a range e.g. up to CE modifier or proficiency, require at least 1 CE.\n\nTechnique Burnout\n\nThe Innate Technique is carved into the brain naturally and channels cursed energy into specific effects like an appliance using electricity. However, if too much cursed energy is used, the technique can become overwhelmed and need time to recover. Even if the barrier or environment isn't fully formed, casting domain expansion or similarly taxing ability causes the user's innate technique to become unstable for a short time afterward. Right after ending your domain expansion, you cannot use any Innate Technique features and gain 2 levels of exhaustion for 1 minute or until you land a black flash. Innate Technique features for this purpose refers to the Innate Technique that the domain was imbued with. For example, after a Domain Expansion a Disaster Flames user could no longer use Ember Insects during Technique Burnout, but they would be able to use features such as Cursed Strike or Cursed Slash that are not Innate Technique features relating to the burnt out technique.\n\nMagical Effects. Magical effects created by and relying on your technique that do not fall into the other categories will be dismissed upon entering Technique Burnout. For example, a user of Illusive Mirage will be unable to create their Cursed Illusions and illusions they have applied to the terrains or to other people will automatically end and have no further effect.\n\nForms. Any ability that is active on yourself, another creature, or an item will automatically end once under Technique Burnout. For example, a user of Star Rage would lose the benefits of Virtual Mass Increase once they enter Technique Burnout.\n\nSummons. You cannot use your Innate Technique to summon Shikigami, Cursed Spirits, or any other  while in Technique Burnout. However, anything summoned by your technique will continue existing but cannot move or take actions. Any abilities or auras they possess will cease to function and they are treated as if they are stunned. If they were flying by any means from themself or your technique, they fall prone. For example, a user of Centipede Shroud would find that their Cursed Centipedes fall inert onto the ground and cannot be used as their Shroud during Technique Burnout.\n\nCreations. Any item or effect that must be constantly maintained by you will lose the magical benefits it possesses and will fall inert. For example a user of Golden Hour would find that their Clock Hand will continue to exist and be used normally apart from its magical benefits (being Minute Hand and Hour Hand) which cannot be used at all during Technique Burnout. However a permanent Cursed Tool created by a Construction user is not maintained by you and would be completely unaffected by Technique Burnout.\n\nBurnout Recovery. Technique Burnout is a terrifying thing that nobody can simply ignore. Even the strongest must accept the limitations of their bodies. Though some called the strongest can find ways to circumvent these limits. If you have access to both Reverse Cursed Technique and a Domain Refinement of 750 or higher, you understand domains and burnout enough to apply your Reverse Cursed Technique to this problem. Substitute your brain for a new one! Whilst under the effects of Technique Burnout, you can spend 4 cursed energy as a reaction to regain your Cursed Technique and remove the exhaustion from Burnout. You must succeed on a DC 5 Constitution saving throw. On a success, you remove Burnout without major consequences. On a failure, your eyes and nose start to bleed profusely as you take 8d6 psychic damage and cannot take actions or bonus actions until the start of your next turn. The Constitution saving throw DC increases by 5 for every success, being reduced by 5 for every minute that passes and resets on a long rest. This accounts for the immense skill required for such a feat of jujutsu and the dangers of literally tearing apart your brain and restoring it to force your technique to function.\n\nNormal Cursed Tools\n\nYou can instead choose to price “normal cursed tools” (+0-3 items) according to this standard:\n\nGrade 4 (Weapon/Armor Value x 1)\n\nGrade 3 (Weapon/Armor Value x 10)\n\nGrade 2 (Weapon/Armor Value x25)\n\nGrade 1 (Weapon/Armor Value x50)\n\nCursed Spirits\n\nCurses are created when cursed energy leaks from (non-sorcerer) humans as a result of their harboring of negative emotions. Cursed energy thus gathers in one spot, building up like sediment until a cursed spirit takes form.\n\nInvisibility. Cursed spirits bodies are entirely made up of cursed energy. Their metaphysical existence makes it impossible for non-sorcerers or creatures without cursed energy to perceive or touch them. Living non-sorcerers who have been cursed can only tell they have strange symptoms without realizing a cursed spirit is behind it; however, it is possible to gain the ability to see a curse in a life-or-death situation due to the overwhelming negative emotion the person experiences and consequently high cursed energy they emit.\n\nCursed Spirits have the Invisible condition against any creatures that cannot see them.\n\nCursed Energy. Though Cursed Spirits are born from a build up of negative emotions, it is still one of the main tools against exorcising them. Cursed Spirits should normally not have resistance or immunity against necrotic damage since this is the main damage type that all characters can use.\n\nMetaphysicality. Due to the unique existence of cursed spirits, any and all cursed spirits should be immune to non-magical damage. A sorcerer with normal, unrestricted Cursed Energy has unarmed strikes that are considered magical and ignore the immunities of Cursed Spirits and Shikigami.\n\nRCT Weakness. As beings of cursed energy, they are fundamentally weak to reverse cursed energy which is positive. Cursed Spirits cannot normally have resistance or immunity to radiant damage and cannot be healed by RCT. Additionally, cursed spirits of 3rd Grade or lower should have vulnerability to radiant damage.\n\nPermeability. Cursed Spirits are made up of cursed energy and their strength depends on the concentration of cursed energy and negative emotions that give them physical form. Though being more powerful is usually better, the weak concentration does give low-level curses the special ability to move through objects.\n\nCursed Spirits of 3rd Grade or lower can move through other creatures and objects as if they were difficult terrain. It takes 1d10 force damage if it ends its turn inside an object.\n\nShikigami\n\nShikigami are monstrous creatures resembling cursed spirits that are conjured to serve as familiars for jujutsu users.\n\nInvisibility. Shikigami bodies are entirely made up of cursed energy. Their metaphysical existence makes it impossible for non-sorcerers or creatures without cursed energy to perceive or touch them. Living non-sorcerers cannot perceive shikigami; however, it is possible to gain the ability to see curses in a life-or-death situation due to the overwhelming negative emotion the person experiences and consequently high cursed energy they emit. Shikigami have the Invisible condition against any creatures that cannot see them.\n\nMetaphysicality. Due to the unique existence of shikigami, any and all shikigami should be immune to non-magical damage. A sorcerer with normal, unrestricted Cursed Energy has unarmed strikes that are considered magical and ignore the immunities of Cursed Spirits and Shikigami.\n\nNot Cursed Spirits. Though cursed spirits and shikigami are both creatures of cursed energy, they are fundamentally different. Shikigami are created by passing cursed energy through a medium, creating a different creature with different properties. Shikigami should not have the RCT weakness and if a feature or ability specifies cursed spirits, they don’t affect shikigami unless stated otherwise.\n\nCombat. Shikigami normally cost some sort of action economy to control in combat. If there is no action listed, they can be controlled as a free action, dismissed as a bonus action, and act on your turn unless stated otherwise. A shikigami can only be commanded once per turn regardless of action economy, since a shikigami only has one action, bonus action, movement, etc.\n\nHeavenly Restriction\n\nHeavenly Restriction or a Heavenly Pact refers to a binding vow forced on a sorcerer's body at birth. This affects their cursed energy in exchange for limitations or improvements on their body. Though there are many different types of Heavenly Pacts, this section is for the Heavenly Restriction class based on Toji Zenin’s unique Heavenly Pact.\n\nNo Cursed Energy. A player character with the Heavenly Restriction class has absolutely no cursed energy. They cannot gain or manipulate cursed energy in any way. If an item or feature requires the usage or manipulation of cursed energy, they are ineligible for it.\n\nVisibility. Cursed Energy can only be seen by those with enough cursed energy. Having no cursed energy, a Heavenly Restriction class user cannot view these phenomena normally. This can be circumvented with a cursed tool, such as the 4th Grade Cursed Glasses or a similar effect. A player that is aware there is a curse can make a Wisdom (Perception) check (DC 18 - CR) to attempt to find the curse. On a success, they are able to detect the curse through means other than sight, but are still treated as if the curse has the invisible condition.\n\nCombat. In addition to being unable to see them, they are also unable to damage cursed spirits or shikigami without a cursed tool as curses should normally be immune to non-magical damage.\n\nFalling\n\nA fall from a great height is one of the most common hazards facing an adventurer. At the end of a fall, a creature takes bludgeoning damage for every 10 feet it fell, to a maximum of 200 feet. The creature lands prone, unless it avoids taking damage from the fall. The bludgeoning damage is determined by size category. As normal, a creature falls at a rate of 500 feet per round. Though a DM can choose to amend this metric.\n\nSize\n\nFall Damage\n\nTiny\n\n1\n\nSmall\n\n1d4\n\nMedium\n\n1d6\n\nLarge\n\n1d8\n\nHuge\n\n1d10\n\nGargantuan\n\n1d12\n\nFall Collision. When a Medium or smaller creature or object falls onto a Medium or smaller creature, they must make a DC 15 Dexterity saving throw to avoid it. The DC increases by 2 for every size category the falling creature/object is larger than the creature.\n\nCreature on Creature. If a creature falls on a creature and the target fails their save, the fall damage is split between the two creatures.\n\nObject on Creature. If a solid object (like a giant truck) is falling on a creature and the target fails their save, the creature takes the entire fall damage. A fragile object (like a glass ornament) can be ruled as using the Creature on Creature rules, with the fragile object absorbing part of the damage. If an object is at least Large size category and two or more size categories larger than the target, the target takes half as much damage on a successful save and is knocked prone and restrained under the object on a failed save.\n\nObject on Object. A non-mobile object automatically fails any Dexterity saving throws since it is an object. Determining which object takes full, half, or none of the fall damage depending on the fragility of both objects (generally Fragile, Neutral, or Solid).\n\nAction Economy\n\nOn your turn, you can move a distance up to your speed and take one action. You decide whether to move first or take your action first. Your speed, sometimes called your walking speed, is noted on your character sheet. The most common actions you can take are usually things such as Attack, Dodge, Dash, Hide, Search, Ready, etc. Many class features and other abilities provide additional options for your action.\n\nBonus Actions. Various class features, techniques, and other abilities let you take an additional action on your turn called a bonus action. The Sharp Eyes feature, for example, allows a Scout to take a bonus action. You can take a bonus action only when a special ability, spell, or other feature of the game states that you can do something as a bonus action. You otherwise don’t have a bonus action to take.\n\nYou can take only one bonus action on your turn, so you must choose which bonus action to use when you have more than one available.\n\nYou choose when to take a bonus action during your turn, unless the bonus action’s timing is specified, and anything that deprives you of your ability to take actions also prevents you from taking a bonus action.\n\nFree Actions. Your turn can include a variety of flourishes that require neither your action nor your move. You can communicate however you are able, through brief utterances and gestures, as you take your turn. If a feature allows you to do something as a free action, it does not consume your action or bonus action. You can take only one free action on your turn, so you must choose which free action to use when you have more than one available. Certain features allow you to cancel abilities or features listed as (no action required). This does not consume your free action.\n\nObject Interactions. You can also interact with one object or feature of the environment for free, during either your move or your action. For example, you could open a door during your move as you stride toward a foe, or you could draw your weapon as part of the same action you use to attack. If you want to interact with a second object, you need to use your action. Some cursed tools and other special objects always require an action to use, as stated in their descriptions. The GM might require you to use an action for any of these activities when it needs special care or when it presents an unusual obstacle. For instance, the GM could reasonably expect you to use an action to open a stuck door or turn a crank to lower a drawbridge.\n\nReactions. Certain special abilities, techniques, and situations allow you to take a special action called a reaction. A reaction is an instant response to a trigger of some kind, which can occur on your turn or on someone else’s. The opportunity attack is the most common type of reaction. When you take a reaction, you can’t take another one until the start of your next turn. If the reaction interrupts another creature’s turn, that creature can continue its turn right after the reaction.\n\nFull-Turn Action. A Full Turn Action is a term that is relatively unique to this supplement. The basic Full-Turn Action is used for an especially powerful ability that requires your absolute focus, such as Domain Expansion or Seance. Unless otherwise stated, a Full Turn Action consumes your Action, Bonus Action, and all of your movement. If you have used any of these, you cannot use a  Full Turn Action. Certain features have different Full Turn Actions, such as the 2000 IQ feat which allows a lesser Full Turn Action consuming only your Action and Bonus Action to analyze a technique. There are also features that can turn certain abilities into Full Turn Actions, such as Chanting or Convergence, increasing the action cost in exchange for greater power.\n\nActions\n\nAttack. The most common action to take in combat is the Attack action, whether you are swinging a sword, firing an arrow from a bow, or brawling with your fists. With this action, you make one melee or ranged attack. Certain features, such as the Extra Attack feature of the warrior, allow you to make more than one attack with this action.\n\nWhether you’re striking with a melee weapon or firing a weapon at range.\n\nChoose a Target. Pick a target within your attack’s range: a creature, an object, or a location.\n\nDetermine Modifiers. The GM determines whether the target has cover and whether you have advantage or disadvantage against the target. In addition, techniques, special abilities, and other effects can apply penalties or bonuses to your attack roll.\n\nResolve the Attack. You make the attack roll. On a hit, you roll damage, unless the particular attack has rules that specify otherwise. Some attacks cause special effects in addition to or instead of damage.\n\nIf there’s ever any question whether something you’re doing counts as an attack, the rule is simple: if you’re making an attack roll, you’re making an attack.\n\nDash. When you take the Dash action, you gain extra movement for the current turn. The increase equals your speed, after applying any modifiers. With a speed of 30 feet, for example, you can move up to 60 feet on your turn if you dash. Any increase or decrease to your speed changes this additional movement by the same amount. If your speed of 30 feet is reduced to 15 feet, for instance, you can move up to 30 feet this turn if you dash.\n\nDisengage. If you take the Disengage action, your movement doesn’t provoke opportunity attacks for the rest of the turn.\n\nDodge. When you take the Dodge action, you focus entirely on avoiding attacks. Until the start of your next turn, any attack roll made against you has disadvantage if you can see the attacker, and you make Dexterity saving throws with advantage. You lose this benefit if you are incapacitated or if your speed drops to 0.\n\nSearch. When you take the Search action, you devote your attention to finding something. Depending on the nature of your search, the GM might have you make a Wisdom (Perception) check or an Intelligence (Investigation) check. This is the action taken to find sneaking creatures, hidden entrances, or difficult to spot things. For detecting cursed energy, make a Cursed Energy (Perception) check.\n\nHelp. You can lend your aid to another creature in the completion of a task. When you take the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn. Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally’s attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.\n\nHide. When you take the Hide action, you make a Dexterity (Stealth) check in an attempt to hide, following the rules for hiding. If you succeed against passive Perception, you are hidden from that creature.  To prevent other creatures from detecting your cursed energy, you must take the Hide action but instead make a Cursed Energy (Stealth) check.When you attack a target that you can’t see, you have disadvantage on the attack roll. This is true whether you’re guessing the target’s location or you’re targeting a creature you can hear but not see. If the target isn’t in the location you targeted, you automatically miss, but the GM typically just says that the attack missed, not whether you guessed the target’s location correctly. When a creature can’t see you, you have advantage on attack rolls against it. If you are hidden (both unseen and unheard) when you make an attack, you give away your location when the attack hits or misses.\n\nReady. Sometimes you want to get the jump on a foe or wait for a particular circumstance before you act. To do so, you can take the Ready action on your turn, which lets you act using your reaction before the start of your next turn. First, you decide what perceivable circumstance will trigger your reaction. Then, you choose the action you will take in response to that trigger, or you choose to move up to your speed in response to it. Examples include “If the cultist steps on the trapdoor, I’ll pull the lever that opens it,” and “If the curse steps next to me, I move away.” When the trigger occurs, you can either take your reaction right after the trigger finishes or ignore the trigger. Remember that you can take only one reaction per round.\n\nWhen you ready a technique, you cast it as normal but hold its energy, which you release with your reaction when the trigger occurs. To be readied, a technique must have a casting time of 1 action, and holding onto the technique's energy requires concentration. If your concentration is broken, the technique dissipates without taking effect. For example, if you are concentrating on Comedy (from Comedian) and ready Powerful Punchline, Comedy ends, and if you take damage before you release Powerful Punchline with your reaction, your concentration might be broken.\n\nTechnique. Sorcerers and many curses have access to techniques and can use them to great effect in combat. Each technique has a casting time, which specifies whether the caster must use an action, a reaction, minutes, or even hours to cast the spell. Casting a spell is, therefore, not necessarily an action. Most spells do have a casting time of 1 action, so a sorcerer often uses his or her action in combat to cast such a spell.\n\nUse Object. You normally interact with an object while doing something else, such as when you draw a sword as part of an attack. When an object requires your action for its use, you take the Use Object action. This action is also useful when you want to interact with more than one object on your turn.\n\nBarriers\n\nBarriers are zones or territories established with jujutsu sorcery used to conceal, contain, or deny entry to entities within that space. Cursed techniques that erect barriers are known as barrier techniques.\n\nZones. Certain barrier techniques are non-physical and therefore do not physically stop creatures or objects from entering the area of the technique. Relevant examples are Simple Domain and Hollow Wicker Basket that despite being barrier techniques, do not physically exist or prevent entry/exit from the area.\n\nPhysical Barriers. Certain barrier techniques create a physical barrier that stops creatures or objects from entering the area of the technique. Relevant examples are Curtains and Domain Expansions which both create physical barriers that prevent entry/exit from an area. These physical barriers will typically have an AC and hit points and can be targeted by attacks and relevant techniques. If a feature deals additional damage or has some other added benefit when attacking or dealing damage to objects or structures, these benefits apply when used on a physical barrier.\n\nReincarnated\n\nThe Reincarnated race is meant to represent the unique interaction between a vessel and a reincarnated sorcerer that has assumed a new form beyond death. When creating such a character, there are usually two options you can choose from.\n\nOption 1: You are the Vessel\n\nYou took in a cursed object holding the power and memories of a sorcerer or creature of ages past. You managed to resist their soul and maintain control of your body.\n\nAt times, the soul within your body may attempt to take control as determined by your DM and act accordingly. Whether this is a deadly situation when you are reduced to 0 hit points or a moment where the Reincarnated Sorcerer thinks they can take advantage, moments like these should be used sparingly, but kept as a looming threat if you decide upon that route. During such times, the Reincarnated Sorcerer can force the vessel to make a Charisma Saving throw with a DC dependent on the strength of the soul (DC 15-30). While the Reincarnated has control of your body, they act as an NPC controlled by the DM. They have access to both their Innate Technique and the Vessel's (if they have one), but can only use one Innate Technique at a time, not both.\n\nOption 2: You are the Reincarnated\n\nYou forced your soul into a cursed object using a forbidden technique and reincarnated into a vessel in the present. You have overwritten the soul of the vessel and taken eternal control of their body.\n\nIf you choose this option, you should have more knowledge on the history of this world depending on the time period you were alive. There could be secrets that other players do not have access to or lore that is more readily available to you than others with skill checks.\n\nDomain Expansion\n\nDomain Expansion is an advanced barrier technique and is considered the pinnacle of jujutsu sorcery. It manifests the user's innate domain into reality inside a barrier infused with their innate cursed technique. Within a domain expansion, the user's innate techniques are improved and any that are activated are guaranteed to hit.\n\nEnvironment. Your domain is the ultimate expression of your innate technique which is unique to you as a person. You and your GM determine the terrain of your domain. This cannot be changed later unless the GM thinks you have undergone a significant change to your character as a person.\n\nGuaranteed Hit. The domain's guaranteed hit is one of the most important aspects of a domain. Unless stated otherwise, a domain functions as stated in the Lethal Domains section (page 421). A GM can allow a normally Lethal Domain to instead function as a Non-Lethal Domain by changing your Domain with a Binding Vow. Additional benefits of a domain generally fall under: Environmental Effect or Technique Improvement. A damaging Environmental Effect happens without saves and is part of the domain’s Guaranteed Hit that would be blocked by Anti-Domain techniques like Hollow Wicker Basket.\n\nSimple Domain. A Simple Domain is a tool specifically made to fight against Domain Expansions. Any creature within a Simple Domain is unaffected by a domain's guaranteed hit effect that deals damage until the Simple Domain is broken. If a guaranteed hit would deal damage, it instead damages the barrier. If multiple creatures are within a single Simple Domain and are targeted by a damaging area effect, it takes the damage once.\n\nIncomplete Domains\n\nInnate domains that are expanded using only cursed energy without an embedded cursed technique are incomplete even if they include a barrier. Fully integrating the embedded technique into a domain is very difficult and enables its sure hit effect. Without that, the caster will only receive an improved cursed technique without a sure-hit effect. Incomplete Domains have refinement of 0 and that cannot change no matter what. A Domain's refinement is a measure of how well you can imbue your technique into a barrier. An Incomplete Domain user is completely unable to imbue their technique into a barrier, hence why it is incomplete.\n\nImproved Hit. Instead of the Guaranteed Hit Effect of the normal Domain Expansion, an Incomplete Domain has the Improved Hit Effect. You gain advantage on Cursed Energy attack rolls and creatures inside your domain have disadvantage on saving throws as long as these effects are from your Innate Technique.\n\nReduced Burnout. Unlike a normal Domain Expansion that inflicts Technique Burnout for 1 minute, an Incomplete Domain takes less effort and is therefore less taxing, only inflicting Technique Burnout for 5 rounds or 30 seconds if out of combat.\n\nShortcuts. Barriers forcibly enclosed using the shape of an outside environment also do not incorporate sure-hit effects. So simply making a random barrier or using objects around you to contain your incomplete domain will not allow it to function as a true domain as the technique is not properly imbued into a barrier. Though it would allow the Incomplete Domain to close. A creature attempting to leave a closed Incomplete Domain must succeed a DC 20 Perception check to find the edge of your Incomplete Domain. After which they would be able to target the barrier or objects used to keep the Incomplete Domain closed with their attacks. Unlike a normal Domain Expansion, the HP and AC of the closed Incomplete Domain use the statistics of the other Barrier or Objects used and not a domain barrier.\n\nFunctionality (Environmental Effect). Additional benefits of a domain generally fall under: Environmental Effect or Technique Improvement. A damaging Environmental Effect will normally happen without a save and is part of the domain’s Guaranteed Hit that would be blocked by Anti-Domain techniques like Hollow Wicker Basket. However within an Incomplete Domain lacking a guaranteed hit, it will instead force a saving throw that is **not** affected by the disadvantage normally forced by the Incomplete Domain. On a failed save, they suffer half the normal damage they would take if this were a complete domain or suffer other effects at half effectiveness as applicable. For example, the Domain of Star Rage's: Event Horizon would normally deal 8d8 force damage and knock a creature prone without a save at initiative 20. In an Incomplete Domain, the creature would be forced to make a Strength saving throw. On a failed save they would take 4d8 force damage and fall prone, with nothing happening on a successful save.\n\nFunctionality (Technique Improvement). A Technique Improvement is a boost to the cost or effectiveness of a technique. Within an Incomplete Domain, such benefits are halved. Technique Improvements are much more varied than simple Environmental Effects, so we will include a number of examples for people to use.\n\nFor example, the domain of Cursed Cannon: Il Gran Dolce normally causes three creatures within the domain to automatically suffer the effects of Granite Blast at initiative 20. Within an Incomplete Domain, this would instead allow you to make two Cursed Energy attack rolls (not affected by Improved Hit) to be made against two different creatures within the Domain. Since half of 3 is 1.5, rounded up to 2. Though if your DM decides to round down, it can be just 1.\n\nFor further examples, G Warstaff's Domain: Storyboard Dominion. This Domain normally causes all creatures within the Domain to be treated as if you have 6 seconds marked against them. In an Incomplete Domain, this would instead be having 3 seconds marked against them.\n\nThe final example, we have Ten Shadow's Domain: Chimera Shadow Garden. In addition to its Technique Improvements, the domain also has the Environmental Effect that causes creatures to fall into the shadows. As usual, this would be replaced with a Strength saving throw that is not affected by the Improved Hit of the Incomplete Domain. Now, for the Technique Improvements of Shadow Clones and Shikigami Clones. Shadow Clone lets you spend CE up to your CE modifier to summon a shadow clone of yourself per 1 CE spent that each have 1 HP. In an Incomplete Domain, this would instead half your output, letting you spend CE up to half your CE modifier. Shikigami Clone lets you spend the cost of a normal tamed Shikigami to summon a clone of it, which prevents your precious shikigami from dying. In an Incomplete Domain, this would function the same with the hit points of these Shikigami Clones being halved.\n\nSoul Damage\n\nThe ability to target and perfectly damage a creature's soul with a technique results in Soul Damage. Not all are listed, but abilities that reduce maximum hit points are treated as Soul Damage. Including, but not limited to: Soul Split Katana, Transfiguration, Soulfire, Soul Punch, etc.\n\nLesser Soul Damage. The Soul Harming ability from Soul Awareness is treated as Lesser Soul Damage. It counts as targeting the soul for effects that require it, but does not reduce maximum hit points.\n\nHealing. Soul Damage invalidates Reverse Cursed Technique and Regeneration, which cannot heal or remove the maximum HP reduction of Soul Damage. If Soul Damage removes a limb, it cannot be healed or regenerated.\n\nOriginal Innate Techniques\n\nIf you want to try your hand at making your own Innate Technique, here are some guidelines to follow.\n\n1st Level Feature\n\nLapse\n\nThis should be the most basic application of your cursed technique or even a precursor ability. Generally, these features have a low cursed energy cost or even no cursed energy cost at all. Because of this, they are usually not directly powerful, but may scale in power as you level up.\n\n3rd Level Feature\n\nLapse or Extension\n\nThis should be where you start gaining abilities to properly call yourself a Sorcerer. If the 1st level feature was a precursor, then this should be what you think your technique’s main abilities would be. At this level, the cursed energy cost should still be rather low so make sure to balance the feature accordingly. Generally, you want to give the feature either a base cost or have it scale depending on how cursed energy they spend. Up to their Cursed Energy modifier or Proficiency Bonus is a good way to determine output.\n\nIf your technique is based around a Domain Expansion like Deadly Sentencing or Pachinko Fever, this is the level they should get it. A Domain Expansion gained at this level usually has some kind of condition to make its sure-hit slightly weaker in exchange for gaining it at such an early level. This can include requiring cursed energy for the sure-hit effect, having a Non-Lethal Domain that has a different sure-hit effect, or having the sure-hit effect be something non-offensive.\n\n6th Level Feature\n\nExtension\n\nAt this level, you should gain a feature that either grants you new ways to use your technique or some kind of increase to your existing features. Whether that increase is a permanent buff or an additional effect that increases with the more cursed energy you spend.\n\n11th Level Feature\n\nMaximum\n\nYou are approaching high level play at this level and appropriately, you should gain either your Maximum technique or a similarly strong feature. You can instead choose to have another Extension or increase to an existing feature, but unless it fits your technique, it’s probably better to have your Maximum.\n\nYour Maximum should be one of the ultimate expressions of your technique barring your Domain Expansion and can vary from extreme burst damage to powerful buffs or debilitating debuffs.\n\n18th Level Feature\n\nDomain Expansion\n\nYou have finally reached the big leagues that most sorcerers die before reaching. You have finally reached the pinnacle of jujutsu allowing you to expand your domain. Generally, Domains gained at this level will be Lethal Domains with a strong sure-hit effect. Within your domain, any and all effects using your Innate Technique are guaranteed to land. Creatures automatically fail saving throws and attacks automatically hit. In addition to this, you can give your domain an additional effect such as a damaging Environmental Effect or Technique Improvement. These usually occur at initiative 20, but feel free to customize your domain in a way that you think fits."
+  },
+  "multiclassing": {
+    "title": "Quy Tắc Đa Lớp Nhân Vật (Multiclassing Rules)",
+    "description": "Đa lớp nhân vật cho phép bạn phân bổ cấp độ vào nhiều Lớp nhân vật khác nhau (ví dụ: Warrior 3 / Scout 2), kết hợp các thế mạnh và kỹ năng để hiện thực hóa phong cách chiến đấu độc đáo.",
+    "prerequisites": [
+      {
+        "class": "Warrior",
+        "stat": "Strength 13",
+        "role": "Vũ trang & Cận chiến"
+      },
+      {
+        "class": "Scout",
+        "stat": "Dexterity 13",
+        "role": "Tốc độ & Ám toán"
+      },
+      {
+        "class": "Juggernaut",
+        "stat": "Constitution 13",
+        "role": "Thể lực & Chống chịu"
+      },
+      {
+        "class": "Strategist",
+        "stat": "Intelligence 13",
+        "role": "Não bộ & Sáng tạo"
+      },
+      {
+        "class": "Support Specialist",
+        "stat": "Wisdom 13",
+        "role": "Trị liệu & Yểm trợ"
+      },
+      {
+        "class": "Shikigami User",
+        "stat": "Charisma 13",
+        "role": "Triệu hồi & Tương tác"
+      },
+      {
+        "class": "Heavenly Restriction",
+        "stat": "Không thể Đa lớp (0 Chú lực)",
+        "role": "Thiên Dữ Chú Phược"
+      }
+    ],
+    "rules": [
+      {
+        "title": "Sinh Lực & Xúc Xắc Máu (HP & Hit Dice)",
+        "desc": "Máu tối đa ở Cấp 1 chỉ nhận từ Class đầu tiên. Khi lên cấp ở Class mới, tung xúc xắc máu của Class đó (hoặc lấy trung bình) + CON modifier. Các Hit Dice từ các Class cộng dồn vào quỹ chung."
+      },
+      {
+        "title": "Thuật Thức Bẩm Sinh",
+        "desc": "Bạn chỉ nhận được một Thuật thức bẩm sinh duy nhất (trừ khi dùng Thao Tác Thể Xác). Cấp độ tiến trình của Thuật thức chỉ tính theo Lớp nhân vật cao nhất của bạn."
+      },
+      {
+        "title": "Điểm Chú Lực (Cursed Energy Pool)",
+        "desc": "Lượng Chú Lực (CE) tối đa được tính dựa trên công thức Chú Lực của Lớp nhân vật có cấp độ cao nhất, nhân với tổng cấp độ nhân vật."
+      },
+      {
+        "title": "Đòn Đánh Thêm (Extra Attack)",
+        "desc": "Nếu nhận tính năng Extra Attack từ nhiều Class khác nhau, chúng không cộng dồn. Bạn không thể tấn công quá 2 lần trong 1 Attack action trừ khi có quy định riêng."
+      },
+      {
+        "title": "Phòng Thủ Không Giáp (Unarmored Defense)",
+        "desc": "Nếu bạn đã có Unarmored Defense từ một Class (như Juggernaut hoặc Scout), bạn không thể nhận lại tính năng này từ Class khác."
+      }
+    ],
+    "rawEnglish": "Multiclassing\n\nMulticlassing allows you to gain levels in multiple classes. Doing so lets you mix the abilities of those classes to realize a character concept that might not be reflected in one of the standard class options.\n\nWith this rule, you have the option of gaining a level in a new class whenever you advance in level, instead of gaining a level in your current class. Your levels in all your classes are added together to determine your character level. For example, if you have three levels in Wizard and two in Fighter, you're a 5th-level character.\n\nAs you advance in levels, you might primarily remain a member of your original class with just a few levels in another class, or you might change course entirely, never looking back at the class you left behind. You might even start progressing in a third or fourth class. Compared to a single-class character of the same level, you'll sacrifice some focus in exchange for versatility.\n\nPrerequisites\n\nTo qualify for a new class, you must meet the ability score prerequisites for both your current class and your new one, as shown in the Multiclassing Prerequisites table. For example, a barbarian who decides to multiclass into the druid class must have both Strength and Wisdom scores of 13 or higher. Without the full training that a beginning character receives, you must be a quick study in your new class, having a natural aptitude that is reflected by higher-than-average ability scores.\n\nClass\n\nPrerequisite\n\nWarrior\n\n13 Strength\n\nScout\n\n13 Dexterity\n\nJuggernaut\n\n13 Constitution\n\nStrategist\n\n13 Intelligence\n\nSupport Specialist\n\n13 Wisdom\n\nShikigami User\n\n13 Charisma\n\nHit Points and Hit Dice\n\nYou gain the hit points from your new class as described for levels after 1st. You gain the 1st-level hit points for a class only when you are a 1st-level character.\n\nYou add together the Hit Dice granted by all your classes to form your pool of Hit Dice. If the Hit Dice are the same die type, you can simply pool them together. For example, both the fighter and the paladin have a d10, so if you are a paladin 5/fighter 5, you have ten d10 Hit Dice. If your classes give you Hit Dice of different types, keep track of them separately. If you are a paladin 5/cleric 5, for example, you have five d10 Hit Dice and five d8 Hit Dice.\n\nProficiency Bonus\n\nYour proficiency bonus is always based on your total character level, not your level in a particular class. For example, if you are a Fighter 3/Rogue 2, you have the proficiency bonus of a 5th-level character, which is +3.\n\nProficiencies\n\nWhen you gain your first level in a class other than your initial class, you gain only some of the new class's starting proficiencies, as shown in the Multiclassing Proficiencies table.\n\nClass Features\n\nWhen you gain a new level in a class, you get its features for that level. You don't, however, receive the class's starting equipment, and a few features have additional rules when you're multiclassing: Innate Techniques, Extra Attack, Unarmored Defense, and Spellcasting.\n\nInnate Techniques\n\nIf you already have an Innate Technique, you can't gain it again from another class, unless you originally had Body Manipulation. Your Innate Technique counts only your highest class level(You would gain the features from your 3 levels of Warrior, and wouldn’t gain the Innate Technique features from shikigami). You can only use the Innate Technique features one at a time.\n\nCursed Energy\n\nSimilarly to Innate Techniques, you only gain the Cursed Energy of your highest level class, scaling with your total character level.\n\nExtra Attack\n\nIf you gain the Extra Attack class feature from multiple classes, the features don't add together. You can't make more than two attacks with this feature unless it says you do (as the fighter's version of Extra Attack does). Similarly, the warlock's eldritch invocation Thirsting Blade doesn't give you additional attacks if you also have an Extra Attack.\n\nUnarmored Defense\n\nIf you already have the Unarmored Defense feature, you can't gain it again from another class."
+  },
+  "theZone": {
+    "rawEnglish": "The Zone\n\nAfter a jujutsu sorcerer successfully fully focuses themselves, they temporarily enter a heightened state known as \"The Zone\". In this state, manipulation of cursed energy becomes as natural as breathing to them.\n\nAfter achieving a breakthrough, you gain the Zone condition, giving you the following benefits for 1 minute (these benefits stack every black flash):\n\nAdvantage on attack rolls\n\n+1 Critical Range\n\n+1 Black Flash Range\n\nRecover Technique Burnout\n\nRecover Reverse Cursed Energy Pool\n\nLowers Reduced Output by 1 level"
+  },
+  "optionalRules": {
+    "rawEnglish": "Optional Rules\n\nTotality Alternative\n\nAs an optional ruling, your DM can choose to ignore Totality, instead having all shikigami come back on a long rest, rather than being killed and eligible for Totality.\n\nLess Blood\n\nIf your players find the HP cost of Rot and Blood Manipulation to be too steep, the DM can choose to reduce all HP costs to a lower amount.\n\nBlood Conversion\n\nSince those who are already adept at regenerating their bodies have an easier time grasping Reverse Cursed Technique, your DM can allow a character with the Blood Production feat to have an increased chance of acquiring Reverse Cursed Technique. They have advantage on any dice rolls to acquire or understand the basics of Reverse Cursed Technique.\n\nMythical Beast Accuracy\n\nTo make Mythical Beast Amber Release more accurate, your DM can choose to instead cause the progression of stages to instead advance once stage per turn.\n\nAdvantage Stacking\n\nWhen a creature gains advantage from more than one source when making a skill check or attack roll, they make their roll with advantage and an additional +1 bonus for every extra source of advantage. However if the source of advantage is coming from another player taking the Help action they must describe in what way they are assisting for an attack or have proficiency in the skill to assist.\n\nCrunchy Crits\n\nWhen you roll damage for a critical hit, instead of doubling the damage die you can choose to roll normally and double the entire damage roll (including modifiers or flat bonuses).\n\nCritical Saves\n\nWhen a creature rolls a natural 1 on a saving throw against a damaging effect, they instead take critical damage. Conversely, when a creature rolls a natural 20 on a saving throw against a damaging effect, they take no damage.\n\nCalling Shots\n\nA creature can choose to take a -5 penalty to an attack roll in order to specifically cripple or injure a creature. If the damage exceeds a creature’s maximum hit die + their constitution modifier, they are debilitated in a certain way depending on the GM’s interpretation or alternatively can use the Limb Damage Table. (Shooting out an eye to blind them or breaking their leg to lower their movement speed.)\n\nFight for your Life\n\nWhen you are rolling death saving throws, you can choose to fight for your life. You gain advantage on the next death saving throw you make, but you gain 1 level of exhaustion. You can gain up to 5 levels of exhaustion this way.\n\nTake the Hit\n\nAs a reaction when another creature within your movement speed is targeted or hit by a harmful or damaging effect, you can move up to your movement speed towards them and take the attack in their place. However, you take twice as much damage.\n\nClash\n\nAs a reaction, you can choose to clash an attack or damaging effect directed at yourself. You can make a damage roll for a melee weapon attack and reduce the damage by that much. If this would reduce damage from an attack roll past 0, the attacker takes the remaining damage if they are within range. You cannot clash against psychic damage unless you have a feature that deals psychic damage.\n\nYou can clash damage this way a number of times equal to your proficiency bonus and regain all expended uses on a long rest.\n\nFlanking\n\nYou are never safe from getting double teamed. If two creatures (that are not incapacitated) are within 5 feet on opposite sides of another creature, they gain advantage on attacks against that creature. Though some DMs may choose to use +2 instead of advantage.\n\nTechniqueless\n\nIf a player wants to play without an Innate Technique and does not wish to use New Shadow Style or Divergent Fist, they can instead gain a +2 Ability Score Increase AND Feat they meet the prerequisites for at 1st and 3rd level. A +3 ASI and Feat at 6th level and 11th, and +3 ASI and 2 Feats at 18th level. Do be warned, this will of course be generally weaker than having a technique.\n\nRepetitive Abilities\n\nIf a player would gain an ability that grants them an ability they already have, you can be a benevolent GM and let the player choose a different one. For example, if a player chooses a feat such as Incomplete Domain or Reversed Technique Prodigy, you can allow them to switch the feat out for a different feat they qualify for when they gain a feature that gives them the same or better version of that ability. Such as a Domain Expansion or Reverse Technique Understanding respectively.\n\nFeat Improvement\n\nIf a GM wants to allow players to balance their ability scores while gaining unique features they may want, they can choose to allow players to gain an Ability Score Improvement as well as a Feat that they qualify for whenever they would gain an Ability Score Improvement.\n\nPure Barrier\n\nIn the main world of Jujutsu Kaisen, Tengen supports the Jujutsu world with their permanent barriers. Among the barriers that suppress cursed spirits, conceal cursed energy, and change terrain there is also the Pure Barrier that supports barrier techniques of those associated with Jujutsu High. If Tengen or a figure with similar mastery of barriers (Such as a level 20 Support Specialist) exists within your world, you can determine certain parts of your world as being within a pure barrier. Those given permission by the barrier holder only spend 1 cursed energy when casting a Curtain within the Pure Barrier.\n\nExecution Evasion\n\nA creature that is aware of the effects of the Executioner’s Sword of Deadly Sentencing can attempt desperate action to avoid instant death. A creature hit by the Executioner's Sword can use their reaction to remove one of their limbs at the point of contact to avoid death. The creature takes damage equal to the required damage to remove a limb, which cannot be reduced in any way. They suffer the penalties of missing that limb as normal.\n\nSoul Checks\n\nWhen making a check relating to souls, you use your Soul Awareness level instead of any other ability modifiers or proficiencies. Without a level of Soul Information, you have disadvantage on any such checks.\n\nOutput Burnout\n\nWhile under the effects of Technique Burnout, you gain 2 temporary levels of Reduced Output.\n\nIncreased Affinity\n\nAt 10th level, players with the Cursed Spirit race gain Increased Affinity to help better scale against Reverse Cursed Technique. Alternatively, the DM can allow it as a feat with a prerequisite of X level and being a Cursed Spirit race. You can use Increased Affinity as a bonus action or reaction to damage to spend up to your Cursed Energy modifier in cursed energy to regain 10 hit points per cursed energy spent. A DM should allow this for players using the Cursed Spirit races to better match up against others gaining Reverse Cursed Technique at certain levels.\n\nSix Eyes Dependency\n\nIn Jujutsu Kaisen, it is stated that Limitless is difficult to use without the Six Eyes due to the high cursed energy cost, making most Limitless sorcerers below average without them. If you wish to have a more canon-accurate version of the technique for NPCs or Players, increase the CE cost to activate and maintain Infinity to 3 CE for sorcerers without the Six Eyes. Double the cost of Lapse Blue, Reversal Red, Teleportation and Offensive Infinity and increase the CE cost of Hollow Purple by 5 CE.\n\nIncreased Hit Points\n\nIf you want your players to be more tanky and last longer during high danger battles, DMs can choose to have player characters gain the maximum value of their hit die upon level up instead of rolling or taking average.\n\nTough Trials\n\nTo make taming more difficult for early level Ten Shadows players, a DM can choose any of the following increases for untamed shikigami:\n\nIncrease the hit points by 10 x the shikigami’s CR.\n\nAdd twice the shikigami’s CR to its damage rolls.\n\nIncrease the DC of a shikigami’s feature by half its CR.\n\nAdd +2 to 1-3 ability scores of the shikigami.\n\nFor balancing purposes, DO NOT allow a player to keep these increases after completion of the taming ritual. It may seem cool or fitting, but DO NOT DO THAT.\n\nAdditional Actions\n\nSome optional actions that can be used by tables who want more interesting and dynamic combats.\n\nCharge. You gain 10 ft of additional movement that must be used to move in a straight line before hitting a target with a melee attack as part of the same action. Even if you have multiple attacks on your turn, you can only make 1 attack on this turn when using the Charge action. For every additional attack you could make, you gain a +1 to the attack roll.\n\nDistract. If you take the Distract action, you can attempt to Distract a creature within 15 ft of you that can see or hear you. If they are concentrating on a technique or ability, they are forced to make a concentration check to maintain the ability. Even if they succeed, your distraction increases the DC of concentration checks they make by +1 until the beginning of your turn, so long as you remain within 15 feet and continue distracting. A single creature can only be affected by up to 3 DC increases as a result of creatures using this action.\n\nSunder. You can attempt to sunder an item held or worn by your opponent as part of an attack action in place of a melee attack. Attempting to sunder an item provokes an attack of opportunity from the target.\n\nIf your attack is successful, you deal damage to the item normally. Damage that exceeds the object’s Hardness is subtracted from its hit points. If an object has equal to or less than half its total hit points remaining, it gains the broken condition (becomes -3 item). If the damage you deal would reduce the object to less than 0 hit points, you can choose to destroy it. If you do not choose to destroy it, the object is left with only 1 hit point and the broken condition.\n\nCoup de Grace. As a Full Turn Action (Action + Bonus Action + Movement), you make a melee attack while within 5 ft of an unconscious creature. The target must make a Constitution saving throw equal to the damage taken or die instantly.\n\nYearly Progression\n\nThe dangers of missions and school life will allow Jujutsu High students to advance by methods of self-study and intense training during the time they would advance from year to year as normal high school students. This rule is centered around that concept of progression.\n\nWhen a DM wishes to invoke a Yearly Progression, a player gains one of these options:\n\nAbility Score Improvement. The character may increase one ability score by 2 or increase two ability scores by 1 each, to a maximum of 20. This represents any additional training which the character subjects themselves towards to prepare for the new ‘school’ year.\n\nNew Feat. The character gains a new feat which has been chosen by the player but this feat is subject to your approval. This represents new talents or traits the character has acquired to better themselves as a defender of Jujutsu society. The total number of times that a character can benefit from Yearly Progression is four times.\n\nWays to Make Money\n\nIf your GM decides to allow players to purchase items players will likely find themselves trying to earn as much money as possible. To add a way for players to use their free time as well as opening the way for interesting RP situations, you can choose to use the following rules.\n\nMinimum Wage Employment: 10-40 Hrs per Week ($80-500)\n\nA player character can attempt to find employment. It is up to the GM to determine what jobs are available given the area your campaign is taking. A GM can use proficiencies to determine the wage of the job, depending on their modifier. If a character has a skill proficiency, tool proficiency, or even language proficiencies, that can factor into finding a job. Expertise may lead to even higher paying jobs.\n\nSpecial Employment: (CE modifier Xd4 x $100 per workweek)\n\nPrerequisite: Innate Technique OR RCT\n\nA player can sometimes find a job that lets you utilize your innate technique for profit. These jobs can vary in legality depending on the GM, which may open the path for certain problems or opportunities.\n\nIf a player has Reverse Technique Prodigy or Mastered Reverse Technique, they can automatically gain $10,000 per week.\n\nTaking Missions\n\nA sorcerer’s work is never done! As part of your free time, a sorcerer can dedicate themself to their work and take on more missions. Missions can be received from Jujutsu Tech, one of the Clans, and even the Government of a country. Depending on the difficulty of the job, the reward will scale accordingly.\n\nGrade 4 ($500-2,000)\n\nGrade 3 ($3,000-10,000)\n\nGrade 2 ($10,000-25,000)\n\nGrade 1 ($100,000-500,000)\n\nSpecial ($1,000,000+)\n\nCursed Tool Creation\n\nPrerequisite: Must have Tool Maker\n\nPowerful cursed tools are extremely valuable. Their monetary worth can range from five hundred thousand to upwards of five hundred million yen. Tool Makers are always able to sell to someone.\n\nGrade 4 (Weapon/Armor Value x 1)\n\nGrade 3 (Weapon/Armor Value x 10)\n\nGrade 2 (Weapon/Armor Value x25)\n\nGrade 1 (Weapon/Armor Value x50)\n\nFinding a Cursed Spirit\n\nWhen searching for a random cursed spirit, you can spend 1-2 hours searching the surrounding area for potential cursed spirits. Make a DC 20 Perception or Investigation check. On a failure, you can’t find any. On a success, you are able to find a cursed spirit. You must roll a d100 to decide the rarity and strength of the cursed spirit.\n\nNumber Rolled    Curse Type\n\n1-50             Grade 4\n\n51-75            Grade 3\n\n76-90            Semi-Grade 2\n\n91-99            Grade 2\n\n100              Semi-Grade 1\n\nCursed Upon Death\n\nThe most important thing when killing a sorcerer is to always kill them with cursed energy or they could come back as a cursed spirit. If you die by means lacking cursed energy while being a human sorcerer, you come back to life as a cursed spirit one week after your death. You suffer the following changes:\n\nYour race becomes Cursed Spirit, gaining all the benefits of said race and losing all benefits of your previous one. Your race becomes a Vengeful Spirit.\n\nYou gain one Cursed Energy Feat or Innate Technique Feat of your choice that you meet the requirements of.\n\nYou lose all feats and features related to Reverse Cursed Technique. Cursed Physiology breakthrough replaced Reverse Cursed Technique Breakthrough if you possess it. For every feat lost this way you gain 2 Profane Points.\n\nDue to your body being more resilient, your Strength, Dexterity, Constitution and CE score will increase by 2, including their maximum. However, your mind has also been affected by your transformation. Your other mental scores are reduced by 4.\n\nWhen you come back to life you gain 1 level of indefinite madness. At the end of the week you must make a DC 25 Wisdom saving throw. On a failure, you will gain one level of indefinite madness and must repeat the save each week. You will keep getting more indefinite madness levels on subsequent failures. On a success, you lose any madness level previously obtained and no longer make the save each week.\n\nObject Soul AwarenessObject Soul Awareness is far rarer than ordinary Soul Awareness, allowing you perceive the souls of things not alive. You can only increase your Object Soul Awareness with Spiritual Teaching, but can train this alone if you have at least 6 levels of Soul Awareness\n\n(+3 DC per level instead of +2).\n\nLevel\n\nSoul Ability\n\n1\n\nObject Soul Perception. When damaging a structure or object, your melee weapon attacks and unarmed strikes ignore damage thresholds and damage reduction.\n\n2\n\nSoul Shatter. Melee weapon attacks and unarmed strikes deal maximum damage against objects or structures and you treat their AC as 5 lower.\n\n3\n\nGreater Object Soul Perception. You ignore Cursed Techniques that directly increase durability of objects and gain blindsight out to 30 ft.\n\nClass Specific Understandings\n\nThis is an OPTIONAL rule to reflect how different people can gain different epiphanies from achieving a breakthrough. To gain a Class Specific Understanding, you must be of the same class and have achieved at least 2 Breakthroughs. You can only gain only one Class Specific Understanding.\n\nJuggernaut\n\nSkilled Cursed Reinforcement.  When you use Cursed Reinforcement, you can instead gain 10 temporary hit points per CE spent. You can do this a number of times equal to your proficiency bonus each day.\n\nScout\n\nReliable Skill. When you make a skill check that you are proficient with, you can treat any roll of a 9 or lower as a 10.\n\nStrategist\n\nEnhanced Creativity. You gain an additional two Technique Creativity options. You can reduce a technique's cost by 1 (min cost of 1) a number of times each day equal to your proficiency bonus.\n\nShikigami User\n\nCursed Bond. Your Shikigami Companion or one Shikigami, Cursed Corpse, or a tamed Cursed Spirit you have can use Cursed Strike a number of times equal to your proficiency bonus each day. When using it this way, it benefits from any Awakened Understanding or features that benefit your Cursed Strike. You can switch your Cursed Bond as part of a long rest.\n\nSupport Specialist\n\nPositive Energy Master. You have unlocked a well of healing from deep within. You have a pool of healing separate from your RCT pool containing a number of hit points equal to twice your level. You can draw any number of healing from this pool as a bonus action to heal yourself. You can use this healing on another creature you touch at 5th level.\n\nWarrior\n\nDestructive Cursed Strike. When you use Cursed Strike, you deal additional necrotic damage equal to your CE modifier a number of times equal to twice your proficiency bonus each day.\n\nAverage Cursed Energy\n\nThe aggregate amount of an individual's cursed energy isn't determined by how many negative emotions they possess but by their innate talent for jujutsu. You can use this as a standard for the cursed energy possessed by normal people or sorcerers. There are of course differences for sorcerers who are more or less talented in manipulating cursed energy and you can change this standard for your own uses.\n\nClassification\n\nCursed Energy (CE)\n\nDescription / Power Context\n\nHeavenly Restriction\n\n0 CE\n\nNo cursed energy; relies entirely on physical prowess or innate talent.\n\nNormal Person\n\n½ CE\n\nMinimal cursed energy, barely detectable; unaware of curses.\n\nNormal Person (Despair)\n\n1 CE\n\nTemporary surge of cursed energy due to intense emotion (fear, pain, grief).\n\nGrade 4\n\n1–5 CE\n\nWeak cursed energy; can exorcise minor spirits or use basic techniques.\n\nGrade 3\n\n6–15 CE\n\nModerate cursed energy; capable sorcerer or lesser cursed spirit.\n\nGrade 2\n\n16–30 CE\n\nStrong cursed energy; skilled sorcerers and mid-tier special missions.\n\nGrade 1\n\n31–50 CE\n\nHigh cursed energy; veteran sorcerers and elite-level cursed spirits.\n\nSpecial Grade\n\n50+ CE\n\nMassive cursed energy output; national-level threat or transcendent ability.\n\nCredits\n\nCredit for all the art towards Gege Akutami and Shonen Jump.\n\nThanks for inspiration from the JJK D&amp;D wiki. Further thanks to my friends for giving me ideas.\n\nMaybe check out silly discord…?\n\nThis work is licensed under the Creative Commons\n\nAttribution–NonCommercial–ShareAlike 4.0 International License.\n\n© 2026 [I watch Anime]"
+  }
+}

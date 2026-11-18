@@ -1,0 +1,2446 @@
+[
+  {
+    "id": "juggernaut",
+    "name": "Juggernaut",
+    "description": "Bậc thầy thể thuật và cận chiến áp sát, sử dụng thể lực phi phàm kết hợp dòng chảy Chú lực vũ bão để nghiền nát mọi kẻ thù. Đại diện tiêu biểu: Yuji Itadori, Aoi Todo.",
+    "proficienciesText": "Proficiencies\nArmor: Light armor, medium armor, shieldsWeapons: Simple weapons, martial weaponsTools: NoneSaving Throws: Strength, ConstitutionSkills: Choose two from Animal Handling, Athletics, Intimidation, Nature, Perception, and Survival",
+    "table": [
+      [
+        "Level",
+        "Prof",
+        "Features",
+        "Dmg Dice",
+        "Total Cursed Energy Points"
+      ],
+      [
+        "1",
+        "+2",
+        "Innate  Technique, Unarmored Defence,  Combat Prowess",
+        "d6",
+        "1 + CE modifier"
+      ],
+      [
+        "2",
+        "+2",
+        "Focus, Reckless Blows",
+        "d6",
+        "2 + CE modifier"
+      ],
+      [
+        "3",
+        "+2",
+        "Innate Technique Feature",
+        "d6",
+        "3 + CE modifier"
+      ],
+      [
+        "4",
+        "+2",
+        "Ability Score Improvement",
+        "d6",
+        "4 + CE modifier"
+      ],
+      [
+        "5",
+        "+3",
+        "Extra Attack, Pursuer",
+        "d8",
+        "5 + CE modifier"
+      ],
+      [
+        "6",
+        "+3",
+        "Innate  Technique Feature",
+        "d8",
+        "6 + CE modifier"
+      ],
+      [
+        "7",
+        "+3",
+        "Honed Instinct",
+        "d8",
+        "7 + CE modifier"
+      ],
+      [
+        "8",
+        "+3",
+        "Ability Score Improvement",
+        "d8",
+        "8 + CE modifier"
+      ],
+      [
+        "9",
+        "+4",
+        "Brutal Blows (1 Die)",
+        "d8",
+        "9 + CE modifier"
+      ],
+      [
+        "10",
+        "+4",
+        "Lock In",
+        "d8",
+        "10 + CE modifier"
+      ],
+      [
+        "11",
+        "+4",
+        "Innate  Technique Feature",
+        "d10",
+        "11 + CE modifier"
+      ],
+      [
+        "12",
+        "+4",
+        "Ability Score Improvement",
+        "d10",
+        "12 + CE modifier"
+      ],
+      [
+        "13",
+        "+5",
+        "Brutal Blows (2 Die)",
+        "d10",
+        "13 + CE modifier"
+      ],
+      [
+        "14",
+        "+5",
+        "Curse Resistance",
+        "d10",
+        "14 + CE modifier"
+      ],
+      [
+        "15",
+        "+5",
+        "Endless Focus",
+        "d10",
+        "15 + CE modifier"
+      ],
+      [
+        "16",
+        "+5",
+        "Ability Score Improvement",
+        "d10",
+        "16 + CE modifier"
+      ],
+      [
+        "17",
+        "+6",
+        "Brutal Blows (3 Die)",
+        "d12",
+        "17 + CE modifier"
+      ],
+      [
+        "18",
+        "+6",
+        "Innate  Technique Feature",
+        "d12",
+        "18 + CE modifier"
+      ],
+      [
+        "19",
+        "+6",
+        "Ability Score Improvement",
+        "d12",
+        "19 + CE modifier"
+      ],
+      [
+        "20",
+        "+6",
+        "Unstoppable",
+        "d12",
+        "20 + CE modifier"
+      ]
+    ],
+    "features": [
+      {
+        "name": "Innate Technique",
+        "vietnameseName": "Thuật Thức Bẩm Sinh",
+        "level": 1,
+        "tag": "Core Trait",
+        "action": "",
+        "descriptionEn": "Starting at 1st level, you were born with an Innate Technique. Innate Techniques are unique abilities congenitally engraved into the user's body, specifically in the right prefrontal cortex of the brain. Most jujutsu sorcerers are born with an innate technique that manifests around the age of five or six, which continually carves its formula into the user over time. You must choose one Innate Technique, all detailed under Innate Techniques. Your choice grants you features at 1st, and again at 3rd, 6th, 11th, and 18th level.",
+        "description": "Bắt đầu từ cấp 1, bạn bẩm sinh sở hữu một Thuật Thức Bẩm Sinh (Innate Technique) được khắc sâu vào hồi não (vỏ não trước trán phải) ngay từ khi lọt lòng. Trong thế giới Chú thuật, tài năng của một Chú thuật sư có đến 80% do bẩm sinh quyết định; thuật thức thường thức tỉnh vào khoảng 5–6 tuổi và liên tục khắc sâu công thức chú thuật vào cơ thể theo năm tháng. Bạn chọn một Thuật Thức Bẩm Sinh trong danh mục Thuật Thức. Lựa chọn này ban cho bạn các năng lực tại cấp 1, và tiếp tục khai mở sức mạnh tại các cấp 3, 6, 11 và 18."
+      },
+      {
+        "name": "Combat Prowess",
+        "vietnameseName": "Bản Lĩnh Đấu Võ",
+        "level": 1,
+        "tag": "Combat Stance",
+        "action": "Bonus Action",
+        "descriptionEn": "At 1st level, your life of scrapping and battling with beasts, has given you mastery of Combat styles that use unarmed strikes and Juggernaut weapons, which are melee weapons without the two-handed property, and improvised weapons. You can not use the finesse property of a weapon while using it as a Juggernaut weapon.\n\nYou can roll a d6 in place of the normal damage of your unarmed strike or Juggernaut weapon. This die changes as you gain Juggernaut levels, as shown in the scrapper column on the Juggernaut table.\n\nWhen you use the Attack action with an unarmed strike or a Juggernaut weapon on your turn, you can make one unarmed strike or grapple as a bonus action. For example, if you take the Attack action and Attack with a Club, you can also make an Unarmed Strike or grapple as a Bonus Action, assuming you haven’t already taken a Bonus Action this turn.",
+        "description": "Kinh nghiệm tôi luyện từ vô số trận huyết chiến tay đôi với dã thú và nguyền hồn đem lại cho bạn khả năng làm chủ tuyệt đỉnh các đòn thể thuật quyền cước (unarmed strikes) và vũ khí Juggernaut (vũ khí cận chiến một tay không có thuộc tính two-handed, và vũ khí ứng biến ngẫu nhiên trên chiến trường). Bạn không thể áp dụng thuộc tính Finesse khi sử dụng vũ khí như một vũ khí Juggernaut.\n\n• Uy lực đòn đánh: Bạn được đổ xúc xắc d6 thay cho sát thương cơ bản của quyền cước hoặc vũ khí Juggernaut. Cấp bậc xúc xắc sát thương này sẽ tăng tiến mạnh dần theo cấp độ Juggernaut (thể hiện trong cột Dmg Dice ở bảng tiến trình).\n• Liên hoàn thế công: Khi bạn thực hiện hành động Attack bằng thể thuật quyền cước hoặc vũ khí Juggernaut trong lượt của mình, bạn có thể lập tức tung thêm một đòn quyền cước hoặc thực hiện một đòn tóm bắt Grapple bằng một Bonus Action."
+      },
+      {
+        "name": "Unarmored Defense",
+        "vietnameseName": "Cương Thể Bất Hoại",
+        "level": 1,
+        "tag": "Defense",
+        "action": "",
+        "descriptionEn": "While you are not wearing any armor and not using a shield, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier.",
+        "description": "Cơ thể rắn chắc cùng bản năng né đòn biến da thịt bạn thành lớp giáp tự nhiên kiên cố nhất. Khi không mặc bất kỳ loại giáp hộ thân nào và không sử dụng khiên chắn, Chỉ Số Giáp của bạn bằng: AC = 10 + DEX modifier + CON modifier."
+      },
+      {
+        "name": "Focus",
+        "vietnameseName": "Cảnh Giới Tập Trung",
+        "level": 2,
+        "tag": "Buff / Stance",
+        "action": "Bonus Action",
+        "descriptionEn": "At 2nd level, in battle, you fight with an unstoppable focus. On your turn, you can enter a focus as a bonus action. While focused, you gain the following benefits while not wearing heavy armor:\n\n• You have advantage on Strength checks and Strength saving throws.\n• You have resistance to bludgeoning, piercing, and slashing damage.\n• You add your proficiency bonus to Strength based melee damage rolls.\n\nYour focus lasts for 1 minute. It ends early if you are knocked unconscious. You can also end your focus on your turn as a bonus action. You can focus a number of times equal to your proficiency bonus each long rest.",
+        "description": "Tại cấp 2, khi lao vào chiến trường đẫm máu, bạn kích phát trạng thái tập trung tột độ không gì ngăn cản nổi. Trong lượt của mình, bạn có thể nhập vào trạng thái Focus bằng một Bonus Action. Khi đang Focus và không mang giáp nặng (heavy armor), cơ thể bạn bộc phát uy lực hung hãn:\n\n• Áp đảo thể lực: Bạn nhận Advantage đối với mọi lần Strength checks và Strength saving throws.\n• Cương thể hộ thân: Nhận Kháng (Resistance) toàn bộ sát thương va đập (bludgeoning), đâm thấu (piercing) và trảm kích (slashing).\n• Sát phạt cuồng bạo: Cộng thêm Proficiency Bonus (PB) thẳng vào sát thương của mọi đòn đánh cận chiến dựa trên Strength.\n\nTrạng thái Focus duy trì trong 1 phút, chỉ kết thúc sớm khi bạn mất ý thức (Unconscious) hoặc chủ động giải trừ thế công bằng một Bonus Action. Bạn có số lần kích hoạt Focus bằng Proficiency Bonus (PB) cho mỗi lần hoàn thành Long Rest."
+      },
+      {
+        "name": "Reckless Blows",
+        "vietnameseName": "Cuồng Công Trảm",
+        "level": 2,
+        "tag": "Offense",
+        "action": "",
+        "descriptionEn": "Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.",
+        "description": "Bắt đầu từ cấp 2, bạn có thể gạt bỏ mọi sự thận trọng phòng thủ để dồn toàn lực vào những đòn công kích liều mạng dữ dội. Khi tung đòn tấn công đầu tiên trong lượt, bạn có thể chọn đánh liều mạng (Reckless): đòn tấn công cận chiến dùng Strength của bạn nhận Advantage trong suốt lượt này; đổi lại, mọi đòn tấn công của đối thủ nhắm vào bạn cũng sẽ có Advantage cho đến đầu lượt kế tiếp của bạn."
+      },
+      {
+        "name": "Ability Score Improvement",
+        "vietnameseName": "Đột Phá Chỉ Số",
+        "level": 4,
+        "tag": "Progression",
+        "action": "",
+        "descriptionEn": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. You can also ignore this increase to instead gain a Feat.",
+        "description": "Khi đạt cấp 4, và tiếp tục tại các cấp 8, 12, 16 và 19, bạn có thể gia tăng năng lực thể chất và tâm trí: tăng một chỉ số thuộc tính tự chọn lên +2, hoặc tăng hai chỉ số thuộc tính tự chọn lên +1 (tối đa không vượt quá 20). Thay vào đó, bạn có thể chọn nhận một Kỳ Công (Feat)."
+      },
+      {
+        "name": "Extra Attack",
+        "vietnameseName": "Liên Hoàn Công",
+        "level": 5,
+        "tag": "Combat",
+        "action": "",
+        "descriptionEn": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.",
+        "description": "Bắt đầu từ cấp 5, nhịp độ công kích của bạn tăng gấp bội: bạn có thể tung ra hai đòn tấn công thay vì chỉ một đòn mỗi khi thực hiện hành động Attack trong lượt của mình."
+      },
+      {
+        "name": "Pursuer",
+        "vietnameseName": "Truy Sát Đoạt Mệnh",
+        "level": 5,
+        "tag": "Movement",
+        "action": "Bonus Action",
+        "descriptionEn": "Starting at 5th level, as part of your bonus action while entering a focus, you can move up to half your movement speed towards an enemy.",
+        "description": "Bắt đầu từ cấp 5, bản năng săn mồi trỗi dậy mãnh liệt. Ngay trong khoảnh khắc kích hoạt trạng thái Focus bằng Bonus Action, bạn có thể bứt tốc lao tới áp sát kẻ thù một khoảng cách lên đến một nửa tốc độ di chuyển (Movement Speed) của mình."
+      },
+      {
+        "name": "Honed Instincts",
+        "vietnameseName": "Trực Giác Chiến Trận",
+        "level": 7,
+        "tag": "Passive",
+        "action": "",
+        "descriptionEn": "By 7th level, your instincts are so honed that you have advantage on initiative rolls.\n\nAdditionally, if you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn, but only if you enter your focus before doing anything else on that turn.",
+        "description": "Đạt cấp 7, phản xạ sinh tồn trước hiểm cảnh của bạn nhạy bén đến cực hạn: bạn nhận Advantage cho mọi lần đổ Khởi Động (Initiative rolls).\n\nĐặc biệt, nếu bị tập kích bất ngờ (Surprised) khi khai chiến, miễn là không bị mất khả năng hành động (Incapacitated), bạn vẫn có thể xuất thủ bình thường trong lượt đầu tiên nếu lập tức kích hoạt trạng thái Focus làm hành động đầu tiên của lượt đó."
+      },
+      {
+        "name": "Brutal Blows",
+        "vietnameseName": "Bạo Kích Nghiền Nát",
+        "level": 9,
+        "tag": "Damage",
+        "action": "",
+        "descriptionEn": "Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.\n\nThis increases to two additional dice at 13th level and three additional dice at 17th level.",
+        "description": "Bắt đầu từ cấp 9, những cú ra đòn của bạn mang sức công phá tàn khốc: mỗi khi tung ra một đòn Critical Hit cận chiến, bạn được đổ thêm một xúc xắc sát thương vũ khí vào tổng sát thương bạo kích.\n\nMức sát thương cuồng bạo này tăng lên thành 2 xúc xắc cộng thêm tại cấp 13, và đạt tới 3 xúc xắc cộng thêm tại cấp 17."
+      },
+      {
+        "name": "Lock In",
+        "vietnameseName": "Tử Thủ Khóa Chết",
+        "level": 10,
+        "tag": "Survival",
+        "action": "",
+        "descriptionEn": "Starting at 10th level, your focus can keep you fighting despite grievous wounds. If you drop to 0 hit points while you're focused and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead.\n\nEach time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.",
+        "description": "Bắt đầu từ cấp 10, ý chí sắt đá trong trạng thái Focus giúp bạn bất chấp cả vết thương chí mạng nhất. Nếu bạn bị đánh tụt về 0 HP khi đang Focus và không chết ngay lập tức, bạn có thể thực hiện một lần DC 10 CON Save: nếu thành công, bạn nghiến răng đứng vững ở 1 HP thay vì gục ngã.\n\nMỗi lần sử dụng tính năng này sau lần đầu tiên, độ khó DC sẽ tăng thêm 5. Chỉ số DC này sẽ được đặt lại về 10 sau khi bạn hoàn thành một Short Rest hoặc Long Rest."
+      },
+      {
+        "name": "Curse Resistance",
+        "vietnameseName": "Thể Xác Kháng Chú",
+        "level": 14,
+        "tag": "Resistance",
+        "action": "",
+        "descriptionEn": "Beginning at 14th level, you also gain resistance to necrotic damage while focused.",
+        "description": "Bắt đầu từ cấp 14, cơ thể đạt tới độ thuần thục chú lực ngoại hạng, giúp da thịt bạn hình thành màng chắn đề kháng tự nhiên: nhận Resistance trước sát thương Hoại Tử / Chú Sát (Necrotic damage) trong khi đang kích hoạt Focus."
+      },
+      {
+        "name": "Endless Focus",
+        "vietnameseName": "Tập Trung Bất Tận",
+        "level": 15,
+        "tag": "Stance Upgrade",
+        "action": "",
+        "descriptionEn": "Beginning at 15th level, your focus is so fierce that it only ends if you fall unconscious or if you choose to end it.",
+        "description": "Bắt đầu từ cấp 15, cảnh giới tập trung của bạn bền bỉ đến mức phá vỡ giới hạn thời gian thông thường: trạng thái Focus sẽ kéo dài vô hạn và chỉ chấm dứt khi bạn ngã gục mất ý thức (Unconscious) hoặc khi bạn chủ động lựa chọn thu hồi thế công."
+      },
+      {
+        "name": "Unstoppable",
+        "vietnameseName": "Bất Khả Cản Phá",
+        "level": 20,
+        "tag": "Capstone",
+        "action": "",
+        "descriptionEn": "At 20th level, you are aware of your role in society and will do your best to fulfill it. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24.",
+        "description": "Tại cấp 20, bạn chạm tới đỉnh phong thể chất của giới Chú thuật sư, thấu triệt vai trò sát phạt của mình giữa thế giới hỗn loạn. Điểm Strength và Constitution của bạn tăng vĩnh viễn thêm +4; đồng thời ngưỡng trần tối đa cho hai chỉ số này của bạn chính thức đạt mốc 24."
+      }
+    ],
+    "images": [
+      "image20.png",
+      "image22.png",
+      "image12.png",
+      "image23.png",
+      "image24.png"
+    ],
+    "image": "image20.png",
+    "backgroundImage": "image21.png",
+    "hpAt1st": "12 + CON modifier",
+    "hpHigher": "1d12 (or 7) + CON modifier per Juggernaut level after 1st",
+    "profData": {
+      "armor": "Light armor, medium armor, shields",
+      "weapons": "Simple weapons, martial weapons",
+      "savingThrows": "Strength, Constitution",
+      "skills": "Choose two from Animal Handling, Athletics, Intimidation, Nature, Perception, and Survival"
+    },
+    "ceFormula": "Cấp độ + CE modifier",
+    "hitDiceLabel": "1d12 per Juggernaut level",
+    "startingEquipment": "You start with the following equipment, in addition to the equipment granted by your background:\n\n(a) a greataxe or (b) any martial melee weapon\n\n(a) two handaxes or (b) any simple weapon\n\nAn explorer's pack and four javelins",
+    "vietnameseName": "Thiết Binh Cận Chiến",
+    "role": "Tiền Tuyến / Đỡ Đòn & Thể Lực"
+  },
+  {
+    "id": "scout",
+    "name": "Scout",
+    "description": "Chuyên gia tốc độ và phản xạ thần tốc, làm chủ không gian chiến trường bằng thân pháp ảo ảnh và những cú đâm hiểm hóc. Đại diện tiêu biểu: Naobito Zen'in, Naoya Zen'in.",
+    "proficienciesText": "Proficiencies\nArmor: Light armorWeapons: Simple weapons, handguns, longswords, rapiers, and shortswordsTools: NoneSaving Throws: Dexterity, WisdomSkills: Choose three skills from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival",
+    "table": [
+      [
+        "Level",
+        "Prof",
+        "Features",
+        "Speed Bonus",
+        "Dmg Dice",
+        "Total Cursed Energy Points"
+      ],
+      [
+        "1",
+        "+2",
+        "Innate  Technique, Quick Strikes, Unparalleled Movement",
+        "+10",
+        "d4",
+        "1 + CE modifier"
+      ],
+      [
+        "2",
+        "+2",
+        "Swift Movements,  Sharp Eyes",
+        "+10",
+        "d4",
+        "2 + CE modifier"
+      ],
+      [
+        "3",
+        "+2",
+        "Innate Technique Feature",
+        "+10",
+        "d4",
+        "3 + CE modifier"
+      ],
+      [
+        "4",
+        "+2",
+        "Ability Score Improvement",
+        "+10",
+        "d4",
+        "4 + CE modifier"
+      ],
+      [
+        "5",
+        "+3",
+        "Eagle Eyes, Extra Attack",
+        "+15",
+        "d6",
+        "5 + CE modifier"
+      ],
+      [
+        "6",
+        "+3",
+        "Innate  Technique Feature",
+        "+15",
+        "d6",
+        "6 + CE modifier"
+      ],
+      [
+        "7",
+        "+3",
+        "Evasion",
+        "+15",
+        "d6",
+        "7 + CE modifier"
+      ],
+      [
+        "8",
+        "+3",
+        "Ability Score Improvement",
+        "+15",
+        "d6",
+        "8 + CE modifier"
+      ],
+      [
+        "9",
+        "+4",
+        "Improved Unparalleled Movement",
+        "+20",
+        "d6",
+        "9 + CE modifier"
+      ],
+      [
+        "10",
+        "+4",
+        "Tactical Retreat",
+        "+20",
+        "d6",
+        "10 + CE modifier"
+      ],
+      [
+        "11",
+        "+4",
+        "Innate  Technique Feature",
+        "+20",
+        "d8",
+        "11 + CE modifier"
+      ],
+      [
+        "12",
+        "+4",
+        "Ability Score Improvement",
+        "+20",
+        "d8",
+        "12 + CE modifier"
+      ],
+      [
+        "13",
+        "+5",
+        "Scanning Eyes",
+        "+25",
+        "d8",
+        "13 + CE modifier"
+      ],
+      [
+        "14",
+        "+5",
+        "Sixth Sense",
+        "+25",
+        "d8",
+        "14 + CE modifier"
+      ],
+      [
+        "15",
+        "+5",
+        "Tactical Retreat Improvement",
+        "+25",
+        "d8",
+        "15 + CE modifier"
+      ],
+      [
+        "16",
+        "+5",
+        "Ability Score Improvement",
+        "+25",
+        "d8",
+        "16 + CE modifier"
+      ],
+      [
+        "17",
+        "+6",
+        "Swift Dodge",
+        "+30",
+        "d10",
+        "17 + CE modifier"
+      ],
+      [
+        "18",
+        "+6",
+        "Innate  Technique Feature",
+        "+30",
+        "d10",
+        "18 + CE modifier"
+      ],
+      [
+        "19",
+        "+6",
+        "Ability Score Improvement",
+        "+30",
+        "d10",
+        "19 + CE modifier"
+      ],
+      [
+        "20",
+        "+6",
+        "Unfathomable Speed",
+        "+35",
+        "d10",
+        "20 + CE modifier"
+      ]
+    ],
+    "features": [
+      {
+        "name": "Innate Technique",
+        "vietnameseName": "Thuật Thức Bẩm Sinh",
+        "level": 1,
+        "tag": "Core Trait",
+        "action": "",
+        "descriptionEn": "Starting at 1st level, you were born with an Innate Technique. Innate Techniques are unique abilities congenitally engraved into the user's body, specifically in the right prefrontal cortex of the brain. Most jujutsu sorcerers are born with an innate technique that manifests around the age of five or six, which continually carves its formula into the user over time. You must choose one Innate Technique, all detailed under Innate Techniques. Your choice grants you features at 1st, and again at 3rd, 6th, 11th, and 18th level.",
+        "description": "Bắt đầu từ cấp 1, bạn bẩm sinh sở hữu một Thuật Thức Bẩm Sinh (Innate Technique) được khắc sâu vào hồi não (vỏ não trước trán phải) ngay từ thuở lọt lòng. Thuật thức là bản ngã độc nhất định hình 80% tài năng của Chú thuật sư. Bạn chọn một Thuật Thức Bẩm Sinh trong danh mục Thuật Thức để khai mở sức mạnh tại cấp 1, và tiếp tục nâng cấp tại các cấp 3, 6, 11 và 18."
+      },
+      {
+        "name": "Quick Strikes",
+        "vietnameseName": "Khoái Kích Thể Thuật",
+        "level": 1,
+        "tag": "Martial Arts",
+        "action": "Bonus Action",
+        "descriptionEn": "At 1st level, your practice of martial arts gives you mastery of combat styles that use unarmed strikes and scout weapons, which are shortswords and any simple melee weapons that don't have two-handed or heavy properties.\n\nYou gain the following benefits:\n• You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and scout weapons.\n• You can roll a d4 in place of the normal damage of your unarmed strike or scout weapon. This die changes as you gain scout levels, as shown in the damage dice column of the Scout table.\n• When you use the Attack action with an unarmed strike or a scout weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven't already taken a bonus action this turn.",
+        "description": "Khổ luyện thể thuật cận chiến giúp bạn tinh thông phong cách sát thủ dùng quyền cước (unarmed strikes) và vũ khí Scout (đoản kiếm shortsword cùng mọi vũ khí cận chiến đơn giản không mang thuộc tính two-handed hoặc heavy):\n\n• Chuyển hóa lực đạo: Bạn được dùng Dexterity thay cho Strength cho các lần đổ tấn công và sát thương của thể thuật và vũ khí Scout.\n• Xúc xắc sát thương: Bạn đổ d4 thay cho sát thương cơ bản của quyền cước hoặc vũ khí Scout; xúc xắc này tăng dần theo cấp độ (cột Dmg Dice trong bảng tiến trình).\n• Liên hoàn quyền: Khi thực hiện hành động Attack bằng quyền cước hoặc vũ khí Scout trong lượt, bạn có thể lập tức tung thêm một đòn cước phụ hiểm hóc bằng một Bonus Action."
+      },
+      {
+        "name": "Unparalleled Movement",
+        "vietnameseName": "Thân Pháp Vô Song",
+        "level": 1,
+        "tag": "Movement",
+        "action": "",
+        "descriptionEn": "At 1st level, your speed increases by 10 feet. This bonus increases when you reach certain scout levels, as shown in the scout table.\n\nAt 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.",
+        "description": "Tại cấp 1, tốc độ di chuyển của bạn tăng thêm 10 ft; mức cộng này liên tục gia tăng khi bạn thăng tiến cấp độ Scout (như thể hiện trong bảng tiến trình).\n\nĐến cấp 9, bộ pháp đạt tới cảnh giới phi phàm: bạn có thể đạp tường chạy thẳng đứng dọc theo các bề mặt dựng đứng và lướt trên mặt chất lỏng trong lượt của mình mà không hề bị rơi ngã."
+      },
+      {
+        "name": "Swift Movement",
+        "vietnameseName": "Tật Bộ Thần Tốc",
+        "level": 2,
+        "tag": "Mobility",
+        "action": "Bonus Action",
+        "descriptionEn": "Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take the Dash, Disengage, or Hide action as a bonus action.",
+        "description": "Bắt đầu từ cấp 2, phản xạ thần kinh nhạy bén cho phép bạn thoắt ẩn thoắt hiện trên chiến trường. Bạn có thể thực hiện hành động bứt tốc (Dash), rút lui an toàn (Disengage), hoặc ẩn nấp (Hide) chỉ bằng một Bonus Action duy nhất."
+      },
+      {
+        "name": "Sharp Eyes",
+        "vietnameseName": "Nhãn Lực Thấu Thị",
+        "level": 2,
+        "tag": "Perception / Buff",
+        "action": "Bonus Action",
+        "descriptionEn": "At 2nd level, you can make a bonus action Insight check against an opponent’s Deception check. On a success, you gain an advantage on all rolls against that opponent for that turn.",
+        "description": "Tại cấp 2, ánh mắt sắc như dao cạo của bạn có thể đọc vị mọi sơ hở của đối phương. Bạn có thể dùng một Bonus Action thực hiện kiểm tra Insight đối kháng với Deception của kẻ thù: nếu thành công, bạn nhìn thấu đường đi nước bước của đối phương, nhận Advantage đối với MỌI lần đổ xúc xắc nhắm vào mục tiêu đó trong suốt lượt này."
+      },
+      {
+        "name": "Ability Score Improvement",
+        "vietnameseName": "Đột Phá Chỉ Số",
+        "level": 4,
+        "tag": "Progression",
+        "action": "",
+        "descriptionEn": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. You can also ignore this increase to instead gain a Feat.",
+        "description": "Khi đạt cấp 4, và tiếp tục tại các cấp 8, 12, 16 và 19, bạn có thể tăng một chỉ số thuộc tính tự chọn lên +2, hoặc tăng hai chỉ số thuộc tính lên +1 (tối đa 20). Thay vào đó, bạn có thể chọn nhận một Kỳ Công (Feat)."
+      },
+      {
+        "name": "Eagle Eyes",
+        "vietnameseName": "Ưng Nhãn Tầm Xa",
+        "level": 5,
+        "tag": "Perception",
+        "action": "",
+        "descriptionEn": "Starting at 5th level, you can see even fine details up to a mile away. You also gain advantage on Perception checks using sight.",
+        "description": "Bắt đầu từ cấp 5, thị lực của bạn đạt tới tầm nhìn của loài chim ưng săn mồi: bạn nhìn thấu từng chi tiết vi mô ở khoảng cách xa tới 1 dặm. Đồng thời, bạn nhận Advantage đối với mọi lần kiểm tra Perception sử dụng thị giác."
+      },
+      {
+        "name": "Extra Attack",
+        "vietnameseName": "Liên Hoàn Kích",
+        "level": 5,
+        "tag": "Combat",
+        "action": "",
+        "descriptionEn": "At 5th level, you can attack twice, instead of once when you use the Attack action during your turn.",
+        "description": "Tại cấp 5, bạn có thể chém hoặc tung đòn hai lần liên tiếp thay vì chỉ một lần mỗi khi thực hiện hành động Attack trong lượt của mình."
+      },
+      {
+        "name": "Evasion",
+        "vietnameseName": "Tiêu Sái Tránh Đòn",
+        "level": 7,
+        "tag": "Defense",
+        "action": "",
+        "descriptionEn": "Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an Ice Storm technique. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail. At 15th level, you can choose a second saving throw and gain the same effects from it.",
+        "description": "Bắt đầu từ cấp 7, thân pháp xuất quỷ nhập thần giúp bạn né sạch các sát chiêu diện rộng hủy diệt (như hỏa tức hay thuật thức bão tuyết). Khi gánh chịu hiệu ứng yêu cầu thực hiện DEX Save để giảm nửa sát thương: bạn hoàn toàn KHÔNG nhận sát thương nào nếu Save thành công, và chỉ nhận một nửa sát thương nếu Save thất bại. Đến cấp 15, bạn được chọn thêm một loại Saving Throw thứ hai để nhận đặc quyền né đòn tương tự."
+      },
+      {
+        "name": "Tactical Retreat",
+        "vietnameseName": "Triệt Thoái Chiến Thuật",
+        "level": 10,
+        "tag": "Reaction Mobility",
+        "action": "Reaction",
+        "descriptionEn": "At 10th level, if an opponent moves within 5ft of you, you can move up to your movement speed as a reaction. When you reach 15th level, you can move up to twice your speed.",
+        "description": "Tại cấp 10, nếu một đối thủ di chuyển vào phạm vi cận chiến 5 ft quanh bạn, bạn có thể dùng một Reaction lập tức bứt tốc rút lui tối đa bằng tốc độ di chuyển của mình mà kẻ thù không kịp trở tay. Khi đạt cấp 15, cự ly rút lui này được nâng lên thành gấp đôi tốc độ di chuyển."
+      },
+      {
+        "name": "Scanning Eyes",
+        "vietnameseName": "Tuệ Nhãn Quét Yếu Điểm",
+        "level": 13,
+        "tag": "Perception / Analysis",
+        "action": "",
+        "descriptionEn": "Beginning at 13th level, you can now as a part of Sharp Eyes tell your opponent's weaknesses(Weak Points, Vulnerabilities) and main attacks (Damage Type and highest damage action).",
+        "description": "Bắt đầu từ cấp 13, như một phần của năng lực Sharp Eyes, nhãn lực của bạn phân tích tường tận kết cấu cơ thể kẻ địch: đọc thấu toàn bộ Điểm Yếu (Weak Points), Nhược Điểm sát thương (Vulnerabilities) cùng đòn đánh nguy hiểm nhất của đối thủ (Loại Sát Thương và hành động gây lượng damage lớn nhất)."
+      },
+      {
+        "name": "Sixth Sense",
+        "vietnameseName": "Lục Cảm Cảnh Giới",
+        "level": 14,
+        "tag": "Sense / Defense",
+        "action": "",
+        "descriptionEn": "Beginning at 14th level, you gain advantage on Dexterity saving throws and blindsight out to 30 feet.",
+        "description": "Bắt đầu từ cấp 14, giác quan thứ sáu cảnh báo trước mọi hiểm họa: bạn nhận Advantage cho mọi lần DEX Save, đồng thời sở hữu Tầm Nhìn Mù (Blindsight 30 ft) cảm nhận hoàn hảo không gian xung quanh ngay cả trong bóng tối tuyệt đối hay đối phương tàng hình."
+      },
+      {
+        "name": "Swift Dodge",
+        "vietnameseName": "Hư Ảnh Né Đòn",
+        "level": 17,
+        "tag": "Reaction Defense",
+        "action": "Reaction",
+        "descriptionEn": "Starting at 17th level, when an attacker that you can see hits you with an attack, you can use your reaction to ignore the attack's damage against you. You can use this feature a number of times equal to half your proficiency bonus (rounded up) per long rest.",
+        "description": "Bắt đầu từ cấp 17, khi một kẻ tấn công mà bạn nhìn thấy đánh trúng bạn, bạn có thể dùng một Reaction để biến thân thành tàn ảnh, triệt tiêu và bỏ qua hoàn toàn sát thương của đòn tấn công đó. Bạn có thể sử dụng tính năng này số lần bằng một nửa Proficiency Bonus (PB, làm tròn lên) cho mỗi lần hoàn thành Long Rest."
+      },
+      {
+        "name": "Unfathomable Speed",
+        "vietnameseName": "Cực Tốc Vô Ảnh",
+        "level": 20,
+        "tag": "Capstone",
+        "action": "",
+        "descriptionEn": "Beginning at 20th level, your speed is faster than anyone can track. Your movement becomes instant and cannot provoke opportunity attacks.",
+        "description": "Tại cấp 20, tốc độ của bạn vượt qua cả võng mạc và nhận thức của mọi sinh vật: chuyển động của bạn trở nên tức thời, dịch chuyển trong chớp mắt và hoàn toàn không bao giờ kích hoạt đòn đánh cơ hội (Opportunity Attacks) từ bất kỳ kẻ thù nào."
+      }
+    ],
+    "images": [
+      "image25.png",
+      "image27.png",
+      "image28.png",
+      "image29.png",
+      "image30.png",
+      "image31.png"
+    ],
+    "image": "image25.png",
+    "backgroundImage": "image26.png",
+    "hpAt1st": "8 + CON modifier",
+    "hpHigher": "1d8 (or 5) + CON modifier per Scout level after 1st",
+    "profData": {
+      "armor": "Light armor",
+      "weapons": "Simple weapons, handguns, longswords, rapiers, and shortswords",
+      "savingThrows": "Dexterity, Wisdom",
+      "skills": "Choose three skills from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival"
+    },
+    "ceFormula": "Cấp độ + CE modifier",
+    "hitDiceLabel": "1d8 per Scout level",
+    "startingEquipment": "(a) a rapier or (b) a shortsword\n\n(a) a shortbow and quiver of 20 arrows or (b) a shortsword\n\n(a) a burglar's pack, (b) dungeoneer's pack, or (c) an explorer's pack\n\nDense coat, two daggers, and thieves' tools",
+    "vietnameseName": "Trinh Sát Tật Tốc",
+    "role": "Cơ Động / Đột Kích & Tốc Độ"
+  },
+  {
+    "id": "strategist",
+    "name": "Strategist",
+    "description": "Bộ óc thiên tài tính toán từng bước đi trên chiến trường, tối ưu hóa lượng Chú lực và sáng tạo biến hóa thuật thức khôn lường. Đại diện tiêu biểu: Kenjaku, Aoi Todo (530.000 IQ), Mei Mei.",
+    "proficienciesText": "Proficiencies\nArmor: None",
+    "table": [
+      [
+        "Level",
+        "Prof",
+        "Features",
+        "Total Cursed Energy Points"
+      ],
+      [
+        "1",
+        "+2",
+        "Innate  Technique, Quick Recovery",
+        "2 + CE modifier"
+      ],
+      [
+        "2",
+        "+2",
+        "Technique Creativity",
+        "4 + CE modifier"
+      ],
+      [
+        "3",
+        "+2",
+        "Innate Technique Feature",
+        "6 + CE modifier"
+      ],
+      [
+        "4",
+        "+2",
+        "Ability Score Improvement",
+        "8 + CE modifier"
+      ],
+      [
+        "5",
+        "+3",
+        "",
+        "10 + CE modifier"
+      ],
+      [
+        "6",
+        "+3",
+        "Innate  Technique Feature, Ability Score Improvement",
+        "12 + CE modifier"
+      ],
+      [
+        "7",
+        "+3",
+        "",
+        "14 + CE modifier"
+      ],
+      [
+        "8",
+        "+3",
+        "Ability Score Improvement",
+        "16 + CE modifier"
+      ],
+      [
+        "9",
+        "+4",
+        "",
+        "18 + CE modifier"
+      ],
+      [
+        "10",
+        "+4",
+        "Ability Score Improvement",
+        "20 + CE modifier"
+      ],
+      [
+        "11",
+        "+4",
+        "Innate  Technique Feature",
+        "22 + CE modifier"
+      ],
+      [
+        "12",
+        "+4",
+        "Ability Score Improvement",
+        "24 + CE modifier"
+      ],
+      [
+        "13",
+        "+5",
+        "",
+        "26 + CE modifier"
+      ],
+      [
+        "14",
+        "+5",
+        "",
+        "28 + CE modifier"
+      ],
+      [
+        "15",
+        "+5",
+        "Sorcerous Restoration",
+        "30 + CE modifier"
+      ],
+      [
+        "16",
+        "+5",
+        "Ability Score Improvement",
+        "32 + CE modifier"
+      ],
+      [
+        "17",
+        "+6",
+        "",
+        "34 + CE modifier"
+      ],
+      [
+        "18",
+        "+6",
+        "Innate  Technique Feature",
+        "36 + CE modifier"
+      ],
+      [
+        "19",
+        "+6",
+        "Ability Score Improvement",
+        "38 + CE modifier"
+      ],
+      [
+        "20",
+        "+6",
+        "Signature Move",
+        "40 + CE modifier"
+      ]
+    ],
+    "features": [
+      {
+        "name": "Innate Technique",
+        "vietnameseName": "Thuật Thức Bẩm Sinh",
+        "level": 1,
+        "tag": "Core Trait",
+        "action": "",
+        "descriptionEn": "Starting at 1st level, you were born with an Innate Technique. Innate Techniques are unique abilities congenitally engraved into the user's body, specifically in the right prefrontal cortex of the brain. Most jujutsu sorcerers are born with an innate technique that manifests around the age of five or six, which continually carves its formula into the user over time. You must choose one Innate Technique, all detailed under Innate Techniques. Your choice grants you features at 1st, and again at 3rd, 6th, 11th, and 18th levels.",
+        "description": "Bắt đầu từ cấp 1, bạn sở hữu một Thuật Thức Bẩm Sinh (Innate Technique) được khắc sâu vào hồi não (vỏ não trước trán) từ lúc chào đời. Là bậc thầy mưu lược chú thuật, bạn lựa chọn một Thuật Thức Bẩm Sinh trong danh mục Thuật Thức để phát triển thành vũ khí trí tuệ tối thượng tại cấp 1, và tiếp tục nâng cấp tại các cấp 3, 6, 11 và 18."
+      },
+      {
+        "name": "Quick Recovery",
+        "vietnameseName": "Tái Nạp Chú Lực",
+        "level": 2,
+        "tag": "Resource Recovery",
+        "action": "Action",
+        "descriptionEn": "You have a pool of latent cursed energy that replenishes when you take a long rest. The pool equals half your Strategist level (rounded up) and you can draw from it at will.\n\nFor example, if you're a 4th-level strategist, you have a pool of 2 cursed energy points. You can recover either 1 at two different times or 2 at once.",
+        "description": "Bạn sở hữu một bể chứa Chú lực tiềm ẩn (latent cursed energy pool) tự động hồi phục đầy đủ sau mỗi kỳ Long Rest. Bể chứa này có dung lượng bằng một nửa cấp độ Strategist (làm tròn lên), và bạn có thể kích hoạt rút Chú lực từ bể này bất kỳ lúc nào theo ý muốn chiến thuật.\n\nVí dụ: Strategist cấp 4 sở hữu bể dự trữ 2 CE; bạn có thể linh hoạt rút 1 CE ở hai thời điểm hiểm nghèo khác nhau hoặc rút cạn một lúc cả 2 CE để tung sát chiêu."
+      },
+      {
+        "name": "Technique Creativity",
+        "vietnameseName": "Biến Ảo Thuật Thức",
+        "level": 2,
+        "tag": "Metamagic / Modification",
+        "action": "",
+        "descriptionEn": "At 2nd level, you gain the ability to twist cursed techniques to suit your needs. You gain two of the following Modification options of your choice. You gain another one at 10th and 17th levels. You can use only one Modification option on a technique when you cast it unless otherwise specified.\n\n• Careful Technique: Spend 1 CE to protect creatures up to your CE modifier from the technique's full force; chosen creatures automatically succeed on their saving throw.\n• Distant Technique: Spend 1 CE to double a technique's range (if 5ft+) or make a touch technique have a 30ft range.\n• Empowered Technique: Spend 1 CE to reroll damage dice up to your CE modifier (must use new rolls; can stack with another modification).\n• Extended Technique: Spend 1 CE to double duration of techniques lasting 1 minute+, up to 24 hours.\n• Heightened Technique: Spend 3 CE to give one target disadvantage on its first saving throw against the technique.\n• Quickened Technique: Spend 2 CE to change casting time from 1 Action to 1 Bonus Action.\n• Seeking Technique: If an attack roll misses, spend 2 CE to reroll the d20 (can stack with another modification).\n• Subtle Technique: Spend 1 CE to cast without somatic or verbal components.\n• Transmuted Technique: Spend 1 CE to change damage to acid, cold, fire, lightning, poison, or thunder.\n• Twinned Technique: Spend CE equal to technique cost (1 if free) to target a second creature with a single-target technique.",
+        "description": "Tại cấp 2, khả năng thao túng dòng chảy chú lực thượng thừa cho phép bạn bẻ cong và tái cấu trúc công thức thuật thức theo ý đồ tác chiến. Bạn chọn 2 tùy chọn Biến Ảo (Modification) bên dưới, và nhận thêm một tùy chọn nữa tại cấp 10 và cấp 17. Mỗi lần xuất chiêu chỉ được áp dụng 1 Biến Ảo, trừ khi có ghi chú đặc biệt:\n\n• Bảo Toàn Thuật (Careful Technique): Chi 1 CE để kiểm soát làn sóng chú lực, che chở số đồng minh lên đến CE modifier khỏi sức công phá; mục tiêu được chọn tự động Save thành công.\n• Viễn Khoảng Thuật (Distant Technique): Chi 1 CE để nhân đôi cự ly thi triển (từ 5 ft trở lên) hoặc biến đòn chạm (Touch) thành đòn tầm xa 30 ft.\n• Cường Hóa Thuật (Empowered Technique): Chi 1 CE để đổ lại số xúc xắc sát thương lên đến CE modifier (phải dùng kết quả mới; có thể áp dụng chồng lên Biến Ảo khác).\n• Diên Trường Thuật (Extended Technique): Chi 1 CE để nhân đôi thời gian duy trì của thuật thức kéo dài từ 1 phút trở lên, tối đa 24 giờ.\n• Áp Bách Thuật (Heightened Technique): Chi 3 CE tạo áp lực tinh thần khủng khiếp, ép đối phương chịu Disadvantage trong lần Saving Throw đầu tiên chống lại thuật thức.\n• Tức Thời Thuật (Quickened Technique): Chi 2 CE đẩy nhanh tốc độ kết ấn, rút ngắn thời gian thi triển từ 1 Action thành 1 Bonus Action.\n• Tầm Tung Thuật (Seeking Technique): Khi đòn tấn công thuật thức bị trượt, chi 2 CE để đổ lại d20 (phải dùng kết quả mới; có thể dùng chồng lên Biến Ảo khác).\n• Vô Thanh Vô Ấn (Subtle Technique): Chi 1 CE để xuất chiêu hoàn toàn ẩn mật, không cần niệm chú ngữ (verbal) hay kết thủ ấn (somatic).\n• Biến Tính Thuật (Transmuted Technique): Chi 1 CE biến đổi bản chất sát thương sang Acid, Cold, Fire, Lightning, Poison hoặc Thunder.\n• Song Phân Thuật (Twinned Technique): Chi lượng CE bằng chi phí gốc của thuật thức (1 CE nếu miễn phí) để phân nhánh đòn đánh đơn mục tiêu sang một kẻ thù thứ hai trong tầm với."
+      },
+      {
+        "name": "Ability Score Improvement",
+        "vietnameseName": "Đột Phá Chỉ Số",
+        "level": 4,
+        "tag": "Progression",
+        "action": "",
+        "descriptionEn": "When you reach 4th level, and again at 6th, 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. You can also ignore this increase to instead gain a Feat.",
+        "description": "Tại cấp 4, và tiếp tục tại các cấp 6, 8, 10, 12, 16 và 19, trí tuệ chiến lược vượt trội cho phép bạn liên tục nâng cao bản thân: tăng một chỉ số thuộc tính tự chọn lên +2, hoặc tăng hai chỉ số lên +1 (tối đa 20), hoặc chọn nhận một Kỳ Công (Feat)."
+      },
+      {
+        "name": "Sorcerous Restoration",
+        "vietnameseName": "Tự Hồi Chú Thuật",
+        "level": 15,
+        "tag": "Restoration",
+        "action": "",
+        "descriptionEn": "At 15th level, you regain 4 cursed energy on a short rest.",
+        "description": "Tại cấp 15, khả năng tĩnh tâm điều hòa cảm xúc tiêu cực đạt đến độ tinh tế tột bực: bạn tự động hồi phục 4 điểm Chú lực (CE) sau mỗi lần hoàn thành một Short Rest."
+      },
+      {
+        "name": "Signature Move",
+        "vietnameseName": "Bản Lĩnh Đắc Ý",
+        "level": 20,
+        "tag": "Capstone",
+        "action": "",
+        "descriptionEn": "At 20th level, you can choose a feature that uses cursed energy, that is not a domain expansion, maximum, or reverse curse technique, and use it for no cursed energy cost. It counts as the minimum input of Cursed Energy necessary.",
+        "description": "Tại cấp 20, bạn đã hoàn thiện một sát chiêu sở trường đắc ý đến mức xuất chiêu thành thói quen bản năng: chọn một năng lực hoặc thuật thức tiêu hao Chú lực (không phải Lãnh Địa, Cực Phiên hay Phản Chuyển RCT) và thi triển nó hoàn toàn MIỄN PHÍ (0 CE cost), được tính như mức tiêu hao Chú lực tối thiểu cần thiết."
+      }
+    ],
+    "images": [
+      "image32.png",
+      "image33.png",
+      "image34.png"
+    ],
+    "image": "image32.png",
+    "backgroundImage": "image31.png",
+    "hpAt1st": "6 + CON modifier",
+    "hpHigher": "1d6 (or 4) + CON modifier per Strategist level after 1st",
+    "profData": {
+      "armor": "None",
+      "weapons": "Daggers, darts, slings, quarterstaffs, and handguns",
+      "savingThrows": "Intelligence, Wisdom",
+      "skills": "Choose two from Arcana, History, Insight, Investigation, Medicine, and Religion"
+    },
+    "ceFormula": "2x Cấp độ + CE modifier (Bể CE lớn nhất)",
+    "hitDiceLabel": "1d6 per Strategist level",
+    "startingEquipment": "(a) a handgun or (b) a dagger\n\n(a) a component pouch or (b) an arcane focus\n\n(a) a scholar's pack or (b) an explorer's pack\n\nA technique manual",
+    "techniqueCreativities": [
+      {
+        "name": "Careful Technique (Chú Thuật Thận Trọng)",
+        "cost": "1 Cursed Energy",
+        "description": "Khi thi triển thuật thức buộc sinh vật khác phải tung xúc xắc Cứu nguy (Saving Throw), bạn có thể chi 1 CE để chọn số đồng minh tối đa bằng CE modifier tự động thành công và không nhận sát thương."
+      },
+      {
+        "name": "Distant Technique (Chú Thuật Viễn Cự)",
+        "cost": "1 Cursed Energy",
+        "description": "Nhân đôi tầm bắn của thuật thức (từ 5ft trở lên), hoặc biến thuật thức tầm chạm (Touch) thành tầm bắn xa 30 feet."
+      },
+      {
+        "name": "Empowered Technique (Cường Hóa Uy Lực)",
+        "cost": "1 Cursed Energy",
+        "description": "Khi gieo xúc xắc sát thương cho thuật thức, chi 1 CE để gieo lại số lượng xúc xắc tối đa bằng CE modifier và lấy kết quả mới. Có thể dùng đồng thời với tùy chọn Biến hóa khác."
+      },
+      {
+        "name": "Extended Technique (Kéo Dài Hiệu Lực)",
+        "cost": "1 Cursed Energy",
+        "description": "Khi thi triển thuật thức có thời lượng từ 1 phút trở lên, chi 1 CE để nhân đôi thời lượng duy trì (tối đa 24 giờ)."
+      },
+      {
+        "name": "Heightened Technique (Gia Tăng Áp Chế)",
+        "cost": "3 Cursed Energy",
+        "description": "Chi 3 CE để khiến 1 mục tiêu phải chịu Disadvantage (bất lợi) trong lần tung xúc xắc Cứu nguy đầu tiên chống lại thuật thức."
+      },
+      {
+        "name": "Quickened Technique (Thần Tốc Niệm)",
+        "cost": "2 Cursed Energy",
+        "description": "Biến thời gian thi triển của thuật thức từ 1 Action thành 1 Bonus Action."
+      },
+      {
+        "name": "Seeking Technique (Chú Thuật Truy Tìm)",
+        "cost": "2 Cursed Energy",
+        "description": "Nếu bạn tấn công bằng thuật thức mà bị trượt (Miss), chi 2 CE để gieo lại d20 và lấy kết quả mới. Có thể kết hợp với tùy chọn Biến hóa khác."
+      },
+      {
+        "name": "Subtle Technique (Chú Thuật Vô Thanh)",
+        "cost": "1 Cursed Energy",
+        "description": "Chi 1 CE để thi triển thuật thức mà không cần thực hiện thủ ấn (Somatic) hay niệm chú khẩu ngữ (Verbal)."
+      },
+      {
+        "name": "Transmuted Technique (Chuyển Hóa Thuộc Tính)",
+        "cost": "1 Cursed Energy",
+        "description": "Chi 1 CE để đổi loại sát thương của thuật thức sang một trong các hệ: Axít (Acid), Băng (Cold), Hỏa (Fire), Lôi (Lightning), Độc (Poison), hoặc Sấm (Thunder)."
+      },
+      {
+        "name": "Twinned Technique (Song Sinh Thuật Thức)",
+        "cost": "Bằng CE gốc của chiêu",
+        "description": "Khi thi triển thuật thức đơn mục tiêu, chi thêm lượng CE bằng với chi phí gốc để bắn thêm vào mục tiêu thứ 2 trong tầm bắn."
+      }
+    ],
+    "vietnameseName": "Chiến Lược Gia Chú Thuật",
+    "role": "Điều Phối / Khống Chế & Phân Tích"
+  },
+  {
+    "id": "shikigami-user",
+    "name": "Shikigami User",
+    "description": "Chuyên gia triệu hồi và thao túng Thức thần (Shikigami), áp đảo đối phương bằng chiến thuật bầy đàn phối hợp nhịp nhàng. Đại diện tiêu biểu: Megumi Fushiguro, Junpei Yoshino.",
+    "proficienciesText": "Proficiencies\nArmor: Light Armor",
+    "table": [
+      [
+        "Level",
+        "Prof",
+        "Features",
+        "Dmg Dice",
+        "Cursed Energy Points"
+      ],
+      [
+        "1",
+        "+2",
+        "Innate  Technique, Shikigami Companion, Martial Arts",
+        "d4",
+        "1 + CE modifier"
+      ],
+      [
+        "2",
+        "+2",
+        "Shared Technique",
+        "d4",
+        "2 + CE modifier"
+      ],
+      [
+        "3",
+        "+2",
+        "Innate Technique Feature",
+        "d4",
+        "3 + CE modifier"
+      ],
+      [
+        "4",
+        "+2",
+        "Ability Score Improvement",
+        "d4",
+        "4 + CE modifier"
+      ],
+      [
+        "5",
+        "+3",
+        "Coordinated Blow",
+        "d6",
+        "5 + CE modifier"
+      ],
+      [
+        "6",
+        "+3",
+        "Innate  Technique Feature",
+        "d6",
+        "6 + CE modifier"
+      ],
+      [
+        "7",
+        "+3",
+        "Improvement Shikigami",
+        "d6",
+        "7 + CE modifier"
+      ],
+      [
+        "8",
+        "+3",
+        "Ability Score Improvement",
+        "d6",
+        "8 + CE modifier"
+      ],
+      [
+        "9",
+        "+4",
+        "",
+        "d6",
+        "9 + CE modifier"
+      ],
+      [
+        "10",
+        "+4",
+        "United Front",
+        "d6",
+        "10 + CE modifier"
+      ],
+      [
+        "11",
+        "+4",
+        "Innate  Technique Feature",
+        "d8",
+        "11 + CE modifier"
+      ],
+      [
+        "12",
+        "+4",
+        "Ability Score Improvement",
+        "d8",
+        "12 + CE modifier"
+      ],
+      [
+        "13",
+        "+5",
+        "Advanced Shikigami",
+        "d8",
+        "13 + CE modifier"
+      ],
+      [
+        "14",
+        "+5",
+        "",
+        "d8",
+        "14 + CE modifier"
+      ],
+      [
+        "15",
+        "+5",
+        "Close Bond",
+        "d8",
+        "15 + CE modifier"
+      ],
+      [
+        "16",
+        "+5",
+        "Ability Score Improvement",
+        "d8",
+        "16 + CE modifier"
+      ],
+      [
+        "17",
+        "+6",
+        "Swift Escape",
+        "d10",
+        "17 + CE modifier"
+      ],
+      [
+        "18",
+        "+6",
+        "Innate  Technique Feature",
+        "d10",
+        "18 + CE modifier"
+      ],
+      [
+        "19",
+        "+6",
+        "Ability Score Improvement",
+        "d10",
+        "19 + CE modifier"
+      ],
+      [
+        "20",
+        "+6",
+        "Perfected Bond",
+        "d10",
+        "20 + CE modifier"
+      ]
+    ],
+    "features": [
+      {
+        "name": "Innate Technique",
+        "vietnameseName": "Thuật Thức Bẩm Sinh",
+        "level": 1,
+        "tag": "Core Trait",
+        "action": "",
+        "descriptionEn": "Starting at 1st level, you were born with an Innate Technique. Innate Techniques are unique abilities congenitally engraved into the user's body, specifically in the right prefrontal cortex of the brain. Most jujutsu sorcerers are born with an innate technique that manifests around the age of five or six, which continually carves its formula into the user over time. You must choose one Innate Technique, all detailed under Innate Techniques. Your choice grants you features at 1st, and again at 3rd, 6th, 11th, and 18th levels.",
+        "description": "Bắt đầu từ cấp 1, bạn bẩm sinh sở hữu một Thuật Thức Bẩm Sinh (Innate Technique) được khắc sâu vào hồi não (vỏ não trước trán) từ thuở ấu thơ. Bạn chọn một Thuật Thức Bẩm Sinh trong danh mục Thuật Thức. Lựa chọn này ban cho bạn năng lực tại cấp 1, và tiếp tục khai mở sức mạnh tại các cấp 3, 6, 11 và 18."
+      },
+      {
+        "name": "Shikigami Companion",
+        "vietnameseName": "Triệu Hoán Thức Thần",
+        "level": 1,
+        "tag": "Summon",
+        "action": "Action",
+        "descriptionEn": "Beginning at 1st level, you shape your cursed energy into a living being under your control and determine its appearance. As an action, you can summon the shikigami that is bound to you. It appears in an unoccupied space of your choice within 30 feet of you. You can summon your shikigami companion for free once per long rest or again as an action for 3 cursed energy.\n\nThe shikigami is friendly to you and your companions, and it obeys your commands. Use its game statistics in the accompanying Shikigami Companion stat blocks, which uses your proficiency bonus (PB) in several places.\n\nIn combat, the shikigami shares your initiative and takes its turn immediately after yours. It can move and use its reaction on its own, but only takes the Dodge action unless you take a bonus action on your turn to command it to take another action. That action can be one in its statblock or some other action. If you are incapacitated, the shikigami can take any action of its choice, not just Dodge.\n\nThe shikigami remains until reduced to 0 hit points, you summon the shikigami again, or you die. Anything the shikigami was wearing or carrying is left behind when it vanishes.",
+        "description": "Bắt đầu từ cấp 1, bạn ngưng kết dòng Chú lực của mình thành một thực thể sống phụ tùng và tự do định hình diện mạo của nó. Bằng 1 Action, bạn triệu hồi Thức Thần gắn kết với bản thân xuất hiện tại một ô trống trong phạm vi 30 ft. Bạn được triệu hồi Thức Thần miễn phí một lần mỗi Long Rest, hoặc tái triệu hồi bằng 1 Action tiêu hao 3 CE.\n\n• Bản chất thực thể: Thức Thần tuyệt đối trung thành, tuân theo mọi khẩu lệnh của bạn. Chỉ số chiến đấu của nó sử dụng bảng Thức Thần Hộ Mệnh (áp dụng Proficiency Bonus của bạn ở nhiều chỉ số cốt lõi).\n• Tác chiến hiệp đồng: Trong giao tranh, Thức Thần dùng chung điểm Initiative và hành động ngay sau lượt của bạn. Nó tự do di chuyển và dùng Reaction của riêng mình, nhưng chỉ tự động thực hiện hành động Né Đòn (Dodge) trừ khi bạn dùng một Bonus Action trong lượt để hạ lệnh cho nó tấn công hoặc hành động khác. Nếu bạn bị mất khả năng hành động (Incapacitated), Thức Thần sẽ tự động chọn hành động tối ưu để bảo vệ chủ nhân.\n• Duy trì hiện diện: Thức Thần tồn tại cho đến khi bị đánh tụt về 0 HP, khi bạn triệu hồi lại, hoặc khi bạn tử trận."
+      },
+      {
+        "name": "Martial Arts",
+        "vietnameseName": "Thể Thuật Phối Hợp",
+        "level": 1,
+        "tag": "Combat",
+        "action": "Bonus Action",
+        "descriptionEn": "At 1st level, your practice of martial arts gives you mastery of combat styles that use unarmed strikes, shortswords and any simple melee weapons that lack the two-handed or heavy property. You gain the following benefits while unarmed or wielding a Martial Arts Weapons:\n\n• You can use Dexterity instead of Strength for attack and damage rolls of your unarmed strikes and martial arts weapons.\n• You can roll a d4 in place of the normal damage of your unarmed strike or martial arts weapon. This die changes as you gain shikigami user levels, as shown in the Martial Arts column of the shikigami user table.\n• When you use the Attack action with an unarmed strike or a Martial Arts weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, if you haven't already taken a bonus action.",
+        "description": "Để tự bảo vệ mình trong khi Thức Thần nghênh chiến, bạn trui rèn võ thuật cận chiến sử dụng quyền cước, đoản kiếm và vũ khí cận chiến đơn giản không mang thuộc tính two-handed hoặc heavy:\n\n• Bạn có thể dùng Dexterity thay cho Strength cho các lần đổ tấn công và sát thương của thể thuật và vũ khí võ thuật.\n• Bạn đổ d4 thay cho sát thương thông thường; xúc xắc sát thương này tăng dần theo cấp độ (cột Martial Arts trong bảng tiến trình).\n• Khi thực hiện hành động Attack bằng quyền cước hoặc vũ khí võ thuật trong lượt, bạn có thể tung thêm một đòn quyền cước bồi bằng một Bonus Action."
+      },
+      {
+        "name": "Shared Technique",
+        "vietnameseName": "Cộng Hưởng Thuật Thức",
+        "level": 2,
+        "tag": "Synergy",
+        "action": "",
+        "descriptionEn": "At 2nd level, your attunement with your shikigami has increased. Any effects or actions granted to you by your technique are also granted to your Shikigami Companion (other than summons), drawing from your pool of CE.",
+        "description": "Tại cấp 2, sự cộng hưởng tâm linh giữa bạn và Thức Thần thăng hoa lên tầm cao mới: mọi hiệu ứng, đòn thế hoặc uy lực ban phát từ Thuật Thức Bẩm Sinh của bạn cũng sẽ được truyền dẫn thẳng sang Thức Thần Hộ Mệnh (ngoại trừ các thuật thức triệu hồi khác), tiêu hao trực tiếp từ nguồn Chú lực của bạn."
+      },
+      {
+        "name": "Ability Score Improvement",
+        "vietnameseName": "Đột Phá Chỉ Số",
+        "level": 4,
+        "tag": "Progression",
+        "action": "",
+        "descriptionEn": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1 for both you and your shikigami companion (max of 20) or instead gain a feat.",
+        "description": "Khi đạt cấp 4, và tiếp tục tại các cấp 8, 12, 16 và 19, mối liên kết tâm linh giúp cả bạn VÀ Thức Thần cùng đồng thời đột phá: tăng một chỉ số thuộc tính tự chọn lên +2, hoặc tăng hai chỉ số lên +1 cho cả hai (tối đa 20), hoặc thay vào đó nhận một Kỳ Công (Feat)."
+      },
+      {
+        "name": "Coordinated Blow",
+        "vietnameseName": "Hiệp Lực Trảm Kích",
+        "level": 5,
+        "tag": "Combat Synergy",
+        "action": "",
+        "descriptionEn": "Beginning at 5th level, you and your shikigami strike as one. As part of the attack action, you can command your companion to move and attack a creature within range or take a different action.",
+        "description": "Bắt đầu từ cấp 5, bạn và Thức Thần xuất chiêu đồng điệu như một thể thống nhất. Như một phần không thể tách rời của hành động Attack, bạn có thể lập tức ra lệnh cho Thức Thần di chuyển và giáng đòn công kích kẻ địch trong tầm hoặc thực hiện một hành động chiến thuật mà không tiêu tốn Bonus Action riêng."
+      },
+      {
+        "name": "Shikigami Improvement",
+        "vietnameseName": "Thức Thần Tiến Hóa",
+        "level": 7,
+        "tag": "Pet Upgrade",
+        "action": "",
+        "descriptionEn": "Starting at 7th level, your shikigami grows stronger. Your companion gains the following:\n\n• It gains a hover speed equal to its walking speed.\n• Its strike attacks deal 1d6 extra necrotic damage.\n• You can either choose for your shikigami to become medium or gain the ability to become any weapon, dealing an additional 1d6 necrotic damage on a hit.",
+        "description": "Bắt đầu từ cấp 7, dòng chú lực dồi dào thúc đẩy Thức Thần biến đổi vượt bậc:\n\n• Tự do lơ lửng: Nhận tốc độ bay lơ lửng (hover speed) bằng với tốc độ di chuyển trên mặt đất.\n• Sát thương chú sát: Mọi đòn đánh của Thức Thần gây thêm 1d6 sát thương Hoại Tử (Necrotic damage).\n• Hóa hình chú cụ: Bạn có thể chọn cho Thức Thần tăng trưởng kích cỡ lên Medium, hoặc ban cho nó khả năng hóa hình thành bất kỳ loại Chú Cụ / Vũ Khí nào để bạn cầm nắm tác chiến, gây thêm 1d6 sát thương Hoại Tử khi đánh trúng."
+      },
+      {
+        "name": "United Front",
+        "vietnameseName": "Liên Hoàn Tác Chiến",
+        "level": 10,
+        "tag": "Combat Control",
+        "action": "",
+        "descriptionEn": "At 10th level, your companion finds new ways to help you in combat. Once per turn, after an attack you can choose for your companion to do one of the following if they are within 5ft of you or the enemy:\n\n• The attack's target takes 1d8 necrotic damage from the companion.\n• The attack's target must succeed on a Strength saving throw against your CE save DC or be moved by the shikigami up to 15 feet horizontally in a direction of your choice and knocked prone.\n• You are moved by the companion 5 feet horizontally in a direction of your choice, gaining half cover until the beginning of your next turn.",
+        "description": "Tại cấp 10, Thức Thần trở thành trợ thủ đắc lực bảo bọc toàn diện trên chiến trường. Mỗi lượt một lần, ngay sau một đòn tấn công, nếu Thức Thần ở trong phạm vi 5 ft quanh bạn hoặc mục tiêu, bạn có thể kích hoạt một trong các hiệu ứng phối hợp sau:\n\n• Bồi đòn sát thương: Thức Thần bổ sung thêm 1d8 sát thương Hoại Tử vào mục tiêu bị tấn công.\n• Hất tung khống chế: Mục tiêu phải thực hiện STR Save chống lại CE save DC của bạn; nếu thất bại, Thức Thần hất văng kẻ địch tối đa 15 ft theo hướng bạn chỉ định và đập ngã sấp Prone.\n• Hộ chủ che chắn: Thức Thần kéo bạn di dời 5 ft về hướng an toàn, đồng thời lấy thân mình che chắn ban cho bạn Half Cover (+2 AC) cho tới đầu lượt kế tiếp."
+      },
+      {
+        "name": "Advanced Shikigami",
+        "vietnameseName": "Thức Thần Thượng Đẳng",
+        "level": 13,
+        "tag": "Pet Upgrade",
+        "action": "",
+        "descriptionEn": "Beginning at 13th level, your shikigami grows stronger. Your companion gains the following benefits:\n\n• You can spread out 4 points among its ability scores (max of 20).\n• Its strike attacks deal 1d6 extra necrotic damage (total of 2d6).\n• You can either choose for your shikigami to become large, or gain the ability to become any weapon, dealing an additional 2d6 necrotic damage.",
+        "description": "Bắt đầu từ cấp 13, Thức Thần tiến hóa tới cấp độ thượng đẳng tương đương các nguyền thú cấp cao:\n\n• Đột phá thể trạng: Phân bổ thêm 4 điểm cộng vào các chỉ số thuộc tính của Thức Thần (tối đa 20).\n• Cường hóa sát thương: Mọi đòn đánh của Thức Thần tăng thêm 1d6 sát thương Hoại Tử (tổng cộng thành 2d6).\n• Cự thú / Thần khí: Bạn có thể chọn cho Thức Thần tăng kích cỡ lên Large khổng lồ, hoặc nâng cấp khả năng hóa vũ khí của nó lên tầm mức Chú Cụ Thượng Cấp, chém trúng gây thêm 2d6 sát thương Hoại Tử."
+      },
+      {
+        "name": "Swift Escape",
+        "vietnameseName": "Thế Thân Thoát Hiểm",
+        "level": 17,
+        "tag": "Survival Reaction",
+        "action": "Reaction",
+        "descriptionEn": "At 17th level, your character is rescued at the last moment by your shikigami. When you take damage, you can use your reaction to give yourself resistance to that damage. You are moved by your companion and you are moved to an unoccupied space that you can see within your companion’s movement speed, where you reappear with the shikigami.\n\nYou can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+        "description": "Tại cấp 17, Thức Thần bảo vệ tính mạng chủ nhân vào thời khắc ngàn cân treo sợi tóc. Khi bạn nhận sát thương, bạn có thể dùng một Reaction để kích hoạt Kháng (Resistance) giảm một nửa sát thương đó; đồng thời Thức Thần lập tức mang bạn hoán đổi vị trí, tái xuất hiện an toàn tại một ô trống trong tầm tốc độ di chuyển của Thức Thần.\n\nBạn có thể sử dụng năng lực thế thân thoát hiểm này số lần bằng Proficiency Bonus (PB), hồi phục toàn bộ số lần dùng sau khi hoàn thành một Long Rest."
+      },
+      {
+        "name": "Perfected Bond",
+        "vietnameseName": "Đồng Điệu Tuyệt Đối",
+        "level": 20,
+        "tag": "Capstone",
+        "action": "",
+        "descriptionEn": "At 20th level, your companion no longer needs to be commanded, having perfect synchronicity. Your companion no longer takes any action to command, and you can share senses with it.",
+        "description": "Tại cấp 20, bạn và Thức Thần đạt tới cảnh giới tâm linh tương thông tuyệt đối: Thức Thần hành động hoàn toàn độc lập mà KHÔNG tiêu tốn bất kỳ hành động nào của bạn để ra lệnh. Đồng thời, bạn có thể chia sẻ toàn bộ ngũ giác với Thức Thần bất kỳ lúc nào, quan sát thế giới qua con mắt của thực thể siêu nhiên."
+      }
+    ],
+    "images": [
+      "image35.png",
+      "image37.png",
+      "image38.png",
+      "image39.png",
+      "image40.png"
+    ],
+    "image": "image35.png",
+    "backgroundImage": null,
+    "hpAt1st": "8 + CON modifier",
+    "hpHigher": "1d8 (or 5) + CON modifier per Shikigami User level after 1st",
+    "profData": {
+      "armor": "Light armor",
+      "weapons": "Daggers, darts, slings, quarterstaffs, and handguns",
+      "savingThrows": "Wisdom, Charisma",
+      "skills": "Choose two from Arcana, History, Insight, Investigation, Medicine, and Religion"
+    },
+    "ceFormula": "Cấp độ + CE modifier",
+    "hitDiceLabel": "1d8 per Shikigami User level",
+    "startingEquipment": "(a) a handgun or (b) a dagger\n\n(a) a component pouch or (b) an arcane focus\n\n(a) a scholar's pack or (b) an explorer's pack\n\nA technique manual",
+    "vietnameseName": "Thức Thần Sư",
+    "role": "Triệu Hồi / Đa Dạng Hóa Tác Chiến"
+  },
+  {
+    "id": "support-specialist",
+    "name": "Support Specialist",
+    "description": "Trụ cột hậu phương không thể thiếu trong mọi chiến dịch Chú thuật, làm chủ Thuật Thức Phản Chuyển (RCT) cải tử nhất sinh và Kết giới thuật phòng ngự. Đại diện tiêu biểu: Shoko Ieiri, Utahime Iori, Ui Ui.",
+    "proficienciesText": "Proficiencies\nArmor: None",
+    "table": [
+      [
+        "Level",
+        "Prof",
+        "Features",
+        "Cursed Energy Points"
+      ],
+      [
+        "1",
+        "+2",
+        "Innate  Technique, Curtain",
+        "1 + CE modifier +Prof"
+      ],
+      [
+        "2",
+        "+2",
+        "Barrier Techniques",
+        "2 + CE modifier +Prof"
+      ],
+      [
+        "3",
+        "+2",
+        "Innate Technique Feature",
+        "3 + CE modifier +Prof"
+      ],
+      [
+        "4",
+        "+2",
+        "Ability Score Improvement",
+        "4 + CE modifier +Prof"
+      ],
+      [
+        "5",
+        "+3",
+        "Reverse Curse Technique",
+        "5 + CE modifier +Prof"
+      ],
+      [
+        "6",
+        "+3",
+        "Innate  Technique Feature",
+        "6 + CE modifier+Prof"
+      ],
+      [
+        "7",
+        "+3",
+        "Improved Curtain",
+        "7 + CE modifier+Prof"
+      ],
+      [
+        "8",
+        "+3",
+        "Ability Score Improvement",
+        "8 + CE modifier +Prof"
+      ],
+      [
+        "9",
+        "+4",
+        "Improved Barrier Technique",
+        "9 + CE modifier +Prof"
+      ],
+      [
+        "10",
+        "+4",
+        "Reverse Curse Technique Understanding",
+        "10 + CE modifier +Prof"
+      ],
+      [
+        "11",
+        "+4",
+        "Innate  Technique Feature",
+        "11 + CE modifier +Prof"
+      ],
+      [
+        "12",
+        "+4",
+        "Ability Score Improvement",
+        "12 + CE modifier +Prof"
+      ],
+      [
+        "13",
+        "+5",
+        "Mastered Curtain",
+        "13 + CE modifier +Prof"
+      ],
+      [
+        "14",
+        "+5",
+        "Ability Score Improvement",
+        "14 + CE modifier +Prof"
+      ],
+      [
+        "15",
+        "+5",
+        "Mastered Barrier Technique",
+        "15 + CE modifier +Prof"
+      ],
+      [
+        "16",
+        "+5",
+        "Ability Score Improvement",
+        "16 + CE modifier +Prof"
+      ],
+      [
+        "17",
+        "+6",
+        "Mastered Reverse Cursed Technique",
+        "17 + CE modifier +Prof"
+      ],
+      [
+        "18",
+        "+6",
+        "Innate  Technique Feature",
+        "18 + CE modifier +Prof"
+      ],
+      [
+        "19",
+        "+6",
+        "Ability Score Improvement",
+        "19 + CE modifier +Prof"
+      ],
+      [
+        "20",
+        "+6",
+        "Permanent Techniques",
+        "20 + CE modifier +Prof"
+      ]
+    ],
+    "features": [
+      {
+        "name": "Innate Technique",
+        "vietnameseName": "Thuật Thức Bẩm Sinh",
+        "level": 1,
+        "tag": "Core Trait",
+        "action": "",
+        "descriptionEn": "Starting at 1st level, you were born with an Innate Technique. Innate Techniques are unique abilities congenitally engraved into the user's body, specifically in the right prefrontal cortex of the brain. Most jujutsu sorcerers are born with an innate technique that manifests around the age of five or six, which continually carves its formula into the user over time. You must choose one Innate Technique, all detailed under Innate Techniques. Your choice grants you features at 1st, and again at 3rd, 6th, 11th, and 18th levels.",
+        "description": "Bắt đầu từ cấp 1, bạn bẩm sinh sở hữu một Thuật Thức Bẩm Sinh (Innate Technique) được khắc sâu vào vỏ não trước trán từ lúc sinh ra. Bạn chọn một Thuật Thức Bẩm Sinh trong danh mục Thuật Thức để phát triển thành trụ cột hậu phương và kết giới sư tối thượng tại cấp 1, và tiếp tục nâng cấp tại các cấp 3, 6, 11 và 18."
+      },
+      {
+        "name": "Curtain",
+        "vietnameseName": "Thi Triển Màn (Hắc Mộc • 帳)",
+        "level": 1,
+        "tag": "Barrier",
+        "action": "Action",
+        "descriptionEn": "“Emerge from the darkness, blacker than darkness. Purify that which is impure.” As an action for 5 Cursed Energy, you cover the area around you within a 2165-foot radius with a black dome for 10 minutes. Upon activation, a dark, almost liquid-like matter drips down from the sky to form the outer barrier wall in the shape of a half-sphere. The curtain changes the sky into night, provoking cursed spirits out of hiding. For each 1 extra Cursed Energy you spend, you add +1 minute to the curtain's duration. Those without cursed energy, or magic cannot see anything inside the barrier, merely seeing as if nothing but the vegetation was there. Creatures who can see into the ethereal plane or have levels in a sorcerer class can see the black half-sphere.\n\nYour curtain has a number of hit points equal to your Cursed Energy modifier times your level. At 7th level, your curtains have health equal to your cursed energy modifier times 25, and at 13th level, it is 50 times your cursed energy modifier.",
+        "description": "“Bóng tối xuất hiện, bóng tối dày hơn bóng tối. Thanh tẩy điều ô uế.” (「闇より出でて闇より黒く その穢れを祓い浄めよ」)\n\nBằng 1 Action tiêu hao 5 CE, bạn niệm câu chú ngữ cổ xưa, triệu xuất một khối dịch thể đen ngòm từ vòm trời rủ xuống bao bọc toàn bộ khu vực trong bán kính 2.165 ft bằng một mái vòm bán cầu hắc ám kéo dài trong 10 phút. Bầu trời bên trong lập tức chuyển thành màn đêm tĩnh mịch, kích động Chú linh phải chui ra khỏi nơi ẩn nấp. Mỗi 1 CE chi thêm sẽ kéo dài thời lượng Màn thêm +1 phút. Người thường không có chú lực hoàn toàn không thể nhìn thấy bất kỳ điều gì bên trong (chỉ thấy cảnh vật bình thường); chỉ những ai có Chú lực hoặc thấu thị linh giới mới nhìn thấy mái vòm đen tuyền khổng lồ.\n\n• Độ bền kết giới: Màn có lượng Máu bằng: HP = CE modifier × Cấp độ của bạn.\n• Tại cấp 7: Máu của Màn tăng vọt lên thành CE modifier × 25.\n• Tại cấp 13: Máu của Màn đạt đỉnh cao kiên cố bằng CE modifier × 50."
+      },
+      {
+        "name": "Barrier Technique",
+        "vietnameseName": "Thuật Kết Giới Phòng Hộ",
+        "level": 2,
+        "tag": "Barrier",
+        "action": "Action",
+        "descriptionEn": "At 2nd level, you have learned how to create basic barriers to protect areas or trap opponents and protect allies. As an action for up to your Cursed Energy modifier in cursed energy, you make a dome starting from yourself with a 5-foot radius and a 10-foot height. For each cursed energy spent, the barrier can increase its width by 10 feet and its height by 10 feet. This barrier has 10 hit points per cursed energy spent and is immune to Poison and Psychic damage. This barrier lasts a number of minutes equal to your Cursed Energy modifier. At 9th level, your barriers have health equal to 20 times the cursed energy spent, and at 15th level it is resistant to damage from the outside.",
+        "description": "Tại cấp 2, bạn học được bí thuật dựng kết giới rào chắn để bảo hộ cứ điểm, giam cầm đối thủ hoặc che chở đồng đội. Bằng 1 Action tiêu hao lượng CE tối đa bằng CE modifier, bạn dựng một mái vòm kết giới từ vị trí của mình với bán kính 5 ft và chiều cao 10 ft. Mỗi 1 CE tiêu hao giúp nới rộng bán kính thêm 10 ft và tăng chiều cao thêm 10 ft.\n\n• Kết giới sở hữu 10 HP cho mỗi CE tiêu hao, miễn nhiễm hoàn toàn với sát thương Độc (Poison) và Tâm Linh (Psychic).\n• Thời gian duy trì số phút bằng CE modifier.\n• Tại cấp 9: Kết giới sở hữu 20 HP cho mỗi CE tiêu hao.\n• Tại cấp 15: Kết giới nhận Kháng (Resistance) trước mọi sát thương từ bên ngoài bắn phá vào."
+      },
+      {
+        "name": "Ability Score Improvement",
+        "vietnameseName": "Đột Phá Chỉ Số",
+        "level": 4,
+        "tag": "Progression",
+        "action": "",
+        "descriptionEn": "When you reach 4th level, and again at 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. You can also ignore this increase to instead gain a Feat.",
+        "description": "Khi đạt cấp 4, và tiếp tục tại các cấp 8, 12, 14, 16 và 19, bạn có thể tăng một chỉ số thuộc tính tự chọn lên +2, hoặc tăng hai chỉ số lên +1 (tối đa 20), hoặc thay vào đó nhận một Kỳ Công (Feat)."
+      },
+      {
+        "name": "Reverse Cursed Technique",
+        "vietnameseName": "Chú Thuật Phản Chuyển Trị Liệu",
+        "level": 5,
+        "tag": "Healing",
+        "action": "Action",
+        "descriptionEn": "Starting at 5th level, you have been born with a great aptitude for healing others, despite never really studying medicine. You will gain the Reverse Cursed Technique feature. Your reverse cursed technique is stronger than normal, letting you use 20 hit points from your RCT pool per cursed energy spent instead of 10.\n\nIn addition, you gain proficiency in the Medicine skill. If you are already proficient, you gain expertise instead. If you already have expertise you gain advantage. Whenever you make a medicine check to stabilize someone and succeed, the creature regains 1 hit point.",
+        "description": "Bắt đầu từ cấp 5, bạn bẩm sinh sở hữu thiên phú xuất chúng về dòng năng lượng dương đảo chiều - Chú Thuật Phản Chuyển (Reverse Cursed Technique - RCT) - dù chưa từng theo học y khoa quy ước. Năng lực RCT của bạn vượt trội hơn hẳn người thường: bạn được rút 20 HP từ bể trị liệu RCT cho mỗi điểm CE tiêu hao (thay vì mức 10 HP tiêu chuẩn).\n\nNgoài ra, bạn nhận Proficiency cho kỹ năng Medicine (nếu đã thuần thục thì nhận Expertise; nếu đã có Expertise thì nhận Advantage). Bất cứ khi nào bạn kiểm tra Medicine để sơ cứu ổn định vết thương (stabilize) thành công, sinh vật đó hồi sinh tỉnh lại với 1 HP."
+      },
+      {
+        "name": "Reverse Technique Understanding",
+        "vietnameseName": "Thấu Triệt Năng Lượng Dương",
+        "level": 10,
+        "tag": "Healing / Radiant",
+        "action": "Free Action",
+        "descriptionEn": "When you reach 10th level, you have reached new heights with this new type of energy, becoming a high-level sorcerer. You will gain the following benefits:\n\n• You can cause a creature you touch to gain the benefits of reverse cursed technique instead of you.\n• You can use your reverse cursed technique once as a free action on your turn.\n• Your reverse cursed technique healing pool is multiplied by your Cursed Energy modifier again.\n• You now regain 30 HP per CE with RCT instead of 20.\n• In addition, whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or natural weapon, you can spend cursed energy to remove hit points from your healing pool to add radiant damage.",
+        "description": "Đạt cấp 10, ngộ tính đối với năng lượng dương tích cực đưa bạn bước vào hàng ngũ Chú thuật sư cao cấp:\n\n• Trị liệu ngoại thân: Bạn có thể chạm tay vào đồng đội để truyền trực tiếp dòng chảy RCT cứu chữa cho mục tiêu thay vì chỉ dùng cho bản thân.\n• Niệm tức thời: Bạn được thi triển RCT một lần dưới dạng Free Action trong lượt của mình mà không cần tốn Action chính.\n• Dung lượng đột phá: Bể chứa trị liệu RCT của bạn được nhân thêm một lần nữa với CE modifier.\n• Hiệu suất tối đa: Mỗi điểm CE giờ đây hồi phục tới 30 HP (thay vì 20 HP).\n• Thanh tẩy tà linh: Khi giáng đòn thể thuật lên Dị Loại (Monstrosity), Xác Sống (Undead) hoặc Chú Linh (Cursed Spirit), bạn có thể chi CE để rút điểm HP từ bể trị liệu bồi thẳng vào đòn đánh dưới dạng sát thương Quang Năng (Radiant damage) tiêu diệt sinh thể tà ác từ cấp độ tế bào."
+      },
+      {
+        "name": "Mastered Reverse Technique",
+        "vietnameseName": "Đỉnh Phong Năng Lượng Dương",
+        "level": 17,
+        "tag": "Healing / Radiant Master",
+        "action": "Free Action",
+        "descriptionEn": "Beginning at 17th level, you have mastered this new type of energy, becoming a high-level sorcerer. You will gain the following benefits:\n\n• You can use your reverse cursed technique twice as a free action on your turn.\n• Your reverse cursed technique healing pool is doubled.\n• You now regain 35 hit points per cursed energy instead of 30.\n• In addition, whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or natural weapon, you can spend cursed energy to remove hit points from your healing pool to add radiant damage, the creature takes this damage as vulnerable.",
+        "description": "Bắt đầu từ cấp 17, bạn làm chủ tuyệt đối phép màu của Chú Thuật Phản Chuyển:\n\n• Bạn được thi triển RCT tới 2 lần dưới dạng Free Action trong mỗi lượt của mình.\n• Bể chứa trị liệu RCT của bạn được nhân đôi toàn bộ dung lượng.\n• Mỗi điểm CE hồi phục tới 35 HP (thay vì 30 HP).\n• Độc dược đối với Nguyền hồn: Khi truyền năng lượng dương vào Chú Linh, Dị loại hay Xác sống, mục tiêu phải gánh chịu sát thương Quang Năng này dưới dạng Nhược Điểm (Vulnerable - NHÂN ĐÔI toàn bộ sát thương gánh chịu)."
+      },
+      {
+        "name": "Permanent Techniques",
+        "vietnameseName": "Kết Giới Bất Diệt",
+        "level": 20,
+        "tag": "Capstone",
+        "action": "",
+        "descriptionEn": "At 20th level, you can maintain your curtains and barriers (not Domains) until the barriers are destroyed.",
+        "description": "Tại cấp 20, thuật phong ấn kết giới của bạn đạt đến đẳng cấp của Thiên Cung Tengen: bạn có thể duy trì các bức Màn (Curtains) và Rào chắn kết giới (Barriers, không áp dụng cho Lãnh Địa) tồn tại vĩnh cửu bất biến theo thời gian cho tới khi chúng bị đối thủ dùng bạo lực công phá hủy diệt hoàn toàn."
+      }
+    ],
+    "images": [
+      "image41.png",
+      "image43.png",
+      "image44.png",
+      "image45.png"
+    ],
+    "image": "image41.png",
+    "backgroundImage": "image42.png",
+    "hpAt1st": "6 + CON modifier",
+    "hpHigher": "1d6 (or 4) + CON modifier per Support Specialist level after 1st",
+    "profData": {
+      "armor": "None",
+      "weapons": "Daggers, darts, slings, quarterstaffs, and handguns",
+      "savingThrows": "Intelligence, Wisdom",
+      "skills": "Choose two from Arcana, History, Insight, Investigation, Medicine, and Religion"
+    },
+    "ceFormula": "Cấp độ + CE modifier + Proficiency Bonus",
+    "hitDiceLabel": "1d6 per Support Specialist level",
+    "startingEquipment": "(a) a handgun or (b) a dagger\n\n(a) a component pouch or (b) an arcane focus\n\n(a) a scholar's pack or (b) an explorer's pack\n\nA technique manual",
+    "vietnameseName": "Chuyên Viên Hỗ Trợ & Kết Giới Sư",
+    "role": "Hỗ Trợ / Trị Liệu RCT & Kết Giới"
+  },
+  {
+    "id": "warrior",
+    "name": "Warrior",
+    "description": "Bậc thầy kiếm đạo và vũ trang chú thuật, truyền Chú lực vào vũ khí với độ chuẩn xác tuyệt đối, làm chủ các bí kỹ của New Shadow Style. Đại diện tiêu biểu: Yuta Okkotsu, Atsuya Kusakabe, Hiromi Higuruma, Kasumi Miwa.",
+    "proficienciesText": "Proficiencies\nArmor: All armor, shieldsWeapons: Simple weapons, martial weaponsTools: NoneSaving Throws: Strength, DexteritySkills: Choose two skills from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival",
+    "table": [
+      [
+        "Level",
+        "Prof",
+        "Features",
+        "Dmg Dice",
+        "Cursed Energy Points"
+      ],
+      [
+        "1",
+        "+2",
+        "Innate  Technique, Unarmored Defence,  Combat Prowess",
+        "d6",
+        "1 + CE modifier"
+      ],
+      [
+        "2",
+        "+2",
+        "Undaunted(x1)",
+        "d6",
+        "2 + CE modifier"
+      ],
+      [
+        "3",
+        "+2",
+        "Innate Technique Feature",
+        "d6",
+        "3 + CE modifier"
+      ],
+      [
+        "4",
+        "+2",
+        "Ability Score Improvement",
+        "d6",
+        "4 + CE modifier"
+      ],
+      [
+        "5",
+        "+3",
+        "Extra Attack(x1)",
+        "d8",
+        "5 + CE modifier"
+      ],
+      [
+        "6",
+        "+3",
+        "Innate  Technique Feature",
+        "d8",
+        "6 + CE modifier"
+      ],
+      [
+        "7",
+        "+3",
+        "Battle Readiness",
+        "d8",
+        "7 + CE modifier"
+      ],
+      [
+        "8",
+        "+3",
+        "Ability Score Improvement",
+        "d8",
+        "8 + CE modifier"
+      ],
+      [
+        "9",
+        "+4",
+        "Unstoppable(x1)",
+        "d8",
+        "9 + CE modifier"
+      ],
+      [
+        "10",
+        "+4",
+        "Undaunted(x2)",
+        "d8",
+        "10 + CE modifier"
+      ],
+      [
+        "11",
+        "+4",
+        "Innate  Technique Feature, Extra Attack(x2)",
+        "d10",
+        "11 + CE modifier"
+      ],
+      [
+        "12",
+        "+4",
+        "Ability Score Improvement",
+        "d10",
+        "12 + CE modifier"
+      ],
+      [
+        "13",
+        "+5",
+        "Unstoppable(x2)",
+        "d10",
+        "13 + CE modifier"
+      ],
+      [
+        "14",
+        "+5",
+        "Steel Spirit",
+        "d10",
+        "14 + CE modifier"
+      ],
+      [
+        "15",
+        "+5",
+        "Unerring Blows",
+        "d10",
+        "15 + CE modifier"
+      ],
+      [
+        "16",
+        "+5",
+        "Ability Score Improvement",
+        "d10",
+        "16 + CE modifier"
+      ],
+      [
+        "17",
+        "+6",
+        "Extra Attack(x3)",
+        "d12",
+        "17 + CE modifier"
+      ],
+      [
+        "18",
+        "+6",
+        "Innate  Technique Feature",
+        "d12",
+        "18 + CE modifier"
+      ],
+      [
+        "19",
+        "+6",
+        "Ability Score Improvement",
+        "d12",
+        "19 + CE modifier"
+      ],
+      [
+        "20",
+        "+6",
+        "Extra Attack(x4)",
+        "d12",
+        "20 + CE modifier"
+      ]
+    ],
+    "features": [
+      {
+        "name": "Innate Technique",
+        "vietnameseName": "Thuật Thức Bẩm Sinh",
+        "level": 1,
+        "tag": "Core Trait",
+        "action": "",
+        "descriptionEn": "Starting at 1st level, you were born with an Innate Technique. Innate Techniques are unique abilities congenitally engraved into the user's body, specifically in the right prefrontal cortex of the brain. Most jujutsu sorcerers are born with an innate technique that manifests around the age of five or six, which continually carves its formula into the user over time. You must choose one Innate Technique, all detailed under Innate Techniques. Your choice grants you features at 1st, and again at 3rd, 6th, 11th, and 18th level.",
+        "description": "Bắt đầu từ cấp 1, bạn bẩm sinh sở hữu một Thuật Thức Bẩm Sinh (Innate Technique) được khắc sâu vào hồi não (vỏ não trước trán) ngay từ thuở lọt lòng. Bạn chọn một Thuật Thức Bẩm Sinh trong danh mục Thuật Thức để kết hợp nhuần nhuyễn cùng bản lĩnh võ nghệ tuyệt đỉnh tại cấp 1, và tiếp tục nâng cấp tại các cấp 3, 6, 11 và 18."
+      },
+      {
+        "name": "Combat Prowess",
+        "vietnameseName": "Võ Nghệ Chiến Binh",
+        "level": 1,
+        "tag": "Combat",
+        "action": "Bonus Action",
+        "descriptionEn": "At 1st level, your life of scrapping and battling with beasts, humans, or other tough creatures has given you mastery of Combat styles that use unarmed strikes and Warrior weapons, which are melee weapons without the two-handed property, and improvised weapons. You can not use the finesse property of a weapon while using it as a Warrior weapon.\n\nYou can roll a d6 in place of the normal damage of your unarmed strike or Warrior weapon. This die changes as you gain Warrior levels, as shown in the scrapper column on the Warrior table.\n\nWhen you use the Attack action with an unarmed strike or a Warrior weapon on your turn, you can make one unarmed strike or grapple as a bonus action. For example, if you take the Attack action and Attack with a Club, you can also make an Unarmed Strike or grapple as a Bonus Action, assuming you haven’t already taken a Bonus Action this turn.",
+        "description": "Bản lĩnh tôi luyện qua các cuộc giao phong sinh tử với dã thú, chú linh và những chiến binh sừng sỏ đem lại cho bạn khả năng tinh thông thể thuật quyền cước và vũ khí Warrior (vũ khí cận chiến một tay không mang thuộc tính two-handed, và vũ khí ứng biến). Bạn không thể áp dụng thuộc tính Finesse khi dùng vũ khí như một vũ khí Warrior.\n\n• Uy lực quyền cước: Bạn được đổ d6 thay cho sát thương cơ bản của đòn đánh thể thuật hoặc vũ khí Warrior. Xúc xắc này tăng tiến dần theo cấp độ (cột Dmg Dice trong bảng tiến trình).\n• Bồi đòn áp đảo: Khi thực hiện hành động Attack bằng thể thuật hoặc vũ khí Warrior trong lượt, bạn có thể lập tức tung thêm một đòn quyền cước hoặc thực hiện đòn tóm bắt Grapple bằng một Bonus Action."
+      },
+      {
+        "name": "Unarmored Defense",
+        "vietnameseName": "Thân Thể Hộ Thân",
+        "level": 1,
+        "tag": "Defense",
+        "action": "",
+        "descriptionEn": "While you are not wearing any armor and not using a shield, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier.",
+        "description": "Bản năng cảnh giác thường trực và cơ bắp dẻo dai biến thân thể bạn thành tấm khiên chắn: khi không mặc giáp và không mang khiên, Chỉ Số Giáp của bạn bằng: AC = 10 + DEX modifier + CON modifier."
+      },
+      {
+        "name": "Undaunted",
+        "vietnameseName": "Bất Khuất Nghịch Cảnh",
+        "level": 2,
+        "tag": "Healing / Recovery",
+        "action": "Bonus Action",
+        "descriptionEn": "At 2nd level, even after being damaged you still stand and fight as if nothing happened. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your warrior level. You gain a second use at 10th level.\n\nOnce you use this feature, you must finish a short or long rest before you can use it again.",
+        "description": "Tại cấp 2, dù gánh chịu thương tích nặng nề, ý chí kiên định giúp bạn hiên ngang đứng vững như chưa hề hấn gì. Trong lượt của mình, bạn có thể dùng một Bonus Action kích phát tiềm lực sinh mệnh, hồi phục lượng Máu bằng 1d10 + Cấp độ Warrior. Bạn nhận thêm lần sử dụng thứ hai tại cấp 10.\n\nKhi đã dùng hết số lần của tính năng này, bạn phải hoàn thành một Short Rest hoặc Long Rest để tái tạo lại sức bật sinh mệnh."
+      },
+      {
+        "name": "Ability Score Improvement",
+        "vietnameseName": "Đột Phá Chỉ Số",
+        "level": 4,
+        "tag": "Progression",
+        "action": "",
+        "descriptionEn": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. You can also ignore this increase to instead gain a Feat.",
+        "description": "Tại cấp 4, và tiếp tục tại các cấp 8, 12, 16 và 19, bạn có thể tăng một chỉ số thuộc tính tự chọn lên +2, hoặc tăng hai chỉ số lên +1 (tối đa 20), hoặc thay vào đó nhận một Kỳ Công (Feat)."
+      },
+      {
+        "name": "Extra Attack",
+        "vietnameseName": "Liên Hoàn Trảm Kích (Tối Đa 5 Đòn)",
+        "level": 5,
+        "tag": "Combat",
+        "action": "",
+        "descriptionEn": "Once you get to 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.\n\nThe number of attacks increases to three when you reach 11th level in this class, to four when you reach 17th level in this class, and to five when you reach 20th level.",
+        "description": "Tại cấp 5, tốc độ vung đòn của bạn đạt tới tầm mức thần tốc: bạn tấn công hai lần thay vì một lần mỗi khi thực hiện hành động Attack trong lượt của mình.\n\nSố đòn tấn công trong cùng một hành động Attack tăng vượt bậc lên thành 3 đòn tại cấp 11, thành 4 đòn tại cấp 17, và đạt tới đỉnh phong 5 ĐÒN TẤN CÔNG LIÊN HOÀN tại cấp 20!"
+      },
+      {
+        "name": "Battle Readiness",
+        "vietnameseName": "Trực Cảm Khai Chiến",
+        "level": 7,
+        "tag": "Passive Initiative",
+        "action": "",
+        "descriptionEn": "Starting at 7th level, your awareness and preparation reached a new and constant state. This gives you advantage on initiative checks.",
+        "description": "Bắt đầu từ cấp 7, mức độ cảnh giác và khả năng sẵn sàng nhập cuộc của bạn đạt tới trạng thái bản năng thường trực: mang lại Advantage đối với mọi lần đổ Khởi Động (Initiative checks) khi giao tranh nổ ra."
+      },
+      {
+        "name": "Unstoppable",
+        "vietnameseName": "Bất Diệt Ý Chí",
+        "level": 9,
+        "tag": "Indomitable",
+        "action": "",
+        "descriptionEn": "Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest.\n\nYou can use this feature twice between long rests starting at 13th level.",
+        "description": "Bắt đầu từ cấp 9, tinh thần bất khuất cho phép bạn vượt qua nghịch cảnh: khi thất bại trong một lần Saving Throw, bạn có thể lập tức đổ lại lần Save đó (phải dùng kết quả mới), và không thể dùng lại tính năng này cho tới khi hoàn thành một Long Rest.\n\nBạn nhận thêm lần sử dụng thứ hai giữa các kỳ Long Rest bắt đầu từ cấp 13."
+      },
+      {
+        "name": "Steel Spirit",
+        "vietnameseName": "Cương Phách Kim Cương",
+        "level": 14,
+        "tag": "Saving Throws",
+        "action": "",
+        "descriptionEn": "Once you reach 14th level, your mastery of Cursed Energy grants you proficiency in all saving throws.",
+        "description": "Khi đạt cấp 14, sự thấu hiểu dòng chảy Chú lực hòa quyện cùng ý chí thép mang lại cho bạn Proficiency đối với TẤT CẢ các loại Saving Throws (Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma)."
+      },
+      {
+        "name": "Unerring Blows",
+        "vietnameseName": "Trảm Kích Tất Trúng",
+        "level": 15,
+        "tag": "Accuracy",
+        "action": "",
+        "descriptionEn": "At 15th level, you hold great mastery over your attacks. When you miss an attack you can reroll the attack roll once per turn.",
+        "description": "Tại cấp 15, bạn làm chủ từng đường tơ kẽ tóc trong đường kiếm mũi quyền: mỗi lượt một lần (once per turn), bất cứ khi nào bạn đánh trượt một đòn tấn công, bạn có thể lập tức đổ lại đòn tấn công đó để xoay chuyển cục diện."
+      }
+    ],
+    "images": [
+      "image46.png",
+      "image48.png",
+      "image49.png",
+      "image50.png"
+    ],
+    "image": "image46.png",
+    "backgroundImage": "image47.png",
+    "hpAt1st": "10 + CON modifier",
+    "hpHigher": "1d10 (or 6) + CON modifier per Warrior level after 1st",
+    "profData": {
+      "armor": "All armor, shields",
+      "weapons": "Simple weapons, martial weapons",
+      "savingThrows": "Strength, Dexterity",
+      "skills": "Choose two skills from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival"
+    },
+    "ceFormula": "Cấp độ + CE modifier",
+    "hitDiceLabel": "1d10 per Warrior level",
+    "startingEquipment": "(a) chain mail or (b) thick shirt, longbow, and 20 arrows\n\n(a) a martial weapon and a shield or (b) two martial weapons\n\n(a) a handgun and 20 bullets or (b) two handaxes\n\n(a) a dungeoneer's pack or (b) an explorer's pack",
+    "vietnameseName": "Chiến Binh Chú Cụ",
+    "role": "Vũ Trang / Kiếm Thuật & Chú Cụ"
+  },
+  {
+    "id": "heavenly-restriction",
+    "name": "Heavenly Restriction",
+    "description": "Sinh ra với 0 Chú lực do sự trói buộc khắc nghiệt của số phận, đổi lấy thân thể đạt đỉnh cao tiến hóa sinh học, ngũ giác siêu phàm, tàng hình trước kết giới và miễn nhiễm đòn đánh linh hồn thông thường. Đại diện tiêu biểu: Toji Fushiguro, Maki Zen'in (thức tỉnh).",
+    "proficienciesText": "Proficiencies\nArmor: NoneWeapons: All weaponsTools: NoneSaving Throws: Strength, ConstitutionSkills: Choose two from  Acrobatics, Athletics, Insight, Intimidation, Perception, Stealth, Survival",
+    "table": [
+      [
+        "Level",
+        "Prof",
+        "Features",
+        "Dmg Dice",
+        "Unarmored Movement"
+      ],
+      [
+        "1",
+        "+2",
+        "Restrained Body, Unarmored Movement, Martial Arts",
+        "d6",
+        "20"
+      ],
+      [
+        "2",
+        "+2",
+        "Body Improvements, Fighting Style",
+        "d6",
+        "20"
+      ],
+      [
+        "3",
+        "+2",
+        "Ideal",
+        "d6",
+        "20"
+      ],
+      [
+        "4",
+        "+2",
+        "Ability Score Improvement",
+        "d6",
+        "30"
+      ],
+      [
+        "5",
+        "+3",
+        "Extra Attack",
+        "d8",
+        "30"
+      ],
+      [
+        "6",
+        "+3",
+        "Ability Score Improvement",
+        "d8",
+        "30"
+      ],
+      [
+        "7",
+        "+3",
+        "Improved Body, Resistant",
+        "d8",
+        "40"
+      ],
+      [
+        "8",
+        "+3",
+        "Ability Score Improvement",
+        "d8",
+        "40"
+      ],
+      [
+        "9",
+        "+4",
+        "Weapon Specialist, Ideal feature",
+        "d8",
+        "40"
+      ],
+      [
+        "10",
+        "+4",
+        "Celestial Body",
+        "d8",
+        "50"
+      ],
+      [
+        "11",
+        "+4",
+        "Extra Attack",
+        "d10",
+        "50"
+      ],
+      [
+        "12",
+        "+4",
+        "Ability Score Improvement",
+        "d10",
+        "50"
+      ],
+      [
+        "13",
+        "+5",
+        "Ideal feature",
+        "d10",
+        "60"
+      ],
+      [
+        "14",
+        "+5",
+        "Improved Fighting Style",
+        "d10",
+        "60"
+      ],
+      [
+        "15",
+        "+5",
+        "Demigod's Figure",
+        "d10",
+        "60"
+      ],
+      [
+        "16",
+        "+5",
+        "Ability Score Improvement",
+        "d10",
+        "70"
+      ],
+      [
+        "17",
+        "+6",
+        "Ideal feature",
+        "d12",
+        "70"
+      ],
+      [
+        "18",
+        "+6",
+        "Extra Attack",
+        "d12",
+        "70"
+      ],
+      [
+        "19",
+        "+6",
+        "Ability Score Improvement",
+        "d12",
+        "80"
+      ],
+      [
+        "20",
+        "+6",
+        "God of War, Extra Attack",
+        "d12",
+        "80"
+      ]
+    ],
+    "features": [
+      {
+        "name": "Restrained Body",
+        "vietnameseName": "Thiên Dữ Chú Phược (Restrained Body)",
+        "level": 1,
+        "tag": "Core Trait",
+        "action": "",
+        "descriptionEn": "Starting at 1st level, your body is simply built differently than others. You have supernatural strength, speed and durability. You gain the following traits:\n\n• Supernatural Body: You gain a +2 in your Strength, Dexterity and Constitution scores. These same scores increase by +1 at 5th, 9th, 13th and 17th level. In addition, your ability score limit is increased to 25. At every level you gain after 1st, your ability score maximum increases by 1, up to 40.\n• Supernatural Resilience: Your unarmored AC equals 10 + your Constitution modifier + your Dexterity modifier.\n• Perfect Health: You have advantage on saving throws against disease and the poisoned condition.\n• Supernatural Vision: You gain proficiency in the Perception skill, or expertise if already proficient.\n• Pure Body: Your body has no traces of any kinds of mystical energy, meaning you can't multiclass or learn about magic or cursed energy, and if you somehow have abilities which use magic or cursed energy, you lose them. You cannot land black flashes or utilize RCT.",
+        "description": "Bắt đầu từ cấp 1, bạn mang trên mình Thiên Dữ Chú Phược (Heavenly Restriction) - khế ước cưỡng chế bẩm sinh tàn nhẫn của trời đất. Cơ thể bạn sinh ra đã hoàn toàn khác biệt với người phàm, đổi lại bằng thể chất, tốc độ và giác quan siêu việt đạt tới cảnh giới quái vật (hình mẫu Toji Fushiguro và Maki Zenin):\n\n• Thần Thể Siêu Nhiên (Supernatural Body): Nhận +2 vĩnh viễn vào các chỉ số Strength, Dexterity và Constitution. Cả 3 chỉ số này tăng thêm +1 tại cấp 5, 9, 13, và 17. Giới hạn chỉ số khởi điểm của bạn được nới rộng lên 25; và ở mỗi cấp sau cấp 1, trần chỉ số tối đa tăng thêm +1, đạt giới hạn phi nhân loại lên tới 40.\n• Cương Thể Đề Kháng (Supernatural Resilience): Khi không mặc giáp, da thịt bạn tự hóa thành áo giáp: AC = 10 + CON modifier + DEX modifier.\n• Bách Độc Bất Xâm (Perfect Health): Bạn nhận Advantage cho mọi Saving Throw chống lại bệnh tật và trạng thái Nhiễm Độc (Poisoned).\n• Lục Giác Thấu Thị (Supernatural Vision): Nhận Proficiency cho kỹ năng Perception (hoặc nhận Expertise nếu đã thuần thục).\n• Thuần Thể 0 Chú Lực (Pure Body): Cơ thể bạn hoàn toàn KHÔNG CÓ một tia Chú lực nào (0 CE). Bạn không thể đa lớp sang các lớp dùng Chú lực, không thể xuất Hắc Thiểm (Black Flash) và không thể sử dụng Chú Thuật Phản Chuyển (RCT)."
+      },
+      {
+        "name": "Unarmored Movement",
+        "vietnameseName": "Thân Pháp Phi Nhân",
+        "level": 1,
+        "tag": "Mobility",
+        "action": "",
+        "descriptionEn": "Also at 1st level, your speed increases by 20 feet while you are not wearing armor or wielding a shield. This bonus increases when you reach certain Heavenly Restriction levels, as shown in the Heavenly Restriction table.\n\nIn addition, you gain the ability to move and run along vertical surfaces and across liquids on your turn without falling during the move.",
+        "description": "Tại cấp 1, tốc độ di chuyển của bạn tăng thêm 20 ft khi không mang giáp và không cầm khiên; mức cộng này liên tục tăng theo bảng tiến trình Heavenly Restriction.\n\nĐồng thời, đôi chân bạn có thể bám đạp chạy thẳng đứng dọc theo tường nhà cao tầng và lướt băng qua mặt chất lỏng trong lượt của mình mà không hề bị rơi ngã."
+      },
+      {
+        "name": "Martial Arts",
+        "vietnameseName": "Thể Thuật Sát Phạt",
+        "level": 1,
+        "tag": "Combat",
+        "action": "Bonus Action",
+        "descriptionEn": "Also at 1st level, your practice of martial arts gives you mastery of combat styles that use unarmed strikes and martial weapons.\n\n• You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and martial weapons.\n• You can roll a d6 in place of the normal damage of your unarmed strike or martial weapon. This die changes as you gain Heavenly Restriction levels, as shown in the Martial Arts column of the Heavenly Restriction table.\n• When you use the Attack action with an unarmed strike or a martial weapon on your turn, you can make one unarmed strike or weapon attack as a bonus action.",
+        "description": "Thể chất hoàn hảo biến bạn thành cỗ máy chiến đấu vô song với quyền cước và vũ khí quân dụng (Martial weapons):\n\n• Uyển chuyển lực đạo: Bạn được dùng Dexterity thay cho Strength cho các lần đổ tấn công và sát thương của thể thuật và vũ khí quân dụng.\n• Xúc xắc sát thương d6: Bạn đổ d6 thay cho sát thương cơ bản; xúc xắc sát thương này tăng dần theo cấp độ (cột Martial Arts trong bảng tiến trình).\n• Đòn công bồi hoàn: Khi thực hiện hành động Attack bằng thể thuật hoặc vũ khí quân dụng trong lượt, bạn có thể lập tức tung thêm một đòn quyền cước hoặc đòn tấn công vũ khí bằng một Bonus Action."
+      },
+      {
+        "name": "Body Improvements",
+        "vietnameseName": "Tiến Hóa Thể Phách",
+        "level": 2,
+        "tag": "Customization",
+        "action": "",
+        "descriptionEn": "At 2nd level, your body is constantly growing and improving, becoming better by the day. You have a number of body points equal to your Heavenly Restriction level. These points can be used to obtain body improvements, all listed down at the Body Improvements List section. You cannot change an improvement once chosen.",
+        "description": "Tại cấp 2, thể xác bạn liên tục phá vỡ xiềng xích sinh học để tiến hóa từng ngày. Bạn sở hữu số Điểm Thể Phách (Body Points) bằng với cấp độ Heavenly Restriction. Các điểm này được sử dụng để mở khóa các nâng cấp thể chất siêu nhiên (như Superhuman Might, Sonic Speed, Hardened Skin, v.v.). Một khi đã lựa chọn, nâng cấp thể phách không thể thay đổi."
+      },
+      {
+        "name": "Fighting Style",
+        "vietnameseName": "Phong Cách Sát Thủ",
+        "level": 2,
+        "tag": "Combat Stance",
+        "action": "",
+        "descriptionEn": "At 2nd level, due to your training and constant improving body, you have a newfound ability when wielding weapons. You can choose one of the fighting styles below:\n\n• Archery: +2 bonus to attack rolls made with ranged weapons.\n• Blind Fighting: Blindsight 10 feet (can see through darkness/invisibility).\n• Dueling: +2 bonus to damage rolls when wielding a single one-handed melee weapon.\n• Great Weapon Fighting: Reroll 1 or 2 on damage dice with two-handed/versatile weapons.\n• Grappler: Deal 1d4 bludgeoning damage to one creature grappled by you at start of each turn.\n• Interception: Reaction reduce damage taken by target within 5ft by 1d10 + PB.\n• Protection: Reaction impose disadvantage on attack roll against target within 5ft.\n• Two-Weapon Fighting: Add ability modifier to damage of the second attack.\n• Tunnel Fighter: Bonus Action defensive stance to make opportunity attacks without spending reaction.",
+        "description": "Tại cấp 2, kỹ năng sử dụng vũ khí đạt tới trình độ sát thủ điêu luyện. Bạn chọn một trong các trường phái chiến đấu sau:\n\n• Thiện Xạ (Archery): +2 vào đòn đánh vũ khí tầm xa.\n• Manh Đấu (Blind Fighting): Tầm Nhìn Mù (Blindsight 10 ft) thấu thị bóng tối và tàng hình.\n• Đơn Đao (Dueling): +2 sát thương khi cầm duy nhất một vũ khí cận chiến một tay.\n• Cự Khí (Great Weapon Fighting): Đổ lại xúc xắc ra 1 hoặc 2 trên vũ khí hai tay.\n• Cầm Nã (Grappler): Gây 1d4 sát thương đập mỗi đầu lượt lên kẻ bị bạn Grapple.\n• Triệt Kích (Interception): Reaction giảm 1d10 + PB sát thương cho đồng đội trong phạm vi 5 ft.\n• Hộ Vệ (Protection): Reaction áp Disadvantage lên đòn tấn công nhắm vào đồng đội trong 5 ft.\n• Song Đao (Two-Weapon Fighting): Cộng điểm thuộc tính vào sát thương đòn đánh tay phụ.\n• Nhập Trận (Tunnel Fighter): Bonus Action vào thế thủ tung đòn cơ hội không tốn Reaction."
+      },
+      {
+        "name": "Ideal",
+        "vietnameseName": "Lý Tưởng Chiến Đấu",
+        "level": 3,
+        "tag": "Subclass Archetype",
+        "action": "",
+        "descriptionEn": "Starting at 3rd level, you choose an Ideal that represents your philosophy and purpose in the jujutsu world: Sorcerer Hunter (Toji Fushiguro archetype) or Vengeful Fury (Maki Zenin archetype). Your choice grants you features at 3rd level and again at 6th, 11th, and 18th level.",
+        "description": "Bắt đầu từ cấp 3, bạn định hình con đường sinh tồn của mình giữa giới Chú thuật qua việc lựa chọn một Lý Tưởng:\n\n• Thợ Săn Chú Thuật Sư (Sorcerer Hunter - hình mẫu Toji Fushiguro): Sát thủ máu lạnh chuyên săn lùng và đồ sát các Chú thuật sư danh gia vọng tộc bằng chiến thuật và Chú Cụ tối thượng.\n• Cuồng Nộ Báo Thù (Vengeful Fury - hình mẫu Maki Zenin): Cơn thịnh nộ hủy diệt quét sạch xiềng xích áp bức của các gia tộc phong kiến mục ruỗng.\n\nLựa chọn phân nhánh này cấp cho bạn các tính năng đặc thù tại các cấp 3, 6, 11 và 18."
+      },
+      {
+        "name": "Ability Score Improvement",
+        "vietnameseName": "Đột Phá Chỉ Số",
+        "level": 4,
+        "tag": "Progression",
+        "action": "",
+        "descriptionEn": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. You can also ignore this increase to instead gain a Feat.",
+        "description": "Tại cấp 4, và tiếp tục tại các cấp 8, 12, 16 và 19, thể phách siêu phàm tiếp tục bứt phá: bạn tăng một chỉ số thuộc tính tự chọn lên +2, hoặc tăng hai chỉ số lên +1 (tối đa theo ngưỡng trần siêu nhiên của bạn), hoặc thay vào đó nhận một Kỳ Công (Feat)."
+      },
+      {
+        "name": "Extra Attack",
+        "vietnameseName": "Liên Hoàn Sát",
+        "level": 5,
+        "tag": "Combat",
+        "action": "",
+        "descriptionEn": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.",
+        "description": "Bắt đầu từ cấp 5, tốc độ vung vũ khí xé gió: bạn tấn công hai lần thay vì một lần mỗi khi thực hiện hành động Attack trong lượt của mình."
+      },
+      {
+        "name": "Improved Body",
+        "vietnameseName": "Thần Lực Tôi Luyện",
+        "level": 7,
+        "tag": "Physical Enhancement",
+        "action": "",
+        "descriptionEn": "At 7th level, your body has adapted to your training. Your jump distance is multiplied by your Strength modifier, and your carrying capacity (including maximum load and maximum lift) is doubled.",
+        "description": "Tại cấp 7, cấu trúc xương và cơ bắp thích nghi đạt tới sức mạnh quái vật: cự ly nhảy xa và nhảy cao của bạn được nhân thẳng với Strength modifier; đồng thời tải trọng mang vác và sức nâng tối đa của bạn được nhân đôi."
+      },
+      {
+        "name": "Resistant",
+        "vietnameseName": "Đề Kháng Toàn Năng (Evasion)",
+        "level": 7,
+        "tag": "Defense",
+        "action": "",
+        "descriptionEn": "At 7th level, your physical and mental conditioning has made you resistant to effects. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail. At 14th and 20th level, you choose one additional saving throw.",
+        "description": "Tại cấp 7, phản xạ thể chất phi phàm bảo vệ bạn khỏi các thảm họa hủy diệt: khi chịu một hiệu ứng yêu cầu DEX Save để giảm nửa sát thương, bạn hoàn toàn KHÔNG nhận sát thương nếu Save thành công, và chỉ nhận một nửa sát thương nếu thất bại. Tại cấp 14 và cấp 20, bạn được chọn thêm một loại Saving Throw nữa để nhận đặc quyền né tránh tương tự."
+      },
+      {
+        "name": "Weapon Specialist",
+        "vietnameseName": "Bậc Thầy Chú Cụ",
+        "level": 9,
+        "tag": "Critical Mastery",
+        "action": "",
+        "descriptionEn": "At 9th level, as the time passes you have learned how to use the maximum potential of your weapons. You can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.\n\nThis increases to two additional dice at 13th level and three additional dice at 17th level.",
+        "description": "Tại cấp 9, bạn khai phóng trọn vẹn 100% uy lực sát thương của mọi loại Chú Cụ trong tay: bạn được đổ thêm một xúc xắc sát thương vũ khí khi tính sát thương bạo kích của một đòn Critical Hit cận chiến.\n\nMức bạo kích này tăng lên thành 2 xúc xắc cộng thêm tại cấp 13, và đạt tới 3 xúc xắc cộng thêm tại cấp 17."
+      },
+      {
+        "name": "Celestial Body",
+        "vietnameseName": "Thần Thể Bất Xâm (Lãnh Địa Bất Nhiễm)",
+        "level": 10,
+        "tag": "Domain Immunity",
+        "action": "",
+        "descriptionEn": "At 10th level, your body is like a divine object none shall harm, not even god itself. You cannot be targeted by the sure hit effect of a Domain Expansion, and cannot be detected by one while inside one. (Ex: If you are trapped inside a domain that forces you to make a Constitution saving throw as its sure hit, you won't have to make the saving throw.)\n\nYou can also freely pass through magical barriers of any kind, suffering no ill effects for doing so.\n\nThis, however, doesn’t work on sure-hit effects which target objects, or creatures without cursed energy, such as Malevolent Shrine.",
+        "description": "Tại cấp 10, vì hoàn toàn không có một tia Chú lực nào (0 CE), cơ thể bạn được quy tắc thế giới coi như một 'vật thể vô cơ' tự nhiên: bạn HOÀN TOÀN MIỄN NHIỄM trước hiệu ứng Đòn Đánh Tất Trúng (Sure-Hit) của Bành Trướng Lãnh Địa, và kết giới lãnh địa hoàn toàn không thể phát hiện hay định vị bạn (bạn không bao giờ phải thực hiện Saving Throw nếu đó là đòn Sure-Hit của Lãnh Địa).\n\n• Phá vỡ rào chắn: Bạn có thể tự do đi xuyên qua mọi bức Màn hay rào chắn kết giới ma pháp mà không phải chịu bất kỳ lực cản trở nào.\n• Lưu ý: Năng lực này không bảo vệ bạn trước các đòn Sure-Hit nhắm vào đồ vật vô cơ hoặc thực thể không chú lực (điển hình như Phục Ma Ngự Thai Tử - Malevolent Shrine của Sukuna chém nát vạn vật bằng Giải - Dismantle)."
+      },
+      {
+        "name": "Improved Fighting Style",
+        "vietnameseName": "Phong Cách Sát Thủ Thượng Thừa",
+        "level": 14,
+        "tag": "Combat Mastery",
+        "action": "",
+        "descriptionEn": "At 14th level, with years of training you have developed improved versions of your fighting style. Whenever you use any of your fighting styles, they instead give the benefits down below:\n\n• Improved Archery: +3 bonus to attack rolls made with ranged weapons.\n• Improved Blind Fighting: Blindsight 30 feet.\n• Improved Dueling: +3 bonus to damage rolls with a single weapon.\n• Improved Great Weapon Fighting: Reroll 1, 2, or 3 on damage dice.\n• Improved Grappler: Deal 1d8 bludgeoning damage to grappled creature.\n• Improved Interception: Reaction reduce damage by 1d12 + PB.\n• Improved Protection: Reaction impose disadvantage within 10 feet.\n• Improved Two-Weapon Fighting: Add ability modifier + 1 to off-hand damage.\n• Improved Tunnel Fighter: Opportunity attacks without reaction; +1 bonus to attacks and damage rolls made this way.",
+        "description": "Tại cấp 14, kỹ nghệ vũ khí của bạn đạt tới cảnh giới đăng phong tạo cực. Trường phái chiến đấu của bạn được nâng cấp uy lực:\n\n• Improved Archery: +3 vào đòn tấn công tầm xa.\n• Improved Blind Fighting: Tầm Nhìn Mù (Blindsight) mở rộng lên tới 30 ft.\n• Improved Dueling: +3 sát thương khi cầm một vũ khí một tay duy nhất.\n• Improved Great Weapon Fighting: Đổ lại xúc xắc sát thương ra 1, 2 hoặc 3 trên vũ khí hai tay.\n• Improved Grappler: Gây 1d8 sát thương đập mỗi đầu lượt lên kẻ bị Grapple.\n• Improved Interception: Reaction giảm 1d12 + PB sát thương cho đồng đội.\n• Improved Protection: Reaction áp Disadvantage trong cự ly mở rộng 10 ft.\n• Improved Two-Weapon Fighting: Cộng điểm thuộc tính + 1 vào sát thương tay phụ.\n• Improved Tunnel Fighter: Tung đòn cơ hội không tốn Reaction, đồng thời nhận thêm +1 vào đòn đánh và sát thương."
+      },
+      {
+        "name": "Demigod's Figure",
+        "vietnameseName": "Tố Chất Bán Thần (Thấu Thị Linh Hồn)",
+        "level": 15,
+        "tag": "Physiology / Soul Perception",
+        "action": "",
+        "descriptionEn": "At 15th level, your body is almost reaching its peak. You can hold your breath for twice as long, suffocate for twice as long without dropping to 0 hit points, you can go twice as long without food and water, and exhaustion from food and water deprivation takes twice as long to occur. In addition, you require twice as many levels of exhaustion before suffering the penalties (for example, if you have one level of exhaustion, you do not suffer the normal penalty until you have 2 levels).\n\nYou can also perceive the souls of objects when effects or features call for such.",
+        "description": "Tại cấp 15, thân thể bạn đạt tới cảnh giới bán thần vượt khỏi mọi giới hạn sinh học: bạn nín thở lâu gấp đôi, chịu ngạt thở lâu gấp đôi trước khi rơi về 0 HP, nhịn đói khát lâu gấp đôi và tích lũy kiệt sức chậm gấp đôi. Bạn cần số bậc Kiệt Sức (Exhaustion) gấp đôi mới phải chịu hình phạt (ví dụ: bị 1 bậc kiệt sức sẽ không bị phạt cho đến khi tích đủ 2 bậc).\n\nĐặc biệt: Ngũ giác của bạn nhạy bén đến mức có thể cảm nhận và Nhận Thức Linh Hồn của Đồ Vật Vô Cơ (Perceive the souls of objects), cho phép bạn chém xuyên qua mật độ vật chất và phát huy uy lực tối thượng của các bảo khí như Thích Hồn Đao (Soul Splitter Katana)."
+      },
+      {
+        "name": "God of War",
+        "vietnameseName": "Chiến Thần Giáng Thế",
+        "level": 20,
+        "tag": "Capstone",
+        "action": "",
+        "descriptionEn": "Finally at 20th level, your supernatural body reaches its pinnacle. Your Strength, Dexterity, and Constitution scores increase by +4 each. You also gain the following benefits:\n\n• Inevitable Triumph: Once per long rest when reduced to 0 hit points, you can choose to remain at 1 hit point. Additionally, you gain resistance to all non-magical damage and immunity to non-magical bludgeoning, slashing and piercing damage.\n• Ultimate Mastery: You have mastered every aspect of combat. You gain proficiency in all saving throws and have advantage on all ability checks related to Strength, Dexterity, and Constitution.\n• Eternal Vigor: You ignore the detriments of age and stay in your physical prime. You become immune to any effects that age you magically.",
+        "description": "Tại cấp 20, thể xác Thiên Dữ Chú Phược đạt tới đỉnh phong thần thánh tuyệt đối, một hiện thân của chiến thần sát phạt khiến cả giới Chú thuật lẫn Nguyền hồn phải run rẩy. Cả ba chỉ số Strength, Dexterity, và Constitution của bạn tăng vĩnh viễn thêm +4 mỗi chỉ số. Đồng thời bạn nhận các đặc quyền:\n\n• Khải Hoàn Bất Tử (Inevitable Triumph): Một lần mỗi Long Rest khi bị đánh tụt về 0 HP, bạn có thể chọn giữ lại 1 HP. Ngoài ra, bạn nhận Kháng (Resistance) với mọi sát thương phi ma thuật, và Miễn Nhiễm (Immunity) HOÀN TOÀN trước sát thương đập, chém, đâm phi ma thuật.\n• Đăng Phong Tạo Cực (Ultimate Mastery): Tinh thông vạn biến: bạn nhận Proficiency cho TẤT CẢ các loại Saving Throws, và nhận Advantage đối với mọi lần kiểm tra thuộc tính liên quan đến Strength, Dexterity, và Constitution.\n• Sinh Lực Bất Diệt (Eternal Vigor): Bạn rũ bỏ mọi sự suy thoái của thời gian, vĩnh viễn ở trạng thái thể chất sung mãn nhất của cuộc đời và miễn nhiễm hoàn toàn với mọi hiệu ứng ma pháp gây lão hóa."
+      }
+    ],
+    "images": [
+      "image260.png",
+      "image261.png",
+      "image262.png",
+      "image263.png",
+      "image264.png",
+      "image265.png",
+      "image266.png",
+      "image267.png",
+      "image268.png",
+      "image269.png",
+      "image270.png",
+      "image271.png",
+      "image272.png"
+    ],
+    "image": "image260.png",
+    "backgroundImage": null,
+    "hpAt1st": "12 + CON modifier",
+    "hpHigher": "1d12 (or 7) + CON modifier per Heavenly Restriction level after 1st",
+    "profData": {
+      "armor": "None",
+      "weapons": "All weapons",
+      "savingThrows": "Strength, Constitution",
+      "skills": "Choose two from Acrobatics, Athletics, Insight, Intimidation, Perception, Stealth, and Survival"
+    },
+    "coreFeatures": [
+      {
+        "name": "Restrained Body",
+        "description": "Starting at 1st level, your body is simply built differently than others. You have supernatural strength, speed and durability. You gain the following traits:\n\nSupernatural Body. You gain a +2 in your Strength, Dexterity and Constitution scores. These same scores increase by +1 at 5th, 9th, 13th and 17th level. In addition, your ability score limit is increased to 25. At every level you gain after 1st, your ability score maximum increases by 1, up to 40.\n\nSupernatural Resilience. Your unarmored AC equals 10 + your Constitution modifier + your Dexterity modifier.\n\nPerfect Health. You have advantage on saving throws against disease and the poisoned condition.\n\nSupernatural Vision. You gain proficiency in the Perception skill, or expertise if already proficient.\n\nPure Body. Your body has no traces of any kinds of mystical energy, meaning you can't multiclass or learn about magic or cursed energy, and if you somehow have abilities which use magic or cursed energy, you lose them. You cannot land black flashes or utilize RCT.",
+        "level": 1,
+        "tag": "Thể Chất 0 CE"
+      },
+      {
+        "name": "Unarmored Movement",
+        "description": "Also at 1st level, your speed increases by 20 feet while you are not wearing armor or wielding a shield. This bonus increases when you reach certain Heavenly Restriction levels, as shown in the Heavenly Restriction table.\n\nIn addition, you gain the ability to move and run along vertical surfaces and across liquids on your turn without falling during the move.",
+        "level": 1,
+        "tag": "Tốc Độ Di Chuyển"
+      },
+      {
+        "name": "Martial Arts",
+        "description": "Also at 1st level, your practice of martial arts gives you mastery of combat styles that use unarmed strikes and martial weapons.\n\nYou can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and martial weapons.\n\nYou can roll a d6 in place of the normal damage of your unarmed strike or martial weapon. This die changes as you gain Heavenly Restriction levels, as shown in the Martial Arts column of the Heavenly Restriction table.\n\nWhen you use the Attack action with an unarmed strike or a martial weapon on your turn, you can make one unarmed strike or weapon attack as a bonus action (For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven't already taken a bonus action this turn.).",
+        "level": 1,
+        "tag": "Thể Thuật"
+      },
+      {
+        "name": "Body Improvements",
+        "description": "At 2nd level, your body is constantly growing and improving, becoming better by the day. You have a number of body points equal to your Heavenly Restriction level. These points can be used to obtain body improvements, all listed down at the Body Improvements List section. You cannot change an improvement once chosen.",
+        "level": 2,
+        "tag": "Cải Tiến Cơ Thể"
+      },
+      {
+        "name": "Fighting Style",
+        "description": "At 2nd level, due to your training and constant improving body, you have a newfound ability when wielding weapons. You can choose one of the fighting styles bellow:\n\nArchery (PHB). You gain a +2 bonus to attack rolls you make with ranged weapons.\n\nBlind Fighting (TCE). You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.\n\nDueling (PHB). When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.\n\nGreat Weapon Fighting (PHB). When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.\n\nGrappler. At the start of each of your turns, you can deal 1d4 bludgeoning damage to one creature grappled by you.\n\nInterception (TCE). When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d10 + your proficiency bonus (to a minimum of 0 damage). You must be wielding a shield or a simple or martial weapon to use this reaction.\n\nProtection (PHB). When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll.\n\nTwo-Weapon Fighting (PHB). When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.\n\nTunnel Fighter (UA). As a bonus action, you can enter a defensive stance that lasts until the start of your next turn. While in your defensive stance, you can make opportunity attacks without using your reaction, and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your reach.",
+        "level": 2,
+        "tag": "Thế Đánh Chiến Binh"
+      },
+      {
+        "name": "Ideal",
+        "description": "At 3rd level, due to bad life experiences, you have acquired an ideal. Choose between Prideful or Vengeful, both detailed at the end of the class description. Your choice grants you features at 3rd and again at 9th, 13th and 17th level.",
+        "level": 3,
+        "tag": "Lý Tưởng"
+      },
+      {
+        "name": "Ability Score Improvement",
+        "description": "When you reach 4th level, and again at 6th, 8th, 12th, 16th and 19th level, you can increase one ability score of your choice by 3, or you can increase three ability scores of your choice by 1. You can't increase an ability score above your ability score limit using this feature. You can also ignore this increase to instead gain a Feat.",
+        "level": 4
+      },
+      {
+        "name": "Extra Attack",
+        "description": "At 5th level, you can now attack twice instead of once when you take the attack action. This increases to three times instead of twice at 11th level. It increases to four times at 18th level, and to five times at 20th level.",
+        "level": 5,
+        "action": "Action",
+        "tag": "Đòn Đánh Liên Hoàn"
+      },
+      {
+        "name": "Improved Body",
+        "description": "At 7th level, the longer you live the more you'll realize your body has no limits. You gain +4 to your Strength, Dexterity and Constitution scores. You gain proficiency in DEX Saves.\n\nIn addition, you gain immunity to disease and the poisoned condition and resistance to poison damage.",
+        "level": 7,
+        "tag": "Thể Chất"
+      },
+      {
+        "name": "Resistant",
+        "description": "At 7th level, your newfound abilities and body has allowed you to resist certain area effects, such as a blue dragon’s lightning breath or a fireball spell. Choose one of the following ability scores:\n\nBrawn - Strength\n\nEvasion - Dexterity\n\nEndurance - Constitution\n\nDiscernment - Intelligence\n\nIntuition - Wisdom\n\nEgo - Charisma\n\nWhen you are subjected to an effect that allows you to make a saving throw of the chosen ability to only take half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail. At 14th and 20th level, you choose one additional saving throw.",
+        "level": 7,
+        "tag": "Kháng Phép / Area"
+      },
+      {
+        "name": "Weapon Specialist",
+        "description": "At 9th level, as the time passes you have learned how to use the maximum potential of your weapons. You can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.\n\nThis increases to two additional dice at 13th level and three additional dice at 17th level.",
+        "level": 9,
+        "tag": "Bậc Thầy Vũ Khí"
+      },
+      {
+        "name": "Celestial Body",
+        "description": "At 10th level, your body is like a divine object none shall harm, not even god itself. You cannot be targeted by the sure hit effect of a Domain Expansion, and cannot be detected by one while inside one.\n\n(Ex: If you are trapped inside a domain that forces you to make a CON Save as its sure hit, you won't have to make the saving throw.)\n\nYou can also freely pass through magical barriers of any kind, suffering no ill effects for doing so.\n\nThis, however, doesn’t work on sure-hit effects which target objects, or creatures without cursed energy, such as Malevolent Shrine.",
+        "level": 10,
+        "tag": "Thần Thể Bất Khả Xâm Phạm"
+      },
+      {
+        "name": "Improved Fighting Style",
+        "description": "At 14th level, with years of training you have developed improved versions of your fighting style. Whenever you use any of your fighting styles, they instead give the benefits down bellow:\n\nImproved Archery (PHB). You gain a +3 bonus to attack rolls you make with ranged weapons.\n\nImproved Blind Fighting (TCE). You have blindsight with a range of 30 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.\n\nImproved Dueling (PHB). When you are wielding a melee weapon in one hand and no other weapons, you gain a +3 bonus to damage rolls with that weapon.\n\nImproved Great Weapon Fighting (PHB). When you roll a 1,2, or 3 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1, 2, or 3. The weapon must have the two-handed or versatile property for you to gain this benefit.\n\nImproved Grappler. At the start of each of your turns, you can deal 1d8 bludgeoning damage to one creature grappled by you.\n\nImproved Interception (TCE). When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d12 + your proficiency bonus (to a minimum of 0 damage). You must be wielding a shield or a simple or martial weapon to use this reaction.\n\nImproved Protection (PHB). When a creature you can see attacks a target other than you that is within 10 feet of you, you can use your reaction to impose disadvantage on the attack roll.\n\nImproved Two-Weapon Fighting (PHB). When you engage in two-weapon fighting, you can add your ability modifier + 1 to the damage of the second attack.\n\nImproved Tunnel Fighter (UA). As a bonus action, you can enter a defensive stance that lasts until the start of your next turn. While in your defensive stance, you can make opportunity attacks without using your reaction, and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your reach. You gain a +1 bonus to attacks and damage rolls made this way.",
+        "level": 14,
+        "tag": "Thế Đánh Nâng Cao"
+      },
+      {
+        "name": "Demigod's Figure",
+        "description": "At 15th level, your body is almost reaching its peak, however now it will take a long time until you get there. You can hold your breath for twice as long, suffocate for twice as long without dropping to 0 hit points, you can go twice as long without food and water, and exhaustion from food and water deprivation takes twice as long to occur. In addition, you require twice as many levels of exhaustion before suffering the penalties (for example, if you have one level of exhaustion, you do not suffer the normal penalty until you have 2 levels).\n\nYou can also perceive the souls of objects when effects or features call for such.",
+        "level": 15,
+        "tag": "Thể Chất Bán Thần"
+      },
+      {
+        "name": "God of War",
+        "description": "Finally at 20th level, your supernatural body reaches its pinnacle. Your Strength, Dexterity, and Constitution scores increase by +4 each. You also gain the following benefits:\n\nInevitable Triumph. Once per long rest when reduced to 0 hit points, you can choose to remain at 1 hit point. Additionally, you gain resistance to all non-magical damage and immunity to non-magical bludgeoning, slashing and piercing damage.\n\nUltimate Mastery. You have mastered every aspect of combat. You gain proficiency in all saving throws and have advantage on all ability checks related to Strength, Dexterity, and Constitution.\n\nEternal Vigor. You ignore the detriments of age and stay in your physical prime. You become immune to any effects that age you magically.\n\nIdeals\n\nPrideful\n\nThose who Ideals are to show their superiority, are the Prideful.",
+        "level": 20,
+        "tag": "Tối Thượng (Capstone)"
+      }
+    ],
+    "ideals": {
+      "title": "Lý Tưởng (Ideal - Cấp 3)",
+      "description": "Tại Cấp 3, do trải nghiệm sống và sự đối xử của giới chú thuật, bạn lựa chọn một Lý tưởng định hình con đường chiến đấu: Kiêu Hãnh (Prideful - phong cách Toji) hoặc Báo Thù (Vengeful - phong cách Maki).",
+      "subclasses": [
+        {
+          "id": "prideful",
+          "name": "Prideful (Kẻ Kiêu Hãnh)",
+          "character": "Toji Fushiguro",
+          "kanji": "傲",
+          "color": "from-amber-600 to-orange-800",
+          "quote": "Mày vừa thua một con khỉ thậm chí không có nổi một chút Chú lực đấy.",
+          "description": "Lập trường kiêu hãnh khinh miệt giới Chú thuật sư, rèn giũa bản lĩnh thợ săn chuyên nghiệp để bóp nghẹt và đè bẹp những kẻ tự phụ mang dòng máu chú thuật.",
+          "features": [
+            {
+              "name": "Sorcerer Hunter",
+              "description": "At 3rd level, you have grown a prideful stance against sorcerers, mocking them by saying things like they lost against a primate. You have become a sorcerer hunter, making you gain the following benefits:\n\nWhen a creature within 5 feet of you uses a Cursed technique, you can use your reaction to make a melee weapon attack against that creature.\n\nWhen you damage a creature that is concentrating on a spell or a Cursed technique, that creature has disadvantage on the saving throw it makes to maintain its concentration.\n\nYou have advantage on saving throws against spells or Cursed techniques cast by creatures within 10 feet of you.",
+              "level": 3
+            },
+            {
+              "name": "Fighter's Drive",
+              "description": "At 9th level, you have a will to fight that drives you beyond your limits, making you go further than what you could normally do for a moment. On your turn, you can take an additional action.\n\nThis can only be used once per long rest. You can use this two times per long rest but only once per turn at 18th level.",
+              "level": 9
+            },
+            {
+              "name": "All Things I can Handle",
+              "description": "At 13th level, due to being experienced with killing sorcerers, dealing with their techniques has become an easy task for you. Whenever you are targeted by a spell or technique attack roll or saving throw, you learn how it works and adapt to it. After adapting to it, you can use your reaction to gain advantage on the saving throw or force the attack roll to be made at disadvantage.",
+              "level": 13
+            },
+            {
+              "name": "You Lost to a Monkey",
+              "description": "At 17th level, no matter who they are, no matter their tricks, you can be assured of victory. Once per round, you can choose to deal critical damage on a hit.\n\nIn addition, whenever you reduce a creature to 0 hit points you gain temporary hit points equal to your level.\n\nVengeful\n\nPeople have wronged you in the past, and despite your body healing from the damage caused, the scars in your heart will never heal.",
+              "level": 17
+            }
+          ]
+        },
+        {
+          "id": "vengeful",
+          "name": "Vengeful (Kẻ Báo Thù)",
+          "character": "Maki Zen'in",
+          "kanji": "仇",
+          "color": "from-red-600 to-rose-900",
+          "quote": "Tao sẽ phá hủy tất cả mọi thứ.",
+          "description": "Lấp đầy tâm trí bằng cơn thịnh nộ bùng cháy và khao khát tiêu diệt những kẻ đã đày đọa mình, biến sự căm phẫn tột cùng thành sức mạnh hủy diệt không thể ngăn cản.",
+          "features": [
+            {
+              "name": "Vengeful Fury",
+              "description": "At 3rd level, you are filled with a deep hatred filled by vengeance, making you ignore everything and let anger consume you. As a bonus action you can enter your fury state if you're not wearing heavy armor, gaining the following benefits:\n\nWhen you take bludgeoning, piercing, or slashing damage, you reduce the damage by your proficiency bonus.\n\nYou deal one additional dice of damage whenever you score a critical hit with a melee weapon.\n\nYour fury lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage state on your turn as a bonus action.\n\nYou can enter your fury a number of times up to your proficiency bonus, and recover all uses upon a short or long rest.",
+              "level": 3
+            },
+            {
+              "name": "Bloodlust",
+              "description": "At 9th level, you have immense bloodlust for those who have wronged you, even making it your personal task to hunt them down. You can choose one creature that you can see that has damaged you or an ally. For 1 minute, your weapon attacks against that creature gain a +1 to Critical Range, deal one additional dice of damage, and whenever you score a critical hit you can knock them prone.\n\nYou can use this feature a number of times equal to your proficiency bonus, and you recover all uses upon taking a long rest.",
+              "level": 9
+            },
+            {
+              "name": "Immense Anger",
+              "description": "At 13th level, your rage is growing deeper, making you feel almost invincible. When you enter your fury, you gain the following benefits:\n\nWhen you take bludgeoning, piercing or slashing damage, the damage is decreased by twice your proficiency bonus.\n\nYou deal two additional damage dice when you score a critical hit with a melee weapon.",
+              "level": 13
+            },
+            {
+              "name": "Follow Your Wrath",
+              "description": "At 17th level, you learned that nothing but your hatred against those that wronged you matters, and no one will stop you from going after them. When you enter your fury, you gain the following benefits:\n\nYou gain further damage reduction equal to half your level(rounded up) that applies to all damage types.\n\nYou deal three additional dice of damage whenever you score a critical hit with a melee weapon.\n\nBody Improvements\n\nStrength Improvements\n\nYou can have a number of these improvements equal to your Strength modifier.",
+              "level": 17
+            }
+          ]
+        }
+      ]
+    },
+    "bodyImprovements": {
+      "title": "Kho Cải Tiến Cơ Thể (Body Improvements List)",
+      "description": "Tại Cấp 2, cơ thể bạn không ngừng đột biến và tiến hóa. Bạn nhận được số Điểm Cơ Thể (Body Points) bằng với cấp độ Heavenly Restriction. Các điểm này dùng để mở khóa các nâng cấp thể chất vĩnh viễn không thể thay đổi.",
+      "categories": [
+        {
+          "id": "strength",
+          "name": "Sức Mạnh (Strength Improvements)",
+          "tag": "STR",
+          "limit": "Tối đa bằng modifier STR",
+          "items": [
+            {
+              "name": "Superhuman Might",
+              "level": 2,
+              "cost": "1 Body Point",
+              "statReq": "15 Strength",
+              "description": "Your strength is beyond that of even trained martial artists. You count as one size larger for the purposes of grappling, shoving, disarming, and the weight you can carry, push, drag or lift."
+            },
+            {
+              "name": "Strong Leap",
+              "level": 2,
+              "cost": "1 Body Point",
+              "statReq": "15 Strength",
+              "description": "Your leg strength has become truly monstrous. Whenever you jump, you can triple your jump height or distance."
+            },
+            {
+              "name": "Strength Technique",
+              "level": 2,
+              "cost": "2 Body Points",
+              "statReq": "20 Strength",
+              "description": "Upon selecting this body improvement, you gain 1 Physical Feat of your choice with prerequisites you meet.\n\nYou can take this body improvement multiple times however you can only select at certain levels in this class. These levels are 2nd, 5th, 11th, and 17th level.\n\nSpeed Improvements\n\nYou feel like you could probably win against a special grade in a race due to how fast you are now.\n\nYou can have a number of these improvements equal to your Dexterity modifier."
+            },
+            {
+              "name": "Monstrous Might",
+              "level": 9,
+              "cost": "1 Body Point",
+              "statReq": "24 Strength",
+              "description": "Your body strength is increasing by the second, you could even be called a monster at this point. You now count as two sizes larger for the purposes of grappling, shoving, disarming, and the weight you can carry, push, drag or lift. In addition, your martial arts die increases by 1 dice, applying after die tier increases."
+            },
+            {
+              "name": "Godly Might",
+              "level": 17,
+              "cost": "1 Body Point",
+              "statReq": "30 Strength",
+              "description": "You are the pinnacle of strength, some even consider you as athletic as an ancient god. You now count as three sizes larger for the purposes of grappling, shoving, disarming, and the weight you can carry, push, drag or lift and your martial arts die increases by 1 dice again, applying after die tier increases. In addition, you now deal twice as much damage to structures and objects."
+            },
+            {
+              "name": "Destructive Force",
+              "level": 20,
+              "cost": "2 Body Points",
+              "statReq": "40 Strength",
+              "description": "You learn to better apply your godlike strength into your strikes, creating thunderous shockwaves. When you hit a creature with a weapon attack using strength, compare the attack roll result to the AC of every creature of your choice within 20 feet of the target other than the target. If the attack roll would hit, you deal half the damage of the attack(rounded down) to the creatures that were hit."
+            }
+          ]
+        },
+        {
+          "id": "speed",
+          "name": "Tốc Độ & Phản Xạ (Speed Improvements)",
+          "tag": "DEX",
+          "limit": "Tối đa bằng modifier DEX",
+          "items": [
+            {
+              "name": "Sonic Speed",
+              "level": 2,
+              "cost": "1 Body Point",
+              "statReq": "15 Dexterity",
+              "description": "Your speed has increased dramatically. Your movement speed doubles and you can take the Dash action as a bonus action."
+            },
+            {
+              "name": "Supersonic Reflexes",
+              "level": 2,
+              "cost": "1 Body Point",
+              "statReq": "15 Dexterity",
+              "description": "You gain an additional reaction per round. You can use your reaction to grant yourself advantage on a Dexterity check you make."
+            },
+            {
+              "name": "Sight Speed",
+              "level": 9,
+              "cost": "1 Body Point",
+              "statReq": "24 Dexterity",
+              "description": "You have become so fast, people blink and you're already in front of them. Your movement speed doubles once again, and opportunity attacks against you are made with disadvantage due to your speed."
+            },
+            {
+              "name": "Lighting Reflexes",
+              "level": 9,
+              "cost": "2 Body Points",
+              "statReq": "24 Dexterity",
+              "description": "You gain one more reaction per round. You can also use your reaction to gain advantage on checks based on an ability score you choose from the following; Intelligence, Wisdom, and Charisma when you gain this body improvement. This choice cannot be changed later on.\n\nDurability Improvements\n\nYou're like a wall that cannot be moved, not even the hardest of blows will bring you down.\n\nYou can have a number of these improvements equal to your Constitution modifier."
+            },
+            {
+              "name": "Light Speed",
+              "level": 17,
+              "cost": "1 Body Point",
+              "statReq": "30 Dexterity",
+              "description": "You have become faster than people can even perceive, seemingly approaching even the speed of light. Your movement speed doubles again, and creatures cannot perceive you moving, thus creatures can’t take reactions in response to your movement unless they have blindsight."
+            }
+          ]
+        },
+        {
+          "id": "durability",
+          "name": "Độ Bền & Chống Chịu (Durability Improvements)",
+          "tag": "CON",
+          "limit": "Tối đa bằng modifier CON",
+          "items": [
+            {
+              "name": "Hardened Skin",
+              "level": 2,
+              "cost": "1 Body Point",
+              "statReq": "15 Constitution",
+              "description": "Your skin has hardened, becoming more akin to bone. You gain +2 maximum hit points per level that you have, and you gain +2 more for every level you gain thereafter."
+            },
+            {
+              "name": "Iron Skin",
+              "level": 9,
+              "cost": "1 Body Point",
+              "statReq": "24 Constitution",
+              "description": "Your skin has further hardened, becoming more like steel than flesh. You gain +2 more maximum hit points per level, and you take 3 less damage from non-magical bludgeoning, piercing, and slashing."
+            },
+            {
+              "name": "Adamantine Skin",
+              "level": 17,
+              "cost": "2 Body Points",
+              "statReq": "30 Constitution",
+              "description": "Your skin has even further hardened, becoming more like adamantine. You add your constitution modifier an additional time when calculating your maximum hit points per level, and the damage reduction you gained from Iron Skin now applies to all bludgeoning, piercing, and slashing damage.\n\nMind Improvements\n\nYour body has increased both physically and mentally.\n\nYou can have a number of these improvements equal to your Wisdom modifier."
+            }
+          ]
+        },
+        {
+          "id": "mind",
+          "name": "Giác Quan & Trực Giác (Sensory Improvements)",
+          "tag": "WIS",
+          "limit": "Tối đa bằng modifier WIS",
+          "items": [
+            {
+              "name": "Minor Precognition",
+              "level": 2,
+              "cost": "1 Body Point",
+              "statReq": null,
+              "description": "You have a minor sense of how to read your opponents, giving you a small advantage in battle. You gain a +5 to your passive perception, and unseen attacks are not rolled with advantage against you."
+            },
+            {
+              "name": "Minor Enhanced Senses",
+              "level": 2,
+              "cost": "1 Body Point",
+              "statReq": null,
+              "description": "You do not need to have your eyes open to see, your instincts are enough. You gain blindsight to a range of 10ft. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you. If you have blindsight, the range increases by 10ft."
+            },
+            {
+              "name": "Precognition",
+              "level": 9,
+              "cost": "1 Body Point",
+              "statReq": null,
+              "description": "Your precognition is getting better, now being able to even predict what your opponents will do. You cannot be surprised while conscious, and you have advantage on DEX Saves against an effect you can see, such as traps or spells. You can't receive this benefit if you're blinded, deafened or incapacitated."
+            },
+            {
+              "name": "Medium Enhanced Senses",
+              "level": 9,
+              "cost": "1 Body Point",
+              "statReq": null,
+              "description": "Your senses have been enhanced even more, your instincts have been getting better. Your blindsight increases by 20ft. In addition, you gain 30ft of tremorsense."
+            },
+            {
+              "name": "Major Precognition",
+              "level": 17,
+              "cost": "1 Body Point",
+              "statReq": null,
+              "description": "Your precognition has evolved to the point you're almost seeing the future. Once per round, when a creature targets you for an attack, you can use your reaction to force their attack rolls against you to be made at disadvantage until the beginning of your next turn. Additionally, once per round you can give yourself advantage against one saving throw."
+            },
+            {
+              "name": "Major Enhanced Senses",
+              "level": 17,
+              "cost": "1 Body Point",
+              "statReq": null,
+              "description": "Your senses have reached their peak. Your blindsight increases again by 60ft and your tremorsense range increases to 60ft. You gain advantage in Wisdom (Perception) checks involving hearing."
+            }
+          ]
+        }
+      ]
+    },
+    "ceFormula": "0 CE (Tuyệt đối không có Chú lực)",
+    "hitDiceLabel": "1d12 per Heavenly Restriction level",
+    "startingEquipment": "You start with the following equipment, in addition to the equipment granted by your background:\n\n(a) 2 Simple Weapons or (b) any martial melee weapon\n\n(a) one Dagger or (b) a handgun\n\nAn explorer's pack and four javelins",
+    "pactTraits": [
+      {
+        "title": "Giáp Không Giáp (Unarmored AC)",
+        "tag": "10 + DEX mod + CON mod",
+        "desc": "Thể chất đanh thép không cần giáp trụ hay khiên, kháng cự mọi đòn đánh vật lý bọc Chú lực."
+      },
+      {
+        "title": "Trần Chỉ Số Phi Nhân Loại (Max Stat Cap)",
+        "tag": "25 ➔ 40 (Cấp 1-20)",
+        "desc": "Phá vỡ giới hạn 20 của người thường. Cấp 1 trần 25, mỗi cấp tăng thêm +1 lên kịch trần 40!"
+      },
+      {
+        "title": "Thăng Tiến Thuộc Tính Tự Động",
+        "tag": "+2 STR/DEX/CON (Cấp 1), +1 (Cấp 5, 9, 13, 17)",
+        "desc": "Cơ thể tự hoàn thiện qua tu luyện mà không cần tiêu tốn lượt Tăng điểm thuộc tính (ASI)."
+      },
+      {
+        "title": "Vô Hình & Miễn Nhiễm Lãnh Địa (Pure Body)",
+        "tag": "Sure-Hit Immunity",
+        "desc": "Hoàn toàn 0 Chú Lực. Vô hình trước giác quan Chú thuật, kết giới xem như vô tri và miễn nhiễm đòn Tất Trúng."
+      },
+      {
+        "title": "Sức Khỏe Hoàn Hảo (Perfect Health)",
+        "tag": "Advantage Saves",
+        "desc": "Luôn có Advantage đối với mọi Saving Throw chống lại Bệnh tật và Trạng thái Nhiễm độc."
+      }
+    ],
+    "milestones": {
+      "unarmoredSpeed": [
+        {
+          "level": "Cấp 1-3",
+          "bonus": "+20 ft",
+          "total": "50 ft"
+        },
+        {
+          "level": "Cấp 4-6",
+          "bonus": "+30 ft",
+          "total": "60 ft"
+        },
+        {
+          "level": "Cấp 7-9",
+          "bonus": "+40 ft",
+          "total": "70 ft"
+        },
+        {
+          "level": "Cấp 10-12",
+          "bonus": "+50 ft",
+          "total": "80 ft"
+        },
+        {
+          "level": "Cấp 13-15",
+          "bonus": "+60 ft",
+          "total": "90 ft"
+        },
+        {
+          "level": "Cấp 16-18",
+          "bonus": "+70 ft",
+          "total": "100 ft"
+        },
+        {
+          "level": "Cấp 19-20",
+          "bonus": "+80 ft",
+          "total": "110 ft"
+        }
+      ],
+      "martialArtsDice": [
+        {
+          "level": "Cấp 1-4",
+          "dice": "1d6",
+          "note": "Đòn đánh cận chiến"
+        },
+        {
+          "level": "Cấp 5-10",
+          "dice": "1d8",
+          "note": "Gãy xương nứt đá"
+        },
+        {
+          "level": "Cấp 11-16",
+          "dice": "1d10",
+          "note": "Nghiền nát vật chất"
+        },
+        {
+          "level": "Cấp 17-20",
+          "dice": "1d12",
+          "note": "Sức mạnh thần thánh"
+        }
+      ],
+      "extraAttacks": [
+        {
+          "level": "Cấp 1-4",
+          "attacks": "1 Đòn",
+          "note": "+1 đòn Bonus Action"
+        },
+        {
+          "level": "Cấp 5-10",
+          "attacks": "2 Đòn",
+          "note": "Extra Attack I"
+        },
+        {
+          "level": "Cấp 11-17",
+          "attacks": "3 Đòn",
+          "note": "Extra Attack II"
+        },
+        {
+          "level": "Cấp 18-20",
+          "attacks": "4 Đòn",
+          "note": "Extra Attack III (Tối đa 4 đòn/Action)"
+        }
+      ]
+    },
+    "bodyPointsRules": {
+      "poolRule": "Điểm Cơ Thể (Body Points) = Cấp độ Heavenly Restriction (Cấp 2 có 2 điểm, Cấp 20 có 20 điểm).",
+      "branchLimit": "Số lượng nâng cấp đã chọn trong mỗi nhánh (STR, DEX, CON, WIS) không thể vượt quá Modifier của thuộc tính tương ứng.",
+      "retraining": "Mỗi khi thăng cấp độ mới trong class này, bạn có thể hoán đổi 1 Cải tiến cơ thể đã học lấy 1 Cải tiến khác đủ điều kiện."
+    },
+    "vietnameseName": "Thiên Dữ Chú Phược",
+    "role": "Sát Thủ Diệt Chú Thuật Sư / Thể Chất Thần Thánh"
+  }
+]

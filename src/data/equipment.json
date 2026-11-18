@@ -1,0 +1,929 @@
+{
+  "wealth": "",
+  "armor": [
+    [
+      "Armor",
+      "Cost",
+      "AC Calculation"
+    ],
+    [
+      "Light Armor",
+      "",
+      ""
+    ],
+    [
+      "Dense Coat",
+      "$500",
+      "11 + Dex modifier(Dis Stealth)"
+    ],
+    [
+      "Thick Shirt",
+      "$1,000",
+      "11 + Dex modifier"
+    ],
+    [
+      "Light Bulletproof Shirt",
+      "$5,000",
+      "12 + Dex modifier"
+    ],
+    [
+      "Medium Armor",
+      "",
+      ""
+    ],
+    [
+      "Hide",
+      "$1,000",
+      "12 + Dex modifier (max 2)"
+    ],
+    [
+      "Bulletproof Jacket",
+      "$5,000",
+      "13 + Dex modifier (max 2)"
+    ],
+    [
+      "Bulletproof Suit",
+      "$10,000",
+      "15 + Dex modifier (max 2)"
+    ],
+    [
+      "Heavy Armor",
+      "",
+      ""
+    ],
+    [
+      "Ring Mail",
+      "$3,000",
+      "14(Disadvantage on Stealth)"
+    ],
+    [
+      "Chainmail",
+      "$7,500",
+      "16(Disadvantage on Stealth)"
+    ],
+    [
+      "Plate",
+      "$15,000",
+      "18(Disadvantage on Stealth)"
+    ]
+  ],
+  "weaponsMelee": [
+    [
+      "Melee Weapons"
+    ],
+    [
+      "Weapon",
+      "Cost",
+      "Damage",
+      "Type",
+      "Features"
+    ],
+    [
+      "Simple Weapons",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Club",
+      "$10",
+      "1d4",
+      "BLG",
+      "Light"
+    ],
+    [
+      "Dagger",
+      "$200",
+      "1d4",
+      "PRC",
+      "Finesse, light, thrown(20/60)"
+    ],
+    [
+      "Great club",
+      "$20",
+      "1d8",
+      "BLG",
+      "Two-handed"
+    ],
+    [
+      "Handaxe",
+      "$500",
+      "1d6",
+      "SLS",
+      "Light, thrown(20/60)"
+    ],
+    [
+      "Javelin",
+      "$50",
+      "1d6",
+      "PRC",
+      "Thrown(30/120)"
+    ],
+    [
+      "Light Hammer",
+      "$200",
+      "1d4",
+      "BLG",
+      "Light, thrown(20/60)"
+    ],
+    [
+      "Mace",
+      "$500",
+      "1d6",
+      "BLG",
+      "-"
+    ],
+    [
+      "Quarterstaff",
+      "$20",
+      "1d6",
+      "BLG",
+      "Versatile(1d8)"
+    ],
+    [
+      "Sickle",
+      "$100",
+      "1d4",
+      "SLS",
+      "Light"
+    ],
+    [
+      "Tonfa",
+      "$400",
+      "1d6",
+      "BLG",
+      "Light, Defensive"
+    ],
+    [
+      "Knuckle Dusters",
+      "$10",
+      "1d4",
+      "BLG",
+      "Fist"
+    ],
+    [
+      "War Fan",
+      "$300",
+      "1d6",
+      "BLG",
+      "Light, Defensive"
+    ],
+    [
+      "Martial Weapons",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Battleaxe",
+      "$1,000",
+      "1d8",
+      "SLS",
+      "Versatile(1d10)"
+    ],
+    [
+      "Flail",
+      "$1,000",
+      "1d8",
+      "BLG",
+      "-"
+    ],
+    [
+      "Glaive",
+      "$2,000",
+      "1d10",
+      "SLS",
+      "Heavy, reach, two-handed"
+    ],
+    [
+      "Greataxe",
+      "$3,000",
+      "1d12",
+      "SLS",
+      "Heavy, two-handed"
+    ],
+    [
+      "Greatsword",
+      "$5,000",
+      "2d6",
+      "SLS",
+      "Heavy, two-handed"
+    ],
+    [
+      "Halberd",
+      "$2,000",
+      "1d10",
+      "PRC",
+      "Heavy, reach, two-handed"
+    ],
+    [
+      "Katana",
+      "$2,000",
+      "2d4",
+      "SLS",
+      "Versatile(1d10)"
+    ],
+    [
+      "Lance",
+      "$1,000",
+      "1d12",
+      "PRC",
+      "Reach, special"
+    ],
+    [
+      "Longsword",
+      "$1,500",
+      "1d8",
+      "SLS",
+      "Versatile(1d10)"
+    ],
+    [
+      "Maul",
+      "$1,000",
+      "2d6",
+      "BLG",
+      "Heavy, two-handed"
+    ],
+    [
+      "Morningstar",
+      "$1,500",
+      "1d8",
+      "PRC",
+      "-"
+    ],
+    [
+      "Pike",
+      "$500",
+      "1d10",
+      "PRC",
+      "Heavy, reach, two-handed"
+    ],
+    [
+      "Rapier",
+      "$2,500",
+      "1d8",
+      "PRC",
+      "Finesse"
+    ],
+    [
+      "Spear",
+      "$2,000",
+      "1d8",
+      "PRC",
+      "Thrown(20/60), reach, versatile(d10)"
+    ],
+    [
+      "Scimitar",
+      "$2,500",
+      "1d6",
+      "SLS",
+      "Finesse, light"
+    ],
+    [
+      "Shortsword",
+      "$1,000",
+      "1d6",
+      "SLS",
+      "Finesse, light"
+    ],
+    [
+      "Trident",
+      "$5,000",
+      "1d6",
+      "PRC",
+      "Thrown(20/60), versatile(1d8)"
+    ],
+    [
+      "Three Segment Staff",
+      "$5,000",
+      "3d4",
+      "BLG",
+      "Finesse, two-handed"
+    ],
+    [
+      "War Pick",
+      "$5,000",
+      "1d8",
+      "PRC",
+      "-"
+    ],
+    [
+      "War Hammer",
+      "$1,500",
+      "1d8",
+      "BLG",
+      "Versatile(1d10)"
+    ],
+    [
+      "Weighted Chain",
+      "$2,000",
+      "1d4",
+      "BLG",
+      "Reach, Special"
+    ],
+    [
+      "Whip",
+      "$2,000",
+      "1d6",
+      "SLS",
+      "Finesse, reach"
+    ],
+    [
+      "Gauntlets",
+      "$500",
+      "1d6",
+      "BLG",
+      "Defensive, Fist"
+    ]
+  ],
+  "weaponsRanged": [
+    [
+      "Ranged Weapons"
+    ],
+    [
+      "Weapon",
+      "Cost",
+      "Damage",
+      "Type",
+      "Features"
+    ],
+    [
+      "Simple Weapons",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Throwing Knives",
+      "$5",
+      "1d4",
+      "PRC",
+      "Finesse, thrown (20/60)"
+    ],
+    [
+      "Light Crossbow",
+      "$2,500",
+      "1d8",
+      "PRC",
+      "Ammunition (80/320), loading, Two-handed"
+    ],
+    [
+      "Shortbow",
+      "$2,500",
+      "1d6",
+      "PRC",
+      "Ammunition (80/320), Two-handed"
+    ],
+    [
+      "Sling",
+      "$500",
+      "1d4",
+      "BLG",
+      "Ammunition(30/120)"
+    ],
+    [
+      "Martial Weapons",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Rifle",
+      "$7,500",
+      "2d6",
+      "PRC",
+      "Ammunition (80/240), reload (30), two-handed"
+    ],
+    [
+      "Handgun",
+      "$2,500",
+      "1d10",
+      "PRC",
+      "Ammunition (50/150), reload (15)"
+    ],
+    [
+      "Revolver",
+      "$2,500",
+      "2d6",
+      "PRC",
+      "Ammunition (40/120), reload (6)"
+    ],
+    [
+      "Longbow",
+      "$5,000",
+      "1d8",
+      "PRC",
+      "Ammunition(150/600), heavy, two-handed"
+    ]
+  ],
+  "cursedTools": [
+    {
+      "name": "Imbued Items",
+      "grade": "4th Grade Tools",
+      "vietnameseName": "Vật Phẩm Tẩm Chú Lực",
+      "character": "Yuta Okkotsu, Yuji Itadori",
+      "highlightEffect": "Vũ khí hoặc vật dụng thông thường được truyền dẫn Chú lực định kỳ để có thể gây sát thương lên Chú linh.",
+      "description": "Những món vũ khí đơn giản và vật dụng sinh hoạt hàng ngày được truyền dẫn Chú lực định kỳ, nhờ đó chúng có thể gây sát thương lên các thực thể tâm linh như Chú linh mà vũ khí phàm trần không thể đả thương.",
+      "descriptionEn": "These items are just simple weapons and day to day objects imbued with cursed energy, thus they are able to hurt things such as curses.",
+      "images": [
+        "image297.png"
+      ]
+    },
+    {
+      "name": "Cursed Glasses",
+      "grade": "4th Grade Tools",
+      "vietnameseName": "Kính Chú Thuật",
+      "character": "Maki Zen'in, Yuji Itadori",
+      "highlightEffect": "Tròng kính tẩm Chú lực giúp người đeo nhìn thấy Chú linh dù bản thân không thể tự nhìn thấy.",
+      "description": "Cặp kính mắt có tròng kính được tẩm Chú lực đặc chế, cho phép người đeo nhìn thấy Chú linh và tàn uế ngay cả khi họ hoàn toàn không sở hữu thiên phú thị giác Chú thuật tự nhiên.",
+      "descriptionEn": "These are glasses with lenses embedded with cursed energy allowing those who wear it to see curses if they otherwise would not be able to.",
+      "images": []
+    },
+    {
+      "name": "Binding Cord",
+      "grade": "4th Grade Tools",
+      "vietnameseName": "Dây Thừng Trói Chú Linh",
+      "character": "Chú thuật sư sơ cấp",
+      "highlightEffect": "Dây thừng ngâm máu Chú linh, ngăn Chú linh cấp thấp đi xuyên qua vật thể để trói chặt chúng.",
+      "description": "Một bó dây thừng được ngâm đẫm trong huyết dịch của Chú linh, tỏa ra mùi nồng hắc đặc trưng. Chú linh cấp thấp không thể đi xuyên qua sợi dây này như các vật thể vật lý thông thường, do đó dây được dùng để trói buộc và khống chế chúng.",
+      "descriptionEn": "A bundle of cord soaked with the blood of cursed spirits and carries a pungent smell. Low grade curses cannot phase through these cords as they can with most physical objects and can therefore be used to bind and restrain them.",
+      "images": []
+    },
+    {
+      "name": "Trick Mirror",
+      "grade": "4th Grade Tools",
+      "vietnameseName": "Gương Chiếu Chú Linh",
+      "character": "Chú thuật sư điều tra",
+      "highlightEffect": "Gương cầm tay đặc chế phản chiếu chân ảnh Chú linh dù chúng không phản chiếu trên gương thường hay máy ảnh.",
+      "description": "Một chiếc gương cầm tay nhỏ. Thông thường Chú linh không có hình bóng phản chiếu và không thể xuất hiện trong các bức ảnh chụp. Tuy nhiên, khi sử dụng chiếc gương đặc chế này, bạn có thể nhìn thấy hình bóng của Chú linh phản chiếu rõ nét bên trong mặt gương.",
+      "descriptionEn": "A small handheld mirror. Normally curses do not have reflections and do not appear in photographs. However, using this trick mirror, you can see curses in the mirror’s reflection.",
+      "images": []
+    },
+    {
+      "name": "Improved Items",
+      "grade": "3rd Grade Tools",
+      "vietnameseName": "Chú Cụ Cải Tiến (+1)",
+      "character": "Kento Nanami, Chú thuật sư Cấp 3",
+      "highlightEffect": "Vũ khí hoặc vật phẩm được tích tụ Chú lực vững chắc, nhận +1 bonus vào các hoạt động liên quan.",
+      "description": "Những vật phẩm được tích tụ Chú lực ổn định và kiên cố, giúp nâng cao hiệu năng chiến đấu hoặc thao tác. Trong hệ thống luật, điều này thể hiện bằng việc nhận +1 bonus vào các hoạt động hoặc chỉ số liên quan (như Attack roll và Damage roll).",
+      "descriptionEn": "These items are filled with Cursed Energy which allows them to become more effective. This is represented by gaining a +1 bonus to related activities.",
+      "images": [
+        "image298.png"
+      ]
+    },
+    {
+      "name": "Minor Technique Items",
+      "grade": "3rd Grade Tools",
+      "vietnameseName": "Vật Phẩm Thuật Thức Sơ Cấp",
+      "character": "Chú thuật sư Cấp 3",
+      "highlightEffect": "Chú cụ được phong ấn thuật thức bẩm sinh sơ cấp, tương đương vật phẩm Uncommon (không cộng chỉ số) trong 5e.",
+      "description": "Những món Chú cụ được phong ấn hoặc tẩm một thuật thức bẩm sinh sơ cấp. Về mặt cơ chế trong D&D 5e, đây là các vật phẩm cấp Uncommon (không phải loại cộng chỉ số +1).",
+      "descriptionEn": "Items that hold an innate technique are found in many different grades of strength. Mechanically, these are all 5e Uncommon items that aren't +1 items.",
+      "images": []
+    },
+    {
+      "name": "Basic Cursed Tool Knife",
+      "grade": "3rd Grade Tools",
+      "vietnameseName": "Dao Chú Cụ Phá Màn",
+      "character": "Yuji Itadori, Maki Zen'in",
+      "highlightEffect": "Dao thép khắc phù văn chém được Chú linh; có thể cắt thủng một lỗ 5 ft trên Rèm (Curtain) cơ bản mà không kinh động người dựng (dùng 3 lần).",
+      "description": "Lưỡi dao thép thông thường được khắc những phù văn mờ nhạt cho phép chém đả thương Chú linh cấp thấp hoặc các kết giới yếu. Con dao được tính như Chú cụ Cấp 4. Khi đứng trong phạm vi 5 ft từ một kết giới, bạn có thể dành nửa phút (30 giây) để rạch một lỗ hổng rộng 5 ft trên một bức Rèm Cơ Bản (Basic Curtain) hoặc kết giới yếu tương đương mà không làm kinh động người dựng rèm. Dao có thể dùng theo cách này 3 lần trước khi gãy nát và mất tác dụng.",
+      "descriptionEn": "An ordinary steel blade etched with faint markings that allow it to cut low-grade curses or weak barriers. The knife counts as a 4th grade cursed tool. While within 5 ft of a barrier, you can spend half a minute to discreetly cut a 5 ft hole in a Basic Curtain or similarly weak barrier without alerting the one who placed it. You can use the knife in this way three times before it breaks and becomes unusable.",
+      "images": []
+    },
+    {
+      "name": "Curse Detector",
+      "grade": "3rd Grade Tools",
+      "vietnameseName": "Máy Dò Chú Lực Geiger",
+      "character": "Kiyotaka Ijichi, Giám sát viên",
+      "highlightEffect": "Nhận Advantage khi kiểm tra Perception dò Chú lực/tàn uế. Dùng số lần bằng PB, hồi lại bằng 1 CE.",
+      "description": "Thiết bị cầm tay nhỏ gọn có cơ chế hoạt động tương tự máy đo bức xạ Geiger với màn hình hiển thị đơn giản. Bạn có thể sử dụng thiết bị này để nhận Advantage trong các lần kiểm tra WIS hoặc CE (Perception) nhằm định vị tàn uế, Chú linh và luồng Chú lực. Khi thành công, bạn có thể lần theo dấu vết Chú lực và nhận diện được chủ nhân của nguồn năng lượng đó nếu từng quen thuộc. DC bằng đúng CE save DC của sinh vật bị theo dấu. Bạn có thể dùng thiết bị số lần bằng Proficiency Bonus (PB), sau đó cần tiêu hao 1 CE để nạp năng lượng lại.",
+      "descriptionEn": "A small device resembling a geiger counter with a simple screen. You can use this item to gain advantage on a Wisdom or Cursed Energy (Perception) check to locate residuals, curses and cursed energy. On a success, you can track where the cursed energy trail leads you and you are aware of whose cursed energy it is if you are familiar with them. The DC equals the cursed energy save DC of the creature being tracked. You can use this item a number of times equal to your proficiency bonus before it needs to be recharged by spending 1 cursed energy.",
+      "images": []
+    },
+    {
+      "name": "Cursed Lantern",
+      "grade": "3rd Grade Tools",
+      "vietnameseName": "Lồng Đèn Soi Chú Lực",
+      "character": "Tăng lữ trừ tà",
+      "highlightEffect": "Tiêu hao 1 CE thắp sáng 1 giờ. Phát sáng rực rỡ khi gần Chú lực và bập bùng dữ dội khi gần Chú linh, Thức thần hoặc Chú hài.",
+      "description": "Chiếc lồng đèn giấy nhỏ được dán các dải bùa chú cảm ứng Chú lực. Bạn có thể tiêu hao 1 CE để thắp sáng đèn trong 1 giờ. Đèn sẽ phát sáng rực rỡ hơn khi ở gần nguồn Chú lực và bập bùng dữ dội khi có sự hiện diện của Chú linh, Thức thần (Shikigami) hoặc Chú hài (Cursed Corpse) trong phạm vi lân cận.",
+      "descriptionEn": "A small paper lantern inlaid with paper tags to detect cursed energy. You can spend 1 cursed energy to light the lantern for 1 hour. It glows brighter when near cursed energy and sputters violently when near a cursed spirit, shikigami, or cursed corpse.",
+      "images": []
+    },
+    {
+      "name": "Improved Items",
+      "grade": "2nd Grade Tools",
+      "vietnameseName": "Chú Cụ Cải Tiến (+2)",
+      "character": "Chú thuật sư Cấp 2",
+      "highlightEffect": "Vũ khí hoặc vật phẩm được tích lũy Chú lực dồi dào, nhận +2 bonus vào các hoạt động và chỉ số liên quan.",
+      "description": "Những món Chú cụ được tôi luyện qua vô số trận chiến và tích tụ Chú lực đậm đặc, giúp cường hóa uy lực vượt bậc. Về mặt cơ chế, vật phẩm cấp cho người dùng +2 bonus vào các đòn đánh, sát thương hoặc kiểm tra liên quan.",
+      "descriptionEn": "These items are filled with Cursed Energy which allows them to become more effective. This is represented by adding a +2 to related things.",
+      "images": []
+    },
+    {
+      "name": "Par Technique Items",
+      "grade": "2nd Grade Tools",
+      "vietnameseName": "Vật Phẩm Thuật Thức Cấp Trung",
+      "character": "Chú thuật sư Cấp 2",
+      "highlightEffect": "Chú cụ phong ấn thuật thức bẩm sinh hoàn thiện, tương đương vật phẩm Rare (không cộng chỉ số) trong 5e.",
+      "description": "Các Chú cụ mang thuật thức bẩm sinh hoàn thiện và có khả năng tương tác chiến thuật rõ rệt. Trong hệ thống D&D 5e, chúng tương đương với các vật phẩm ma pháp cấp Rare (không phải loại cộng chỉ số +2).",
+      "descriptionEn": "Items that hold a technique are found in many different grades of strength. Mechanically, these are 5e Rare items that aren't +2.",
+      "images": []
+    },
+    {
+      "name": "Hand Sword",
+      "grade": "2nd Grade Tools",
+      "vietnameseName": "Đao Cán Bàn Tay",
+      "character": "Haruta Shigemo",
+      "highlightEffect": "Kiếm ngắn Cấp 2 nhận +2 Attack/Damage roll, Advantage chống tước vũ khí. Dùng Bonus Action điều khiển từ xa bay 25 ft chém 2d10 slashing.",
+      "description": "Vũ khí (Shortsword), Cấp 2.\n• Khi tấn công bằng Đao Cán Bàn Tay, bạn nhận +2 bonus vào Attack roll và Damage roll, đồng thời có Advantage trong các lần Ability check hoặc Saving throw chống lại hiệu ứng bị tước vũ khí (disarmed).\n• Bạn có thể dùng Bonus Action để điều khiển thanh đao di chuyển và tấn công từ xa. Vũ khí di chuyển tối đa 25 ft và thực hiện 1 đòn tấn công mỗi lượt, duy trì hoạt động khi ở trong phạm vi 100 ft từ bạn. Khi tấn công từ xa, dùng Cursed Energy modifier cho Attack roll và gây 2d10 slashing damage (không cộng Ability modifier). Bạn có thể ra lệnh cho kiếm bay đến một vị trí hoặc nhắm vào một sinh vật như một Action tự do.",
+      "descriptionEn": "Weapon (Shortsword), Grade 2\n\nWhen attacking with the Cursed Hand Sword you gain a +2 to attack and damage rolls and advantage on ability checks or saving throws against being disarmed of this weapon.\n\nYou can choose to remotely control it to move and attack as a bonus action. The weapon moves up to 25 feet and makes one attack per turn and remains active while within 100 ft. When attacking remotely, use your Cursed Energy modifier for attack rolls, and deal 2d10 slashing damage (no ability modifier). You can command it to travel somewhere or target a creature as an action, not requiring actions.",
+      "images": [
+        "image299.png"
+      ]
+    },
+    {
+      "name": "Cursed Seal Stamp",
+      "grade": "2nd Grade Tools",
+      "vietnameseName": "Ấn Chương Chú Triện",
+      "character": "Gia tộc Chú thuật, Chú thuật Cao đẳng",
+      "highlightEffect": "Con dấu gia tộc. Tiêu hao 1 CE đóng dấu văn bản để kích hoạt Ràng Buộc (Binding Vow) chính thức từ xa.",
+      "description": "Con dấu nhỏ khắc gia huy của gia tộc Chú thuật hoặc tổ chức mà bạn liên kết. Bằng cách tiêu hao 1 CE, bạn có thể đóng dấu lên một văn bản hợp đồng để kích hoạt một Ràng Buộc (Binding Vow) chuẩn xác theo toàn bộ điều khoản trong khế ước. Thường được sử dụng cho các khế ước ràng buộc phức tạp, dài hạn hoặc ký kết giao ước mà không cần gặp mặt trực tiếp. Nếu văn bản hoặc nội dung khế ước bị chỉnh sửa hay làm sai lệch dưới bất kỳ hình thức nào, con dấu sẽ lập tức vô hiệu lực và phải được đóng lại.",
+      "descriptionEn": "A small stamp with the seal of your sorcerer clan or a different organization you are affiliated with. By spending 1 cursed energy, you can stamp a contract with your seal to agree to a binding vow within the contents of a contract. These are usually used for long and complicated binding vows or to make a binding vow without meeting in person. If the contract or the contents of the contract is changed or altered in any way, the stamp is invalidated and must be reapplied.",
+      "images": [
+        "image300.png"
+      ]
+    },
+    {
+      "name": "Improved Items",
+      "grade": "1st Grade Tools",
+      "vietnameseName": "Chú Cụ Cải Tiến (+3)",
+      "character": "Chú thuật sư Cấp 1",
+      "highlightEffect": "Bảo khí thượng hạng được tôi luyện đến cực hạn, nhận +3 bonus vào Attack roll, Damage roll và các chỉ số liên quan.",
+      "description": "Những món Chú cụ đỉnh cao đã trải qua hàng thập kỷ tôi luyện hoặc được chế tác bởi các đại sư rèn chú cụ danh tiếng. Chúng cấp cho người mang +3 bonus vào các đòn tấn công, sát thương và các hoạt động tương ứng.",
+      "descriptionEn": "These items are filled with Cursed Energy which allows them to become more effective. This is represented by adding a +3 to related activities.",
+      "images": []
+    },
+    {
+      "name": "Major Technique Items",
+      "grade": "1st Grade Tools",
+      "vietnameseName": "Vật Phẩm Thuật Thức Thượng Cấp",
+      "character": "Chú thuật sư Cấp 1",
+      "highlightEffect": "Chú cụ phong ấn thuật thức bẩm sinh cực mạnh, tương đương vật phẩm Very Rare trong 5e.",
+      "description": "Những Chú cụ chứa đựng các thuật thức bẩm sinh cấp cao với khả năng xoay chuyển cục diện chiến trường. Về mặt cơ chế trong D&D 5e, đây là các vật phẩm cấp Very Rare (Rất Hiếm).",
+      "descriptionEn": "Items that hold an innate technique are found in many different grades of strength. Mechanically, these are all 5e Very Rare items.",
+      "images": []
+    },
+    {
+      "name": "Dragon Bone",
+      "grade": "1st Grade Tools",
+      "vietnameseName": "Long Cốt Đao",
+      "character": "Maki Zen'in, Juzo Kumiya",
+      "highlightEffect": "Đại đao Cấp 1 tích tụ lực động năng: Mỗi lượt 1 lần, cộng thêm bonus bằng 1/3 sát thương chém của đòn trước vào Attack hoặc Damage roll.",
+      "description": "Vũ khí (Scimitar / Đại đao), Cấp 1.\nThanh đại đao do nghệ nhân nguyền cụ Juzo Kumiya rèn tác, sở hữu cơ chế hấp thụ và phóng thích động năng cơ học cùng Chú lực. Mỗi lượt một lần, bạn có thể nhận thêm một lượng bonus vào một đòn Attack roll hoặc Damage roll thực hiện bằng thanh chú cụ này bằng đúng 1/3 lượng sát thương slashing gây ra bởi đòn tấn công trước đó của bạn (làm tròn xuống).",
+      "descriptionEn": "Weapon(Scimitar), Grade 1\n\nOnce per turn, you can gain a bonus to an attack or damage roll made with this cursed tool equal to 1/3 of the slashing damage dealt by your last attack (rounded down).",
+      "images": [
+        "image301.png"
+      ]
+    },
+    {
+      "name": "Claws of Calamity",
+      "grade": "1st Grade Tools",
+      "vietnameseName": "Móng Vuốt Tai Họa",
+      "character": "Chú thuật sư Cận Chiến",
+      "highlightEffect": "Găng vuốt Cấp 1 nhận +3 Attack/Damage roll, gây 1d12 bludgeoning/slashing/piercing. Ngưỡng sát thương chặt đứt tay tăng thêm 20.",
+      "description": "Vũ khí (Gauntlets / Găng tay thiết trảo), Cấp 1.\nKhi tấn công bằng Móng Vuốt Tai Họa, bạn nhận +3 bonus vào Attack roll và Damage roll, đòn đánh gây 1d12 sát thương bludgeoning, slashing hoặc piercing (tự chọn). Ngoài ra, lượng sát thương cần thiết để chặt đứt cánh tay (Limb Removal) của người đeo tăng thêm 20.",
+      "descriptionEn": "Weapon(Gauntlets), Grade 1\n\nWhen attacking with the Claws of Calamity you gain a +3 to attack and damage rolls, and deal 1d12 bludgeoning, slashing or piercing damage. The damage required for Limb Removal for arms increases by 20.",
+      "images": [
+        "image302.png"
+      ]
+    },
+    {
+      "name": "Black Rope",
+      "grade": "1st Grade Tools",
+      "vietnameseName": "Hắc Thằng",
+      "character": "Miguel, Satoru Gojo",
+      "highlightEffect": "Dây thừng xua tan mọi thuật thức và phép thuật khi đánh trúng; mỗi lần đánh trúng giảm 1 điểm bonus, khi đạt -5 sợi dây sẽ cháy rụi.",
+      "description": "Vũ khí (Whip / Roi da), Cấp 1.\nSợi dây thừng dệt thủ công quý hiếm từ bộ tộc Chú thuật sư tại Châu Phi của Miguel, mất hàng thập kỷ dệt ngâm Chú lực. Khi tấn công bằng vũ khí này, bạn có thể tiêu tốn 1 điện tích khiến toàn bộ thuật thức Chú lực và ma pháp của đối phương bị vô hiệu hóa khi chạm vào. Tuy nhiên, sau mỗi đòn đánh trúng kích hoạt hiệu ứng này, bạn phải trừ 1 vào bonus đánh trúng và sát thương của dây; khi đạt mức -5, Hắc Thằng sẽ cháy rụi hoàn toàn thành tro bụi.",
+      "descriptionEn": "Weapon(Whip), Grade 1\n\nWhen you attack using this weapon you can use a charge that makes it so all magic and cursed energy features are deactivated. However, for every hit this effect is active, you subtract one from your hit and damage bonus, once you reach a -5 Black Rope will burn away.",
+      "images": [
+        "image303.png"
+      ]
+    },
+    {
+      "name": "Improved Items",
+      "grade": "Special Grade Tools",
+      "vietnameseName": "Chú Cụ Cải Tiến (+4)",
+      "character": "Chú thuật sư Đặc Cấp",
+      "highlightEffect": "Bảo khí vô song đạt ngưỡng Đặc Cấp, nhận +4 bonus vào Attack roll, Damage roll và các chỉ số liên quan.",
+      "description": "Những Chú cụ thần thánh đạt đến cảnh giới vô thượng trong lịch sử Chú thuật. Chúng cấp cho người sở hữu +4 bonus vào các đòn tấn công, sát thương và mọi thao tác chiến đấu liên quan.",
+      "descriptionEn": "These items are filled with Cursed Energy which allows them to become more effective. This is represented by adding a +4 to related things.",
+      "images": []
+    },
+    {
+      "name": "Top Technique Items",
+      "grade": "Special Grade Tools",
+      "vietnameseName": "Vật Phẩm Thuật Thức Đỉnh Phong",
+      "character": "Chú thuật sư Đặc Cấp",
+      "highlightEffect": "Chú cụ phong ấn thuật thức tối thượng, tương đương vật phẩm Legendary hoặc Artifact trong 5e.",
+      "description": "Những Chú cụ huyền thoại mang các thuật thức bẩm sinh tối thượng có khả năng định đoạt sinh tử của cả một thời đại. Trong hệ thống D&D 5e, chúng tương đương với các tạo tác cấp Legendary hoặc Artifact.",
+      "descriptionEn": "Items that hold an innate technique are found in many different grades of strength. Mechanically, these are all 5e Legendary and above items.",
+      "images": []
+    },
+    {
+      "name": "Chain of 1000 Miles",
+      "grade": "Special Grade Tools",
+      "vietnameseName": "Vạn Lý Xích",
+      "character": "Toji Fushiguro",
+      "highlightEffect": "Xích Chú cụ Đặc cấp nhận +4 Attack/Damage roll. Dùng Bonus Action kéo dài thêm 60 ft vô tận khi 1 đầu bị che giấu; có thể gắn thêm vũ khí Light ở đầu xích.",
+      "description": "Vũ khí (Weighted Chain), Đặc Cấp.\n• Bạn nhận +4 bonus vào Attack roll và Damage roll khi sử dụng Chú cụ này.\n• Dùng một Bonus Action, bạn có thể kéo dài tầm với của sợi xích thêm 60 ft miễn là một đầu của sợi xích được giấu kín (ví dụ giấu trong miệng nguyền hồn chứa đồ, túi áo hoặc kẽ hở). Sợi xích có thể kéo dài vô tận chừng nào điều kiện này còn được duy trì.\n• Bạn cũng có thể gắn thêm một vũ khí hạng nhẹ (Light weapon) vào đầu sợi xích để gia tăng tính sát thương.",
+      "descriptionEn": "Weapon(Weighted Chain), Special Grade\n\nYou have a +4 bonus to attack and damage rolls made with this cursed tool. In addition, as a bonus action, you can add 60ft to the range as long as one end is covered. You can also add a light weapon to the chain’s end.",
+      "images": [
+        "image304.png"
+      ]
+    },
+    {
+      "name": "Festering Life Sword",
+      "grade": "Special Grade Tools",
+      "vietnameseName": "Lạn Sanh Đao",
+      "character": "Kurourushi",
+      "highlightEffect": "Kiếm ngắn Đặc cấp nhận +4 Attack/Damage roll. Đánh trúng ép mục tiêu CON Save, thất bại chịu 6d10 Necrotic damage.",
+      "description": "Vũ khí (Shortsword), Đặc Cấp.\nThanh kiếm ghê rợn cấy ghép trứng ấu trùng gián của Chú linh Đen Tối Kurourushi.\n• Bạn nhận +4 bonus vào Attack roll và Damage roll khi tấn công bằng Chú cụ này.\n• Khi đánh trúng mục tiêu, mục tiêu phải thực hiện một Constitution saving throw (CON Save). Nếu thất bại, mục tiêu phải chịu 6d10 necrotic damage do ấu trùng ký sinh lập tức cắn xé và phát triển bên trong da thịt.",
+      "descriptionEn": "Weapon(Shortsword), Special Grade\n\nYou have a +4 bonus to attack and damage rolls made with this cursed tool. On a hit with this weapon, the target must make a Constitution saving throw. On a failure they take 6d10 necrotic damage.",
+      "images": [
+        "image305.png"
+      ]
+    },
+    {
+      "name": "Inverted Spear of Heaven",
+      "grade": "Special Grade Tools",
+      "vietnameseName": "Thiên Nghịch Mâu",
+      "character": "Toji Fushiguro, Satoru Gojo",
+      "highlightEffect": "Dao găm Đặc cấp nhận +4 Attack/Damage roll. Tuyệt đối vô hiệu hóa và đâm xuyên qua mọi thuật thức Chú lực, kết giới và Vô Hạ Hạn.",
+      "description": "Vũ khí (Dagger), Đặc Cấp.\nChú Cụ Đặc Cấp có hình dạng như một thanh dao găm mũi đôi dị dạng. Mang năng lực tối thượng là cưỡng chế hủy diệt mọi loại thuật thức tiếp xúc với lưỡi dao.\n• Bạn nhận +4 bonus vào Attack roll và Damage roll khi sử dụng Chú cụ này.\n• Mọi thuật thức, phép thuật và tính năng liên quan đến Chú lực (bao gồm cả Vô Hạ Hạn của Gojo Satoru hay các kết giới kiên cố nhất) đều bị vô hiệu hóa hoàn toàn khi đối đầu hoặc tiếp xúc với vũ khí này.",
+      "descriptionEn": "Weapon(Dagger), Special Grade\n\nYou have a +4 bonus to attack and damage rolls made with this cursed tool. All magic and cursed energy-related features are deactivated against this weapon.",
+      "images": [
+        "image306.png"
+      ]
+    },
+    {
+      "name": "Playful Cloud",
+      "grade": "Special Grade Tools",
+      "vietnameseName": "Du Vân (Tam Tiết Côn)",
+      "character": "Toji Fushiguro, Maki Zen'in, Suguru Geto, Aoi Todo",
+      "highlightEffect": "Tam tiết côn Đặc cấp nhận +4 Attack/Damage roll, +1 AC. Khi đánh trúng gây thêm sát thương bằng 3 x (STR modifier + 4).",
+      "description": "Vũ khí (Three Segment Staff), Đặc Cấp.\nChú Cụ Đặc Cấp duy nhất trong lịch sử KHÔNG HỀ chứa đựng bất kỳ thuật thức bẩm sinh nào, mà là kết tinh thuần khiết của lực đập vật lý và dòng chảy năng lượng thô bạo.\n• Bạn nhận +4 bonus vào Attack roll và Damage roll khi sử dụng vũ khí này.\n• Khi cầm Du Vân, bạn nhận thêm +1 bonus vào Armor Class (AC).\n• Khi đánh trúng, bạn nhận thêm một lượng bonus sát thương khổng lồ bằng đúng 3 x (Strength modifier + 4).",
+      "descriptionEn": "Weapon(Three Segment Staff), Special Grade\n\nYou have a +4 bonus to attack and damage rolls made with this cursed tool. In addition while wielding this weapon you gain a +1 bonus to AC and on a hit you gain a bonus to damage equal to 3 times your (Strength modifier + 4).",
+      "images": [
+        "image307.png"
+      ]
+    },
+    {
+      "name": "Soul Split Katana",
+      "grade": "Special Grade Tools",
+      "vietnameseName": "Thích Hồn Đao",
+      "character": "Toji Fushiguro, Maki Zen'in",
+      "highlightEffect": "Katana Đặc cấp nhận +4 Attack/Damage roll. Bỏ qua mọi Kháng (Resistance) và Miễn nhiễm (Immunity); sát thương trừ trực tiếp vào Max HP cho đến Long Rest.",
+      "description": "Vũ khí (Katana), Đặc Cấp.\nKiệt tác đao kiếm chém thẳng vào linh hồn sinh vật sống và cắt đứt liên kết vật chất vô tri.\n• Bạn nhận +4 bonus vào Attack roll và Damage roll khi sử dụng vũ khí này.\n• Mọi đòn tấn công thực hiện bằng Thích Hồn Đao hoàn toàn bỏ qua mọi Kháng (Resistances) và Miễn nhiễm (Immunities) của mục tiêu.\n• Sát thương từ thanh đao này làm giảm trực tiếp lượng Max HP của mục tiêu cho đến khi hoàn thành một kỳ Long Rest.",
+      "descriptionEn": "Weapon(Katana), Special Grade\n\nYou have a +4 bonus to attack and damage rolls made with this cursed tool. Attacks made with this weapon ignores resistances and immunities and damage from this sword reduces the maximum hit points of the target until a long rest.",
+      "images": [
+        "image308.png"
+      ]
+    },
+    {
+      "name": "Sword of Extermination",
+      "grade": "Special Grade Tools",
+      "vietnameseName": "Kiếm Diệt Ma (Thoái Ma Chi Kiếm)",
+      "character": "Bát Dị Giới Thần Ma Mahoraga",
+      "highlightEffect": "Kiếm ngắn Đặc cấp phủ Dương Khí nhận +4 Attack/Damage roll. Đánh trúng Chú linh ép chịu DC 30 CON Save, thất bại bị thanh tẩy tức khắc!",
+      "description": "Vũ khí (Shortsword), Đặc Cấp.\nThanh kiếm gắn trên tay phải của Bát Dị Giới Thần Ma Mahoraga, được bọc trong nguồn năng lượng dương khí (Phản Chuyển Năng Lượng) chuyên biệt để tiêu diệt các thực thể cấu thành từ năng lượng tiêu cực.\n• Bạn nhận +4 bonus vào Attack roll và Damage roll khi sử dụng Chú cụ này.\n• Khi đánh trúng, Chú linh phải thực hiện một đòn cứu nguy DC 30 Constitution saving throw (CON Save), nếu thất bại sẽ bị thanh tẩy tức khắc (exorcised instantaneously)!",
+      "descriptionEn": "Weapon(Shortsword), Special Grade\n\nYou have a +4 bonus to attack and damage rolls made with this cursed tool. On a hit, a cursed spirit must make a DC 30 Constitution saving throw, being exorcised instantaneously on a failed save.",
+      "images": [
+        "image309.png"
+      ]
+    }
+  ],
+  "semiCursedRules": {
+    "title": "Semi Cursed Tools & Creation Rules (Quy Tắc Rèn Bán Chú Cụ)",
+    "description": "Vũ khí thông thường (như katana, đao, côn) có thể chuyển hóa thành Bán Chú Cụ theo thời gian nếu người sử dụng liên tục truyền Chú lực vào nó. Bán Chú Cụ không mạnh bằng Chú cụ hoàn chỉnh bẩm sinh và dễ hư hỏng hơn. Nếu không được truyền Chú lực ít nhất 1 lần/tuần (+1 tuần cho mỗi cấp bậc trên Cấp 4), hiệu quả của vũ khí sẽ giảm 1 cấp.",
+    "requirements": "Cursed Imbuement, Cursed Enhancement, Tool Maker, hoặc Basic Cursed Energy Manipulation.",
+    "ceMethod": "Truyền lượng Chú Lực (CE) quy định vào vũ khí theo thời gian.",
+    "timeMethod": "Sử dụng vũ khí trong thực chiến hàng ngày liên tục trong khoảng thời gian quy định.",
+    "specialPerk": "Chú thuật sư có đặc tính Tool Maker có thể rèn theo một trong hai cách với chi phí/thời gian giảm một nửa (làm tròn lên).",
+    "table": [
+      {
+        "grade": "Bán Cấp 4 (Semi Grade 4)",
+        "ce": "50 CE",
+        "time": "50 ngày",
+        "effect": "Trở thành Chú cụ cơ bản, có thể chém trúng và gây sát thương lên Chú linh."
+      },
+      {
+        "grade": "Bán Cấp 3 (Semi Grade 3)",
+        "ce": "100 CE",
+        "time": "100 ngày",
+        "effect": "Nhận +1 bonus vào đòn tấn công và sát thương (Attack & Damage rolls)."
+      },
+      {
+        "grade": "Bán Cấp 2 (Semi Grade 2)",
+        "ce": "200 CE",
+        "time": "150 ngày",
+        "effect": "Nhận +2 bonus vào đòn tấn công và sát thương (Attack & Damage rolls)."
+      },
+      {
+        "grade": "Bán Cấp 1 (Semi Grade 1)",
+        "ce": "300 CE",
+        "time": "300 ngày",
+        "effect": "Nhận +3 bonus vào đòn tấn công và sát thương (Attack & Damage rolls)."
+      }
+    ],
+    "variantRule": {
+      "title": "Variant Rule: Technique Imbued Cursed Tools (Khắc Khảm Thuật Thức Bẩm Sinh)",
+      "description": "Quy tắc biến thể cho phép người chơi dễ dàng khắc khảm Thuật thức bẩm sinh (Innate Technique) của mình vào vũ khí. Sau khi một sinh vật truyền tối đa Chú Lực vào vũ khí ít nhất 150 lần, dạng căn bản nhất của Thuật thức sẽ được khắc vĩnh viễn vào vũ khí với các đặc tính sau:\n\n• Sử dụng miễn phí: Có thể kích hoạt thuật thức trong vũ khí mà không tốn Chú Lực số lần mỗi ngày bằng chỉ số CE modifier của người đã khắc nó.\n• Phân hạng: Vũ khí lúc này được coi là Bán Chú Cụ Đặc Cấp (Semi-Special Grade Cursed Tool).\n• Không cần Chú Lực: Bất kỳ ai cầm vũ khí (kể cả người có 0 Chú lực như Maki/Toji) đều có thể giải phóng thuật thức bên trong.\n• Giới hạn: Mỗi ngày chỉ lần truyền Chú lực tối đa đầu tiên ngoài giao tranh mới được tính (trong giao tranh tính bình thường). Mỗi vũ khí chỉ nhận tối đa 1 thuật thức và mỗi nhân vật chỉ có thể tạo ra 1 vũ khí dạng này.",
+      "descriptionEn": "This variant rule serves to allow players to obtain cursed tools more easily, imbuing their innate technique into it. After a creature has imbued a weapon with Cursed Energy at least 150 times, while having spent the maximum energy possible every time, the most basic form of the innate technique will be imbued into the weapon, which will gain the following properties:\n• A creature can use said technique without spending Cursed Energy a number of times per day equal to the CE modifier of the creature who imbued the technique into the weapon.\n• The weapon is now considered a Semi-Special Grade Cursed Tool.\n• A creature does not need to possess Cursed Energy in order to use the technique imbued into the weapon. Each Technique Imbued Tool may have varying effects depending on the Innate Technique imbued within them.\n• Only the first maximum infusion of cursed energy performed outside of combat each day counts towards creating a tool like this, unlike in combat where all are counted as normal. Only one technique can be imbued within a tool and a creature can only create one tool this way."
+    },
+    "image": "image310.png",
+    "descriptionEn": "Conventional weapons such as katanas can become semi-cursed tools over time if the user constantly imbues it with their cursed energy. Semi Cursed Tools are not as powerful as full Cursed Tools and are more prone to being broken. They are considered weaker than tools of the same grade and reduce their effect by one grade if not imbued with cursed energy at least once a week + 1 week per grade above 4th.",
+    "requirementsEn": "Requirements: Cursed Imbuement, Cursed Enhancement, Tool Maker, or Basic Cursed Energy Manipulation"
+  },
+  "equipmentPacks": [
+    {
+      "name": "Explorer's Pack",
+      "vietnameseName": "Gói Thám Hiểm Chú Thuật",
+      "cost": "$1,600",
+      "description": "Bộ hành trang dã ngoại và sinh tồn dài ngày dành cho các nhiệm vụ trinh sát ngoại ô hoặc vùng hoang dã.",
+      "contents": [
+        "Balo leo núi dã ngoại",
+        "Túi ngủ giữ nhiệt",
+        "Bếp mini di động & bật lửa",
+        "Đèn pin & 10 viên pin dự phòng",
+        "10 phần khẩu phần ăn đóng gói sẵn",
+        "Bình nước dã chiến",
+        "60 feet (18m) dây thừng leo núi chuyên dụng"
+      ],
+      "cursedToolIncluded": {
+        "name": "Energy Tag (Bùa Chú Tích Tụ 100 Năm)",
+        "grade": "4th Grade Tool",
+        "effect": "Bùa giấy được ngâm ủ trong Chú lực suốt 1 thế kỷ. Bạn có thể xé bùa này để lập tức hồi phục 3 điểm Chú Lực (3 CE)."
+      },
+      "descriptionEn": "Contains a hiking backpack, sleeping bag, portable stove, lighter, flashlight, 10 spare batteries, 10 pre-packaged meals, a canteen, 60 feet of climbing rope and an energy tag made by fermenting in cursed energy for 100 years. You can rip the charm to regain 3 cursed energy."
+    },
+    {
+      "name": "Dungeoneer's Pack",
+      "vietnameseName": "Gói Đột Kích Hầm Ngục",
+      "cost": "$1,200",
+      "description": "Trang bị chuyên dụng để lục soát các phế tích hầm ngục nguyền rủa, cống ngầm và không gian khép kín.",
+      "contents": [
+        "Túi trống chịu lực cao",
+        "Xà beng bẩy cửa & búa đa năng",
+        "Đinh gai leo trèo",
+        "Đèn pin & 10 que phát sáng dạ quang",
+        "Bật lửa",
+        "10 suất ăn dã chiến đóng hộp",
+        "Túi nước đeo lưng (hydration pack)",
+        "60 feet (18m) dây thừng chịu lực"
+      ],
+      "cursedToolIncluded": {
+        "name": "Basic Cursed Tool Knife (Dao Chú Cụ Phá Màn)",
+        "grade": "3rd Grade Tool",
+        "effect": "Lưỡi thép khắc phù văn cho phép chém Chú linh cấp thấp hoặc rạch một lỗ 5ft trên Màn (Curtain) mà không kinh động người dựng màn (3 lần dùng)."
+      },
+      "descriptionEn": "Contains a heavy-duty duffel bag, crowbar, utility hammer, climbing spikes, flashlight, 10 glowsticks, lighter, 10 ready meals, hydration pack, 60 feet of durable rope, and a basic cursed tool knife."
+    },
+    {
+      "name": "Burglar's Pack",
+      "vietnameseName": "Gói Đột Nhập & Ám Toán",
+      "cost": "$1,600",
+      "description": "Bộ công cụ bí mật phục vụ do thám tàng hình, vô hiệu hóa cạm bẫy và khóa cửa.",
+      "contents": [
+        "Balo nhỏ gọn ôm sát cơ thể",
+        "Bi thép rải sàn (steel bearings)",
+        "Dây cước nylon & chuông báo động mini",
+        "Xà beng mini & búa nhỏ",
+        "Móc neo leo tường",
+        "Đèn pin & 2 chai dầu thắp",
+        "5 thanh năng lượng & bật lửa",
+        "Bình nước & 60 feet dây thừng"
+      ],
+      "cursedToolIncluded": {
+        "name": "Binding Cord (Dây Ngâm Máu Chú Linh)",
+        "grade": "4th Grade Tool",
+        "effect": "Bó dây ngâm đẫm máu Chú linh, ngăn Chú linh cấp thấp xuyên qua và dùng để trói, bắt giữ Chú linh hiệu quả."
+      },
+      "descriptionEn": "Contains a compact backpack, steel bearings, nylon wire, small bell alarm, compact crowbar, hammer, climbing hooks, flashlight, 2 bottles of oil, 5 energy bars, lighter, water bottle, 60 feet of rope, and a bundle of binding cord."
+    },
+    {
+      "name": "Diplomat’s Pack",
+      "vietnameseName": "Gói Ngoại Giao Gia Tộc",
+      "cost": "$3,900",
+      "description": "Bộ hành trang dành cho đại diện gia tộc Chú thuật (Gojo, Zen'in, Kamo) tham dự các cuộc đàm phán hoặc nghị sự.",
+      "contents": [
+        "Vali da cao cấp thanh lịch",
+        "2 ống đựng mật tịch / tài liệu",
+        "Lễ phục Chú thuật sư trang trọng",
+        "Bút máy cao cấp & lọ mực dự phòng",
+        "Smartphone cao cấp & 2 pin sạc dự phòng",
+        "5 cuộn giấy da chuyên dụng",
+        "Nước hoa khử tàn uế, sáp niêm phong & xà phòng cao cấp"
+      ],
+      "cursedToolIncluded": {
+        "name": "Cursed Seal Stamp (Con Dấu Ký Kết Khế Ước)",
+        "grade": "2nd Grade Tool",
+        "effect": "Con dấu gia tộc. Tiêu hao 1 CE đóng dấu lên hợp đồng để kích hoạt Ràng Buộc (Binding Vow) từ xa mà không cần trực tiếp gặp mặt."
+      },
+      "descriptionEn": "Contains a sleek suitcase, two document tubes, formal attire, fountain pen, ink refills, smartphone, two spare batteries, five parchment sheets, perfume, wax seal kit, a bar of soap, and a cursed seal stamp."
+    },
+    {
+      "name": "Entertainer's Pack",
+      "vietnameseName": "Gói Nghệ Sĩ & Cải Trang",
+      "cost": "$4,000",
+      "description": "Trang phục và phụ kiện phục vụ cải trang hòa lẫn vào đám đông người thường để bí mật thanh tẩy Chú linh.",
+      "contents": [
+        "Túi trống du lịch",
+        "Túi ngủ",
+        "2 bộ trang phục biểu diễn thời thượng",
+        "Bộ đồ trang điểm hóa trang chuyên nghiệp (Disguise Kit)",
+        "5 cây nến & 5 phần đồ ăn nhẹ",
+        "Bình nước uống",
+        "1 nhạc cụ nhỏ"
+      ],
+      "cursedToolIncluded": {
+        "name": "Trick Mirror (Gương Ma Thuật Nhìn Thấu)",
+        "grade": "4th Grade Tool",
+        "effect": "Gương cầm tay đặc chế. Chú linh bình thường không có hình phản chiếu trong gương hay máy ảnh, nhưng chiếc gương này phản chiếu rõ nét Chú linh."
+      },
+      "descriptionEn": "Contains a duffel bag, sleeping bag, two performance outfits, makeup kit, five candles, five snacks, a water bottle, a disguise kit, and a trick mirror."
+    },
+    {
+      "name": "Priest’s Pack",
+      "vietnameseName": "Gói Pháp Sư Trừ Tà",
+      "cost": "$1,900",
+      "description": "Hành trang dành cho các tăng lữ, thầy tế và pháp sư thực hiện nghi lễ tế lễ, phong ấn và thanh tẩy truyền thống.",
+      "contents": [
+        "Túi xách pháp y trừ tà hiện đại",
+        "Thảm thiền / chiếu cầu nguyện",
+        "10 cây nến tế lễ & bật lửa",
+        "Hòm công đức (alms box)",
+        "2 khối trầm hương & lư hương đồng",
+        "Pháp phục tăng lữ",
+        "2 suất ăn thanh đạm & bình nước"
+      ],
+      "cursedToolIncluded": {
+        "name": "Cursed Lantern (Lồng Đèn Soi Chú Lực)",
+        "grade": "3rd Grade Tool",
+        "effect": "Lồng đèn giấy dán bùa. Tiêu hao 1 CE để thắp sáng 1 giờ; đèn sẽ bừng sáng khi gần Chú lực và rung giật dữ dội khi gần Chú linh, Thức thần hoặc Chú hài."
+      },
+      "descriptionEn": "Contains a modern exorcist’s satchel, prayer mat, 10 candles, lighter, alms box, two incense blocks, censer, priest robes, two meals, a water bottle, and a cursed lantern."
+    },
+    {
+      "name": "Scholar's Pack",
+      "vietnameseName": "Gói Học Giả & Nghiên Cứu",
+      "cost": "$4,000",
+      "description": "Bộ thiết bị phân tích hiện trường, ghi chép tàn uế và nghiên cứu thuật thức dành cho các giám sát viên (như Ijichi, Nitta).",
+      "contents": [
+        "Balo chống sốc chuyên dụng",
+        "Sổ tay ghi chép hiện trường",
+        "Máy tính bảng / Laptop cao cấp kèm bút cảm ứng",
+        "10 tờ giấy bùa vẽ sơ đồ kết giới",
+        "Gôm tẩy chuyên dụng",
+        "Dao tiện ích nhỏ"
+      ],
+      "cursedToolIncluded": {
+        "name": "Curse Detector (Máy Đo Chú Lực Kiểu Geiger)",
+        "grade": "3rd Grade Tool",
+        "effect": "Máy quét màn hình hiển thị. Cho Advantage trong kiểm tra Wisdom/CE Perception dò tìm tàn uế, nhận diện chính xác chủ nhân Chú lực theo DC lưu trữ."
+      },
+      "descriptionEn": "Contains a sturdy backpack, notebook, tablet or laptop, stylus pen, 10 sheets of blank paper, sandbag eraser, small utility knife, and a curse detector."
+    }
+  ],
+  "specialWeaponProperties": [
+    {
+      "property": "Defensive",
+      "vietnameseName": "Phòng Thủ",
+      "effect": "Khi cầm vũ khí có thuộc tính Defensive (như Tonfa, War Fan), bạn nhận được +1 bonus vào AC. Bạn chỉ nhận được bonus này từ một vũ khí tại một thời điểm.",
+      "effectEn": "While wielding a defensive weapon, you gain a +1 bonus to AC. You can only gain this bonus from one weapon at a time."
+    },
+    {
+      "property": "Fist",
+      "vietnameseName": "Khí Giới Cận Thủ",
+      "effect": "Vũ khí có thuộc tính Fist (như Knuckle Dusters) được tính đồng thời là Unarmed Strike và/hoặc đòn tấn công vũ khí (Weapon Attack) cho bất kỳ kỹ năng hay thuật thức nào yêu cầu.",
+      "effectEn": "A weapon with the fist property counts as being an unarmed strike and/or weapon attack for any feature or technique that requires it to be."
+    },
+    {
+      "property": "Weighted Chain",
+      "vietnameseName": "Xích Trọng Lực",
+      "effect": "Sinh vật cỡ Large trở xuống bị đánh trúng bởi xích sẽ bị trạng thái Restrained cho đến khi được giải thoát. Xích không ảnh hưởng lên sinh vật cỡ Tiny hoặc Huge trở lên. Sinh vật có thể dùng Action thực hiện kiểm tra DC 14 Strength để tự giải thoát hoặc giải thoát cho một sinh vật trong tầm với khi thành công.",
+      "effectEn": "A Large or smaller creature hit by a chain is restrained until it is freed. A chain does not affect creatures that are tiny or creatures that are Huge or larger. A creature can use its action to make a DC 14 Strength check, freeing itself or a creature within reach on a success."
+    },
+    {
+      "property": "Lance",
+      "vietnameseName": "Thương Kỵ Binh",
+      "effect": "Bạn chịu Disadvantage khi dùng Lance để tấn công mục tiêu trong vòng 5 feet. Ngoài ra, Lance đòi hỏi sử dụng cả 2 tay khi bạn không cưỡi thú.",
+      "effectEn": "You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren’t mounted."
+    }
+  ]
+}

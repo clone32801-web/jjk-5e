@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0A0A0C;
+    color: #E2E8F0;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom styled dark scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #232636;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3B425A;
+}
+
+/* Vertical Japanese Calligraphy Watermark */
+.writing-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: 0.25em;
+  user-select: none;
+}
+
+/* Subtle Cursed Talisman Grid Pattern */
+.bg-jjk-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+/* Cursed Energy Aura Glows */
+.aura-cyan {
+  box-shadow: 0 0 25px -4px rgba(0, 210, 255, 0.35);
+}
+
+.aura-red {
+  box-shadow: 0 0 25px -4px rgba(220, 38, 38, 0.35);
+}
+
+.aura-purple {
+  box-shadow: 0 0 25px -4px rgba(124, 58, 237, 0.35);
+}
+
+/* Domain Expansion Barrier Transition */
+@keyframes domainBarrierOpen {
+  0% {
+    clip-path: circle(0% at 50% 50%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    clip-path: circle(150% at 50% 50%);
+    opacity: 1;
+  }
+}
+
+.animate-domain-open {
+  animation: domainBarrierOpen 0.55s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Shinjuku / Black Flash red spark crackle */
+.black-flash-border {
+  border-image: linear-gradient(to bottom right, #DC2626, #0A0A0C, #DC2626) 1;
+}
+
+/* Japanese Talisman Corner Accents */
+.talisman-corner {
+  position: relative;
+}
+
+.talisman-corner::before {
+  content: '呪';
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 10px;
+  color: rgba(148, 163, 184, 0.2);
+  pointer-events: none;
+}

@@ -1,0 +1,714 @@
+{
+  "Barrier Feats": [
+    {
+      "name": "Basic Curtain",
+      "vietnameseName": "Dựng Màn Cơ Bản",
+      "prerequisite": "Điểm Chú Lực (CE) từ 14 trở lên",
+      "prerequisiteEn": "Prerequisites: 14+ Cursed Energy score",
+      "character": "Kiyotaka Ijichi, Akari Nitta",
+      "description": "\"Bóng tối sinh ra từ bóng tối, thanh tẩy những điều bất tịnh.\" — Lời khấn niệm khởi dựng Màn.\n\nDùng một Action tiêu tốn 5 CE, bạn phủ kín bầu trời và mặt đất trong một mái vòm hắc ám bán kính 2.165 ft trong 10 phút. Khi kích hoạt, một chất lỏng đen sẫm rủ xuống từ bầu trời tạo thành bức tường kết giới bán nguyệt. Bầu trời bên trong tối sầm dù đang ban ngày, kích động Chú linh lộ diện khỏi nơi ẩn nấp.\n\nMỗi 1 CE chi thêm sẽ kéo dài thời gian tồn tại thêm 1 phút và tăng +10 HP cho Màn. Màn có lượng HP bằng Cấp độ x CE modifier. AC của Màn bằng CE DC của người niệm chú và tự động thất bại mọi Saving Throw. Màn miễn nhiễm sát thương Độc (Poison) và Tâm Linh (Psychic).",
+      "descriptionEn": "Basic Curtain\n\nPrerequisites: 14+ Cursed Energy score\n\nEmerge from the darkness, blacker than darkness. Purify that which is impure. As an action for 5 Cursed Energy, you cover the sky and the ground within a 2165-foot radius dome of darkness for 10 minutes. Upon activation, a dark, almost liquid-like matter drips down from the sky to form the outer barrier wall in the shape of a half-sphere. The curtain changes and the sky becomes dark despite the time of day, provoking any cursed spirits out of hiding. For each extra 1 Cursed Energy spent, you can add 1 additional minute to the curtain's duration and +10 hit points. Your curtain has a number of hit points equal to your Cursed Energy modifier times your level. This barrier has an AC equal to the caster's Cursed Energy DC and automatically fails saving throws. It is also immune to Poison and Psychic damage."
+    },
+    {
+      "name": "Barrier Intruder",
+      "vietnameseName": "Xâm Nhập Kết Giới",
+      "prerequisite": "Điểm Chú Lực (CE) từ 18 trở lên",
+      "prerequisiteEn": "Prerequisites: 18+ Cursed Energy score",
+      "character": "Aoi Todo, Yuji Itadori",
+      "description": "Bạn nắm vững kỹ thuật phá giải và thâm nhập vào kết giới của người khác mà không phá vỡ cấu trúc của nó:\n\n• Khi ở bên ngoài kết giới, bạn có thể dùng một Action thực hiện một lần kiểm tra Chú Lực (CE check) đối kháng với CE save DC của người dựng kết giới. Thành công cho phép bạn bước vào kết giới, dù người tạo ra nó sẽ cảm nhận được có kẻ vừa xâm nhập.\n• Khi ở bên trong kết giới, dùng một Action thực hiện kiểm tra Chú Lực đối kháng CE save DC của người tạo để thay đổi thuộc tính của nó. Thành công cho phép bạn thay đổi điều kiện sinh vật được phép ra vào hoặc các thuộc tính khác của kết giới.",
+      "descriptionEn": "Barrier Intruder\n\nPrerequisites: 18+ Cursed Energy score\n\nYou have learned how to invade the barriers of others without breaking them. You gain the following benefits:\n\nWhile outside a barrier, you can make a Cursed Energy check as an action against the CE save DC of the sorcerer who created the barrier to invade it. On a success, you can enter the barrier although the creator will know a creature has entered.\n\nWhile inside a barrier, as an action you can make a Cursed Energy check against the CE save DC of the sorcerer to alter its properties. On a success, you can change the creatures allowed to enter or leave or other properties of the barrier."
+    },
+    {
+      "name": "Falling Blossom Emotion",
+      "vietnameseName": "Lạc Hoa Tình",
+      "prerequisite": "Có Xuất Thân Gia Tộc Chú Thuật (Clan Sorcerer)",
+      "prerequisiteEn": "Prerequisites: Must have the Clan Sorcerer Background",
+      "character": "Naobito Zen'in, Satoru Gojo",
+      "description": "Bí thuật chống Lãnh địa cổ truyền lưu truyền trong Ngự Tam Gia. Khác với Giản Dị Lãnh Địa tự tạo kết giới riêng, Lạc Hoa Tình bao bọc cơ thể bằng dòng Chú lực tự động phản công ngay khi đòn đánh tất trúng chạm vào thân thể:\n\n• Phòng Ngự: Dùng Action hoặc Reaction tiêu tốn 5 CE, bạn bao bọc bản thân trong Chú lực giúp vô hiệu hóa hoàn toàn mọi đòn tấn công hoặc hiệu ứng có tính chất tất trúng (Sure-hit) và không chịu sát thương nào trong 1 phút (không ảnh hưởng đến các đòn đánh thông thường không phải tất trúng).\n• Phản Công Cận Chiến: Khi cầm vũ khí cận chiến, dùng Action tiêu tốn 4 CE bao bọc Chú lực chuẩn bị thế đánh trong 1 phút. Khi đối phương tấn công bạn, dùng Reaction tung đòn tấn công cận chiến có Advantage nhắm vào kẻ tấn công trước khi đòn đánh của chúng xảy ra. Đòn trúng tự động trở thành Critical Hit và gây sát thương Necrotic. Sau đòn phản kích này, bạn cần kích hoạt lại kỹ thuật để sử dụng tiếp.",
+      "descriptionEn": "Falling Blossom Emotion\n\nPrerequisites: Must have the Clan Sorcerer Background\n\nUnlike Simple Domain, which manifests its own domain to protect against a guaranteed hit, Falling Blossom Emotion shrouds the user in cursed energy to counterattack the moment a domain's guaranteed hit makes contact. As an action or reaction for 5 Cursed Energy, you surround yourself in cursed energy to make any attack or effect with a guaranteed hit nullified and deal no damage. This technique lasts for 1 minute, but does not affect attacks without a guaranteed hit.\n\nYou can also use this technique offensively while wielding a melee weapon. As an action for 4 Cursed Energy, you can surround yourself in cursed energy to prepare for an attack for 1 minute. As a reaction to an attack, you can make a melee weapon attack at advantage against the attacker before the attack happens. On a hit, the attack counts as a critical hit and deals necrotic damage. Once you make this attack, you must reactivate the technique to use it again. If your cursed energy or technique alters damage type, it can also alter this damage"
+    },
+    {
+      "name": "Hollow Wicker Basket",
+      "vietnameseName": "Diên Lộc",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Reggie Star, Ryomen Sukuna",
+      "description": "Bí thuật kết giới cổ xưa từ thời Heian — tiền thân của Giản Dị Lãnh Địa.\n\nDùng một Action, Bonus Action hoặc Reaction khi chuẩn bị chịu ảnh hưởng của hiệu ứng tất trúng (Sure-hit) từ Lãnh Địa hoặc khi nhìn thấy đối thủ mở Bành Trướng Lãnh Địa: Tiêu tốn 4 CE bao bọc bản thân trong một kết giới đan rơm bán kính 15 ft trong 1 phút.\n\nTrong bán kính này, hiệu ứng tất trúng của Lãnh Địa bị triệt tiêu hoàn toàn và không gây sát thương. Bất kỳ ai bên trong do bạn chỉ định đều nhận được sự bảo hộ này. Kết giới không ngăn cản các thuật thức thông thường hay việc người khác ra vào, chỉ tập trung vô hiệu hóa hiệu ứng tất trúng.",
+      "descriptionEn": "Hollow Wicker Basket\n\nPrerequisites: N/A\n\nAs an action, bonus action, or reaction against being affected by a sure hit effect of a Domain, or seeing a Domain Expansion open, for 4 Cursed Energy you surround yourself with a 15 ft barrier for 1 minute. Within that radius, the sure hit effect of a domain is negated and deals no damage. Anyone of your choice inside the barrier is unaffected. The barrier has no effect on normal cursed techniques or others entering the barrier. It only negates sure hit effects."
+    },
+    {
+      "name": "Incomplete Domain",
+      "vietnameseName": "Lãnh Địa Bán Hoàn Thiện",
+      "prerequisite": "Đã đạt ít nhất 1 lần Đột Phá (Breakthrough)",
+      "prerequisiteEn": "Prerequisites: 1 Breakthrough",
+      "character": "Megumi Fushiguro (Khảm Hợp Ám Ế Đình)",
+      "description": "Bạn học được cách cưỡng ép bành trướng sinh đắc lãnh địa dù chưa hoàn thiện kết giới đóng kín:\n\nDùng một Action tiêu tốn 10 CE, bạn tạo ra một Lãnh địa bán hoàn thiện không có kết giới trong bán kính 100 ft xung quanh bản thân tồn tại trong 1 phút. Lãnh địa vô định hình này không di chuyển theo bạn, có độ tinh xảo (Refinement) bằng 0 và không có bức tường kết giới.\n\nLãnh địa thiếu hiệu ứng tất trúng tuyệt đối, nhưng bạn nhận Advantage cho mọi đòn tấn công thuật thức và kẻ địch bên trong phải chịu Disadvantage trong các lần tung Saving Throw chống lại Thuật thức bẩm sinh của bạn. Mọi hiệu ứng của Lãnh địa bị giảm một nửa cho đến khi bạn hoàn thiện Bành Trướng Lãnh Địa đầy đủ (khi đó bạn có thể đổi lấy feat khác). Khi Lãnh địa kết thúc, bạn rơi vào trạng thái Kiệt Sức Thuật Thức (Technique Burnout) trong 5 round.",
+      "descriptionEn": "Incomplete Domain\n\nPrerequisites: 1 Breakthrough\n\nYou learn to prematurely create an incomplete Domain Expansion. As an action for 10 cursed energy, you create an unrefined incomplete domain 100 ft around yourself for 1 minute. This structureless domain does not follow you, has a refinement of 0, and has no barrier. The domain lacks a guaranteed hit, but you gain advantage on technique attack rolls and creatures inside your domain have disadvantage on saving throws against your Innate Technique. Any effects of your domain are halved until you gain your complete Domain Expansion, upon which you can choose a different feat. When the domain ends, you experience Technique Burnout for 5 rounds. See Incomplete Domain (pg 451) in Rules of Thumb for further explanation."
+    },
+    {
+      "name": "Simple Domain",
+      "vietnameseName": "Giản Dị Lãnh Địa",
+      "prerequisite": "Điểm Chú Lực (CE) từ 16 trở lên",
+      "prerequisiteEn": "Prerequisites: 16+ Cursed Energy score",
+      "character": "Atsuya Kusakabe, Kasumi Miwa, Aoi Todo",
+      "description": "Bí thuật do Kusakabe Sadatsuna sáng lập thuộc kiếm phái Tân Âm Lưu (New Shadow Style) dành cho kẻ yếu thế chống lại Lãnh địa của kẻ mạnh:\n\nDùng Action hoặc Reaction chống lại một đòn tấn công, hiệu ứng cứu nguy, phép thuật hoặc khi Lãnh Địa đối phương vừa khai mở: Tiêu tốn 4 CE tạo ra kết giới nhỏ bán kính 10 ft bao quanh chân trong 1 phút. Kết giới có lượng HP bằng PB x 2 x CE modifier.\n\nMọi thuật thức gây sát thương, phép thuật hoặc đòn tấn công nhắm vào bạn hoặc bao trùm khu vực giao nhau với Giản Dị Lãnh Địa sẽ gây sát thương vào kết giới trước, làm suy giảm HP của nó. Sát thương dư thừa sau khi kết giới vỡ mới đánh vào cơ thể bạn. Giản Dị Lãnh Địa kết thúc ngay lập tức nếu bạn di chuyển khỏi vị trí.",
+      "descriptionEn": "Simple Domain\n\nPrerequisites: 16+ Cursed Energy score\n\nAs an action or reaction against an attack roll or saving throw effect, spell or domain expansion opening for 4 Cursed Energy, you surround yourself with a 10 ft barrier for 1 minute. The circle has an amount of hit points equal to your proficiency bonus times twice your Cursed Energy modifier. Any damaging cursed techniques, spells, or attacks that target you or targets an area that overlaps with your simple domain, will now damage the barrier instead, reducing its hit points by the damage it would cause. Any damage leftover from an attack or effect that would damage you carries over after Simple Domain is destroyed. Your Simple Domain ends if you move."
+    },
+    {
+      "name": "Refined Domain",
+      "vietnameseName": "Lãnh Địa Tinh Xảo",
+      "prerequisite": "Đã sở hữu Bành Trướng Lãnh Địa (Domain Expansion), đạt 400 điểm Tinh Xảo (Refinement)",
+      "prerequisiteEn": "Prerequisites: Must have Domain Expansion, 400 Refinement points",
+      "character": "Satoru Gojo, Ryomen Sukuna",
+      "description": "Độ tinh xảo cảnh giới tối thượng giúp bạn áp đảo đối thủ trong các cuộc tranh chấp Lãnh Địa (Domain Clash) và cường hóa toàn diện kết giới. Chọn 1 trong các lợi ích sau:\n\n• Sát Thương Nghiêm Trọng (Severe Damification): Nếu Lãnh địa có hiệu ứng nội tại gây sát thương ở Initiative 20, tăng số lượng xúc xắc sát thương thêm một lượng bằng CE modifier.\n• Bất Sát Khắc Nhiệt (Non-Lethality): Nếu Lãnh địa mang đặc tính Bất sát (Non-Lethal) hoặc có điều kiện trói buộc, bạn có thể thiết lập thêm một điều kiện hoặc hạn chế bổ sung cho thuật thức.\n• Giảm Thiểu Tiêu Hao (Cost Reduction): Kết giới tinh luyện tối ưu hóa thuật thức bên trong. Chi phí CE của các tính năng Thuật thức bẩm sinh giảm một nửa (làm tròn lên).\n• Thi Triển Thần Tốc (Lightning Speed Release): Thời gian hành động của các tính năng Thuật thức bẩm sinh giảm 1 cấp khi Lãnh địa đang kích hoạt: Action > Bonus Action > Reaction > Free Action.\n• Nhân Bội Uy Lực (Multiplication): Khi một tính năng cho phép bạn chi tối đa một lượng CE nhất định, giới hạn tối đa đó được nhân đôi.\n• Thăng Cấp Thuật Thức (Improved Technique): Chọn một tính năng Thuật thức bẩm sinh. Xúc xắc sát thương của tính năng đó tăng thêm một lượng bằng CE modifier khi đứng trong Lãnh địa.",
+      "descriptionEn": "Refined Domain\n\nPrerequisites: Must have Domain Expansion, 400 Refinement points\n\nYour refinement allows you to further empower your domain expansion. You can choose one of the following benefits:\n\nSevere Danification. If your domain has a passive effect that causes damage at Initiative 20, the number of damage dice are increased by your CE modifier.\n\nNon-Lethality. If your domain is Non-Lethal or has a restriction, you can add an additional condition or restriction to your technique.\n\nCost Reduction. Your domain refinement enhances the technique imbued into the barrier. While within your domain, the CE cost of your innate technique features are halved(rounded up).\n\nLightning Speed Release. Your domain refinement has made your techniques faster. Your innate technique features action costs reduced by one while your domain is active (Action &gt; Bonus Action &gt; Reaction &gt; Free Action).\n\nMultiplication. Your domain has multiplied the output of the imbued innate technique. When a feature lets you spend up to a certain amount of cursed energy, that maximum amount is doubled.\n\nImproved Technique. Your imbued technique has been refined. While within your domain, you can choose one of your Innate Technique features. The damage dice of that technique increases by your CE modifier."
+    }
+  ],
+  "Cursed Energy Feats": [
+    {
+      "name": "Bottomless Cursed Energy",
+      "vietnameseName": "Chú Lực Đáy Sâu",
+      "prerequisite": "Điểm Chú Lực (CE) từ 20 trở lên và có ít nhất 1 lần Đột Phá (Breakthrough)",
+      "prerequisiteEn": "Prerequisites: 20+ Cursed Energy Score and a Breakthrough",
+      "character": "Yuta Okkotsu, Ryomen Sukuna",
+      "description": "Bạn đã chạm tới cốt lõi sâu thẳm nhất của Chú lực và nguồn năng lượng vô tận tiềm ẩn trong linh hồn. Khi nhận feat này, lượng Chú Lực tối đa của bạn tăng thêm một lượng bằng 2 x Cấp độ nhân vật. Mỗi khi lên cấp sau đó, Chú Lực tối đa tiếp tục tăng thêm +2 CE.",
+      "descriptionEn": "Bottomless Cursed Energy\n\nPrerequisites: 20+ Cursed Energy Score and a Breakthrough\n\nYou have touched both the core of Cursed Energy and the hidden Cursed Energy within you. Your Cursed Energy maximum increases by an amount equal to twice your level when you gain this feat. Whenever you gain a level, your Cursed Energy maximum increases by 2 Cursed Energy."
+    },
+    {
+      "name": "Immense Cursed Energy",
+      "vietnameseName": "Chú Lực Khổng Lồ",
+      "prerequisite": "Điểm Chú Lực (CE) từ 15 trở lên",
+      "prerequisiteEn": "Prerequisites: 15+ Cursed Energy Score",
+      "character": "Aoi Todo, Satoru Gojo",
+      "description": "Kho dự trữ Chú lực dồi dào biến bạn thành một cỗ máy năng lượng trên chiến trường. Bạn nhận các lợi ích sau:\n\n• Tăng +1 điểm vào chỉ số Chú Lực (tối đa 20).\n• Lượng Chú Lực (CE) tối đa tăng thêm một lượng bằng CE modifier.",
+      "descriptionEn": "Immense Cursed Energy\n\nPrerequisites: 15+ Cursed Energy Score\n\nYour Cursed Energy has massive reserves, making you become a cursed energy powerhouse. You gain the following benefits:\n\nYou gain a +1 to your Cursed Energy score (maximum of 20).\n\nYour CE maximum increases by your Cursed Energy modifier."
+    },
+    {
+      "name": "Malevolent Cursed Energy",
+      "vietnameseName": "Khí Áp Ác Ý",
+      "prerequisite": "Điểm Chú Lực (CE) từ 20 trở lên",
+      "prerequisiteEn": "Prerequisites: Cursed Energy Score 20+",
+      "character": "Ryomen Sukuna",
+      "description": "Linh hồn bạn chứa đựng sự tàn bạo thuần túy, phóng thích linh áp áp đảo mọi sinh linh:\n\nDùng một Action giải phóng toàn bộ khí áp Chú lực dữ dội. Mọi sinh vật trong phạm vi 100 ft phải thực hiện một lần WIS Save chống lại CE DC của bạn. Nếu thành công, chúng cảm nhận được sự độc địa nhưng không bị suy suyển. Nếu thất bại, chúng rơi vào trạng thái Frightened và phải gánh chịu một trong hai hiệu ứng suy yếu sau trong 1 phút:\n\n1. Áp lực ngột ngạt khiến chúng do dự: Các lần kiểm tra chỉ số, Saving Throw và đòn đánh của mục tiêu bị trừ một lượng bằng CE modifier của bạn.\n2. Nỗi kinh hoàng làm tê liệt: Mục tiêu chịu Disadvantage trong các lần tung Saving Throw chống lại bạn.\n\nNếu mục tiêu có CR hoặc cấp độ bằng hoặc cao hơn bạn, chúng tung WIS Save với Advantage; nếu kém bạn từ 3 cấp trở lên, chúng chịu Disadvantage. Sinh vật có thể lặp lại Saving Throw vào cuối lượt của mình; một khi thành công, nó miễn nhiễm với hiệu ứng này trong 24 giờ.",
+      "descriptionEn": "Malevolent Cursed Energy\n\nPrerequisites: Cursed Energy Score 20+\n\nYour soul is rotten, and your cursed energy shows that. As an action, you release your cursed energy and creatures within 100 ft must make a Wisdom saving throw against your cursed energy DC. On a success, they can feel your cruelty but are not shaken by it. On failure, they are frightened and receive one of the following detriments for 1 minute:\n\nThey hesitate to act due to your suffocating presence, their ability checks, saving throws, and attack rolls are reduced by your Cursed Energy modifier.\n\nYour power makes them become paralyzed in fear, they have a disadvantage on your saving throws.\n\nIf the creature's CR or level is equal to or higher than your level, they make this saving throw with advantage. If the creature's CR or level is 3 or more below your level, they make this saving throw with disadvantage.\n\nA creature can repeat this saving throw at the end of their turn. Once a creature passes this saving throw, it becomes immune to this effect for 24 hours."
+    },
+    {
+      "name": "Cursed Energy Perception",
+      "vietnameseName": "Cảm Quan Chú Lực",
+      "prerequisite": "Có độ thuần thục kỹ năng Perception (Nhận Thức)",
+      "prerequisiteEn": "Prerequisites: Must have proficiency in Perception",
+      "character": "Kento Nanami, Satoru Gojo",
+      "description": "Bạn tôi luyện đôi mắt và giác quan để lần theo tàn tích mờ nhạt nhất của Chú lực. Bạn nhận Expertise trong kỹ năng Perception (gấp đôi PB). Ngoài ra, bạn nhận thêm +5 bonus vào mọi lần kiểm tra liên quan đến việc dò tìm Chú Lực và có thể cảm nhận dòng chảy Chú lực từ khoảng cách 90 ft.",
+      "descriptionEn": "Cursed Energy Perception\n\nPrerequisites: Must have proficiency in Perception\n\nYou have learned how to track down remains of cursed energy. You gain Expertise in Perception if you don't already. You also gain a +5 bonus to checks relating to sensing Cursed Energy and can sense cursed energy from 90 ft away."
+    },
+    {
+      "name": "Cursed Enhancement",
+      "vietnameseName": "Chú Lực Cường Hóa Khí",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisite: N/A",
+      "character": "Atsuya Kusakabe, Yuta Okkotsu",
+      "description": "Dùng một Bonus Action trong khi chạm vào một vũ khí, bạn có thể chi một lượng Chú lực tối đa bằng một nửa PB (làm tròn xuống) để cường hóa vũ khí đó. Vũ khí nhận được +1 bonus vào đòn đánh và sát thương cho mỗi 1 CE tiêu hao (tối đa +3) trong vòng 1 giờ. Lợi ích này không cộng dồn nếu vũ khí đã có sẵn bonus đòn đánh và sát thương.",
+      "descriptionEn": "Cursed Enhancement\n\nPrerequisite: N/A\n\nAs a bonus action while touching a weapon, you can spend cursed energy up to half your proficiency bonus (rounded down) to enhance that weapon. The weapon gains a +1 bonus to attack and damage rolls for every cursed energy spent (to a maximum of +3) for 1 hour. This does not stack with a weapon’s bonus if it already has a bonus to attack and damage rolls."
+    },
+    {
+      "name": "Cursed Imbuement",
+      "vietnameseName": "Chú Lực Quán Chú",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Yuji Itadori, Kento Nanami",
+      "description": "Khi tấn công bằng đòn đánh tay không hoặc vũ khí thuần thục, bạn có thể sử dụng CE modifier thay cho Strength hoặc Dexterity cho các lần tung đòn đánh và xúc xắc sát thương. Tuy nhiên, nếu tung ra xúc xắc tấn công mặt 1 tự nhiên (Natural 1), bạn phải thực hiện kiểm tra Chú Lực chống lại CE DC của chính mình, nếu thất bại vũ khí sẽ vỡ vụn do bị nạp quá tải năng lượng hoặc bạn phải chịu 1 sát thương Necrotic nếu dùng tay không.\n\nNgoài ra, bạn có thể dùng 1 CE quán chú vào một đồ vật trong 1 phút, khiến nó gây sát thương Necrotic trong suốt thời gian duy trì.",
+      "descriptionEn": "Cursed Imbuement\n\nPrerequisites: N/A\n\nWhen attacking with unarmed strikes or a weapon you are proficient with, you can use your Cursed Energy modifier instead of Strength or Dexterity for your attack and damage rolls. However, on a roll of natural one for an attack roll, you must make a Cursed Energy check against your Cursed Energy DC, or shatter the weapon as you overcharge it or take 1 necrotic damage if using unarmed strikes.Additionally, you can spend 1 cursed energy to imbue it into an object for 1 minute, causing it to deal necrotic damage for the duration."
+    },
+    {
+      "name": "Curse Enhanced Body",
+      "vietnameseName": "Cường Hóa Thân Thể",
+      "prerequisite": "Điểm Chú Lực (CE) từ 18 trở lên",
+      "prerequisiteEn": "Prerequisites: 18+ Cursed Energy score",
+      "character": "Aoi Todo, Satoru Gojo",
+      "description": "Dòng Chú lực cuộn trào biến đổi toàn diện thể xác và phản xạ:\n\n• Khi không mặc giáp, bạn cộng CE modifier vào AC. Nếu bạn đã có tính năng Phòng Thủ Không Giáp (Unarmored Defense), giá trị cộng thêm này bằng một nửa CE modifier (làm tròn lên).\n• Bạn có thể dùng CE modifier cho các đòn đánh tay không thay cho Strength hoặc Dexterity.\n• Dùng Reaction chi Chú lực tối đa bằng CE modifier để nhận bonus vào một lần tung Cứu nguy Thể chất (Physical Saving Throw: STR, DEX, CON) đúng bằng lượng CE đã chi. Nếu bạn đã giác ngộ Phản Chuyển Thuật Thức (RCT), bạn có thể áp dụng tính năng này cho cả các lần tung Cứu nguy Tinh thần (Mental Saving Throw: INT, WIS, CHA).",
+      "descriptionEn": "Curse Enhanced Body\n\nPrerequisites: 18+ Cursed Energy score\n\nYou can enhance your body with Cursed energy. While not wearing armor, you add your Cursed Energy modifier to your AC. This becomes half your modifier (rounded up) if you have a feature such as Unarmored Defense.Additionally, you can use your Cursed Energy modifier for unarmed strikes in place of Strength or Dexterity. As a reaction you can spend cursed energy up to your Cursed Energy modifier and gain a bonus to a physical saving throw equal to the cursed energy spent. If you have Reverse Cursed Technique, you can also use this feature for mental saving throws."
+    },
+    {
+      "name": "Cursed Energy Slash",
+      "vietnameseName": "Trảm Kích Chú Lực",
+      "prerequisite": "Có feat Chú Lực Quán Chú (Cursed Imbuement) hoặc Chú Lực Cường Hóa Khí (Cursed Enhancement)",
+      "prerequisiteEn": "Prerequisites: Cursed Imbuement or Cursed Enhancement",
+      "character": "Ryomen Sukuna, Yuta Okkotsu",
+      "description": "Dùng một Action khi đang cầm một vũ khí gây sát thương Trảm (Slashing), bạn có thể chi 5 CE để phóng xuất một đường trảm kích Chú lực khổng lồ tầm xa. Mọi sinh vật trong hình nón 15 ft hoặc trên đường thẳng dài 30 ft phải thực hiện DEX Save. Nếu thất bại, mục tiêu chịu sát thương thông thường của vũ khí + xúc xắc sát thương bổ sung bằng một xúc xắc của vũ khí nhân với CE modifier sát thương Necrotic. Nếu thành công, mục tiêu chỉ chịu một nửa sát thương (Ví dụ: Đại kiếm Greatsword với CE mod +3 sẽ gây 2d6 + 3d6 sát thương Necrotic).",
+      "descriptionEn": "Cursed Energy Slash Prerequisites: Cursed Imbuement or Cursed Enhancement\n\nAs an action while holding a weapon that deals slashing damage, you can spend 5 Cursed Energy to make a huge cursed energy slash. You make all creatures in a 15 ft cone or a 30 ft line make a Dexterity saving throw. On a failed save, a creature takes the weapon’s normal damage + additional damage dice equal to a single die of the weapon times your Cursed Energy modifier in necrotic damage. On a success, they take half as much (Eg. Greatsword with a +3 CE modifier would be 2d6 + 3d6 necrotic damage)."
+    },
+    {
+      "name": "Improved Cursed Energy Output",
+      "vietnameseName": "Thăng Hoa Xuất Lực",
+      "prerequisite": "Điểm Chú Lực (CE) từ 18 trở lên",
+      "prerequisiteEn": "Prerequisites: 18+ Cursed Energy score",
+      "character": "Ryu Ishigori (Xuất lực đại pháo Granite Blast)",
+      "description": "Thay vì chỉ ép Chú lực vào chiêu thức một cách thô ráp, bạn tối ưu hóa hiệu suất xuất lực đạt tới cảnh giới vượt bậc:\n\n• Khi một tính năng cho phép bạn chi thêm Chú lực bổ sung, bạn có thể chi thêm 1 CE. Giới hạn này tăng lên 2 CE ở cấp 6 và 3 CE ở cấp 11.\n• Mỗi lượt một lần, bạn có thể tăng sát thương của một đòn tấn công thêm một lượng bằng CE modifier.\n• Dùng Reaction chi 1 CE dựng khiên năng lượng tự bảo vệ, giảm sát thương của một đòn đánh đi một lượng bằng 3 x CE modifier.",
+      "descriptionEn": "Improved Cursed Energy Output\n\nPrerequisites: 18+ Cursed Energy score\n\nAs opposed to simply forcing cursed energy into use for your abilities, you have become far more efficient in their output resulting in a dramatic boost in power.\n\nWhen a feature allows you to spend additional cursed energy, you can spend 1 additional cursed energy. This increases to 2 CE at 6th level and 3 CE at 11th level.\n\nOnce per turn, you can increase the damage of an attack by your cursed energy modifier.\n\nYou can choose to shield yourself as a reaction, you can spend 1 CE to reduce an instance of damage by three times your Cursed Energy modifier."
+    },
+    {
+      "name": "Cursed Energy Trait",
+      "vietnameseName": "Đặc Tính Chú Lực",
+      "prerequisite": "Cấp độ 1 trở lên",
+      "prerequisiteEn": "Prerequisites: 1st level",
+      "character": "Hakari Kinji (Thô ráp gai nhọn), Hajime Kashimo (Điện tích)",
+      "description": "Dòng Chú lực của bạn mang một tính chất vật lý hoặc nguyên tố dị biệt bẩm sinh. Chọn 1 trong 3 đặc tính:\n\n• Thô Ráp (Rough): Nhận +1 bonus vào đòn đánh và +2 bonus vào xúc xắc sát thương khi sử dụng Chú lực thuần túy (như Cursed Strike) — dòng Chú lực mang cảm giác gai góc như giấy nhám.\n• Êm Dịu (Smooth): Nhận +1 AC và tốc độ di chuyển tăng thêm 5 ft. Dùng Reaction khi bị tấn công chi 1 CE nhận bonus vào AC bằng CE modifier, có khả năng khiến đòn đánh trượt.\n• Nguyên Tố (Elemental): Chọn một loại sát thương khác ngoài Radiant và Necrotic (Axit, Băng, Lửa, Sấm Sét, Sét, Lực Chấn, v.v.). Khi một tính năng dùng Chú lực thuần túy gây sát thương, bạn có thể chuyển đổi thành loại sát thương đã chọn và cộng thêm sát thương bằng PB.",
+      "descriptionEn": "Cursed Energy Trait\n\nPrerequisites: 1st level\n\nYour cursed energy has taken on a unique quality, choose one:\n\nRough. You gain a +1 bonus to your attack rolls and +2 bonus to damage rolls when using your raw cursed energy (such as cursed strike).\n\nSmooth. You gain a +1 bonus to AC and your walking speed increases by 5 ft. As a reaction to an attack, you can spend 1 CE to gain a bonus to your AC equal to your Cursed Energy modifier, potentially causing the attack to miss.\n\nElemental. Pick a damage type other than radiant or necrotic. When a feature uses raw cursed energy to deal damage, you can deal that damage type instead, dealing additional damage equal to your proficiency bonus."
+    },
+    {
+      "name": "Cursed Energy Trait Mastery",
+      "vietnameseName": "Tinh Thông Đặc Tính Chú Lực",
+      "prerequisite": "Đã có feat Đặc Tính Chú Lực (Cursed Energy Trait)",
+      "prerequisiteEn": "Prerequisites: Cursed Energy Trait",
+      "character": "Hajime Kashimo, Hakari Kinji",
+      "description": "Bạn làm chủ hoàn toàn đặc tính Chú lực dị biệt của mình:\n\n• Thô Ráp: Sát thương từ Chú lực thuần túy nhận bonus bằng 2 + CE modifier (thay thế bonus từ feat trước).\n• Êm Dịu: Giảm sát thương Bludgeoning, Slashing và Piercing nhận vào một lượng bằng CE modifier; tốc độ di chuyển tăng thêm 10 ft (thay thế tốc độ từ feat trước). Dùng Reaction chi 1 CE khi bị tấn công để cộng gấp đôi CE modifier vào AC.\n• Nguyên Tố: Mỗi lượt một lần khi đánh trúng bằng Chú lực thuần túy hoặc khiến đối thủ thất bại Saving Throw chống lại Chú lực của bạn, mục tiêu chịu thêm hiệu ứng đặc trưng duy trì số lượt bằng CE modifier (cộng dồn tối đa bằng PB):\n  - Axit: Giảm AC mục tiêu đi 1\n  - Đập (Bludgeoning): Bỏ qua Kháng đập\n  - Băng (Cold): Giảm tốc độ mục tiêu 10 ft\n  - Lửa (Fire): Mục tiêu nhận thêm 2 sát thương Lửa từ Chú lực của bạn\n  - Lực (Force): Đẩy lùi mục tiêu 10 ft\n  - Sét (Lightning): Mục tiêu không thể sử dụng Reaction\n  - Đâm (Piercing): Bỏ qua Kháng đâm\n  - Độc (Poison): Mục tiêu chịu trạng thái Poisoned\n  - Tâm Linh (Psychic): Mục tiêu chịu trạng thái Frightened\n  - Trảm (Slashing): Bỏ qua Kháng trảm\n  - Chấn Động (Thunder): Đánh ngã Prone và làm Điếc (Deafened)",
+      "descriptionEn": "Cursed Energy Trait Mastery\n\nPrerequisites:Cursed Energy Trait\n\nYou have mastered the trait peculiar to your energy:\n\nRough. You gain a bonus to damage rolls using raw cursed energy equal to 2 + your CE modifier (such as cursed strike). This replaces the bonus to damage rolls from your Cursed Energy Trait.\n\nSmooth. You reduce bludgeoning, slashing, and piercing damage by your CE modifier and your walking speed increases by 10 ft. This replaces the bonus to walking speed from your Cursed Energy Trait. As a reaction to an attack for 1 CE, you gain a bonus to AC equal to twice your CE modifier, potentially causing the attack to miss.\n\nElemental. Once per turn on a hit imbued with raw cursed energy (eg. Cursed Strike) or a creature failing a save against your raw cursed energy (eg. Cursed Energy Slash), they suffer an additional effect. These effects stack up to your proficiency bonus (if applicable) and last a number of turns equal to your CE modifier:\n\nAcid, reduces the target’s AC by 1\n\nBludgeoning, ignores resistance to bludgeoning\n\nCold, reduces movement by 10 ft\n\nFire, target takes an extra 2 fire damage from your cursed energy\n\nForce, target is knocked back 10 ft\n\nLightning, the target cannot take reactions\n\nPiercing, ignores resistance to piercing\n\nPoison, target gains the Poisoned condition\n\nPsychic, target gains the frightened condition\n\nSlashing, ignores resistance to slashing\n\nThunder, target is knocked Prone and Deafened"
+    },
+    {
+      "name": "Cursed Projectiles",
+      "vietnameseName": "Đạn Đạo Phóng Phá",
+      "prerequisite": "Có độ thuần thục với một loại Vũ khí Tầm xa hoặc Ném (Ranged or Thrown weapon)",
+      "prerequisiteEn": "Prerequisites: Proficiency in a Ranged or Thrown weapon",
+      "character": "Mai Zen'in, Noritoshi Kamo",
+      "description": "Bạn học được cách quán chú Chú lực vào tên, đạn hoặc phi đao ném:\n\nDùng một Action quán chú số lượng đầu đạn/vũ khí ném tối đa bằng CE modifier, biến chúng thành Đạn Đạo Chú Thuật cho đến kỳ Long Rest. Khi bắn hoặc ném, bạn tung đòn đánh Chú lực tầm xa và kiểm soát quỹ đạo bay trong không trung, bỏ qua Half Cover và Three-Quarters Cover.\n\nNếu đòn đánh trượt, đạn đạo sẽ lơ lửng giữa không trung trong số round bằng CE modifier. Dùng một Bonus Action ra lệnh cho mỗi đạn đạo đang lơ lửng tiếp tục lao tới tấn công tầm xa một mục tiêu trong phạm vi 60 ft. Đạn đạo có 1 HP và AC bằng Cursed Technique DC.",
+      "descriptionEn": "Cursed Projectiles\n\nPrerequisites: Proficiency in a Ranged or Thrown weapon\n\nYou have learned to imbue your cursed energy into projectiles such as arrows, bolts or any other type of ammunition or weapon with the thrown property. As an action, you can imbue a number of projectiles up to your Cursed Energy modifier, turning them into Cursed Projectiles until you finish a long rest. When using Cursed Projectiles, you make ranged Cursed Energy attacks instead of what you would normally use to attack with them, and you control their trajectory while in the air, making it so that attacks with them ignore half and three quarters cover. Additionally, on a miss they will stay in the air floating for a number of rounds equal to your Cursed Energy modifier, allowing you to keep making attacks with them even after being shot or thrown until they hit a solid object or target. You can use a bonus action to cause each active Cursed Projectile to make another ranged Cursed Energy attack against a creature within 60 feet. You can control a number of Cursed Projectiles equal to your Cursed Energy modifier. A creature can attack your Cursed Projectiles to destroy them; they have 1 hit point and an AC equal to your Cursed Technique DC."
+    },
+    {
+      "name": "One In A Billion",
+      "vietnameseName": "Trăm Năm Có Một",
+      "prerequisite": "Điểm Chú Lực (CE) từ 20 trở lên, Cấp độ 15, có ít nhất 1 lần Đột Phá (Breakthrough)",
+      "prerequisiteEn": "Prerequisites: 20+ Cursed Energy score, 15th level, Breakthrough",
+      "character": "Satoru Gojo, Ryomen Sukuna",
+      "description": "Khả năng thao túng Chú lực đạt đến cảnh giới thần thánh chỉ xuất hiện một lần sau hàng thế kỷ:\n\n• Khi một tính năng gây sát thương, bạn có thể gieo lại toàn bộ xúc xắc ra mặt 1 và 2. Mỗi kỳ Long Rest một lần, bạn có thể chọn gây sát thương Tối Đa (Maximum Damage) cho một chiêu thức thuật thức thi triển (không áp dụng cho đòn đánh thường hay thức thần).\n• Mỗi kỳ Long Rest một lần, bạn có thể thi triển một tính năng tiêu tốn Chú Lực với chi phí giảm về 0 CE; nếu tính năng đó quy định hiệu ứng theo lượng CE tiêu hao, nó được coi như bạn đã chi lượng CE tối đa cho phép (Ví dụ: Phản Chuyển Thuật Thức sẽ hồi phục 50 HP với CE modifier +5).",
+      "descriptionEn": "One In A Billion\n\nPrerequisites: 20+ Cursed Energy score, 15th level, Breakthrough\n\nYour cursed energy manipulation is some of the best that the world has ever seen, it must take at least a couple of centuries for another person such as yourself to be born once again. You gain the following benefits:\n\nIf a feature deals damage you can reroll all 1s and 2s on damage dice. Once per long rest you can deal maximum damage on a technique you use. This does not include ordinary attacks from you or shikigami.\n\nOnce per long rest, you can use one feature that requires Cursed Energy. The cost of that feature is lowered to 0 for that use, if a feature depends on how much Cursed Energy you spend, it counts as if you used the maximum required. For example, Reverse Cursed Technique would heal 50 with a modifier of +5."
+    },
+    {
+      "name": "Pact Maker",
+      "vietnameseName": "Bậc Thầy Giao Ước",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Kenjaku, Sukuna",
+      "description": "Bạn thấu triệt cấu trúc và nguyên lý vận hành của các Giao Ước Trói Buộc (Binding Vows). Số lượng Giao ước trói buộc mà bạn có thể thiết lập cùng một lúc tăng lên gấp đôi Proficiency Bonus (2 x PB).",
+      "descriptionEn": "Pact Maker\n\nPrerequisites: N/A\n\nYou have specialized in the intricacies of binding vows, causing you to understand their innate workings. You can now make a number of binding vows equal to twice your proficiency bonus."
+    },
+    {
+      "name": "Chanting",
+      "vietnameseName": "Vịnh Xướng Chú Văn",
+      "prerequisite": "Cấp độ 12 trở lên",
+      "prerequisiteEn": "Prerequisites: 12th level+",
+      "character": "Sukuna (Long, Cân, Cương Phong), Gojo (Cửu Cực, Thiên Đình, Tử Bát Thập)",
+      "description": "Bạn thiết lập chuỗi chú văn tụng niệm để đẩy uy lực của Thuật thức bẩm sinh vượt qua 100% giới hạn:\n\nNiệm chú tiêu tốn Hành Động Cả Lượt (Action + Bonus Action + Di chuyển) và phải tập trung (Concentration) cho đến khi tung chiêu. Khi thi triển thuật thức ở lượt kế tiếp, chiêu thức nhận được cường hóa bùng nổ:\n• Bỏ qua Kháng (Resistance) và coi Miễn nhiễm (Immunity) như Kháng.\n• Nhận Advantage cho đòn đánh thuật thức, hoặc buộc kẻ địch chịu Disadvantage trong các lần tung Saving Throw.\n• Gấp đôi số lượng xúc xắc sát thương (Double Damage Dice).\n• Với thuật thức không gây sát thương trực tiếp: Bạn có thể chọn gấp đôi tầm bắn, chọn thêm số mục tiêu bằng CE modifier, hoặc gấp đôi thời gian duy trì.\n(Không áp dụng đồng thời với Maximum Output hoặc Domain Expansion trong khi vịnh xướng).",
+      "descriptionEn": "Chanting\n\nPrerequisites: 12th level+\n\nYou can set a recitation of chanting for one of your innate technique features. You recite your chant as a full turn action and must concentrate until the technique is released. If you lose concentration, the cursed energy spent on the technique is wasted. When you use the technique on your next turn after reciting your chant, it will be given the following boost:\n\nYour technique will ignore resistances and treat immunities as resistance.\n\nIf your Innate Technique feature is an attack, it gains advantage on the attack roll. If it instead requires a saving throw, the target(s) make their saves at disadvantage.\n\nYour Technique feature deals double the damage dice.\n\nIf your Innate Technique does not directly deal damage, you can choose the following options:\n\nThe technique's range doubles.\n\nThe technique can target an additional number of creatures equal to your Cursed Energy modifier.\n\nYou can double the duration of the Innate Technique feature.\n\nIf your Innate Technique feature that benefits from Chanting requires more than one attack or damage roll or save to be made, only the first gains the benefits of Chanting. You cannot use Maximum Output or Domain Expansion while Chanting."
+    },
+    {
+      "name": "Blessed by Black Sparks",
+      "vietnameseName": "Hắc Thiểm Chúc Phúc",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Yuji Itadori (Ghi dấu kỷ lục Hắc Thiểm), Kento Nanami",
+      "description": "Tia chớp đen của Chú thuật đã chọn bạn để ban phước lành. Phạm vi tung đòn Hắc Thiểm (Black Flash range) của bạn nhận được +3 bonus (khiến bạn dễ dàng rơi vào trạng thái xuất thần và kích hoạt Hắc Thiểm thường xuyên hơn trong giao tranh).",
+      "descriptionEn": "Blessed by Black Sparks\n\nPrerequisites: N/A\n\nThe sparks of black have chosen you to receive their blessings. You gain a +3 bonus to your Black Flash range."
+    },
+    {
+      "name": "Shikigami Specialist",
+      "vietnameseName": "Thức Thần Chuyên Gia",
+      "prerequisite": "Có khả năng triệu hồi Thức Thần (Must be able to summon shikigami)",
+      "prerequisiteEn": "Prerequisite: Must be able to summon shikigami",
+      "character": "Megumi Fushiguro, Hiromi Higuruma",
+      "description": "Bạn dành cả đời nghiên cứu và gắn kết linh hồn cùng Thức thần:\n\nChọn một loại thức thần bạn có thể triệu hồi làm Thức Thần Đặc Tuyển (Special). Bạn nhận được một lượng Điểm Chỉ Số (Ability Points) bằng 2 x PB để tự do cộng vào các chỉ số thuộc tính của thức thần đó (tối đa 20). Ngoài ra, bạn có thể ra lệnh cho bất kỳ thức thần nào như một Free Action trong lượt của mình (không cho phép ra lệnh nhiều lần cho cùng một thức thần trong một lượt). Bạn có thể đổi Thức thần đặc tuyển sau một kỳ Long Rest.",
+      "descriptionEn": "Shikigami Specialist\n\nPrerequisite: Must be able to summon shikigami\n\nYou have specialized in shikigami and made it your life. Choose one type of shikigami you can summon to be your special. You have a number of Ability points equal to twice your proficiency bonus that you can use to increase the ability score of that shikigami (up to a max of 20). Additionally, you can command any of your shikigami as a free action on your turn. This does not let you command a shikigami multiple times per turn. If you have multiple shikigami, you can swap your special shikigami as part of a long rest."
+    }
+  ],
+  "Reverse Cursed Technique Feats": [
+    {
+      "name": "Cursed Technique Reversal",
+      "vietnameseName": "Thuật Thức Phản Chuyển: Đảo",
+      "prerequisite": "Đã giác ngộ Thuật Thức Phản Chuyển (RCT)",
+      "prerequisiteEn": "Prerequisites: Must have Reverse Cursed Technique",
+      "character": "Satoru Gojo (Xích / Red), Kenjaku (Phản Trọng Lực)",
+      "description": "Bạn học được cách dẫn truyền dòng năng lượng tích cực của Phản Chuyển Thuật Thức vào thuật thức bẩm sinh thay vì Chú lực tiêu cực thông thường. Thao tác này đảo ngược hoàn toàn bản chất và công năng của chiêu thức, biến hiệu ứng làm suy yếu (debuff) thành tăng cường (buff) và đảo nghịch loại sát thương, tạo ra uy lực bùng nổ cực đại (tiêu biểu như Xích đẩy lùi vạn vật đảo ngược từ Thương hút vạn vật).",
+      "descriptionEn": "Cursed Technique Reversal\n\nPrerequisites: Must have Reverse Cursed Technique\n\nYou have learned to feed your cursed techniques with reverse cursed energy instead of normal. This leads your technique to have the opposite of its normal effect. Turning debuffing into buffing and inverting damage types, resulting in a Reversal."
+    },
+    {
+      "name": "Reverse Cursed Technique Output",
+      "vietnameseName": "Xuất Lực Phản Chuyển Trị Liệu",
+      "prerequisite": "Đã giác ngộ Thuật Thức Phản Chuyển (RCT)",
+      "prerequisiteEn": "Prerequisites: Must have Reverse Cursed Technique",
+      "character": "Shoko Ieiri, Yuta Okkotsu, Ryomen Sukuna",
+      "description": "Bạn học được cách phóng xuất dương khí Phản Chuyển ra bên ngoài cơ thể cho mục đích tấn công và thanh tẩy: Bất cứ khi nào bạn gây sát thương lên Quái Vật (Monstrosity), Xác Sống (Undead) hoặc Chú Linh (Cursed Spirit) bằng đòn đánh tay không hoặc vũ khí cận chiến, bạn có thể chi Chú lực trích điểm từ quỹ trị liệu của mình để cộng dồn trực tiếp vào đòn đánh dưới dạng sát thương Quang Năng (Radiant).",
+      "descriptionEn": "Reverse Cursed Technique Output\n\nPrerequisites: Must have Reverse Cursed Technique\n\nYou have learned to offensively use reverse curse technique, whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or melee weapon, you can spend cursed energy to remove hit points from your healing pool adding them as radiant damage."
+    },
+    {
+      "name": "Reverse Technique Prodigy",
+      "vietnameseName": "Thiên Tài Phản Chuyển",
+      "prerequisite": "Đã giác ngộ Thuật Thức Phản Chuyển (RCT)",
+      "prerequisiteEn": "Prerequisites: Must have Reverse Cursed Technique",
+      "character": "Satoru Gojo, Sukuna, Hakari Kinji",
+      "description": "Bạn đạt đến cảnh giới phi thường trong việc kiểm soát dòng năng lượng dương khí. Bạn có thể chạm vào một sinh vật để ban cho họ toàn bộ lợi ích trị liệu của Phản Chuyển Thuật Thức thay vì cho bản thân, và có thể thi triển Phản Chuyển một lần mỗi lượt như một Free Action.",
+      "descriptionEn": "Reverse Technique Prodigy\n\nPrerequisites: Must have Reverse Cursed Technique\n\nYou have reached new heights with this new type of energy, becoming an unheard prodigy. You can cause a creature you touch to gain the benefits of reverse cursed technique instead of you and can use reverse cursed technique once per turn as a free action."
+    }
+  ],
+  "Physical Feats": [
+    {
+      "name": "Athlete",
+      "vietnameseName": "Vận Động Viên Thể Lực",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Yuji Itadori, Maki Zen'in",
+      "description": "Trải qua quá trình rèn luyện thể chất khắc nghiệt, bạn đạt được các lợi ích sau:\n\n• Tăng điểm Strength hoặc Dexterity thêm 1 (tối đa 20).\n• Đứng dậy từ tư thế nằm sấp (Prone) chỉ tiêu tốn 5 ft tốc độ di chuyển thay vì một nửa.\n• Leo trèo không làm tiêu tốn thêm tốc độ di chuyển.\n• Bạn có thể thực hiện nhảy xa hoặc nhảy cao lấy đà chỉ sau khi di chuyển 5 ft trên bộ thay vì 10 ft.",
+      "descriptionEn": "Athlete\n\nPrerequisites: N/A\n\nYou have undergone extensive physical training to gain the following benefits:\n\nIncrease your Strength or Dexterity score by 1, to a maximum of 20.\n\nWhen you are prone, standing up uses only 5 feet of your movement.\n\nClimbing doesn't cost you extra movement.\n\nYou can make a running long jump or a running high jump after moving only 5 feet on foot, rather than 10 feet."
+    },
+    {
+      "name": "Charger",
+      "vietnameseName": "Xung Kích Chiến Binh",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Yuji Itadori, Aoi Todo",
+      "description": "Khi bạn dùng Action để thực hiện hành động Dash, bạn có thể dùng một Bonus Action để tung một đòn tấn công vũ khí cận chiến hoặc xô đẩy (Shove) một sinh vật.\n\nNếu bạn di chuyển ít nhất 10 ft theo đường thẳng ngay trước khi thực hiện Bonus Action này, bạn nhận thêm +5 bonus vào sát thương đòn đánh (nếu chọn tấn công và đánh trúng) hoặc đẩy lùi mục tiêu ra xa tới 10 ft (nếu chọn xô đẩy và thành công).",
+      "descriptionEn": "Charger\n\nPrerequisites: N/A\n\nWhen you use your action to Dash, you can use a bonus action to make one melee weapon attack or to shove a creature. If you move at least 10 feet in a straight line immediately before taking this bonus action, you either gain a +5 bonus to the attack’s damage roll (if you chose to make a melee attack and hit) or push the target up to 10 feet away from you (if you chose to shove and you succeed)."
+    },
+    {
+      "name": "Defensive Duelist",
+      "vietnameseName": "Quyết Đấu Phòng Thủ",
+      "prerequisite": "Dexterity từ 13 trở lên",
+      "prerequisiteEn": "Prerequisites: 13+ Dex",
+      "character": "Kasumi Miwa, Atsuya Kusakabe",
+      "description": "Khi cầm một vũ khí Finesse mà bạn có độ thuần thục và một sinh vật khác đánh trúng bạn bằng một đòn tấn công cận chiến, bạn có thể dùng Reaction cộng thêm Proficiency Bonus vào AC của mình cho đòn đánh đó, có khả năng biến đòn đánh của đối phương thành trượt.",
+      "descriptionEn": "Defensive Duelist\n\nPrerequisites: 13+ Dex\n\nWhen you are wielding a finesse weapon with which you are proficient and another creature hits you with a melee attack, you can use your reaction to add your proficiency bonus to your AC for that attack, potentially causing the attack to miss you."
+    },
+    {
+      "name": "Dual Wielder",
+      "vietnameseName": "Song Đao Tinh Anh",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Toji Fushiguro, Yuta Okkotsu",
+      "description": "Bạn làm chủ kỹ nghệ chiến đấu hai tay hai vũ khí:\n\n• Nhận +1 bonus vào AC khi đang cầm hai vũ khí cận chiến riêng biệt trên hai tay.\n• Bạn có thể chiến đấu bằng hai vũ khí ngay cả khi các vũ khí một tay bạn cầm không có thuộc tính Nhẹ (Light).\n• Bạn có thể rút hoặc tra hai vũ khí một tay cùng một lúc thay vì chỉ một.",
+      "descriptionEn": "Dual Wielder\n\nPrerequisites: N/A\n\nYou master fighting with two weapons, gaining the following benefits:\n\nYou gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand.\n\nYou can use two-weapon fighting even when the one handed melee weapons you are wielding aren't light.\n\nYou can draw or stow two one-handed weapons when you would normally be able to draw or stow only one."
+    },
+    {
+      "name": "Durable",
+      "vietnameseName": "Kiên Cường Bền Bỉ",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Yuji Itadori, Panda",
+      "description": "Thể chất dẻo dai và khả năng hồi phục phi thường:\n\n• Tăng điểm Constitution thêm 1 (tối đa 20).\n• Khi tung xúc xắc Hit Die trong kỳ nghỉ ngắn để hồi phục HP, lượng HP tối thiểu bạn hồi phục từ mỗi xúc xắc bằng hai lần CON modifier (tối thiểu 2 HP).",
+      "descriptionEn": "Durable\n\nPrerequisites: N/A\n\nHardy and resilient, you gain the following benefits:\n\nIncrease your Constitution score by 1, to a maximum of 20.\n\nWhen you roll a Hit Die to regain hit points, the minimum number of hit points you regain from the roll equals twice your Constitution modifier (minimum of 2)."
+    },
+    {
+      "name": "Crusher",
+      "vietnameseName": "Nghiền Nát",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Aoi Todo, Yuji Itadori",
+      "description": "Bậc thầy về các đòn đánh chấn thương nghiền nát đối thủ:\n\n• Tăng điểm Strength hoặc Constitution thêm 1 (tối đa 20).\n• Mỗi lượt một lần, khi đánh trúng một sinh vật bằng đòn tấn công gây sát thương Bludgeoning, bạn có thể dịch chuyển nó 5 ft vào một ô trống nếu mục tiêu không lớn hơn bạn quá 1 bậc kích thước.\n• Khi tung Critical Hit gây sát thương Bludgeoning lên mục tiêu, mọi đòn tấn công nhắm vào sinh vật đó nhận Advantage cho đến đầu lượt kế tiếp của bạn.",
+      "descriptionEn": "Crusher\n\nPrerequisites: N/A\n\nYou are practiced in the art of crushing your enemies, granting you the following benefits:\n\nIncrease your Strength or Constitution by 1, to a maximum of 20.\n\nOnce per turn, when you hit a creature with an attack that deals bludgeoning damage, you can move it 5 feet to an unoccupied space, provided the target is no more than one size larger than you.\n\nWhen you score a critical hit that deals bludgeoning damage to a creature, attack rolls against that creature are made with advantage until the start of your next turn."
+    },
+    {
+      "name": "Fighting Initiate",
+      "vietnameseName": "Khởi Đầu Chiến Phái",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Maki Zen'in, Toji Fushiguro",
+      "description": "Quá trình trui rèn võ thuật giúp bạn nắm vững một phong cách chiến đấu chuyên biệt. Bạn học một tùy chọn Phong Cách Chiến Đấu (Fighting Style) từ lớp nhân vật Heavenly Restriction. Mỗi khi lên cấp có tính năng Tăng Chỉ Số (Ability Score Improvement), bạn có thể đổi sang một Fighting Style khác của Heavenly Restriction mà bạn chưa có.",
+      "descriptionEn": "Fighting Initiate\n\nPrerequisites: N/A\n\nYour martial training has helped you develop a particular style of fighting. As a result, you learn one Fighting Style option of your choice from the Heavenly Restriction class. If you already have a style, the one you choose must be different.\n\nWhenever you reach a level that grants the Ability Score Improvement feature, you can replace this feat's fighting style with another one from the Heavenly Restriction class that you don't have."
+    },
+    {
+      "name": "Grappler",
+      "vietnameseName": "Đô Vật Khóa Thân",
+      "prerequisite": "Strength từ 13 trở lên",
+      "prerequisiteEn": "Prerequisites: 13+ Str",
+      "character": "Aoi Todo, Panda",
+      "description": "Kỹ năng vật lộn và khóa chặt đối thủ trong cự ly cận chiến:\n\n• Bạn nhận Advantage cho mọi đòn tấn công nhắm vào sinh vật đang bị bạn khóa (Grappled).\n• Bạn có thể dùng một Action để đè chặt đối thủ: Thực hiện thêm một lần kiểm tra Grapple check; nếu thành công, cả bạn và mục tiêu đều rơi vào trạng thái Khống Chế (Restrained) cho đến khi kết thúc khóa.",
+      "descriptionEn": "Grappler\n\nPrerequisites: 13+ Str\n\nYou've developed the skills necessary to hold your own in close-quarters grappling. You gain the following benefits:\n\nYou have advantage on attack rolls against a creature you are grappling.\n\nYou can use your action to try to pin a creature grappled by you. To do so, make another grapple check. If you succeed, you and the creature are both restrained until the grapple ends."
+    },
+    {
+      "name": "Great Weapon Master",
+      "vietnameseName": "Đại Kiếm Sư",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Toji Fushiguro (Du Vân / Đại Đao)",
+      "description": "Bạn biết cách tận dụng quán tính và trọng lượng khổng lồ của vũ khí hạng nặng để tạo ra sức công phá hủy diệt:\n\n• Trong lượt của mình, khi tung đòn Critical Hit bằng vũ khí cận chiến hoặc hạ gục một sinh vật về 0 HP, bạn có thể thực hiện một đòn tấn công vũ khí cận chiến như một Bonus Action.\n• Trước khi tung đòn tấn công cận chiến bằng một vũ khí Nặng (Heavy) mà bạn thuần thục, bạn có thể chọn chịu -5 phạt vào đòn tấn công. Nếu đòn đánh trúng, bạn cộng thêm +10 vào sát thương đòn đánh.",
+      "descriptionEn": "Great Weapon Master\n\nPrerequisites: N/A\n\nYou've learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes. You gain the following benefits:\n\nOn your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a bonus action.\n\nBefore you make a melee attack with a heavy weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage."
+    },
+    {
+      "name": "Heavy Armor Master",
+      "vietnameseName": "Trọng Giáp Tinh Thông",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Hiromi Higuruma, Kento Nanami",
+      "description": "Bạn học cách chuyển hướng những đòn đánh chí tử nhờ lớp giáp sắt kiên cố. Nhận độ thuần thục Trọng Giáp (Heavy armor) cùng các lợi ích sau:\n\n• Tăng điểm Strength thêm 1 (tối đa 20).\n• Khi đang mặc trọng giáp, sát thương Bludgeoning, Piercing và Slashing từ các đòn tấn công phi ma thuật mà bạn phải chịu được giảm đi 3 sát thương.",
+      "descriptionEn": "Heavy Armor Master\n\nPrerequisites: N/A\n\nYou can use your armor to deflect strikes that would kill others. You gain the following benefits, on top of Heavy armor proficiency:\n\nIncrease your Strength score by 1, to a maximum of 20.\n\nWhile you are wearing heavy armor, bludgeoning, piercing, and slashing damage that you take from nonmagical attacks is reduced by 3."
+    },
+    {
+      "name": "Lightly Armored",
+      "vietnameseName": "Khinh Giáp Nhập Môn",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Maki Zen'in, Kasumi Miwa",
+      "description": "Bạn được huấn luyện làm chủ việc sử dụng giáp nhẹ trên chiến trường:\n\n• Tăng điểm Strength hoặc Dexterity thêm 1 (tối đa 20).\n• Bạn nhận độ thuần thục với Giáp Nhẹ (Light armor).",
+      "descriptionEn": "Lightly Armored\n\nPrerequisites: N/A\n\nYou have trained to master the use of light armor, gaining the following benefits.\n\nIncrease your Strength or Dexterity score by 1, to a maximum of 20.\n\nYou gain proficiency with light armor."
+    },
+    {
+      "name": "Martial Adept",
+      "vietnameseName": "Võ Thuật Chuyên Sâu",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Atsuya Kusakabe, Aoi Todo",
+      "description": "Bạn học được các thao lược võ học chiến thuật tinh nhuệ:\n\n• Bạn học hai Chiến Thuật (Maneuvers) tùy chọn từ nguyên mẫu Battle Master. Nếu chiến thuật đòi hỏi đối phương tung Saving Throw, DC bằng 8 + PB + STR hoặc DEX modifier.\n• Bạn nhận được 1 xúc xắc Ưu Thế (Superiority Die) loại d6 để vận hành các thao lược này. Xúc xắc được hồi phục sau một kỳ Short Rest hoặc Long Rest.",
+      "descriptionEn": "Martial Adept\n\nPrerequisites: N/A\n\nYou have martial training that allows you to perform special combat maneuvers. You gain the following benefits.\n\nYou learn two maneuvers of your choice from among those available to the Battle Master archetype in the fighter class. If a maneuver you use requires your target to make a saving throw to resist the maneuver's effects, the saving throw DC equals 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).\n\nYou gain one superiority die, which is a d6 (this die is added to any superiority dice you have from another source). This die is used to fuel your maneuvers. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a short or long rest."
+    },
+    {
+      "name": "Medium Armor Master",
+      "vietnameseName": "Trung Giáp Tinh Thông",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Kento Nanami, Atsuya Kusakabe",
+      "description": "Bạn tôi luyện di chuyển linh hoạt trong lớp giáp vừa. Nhận độ thuần thục Giáp Vừa (Medium armor) cùng các lợi ích sau:\n\n• Mặc giáp vừa không còn áp đặt Disadvantage lên các lần kiểm tra Lén Lút DEX (Stealth).\n• Khi mặc giáp vừa, bạn có thể cộng tối đa +3 (thay vì +2) vào AC nếu điểm Dexterity từ 16 trở lên.",
+      "descriptionEn": "Medium Armor Master\n\nPrerequisites: N/A\n\nYou have practiced moving in medium armor to gain the following benefits, on top of proficiency with medium armor:\n\nWearing medium armor doesn't impose disadvantage on your Dexterity (Stealth) checks.\n\nWhen you wear medium armor, you can add 3, rather than 2, to your AC if you have a Dexterity of 16 or higher."
+    },
+    {
+      "name": "Mobile",
+      "vietnameseName": "Thân Pháp Cơ Động",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Naobito Zen'in, Naoya Zen'in, Toji Fushiguro",
+      "description": "Tốc độ và sự nhanh nhẹn vượt bậc trên chiến trường:\n\n• Tốc độ di chuyển tăng thêm 10 ft.\n• Khi thực hiện hành động Dash, địa hình khó (Difficult terrain) không làm bạn tiêu tốn thêm bước di chuyển trong lượt đó.\n• Khi tung đòn tấn công cận chiến vào một sinh vật, bạn không kích hoạt Đòn Tấn Công Cơ Hội (Opportunity Attack) từ sinh vật đó trong phần còn lại của lượt, bất kể đòn đánh trúng hay trượt.",
+      "descriptionEn": "Mobile\n\nPrerequisites: N/A\n\nYou are exceptionally speedy and agile. You gain the following benefits:\n\nYour speed increases by 10 feet.\n\nWhen you use the Dash action, difficult terrain doesn't cost you extra movement on that turn.\n\nWhen you make a melee attack against a creature, you don't provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not."
+    },
+    {
+      "name": "Peak Form",
+      "vietnameseName": "Đỉnh Cao Thể Lực",
+      "prerequisite": "Cấp độ 10 trở lên",
+      "prerequisiteEn": "Prerequisite: Level 10+",
+      "character": "Toji Fushiguro, Maki Zen'in",
+      "description": "Bạn chạm đến giới hạn tiến hóa thể xác sinh học. Bạn nhận được 1 Điểm Thể Chất (Body Point) có thể dùng để mua một Cải Thiện Thể Chất (Body Improvement) từ lớp nhân vật Heavenly Restriction. Bạn phải thỏa mãn các điều kiện tiên quyết của cải thiện đó, tính theo tổng cấp độ nhân vật.",
+      "descriptionEn": "Peak Form\n\nPrerequisite: Level 10+\n\nYou gain 1 body point that can be spent on a Body Improvement from the Heavenly Restriction class. You must fulfill any prerequisites before taking it and you use your total level for the purpose of fulfilling prerequisites."
+    },
+    {
+      "name": "Piercer",
+      "vietnameseName": "Đâm Xuyên",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Mai Zen'in, Noritoshi Kamo",
+      "description": "Độ chuẩn xác đâm thủng da thịt đối thủ đạt tới sự hoàn hảo:\n\n• Tăng điểm Strength hoặc Dexterity thêm 1 (tối đa 20).\n• Mỗi lượt một lần khi đánh trúng một sinh vật bằng đòn gây sát thương Piercing, bạn có thể gieo lại một xúc xắc sát thương và bắt buộc phải dùng kết quả mới.\n• Khi tung Critical Hit gây sát thương Piercing, bạn được gieo thêm một xúc xắc sát thương bổ sung khi tính sát thương đâm xuyên.",
+      "descriptionEn": "Piercer\n\nPrerequisites: N/A\n\nYou have achieved a penetrating precision in combat, granting you the following benefits:\n\nIncrease your Strength or Dexterity by 1, to a maximum of 20.\n\nOnce per turn, when you hit a creature with an attack that deals piercing damage, you can re-roll one of the attack’s damage dice, and you must use the new roll.\n\nWhen you score a critical hit that deals piercing damage to a creature, you can roll one additional damage die when determining the extra piercing damage the target takes."
+    },
+    {
+      "name": "Polearm Master",
+      "vietnameseName": "Bậc Thầy Vũ Khí Cán Dài",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Maki Zen'in (Trường thương / Du Vân)",
+      "description": "Bậc thầy vũ thuật trường thương và côn dài:\n\n• Khi dùng Attack action tấn công chỉ bằng glaive, halberd, quarterstaff hoặc spear, bạn có thể dùng một Bonus Action tung đòn đánh cận chiến bằng đầu cán đối diện của vũ khí (gây 1d4 sát thương Bludgeoning, cộng cùng thuộc tính như đòn đánh chính).\n• Khi cầm glaive, halberd, pike, quarterstaff hoặc spear, sinh vật khác sẽ kích hoạt Đòn Đánh Cơ Hội (Opportunity Attack) từ bạn ngay khi chúng bước vào tầm với vũ khí của bạn.",
+      "descriptionEn": "Polearm Master\n\nPrerequisites: N/A\n\nYou gain the following benefits:\n\nWhen you take the Attack action and attack with only a glaive, halberd, quarterstaff, or spear, you can use a bonus action to make a melee attack with the opposite end of the weapon. This attack uses the same ability modifier as the primary attack. The weapon's damage die for this attack is a d4, and it deals bludgeoning damage.\n\nWhile you are wielding a glaive, halberd, pike, quarterstaff, or spear, other creatures provoke an opportunity attack from you when they enter the reach you have with that weapon."
+    },
+    {
+      "name": "Resilient",
+      "vietnameseName": "Thể Lực Kiên Định",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Yuji Itadori, Kento Nanami",
+      "description": "Chọn một thuộc tính chỉ số. Bạn nhận các lợi ích sau:\n\n• Tăng chỉ số đã chọn thêm 1 (tối đa 20).\n• Bạn nhận độ thuần thục với các lần tung Cứu nguy (Saving Throws) sử dụng thuộc tính chỉ số đã chọn.",
+      "descriptionEn": "Resilient\n\nPrerequisites: N/A\n\nChoose one ability score. You gain the following benefits:\n\nIncrease the chosen ability score by 1, to a maximum of 20.\n\nYou gain proficiency in saving throws using the chosen ability."
+    },
+    {
+      "name": "Savage Attacker",
+      "vietnameseName": "Công Kích Hung Hãn",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Ryomen Sukuna, Yuji Itadori",
+      "description": "Mỗi lượt một lần khi tung xúc xắc sát thương cho một đòn tấn công vũ khí cận chiến, bạn có thể gieo lại toàn bộ xúc xắc sát thương của vũ khí và tự do chọn kết quả có tổng điểm cao hơn.",
+      "descriptionEn": "Savage Attacker\n\nPrerequisites: N/A\n\nOnce per turn when you roll damage for a melee weapon attack, you can reroll the weapon's damage dice and use either total."
+    },
+    {
+      "name": "Shield Master",
+      "vietnameseName": "Bậc Thầy Khiên Chiến",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Hiromi Higuruma",
+      "description": "Bạn sử dụng khiên vừa để phòng thủ vừa làm vũ khí tấn công:\n\n• Nếu thực hiện Attack action trong lượt của mình, bạn có thể dùng Bonus Action dùng khiên để xô đẩy một sinh vật trong phạm vi 5 ft.\n• Nếu không bị mất khả năng hành động (Incapacitated), bạn có thể cộng bonus AC của khiên vào bất kỳ lần tung DEX Save nào chống lại phép thuật hoặc hiệu ứng chỉ nhắm vào riêng bạn.\n• Khi chịu hiệu ứng cho phép tung DEX Save để chỉ nhận nửa sát thương, bạn có thể dùng Reaction giơ khiên chắn: Nếu thành công, bạn hoàn toàn không nhận sát thương nào.",
+      "descriptionEn": "Shield Master\n\nPrerequisites: N/A\n\nYou use shields not just for protection but also for offense. You gain the following benefits while you are wielding a shield:\n\nIf you take the Attack action on your turn, you can use a bonus action to try to shove a creature within 5 feet of you with your shield.\n\nIf you aren't incapacitated, you can add your shield's AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that targets only you.\n\nIf you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed on the saving throw, interposing your shield between yourself and the source of the effect."
+    },
+    {
+      "name": "Slasher",
+      "vietnameseName": "Trảm Kích",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Ryomen Sukuna, Yuta Okkotsu, Maki Zen'in",
+      "description": "Bạn nắm rõ những nhát chém cắt đứt gân cốt và động mạch đối thủ để đạt hiệu quả tàn khốc nhất:\n\n• Tăng điểm Strength hoặc Dexterity thêm 1 (tối đa 20).\n• Mỗi lượt một lần khi đánh trúng một sinh vật bằng đòn gây sát thương Slashing, bạn có thể giảm tốc độ di chuyển của mục tiêu đi 10 ft cho đến đầu lượt tiếp theo của bạn.\n• Khi tung Critical Hit gây sát thương Slashing, bạn gây trọng thương cho mục tiêu: Sinh vật đó phải chịu Disadvantage cho mọi đòn tấn công cho đến đầu lượt kế tiếp của bạn.",
+      "descriptionEn": "Slasher\n\nPrerequisites: N/A\n\nYou've learned where to cut to have the greatest results, granting you the following benefits:\n\nIncrease your Strength or Dexterity by 1, to a maximum of 20.\n\nOnce per turn when you hit a creature with an attack that deals slashing damage, you can reduce the speed of the target by 10 feet until the start of your next turn.\n\nWhen you score a critical hit that deals slashing damage to a creature, you grievously wound it. Until the start of your next turn, the target has disadvantage on all attack rolls."
+    },
+    {
+      "name": "Tavern Brawler",
+      "vietnameseName": "Thích Đấu Đường Phố",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Kinji Hakari, Yuji Itadori",
+      "description": "Quen với những trận ẩu đả hỗn loạn và tận dụng mọi thứ trong tầm tay làm vũ khí:\n\n• Tăng điểm Strength hoặc Constitution thêm 1 (tối đa 20).\n• Bạn thuần thục với Vũ Khí Tự Chế (Improvised weapons).\n• Đòn đánh tay không của bạn dùng xúc xắc d4 cho sát thương.\n• Khi đánh trúng một sinh vật bằng đòn đánh tay không hoặc vũ khí tự chế trong lượt của mình, bạn có thể dùng Bonus Action cố gắng khóa (Grapple) mục tiêu.",
+      "descriptionEn": "Tavern Brawler\n\nPrerequisites: N/A\n\nAccustomed to the rough-and-tumble fighting using whatever weapons happen to be at hand, you gain the following benefits:\n\nIncrease your Strength or Constitution score by 1 (max of 20).\n\nYou are proficient with improvised weapons.\n\nWhen you hit a creature with an unarmed strike or an improvised weapon on your turn, you can use a bonus action to attempt to grapple the target."
+    },
+    {
+      "name": "Tough",
+      "vietnameseName": "Thể Chất Tráng Kiện",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Yuji Itadori, Panda, Aoi Todo",
+      "description": "Sinh lực phi thường vượt qua mọi giới hạn thông thường: Khi nhận feat này, lượng Máu Tối Đa (Max HP) của bạn tăng thêm một lượng bằng 2 x Cấp độ nhân vật. Mỗi khi lên một cấp độ sau đó, Max HP của bạn tiếp tục tăng thêm +2 HP.",
+      "descriptionEn": "Tough\n\nPrerequisites: N/A\n\nYour hit point maximum increases by an amount equal to twice your level when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 2 hit points."
+    }
+  ],
+  "Skill Feats": [
+    {
+      "name": "2000 IQ",
+      "vietnameseName": "Bộ Não 2000 IQ",
+      "prerequisite": "Có độ thuần thục kỹ năng Arcana (Huyền Bí)",
+      "prerequisiteEn": "Prerequisites: Proficiency in Arcana",
+      "character": "Aoi Todo (530.000 IQ)",
+      "description": "Bộ não thiên tài tính toán với tốc độ phi thường: Dùng một Bonus Action trong khi quan sát một thuật thức đang vận hành trên chiến trường, bạn có thể thực hiện kiểm tra INT (Arcana) để thấu hiểu cách thức hoạt động của nó (DC bằng Cursed Energy Save DC của người dùng thuật thức đó).\n\nKhi thực hiện lần kiểm tra này, coi điểm Intelligence của bạn như là 22. Nếu bạn dành toàn bộ lượt hành động (Action + Bonus Action + Di chuyển) để phân tích thuật thức, bạn nhận Advantage cho lần kiểm tra đó.",
+      "descriptionEn": "2000 IQ\n\nPrerequisites: Proficiency in Arcana\n\nYou can make an Intelligence (Arcana) check as a bonus action while viewing a technique in play to understand how it works. The DC is equal to the user’s Cursed Energy save DC.\n\nWhen making this check, treat your Intelligence score as a 22. If you instead spend a full turn action (Action + Bonus Action + Movement) attempting to understand a technique, you have advantage on the check."
+    },
+    {
+      "name": "Actor",
+      "vietnameseName": "Bậc Thầy Diễn Xuất",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Kenjaku, Mahito",
+      "description": "Khả năng kịch nghệ và bắt chước thần sầu:\n\n• Tăng điểm Charisma thêm 1 (tối đa 20).\n• Nhận Advantage cho các lần kiểm tra CHA (Deception) và CHA (Performance) khi cải trang hoặc mạo danh người khác.\n• Bạn có thể bắt chước hoàn hảo giọng nói của người khác hoặc âm thanh của sinh vật nếu đã nghe họ nói ít nhất 1 phút (đối phương phải thắng kiểm tra WIS Insight đối kháng với CHA Deception của bạn mới nhận ra là giả mạo).",
+      "descriptionEn": "Actor\n\nPrerequisites: N/A\n\nSkilled at mimicry and dramatics, you gain the following benefits:\n\nIncrease your Charisma score by 1, to a maximum of 20.\n\nYou have an advantage on Charisma (Deception) and Charisma (Performance) checks when trying to pass yourself off as a different person.\n\nYou can mimic the speech of another person or the sounds made by other creatures. You must have heard the person speaking, or heard the creature make the sound, for at least 1 minute. A successful Wisdom (Insight) check contested by your Charisma (Deception) check allows a listener to determine that the effect is faked."
+    },
+    {
+      "name": "Alert",
+      "vietnameseName": "Cảnh Giác Tuyệt Đối",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Kento Nanami, Satoru Gojo",
+      "description": "Giác quan luôn ở trạng thái báo động cao nhất trước mọi hiểm nguy rình rập:\n\n• Bạn không thể bị Bất Ngờ (Surprised) khi còn tỉnh táo.\n• Nhận +5 bonus vào điểm Sáng Suốt Khởi Đầu (Initiative).\n• Kẻ địch không nhận Advantage cho các đòn tấn công nhắm vào bạn khi chúng tàng hình hoặc ẩn nấp khỏi tầm nhìn của bạn.",
+      "descriptionEn": "Alert\n\nPrerequisites: N/A\n\nAlways on the lookout for danger, you gain the following benefits:\n\nYou can't be surprised while you are conscious.\n\nYou gain a +5 bonus to initiative.\n\nOther creatures don't gain advantage on attack rolls against you as a result of being unseen by you."
+    },
+    {
+      "name": "Chef",
+      "vietnameseName": "Bếp Trưởng Điêu Luyện",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Ryomen Sukuna (Bếp / Ẩm Thực)",
+      "description": "Nghệ thuật ẩm thực đỉnh cao bồi bổ sinh lực:\n\n• Tăng điểm Constitution hoặc Wisdom thêm 1 (tối đa 20).\n• Thuần thục Dụng Cụ Nấu Nướng (Cook's utensils).\n• Trong kỳ nghỉ ngắn (Short Rest), bạn có thể nấu bữa ăn đặc biệt cho số sinh vật bằng 4 + PB: Sinh vật ăn và chi Hit Die hồi phục HP sẽ được hồi thêm 1d8 HP.\n• Sau 1 giờ làm việc hoặc sau kỳ Long Rest, bạn nấu được số món ăn nhẹ (treats) bằng PB (tồn tại 8 giờ): Sinh vật dùng Bonus Action ăn một món sẽ nhận lượng Máu Tạm Thời (Temporary HP) bằng PB của bạn.",
+      "descriptionEn": "Chef\n\nPrerequisites: N/A\n\nTime and effort spent mastering the culinary arts has paid off. You gain the following benefits:\n\nIncrease your Constitution or Wisdom score by 1, to a maximum of 20.\n\nYou gain proficiency with cook’s utensils if you don’t already have it.\n\nAs part of a short rest, you can cook special food, provided you have ingredients and cook's utensils on hand. You can prepare enough of this food for a number of creatures equal to 4 + your proficiency bonus. At the end of the short rest, any creature who eats the food and spends one or more Hit Dice to regain hit points regains an extra 1d8 hit points.\n\nWith one hour of work or when you finish a long rest, you can cook a number of treats equal to your proficiency bonus. These special treats last 8 hours after being made. A creature can use a bonus action to eat one of those treats to gain temporary hit points equal to your proficiency bonus."
+    },
+    {
+      "name": "Elemental Adept",
+      "vietnameseName": "Tinh Thông Nguyên Tố",
+      "prerequisite": "Có đòn tấn công gây sát thương nguyên tố",
+      "prerequisiteEn": "Prerequisites: An elemental damage attack",
+      "character": "Jogo (Hỏa Diễm), Uraume (Băng Sương)",
+      "description": "Chọn một loại sát thương: Axit, Băng (Cold), Lửa (Fire), Sét (Lightning) hoặc Chấn Động (Thunder):\n\n• Các thuật thức/phép thuật của bạn bỏ qua tính Kháng (Resistance) với loại sát thương đã chọn.\n• Khi tung xúc xắc sát thương cho thuật thức gây loại sát thương đó, bạn có thể coi mọi mặt 1 như là mặt 2.\n• Có thể chọn feat này nhiều lần với các loại nguyên tố khác nhau.",
+      "descriptionEn": "Elemental Adept\n\nPrerequisites: An elemental damage attack\n\nWhen you gain this feat, choose one of the following damage types: acid, cold, fire, lightning, or thunder.\n\nSpells you cast ignore resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.\n\nYou can select this feat multiple times. Each time you do so, you must choose a different damage type."
+    },
+    {
+      "name": "Gunner",
+      "vietnameseName": "Xạ Thủ Súng Ống",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Mai Zen'in, Toji Fushiguro",
+      "description": "Đôi tay nhanh nhẹn và mắt ngắm chuẩn xác khi sử dụng súng cầm tay:\n\n• Tăng điểm Dexterity thêm 1 (tối đa 20).\n• Thuần thục với Súng Cầm Tay (Firearms).\n• Bỏ qua thuộc tính Nạp Đạn (Loading) của súng.\n• Đứng trong phạm vi 5 ft của kẻ thù không áp đặt Disadvantage lên các đòn bắn tầm xa của bạn.",
+      "descriptionEn": "Gunner\n\nPrerequisites: N/A\n\nYou have a quick hand and keen eye when employing firearms, granting you the following benefits:\n\nIncrease your Dexterity score by 1, to a maximum of 20.\n\nYou gain proficiency with firearms (see “Firearms” in the Dungeon Master’s Guide).\n\nYou ignore the loading property of firearms.\n\nBeing within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls."
+    },
+    {
+      "name": "Healer",
+      "vietnameseName": "Y Sư Chiến Trường",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Shoko Ieiri",
+      "description": "Bác sĩ quân y lành nghề cấp cứu và duy trì sức chiến đấu cho đồng minh:\n\n• Khi dùng Bộ Cứu Thương (Healer's kit) ổn định sinh vật đang hấp hối, sinh vật đó hồi phục ngay 1 HP.\n• Dùng một Action tiêu hao 1 lần sử dụng của Healer's kit để chữa thương cho một sinh vật: Hồi phục 1d6 + 4 HP, cộng thêm lượng HP bằng số lượng Hit Die tối đa của sinh vật đó (mỗi sinh vật chỉ nhận được hiệu ứng hồi máu này một lần cho đến kỳ Short Rest hoặc Long Rest kế tiếp).",
+      "descriptionEn": "Healer\n\nPrerequisites: N/A\n\nYou are an able physician, allowing you to mend wounds quickly and get your allies back in the fight. You gain the following benefits:\n\nWhen you use a healer's kit to stabilize a dying creature, that creature also regains 1 hit point.\n\nAs an action. you can spend one use of a healer's kit to tend to a creature and restore 1d6 + 4 hit points to it, plus additional hit points equal to the creature's maximum number of Hit Dice. The creature can't regain hit points from this feat again until it finishes a short or long rest."
+    },
+    {
+      "name": "Inspiring Leader",
+      "vietnameseName": "Thủ Lĩnh Truyền Cảm Hứng",
+      "prerequisite": "Charisma từ 13 trở lên",
+      "prerequisiteEn": "Prerequisites: 13+ Charisma",
+      "character": "Satoru Gojo, Yuta Okkotsu",
+      "description": "Bạn có thể dành 10 phút hiệu triệu và khích lệ tinh thần đồng đội trước trận chiến cam go. Chọn tối đa 6 sinh vật đồng minh (có thể bao gồm bản thân) trong phạm vi 30 ft có thể nhìn thấy, nghe và hiểu lời bạn: Mỗi sinh vật nhận được lượng Máu Tạm Thời (Temporary HP) bằng Cấp độ của bạn + CHA modifier (mỗi sinh vật nhận hiệu ứng này một lần mỗi kỳ Short Rest hoặc Long Rest).",
+      "descriptionEn": "Inspiring Leader\n\nPrerequisites: 13+ Charisma\n\nYou can spend 10 minutes inspiring your companions, shoring up their resolve to fight. When you do so, choose up to six friendly creatures (which can include yourself) within 30 feet of you who can see or hear you and who can understand you. Each creature can gain temporary hit points equal to your level + your Charisma modifier. A creature can't gain temporary hit points from this feat again until it has finished a short or long rest."
+    },
+    {
+      "name": "Keen Mind",
+      "vietnameseName": "Trí Não Mẫn Tiệp",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Kenjaku, Kento Nanami",
+      "description": "Tâm trí nhạy bén ghi nhớ phương hướng, thời gian và chi tiết với độ chính xác tuyệt đối:\n\n• Tăng điểm Intelligence thêm 1 (tối đa 20).\n• Bạn luôn biết chính xác hướng Bắc ở đâu.\n• Bạn luôn biết chính xác còn bao nhiêu giờ nữa trước khi mặt trời mọc hoặc lặn.\n• Bạn có thể nhớ lại chuẩn xác bất kỳ điều gì bạn đã nhìn thấy hoặc nghe thấy trong vòng một tháng qua.",
+      "descriptionEn": "Keen Mind\n\nPrerequisites: N/A\n\nYou have a mind that can track time, direction, and detail with uncanny precision. You gain the following benefits.\n\nIncrease your Intelligence score by 1, to a maximum of 20.\n\nYou always know which way is north.\n\nYou always know the number of hours left before the next sunrise or sunset.\n\nYou can accurately recall anything you have seen or heard within the past month."
+    },
+    {
+      "name": "Linguist",
+      "vietnameseName": "Nhà Ngôn Ngữ Học",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Kenjaku, Tengen",
+      "description": "Nghiên cứu sâu rộng về cổ ngữ và mật mã:\n\n• Tăng điểm Intelligence thêm 1 (tối đa 20).\n• Học thêm ba ngôn ngữ tùy chọn.\n• Bạn có thể tạo ra các hệ thống chữ mã hóa văn bản phức tạp: Kẻ khác không thể giải mã trừ khi bạn dạy họ, hoặc họ phải thắng kiểm tra INT với DC bằng 8 + Điểm Intelligence + PB.",
+      "descriptionEn": "Linguist\n\nPrerequisites: N/A\n\nYou have studied languages and codes, gaining the following benefits:\n\nIncrease your Intelligence score by 1, to a maximum of 20.\n\nYou learn three languages of your choice.\n\nYou can ably create written ciphers. Others can't decipher a code you create unless you teach them, they succeed on an Intelligence check (DC equal to your Intelligence score + your proficiency bonus), or they use magic to decipher it."
+    },
+    {
+      "name": "Mounted Combatant",
+      "vietnameseName": "Kỵ Binh Chiến Trường",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Megumi Fushiguro (Cưỡi thức thần Ngọc Khuyển / Thoái Thố)",
+      "description": "Kỹ nghệ tác chiến trên lưng thú cưỡi hoặc Thức thần khổng lồ:\n\n• Bạn nhận Advantage cho các đòn tấn công cận chiến nhắm vào bất kỳ sinh vật không cưỡi thú nào có kích thước nhỏ hơn thú cưỡi của bạn.\n• Bạn có thể cưỡng ép một đòn tấn công nhắm vào thú cưỡi chuyển hướng nhắm vào bản thân bạn.\n• Nếu thú cưỡi phải chịu hiệu ứng cho phép tung DEX Save để nhận nửa sát thương, nó không phải chịu sát thương nào nếu thành công, và chỉ chịu nửa sát thương nếu thất bại.",
+      "descriptionEn": "Mounted Combatant\n\nPrerequisites: N/A\n\nYou are a dangerous foe to face while mounted. While you are mounted and aren't incapacitated, you gain the following benefits:\n\nYou have advantage on melee attack rolls against any unmounted creature that is smaller than your mount.\n\nYou can force an attack targeted at your mount to target you instead.\n\nIf your mount is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+    },
+    {
+      "name": "Observer",
+      "vietnameseName": "Quan Sát Nhạy Bén",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Satoru Gojo (Lục Nhãn), Kento Nanami",
+      "description": "Khả năng quan sát chi tiết môi trường xung quanh cực kỳ tinh vi:\n\n• Tăng điểm Intelligence hoặc Wisdom thêm 1 (tối đa 20).\n• Đọc khẩu hình miệng: Nếu nhìn thấy miệng của một sinh vật đang nói ngôn ngữ bạn hiểu, bạn có thể giải mã lời nói của nó qua khẩu hình miệng.\n• Nhận +5 bonus vào điểm Nhận Thức Thụ Động (Passive Perception) và Điều Tra Thụ Động (Passive Investigation).",
+      "descriptionEn": "Observer\n\nPrerequisites: N/A\n\nQuick to notice details of your environment, you gain the following benefits:\n\nIncrease your Intelligence or Wisdom score by 1, to a maximum of 20.\n\nIf you can see a creature's mouth while it is speaking a language you understand, you can interpret what it's saying by reading its lips.\n\nYou have a +5 bonus to your passive Wisdom (Perception) and passive Intelligence (Investigation) scores."
+    },
+    {
+      "name": "Poisoner",
+      "vietnameseName": "Độc Dược Sư",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Choso, Eso, Kechizu (Huyết Độc)",
+      "description": "Bậc thầy điều chế và phóng xuất độc chất kịch độc:\n\n• Khi sử dụng độc, bạn bỏ qua tính Kháng (Resistance) với sát thương Poison.\n• Bạn có thể tẩm độc vào vũ khí bằng một Bonus Action thay vì một Action.\n• Thuần thục Bộ Điều Chế Độc (Poisoner's kit). Dành 1 giờ làm việc và 50 gp nguyên liệu để chế tạo số liều độc bằng PB. Khi trúng đòn từ vũ khí tẩm độc, mục tiêu phải thực hiện CON Save DC 14; nếu thất bại, chịu 2d8 sát thương Poison và bị trạng thái Nhiễm Độc (Poisoned) cho đến hết lượt kế tiếp của bạn.",
+      "descriptionEn": "Poisoner\n\nPrerequisites: N/A\n\nYou can prepare and deliver deadly poisons, gaining the following benefits:\n\nWhen you use poison, you ignore resistance to poison damage.\n\nYou can coat a weapon in poison as a bonus action, instead of an action.\n\nYou gain proficiency with the poisoner's kit if you don't already have it. With one hour of work using a poisoner's kit and expending 50 gp worth of materials, you can create a number of doses of potent poison equal to your proficiency bonus. Once applied to a weapon or piece of ammunition, the poison retains its potency for 1 minute or until you hit with the weapon or ammunition. When a creature takes damage from the coated weapon or ammunition, that creature must succeed on a DC 14 Constitution saving throw or take 2d8 poison damage and become poisoned until the end of your next turn."
+    },
+    {
+      "name": "Sharpshooter",
+      "vietnameseName": "Thiện Xạ Xuyên Phá",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Mai Zen'in, Toji Fushiguro",
+      "description": "Làm chủ các loại vũ khí tầm xa và thực hiện những phát bắn chuẩn xác đến khó tin:\n\n• Tấn công ở tầm xa tối đa (Long range) không áp đặt Disadvantage lên các đòn đánh tầm xa của bạn.\n• Đòn đánh vũ khí tầm xa bỏ qua Half Cover và Three-Quarters Cover.\n• Trước khi tung đòn tấn công bằng vũ khí tầm xa thuần thục, bạn có thể chọn nhận -5 phạt vào đòn tấn công. Nếu đòn bắn trúng, bạn cộng thêm +10 vào sát thương đòn đánh.",
+      "descriptionEn": "Sharpshooter\n\nPrerequisites: N/A\n\nYou have mastered ranged weapons and can make shots that others find impossible. You gain the following benefits:\n\nAttacking at long range doesn't impose disadvantage on your ranged weapon attack rolls.\n\nYour ranged weapon attacks ignore half and three-quarters cover.\n\nBefore you make an attack with a ranged weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If that attack hits, you add +10 to the attack's damage."
+    },
+    {
+      "name": "Sorcerer Killer",
+      "vietnameseName": "Sát Thủ Chú Thuật Sư",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Toji Fushiguro (Chuyên gia săn giết Chú thuật sư)",
+      "description": "Bạn đã rèn luyện các kỹ thuật cận chiến chuyên dụng để săn đuổi và tiêu diệt các Chú thuật sư:\n\n• Khi một sinh vật trong phạm vi 10 ft của bạn sử dụng Chú Lực (Cursed Energy), bạn có thể dùng một Reaction để tung một đòn tấn công vũ khí cận chiến nhắm vào sinh vật đó nếu nó ở trong tầm với.\n• Bạn nhận Advantage cho các lần tung Saving Throw chống lại các thuật thức (cursed techniques) do những sinh vật trong phạm vi 15 ft của bạn thi triển.",
+      "descriptionEn": "Sorcerer Killer\n\nPrerequisites: N/A\n\nYou have practiced techniques in melee combat against sorcerers, gaining the following benefits:\n\nWhen a creature within 10 feet of you uses Cursed Energy, you can use your reaction to make a melee weapon attack against that creature if they are within range.\n\nYou have advantage on saving throws against cursed techniques made by creatures within 15 feet of you."
+    },
+    {
+      "name": "Sentinel",
+      "vietnameseName": "Cận Vệ Canh Gác",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Atsuya Kusakabe, Yuji Itadori",
+      "description": "Bạn làm chủ kỹ thuật trừng phạt mọi sơ hở phòng ngự của kẻ thù:\n\n• Khi đánh trúng một sinh vật bằng Đòn Tấn Công Cơ Hội (Opportunity Attack), tốc độ di chuyển của sinh vật đó giảm về 0 trong phần còn lại của lượt.\n• Sinh vật đối phương vẫn kích hoạt Đòn Tấn Công Cơ Hội từ bạn ngay cả khi chúng thực hiện hành động Rút Bắt Buộc (Disengage) trước khi rời khỏi tầm với của bạn.\n• Khi một sinh vật trong phạm vi 5 ft của bạn tung đòn tấn công nhắm vào một mục tiêu khác không phải là bạn, bạn có thể dùng Reaction tung một đòn tấn công vũ khí cận chiến nhắm vào kẻ tấn công đó.",
+      "descriptionEn": "Sentinel\n\nPrerequisites: N/A\n\nYou have mastered techniques to take advantage of every drop in any enemy's guard, gaining the following benefits.\n\nWhen you hit a creature with an opportunity attack, the creature's speed becomes 0 for the rest of the turn.\n\nCreatures provoke opportunity attacks from you even if they take the Disengage action before leaving your reach.\n\nWhen a creature within 5 feet of you makes an attack against a target other than you (and that target doesn't have this feat), you can use your reaction to make a melee weapon attack against the attacking creature."
+    },
+    {
+      "name": "Skill Expert",
+      "vietnameseName": "Chuyên Gia Kỹ Năng",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Kento Nanami, Mei Mei",
+      "description": "Bạn tôi luyện chuyên sâu một bộ kỹ năng độc nhất:\n\n• Tăng một chỉ số thuộc tính tùy chọn thêm 1 (tối đa 20).\n• Bạn nhận độ thuần thục với một kỹ năng tùy chọn.\n• Chọn một kỹ năng bạn đã thuần thục: Bạn nhận Chuyên Gia (Expertise) cho kỹ năng đó (gấp đôi Proficiency Bonus cho mọi lần kiểm tra kỹ năng đó).",
+      "descriptionEn": "Skill Expert\n\nPrerequisites: N/A\n\nYou have honed your proficiency with particular skills, granting you  the following benefits:\n\nIncrease one ability score of your choice by 1 (maximum of 20).\n\nYou gain proficiency in one skill of your choice.\n\nChoose one skill in which you have proficiency. You gain expertise with that skill, which means your proficiency bonus is doubled for any ability check you make with it. The skill you choose must be one that isn't already benefiting from a feature, such as Expertise, that doubles your proficiency bonus."
+    },
+    {
+      "name": "Skilled",
+      "vietnameseName": "Đa Tài Đa Nghệ",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Atsuya Kusakabe, Mei Mei",
+      "description": "Bạn nhận độ thuần thục trong bất kỳ sự kết hợp nào của 3 kỹ năng hoặc dụng cụ nghề nghiệp (Skills / Tools) tùy chọn.",
+      "descriptionEn": "Skilled\n\nPrerequisites: N/A\n\nYou gain proficiency in any combination of three skills or tools."
+    },
+    {
+      "name": "Skulker",
+      "vietnameseName": "Ẩn Nấp Bóng Đêm",
+      "prerequisite": "Dexterity từ 13 trở lên",
+      "prerequisiteEn": "Prerequisites: 13+ Dex",
+      "character": "Toji Fushiguro, Maki Zen'in",
+      "description": "Bậc thầy lướt đi trong bóng tối và ám sát bất thần:\n\n• Bạn có thể cố gắng ẩn nấp (Hide) ngay cả khi chỉ bị che khuất một phần (Lightly obscured) khỏi tầm nhìn của kẻ thù.\n• Khi đang ẩn nấp và bắn trượt một đòn tấn công tầm xa, phát bắn trượt đó không để lộ vị trí ẩn nấp của bạn.\n• Ánh sáng lờ mờ (Dim light) không áp đặt Disadvantage lên các lần kiểm tra WIS (Perception) dựa vào thị giác của bạn.",
+      "descriptionEn": "Skulker\n\nPrerequisites: 13+ Dex\n\nYou are an expert at slinking through shadows. You gain the following benefits:\n\nYou can try to hide when you are lightly obscured from the creature from which you are hiding.\n\nWhen you are hidden from a creature and miss it with a ranged weapon attack, making the attack doesn't reveal your position.\n\nDim light doesn't impose disadvantage on your Wisdom (Perception) checks relying on sight."
+    },
+    {
+      "name": "Tool Maker",
+      "vietnameseName": "Thợ Chế Tác Chú Cụ",
+      "prerequisite": "Điểm Chú Lực (CE) từ 16 trở lên, thuần thục kỹ năng Arcana",
+      "prerequisiteEn": "Prerequisites: 16+ Cursed Energy score, Proficiency in Arcana",
+      "character": "Juzo Ogami, Hiromi Higuruma",
+      "description": "Bạn sở hữu khả năng rèn đúc và chế tác Chú Cụ (Cursed Tools). Thời gian chế tác phụ thuộc vào cấp bậc của chú cụ và cấp độ nhân vật của bạn, mỗi ngày có thể dành 8 giờ làm việc. Sau khi chế tác xong một chú cụ, bạn phải nghỉ thời gian tương đương trước khi bắt tay làm chú cụ tiếp theo (DM quyết định chi phí nguyên liệu):\n\n• Cấp 1–4: Cấp 4 (Common) — Thời gian: 72 giờ làm việc\n• Cấp 5–8: Cấp 3 (Uncommon) — Thời gian: 216 giờ làm việc\n• Cấp 9–12: Cấp 2 (Rare) — Thời gian: 648 giờ làm việc\n• Cấp 13–16: Cấp 1 (Very Rare) — Thời gian: 1.944 giờ làm việc",
+      "descriptionEn": "Tool Maker\n\nPrerequisites: 16+ Cursed Energy score, Proficiency in Arcana\n\nYou have the unique ability to create cursed tools. The time it takes to make a cursed tool depends on the rarity of the item, and the rarity of item you can make is dependent on your level and you can spend 8 hours per day working on a cursed tool. After creating a cursed tool, you must wait an amount of time equal to its crafting time before working on another cursed tool. The GM decides the cost of any materials.\n\nLevel 1-4: Fourth Grade (Common) Time: 72 hoursLevel 5-8: Third Grade (Uncommon)\n\nTime: 216 hoursLevel 9-12: Second Grade (Rare)Time: 648 hours\n\nLevel 13-16: First Grade (Very Rare)\n\nTime: 1944 hours"
+    },
+    {
+      "name": "Weapon Expert",
+      "vietnameseName": "Tinh Thông Binh Khí",
+      "prerequisite": "Không có điều kiện tiên quyết",
+      "prerequisiteEn": "Prerequisites: N/A",
+      "character": "Maki Zen'in, Toji Fushiguro, Yuta Okkotsu",
+      "description": "Bạn đã khổ luyện sử dụng thành thạo nhiều chủng loại binh khí khác nhau:\n\n• Tăng điểm Strength hoặc Dexterity thêm 1 (tối đa 20).\n• Bạn nhận độ thuần thục với 4 loại vũ khí tùy chọn (mỗi loại phải là Vũ khí Đơn giản hoặc Vũ khí Quân dụng).",
+      "descriptionEn": "Weapon Expert\n\nPrerequisites: N/A\n\nYou have practiced extensively with a variety of weapons, gaining the following benefits:\n\nIncrease your Strength or Dexterity score by 1, to a maximum of 20.\n\nYou gain proficiency with four weapons of your choice. Each one must be a simple or a martial weapon."
+    }
+  ],
+  "multiclassing": {
+    "title": "Quy Tắc Đa Lớp Nhân Vật (Multiclassing Rules)",
+    "description": "Đa lớp nhân vật cho phép bạn phân bổ cấp độ vào nhiều Lớp nhân vật khác nhau (ví dụ: Warrior 3 / Scout 2), kết hợp các thế mạnh và kỹ năng để hiện thực hóa phong cách chiến đấu độc đáo.",
+    "prerequisites": [
+      {
+        "class": "Warrior",
+        "stat": "Strength 13",
+        "role": "Vũ trang & Cận chiến"
+      },
+      {
+        "class": "Scout",
+        "stat": "Dexterity 13",
+        "role": "Tốc độ & Ám toán"
+      },
+      {
+        "class": "Juggernaut",
+        "stat": "Constitution 13",
+        "role": "Thể lực & Chống chịu"
+      },
+      {
+        "class": "Strategist",
+        "stat": "Intelligence 13",
+        "role": "Não bộ & Sáng tạo"
+      },
+      {
+        "class": "Support Specialist",
+        "stat": "Wisdom 13",
+        "role": "Trị liệu & Yểm trợ"
+      },
+      {
+        "class": "Shikigami User",
+        "stat": "Charisma 13",
+        "role": "Triệu hồi & Tương tác"
+      },
+      {
+        "class": "Heavenly Restriction",
+        "stat": "Không thể Đa lớp (0 Chú lực)",
+        "role": "Thiên Dữ Chú Phược"
+      }
+    ],
+    "rules": [
+      {
+        "title": "Sinh Lực & Xúc Xắc Máu (HP & Hit Dice)",
+        "desc": "Máu tối đa ở Cấp 1 chỉ nhận từ Class đầu tiên. Khi lên cấp ở Class mới, tung xúc xắc máu của Class đó (hoặc lấy trung bình) + CON modifier. Các Hit Dice từ các Class cộng dồn vào quỹ chung."
+      },
+      {
+        "title": "Thuật Thức Bẩm Sinh (Innate Technique)",
+        "desc": "Bạn chỉ nhận được một Thuật thức bẩm sinh duy nhất (trừ khi dùng Thao Tác Thể Xác). Cấp độ tiến trình của Thuật thức chỉ tính theo Lớp nhân vật cao nhất của bạn."
+      },
+      {
+        "title": "Điểm Chú Lực (Cursed Energy Pool)",
+        "desc": "Lượng Chú Lực (CE) tối đa được tính dựa trên công thức Chú Lực của Lớp nhân vật có cấp độ cao nhất, nhân với tổng cấp độ nhân vật."
+      },
+      {
+        "title": "Đòn Đánh Thêm (Extra Attack)",
+        "desc": "Nếu nhận tính năng Extra Attack từ nhiều Class khác nhau, chúng không cộng dồn. Bạn không thể tấn công quá 2 lần trong 1 Attack action trừ khi có quy định riêng."
+      },
+      {
+        "title": "Phòng Thủ Không Giáp (Unarmored Defense)",
+        "desc": "Nếu bạn đã có Unarmored Defense từ một Class (như Juggernaut hoặc Scout), bạn không thể nhận lại tính năng này từ Class khác."
+      }
+    ]
+  }
+}

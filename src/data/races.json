@@ -1,0 +1,352 @@
+[
+  {
+    "id": "human-races",
+    "name": "Human Races",
+    "vietnameseName": "Nhân Loại & Chú Thuật Gia",
+    "character": "Yuji Itadori, Yuta Okkotsu, Maki Zen'in",
+    "images": [
+      "image6.png",
+      "image7.png",
+      "image8.png"
+    ],
+    "description": "Con người trong thế giới Chú Thuật vô cùng đa dạng về hình thái, tiềm năng và xuất thân: từ những người bình thường không thể nhìn thấy Chú linh, những truyền nhân xuất thân từ các ngự tam gia Chú thuật lâu đời, cho đến những cá thể dị biệt sở hữu thể chất quái vật vượt xa ranh giới nhân loại.",
+    "baseTraits": [
+      "Tăng chỉ số căn bản (ASI): +2 vào 1 chỉ số tự chọn và +1 vào các chỉ số khác (nếu không chọn phân tộc).",
+      "Tuổi thọ: Đạt độ tuổi trưởng thành ở tuổi thiếu niên, sống thọ khoảng 1 thế kỷ.",
+      "Tính cách (Alignment): Đa dạng, không cố định theo quy chuẩn nào.",
+      "Kích cỡ: Medium (cao khoảng 5-6 feet). Tốc độ di chuyển cơ bản: 30 feet."
+    ],
+    "baseTraitsEn": [
+      "Ability Score Increase: One ability score of your choice increases by 2 and other ability scores increase by 1. Choosing different Human races replaces this ASI.",
+      "Age: Humans reach adulthood in their teens and live for around a century.",
+      "Alignment: There is no clear alignment that is consistent among all humans. Just about any alignment can be justified.",
+      "Size: Humans in the Jujutsu Kaisen world are typically 5-6 feet tall. Some can rest far outside this range, but your size will count as medium.",
+      "Speed: Your base walking speed is 30 feet."
+    ],
+    "subraces": [
+      {
+        "id": "human",
+        "name": "Human",
+        "vietnameseName": "Nhân Loại Bình Thường",
+        "desc": "Người bình thường trong xã hội, tuy không sở hữu thiên phú Chú thuật gia tộc nhưng có tiềm năng phát triển toàn diện và linh hoạt trong mọi hoàn cảnh.",
+        "asi": "+2 vào 1 chỉ số tự chọn, +1 vào tất cả các chỉ số còn lại",
+        "speed": "30 ft",
+        "features": [
+          {
+            "name": "Standard Traits",
+            "vietnameseName": "Đặc Tính Tiêu Chuẩn",
+            "desc": "Nhận toàn bộ đặc tính căn bản của Nhân loại: +2 vào 1 chỉ số tự chọn, +1 vào các chỉ số khác, kích cỡ Medium và tốc độ 30 ft."
+          }
+        ],
+        "descriptionEn": "While many humans vary in shape and size, your human character will have these traits.\n\nAbility Score Increase. One ability score of your choice increases by 2 and other ability scores increase by 1. Choosing different Human races replaces this ASI.\nAge. Humans reach adulthood in their teens and live for around a century.\nAlignment. There is no clear alignment that is consistent among all humans. Just about any alignment can be justified.\nSize. Humans in the Jujutsu Kaisen world are typically 5-6 feet tall. Some can rest far outside this range, but your size will count as medium.\nSpeed. Your base walking speed is 30 feet."
+      },
+      {
+        "id": "jujutsu-sorcerer",
+        "name": "Jujutsu Sorcerer",
+        "vietnameseName": "Chú Thuật Sư Gia Tộc",
+        "desc": "Hậu duệ của các thế gia Chú thuật hoặc người được thức tỉnh và huấn luyện bài bản từ khi còn rất trẻ, nắm vững kỹ năng sử dụng vũ khí và thủ thuật Chú lực.",
+        "asi": "+2 vào 1 chỉ số tự chọn, +1 vào 1 chỉ số khác",
+        "speed": "30 ft",
+        "features": [
+          {
+            "name": "Skills",
+            "vietnameseName": "Thuần Thục Vũ Khí",
+            "desc": "Bạn nhận độ thuần thục với vũ khí quân dụng (Martial weapons)."
+          },
+          {
+            "name": "Trained Cursed Energy",
+            "vietnameseName": "Chú Lực Khổ Luyện",
+            "desc": "Được trui rèn Chú thuật từ nhỏ, bạn nhận thêm 1 Feat Chú Lực (Cursed Energy feat) tự chọn."
+          }
+        ],
+        "descriptionEn": "You are part of a family of sorcerers or have been involved from a young age, you gain the following:\n\nAbility Score Increase. One ability score of your choice increases by 2 and another by 1.\nSkills. You gain proficiency in martial weapons.\nTrained Cursed Energy. You gain a Cursed Energy feat."
+      },
+      {
+        "id": "superhuman",
+        "name": "Superhuman",
+        "vietnameseName": "Thể Chất Siêu Phàm",
+        "desc": "Trường hợp cực hiếm hoi mang thể lực và phản xạ quái vật bẩm sinh (như Itadori Yuji), có thể nhảy qua tầng lầu, ném thủng tường và chịu đòn phi thường mà không cần vận dụng Chú lực.",
+        "asi": "+2 vào STR, DEX hoặc CON; và +1 vào các chỉ số còn lại",
+        "speed": "35 ft",
+        "features": [
+          {
+            "name": "Natural Athlete",
+            "vietnameseName": "Vận Động Viên Thiên Bẩm",
+            "desc": "Thuần thục kỹ năng Athletics. Nếu đã thuần thục kỹ năng này từ trước, nhận Expertise (nhân đôi Proficiency Bonus khi gieo kiểm tra)."
+          },
+          {
+            "name": "Record Breaker",
+            "vietnameseName": "Phá Vỡ Kỷ Lục",
+            "desc": "Khoảng cách nhảy xa và nhảy cao của bạn được nhân đôi."
+          },
+          {
+            "name": "Uncanny Endurance",
+            "vietnameseName": "Sức Bền Phi Thường",
+            "desc": "Bạn có thể dồn tập trung để gạt phăng chấn thương. Khi nhận sát thương, bạn có thể dùng Reaction gieo 1d12 + CON modifier và giảm lượng sát thương nhận vào bằng tổng số đó. Hồi lại sau khi hoàn thành Short Rest hoặc Long Rest."
+          },
+          {
+            "name": "Powerful Build",
+            "vietnameseName": "Vóc Dáng Lực Lưỡng",
+            "desc": "Được tính như lớn hơn một cấp kích cỡ khi xác định sức tải trọng lượng cũng như khối lượng bạn có thể đẩy, kéo hoặc nâng."
+          }
+        ],
+        "descriptionEn": "Very rarely, some humans may be astonishingly stronger than most others in the world, sometimes vastly stronger than the average human. If your human character happens to fall under this category, you can choose to replace the standard Human Ability Score Increase with these traits instead:\n\nAbility Score Increase. You increase either your Strength, Dexterity, or Constitution score by 2 and the others by 1.\nNatural Athlete. You have proficiency in the Athletics skill, if you already have proficiency, you instead gain Expertise.\nRecord Breaker. Your jumping distance is doubled.\nUncanny Endurance. You can focus on occasionally shrugging off injury. When you take damage, you can use your reaction to roll a d12. Add your Constitution modifier to the number rolled, and reduce the damage by that total. After you use this trait, you can’t use it again until you finish a short or long rest.\nPowerful Build. You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.\nSpeed. Your movement speed is 35 feet."
+      }
+    ]
+  },
+  {
+    "id": "cursed-vessel",
+    "name": "Cursed Vessel",
+    "vietnameseName": "Vật Chứa Chú Vật Tái Sinh",
+    "character": "Ryomen Sukuna, Choso, Hajime Kashimo",
+    "images": [
+      "image9.png",
+      "image10.png",
+      "image11.png"
+    ],
+    "description": "Những thực thể tà ác hoặc Chú thuật sư cổ đại đã biến linh hồn thành Chú vật đặc cấp bất hoại, nay thông qua giao ước hoặc tai nạn mà đoạt xá một thể xác người sống để tái sinh.",
+    "baseTraits": [
+      "Tuổi thọ: Tuổi thọ phụ thuộc hoàn toàn vào thể xác mà bạn chiếm giữ.",
+      "Khuynh hướng (Alignment): Hầu như luôn mang tính Chaotic, không màng đến xung quanh và khao khát gieo rắc hủy diệt.",
+      "Kích cỡ & Tốc độ: Kích cỡ và tốc độ di chuyển phụ thuộc vào chủng tộc của thể xác bị đoạt xá.",
+      "This Body Is Mine: Bạn có Advantage trong các Saving Throw chống lại các hiệu ứng biến đổi hình dạng.",
+      "Ngôn ngữ: Nói, đọc và viết tiếng Common và 1 ngôn ngữ tự chọn."
+    ],
+    "baseTraitsEn": [
+      "Age: Your lifespan depends on the body you have possessed.",
+      "Alignment: Cursed vessels are almost always chaotic people, not caring about what happens to others around them and wanting to cause destruction.",
+      "Size: Your size depends on the race you have possessed.",
+      "Speed: Your base walking speed depends on the race you have possessed.",
+      "This Body Is Mine: You have advantage on saving throws against effects that would alter or change your form.",
+      "Languages: You can speak, read, and write Common and one other language of your choice."
+    ],
+    "subraces": [
+      {
+        "id": "reincarnated",
+        "name": "Reincarnated",
+        "vietnameseName": "Chú Thuật Sư Chuyển Sinh",
+        "desc": "Chú thuật sư từ các kỷ nguyên quá khứ (như thời Heian hoàng kim), bước vào kiếp sống thứ hai sau khi thức tỉnh từ Chú vật phong ấn, tái hiện lại đỉnh cao thực lực thời hoàng kim.",
+        "asi": "+2 vào 1 chỉ số tự chọn VÀ +2 vào 1 chỉ số khác tự chọn (+2/+2)",
+        "speed": "Theo vật chứa",
+        "features": [
+          {
+            "name": "Life Experience",
+            "vietnameseName": "Kinh Nghiệm Tiền Kiếp",
+            "desc": "Đây không phải lần đầu bạn bước đi trên thế gian và kiếp trước đã tích lũy vốn tri thức sâu rộng. Bạn nhận độ thuần thục với 2 Skills tự chọn, hoặc 1 Skill và 1 Tool tự chọn."
+          },
+          {
+            "name": "Cling to Life",
+            "vietnameseName": "Chấp Niệm Sinh Tồn",
+            "desc": "Bạn đã từng trải qua cái chết một lần và kiên quyết không để nó lặp lại. Bất cứ khi nào HP bị giảm về 0 mà không chết ngay lập tức, bạn có thể chọn giữ lại 1 HP. Dùng 1 lần mỗi Long Rest."
+          }
+        ],
+        "descriptionEn": "You are a sorcerer from a past era. Now you are in your second life through some deal or accident.\n\nAbility Score Increase. You have been brought back to your peak, you can choose one ability score to increase by 2 and another ability score to increase by 2.\nLife Experience. This isn't your first shot at life and last time you learned a few things. You will gain proficiency in two skills or one skill and one tool of your choice.\nCling to Life. You have died once and refuse to let it happen again. Whenever you are reduced to 0 hit points, you can choose to instead remain at 1 hit point, once per long rest."
+      },
+      {
+        "id": "death-painting",
+        "name": "Death Painting",
+        "vietnameseName": "Cửu Tướng Đồ",
+        "desc": "Hỗn hợp thảm họa dị dạng giữa nguyền rủa và con người do ác nhân Kamo Noritoshi (Kenjaku) thí nghiệm tạo thành. Trải qua 150 năm ngâm trong huyết thanh phong ấn trước khi nuốt chửng thể xác vật chứa.",
+        "asi": "+3 vào điểm Chú Lực (Cursed Energy score, tối đa 20)",
+        "speed": "Theo vật chứa",
+        "features": [
+          {
+            "name": "Durable Body",
+            "vietnameseName": "Thể Xác Bền Bỉ",
+            "desc": "Sau khi giáng sinh vào vật chứa, nhờ những đặc tính phi tự nhiên của thể lai, thân thể bạn trở nên kiên cố hơn. Max HP tăng thêm +2 ngay lập tức, và tăng thêm +2 mỗi khi bạn lên cấp."
+          },
+          {
+            "name": "Poisonous Blood",
+            "vietnameseName": "Huyết Kịch Độc",
+            "desc": "Thừa hưởng huyết thống gia tộc Kamo qua các cuộc giải phẫu tà thuật, máu của bạn mang kịch độc chết người. Dùng Reaction khi nhận sát thương Piercing hoặc Slashing: chọn 1 sinh vật trong phạm vi 5 ft phải chịu sát thương Poison bằng PB của bạn. Nếu sinh vật đó đang bị thương hoặc có HP hiện tại thấp hơn Max HP, nó phải thực hiện một DC 10 CON Save, nếu thất bại sẽ chịu trạng thái Poisoned cho đến cuối lượt tiếp theo của nó."
+          }
+        ],
+        "descriptionEn": "A disastrous mixture of curse and man made by an evil scientist. Stuck as a fetus until fed to a host.\n\nAbility Score Increase. Your cursed object has overcome the body of your initial host, so instead of gaining the host's ability scores, you gain a +3 to your Cursed Energy score. This cannot go above 20.\nDurable Body. Once you incarnated into a vessel, due to your unnatural properties the body became more durable. Your maximum hit points increase by 2, and increase by 2 again every time you gain a level.\nPoisonous Blood. Your birth came from someone from the Kamo clan, and from experimentation, your blood became poisonous. As a reaction, when you take piercing or slashing damage, you can choose a creature within 5 feet of you to take poison damage equal to your proficiency bonus. If the creature has an injury or less than their maximum hit points, they must make a DC 10 Constitution save or be poisoned until the end of their next turn."
+      }
+    ]
+  },
+  {
+    "id": "cursed-corpses",
+    "name": "Cursed Corpses",
+    "vietnameseName": "Chú Hài Độc Lập",
+    "character": "Panda, Mechamaru",
+    "images": [
+      "image12.png",
+      "image13.png",
+      "image14.png"
+    ],
+    "description": "Những con rối vô tri được cấy ghép lõi Chú thuật mang thông tin linh hồn, trải qua quá trình tự tương tác liên tục mà sinh ra ý thức độc lập và khả năng tự sản sinh Chú lực vô tận.",
+    "baseTraits": [
+      "Tăng chỉ số căn bản (ASI): +4 vào 1 chỉ số tự chọn duy nhất (được chế tác chuyên biệt cho một công năng tối thượng).",
+      "Tuổi thọ: Về lý thuyết là bất tử nếu thường xuyên bảo trì và sửa chữa thân thể.",
+      "Khuynh hướng (Alignment): Gần như luôn mang tính Neutral, không màng thị phi và thường mong muốn tồn tại hòa bình.",
+      "Kích cỡ: Small đến Large. Tốc độ di chuyển cơ bản: 35 feet.",
+      "Unnatural (Cấu Trúc Nhân Tạo): Là construct nhân tạo, bạn không cần thở, ăn, uống hay ngủ. Tuy nhiên cần vật liệu để hàn gắn cơ thể trong các kỳ Rest.",
+      "Ngôn ngữ: Nói, đọc và viết tiếng Common."
+    ],
+    "baseTraitsEn": [
+      "Ability Score Improvement: You increase one ability score of your choice by 4, as you are purpose built for a single purpose.",
+      "Age: Your lifespan is hypothetically infinite if you repair yourself.",
+      "Alignment: Cursed Corpses are almost always neutral people, not caring about what happens to others around them and usually wanting to exist peacefully.",
+      "Size: Your size can be small to large.",
+      "Speed: Your base walking speed is 35 feet.",
+      "Unnatural: As a construct, you don’t need to breathe, drink, eat, or sleep. However you need materials to mend yourself during a rest.",
+      "Languages: You can speak, read, and write Common."
+    ],
+    "subraces": [
+      {
+        "id": "softbody",
+        "name": "Softbody",
+        "vietnameseName": "Thân Thể Mềm",
+        "desc": "Chú hài đơn giản và giống sinh vật sống hơn với cấu tạo mô mềm, thú nhồi bông hoặc mô hữu cơ tương tự thịt da (tiêu biểu như Panda), sở hữu ngoại hình đánh lừa thị giác kẻ thù.",
+        "asi": "Đã nhận +4 vào 1 chỉ số từ đặc tính gốc",
+        "speed": "35 ft",
+        "features": [
+          {
+            "name": "Tailored Appearance",
+            "vietnameseName": "Diện Mạo Tùy Biến",
+            "desc": "Bạn nhận Expertise (nhân đôi Proficiency Bonus) với một kỹ năng tự chọn trong số: Intimidation, Persuasion, hoặc Performance."
+          },
+          {
+            "name": "Surprise",
+            "vietnameseName": "Khai Mở Bất Ngờ",
+            "desc": "Bạn có thể thực hiện kiểm tra Performance để ngụy trang bản thân thành vật thể hay sinh vật mà bạn mô phỏng. Sự lộ diện bất ngờ có thể làm choáng váng kẻ thù: Một lần mỗi Long Rest khi bất ngờ để lộ chân thân, bạn có thể ép một sinh vật trong phạm vi 10 ft phải thực hiện WIS Save với DC = 10 + PB + CHA modifier; nếu thất bại, sinh vật đó bị Stunned cho đến khi bắt đầu lượt của nó."
+          }
+        ],
+        "descriptionEn": "The simpler, more life-like Cursed Corpses are soft bodies, with their life-like design having both advantages and flaws.\n\nTailored Appearance. You gain expertise in either intimidation, persuasion, or performance.\nSurprise. You can make a Performance check to disguise yourself as what you resemble. Your sudden reveal may stun an enemy. Once per long rest when you reveal yourself, you can force a creature within 10 feet to make a Wisdom saving throw: (DC 10 + your proficiency bonus + your Charisma modifier) becoming stunned until the beginning of their turn on failure."
+      },
+      {
+        "id": "hard-shell",
+        "name": "Hard Shell",
+        "vietnameseName": "Giáp Vỏ Cứng",
+        "desc": "Dạng Chú hài phức tạp và tinh vi hơn được chế tác từ đá, gỗ cứng hoặc kim loại bọc thép (tiêu biểu như Khôi Lỗi Mechamaru), sở hữu uy lực chiến đấu trực diện vô cùng đáng gờm.",
+        "asi": "Đã nhận +4 vào 1 chỉ số từ đặc tính gốc",
+        "speed": "35 ft",
+        "features": [
+          {
+            "name": "Integrated Armor",
+            "vietnameseName": "Giáp Tích Hợp",
+            "desc": "Cơ thể bạn tích hợp sẵn các tầng lớp phòng ngự kiên cố, có thể cường hóa thêm bằng giáp:\n• Bạn nhận +1 bonus vào Armor Class (AC).\n• Bạn chỉ có thể mặc loại giáp mà mình có độ thuần thục. Để mặc (don) giáp, bạn phải hòa nhập nó vào cơ thể trong 1 giờ tiếp xúc liên tục. Để cởi (doff) giáp, bạn phải dành 1 giờ để tháo gỡ. Bạn có thể nghỉ ngơi (Rest) trong suốt quá trình mặc hoặc tháo giáp này.\n• Khi bạn còn sống, không kẻ nào có thể cưỡng ép tháo bộ giáp khỏi cơ thể bạn trái với ý muốn."
+          }
+        ],
+        "descriptionEn": "The more complicated intricate form of Cursed Corpses are the hard shells. Their combat ability is not to be underestimated.\n\nIntegrated Armor. Your body has built-in defensive layers, which can be enhanced with armor.\nYou gain a +1 bonus to Armor Class.\nYou can don only armor with which you have proficiency. To don armor, you must incorporate it into your body over the course of 1 hour, during which you must remain in contact with the armor. To doff armor, you must spend 1 hour removing it. You can rest while donning or doffing armor in this way.\nWhile you live, your armor can't be removed from your body against your will."
+      }
+    ]
+  },
+  {
+    "id": "cursed-spirits",
+    "name": "Cursed Spirits",
+    "vietnameseName": "Nguyền Hồn & Chú Linh",
+    "character": "Mahito, Jogo, Hanami, Dagon, Rika Orimoto",
+    "images": [
+      "image15.png",
+      "image16.png",
+      "image17.png",
+      "image18.png",
+      "image19.png"
+    ],
+    "description": "Những thực thể tà ác kết tinh từ năng lượng tiêu cực tích tụ qua năm tháng của loài người. Chúng không có cơ thể máu thịt tự nhiên mà hoàn toàn cấu thành từ Chú lực cô đặc.",
+    "baseTraits": [
+      "Tăng chỉ số căn bản (ASI): +2 vào 1 chỉ số tự chọn và +1 vào 1 chỉ số khác.",
+      "Creature Type (Loại sinh vật): Undead (Nguyền Hồn bất tử, không chết vì tuổi già). Kích cỡ: Small hoặc Medium. Tốc độ cơ bản: 30 feet.",
+      "Khuynh hướng (Alignment): Hiếm khi giữ được lý trí; khi có nhận thức thường nghiêng hẳn về Chaotic hoặc Evil.",
+      "Spiritual Nature (Bản Chất Linh Hồn): Không cần ăn, uống, thở hay ngủ (chỉ cần bất động 4 giờ/ngày để nhận lợi ích Long Rest). Advantage trước bệnh tật và nhiễm độc, resistance với sát thương Poison. Miễn nhiễm (Immune) sát thương bludgeoning, piercing, slashing phi ma pháp. Vô hình trước người không có Chú lực.",
+      "Cursed Energy Affinity (Hồi Phục Bằng Chú Lực): Do bản chất tạo thành từ Chú lực nên không thể dùng Phản Chuyển Thuật Thức (dương khí). Bù lại có thể tự chữa lành bằng Chú lực thuần túy: Từ Cấp 5, có thể dùng Action tiêu hao Chú lực (tối đa bằng CE mod) để hồi 5 HP cho mỗi 1 CE tiêu tốn (1 lần/lượt)."
+    ],
+    "baseTraitsEn": [
+      "Ability Score Improvement: You increase one ability score of your choice by 2 and another by 1. Creature Type: You are Undead.",
+      "Age: You are cursed to live forever.",
+      "Alignment: Cursed Spirits rarely maintain any level of intelligence, but when they do, their alignment turns towards being more Chaotic or Evil.",
+      "Size: Your size can be Small or Medium.",
+      "Speed: Your base walking speed is 30 feet.",
+      "Spiritual Nature: You don’t need to eat, drink, breathe or sleep, but must remain inactive for 4 hours a day to gain the benefits of a long rest. You have advantage on saving throws against disease and being poisoned, and you have resistance to poison damage. You are immune to nonmagical bludgeoning, piercing, or slashing. You are invisible to creatures without cursed energy.",
+      "Cursed Energy Affinity: Due to your nature of being made of cursed energy, you are unable to utilize reverse cursed technique which is positive energy. Though you can still restore your body with pure cursed energy. Starting at 5th level, you can spend cursed energy up to your CE modifier to regain 5 hit points per cursed energy spent as an action once per turn."
+    ],
+    "subraces": [
+      {
+        "id": "vengeful",
+        "name": "Vengeful",
+        "vietnameseName": "Oán Linh Báo Thù",
+        "desc": "Sinh ra khi một con người mang oán hận ngút trời chết đi mà không được thanh tẩy đúng cách bằng Chú lực, biến thành Chú linh cuồng nộ đeo bám kẻ thù (như Orimoto Rika, Zenin Naoya).",
+        "asi": "Đã nhận +2/+1 từ đặc tính gốc",
+        "speed": "30 ft",
+        "features": [
+          {
+            "name": "Grudge",
+            "vietnameseName": "Chấp Niệm Oán Hận",
+            "desc": "Khi HP bị giảm về 0 mà không chết ngay lập tức, bạn có thể chọn giữ lại 1 HP. Dùng 1 lần mỗi Long Rest."
+          },
+          {
+            "name": "Curse",
+            "vietnameseName": "Khắc Cốt Nguyền Rủa",
+            "desc": "Là Chú linh sinh ra từ oán hận cụ thể, bạn mang ác cảm tột cùng với đối tượng từng làm hại mình. Khi chọn phân tộc này, hãy chọn 1 chủng tộc Humanoid mà bạn căm ghét. Bạn nhận +2 bonus vào các đòn gieo sát thương (Damage rolls) nhắm vào sinh vật thuộc chủng tộc đó."
+          }
+        ],
+        "descriptionEn": "You were once human, but when you died your powerful grudge made you into a curse.\n\nGrudge. When reduced to 0 hit points, you can choose to remain at 1 hit point. You can use this feature once per long rest.\nCurse. When you choose this subrace, choose a race that you hated. You gain a +2 bonus to damage rolls against that race."
+      },
+      {
+        "id": "imaginary",
+        "name": "Imaginary",
+        "vietnameseName": "Chú Linh Ảo Tưởng",
+        "desc": "Hiện thân sinh ra từ nỗi sợ hãi chung và hình dung tiêu cực tập thể của nhân loại về các truyền thuyết đô thị, quái quỷ dân gian hoặc thần thoại đen tối (như Tamamo-no-Mae, Kuchisake-onna).",
+        "asi": "Đã nhận +2/+1 từ đặc tính gốc",
+        "speed": "30 ft",
+        "features": [
+          {
+            "name": "Frightful Presence",
+            "vietnameseName": "Uy Áp Kinh Hoàng",
+            "desc": "Dùng một Action, ép tất cả sinh vật trong phạm vi 30 ft phải thực hiện WIS Save chống lại CE save DC của bạn. Nếu thất bại, mục tiêu bị trạng thái Frightened trong 1 phút. Sinh vật có thể lặp lại Save vào cuối mỗi lượt của nó để chấm dứt hiệu ứng. Dùng 1 lần mỗi Long Rest."
+          },
+          {
+            "name": "Fearmonger",
+            "vietnameseName": "Gieo Rắc Khiếp Đảm",
+            "desc": "Bạn nhận độ thuần thục với kỹ năng Intimidation. Đồng thời nhận +1 bonus vào các đòn tấn công (Attack rolls) và đòn sát thương (Damage rolls) nhắm vào những sinh vật đang mang trạng thái Frightened."
+          }
+        ],
+        "descriptionEn": "You are made up of humanity’s fears, formed from a shared negative image.\n\nFrightful Presence. As an action, you can force all creatures within 30 feet of you to make a Wisdom saving throw against your Cursed Energy save DC. On a failure, they are frightened of you for 1 minute. A creature can repeat the save at the end of their turn. Once you use this feature, you cannot use it again until you finish a long rest.\nFearmonger. You gain proficiency in Intimidation and have a +1 bonus to attack and damage rolls against frightened creatures."
+      },
+      {
+        "id": "disease",
+        "name": "Disease",
+        "vietnameseName": "Chú Linh Bệnh Dịch",
+        "desc": "Thai nghén từ nỗi khiếp sợ truyền kiếp của loài người trước ôn dịch, bệnh tật truyền nhiễm và sự thối rữa của xác thịt (như Đậu Mùa Nguyền Hồn).",
+        "asi": "Đã nhận +2/+1 từ đặc tính gốc",
+        "speed": "30 ft",
+        "features": [
+          {
+            "name": "Born from Plague",
+            "vietnameseName": "Sinh Từ Ôn Dịch",
+            "desc": "Bạn hoàn toàn miễn nhiễm (Immune) với bệnh tật (Disease), độc tố (Poison) và trạng thái Poisoned. Đòn đánh không vũ trang (Unarmed strike) của bạn gây thêm 1d4 poison damage khi đánh trúng."
+          },
+          {
+            "name": "Walking Sickness",
+            "vietnameseName": "Mầm Bệnh Di Động",
+            "desc": "Dùng một Action, ép tất cả sinh vật trong phạm vi 30 ft phải thực hiện CON Save chống lại CE save DC của bạn. Nếu thất bại, mục tiêu phải chịu trạng thái Poisoned trong 1 phút. Sinh vật có thể lặp lại Save vào cuối mỗi lượt của nó để chấm dứt hiệu ứng. Dùng 1 lần mỗi Long Rest."
+          }
+        ],
+        "descriptionEn": "Plague and sickness are concepts cursed by humanity, giving rise to powerful curses.\n\nBorn from Plague. You are immune to disease and poison, as well as the poisoned condition. Your unarmed strikes deal 1d4 poison damage on a hit.\nWalking Sickness. As an action, you can force all creatures within 30 feet of you to make a Constitution saving throw against your Cursed Energy save DC. On a failure, they gain the poisoned condition for 1 minute. A creature can repeat this save at the end of their turn. Once you use this feature, you cannot use it again until you complete a long rest."
+      },
+      {
+        "id": "cursed-womb",
+        "name": "Cursed Womb",
+        "vietnameseName": "Chú Thai Đang Ấp Ủ",
+        "desc": "Ấu thể Nguyền Hồn non trẻ đang trong giai đoạn ấp ủ, được bao bọc bởi lớp vỏ kiên cố và sở hữu sinh lực kiên cường phi thường chuẩn bị cho quá trình biến thái hoàn chỉnh (như ấu thể Dagon).",
+        "asi": "Đã nhận +2/+1 từ đặc tính gốc",
+        "speed": "30 ft",
+        "features": [
+          {
+            "name": "Hard Shell",
+            "vietnameseName": "Vỏ Kén Kiên Cố",
+            "desc": "Khi không mặc giáp, Armor Class (AC) của bạn bằng 14 + CON modifier."
+          },
+          {
+            "name": "Strong Constitution",
+            "vietnameseName": "Thể Trọng Vững Vàng",
+            "desc": "Max HP của bạn tăng thêm một lượng bằng đúng cấp độ hiện tại của bạn, và tiếp tục tăng thêm +1 mỗi khi bạn lên một cấp độ mới."
+          }
+        ],
+        "descriptionEn": "You are a young cursed spirit that has yet to develop.\n\nHard Shell. Your AC equals 14 + your Constitution modifier while not wearing armor.\nStrong Constitution. Your hit point maximum increases by an amount equal to your level and increases by 1 whenever you gain a level."
+      }
+    ]
+  }
+]
