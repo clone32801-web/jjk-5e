@@ -10,11 +10,13 @@ import FeatsView from './components/FeatsView';
 import RulesView from './components/RulesView';
 import ToolsView from './components/ToolsView';
 import BackgroundsView from './components/BackgroundsView';
+import CharacterCreationView from './components/CharacterCreationView';
 
 function AppContent() {
   const [activeTab, setActiveTab] = useState('techniques');
   
   // Sub-navigation states across all tabs
+  const [activeCreationStep, setActiveCreationStep] = useState('concept'); // for creation
   const [activeCategory, setActiveCategory] = useState('all'); // for techniques
   const [activeClassId, setActiveClassId] = useState('juggernaut'); // for classes
   const [activeRaceId, setActiveRaceId] = useState('human-races'); // for races
@@ -34,6 +36,7 @@ function AppContent() {
     window.scrollTo(0, 0);
   }, [
     activeTab, 
+    activeCreationStep,
     activeCategory, 
     activeClassId, 
     activeRaceId, 
@@ -59,6 +62,9 @@ function AppContent() {
   const handleSelectSearchResult = (item) => {
     if (item.tab) {
       setActiveTab(item.tab);
+      if (item.tab === 'creation' && item.step) {
+        setActiveCreationStep(item.step);
+      }
       if (item.tab === 'rules' && item.ruleSection) {
         setActiveRuleSection(item.ruleSection);
       }
@@ -78,6 +84,8 @@ function AppContent() {
       <Navbar 
         activeTab={activeTab} 
         setActiveTab={(tab) => { setActiveTab(tab); setTargetId(null); }} 
+        activeCreationStep={activeCreationStep}
+        setActiveCreationStep={setActiveCreationStep}
         activeCategory={activeCategory}
         setActiveCategory={setActiveCategory}
         activeClassId={activeClassId}
@@ -100,6 +108,16 @@ function AppContent() {
       {/* Main View Area & Footer Column */}
       <div className="flex-1 min-w-0 flex flex-col min-h-screen">
         <main className="flex-1 pb-16">
+          {activeTab === 'creation' && (
+            <CharacterCreationView 
+              activeStep={activeCreationStep}
+              setActiveStep={setActiveCreationStep}
+              onNavigateTab={(tab) => {
+                setActiveTab(tab);
+                setTargetId(null);
+              }}
+            />
+          )}
           {activeTab === 'techniques' && (
             <TechniquesView 
               selectedTechniqueId={targetId} 

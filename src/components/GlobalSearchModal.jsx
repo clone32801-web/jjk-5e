@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
-import { Search, X, Sparkles, Swords, Shield, Scroll, BookOpen, Users, ChevronRight, Compass } from 'lucide-react';
+import { Search, X, Sparkles, Swords, Shield, Scroll, BookOpen, Users, ChevronRight, Compass, UserPlus } from 'lucide-react';
 
 import techniquesData from '../data/techniques.json';
 import classesData from '../data/classes.json';
@@ -8,6 +8,7 @@ import backgroundsData from '../data/backgrounds.json';
 import equipmentData from '../data/equipment.json';
 import featsData from '../data/feats.json';
 import rulesData from '../data/rules.json';
+import characterCreationData from '../data/characterCreation.json';
 import { useTheme } from '../context/ThemeContext';
 
 export default function GlobalSearchModal({ isOpen, onClose, onSelectResult }) {
@@ -29,6 +30,35 @@ export default function GlobalSearchModal({ isOpen, onClose, onSelectResult }) {
   // Build searchable index
   const allItems = useMemo(() => {
     const list = [];
+
+    // Character Creation Guide & Steps
+    if (characterCreationData) {
+      list.push({
+        id: 'character-creation-guide',
+        title: 'Hướng Dẫn Tạo Nhân Vật (Making a Character)',
+        type: 'Tạo Nhân Vật (Ch. 1)',
+        kanji: '作成',
+        tab: 'creation',
+        icon: UserPlus,
+        badgeColor: 'bg-purple-500/15 text-purple-300 border-purple-500/30',
+        subtitle: 'Cẩm nang 9 bước & Trình tạo thử nhân vật cấp độ 1',
+        keywords: 'tao nhan vat tao char making a character character sheet standard array point buy chi so thuoc tinh builder step',
+      });
+      characterCreationData.steps?.forEach(st => {
+        list.push({
+          id: `step-${st.id}`,
+          title: `Bước ${st.step}: ${st.title}`,
+          type: 'Tạo Nhân Vật (Ch. 1)',
+          kanji: '作成',
+          tab: 'creation',
+          step: st.id,
+          icon: UserPlus,
+          badgeColor: 'bg-purple-500/15 text-purple-300 border-purple-500/30',
+          subtitle: st.subtitle,
+          keywords: `tao char buoc ${st.step} ${st.title} ${st.subtitle} ${st.description}`,
+        });
+      });
+    }
 
     // Techniques
     techniquesData.forEach(t => {

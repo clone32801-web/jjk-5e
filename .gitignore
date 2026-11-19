@@ -38,3 +38,6 @@ Thumbs.db
 # Large raw archive files (>100MB exceeds GitHub limits) & duplicate media
 jjk 5e.docx
 extractor/media/
+
+# Scratch & temporary scripts
+scratch/

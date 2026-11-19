@@ -1,0 +1,333 @@
+{
+  "id": "making-a-character",
+  "chapter": "Chapter 1",
+  "title": "Making a Character",
+  "vietnameseTitle": "Hướng Dẫn Tạo Nhân Vật",
+  "kanji": "術師作成",
+  "subtitle": "Cẩm nang 9 bước từng bước kiến tạo Chú thuật sư cấp độ 1 trong hệ thống Jujutsu Kaisen 5e",
+  "originalRulebookText": [
+    {
+      "heading": "Making a Character",
+      "paragraphs": [
+        "Big thanks to everyone who gave their support or enjoyed this book! Keep Larping!"
+      ]
+    },
+    {
+      "heading": "Setting Up a Character",
+      "paragraphs": [
+        "This is typically the first step in any tabletop RPG or D&D-styled game. Use your imagination to think up what type of character you want to be in this world. Make sure it remains mostly thematic regarding the setting, as this isn't a standard D&D campaign.",
+        "Think about what race you would like your character to be, their personality, goals, back story, specialties, career, appearance, traits, and relationships. Once you have all of these qualities decided, start following the steps below and writing everything down.",
+        "Using a \"Character Sheet\" provided by Wizards of the Coast for 5th Edition, you can track much of this. You may need to make a few modifications for certain things, like tracking your Domain Expansion."
+      ]
+    },
+    {
+      "heading": "1. Choosing Your Race",
+      "paragraphs": [
+        "Races in the Jujutsu Kaisen world are quite limited, mostly being between cursed spirits and humans. Deciding your race can be pretty important to describing your character's appearance and abilities, as well as occasionally defining their goals. Humans are easily the most common race to find when exploring the planet, Curses however are peculiar and in all shapes and sizes and limited to mostly Japan although rarely found outside. More information on these races is listed in Chapter 2."
+      ]
+    },
+    {
+      "heading": "2. Choosing Your Class",
+      "paragraphs": [
+        "Each character should specialize in a field while killing cursed spirits. A class will determine your prominent talents and skills, allowing your character to hone and grow their abilities throughout the adventure. For example, a brawler may focus mainly on fighting while a strategist can be useful in performing specific tasks outside of combat that may benefit the group, such as curtains. While having an all-around useful character is important, sometimes it doesn't hurt to have a character that tends to be extremely good at only one thing, so long as they benefit the group and feel fun to play. A well-rounded party can make the journey far more enjoyable in the long run.",
+        "Put some time into deciding what you want your character's role to be in the unit. Maybe discuss it with others in the group to see what would work best for everyone. However, make sure to choose something you will have fun with and appreciate. Once you have a general idea of what your class will be, pick from the classes listed in Chapter 3."
+      ]
+    },
+    {
+      "heading": "3. Describing Your Character",
+      "paragraphs": [
+        "First, hopefully, you've already decided on a name for your character. If not, try to think of something you like the sound of. If you can't think of anything, feel free to look up D&D name generators online. Then, start to develop their personality and appearance in your head.",
+        "After you have a concept in mind, you want to start writing and organizing these ideas onto your character sheet. Try to find what Alignment best fits them and their morals. Then, start to think up some defining Personality Traits. Once you mark those down on your character sheet, start getting into their Ideals, Bonds, and Flaws. These will provide a guideline on how you plan on roleplaying and making decisions with your character.",
+        "Now you want to decide on your character's Background. Your background will provide you with tools and knowledge gained from how you've lived your life before the start of the campaign. This will affect how those who recognize you interact with you, how you're treated by the general public, and what your occupation is or was. A DM may provide you with custom backgrounds for this adventure, but feel free to choose from the ones listed in Chapter 4."
+      ]
+    },
+    {
+      "heading": "1st level and beyond",
+      "paragraphs": [
+        "By exploring the World and fighting your way through various forces, your characters will start to develop new strategies and grow stronger over time. Each time a major advancement occurs, either due to reaching a specific number of Experience Points or reaching a Milestone in the story, you will gain a Character Level.",
+        "For example, if you start at level 1 with 0 Experience Points and gain enough experience throughout a session to make your way to Level 2, you will mark this on your character sheet and upgrade your stats accordingly during your next Long Rest. Additionally, your DM may decide to use a Milestone system by granting you a level up upon reaching a new area or island, completing an important objective, or obtaining a key item or treasure."
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "id": "concept",
+      "title": "Khái Niệm & Định Danh Nhân Vật",
+      "subtitle": "Xây dựng hình tượng, tên tuổi, xuất xứ và động lực nhập giới chú thuật",
+      "description": "Trước khi ghi những con số vào bảng nhân vật (Character Sheet), hãy mường tượng xem nhân vật của bạn là ai trong thế giới Jujutsu Kaisen đầy khốc liệt và u ám. Thế giới này không giống một chiến dịch D&D thần thoại cổ điển; cái chết luôn cận kề và Chú thuật sư là những kẻ phải học cách sống chung với những cảm xúc tiêu cực.",
+      "keyAspects": [
+        {
+          "label": "Tên gọi & Ngoại hình",
+          "desc": "Chọn tên thuần Nhật hoặc phương Tây phù hợp bối cảnh, mô tả đặc điểm nhận diện, trang phục (đồng phục Cao đẳng Tokyo/Kyoto, vest công sở, hay đồ tự do)."
+        },
+        {
+          "label": "Động lực & Lý tưởng (Ideals)",
+          "desc": "Tại sao nhân vật chiến đấu? Vì cứu giúp người khác (như Itadori), vì tiền bạc/công việc (như Nanami), vì danh dự gia tộc (như Mai/Kamo), hay tìm kiếm đối thủ mạnh (như Todo/Sukuna)?"
+        },
+        {
+          "label": "Ràng buộc & Mối quan hệ (Bonds)",
+          "desc": "Ai là người quan trọng nhất đối với nhân vật? Gia tộc Ngự Tam Gia, người thầy dẫn dắt, đồng đội cùng tổ đội, hay một người bình thường cần được bảo vệ?"
+        },
+        {
+          "label": "Khuyết điểm & Nỗi sợ (Flaws)",
+          "desc": "Tính cách tiêu cực nuôi dưỡng Chú lực: kiêu ngạo cực độ, ám ảnh cái chết, quá tự ti, hay liều lĩnh bất chấp tính mạng."
+        },
+        {
+          "label": "Khuynh hướng Đạo đức (Alignment)",
+          "desc": "Lawful Good (Quy chuẩn thiện lành), Neutral Good (Thiện tâm tự do), Chaotic Good (Phá cách vì đại nghĩa), Lawful Evil (Ác hiểm có nguyên tắc) hoặc Chaotic Evil (Nguyền hồn hỗn mang)."
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "id": "race",
+      "title": "Lựa Chọn Chủng Tộc (Chapter 2)",
+      "subtitle": "Quyết định nguồn gốc sinh học: Con người, Vật chứa hay Chú linh",
+      "description": "Trong Jujutsu Kaisen, chủng tộc định hình bản chất cơ thể, cách nhân vật cảm nhận và tương tác với Chú lực. Khác với D&D thông thường có yêu tinh hay người lùn, JJK chia thành Nhân loại và Chú linh.",
+      "raceOptions": [
+        {
+          "name": "Nhân Loại (Human Races)",
+          "sub": "Chiếm đa số tuyệt đối",
+          "benefit": "+2 vào một chỉ số hoặc +1 vào hai chỉ số, nhận Feat khởi đầu hoặc kỹ năng gia tộc. Có mắt thường không thấy Chú linh trừ khi trải qua biến cố hoặc sinh ra trong gia tộc Chú thuật."
+        },
+        {
+          "name": "Vật Chứa Chú Vật (Cursed Vessel)",
+          "sub": "Nuốt hoặc phong ấn chú vật cổ xưa",
+          "benefit": "Kháng độc và kháng hiệu ứng nguyền rủa, sức chịu đựng thể chất vượt trội, nguy cơ giằng xé linh hồn với thực thể bên trong."
+        },
+        {
+          "name": "Chú Hài Độc Lập (Cursed Corpses)",
+          "sub": "Búp bê chú thuật sống",
+          "benefit": "Cơ thể nhân tạo có lõi Chú lực (như Panda), miễn nhiễm bệnh tật, có thể biến đổi các hình thái chiến đấu khác nhau."
+        },
+        {
+          "name": "Chú Linh & Oán Linh (Cursed Spirits)",
+          "sub": "Sinh ra từ cảm xúc tiêu cực của con người",
+          "benefit": "Cơ thể hoàn toàn bằng Chú lực, có thể bay lượn/xuyên tường ở dạng mờ ảo, chỉ bị tổn thương thực sự bởi đòn đánh tẩm Chú lực."
+        }
+      ],
+      "linkTab": "races"
+    },
+    {
+      "step": 3,
+      "id": "class",
+      "title": "Lựa Chọn Lớp Nhân Vật (Chapter 3)",
+      "subtitle": "Xác định phong cách chiến đấu, vai trò đội hình và cách vận hành Chú lực",
+      "description": "Lớp nhân vật (Class) quyết định tài năng vượt trội, lượng Máu (Hit Die), lượng Chú lực (CE Pool) và các hành động chiến đấu đặc thù. Một đội Chú thuật sư cân bằng cần có người giữ tiền tuyến, người trinh sát và người triển khai Màn/Kết giới.",
+      "classOptions": [
+        {
+          "name": "Juggernaut (Đấu Sĩ Tiền Tuyến)",
+          "hitDie": "d12",
+          "role": "Đỡ đòn, áp sát tàn bạo, thể lực phi thường",
+          "stat": "STR / CON / WIS"
+        },
+        {
+          "name": "Scout (Trinh Sát Cơ Động)",
+          "hitDie": "d8",
+          "role": "Tốc độ cao, do thám, phục kích tầm xa & cận chiến",
+          "stat": "DEX / WIS"
+        },
+        {
+          "name": "Strategist (Quân Sư Điều Lực)",
+          "hitDie": "d6",
+          "role": "Bể Chú lực khổng lồ, kiểm soát chiến trường, thi triển thuật phức tạp",
+          "stat": "INT / CHA / WIS"
+        },
+        {
+          "name": "Shikigami User (Thuật Sư Thức Thần)",
+          "hitDie": "d8",
+          "role": "Triệu hồi Thức thần, đa dạng hóa chiến thuật, đánh phối hợp",
+          "stat": "WIS / CHA"
+        },
+        {
+          "name": "Support Specialist (Chuyên Gia Hỗ Trợ & Kết Giới)",
+          "hitDie": "d8",
+          "role": "Dựng Màn (Curtain), Kết giới bảo vệ, hỗ trợ đồng đội",
+          "stat": "INT / WIS"
+        },
+        {
+          "name": "Warrior (Võ Sĩ Chú Cụ)",
+          "hitDie": "d10",
+          "role": "Bậc thầy mọi loại vũ khí, tẩm Chú lực vào đòn chém chuẩn xác",
+          "stat": "STR / DEX / CON"
+        },
+        {
+          "name": "Heavenly Restriction (Thiên Dữ Chú Phược)",
+          "hitDie": "d12 / d6",
+          "role": "0 Chú lực đổi thể chất siêu phàm (Toji) hoặc liệt thể chất đổi Chú lực vô biên (Mechamaru)",
+          "stat": "STR / DEX / CON (0 CE)"
+        }
+      ],
+      "linkTab": "classes"
+    },
+    {
+      "step": 4,
+      "id": "ability-scores",
+      "title": "Xác Định Chỉ Số Thuộc Tính",
+      "subtitle": "Phân bổ 6 chỉ số cốt lõi và xác định Thuộc tính Chú Lực (Cursed Energy Ability)",
+      "description": "Nhân vật của bạn được định hình bởi 6 chỉ số thuộc tính D&D 5e: Sức mạnh (STR), Khéo léo (DEX), Thể chất (CON), Trí tuệ (INT), Thông thái (WIS) và Sức hút (CHA).",
+      "methods": [
+        {
+          "name": "Standard Array (Tiêu Chuẩn)",
+          "desc": "Gán trực tiếp bộ 6 điểm số: [15, 14, 13, 12, 10, 8] vào 6 thuộc tính tùy ý. Nhanh chóng và cực kỳ cân bằng."
+        },
+        {
+          "name": "Point Buy (Mua Điểm - 27 Điểm)",
+          "desc": "Mọi chỉ số khởi đầu từ 8. Bạn có 27 điểm để tăng dần (điểm 9-13 tốn 1 điểm/nấc; điểm 14-15 tốn 2 điểm/nấc). Tối đa 15 trước cộng điểm chủng tộc."
+        },
+        {
+          "name": "Tung Xúc Xắc (4d6 Drop Lowest)",
+          "desc": "Tung 4 xúc xắc 6 mặt (4d6), bỏ đi xúc xắc có kết quả thấp nhất, cộng 3 xúc xắc còn lại. Lặp lại 6 lần để tạo 6 chỉ số."
+        }
+      ],
+      "cursedModifierRule": "Thuộc tính Chú Lực (Cursed Energy Modifier): Tùy theo Class bạn chọn, bạn sẽ dùng Thông thái (WIS) hoặc Sức hút (CHA) - một số subclass đặc biệt dùng Trí tuệ (INT) - làm thước đo độ chuẩn xác và uy lực của mọi đòn đánh Chú thuật."
+    },
+    {
+      "step": 5,
+      "id": "technique",
+      "title": "Thức Tỉnh Thuật Thức Bẩm Sinh (Innate Technique)",
+      "subtitle": "Trái tim của Chú thuật sư - Chiếm 80% sức mạnh bẩm sinh",
+      "description": "Trong thế giới Jujutsu Kaisen, Thuật thức bẩm sinh được khắc sẵn trong vùng não bộ (não thùy trước) từ khi sinh ra và thường thức tỉnh vào khoảng 4-6 tuổi. Hãy chọn 1 trong 79 Thuật thức bẩm sinh của Compendium hoặc chọn con đường Thiên Dữ Chú Phược.",
+      "highlights": [
+        {
+          "title": "Tiến Trình Kỹ Năng (Features)",
+          "desc": "Thuật thức mở khóa các chiêu thức theo cấp độ: Cấp 1 (kỹ năng sơ khởi), Cấp 3, Cấp 6, Cấp 11 và Cấp 18 (tuyệt kỹ tối thượng)."
+        },
+        {
+          "title": "Chi Phí Chú Lực (CE Cost)",
+          "desc": "Mỗi lần kích hoạt chiêu thức đòi hỏi tiêu hao điểm Chú lực nhất định từ bể chứa của bạn."
+        },
+        {
+          "title": "Kỳ Tài Độc Quyền (Technique Feats)",
+          "desc": "Mỗi thuật thức có các Feat bổ trợ riêng (ví dụ: Hollow Purple, Black Flash, Reverse Technique...)."
+        },
+        {
+          "title": "Bành Trướng Lãnh Địa (Domain Expansion)",
+          "desc": "Đỉnh cao thuật thức cho phép nhân vật dựng kết giới phong tỏa không gian và biến mọi đòn đánh thành tất trúng (Sure-Hit)."
+        }
+      ],
+      "linkTab": "techniques"
+    },
+    {
+      "step": 6,
+      "id": "background",
+      "title": "Xuất Thân & Tâm Thế (Chapter 4)",
+      "subtitle": "Nguồn cội cuộc đời và triết lý sống còn trong thế giới chú thuật",
+      "description": "Xuất thân (Background) mang lại kỹ năng thông thạo (Skill Proficiencies), ngôn ngữ, bộ trang bị khởi điểm và vị thế xã hội. Tâm thế (Mindset) định hình thế giới quan đối mặt với tử thần.",
+      "backgrounds": [
+        {
+          "name": "Gia Tộc Chú Thuật (Clan Member)",
+          "desc": "Hậu duệ Ngự Tam Gia (Gojo, Zenin, Kamo) hoặc phân gia danh giá, hưởng thụ tài nguyên và gánh nặng truyền thống."
+        },
+        {
+          "name": "Bình Dân Giác Ngộ (Commoner)",
+          "desc": "Người bình thường vô tình phát hiện mình nhìn thấy nguyền hồn và bước chân vào thế giới ngầm."
+        },
+        {
+          "name": "Học Sinh Chú Thuật (Sorcerer Student)",
+          "desc": "Được tuyển mộ chính quy vào trường Chú thuật Tokyo hoặc Kyoto, rèn luyện bài bản từ sơ cấp."
+        },
+        {
+          "name": "Nhà Nghiên Cứu Chú Thuật (Jujutsu Researcher)",
+          "desc": "Say mê giải mã bản chất Chú lực, kết giới, chú hài hoặc y thuật phản chuyển."
+        },
+        {
+          "name": "Chú Nguyền Sư Tự Do (Rogue Sorcerer)",
+          "desc": "Kẻ ngoài vòng pháp luật của giới chú thuật, hành động vì lợi nhuận hoặc lý tưởng riêng."
+        }
+      ],
+      "linkTab": "backgrounds"
+    },
+    {
+      "step": 7,
+      "id": "equipment",
+      "title": "Trang Bị & Chú Cụ Khởi Đầu (Chapter 5)",
+      "subtitle": "Vũ khí, áo giáp, quân trang và Chú cụ đặc thù",
+      "description": "Chọn trang bị theo danh sách khởi đầu của Class hoặc dùng số tiền khởi điểm mua tự do. Chú thuật sư thường trang bị đồng phục bảo hộ có gia cố Chú lực nhẹ và vũ khí cận chiến hoặc tầm xa.",
+      "gearRules": [
+        {
+          "title": "Đồng Phục & Áo Giáp",
+          "desc": "Đồng phục Cao đẳng Tokyo/Kyoto cấp AC cơ bản và không làm cản trở vận hành Chú lực; giáp nặng có thể gây bất lợi cho việc né tránh và tàng hình."
+        },
+        {
+          "title": "Chú Cụ (Cursed Tools)",
+          "desc": "Vũ khí có sẵn Chú lực từ Cấp 4 đến Đặc Cấp (Special Grade). Người bình thường hoặc người có Thiên Dữ Chú Phược (như Maki/Toji) cần Chú cụ để tiêu diệt nguyền hồn."
+        },
+        {
+          "title": "Bán Chú Cụ (Semi-Cursed Tools)",
+          "desc": "Vũ khí thường liên tục được tẩm Chú lực qua năm tháng sẽ dần trở thành Chú cụ vĩnh viễn."
+        }
+      ],
+      "linkTab": "equipment"
+    },
+    {
+      "step": 8,
+      "id": "combat-stats",
+      "title": "Tính Toán Các Chỉ Số Chiến Đấu & Chú Thuật",
+      "subtitle": "Bảng công thức hoàn chỉnh để điền vào Character Sheet cấp độ 1",
+      "formulas": [
+        {
+          "name": "Máu Khởi Đầu (Hit Points - HP)",
+          "formula": "Max Hit Die của Class + CON Modifier",
+          "example": "Juggernaut (d12) với CON 16 (+3) = 12 + 3 = 15 HP khởi đầu."
+        },
+        {
+          "name": "Chỉ Số Giáp (Armor Class - AC)",
+          "formula": "10 + DEX Modifier (nếu không mặc giáp) hoặc Chỉ số của Giáp + DEX mod",
+          "example": "DEX 14 (+2) không giáp = AC 12."
+        },
+        {
+          "name": "Sáng Kiến (Initiative)",
+          "formula": "Bằng trực tiếp DEX Modifier",
+          "example": "DEX 16 (+3) = +3 Initiative khi vào giao tranh."
+        },
+        {
+          "name": "Thưởng Thành Thạo (Proficiency Bonus - PB)",
+          "formula": "+2 ở cấp độ 1 (Tăng thành +3 ở cấp 5, +4 ở cấp 9...)",
+          "example": "Cấp 1 luôn là +2 cho mọi kỹ năng, đòn đánh và cứu nguy thành thạo."
+        },
+        {
+          "name": "Bể Chú Lực (Cursed Energy Pool - CE)",
+          "formula": "Lượng CE cấp 1 của Class + Cursed Energy Ability Modifier",
+          "example": "Juggernaut cấp 1 có 3 CE + WIS mod (+3) = 6 CE tối đa."
+        },
+        {
+          "name": "Độ Khó Cứu Nguy Chú Thuật (CE Save DC)",
+          "formula": "8 + Proficiency Bonus + Cursed Energy Modifier",
+          "example": "8 + 2 (PB) + 3 (WIS mod) = DC 13."
+        },
+        {
+          "name": "Thưởng Tấn Công Chú Thuật (CE Attack Bonus)",
+          "formula": "Proficiency Bonus + Cursed Energy Modifier",
+          "example": "+2 (PB) + 3 (WIS mod) = +5 vào xúc xắc d20 khi tấn công bằng Chú thuật."
+        }
+      ]
+    },
+    {
+      "step": 9,
+      "id": "progression",
+      "title": "Cấp Độ 1 & Con Đường Phía Trước (1st Level & Beyond)",
+      "subtitle": "Quy tắc tăng cấp, mở khóa Kỳ tài (Feats) và Lãnh địa Bành trướng",
+      "description": "Nhân vật thăng tiến qua trải nghiệm thực chiến diệt trừ nguyền hồn, mở rộng giới hạn hiểu biết về linh hồn và cảm xúc con người.",
+      "milestones": [
+        {
+          "level": "Cấp 1 - 2",
+          "desc": "Làm quen với Chú lực căn bản, thức tỉnh kỹ năng đầu tiên của Thuật thức bẩm sinh."
+        },
+        {
+          "level": "Cấp 3 - 5",
+          "desc": "Mở khóa Subclass / Hướng đi riêng, nhận Feature cấp 3, tăng PB lên +3, mở khóa Kỳ tài đầu tiên (Feat)."
+        },
+        {
+          "level": "Cấp 6 - 10",
+          "desc": "Gia tăng đột biến lượng CE, mở khóa Thuật thức phản chuyển (RCT), Hắc Thiểm (Black Flash) và chạm vào Bành Trướng Lãnh Địa Sơ Khai."
+        },
+        {
+          "level": "Cấp 11 - 20",
+          "desc": "Tiến vào cảnh giới Chú thuật sư Cấp 1 & Đặc Cấp, làm chủ Hoàn Thiện Lãnh Địa, Cực Phiên (Maximum Output) và thay đổi cục diện thế giới."
+        }
+      ]
+    }
+  ]
+}

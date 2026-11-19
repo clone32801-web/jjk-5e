@@ -28,13 +28,17 @@ import {
   Package, 
   Crosshair, 
   Coins, 
-  Dices 
+  Dices,
+  UserPlus,
+  User
 } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
 export default function Navbar({ 
   activeTab, 
   setActiveTab, 
+  activeCreationStep = 'concept',
+  setActiveCreationStep,
   activeCategory = 'all',
   setActiveCategory,
   activeClassId = 'juggernaut',
@@ -92,6 +96,9 @@ export default function Navbar({
       [tabId]: true
     });
     switch (tabId) {
+      case 'creation':
+        if (setActiveCreationStep) setActiveCreationStep(subId);
+        break;
       case 'techniques':
         if (setActiveCategory) setActiveCategory(subId);
         break;
@@ -120,8 +127,19 @@ export default function Navbar({
     setMobileMenuOpen(false);
   };
 
-  // Comprehensive sub-menu map for ALL 8 tabs
+  // Comprehensive sub-menu map for ALL 9 tabs
   const SUBMENUS = {
+    creation: [
+      { id: 'concept', title: '1. Khái Niệm & Định Danh', vi: 'Hình tượng, lý tưởng, ràng buộc', icon: User },
+      { id: 'race', title: '2. Lựa Chọn Chủng Tộc', vi: 'Nhân loại, Vật chứa, Chú hài, Chú linh', icon: Users },
+      { id: 'class', title: '3. Lớp Nhân Vật', vi: '7 Class & phong cách chiến đấu', icon: Swords },
+      { id: 'ability-scores', title: '4. Chỉ Số Thuộc Tính', vi: 'Standard Array & Thuộc tính CE', icon: Brain },
+      { id: 'technique', title: '5. Thuật Thức Bẩm Sinh', vi: '79 Thuật thức hoặc Thiên Dữ Chú Phược', icon: Flame },
+      { id: 'background', title: '6. Xuất Thân & Tâm Thế', vi: '5 Xuất thân & Triết lý sống', icon: Compass },
+      { id: 'equipment', title: '7. Trang Bị Khởi Đầu', vi: 'Đồng phục, vũ khí & Chú cụ', icon: Shield },
+      { id: 'combat-stats', title: '8. Tính Chỉ Số Chiến Đấu', vi: 'Công thức HP, AC, CE DC & Attack', icon: Activity },
+      { id: 'progression', title: '9. Cấp Độ 1 & Thăng Cấp', vi: 'XP, Milestones & Feats', icon: Award },
+    ],
     techniques: [
       { id: 'all', title: 'Tất cả Thuật Thức', vi: 'Toàn bộ 79 thuật thức', icon: Sparkles },
       { id: 'clans', title: 'Ngự Tam Gia', vi: 'Gojo, Zenin, Kamo', icon: Crown },
@@ -187,6 +205,14 @@ export default function Navbar({
   };
 
   const navItems = [
+    { 
+      id: 'creation', 
+      label: 'Tạo Nhân Vật', 
+      sub: 'Cẩm nang & Trình tạo char', 
+      kanji: '作成', 
+      count: '9 Bước', 
+      icon: UserPlus 
+    },
     { 
       id: 'techniques', 
       label: 'Thuật Thức', 
@@ -256,6 +282,7 @@ export default function Navbar({
   const isSubActive = (tabId, subId) => {
     if (activeTab !== tabId) return false;
     switch (tabId) {
+      case 'creation': return activeCreationStep === subId;
       case 'techniques': return activeCategory === subId;
       case 'classes': return activeClassId === subId;
       case 'races': return activeRaceId === subId;
