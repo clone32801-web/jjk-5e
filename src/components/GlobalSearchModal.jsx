@@ -80,15 +80,15 @@ export default function GlobalSearchModal({ isOpen, onClose, onSelectResult }) {
     classesData.forEach(c => {
       list.push({
         id: c.id,
-        title: c.name,
-        type: 'Lớp Nhân Vật',
-        kanji: '等級',
+        title: c.vietnameseName ? `${c.vietnameseName} (${c.name})` : c.name,
+        type: 'Hệ Phái Chú Thuật',
+        kanji: '系統',
         tab: 'classes',
         icon: Swords,
         badgeColor: 'bg-red-500/15 text-red-300 border-red-500/30',
-        subtitle: `Hit Dice: ${c.hitDice || '1d8'} • ${c.features?.length || 0} tính năng`,
+        subtitle: `${c.name} • ${c.hitDiceLabel || 'Hit Die: 1d8'} • ${c.role || ''}`,
         data: c,
-        keywords: `${c.name} ${c.features?.map(f => f.name).join(' ')} ${c.hitDice}`,
+        keywords: `${c.name} ${c.vietnameseName || ''} ${c.role || ''} ${c.features?.map(f => f.name).join(' ')} ${c.hitDiceLabel || ''}`,
       });
     });
 

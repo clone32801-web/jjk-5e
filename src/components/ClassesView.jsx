@@ -49,13 +49,13 @@ export default function ClassesView({ selectedClassId, onSelectClass }) {
   }, [activeClassId, currentClass]);
 
   const classBadges = {
-    'juggernaut': { role: 'Đấu Sĩ / Brawler Tank', kanji: '拳', color: 'from-red-600 to-rose-800' },
-    'scout': { role: 'Trinh Sát / Cơ Động Cao', kanji: '速', color: 'from-amber-500 to-orange-700' },
-    'strategist': { role: 'Quân Sư / CE Tối Đa', kanji: '謀', color: 'from-blue-600 to-cyan-800' },
-    'shikigami-user': { role: 'Triệu Hồi / Thức Thần', kanji: '影', color: 'from-purple-600 to-indigo-800' },
-    'support-specialist': { role: 'Kết Giới / Hỗ Trợ Màn', kanji: '結', color: 'from-emerald-600 to-teal-800' },
-    'warrior': { role: 'Võ Sĩ / Bậc Thầy Chú Cụ', kanji: '刀', color: 'from-rose-600 to-pink-800' },
-    'heavenly-restriction': { role: '0 Chú Lực / Thể Chất Quái Vật', kanji: '縛', color: 'from-zinc-500 to-slate-800' },
+    'juggernaut': { role: 'Đấu Sĩ Tiền Tuyến', kanji: '拳', color: 'from-red-600 to-rose-800' },
+    'scout': { role: 'Trinh Sát Cơ Động', kanji: '速', color: 'from-amber-500 to-orange-700' },
+    'strategist': { role: 'Quân Sư Chú Thuật', kanji: '謀', color: 'from-blue-600 to-cyan-800' },
+    'shikigami-user': { role: 'Thức Thần Sư', kanji: '影', color: 'from-purple-600 to-indigo-800' },
+    'support-specialist': { role: 'Chuyên Gia Kết Giới', kanji: '結', color: 'from-emerald-600 to-teal-800' },
+    'warrior': { role: 'Võ Sĩ Chú Cụ', kanji: '刀', color: 'from-rose-600 to-pink-800' },
+    'heavenly-restriction': { role: 'Thiên Dữ Chú Phược', kanji: '縛', color: 'from-zinc-500 to-slate-800' },
   };
 
   // All images for active class (excluding background image)
@@ -154,9 +154,9 @@ export default function ClassesView({ selectedClassId, onSelectClass }) {
 
               <div>
                 <div className={`text-xs sm:text-sm font-bold font-display ${isActive ? 'text-white' : 'text-slate-300 group-hover:text-white'}`}>
-                  {cls.name}
+                  {cls.vietnameseName || cls.name}
                 </div>
-                <div className="text-[10px] text-slate-500 font-mono truncate max-w-[130px]">{badge.role}</div>
+                <div className="text-[10px] text-slate-500 font-mono truncate max-w-[130px]">{cls.name}</div>
               </div>
             </button>
           );
@@ -219,11 +219,11 @@ export default function ClassesView({ selectedClassId, onSelectClass }) {
               </div>
 
               <h2 className="text-3xl sm:text-4xl font-black text-white font-display tracking-tight">
-                {currentClass.name}
+                {currentClass.vietnameseName || currentClass.name}
               </h2>
               {currentClass.vietnameseName && (
-                <div className="text-sm sm:text-base font-bold text-purple-300 font-display mt-1">
-                  {currentClass.vietnameseName}
+                <div className="text-sm sm:text-base font-bold text-purple-300 font-mono mt-1">
+                  {currentClass.name}
                 </div>
               )}
 
@@ -561,9 +561,16 @@ export default function ClassesView({ selectedClassId, onSelectClass }) {
                 >
                   <div>
                     <div className="flex items-start justify-between gap-2 mb-2">
-                      <h4 className="text-xs sm:text-sm font-bold text-white font-display">
-                        {item.name}
-                      </h4>
+                      <div>
+                        <h4 className="text-xs sm:text-sm font-bold text-white font-display">
+                          {item.name}
+                        </h4>
+                        {item.nameEn && (
+                          <span className="text-[10px] font-mono text-slate-500 block mt-0.5">
+                            {item.nameEn}
+                          </span>
+                        )}
+                      </div>
                       <span className="px-2.5 py-0.5 rounded text-[10px] font-mono font-bold bg-blue-950/60 text-cyan-300 border border-blue-800/40 shrink-0">
                         {item.cost}
                       </span>

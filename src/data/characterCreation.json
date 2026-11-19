@@ -117,43 +117,43 @@
       "description": "Lớp nhân vật (Class) quyết định tài năng vượt trội, lượng Máu (Hit Die), lượng Chú lực (CE Pool) và các hành động chiến đấu đặc thù. Một đội Chú thuật sư cân bằng cần có người giữ tiền tuyến, người trinh sát và người triển khai Màn/Kết giới.",
       "classOptions": [
         {
-          "name": "Juggernaut (Đấu Sĩ Tiền Tuyến)",
+          "name": "Đấu Sĩ Tiền Tuyến (Juggernaut)",
           "hitDie": "d12",
-          "role": "Đỡ đòn, áp sát tàn bạo, thể lực phi thường",
+          "role": "Đỡ đòn, cận chiến áp sát tàn bạo, thể lực phi thường",
           "stat": "STR / CON / WIS"
         },
         {
-          "name": "Scout (Trinh Sát Cơ Động)",
+          "name": "Trinh Sát Cơ Động (Scout)",
           "hitDie": "d8",
           "role": "Tốc độ cao, do thám, phục kích tầm xa & cận chiến",
           "stat": "DEX / WIS"
         },
         {
-          "name": "Strategist (Quân Sư Điều Lực)",
+          "name": "Quân Sư Chú Thuật (Strategist)",
           "hitDie": "d6",
           "role": "Bể Chú lực khổng lồ, kiểm soát chiến trường, thi triển thuật phức tạp",
           "stat": "INT / CHA / WIS"
         },
         {
-          "name": "Shikigami User (Thuật Sư Thức Thần)",
+          "name": "Thức Thần Sư (Shikigami User)",
           "hitDie": "d8",
           "role": "Triệu hồi Thức thần, đa dạng hóa chiến thuật, đánh phối hợp",
           "stat": "WIS / CHA"
         },
         {
-          "name": "Support Specialist (Chuyên Gia Hỗ Trợ & Kết Giới)",
+          "name": "Chuyên Gia Kết Giới (Support Specialist)",
           "hitDie": "d8",
           "role": "Dựng Màn (Curtain), Kết giới bảo vệ, hỗ trợ đồng đội",
           "stat": "INT / WIS"
         },
         {
-          "name": "Warrior (Võ Sĩ Chú Cụ)",
+          "name": "Võ Sĩ Chú Cụ (Warrior)",
           "hitDie": "d10",
-          "role": "Bậc thầy mọi loại vũ khí, tẩm Chú lực vào đòn chém chuẩn xác",
+          "role": "Bậc thầy mọi loại binh khí, tẩm Chú lực vào đòn chém chuẩn xác",
           "stat": "STR / DEX / CON"
         },
         {
-          "name": "Heavenly Restriction (Thiên Dữ Chú Phược)",
+          "name": "Thiên Dữ Chú Phược (Heavenly Restriction)",
           "hitDie": "d12 / d6",
           "role": "0 Chú lực đổi thể chất siêu phàm (Toji) hoặc liệt thể chất đổi Chú lực vô biên (Mechamaru)",
           "stat": "STR / DEX / CON (0 CE)"

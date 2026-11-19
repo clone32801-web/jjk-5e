@@ -301,7 +301,8 @@
     "ceFormula": "Cấp độ + CE modifier",
     "hitDiceLabel": "1d12 per Juggernaut level",
     "startingEquipment": "You start with the following equipment, in addition to the equipment granted by your background:\n\n(a) a greataxe or (b) any martial melee weapon\n\n(a) two handaxes or (b) any simple weapon\n\nAn explorer's pack and four javelins",
-    "vietnameseName": "Thiết Binh Cận Chiến"
+    "vietnameseName": "Đấu Sĩ Tiền Tuyến",
+    "role": "Tiền Tuyến • Thể thuật vũ bão & Đỡ đòn (Itadori, Todo)"
   },
   {
     "id": "scout",
@@ -627,7 +628,8 @@
     "ceFormula": "Cấp độ + CE modifier",
     "hitDiceLabel": "1d8 per Scout level",
     "startingEquipment": "(a) a rapier or (b) a shortsword\n\n(a) a shortbow and quiver of 20 arrows or (b) a shortsword\n\n(a) a burglar's pack, (b) dungeoneer's pack, or (c) an explorer's pack\n\nDense coat, two daggers, and thieves' tools",
-    "vietnameseName": "Trinh Sát Tật Tốc"
+    "vietnameseName": "Trinh Sát Cơ Động",
+    "role": "Cơ Động • Tốc độ cao & Tập kích du kích (Maki, Mei Mei)"
   },
   {
     "id": "strategist",
@@ -838,57 +840,68 @@
     "startingEquipment": "(a) a handgun or (b) a dagger\n\n(a) a component pouch or (b) an arcane focus\n\n(a) a scholar's pack or (b) an explorer's pack\n\nA technique manual",
     "techniqueCreativities": [
       {
-        "name": "Careful Technique (Chú Thuật Thận Trọng)",
+        "name": "Chú Thuật Thận Trọng",
         "cost": "1 Cursed Energy",
-        "description": "Khi thi triển thuật thức buộc sinh vật khác phải tung xúc xắc Cứu nguy (Saving Throw), bạn có thể chi 1 CE để chọn số đồng minh tối đa bằng CE modifier tự động thành công và không nhận sát thương."
+        "description": "Khi thi triển thuật thức buộc sinh vật khác phải tung xúc xắc Cứu nguy (Saving Throw), bạn có thể chi 1 CE để chọn số đồng minh tối đa bằng CE modifier tự động thành công và không nhận sát thương.",
+        "nameEn": "Careful Technique"
       },
       {
-        "name": "Distant Technique (Chú Thuật Viễn Cự)",
+        "name": "Chú Thuật Viễn Cự",
         "cost": "1 Cursed Energy",
-        "description": "Nhân đôi tầm bắn của thuật thức (từ 5ft trở lên), hoặc biến thuật thức tầm chạm (Touch) thành tầm bắn xa 30 feet."
+        "description": "Nhân đôi tầm bắn của thuật thức (từ 5ft trở lên), hoặc biến thuật thức tầm chạm (Touch) thành tầm bắn xa 30 feet.",
+        "nameEn": "Distant Technique"
       },
       {
-        "name": "Empowered Technique (Cường Hóa Uy Lực)",
+        "name": "Cường Hóa Uy Lực",
         "cost": "1 Cursed Energy",
-        "description": "Khi gieo xúc xắc sát thương cho thuật thức, chi 1 CE để gieo lại số lượng xúc xắc tối đa bằng CE modifier và lấy kết quả mới. Có thể dùng đồng thời với tùy chọn Biến hóa khác."
+        "description": "Khi gieo xúc xắc sát thương cho thuật thức, chi 1 CE để gieo lại số lượng xúc xắc tối đa bằng CE modifier và lấy kết quả mới. Có thể dùng đồng thời với tùy chọn Biến hóa khác.",
+        "nameEn": "Empowered Technique"
       },
       {
-        "name": "Extended Technique (Kéo Dài Hiệu Lực)",
+        "name": "Kéo Dài Hiệu Lực",
         "cost": "1 Cursed Energy",
-        "description": "Khi thi triển thuật thức có thời lượng từ 1 phút trở lên, chi 1 CE để nhân đôi thời lượng duy trì (tối đa 24 giờ)."
+        "description": "Khi thi triển thuật thức có thời lượng từ 1 phút trở lên, chi 1 CE để nhân đôi thời lượng duy trì (tối đa 24 giờ).",
+        "nameEn": "Extended Technique"
       },
       {
-        "name": "Heightened Technique (Gia Tăng Áp Chế)",
+        "name": "Gia Tăng Áp Chế",
         "cost": "3 Cursed Energy",
-        "description": "Chi 3 CE để khiến 1 mục tiêu phải chịu Disadvantage (bất lợi) trong lần tung xúc xắc Cứu nguy đầu tiên chống lại thuật thức."
+        "description": "Chi 3 CE để khiến 1 mục tiêu phải chịu Disadvantage (bất lợi) trong lần tung xúc xắc Cứu nguy đầu tiên chống lại thuật thức.",
+        "nameEn": "Heightened Technique"
       },
       {
-        "name": "Quickened Technique (Thần Tốc Niệm)",
+        "name": "Thần Tốc Niệm",
         "cost": "2 Cursed Energy",
-        "description": "Biến thời gian thi triển của thuật thức từ 1 Action thành 1 Bonus Action."
+        "description": "Biến thời gian thi triển của thuật thức từ 1 Action thành 1 Bonus Action.",
+        "nameEn": "Quickened Technique"
       },
       {
-        "name": "Seeking Technique (Chú Thuật Truy Tìm)",
+        "name": "Chú Thuật Truy Tìm",
         "cost": "2 Cursed Energy",
-        "description": "Nếu bạn tấn công bằng thuật thức mà bị trượt (Miss), chi 2 CE để gieo lại d20 và lấy kết quả mới. Có thể kết hợp với tùy chọn Biến hóa khác."
+        "description": "Nếu bạn tấn công bằng thuật thức mà bị trượt (Miss), chi 2 CE để gieo lại d20 và lấy kết quả mới. Có thể kết hợp với tùy chọn Biến hóa khác.",
+        "nameEn": "Seeking Technique"
       },
       {
-        "name": "Subtle Technique (Chú Thuật Vô Thanh)",
+        "name": "Chú Thuật Vô Thanh",
         "cost": "1 Cursed Energy",
-        "description": "Chi 1 CE để thi triển thuật thức mà không cần thực hiện thủ ấn (Somatic) hay niệm chú khẩu ngữ (Verbal)."
+        "description": "Chi 1 CE để thi triển thuật thức mà không cần thực hiện thủ ấn (Somatic) hay niệm chú khẩu ngữ (Verbal).",
+        "nameEn": "Subtle Technique"
       },
       {
-        "name": "Transmuted Technique (Chuyển Hóa Thuộc Tính)",
+        "name": "Chuyển Hóa Thuộc Tính",
         "cost": "1 Cursed Energy",
-        "description": "Chi 1 CE để đổi loại sát thương của thuật thức sang một trong các hệ: Axít (Acid), Băng (Cold), Hỏa (Fire), Lôi (Lightning), Độc (Poison), hoặc Sấm (Thunder)."
+        "description": "Chi 1 CE để đổi loại sát thương của thuật thức sang một trong các hệ: Axít (Acid), Băng (Cold), Hỏa (Fire), Lôi (Lightning), Độc (Poison), hoặc Sấm (Thunder).",
+        "nameEn": "Transmuted Technique"
       },
       {
-        "name": "Twinned Technique (Song Sinh Thuật Thức)",
+        "name": "Song Sinh Thuật Thức",
         "cost": "Bằng CE gốc của chiêu",
-        "description": "Khi thi triển thuật thức đơn mục tiêu, chi thêm lượng CE bằng với chi phí gốc để bắn thêm vào mục tiêu thứ 2 trong tầm bắn."
+        "description": "Khi thi triển thuật thức đơn mục tiêu, chi thêm lượng CE bằng với chi phí gốc để bắn thêm vào mục tiêu thứ 2 trong tầm bắn.",
+        "nameEn": "Twinned Technique"
       }
     ],
-    "vietnameseName": "Chiến Lược Gia Chú Thuật"
+    "vietnameseName": "Quân Sư Chú Thuật",
+    "role": "Điều Phối • Chú lực khổng lồ & Phân tích chiến trường (Kenjaku, Nanami)"
   },
   {
     "id": "shikigami-user",
@@ -1165,7 +1178,8 @@
     "ceFormula": "Cấp độ + CE modifier",
     "hitDiceLabel": "1d8 per Shikigami User level",
     "startingEquipment": "(a) a handgun or (b) a dagger\n\n(a) a component pouch or (b) an arcane focus\n\n(a) a scholar's pack or (b) an explorer's pack\n\nA technique manual",
-    "vietnameseName": "Thức Thần Sư"
+    "vietnameseName": "Thức Thần Sư",
+    "role": "Triệu Hồi • Thao túng thức thần & Tác chiến đa diện (Megumi)"
   },
   {
     "id": "support-specialist",
@@ -1393,7 +1407,8 @@
     "ceFormula": "Cấp độ + CE modifier + Proficiency Bonus",
     "hitDiceLabel": "1d6 per Support Specialist level",
     "startingEquipment": "(a) a handgun or (b) a dagger\n\n(a) a component pouch or (b) an arcane focus\n\n(a) a scholar's pack or (b) an explorer's pack\n\nA technique manual",
-    "vietnameseName": "Chuyên Viên Hỗ Trợ & Kết Giới Sư"
+    "vietnameseName": "Chuyên Gia Kết Giới",
+    "role": "Hỗ Trợ • Dựng Màn, Phong tỏa kết giới & Trị liệu (Ijichi, Utahime)"
   },
   {
     "id": "warrior",
@@ -1660,7 +1675,8 @@
     "ceFormula": "Cấp độ + CE modifier",
     "hitDiceLabel": "1d10 per Warrior level",
     "startingEquipment": "(a) chain mail or (b) thick shirt, longbow, and 20 arrows\n\n(a) a martial weapon and a shield or (b) two martial weapons\n\n(a) a handgun and 20 bullets or (b) two handaxes\n\n(a) a dungeoneer's pack or (b) an explorer's pack",
-    "vietnameseName": "Chiến Binh Chú Cụ"
+    "vietnameseName": "Võ Sĩ Chú Cụ",
+    "role": "Binh Khí • Bậc thầy kiếm thuật & Chú cụ (Kusakabe, Yuta)"
   },
   {
     "id": "heavenly-restriction",
@@ -2434,6 +2450,7 @@
       "branchLimit": "Số lượng nâng cấp đã chọn trong mỗi nhánh (STR, DEX, CON, WIS) không thể vượt quá Modifier của thuộc tính tương ứng.",
       "retraining": "Mỗi khi thăng cấp độ mới trong class này, bạn có thể hoán đổi 1 Cải tiến cơ thể đã học lấy 1 Cải tiến khác đủ điều kiện."
     },
-    "vietnameseName": "Thiên Dữ Chú Phược"
+    "vietnameseName": "Thiên Dữ Chú Phược",
+    "role": "Ngoại Vực • 0 Chú lực & Thể chất siêu phàm (Toji, Maki)"
   }
 ]

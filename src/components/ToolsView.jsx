@@ -134,7 +134,9 @@ export default function ToolsView({ activeToolId: propToolId, setActiveToolId: p
                   className="w-full px-3 py-2 bg-[#0A0A0C] border border-[#232636] rounded-xl text-xs text-white focus:outline-none focus:border-purple-500 font-sans"
                 >
                   {classesData.map(c => (
-                    <option key={c.id} value={c.id}>{c.name}</option>
+                    <option key={c.id} value={c.id}>
+                      {c.vietnameseName ? `${c.vietnameseName} (${c.name})` : c.name}
+                    </option>
                   ))}
                 </select>
               </div>
