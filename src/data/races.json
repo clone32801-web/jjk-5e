@@ -2,7 +2,7 @@
   {
     "id": "human-races",
     "name": "Human Races",
-    "vietnameseName": "Nhân Loại & Chú Thuật Gia",
+    "vietnameseName": "Nhân Loại & Chú Thuật Sư",
     "character": "Yuji Itadori, Yuta Okkotsu, Maki Zen'in",
     "images": [
       "image6.png",
@@ -97,7 +97,7 @@
   {
     "id": "cursed-vessel",
     "name": "Cursed Vessel",
-    "vietnameseName": "Vật Chứa Chú Vật Tái Sinh",
+    "vietnameseName": "Vật Chứa Chú Vật",
     "character": "Ryomen Sukuna, Choso, Hajime Kashimo",
     "images": [
       "image9.png",
@@ -236,7 +236,7 @@
   {
     "id": "cursed-spirits",
     "name": "Cursed Spirits",
-    "vietnameseName": "Nguyền Hồn & Chú Linh",
+    "vietnameseName": "Chú Linh & Oán Linh",
     "character": "Mahito, Jogo, Hanami, Dagon, Rika Orimoto",
     "images": [
       "image15.png",

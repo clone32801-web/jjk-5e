@@ -87,23 +87,23 @@
       "description": "Trong Jujutsu Kaisen, chủng tộc định hình bản chất cơ thể, cách nhân vật cảm nhận và tương tác với Chú lực. Khác với D&D thông thường có yêu tinh hay người lùn, JJK chia thành Nhân loại và Chú linh.",
       "raceOptions": [
         {
-          "name": "Nhân Loại (Human Races)",
-          "sub": "Chiếm đa số tuyệt đối",
+          "name": "Nhân Loại & Chú Thuật Sư",
+          "sub": "Human Races • Chiếm đa số tuyệt đối",
           "benefit": "+2 vào một chỉ số hoặc +1 vào hai chỉ số, nhận Feat khởi đầu hoặc kỹ năng gia tộc. Có mắt thường không thấy Chú linh trừ khi trải qua biến cố hoặc sinh ra trong gia tộc Chú thuật."
         },
         {
-          "name": "Vật Chứa Chú Vật (Cursed Vessel)",
-          "sub": "Nuốt hoặc phong ấn chú vật cổ xưa",
+          "name": "Vật Chứa Chú Vật",
+          "sub": "Cursed Vessel • Đoạt xá hoặc phong ấn Chú vật",
           "benefit": "Kháng độc và kháng hiệu ứng nguyền rủa, sức chịu đựng thể chất vượt trội, nguy cơ giằng xé linh hồn với thực thể bên trong."
         },
         {
-          "name": "Chú Hài Độc Lập (Cursed Corpses)",
-          "sub": "Búp bê chú thuật sống",
+          "name": "Chú Hài Độc Lập",
+          "sub": "Cursed Corpses • Búp bê chú thuật đột biến",
           "benefit": "Cơ thể nhân tạo có lõi Chú lực (như Panda), miễn nhiễm bệnh tật, có thể biến đổi các hình thái chiến đấu khác nhau."
         },
         {
-          "name": "Chú Linh & Oán Linh (Cursed Spirits)",
-          "sub": "Sinh ra từ cảm xúc tiêu cực của con người",
+          "name": "Chú Linh & Oán Linh",
+          "sub": "Cursed Spirits • Kết tinh từ oán niệm nhân loại",
           "benefit": "Cơ thể hoàn toàn bằng Chú lực, có thể bay lượn/xuyên tường ở dạng mờ ảo, chỉ bị tổn thương thực sự bởi đòn đánh tẩm Chú lực."
         }
       ],

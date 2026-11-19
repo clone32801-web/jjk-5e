@@ -92,19 +92,19 @@ export default function GlobalSearchModal({ isOpen, onClose, onSelectResult }) {
       });
     });
 
-    // Races
+    // Races & Subraces
     racesData.forEach(r => {
       list.push({
         id: r.id,
-        title: r.name,
+        title: r.vietnameseName || r.name,
         type: 'Chủng Tộc',
         kanji: '種族',
         tab: 'races',
         icon: Users,
         badgeColor: 'bg-emerald-500/15 text-emerald-300 border-emerald-500/30',
-        subtitle: r.description ? r.description.slice(0, 90) : 'Chủng tộc chú thuật',
+        subtitle: `${r.name} • ${r.subraces?.length || 0} Phân tộc • ${r.description ? r.description.slice(0, 80) : 'Chủng tộc chú thuật'}...`,
         data: r,
-        keywords: `${r.name} ${r.traits?.map(t => t.name).join(' ')}`,
+        keywords: `${r.name} ${r.vietnameseName || ''} ${r.subraces?.map(s => `${s.name} ${s.vietnameseName || ''}`).join(' ')} ${r.description}`,
       });
     });
 

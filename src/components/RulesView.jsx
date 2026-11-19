@@ -111,57 +111,85 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
         </p>
       </div>
 
-      {/* Mobile Quick Section Switcher (< lg) */}
-      <div className="lg:hidden mb-6">
-        <button
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="w-full flex items-center justify-between p-3.5 rounded-2xl bg-[#12131A] border border-[#232636] text-white shadow-lg"
-        >
-          <div className="flex items-center space-x-3">
-            <div className={`p-2 rounded-xl ${currentTheme.bgAccent} border ${currentTheme.borderAccent}`}>
-              <ActiveIcon className={`w-4 h-4 ${currentTheme.accentClass}`} />
+        {/* Mobile Quick Section Switcher (< lg) */}
+        <div className="lg:hidden mb-6">
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="w-full flex items-center justify-between p-3.5 rounded-2xl bg-[#12131A] border border-[#232636] text-white shadow-lg"
+          >
+            <div className="flex items-center space-x-3">
+              <div className={`p-2 rounded-xl ${currentTheme.bgAccent} border ${currentTheme.borderAccent}`}>
+                <ActiveIcon className={`w-4 h-4 ${currentTheme.accentClass}`} />
+              </div>
+              <div className="text-left">
+                <div className="text-[10px] text-slate-500 font-mono uppercase tracking-wider">Chuyên đề hiện tại ({currentIndex + 1}/{sections.length})</div>
+                <div className="text-sm font-bold text-white leading-tight">{currentSectionObj.vi}</div>
+                <div className="text-[11px] text-slate-400 font-mono">{currentSectionObj.title}</div>
+              </div>
             </div>
-            <div className="text-left">
-              <div className="text-[10px] text-slate-500 font-mono uppercase tracking-wider">Chuyên đề hiện tại ({currentIndex + 1}/9)</div>
-              <div className="text-sm font-bold text-white leading-tight">{currentSectionObj.title}</div>
-              <div className="text-[11px] text-slate-400 font-sans">{currentSectionObj.vi}</div>
+            <div className="flex items-center space-x-1.5 text-xs font-mono text-purple-400 bg-purple-500/10 px-2.5 py-1.5 rounded-xl border border-purple-500/20">
+              <span>Đổi mục</span>
+              <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${isMobileMenuOpen ? 'rotate-180' : ''}`} />
             </div>
-          </div>
-          <div className="flex items-center space-x-1.5 text-xs font-mono text-purple-400 bg-purple-500/10 px-2.5 py-1.5 rounded-xl border border-purple-500/20">
-            <span>Đổi mục</span>
-            <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${isMobileMenuOpen ? 'rotate-180' : ''}`} />
-          </div>
-        </button>
+          </button>
 
-        {isMobileMenuOpen && (
-          <div className="mt-2 p-2 rounded-2xl bg-[#12131A] border border-[#232636] space-y-1 shadow-2xl">
-            {sections.map(sec => {
-              const Icon = sec.icon;
-              const isActive = activeSection === sec.id;
-              return (
-                <button
-                  key={sec.id}
-                  onClick={() => {
-                    setActiveSection(sec.id);
-                    setIsMobileMenuOpen(false);
-                  }}
-                  className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-left transition-all ${
-                    isActive 
-                      ? `${currentTheme.bgAccent} ${currentTheme.accentClass} ${currentTheme.borderAccent} font-semibold border` 
-                      : 'text-slate-300 hover:text-white hover:bg-[#181926]'
-                  }`}
-                >
-                  <div className="flex items-center space-x-2.5">
-                    <Icon className="w-4 h-4" />
-                    <span className="text-xs font-bold">{sec.title}</span>
-                  </div>
-                  <span className="text-[10px] text-slate-500">{sec.vi}</span>
-                </button>
-              );
-            })}
-          </div>
-        )}
-      </div>
+          {isMobileMenuOpen && (
+            <div className="mt-2 p-2 rounded-2xl bg-[#12131A] border border-[#232636] space-y-1 shadow-2xl">
+              {sections.map(sec => {
+                const Icon = sec.icon;
+                const isActive = activeSection === sec.id;
+                return (
+                  <button
+                    key={sec.id}
+                    onClick={() => {
+                      setActiveSection(sec.id);
+                      setIsMobileMenuOpen(false);
+                    }}
+                    className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-left transition-all ${
+                      isActive 
+                        ? `${currentTheme.bgAccent} ${currentTheme.accentClass} ${currentTheme.borderAccent} font-semibold border` 
+                        : 'text-slate-300 hover:text-white hover:bg-[#181926]'
+                    }`}
+                  >
+                    <div className="flex items-center space-x-2.5">
+                      <Icon className="w-4 h-4" />
+                      <span className="text-xs font-bold">{sec.vi}</span>
+                    </div>
+                    <span className="text-[10px] text-slate-500 font-mono">{sec.title}</span>
+                  </button>
+                );
+              })}
+            </div>
+          )}
+        </div>
+
+        {/* Desktop Section Switcher (>= lg: 2 rows of 5 cards) */}
+        <div className="hidden lg:grid grid-cols-5 gap-2.5 mb-8">
+          {sections.map(sec => {
+            const Icon = sec.icon;
+            const isActive = activeSection === sec.id;
+            return (
+              <button
+                key={sec.id}
+                onClick={() => setActiveSection(sec.id)}
+                className={`p-3 rounded-2xl border text-left transition-all flex flex-col justify-between ${
+                  isActive
+                    ? 'bg-[#181924] border-purple-500/50 text-white shadow-lg ring-1 ring-purple-500/30'
+                    : 'bg-[#12131A] border-[#232636] text-slate-400 hover:text-slate-200 hover:bg-[#161824]'
+                }`}
+              >
+                <div className="flex items-center justify-between mb-2">
+                  <Icon className={`w-4 h-4 ${isActive ? 'text-purple-400' : 'text-slate-500'}`} />
+                  <span className="font-kanji text-[10px] text-slate-500 font-bold">{sec.kanji}</span>
+                </div>
+                <div>
+                  <div className="text-xs font-bold font-display text-white line-clamp-1">{sec.vi}</div>
+                  <div className="text-[10px] text-slate-400 font-mono truncate">{sec.title}</div>
+                </div>
+              </button>
+            );
+          })}
+        </div>
 
       {/* Main Content Area (Full width) */}
       <div className="space-y-8 w-full">

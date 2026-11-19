@@ -27,10 +27,10 @@ export default function RacesView({ selectedRaceId, onSelectRace }) {
   const currentRace = racesData.find(r => r.id === activeRaceId) || racesData[0];
 
   const raceBadges = {
-    'human-races': { tag: 'Nhân Loại & Chú Thuật Gia', kanji: '人間', icon: Users, color: 'text-blue-400', badgeClass: 'bg-blue-950/60 text-blue-300 border-blue-800/50' },
-    'cursed-vessel': { tag: 'Vật Chứa Chú Vật Tái Sinh', kanji: '器', icon: Skull, color: 'text-rose-400', badgeClass: 'bg-rose-950/60 text-rose-300 border-rose-800/50' },
+    'human-races': { tag: 'Nhân Loại & Chú Thuật Sư', kanji: '人間', icon: Users, color: 'text-blue-400', badgeClass: 'bg-blue-950/60 text-blue-300 border-blue-800/50' },
+    'cursed-vessel': { tag: 'Vật Chứa Chú Vật', kanji: '器', icon: Skull, color: 'text-rose-400', badgeClass: 'bg-rose-950/60 text-rose-300 border-rose-800/50' },
     'cursed-corpses': { tag: 'Chú Hài Độc Lập', kanji: '呪骸', icon: Shield, color: 'text-emerald-400', badgeClass: 'bg-emerald-950/60 text-emerald-300 border-emerald-800/50' },
-    'cursed-spirits': { tag: 'Nguyền Hồn & Chú Linh', kanji: '呪霊', icon: Sparkles, color: 'text-purple-400', badgeClass: 'bg-purple-950/60 text-purple-300 border-purple-800/50' },
+    'cursed-spirits': { tag: 'Chú Linh & Oán Linh', kanji: '呪霊', icon: Sparkles, color: 'text-purple-400', badgeClass: 'bg-purple-950/60 text-purple-300 border-purple-800/50' },
   };
 
   const handleSelectRace = (raceId) => {
@@ -65,8 +65,11 @@ export default function RacesView({ selectedRaceId, onSelectRace }) {
           <span className="text-xs text-slate-500 font-mono">D&amp;D 5E JJK EDITION</span>
         </div>
         <h1 className="text-3xl sm:text-4xl font-black text-white font-display">
-          Races &amp; Lineages
+          Chủng Tộc &amp; Thể Khí
         </h1>
+        <div className="text-xs font-mono text-purple-400 mt-1 uppercase tracking-wider">
+          Races &amp; Lineages • 4 Đại Chủng Tộc &amp; 11 Phân Tộc Chú Thuật
+        </div>
         <p className="text-xs sm:text-sm text-slate-400 mt-1 font-sans">
           Chủng tộc và nguồn gốc thể xác trong thế giới Chú Thuật: từ Con người, Vật Chứa nguyền rủa đến Chú Hài và Nguyền Hồn.
         </p>
@@ -95,10 +98,8 @@ export default function RacesView({ selectedRaceId, onSelectRace }) {
                 </div>
                 <span className="font-kanji text-xs text-slate-500 font-bold">{badge.kanji}</span>
               </div>
-              <div className="text-sm font-bold font-display">{race.name}</div>
-              {race.vietnameseName && (
-                <div className="text-[11px] text-slate-400 font-sans mt-0.5 truncate">{race.vietnameseName}</div>
-              )}
+              <div className="text-sm font-bold font-display text-white">{race.vietnameseName || race.name}</div>
+              <div className="text-[11px] text-slate-400 font-mono mt-0.5 truncate">{race.name}</div>
             </button>
           );
         })}
@@ -140,13 +141,11 @@ export default function RacesView({ selectedRaceId, onSelectRace }) {
               </div>
 
               <h2 className="text-3xl sm:text-4xl font-black text-white font-display">
-                {currentRace.name}
+                {currentRace.vietnameseName || currentRace.name}
               </h2>
-              {currentRace.vietnameseName && (
-                <div className="text-base sm:text-lg text-amber-300 font-semibold font-sans mt-1">
-                  {currentRace.vietnameseName}
-                </div>
-              )}
+              <div className="text-sm font-mono text-slate-400 mt-1">
+                {currentRace.name}
+              </div>
 
               <p className="mt-4 text-xs sm:text-sm text-slate-300 leading-relaxed font-sans max-w-2xl">
                 {currentRace.description || 'Thông tin chi tiết về chủng tộc và nguồn gốc thể xác trong hệ thống.'}
@@ -316,13 +315,11 @@ export default function RacesView({ selectedRaceId, onSelectRace }) {
                     <div className="flex items-start justify-between gap-2 mb-2">
                       <div>
                         <h4 className="text-base font-bold text-white font-display">
-                          {sub.name}
+                          {sub.vietnameseName || sub.name}
                         </h4>
-                        {sub.vietnameseName && (
-                          <div className="text-xs text-amber-300 font-sans font-medium mt-0.5">
-                            {sub.vietnameseName}
-                          </div>
-                        )}
+                        <div className="text-xs text-amber-300 font-mono font-medium mt-0.5">
+                          {sub.name}
+                        </div>
                       </div>
                       {sub.speed && (
                         <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-[#161824] text-cyan-300 border border-cyan-800/40 shrink-0">
@@ -351,9 +348,9 @@ export default function RacesView({ selectedRaceId, onSelectRace }) {
                               <div>
                                 <div className="font-bold text-cyan-300 font-display mb-1 flex items-center space-x-1.5">
                                   <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 inline-block shrink-0" />
-                                  <span>{feat.name}</span>
-                                  {feat.vietnameseName && (
-                                    <span className="text-[11px] text-slate-400 font-sans font-normal">({feat.vietnameseName})</span>
+                                  <span>{feat.vietnameseName || feat.name}</span>
+                                  {feat.vietnameseName && feat.name && (
+                                    <span className="text-[10px] text-slate-400 font-mono font-normal">({feat.name})</span>
                                   )}
                                 </div>
                                 <div className="text-slate-300 leading-relaxed whitespace-pre-line text-[11px]">
