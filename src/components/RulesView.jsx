@@ -172,19 +172,19 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
               <button
                 key={sec.id}
                 onClick={() => setActiveSection(sec.id)}
-                className={`p-3 rounded-2xl border text-left transition-all flex flex-col justify-between ${
+                className={`p-3 rounded-xl border text-left transition-colors flex flex-col justify-between ${
                   isActive
-                    ? 'bg-[#181924] border-purple-500/50 text-white shadow-lg ring-1 ring-purple-500/30'
-                    : 'bg-[#12131A] border-[#232636] text-slate-400 hover:text-slate-200 hover:bg-[#161824]'
+                    ? 'bg-[#15161E] border-white/20 text-white ring-1 ring-white/10'
+                    : 'bg-[#0E0F14] border-white/[0.07] text-zinc-400 hover:text-zinc-200 hover:bg-[#12131A]'
                 }`}
               >
                 <div className="flex items-center justify-between mb-2">
-                  <Icon className={`w-4 h-4 ${isActive ? 'text-purple-400' : 'text-slate-500'}`} />
-                  <span className="font-kanji text-[10px] text-slate-500 font-bold">{sec.kanji}</span>
+                  <Icon className={`w-4 h-4 ${isActive ? currentTheme.accentClass : 'text-zinc-500'}`} />
+                  <span className="font-kanji text-[10px] text-zinc-500 font-bold">{sec.kanji}</span>
                 </div>
                 <div>
                   <div className="text-xs font-bold font-display text-white line-clamp-1">{sec.vi}</div>
-                  <div className="text-[10px] text-slate-400 font-mono truncate">{sec.title}</div>
+                  <div className="text-[10px] text-zinc-500 font-mono truncate">{sec.title}</div>
                 </div>
               </button>
             );

@@ -177,18 +177,18 @@ function AppContent() {
         />
 
         {/* Footer */}
-        <footer className="border-t border-[#1C1E2B] bg-[#070709] py-8 text-xs text-slate-500">
+        <footer className="border-t border-white/[0.06] bg-[#070709] py-6 text-xs text-zinc-500">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
             <div className="space-y-1">
-              <p className="font-bold text-slate-300 font-display flex items-center justify-center sm:justify-start gap-2">
+              <p className="font-bold text-zinc-300 font-display flex items-center justify-center sm:justify-start gap-2">
                 <span>呪術廻戦 5e System Compendium</span>
-                <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-[#171822] text-slate-400 border border-[#232636]">v6 2026</span>
+                <span className="text-[10px] font-mono px-1.5 py-0.2 rounded bg-white/[0.04] text-zinc-400 border border-white/10">v6 2026</span>
               </p>
-              <p className="text-[11px] text-slate-500">
-                Dự án chuyển thể D&amp;D 5e phi thương mại bởi tác giả <strong className="text-slate-400">I watch Anime</strong> • Giấy phép CC BY-NC-SA 4.0.
+              <p className="text-[11px] text-zinc-500">
+                Dự án chuyển thể D&amp;D 5e phi thương mại bởi tác giả <strong className="text-zinc-400">I watch Anime</strong> • Giấy phép CC BY-NC-SA 4.0.
               </p>
             </div>
-            <div className="text-[11px] font-mono text-slate-600">
+            <div className="text-[11px] font-mono text-zinc-600">
               D&amp;D 5e &copy; Wizards of the Coast • Jujutsu Kaisen &copy; Gege Akutami / Shueisha
             </div>
           </div>

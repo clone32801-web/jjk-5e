@@ -303,45 +303,45 @@ export default function Navbar({
       <aside className="hidden lg:flex flex-col w-64 xl:w-72 shrink-0 h-screen sticky top-0 bg-[#070709] border-r border-[#232636] z-30 select-none">
         
         {/* Brand & Logo Header */}
-        <div className="p-4 border-b border-[#1C1E2B]">
+        <div className="p-4 border-b border-white/[0.06]">
           <div 
             className="flex items-center space-x-3 cursor-pointer group" 
             onClick={() => handleSelectTab('techniques')}
           >
             <div 
-              className={`w-11 h-11 rounded-2xl flex items-center justify-center transition-all duration-300 ${currentTheme.bgAccent} border ${currentTheme.borderAccent} ${currentTheme.glowClass}`}
+              className={`w-10 h-10 rounded-xl flex items-center justify-center transition-colors ${currentTheme.bgAccent} border ${currentTheme.borderAccent}`}
             >
-              <span className="font-kanji font-black text-xl text-white">呪</span>
+              <span className="font-kanji font-black text-lg text-white">呪</span>
             </div>
             <div>
               <div className="flex items-center space-x-2">
-                <span className="font-black text-xl tracking-wider text-white uppercase font-display">
+                <span className="font-black text-lg tracking-wider text-white uppercase font-display">
                   JJK <span className={currentTheme.accentClass}>5E</span>
                 </span>
-                <span className="px-1.5 py-0.5 text-[9px] font-mono font-bold bg-[#171822] text-slate-400 rounded border border-[#232636]">
+                <span className="px-1.5 py-0.2 text-[9px] font-mono font-bold bg-white/[0.05] text-zinc-400 rounded border border-white/10">
                   v6
                 </span>
               </div>
-              <p className="text-[10px] text-slate-400 font-mono flex items-center space-x-1">
+              <p className="text-[10px] text-zinc-500 font-mono flex items-center space-x-1">
                 <span>Compendium</span>
-                <span className="text-slate-600">•</span>
-                <span className="font-kanji text-slate-500 font-bold">呪術廻戦</span>
+                <span className="text-zinc-600">•</span>
+                <span className="font-kanji text-zinc-500 font-bold">呪術廻戦</span>
               </p>
             </div>
           </div>
 
           {/* Quick Search Button (Ctrl + K) */}
-          <div className="mt-4">
+          <div className="mt-3.5">
             <button
               onClick={onOpenSearch}
-              className="w-full flex items-center justify-between px-3.5 py-2.5 text-xs bg-[#12131A] hover:bg-[#181924] text-slate-300 border border-[#232636] hover:border-slate-600 rounded-xl transition-all shadow-inner group"
+              className="w-full flex items-center justify-between px-3 py-2 text-xs bg-[#0F1015] hover:bg-[#151720] text-zinc-300 border border-white/[0.08] hover:border-white/20 rounded-lg transition-all group"
               title="Tìm kiếm nhanh (Ctrl + K)"
             >
               <div className="flex items-center space-x-2.5 min-w-0">
-                <Search className={`w-4 h-4 text-slate-400 group-hover:${currentTheme.accentClass} transition-colors`} />
-                <span className="text-slate-400 group-hover:text-slate-200 truncate">Tìm kiếm nhanh...</span>
+                <Search className="w-3.5 h-3.5 text-zinc-500 group-hover:text-zinc-300 transition-colors" />
+                <span className="text-zinc-400 group-hover:text-zinc-200 text-[11px] truncate">Tìm kiếm nhanh...</span>
               </div>
-              <kbd className="px-1.5 py-0.5 text-[10px] font-mono bg-[#0A0A0C] text-slate-400 border border-[#232636] rounded shrink-0">
+              <kbd className="px-1.5 py-0.5 text-[9px] font-mono bg-[#070709] text-zinc-400 border border-white/10 rounded shrink-0">
                 Ctrl K
               </kbd>
             </button>
@@ -350,10 +350,10 @@ export default function Navbar({
 
         {/* Vertical Navigation Links */}
         <div className="flex-1 overflow-y-auto no-scrollbar px-3 py-3 space-y-1">
-          <div className="px-3 py-1.5 mb-1 flex items-center justify-between text-[11px] font-mono font-bold tracking-wider text-slate-500 uppercase">
+          <div className="px-2.5 py-1 mb-1 flex items-center justify-between text-[10px] font-mono font-semibold tracking-wider text-zinc-500 uppercase">
             <span>Mục Lục Hệ Thống</span>
-            <span className="text-[10px] text-purple-400 bg-purple-500/10 px-1.5 py-0.2 rounded border border-purple-500/20 font-mono">
-              Compendium
+            <span className="text-[9px] text-zinc-400 bg-white/[0.04] px-1.5 py-0.2 rounded border border-white/10 font-mono">
+              9 CHUYÊN MỤC
             </span>
           </div>
 
@@ -369,42 +369,42 @@ export default function Navbar({
                   {/* Main Tab Button */}
                   <button
                     onClick={() => handleSelectTab(item.id)}
-                    className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-left transition-all duration-150 group border ${
+                    className={`w-full flex items-center justify-between px-2.5 py-2 rounded-lg text-left transition-colors duration-150 group border ${
                       isTabActive 
-                        ? `${currentTheme.bgAccent} ${currentTheme.accentClass} ${currentTheme.borderAccent} font-semibold shadow-md shadow-purple-950/20` 
-                        : 'border-transparent text-slate-300 hover:text-white hover:bg-[#12131A]'
+                        ? `${currentTheme.bgAccent} ${currentTheme.accentClass} ${currentTheme.borderAccent} font-semibold` 
+                        : 'border-transparent text-zinc-300 hover:text-white hover:bg-white/[0.04]'
                     }`}
                   >
-                    <div className="flex items-center space-x-3 min-w-0">
-                      <div className={`p-1.5 rounded-lg transition-colors ${
-                        isTabActive ? 'bg-white/10 text-white' : 'bg-[#12131A] text-slate-400 group-hover:text-white'
+                    <div className="flex items-center space-x-2.5 min-w-0">
+                      <div className={`p-1 rounded-md transition-colors ${
+                        isTabActive ? 'bg-white/10 text-white' : 'bg-white/[0.03] text-zinc-400 group-hover:text-white'
                       }`}>
-                        <Icon className="w-4 h-4 shrink-0" />
+                        <Icon className="w-3.5 h-3.5 shrink-0" />
                       </div>
                       <div className="truncate">
-                        <div className={`text-xs font-display tracking-wide truncate ${isTabActive ? 'text-white font-bold' : 'text-slate-200 font-medium'}`}>
+                        <div className={`text-xs font-display tracking-wide truncate ${isTabActive ? 'text-white font-bold' : 'text-zinc-200 font-medium'}`}>
                           {item.label}
                         </div>
-                        <div className="text-[10px] text-slate-500 font-sans truncate">
+                        <div className="text-[10px] text-zinc-500 font-sans truncate">
                           {item.sub}
                         </div>
                       </div>
                     </div>
                     <div className="flex items-center space-x-1.5 shrink-0">
-                      <span className={`text-[10px] font-mono px-2 py-0.5 rounded-full ${
-                        isTabActive ? 'bg-white/10 text-white font-bold' : 'bg-[#141520] text-slate-500 border border-[#232636]'
+                      <span className={`text-[9px] font-mono px-1.5 py-0.2 rounded ${
+                        isTabActive ? 'bg-white/10 text-white font-bold' : 'bg-white/[0.03] text-zinc-500 border border-white/[0.06]'
                       }`}>
                         {item.count}
                       </span>
                       {subItems.length > 0 && (
-                        <ChevronDown className={`w-3.5 h-3.5 text-slate-400 transition-transform duration-200 ${isExpanded ? 'rotate-180' : ''}`} />
+                        <ChevronDown className={`w-3.5 h-3.5 text-zinc-500 transition-transform duration-200 ${isExpanded ? 'rotate-180' : ''}`} />
                       )}
                     </div>
                   </button>
 
                   {/* SUBMENU ITEMS */}
                   {isExpanded && subItems.length > 0 && (
-                    <div className="ml-3 pl-2.5 border-l-2 border-[#232636] my-1 space-y-1">
+                    <div className="ml-3 pl-2.5 border-l border-white/10 my-1 space-y-0.5">
                       {subItems.map(sec => {
                         const SecIcon = sec.icon;
                         const isSubActiveItem = isSubActive(item.id, sec.id);
@@ -413,29 +413,29 @@ export default function Navbar({
                           <button
                             key={sec.id}
                             onClick={() => handleSelectSubItem(item.id, sec.id)}
-                            className={`w-full flex items-center justify-between px-2.5 py-1.5 rounded-xl text-left transition-all duration-150 group border ${
+                            className={`w-full flex items-center justify-between px-2 py-1.5 rounded-md text-left transition-colors duration-150 group border ${
                               isSubActiveItem
-                                ? `${currentTheme.bgAccent} ${currentTheme.accentClass} ${currentTheme.borderAccent} font-semibold shadow-md shadow-purple-950/20`
-                                : 'border-transparent text-slate-400 hover:text-white hover:bg-[#12131A]'
+                                ? `${currentTheme.bgAccent} ${currentTheme.accentClass} ${currentTheme.borderAccent} font-semibold`
+                                : 'border-transparent text-zinc-400 hover:text-white hover:bg-white/[0.03]'
                             }`}
                           >
-                            <div className="flex items-center space-x-2.5 min-w-0">
-                              <SecIcon className={`w-3.5 h-3.5 shrink-0 transition-transform duration-150 group-hover:scale-110 ${
-                                isSubActiveItem ? currentTheme.accentClass : 'text-slate-500 group-hover:text-slate-300'
+                            <div className="flex items-center space-x-2 min-w-0">
+                              <SecIcon className={`w-3 h-3 shrink-0 ${
+                                isSubActiveItem ? currentTheme.accentClass : 'text-zinc-500 group-hover:text-zinc-300'
                               }`} />
                               <div className="truncate">
-                                <div className={`text-[11px] font-display uppercase tracking-wide truncate ${
-                                  isSubActiveItem ? 'text-white font-bold' : 'text-slate-300 font-medium'
+                                <div className={`text-[10px] font-display uppercase tracking-wide truncate ${
+                                  isSubActiveItem ? 'text-white font-bold' : 'text-zinc-300 font-medium'
                                 }`}>
                                   {sec.title}
                                 </div>
-                                <div className="text-[9px] text-slate-500 font-sans truncate">
+                                <div className="text-[9px] text-zinc-500 font-sans truncate">
                                   {sec.vi}
                                 </div>
                               </div>
                             </div>
                             {isSubActiveItem && (
-                              <div className="w-1.5 h-1.5 rounded-full bg-purple-400 shrink-0 shadow-sm shadow-purple-400" />
+                              <div className="w-1 h-1 rounded-full bg-cyan-400 shrink-0" />
                             )}
                           </button>
                         );
@@ -450,18 +450,18 @@ export default function Navbar({
         </div>
 
         {/* Bottom Controls: Theme Picker & Info */}
-        <div className="p-3 border-t border-[#1C1E2B] bg-[#090A0F] space-y-2.5">
+        <div className="p-3 border-t border-white/[0.06] bg-[#070709] space-y-2">
           {/* Cursed Resonance Theme Picker */}
-          <div className="bg-[#12131A] border border-[#232636] rounded-xl p-2 space-y-1.5">
-            <div className="flex items-center justify-between text-[10px] text-slate-400 font-mono">
+          <div className="bg-[#0D0E12] border border-white/[0.06] rounded-lg p-2 space-y-1.5">
+            <div className="flex items-center justify-between text-[10px] text-zinc-500 font-mono">
               <span className="uppercase tracking-wider">Cộng Hưởng Chú Lực</span>
-              <span className="font-kanji text-purple-400/60">呪力共鳴</span>
+              <span className="font-kanji text-zinc-600">呪力共鳴</span>
             </div>
             <div className="grid grid-cols-3 gap-1">
               {[
                 { id: 'cyan', label: 'Lục Nhãn', color: '#00D2FF', kanji: '青' },
                 { id: 'crimson', label: 'Sukuna', color: '#DC2626', kanji: '赤' },
-                { id: 'purple', label: 'Hư Thức', color: '#7C3AED', kanji: '紫' },
+                { id: 'purple', label: 'Hư Thức', color: '#8B5CF6', kanji: '紫' },
               ].map((t) => {
                 const isSelected = resonance === t.id;
                 return (
@@ -469,13 +469,14 @@ export default function Navbar({
                     key={t.id}
                     onClick={() => setResonance(t.id)}
                     title={`Cộng hưởng Chú Lực: ${t.label}`}
-                    className={`flex items-center justify-center space-x-1 py-1.5 px-1.5 rounded-lg text-xs font-bold transition-all border ${
+                    className={`flex items-center justify-center space-x-1 py-1.5 px-1 rounded-md text-xs font-mono font-medium transition-colors border ${
                       isSelected 
-                        ? 'text-white border-white/20 shadow-md scale-[1.02]' 
-                        : 'text-slate-400 hover:text-white bg-[#0A0A0E] border-transparent hover:border-[#232636]'
+                        ? 'text-white border-white/20 font-bold' 
+                        : 'text-zinc-400 hover:text-white bg-white/[0.02] border-transparent hover:border-white/10'
                     }`}
                     style={{
                       backgroundColor: isSelected ? t.color : undefined,
+                      color: isSelected && t.id === 'cyan' ? '#000' : isSelected ? '#fff' : undefined,
                     }}
                   >
                     <span className="font-kanji text-xs">{t.kanji}</span>
@@ -487,9 +488,9 @@ export default function Navbar({
           </div>
 
           {/* Version Note */}
-          <div className="px-1 text-[10px] text-slate-500 font-mono flex items-center justify-between">
+          <div className="px-1 text-[10px] text-zinc-500 font-mono flex items-center justify-between">
             <span>D&amp;D 5E JJK System</span>
-            <span className="text-slate-600">v6 2026</span>
+            <span className="text-zinc-600">v6 2026</span>
           </div>
         </div>
 
@@ -498,7 +499,7 @@ export default function Navbar({
       {/* ========================================================================= */}
       {/* 2. MOBILE TOP BAR & SLIDE-OUT DRAWER (lg:hidden) */}
       {/* ========================================================================= */}
-      <header className="lg:hidden sticky top-0 z-40 w-full bg-[#070709]/95 backdrop-blur-md border-b border-[#232636]">
+      <header className="lg:hidden sticky top-0 z-40 w-full bg-[#070709]/95 backdrop-blur-md border-b border-white/[0.08]">
         <div className="px-4 h-14 flex items-center justify-between">
           
           {/* Logo */}
@@ -513,17 +514,17 @@ export default function Navbar({
               <span className="font-black text-base text-white font-display">
                 JJK <span className={currentTheme.accentClass}>5E</span>
               </span>
-              <span className="ml-1 text-[9px] font-mono text-slate-500 bg-[#171822] px-1 py-0.5 rounded border border-[#232636]">
+              <span className="ml-1 text-[9px] font-mono text-zinc-500 bg-white/[0.04] px-1 py-0.5 rounded border border-white/10">
                 v6
               </span>
             </div>
           </div>
 
           {/* Right Mobile Actions */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-1.5">
             <button
               onClick={onOpenSearch}
-              className="p-2 text-slate-400 hover:text-white bg-[#12131A] border border-[#232636] rounded-xl"
+              className="p-2 text-zinc-400 hover:text-white bg-[#0F1015] border border-white/10 rounded-lg"
               title="Tìm kiếm"
             >
               <Search className="w-4 h-4" />
@@ -531,10 +532,10 @@ export default function Navbar({
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 text-slate-300 hover:text-white bg-[#12131A] border border-[#232636] rounded-xl"
+              className="p-2 text-zinc-300 hover:text-white bg-[#0F1015] border border-white/10 rounded-lg"
               title="Mục lục menu"
             >
-              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {mobileMenuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
             </button>
           </div>
 
@@ -551,24 +552,24 @@ export default function Navbar({
           />
           
           {/* Slide-out Panel */}
-          <div className="relative w-72 max-w-[85vw] bg-[#070709] border-r border-[#232636] h-full flex flex-col p-4 shadow-2xl z-10 overflow-y-auto">
+          <div className="relative w-72 max-w-[85vw] bg-[#070709] border-r border-white/10 h-full flex flex-col p-4 shadow-2xl z-10 overflow-y-auto">
             
             {/* Drawer Header */}
-            <div className="flex items-center justify-between pb-3 mb-3 border-b border-[#232636]">
+            <div className="flex items-center justify-between pb-3 mb-3 border-b border-white/[0.08]">
               <div className="flex items-center space-x-2.5">
                 <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${currentTheme.bgAccent} border ${currentTheme.borderAccent}`}>
                   <span className="font-kanji font-black text-sm text-white">呪</span>
                 </div>
                 <div>
                   <div className="font-black text-sm text-white font-display">JJK 5E COMPENDIUM</div>
-                  <div className="text-[10px] text-slate-500 font-mono">D&amp;D 5E JJK EDITION</div>
+                  <div className="text-[10px] text-zinc-500 font-mono">D&amp;D 5E JJK EDITION</div>
                 </div>
               </div>
               <button 
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-1.5 text-slate-400 hover:text-white rounded-lg hover:bg-[#12131A]"
+                className="p-1.5 text-zinc-400 hover:text-white rounded-lg hover:bg-white/[0.04]"
               >
-                <X className="w-5 h-5" />
+                <X className="w-4 h-4" />
               </button>
             </div>
 
@@ -579,13 +580,13 @@ export default function Navbar({
                   setMobileMenuOpen(false);
                   onOpenSearch();
                 }}
-                className="w-full flex items-center justify-between px-3 py-2 text-xs bg-[#12131A] text-slate-300 border border-[#232636] rounded-xl"
+                className="w-full flex items-center justify-between px-3 py-2 text-xs bg-[#0F1015] text-zinc-300 border border-white/10 rounded-lg"
               >
                 <div className="flex items-center space-x-2">
-                  <Search className="w-4 h-4 text-slate-400" />
-                  <span className="text-slate-400">Tìm kiếm nhanh...</span>
+                  <Search className="w-3.5 h-3.5 text-zinc-400" />
+                  <span className="text-zinc-400 text-[11px]">Tìm kiếm nhanh...</span>
                 </div>
-                <kbd className="px-1 text-[9px] font-mono bg-[#0A0A0C] text-slate-500 border border-[#232636] rounded">
+                <kbd className="px-1 text-[9px] font-mono bg-[#070709] text-zinc-500 border border-white/10 rounded">
                   Ctrl K
                 </kbd>
               </button>
@@ -603,34 +604,34 @@ export default function Navbar({
                   <div key={item.id} className="space-y-1">
                     <button
                       onClick={() => handleSelectTab(item.id)}
-                      className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-left transition-all border ${
+                      className={`w-full flex items-center justify-between px-2.5 py-2 rounded-lg text-left transition-colors border ${
                         isTabActive 
-                          ? `${currentTheme.bgAccent} ${currentTheme.accentClass} ${currentTheme.borderAccent} font-bold shadow-md` 
-                          : 'border-transparent text-slate-300 hover:text-white hover:bg-[#12131A]'
+                          ? `${currentTheme.bgAccent} ${currentTheme.accentClass} ${currentTheme.borderAccent} font-semibold` 
+                          : 'border-transparent text-zinc-300 hover:text-white hover:bg-white/[0.04]'
                       }`}
                     >
-                      <div className="flex items-center space-x-3 min-w-0">
-                        <Icon className={`w-4 h-4 shrink-0 ${isTabActive ? currentTheme.accentClass : 'text-slate-400'}`} />
+                      <div className="flex items-center space-x-2.5 min-w-0">
+                        <Icon className={`w-3.5 h-3.5 shrink-0 ${isTabActive ? currentTheme.accentClass : 'text-zinc-400'}`} />
                         <div className="truncate">
                           <div className="text-xs font-bold leading-tight">{item.label}</div>
-                          <div className="text-[10px] text-slate-500 font-sans">{item.sub}</div>
+                          <div className="text-[10px] text-zinc-500 font-sans">{item.sub}</div>
                         </div>
                       </div>
                       <div className="flex items-center space-x-1.5 shrink-0">
-                        <span className={`text-[10px] font-mono px-2 py-0.5 rounded-full ${
-                          isTabActive ? 'bg-white/10 text-white font-bold' : 'bg-[#141520] text-slate-500 border border-[#232636]'
+                        <span className={`text-[9px] font-mono px-1.5 py-0.2 rounded ${
+                          isTabActive ? 'bg-white/10 text-white font-bold' : 'bg-white/[0.03] text-zinc-500 border border-white/[0.06]'
                         }`}>
                           {item.count}
                         </span>
                         {subItems.length > 0 && (
-                          <ChevronDown className={`w-3.5 h-3.5 text-slate-400 transition-transform ${isExpanded ? 'rotate-180' : ''}`} />
+                          <ChevronDown className={`w-3.5 h-3.5 text-zinc-500 transition-transform ${isExpanded ? 'rotate-180' : ''}`} />
                         )}
                       </div>
                     </button>
 
-                    {/* Merged rules in mobile drawer */}
+                    {/* Submenu in mobile drawer */}
                     {isExpanded && subItems.length > 0 && (
-                      <div className="ml-3 pl-2.5 border-l-2 border-[#232636] my-1 space-y-1">
+                      <div className="ml-3 pl-2.5 border-l border-white/10 my-1 space-y-0.5">
                         {subItems.map(sec => {
                           const SecIcon = sec.icon;
                           const isSubActiveItem = isSubActive(item.id, sec.id);
@@ -639,21 +640,21 @@ export default function Navbar({
                             <button
                               key={sec.id}
                               onClick={() => handleSelectSubItem(item.id, sec.id)}
-                              className={`w-full flex items-center justify-between px-2.5 py-1.5 rounded-xl text-left transition-all border ${
+                              className={`w-full flex items-center justify-between px-2 py-1.5 rounded-md text-left transition-colors border ${
                                 isSubActiveItem
-                                  ? `${currentTheme.bgAccent} ${currentTheme.accentClass} ${currentTheme.borderAccent} font-semibold shadow-md`
-                                  : 'border-transparent text-slate-400 hover:text-white hover:bg-[#12131A]'
+                                  ? `${currentTheme.bgAccent} ${currentTheme.accentClass} ${currentTheme.borderAccent} font-semibold`
+                                  : 'border-transparent text-zinc-400 hover:text-white hover:bg-white/[0.03]'
                               }`}
                             >
-                              <div className="flex items-center space-x-2.5 min-w-0">
-                                <SecIcon className={`w-3.5 h-3.5 shrink-0 ${isSubActiveItem ? currentTheme.accentClass : 'text-slate-400'}`} />
+                              <div className="flex items-center space-x-2 min-w-0">
+                                <SecIcon className={`w-3 h-3 shrink-0 ${isSubActiveItem ? currentTheme.accentClass : 'text-zinc-500'}`} />
                                 <div className="truncate">
-                                  <div className="text-[11px] font-bold uppercase">{sec.title}</div>
-                                  <div className="text-[9px] text-slate-500">{sec.vi}</div>
+                                  <div className="text-[10px] font-bold uppercase">{sec.title}</div>
+                                  <div className="text-[9px] text-zinc-500">{sec.vi}</div>
                                 </div>
                               </div>
                               {isSubActiveItem && (
-                                <div className="w-1.5 h-1.5 rounded-full bg-purple-400 shrink-0" />
+                                <div className="w-1 h-1 rounded-full bg-cyan-400 shrink-0" />
                               )}
                             </button>
                           );
@@ -666,23 +667,26 @@ export default function Navbar({
             </nav>
 
             {/* Mobile Theme Picker */}
-            <div className="mt-auto pt-3 border-t border-[#232636] space-y-2">
-              <div className="text-[10px] font-mono text-slate-500 uppercase tracking-wider">Cộng hưởng Chú Lực</div>
+            <div className="mt-auto pt-3 border-t border-white/[0.08] space-y-2">
+              <div className="text-[10px] font-mono text-zinc-500 uppercase tracking-wider">Cộng hưởng Chú Lực</div>
               <div className="grid grid-cols-3 gap-1.5">
                 {[
                   { id: 'cyan', label: 'Lục Nhãn', color: '#00D2FF', kanji: '青' },
                   { id: 'crimson', label: 'Sukuna', color: '#DC2626', kanji: '赤' },
-                  { id: 'purple', label: 'Hư Thức', color: '#7C3AED', kanji: '紫' },
+                  { id: 'purple', label: 'Hư Thức', color: '#8B5CF6', kanji: '紫' },
                 ].map((t) => {
                   const isSelected = resonance === t.id;
                   return (
                     <button
                       key={t.id}
                       onClick={() => setResonance(t.id)}
-                      className={`py-1.5 px-1 rounded-lg text-xs font-bold flex items-center justify-center space-x-1 border ${
-                        isSelected ? 'text-white border-white/20' : 'text-slate-400 bg-[#12131A] border-transparent'
+                      className={`py-1.5 px-1 rounded-md text-xs font-mono font-medium flex items-center justify-center space-x-1 border ${
+                        isSelected ? 'text-white border-white/20' : 'text-zinc-400 bg-white/[0.02] border-transparent hover:border-white/10'
                       }`}
-                      style={{ backgroundColor: isSelected ? t.color : undefined }}
+                      style={{ 
+                        backgroundColor: isSelected ? t.color : undefined,
+                        color: isSelected && t.id === 'cyan' ? '#000' : isSelected ? '#fff' : undefined,
+                      }}
                     >
                       <span className="font-kanji">{t.kanji}</span>
                       <span className="text-[10px] truncate">{t.label}</span>

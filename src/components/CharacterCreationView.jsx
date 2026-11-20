@@ -216,13 +216,13 @@ Thưởng Đòn Đánh Chú Thuật (CE Attack Bonus): ${ceAttackBonus}
             </div>
 
             {/* Mode Switcher Toggle */}
-            <div className="flex items-center p-1 bg-[#12131A] border border-[#232636] rounded-2xl shrink-0">
+            <div className="flex items-center p-1 bg-[#0F1015] border border-white/10 rounded-xl shrink-0">
               <button
                 onClick={() => setViewMode('guide')}
-                className={`flex items-center space-x-2 px-4 py-2.5 rounded-xl text-xs font-mono font-bold transition-all ${
+                className={`flex items-center space-x-2 px-3.5 py-2 rounded-lg text-xs font-mono font-bold transition-colors ${
                   viewMode === 'guide'
                     ? currentTheme.btnActive
-                    : 'text-slate-400 hover:text-white'
+                    : 'text-zinc-400 hover:text-white'
                 }`}
               >
                 <BookOpen className="w-3.5 h-3.5" />
@@ -230,10 +230,10 @@ Thưởng Đòn Đánh Chú Thuật (CE Attack Bonus): ${ceAttackBonus}
               </button>
               <button
                 onClick={() => setViewMode('builder')}
-                className={`flex items-center space-x-2 px-4 py-2.5 rounded-xl text-xs font-mono font-bold transition-all ${
+                className={`flex items-center space-x-2 px-3.5 py-2 rounded-lg text-xs font-mono font-bold transition-colors ${
                   viewMode === 'builder'
                     ? currentTheme.btnActive
-                    : 'text-slate-400 hover:text-white'
+                    : 'text-zinc-400 hover:text-white'
                 }`}
               >
                 <Sparkles className="w-3.5 h-3.5 text-amber-400" />
@@ -248,23 +248,23 @@ Thưởng Đòn Đánh Chú Thuật (CE Attack Bonus): ${ceAttackBonus}
       {/* MODE 1: STEP-BY-STEP GUIDE */}
       {/* ========================================================================= */}
       {viewMode === 'guide' && (
-        <div className="space-y-10">
+        <div className="space-y-8">
           
           {/* Step Selector Pills Bar */}
           <div className="overflow-x-auto pb-2 scrollbar-none">
-            <div className="flex items-center space-x-2 min-w-max">
+            <div className="flex items-center space-x-1.5 min-w-max p-1 rounded-xl bg-[#0F1015] border border-white/[0.08]">
               {characterCreationData.steps.map((st) => (
                 <button
                   key={st.id}
                   onClick={() => setActiveStepId(st.id)}
-                  className={`flex items-center space-x-2 px-3.5 py-2 rounded-xl text-xs font-mono font-semibold transition-all border ${
+                  className={`flex items-center space-x-2 px-3 py-1.5 rounded-lg text-xs font-mono font-semibold transition-colors border ${
                     activeStepId === st.id
-                      ? `${currentTheme.btnActive} border-purple-400/50 shadow-lg shadow-purple-500/10`
-                      : 'bg-[#12131A] border-[#202332] text-slate-400 hover:text-white hover:border-[#32364E]'
+                      ? `${currentTheme.btnActive} border-white/20`
+                      : 'bg-transparent border-transparent text-zinc-400 hover:text-white hover:bg-white/[0.04]'
                   }`}
                 >
-                  <span className={`w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold ${
-                    activeStepId === st.id ? 'bg-black/30 text-white' : 'bg-[#1C1E2B] text-slate-400'
+                  <span className={`w-4 h-4 rounded flex items-center justify-center text-[10px] font-bold ${
+                    activeStepId === st.id ? 'bg-black/30 text-white' : 'bg-white/[0.06] text-zinc-400'
                   }`}>
                     {st.step}
                   </span>

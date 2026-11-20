@@ -284,13 +284,13 @@ export default function GlobalSearchModal({ isOpen, onClose, onSelectResult }) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/80 backdrop-blur-md flex items-start justify-center pt-16 sm:pt-24 p-4">
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/80 backdrop-blur-sm flex items-start justify-center pt-16 sm:pt-24 p-4">
       <div 
-        className="relative w-full max-w-2xl bg-[#0C0D12] border border-[#282D3F] rounded-2xl shadow-domain overflow-hidden"
+        className="relative w-full max-w-2xl bg-[#0C0D12] border border-white/10 rounded-2xl shadow-2xl ring-1 ring-white/5 overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Search Input Bar */}
-        <div className="relative flex items-center px-4 border-b border-[#202332]">
+        <div className="relative flex items-center px-4 border-b border-white/[0.08]">
           <Search className={`w-5 h-5 ${currentTheme.accentClass} mr-3 shrink-0`} />
           <input
             ref={inputRef}
@@ -298,12 +298,12 @@ export default function GlobalSearchModal({ isOpen, onClose, onSelectResult }) {
             value={query}
             onChange={(e) => { setQuery(e.target.value); setSelectedIndex(0); }}
             placeholder="Tìm kiếm thuật thức, class, chú cụ, quy tắc (Limitless, Sukuna, Overtime...)..."
-            className="w-full py-4 bg-transparent text-sm sm:text-base text-white placeholder-slate-500 focus:outline-none font-sans"
+            className="w-full py-4 bg-transparent text-sm sm:text-base text-white placeholder-zinc-500 focus:outline-none font-sans"
           />
           {query && (
             <button 
               onClick={() => setQuery('')}
-              className="p-1 text-slate-500 hover:text-white"
+              className="p-1 text-zinc-500 hover:text-white"
             >
               <X className="w-4 h-4" />
             </button>
@@ -313,8 +313,8 @@ export default function GlobalSearchModal({ isOpen, onClose, onSelectResult }) {
         {/* Results List */}
         <div ref={listRef} className="max-h-[60vh] overflow-y-auto p-2 space-y-1">
           {filteredResults.length === 0 ? (
-            <div className="py-12 text-center text-slate-500">
-              <Search className="w-8 h-8 mx-auto mb-2 opacity-30 text-slate-400" />
+            <div className="py-12 text-center text-zinc-500">
+              <Search className="w-8 h-8 mx-auto mb-2 opacity-30 text-zinc-400" />
               <p className="text-sm">Không tìm thấy kết quả nào khớp với "{query}"</p>
             </div>
           ) : (
@@ -326,32 +326,32 @@ export default function GlobalSearchModal({ isOpen, onClose, onSelectResult }) {
                   key={`${item.type}-${item.id}-${idx}`}
                   onClick={() => handleSelect(item)}
                   onMouseEnter={() => setSelectedIndex(idx)}
-                  className={`flex items-center justify-between p-3 rounded-xl cursor-pointer transition-all ${
+                  className={`flex items-center justify-between p-2.5 rounded-xl cursor-pointer transition-colors ${
                     isSelected 
-                      ? 'bg-[#181924] border border-[#383D56] shadow-sm' 
-                      : 'hover:bg-[#12131A] border border-transparent'
+                      ? 'bg-white/[0.08] border border-white/10' 
+                      : 'hover:bg-white/[0.04] border border-transparent'
                   }`}
                 >
                   <div className="flex items-center space-x-3 min-w-0">
-                    <div className="w-9 h-9 rounded-lg bg-[#14151E] border border-[#232738] flex items-center justify-center shrink-0">
-                      <Icon className="w-4 h-4 text-slate-300" />
+                    <div className="w-8 h-8 rounded-lg bg-white/[0.04] border border-white/10 flex items-center justify-center shrink-0">
+                      <Icon className="w-4 h-4 text-zinc-300" />
                     </div>
                     <div className="min-w-0">
                       <div className="flex items-center space-x-2">
                         <span className="text-sm font-bold text-white truncate font-display">
                           {item.title}
                         </span>
-                        <span className={`text-[9px] px-2 py-0.2 rounded-full border ${item.badgeColor} font-mono`}>
+                        <span className={`text-[9px] px-1.5 py-0.2 rounded border ${item.badgeColor} font-mono`}>
                           {item.type}
                         </span>
-                        <span className="text-[10px] font-kanji text-slate-600 hidden sm:inline">{item.kanji}</span>
+                        <span className="text-[10px] font-kanji text-zinc-600 hidden sm:inline">{item.kanji}</span>
                       </div>
-                      <p className="text-xs text-slate-400 truncate mt-0.5 font-sans">
+                      <p className="text-xs text-zinc-400 truncate mt-0.5 font-sans">
                         {item.subtitle}
                       </p>
                     </div>
                   </div>
-                  <ChevronRight className={`w-4 h-4 shrink-0 transition-transform ${isSelected ? 'text-white translate-x-0.5' : 'text-slate-600'}`} />
+                  <ChevronRight className={`w-4 h-4 shrink-0 transition-transform ${isSelected ? 'text-white translate-x-0.5' : 'text-zinc-600'}`} />
                 </div>
               );
             })
