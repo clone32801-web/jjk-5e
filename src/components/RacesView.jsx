@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import racesData from '../data/races.json';
 import { useTheme } from '../context/ThemeContext';
+import GDocButton from './GDocButton';
 
 export default function RacesView({ selectedRaceId, onSelectRace }) {
   const [internalRaceId, setInternalRaceId] = useState(racesData[0]?.id || 'human-races');
@@ -138,6 +139,12 @@ export default function RacesView({ selectedRaceId, onSelectRace }) {
                     <span>Đại diện: {currentRace.character}</span>
                   </span>
                 )}
+                <GDocButton 
+                  type="races" 
+                  targetKey={currentRace.id} 
+                  label={`GDoc ${currentRace.name}`} 
+                  size="xs" 
+                />
               </div>
 
               <h2 className="text-3xl sm:text-4xl font-black text-white font-display">

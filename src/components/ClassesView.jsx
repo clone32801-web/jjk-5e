@@ -7,6 +7,7 @@ import {
 } from 'lucide-react';
 import classesData from '../data/classes.json';
 import { useTheme } from '../context/ThemeContext';
+import GDocButton from './GDocButton';
 
 export default function ClassesView({ selectedClassId, onSelectClass }) {
   const [activeClassId, setActiveClassId] = useState(selectedClassId || 'juggernaut');
@@ -216,6 +217,14 @@ export default function ClassesView({ selectedClassId, onSelectClass }) {
                     <span>Chú Lực: {currentClass.ceFormula}</span>
                   </span>
                 )}
+
+                {/* Google Docs Source Button */}
+                <GDocButton 
+                  type="classes" 
+                  targetKey={currentClass.id} 
+                  label={`GDoc ${currentClass.name}`} 
+                  size="xs" 
+                />
               </div>
 
               <h2 className="text-3xl sm:text-4xl font-black text-white font-display tracking-tight">

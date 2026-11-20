@@ -30,6 +30,7 @@ import classesData from '../data/classes.json';
 import techniquesData from '../data/techniques.json';
 import racesData from '../data/races.json';
 import backgroundsData from '../data/backgrounds.json';
+import GDocButton from './GDocButton';
 
 export default function CharacterCreationView({ 
   activeStep, 
@@ -198,8 +199,14 @@ Thưởng Đòn Đánh Chú Thuật (CE Attack Bonus): ${ceAttackBonus}
               <span>Chapter 1: Making a Character</span>
             </span>
             <span className="px-2.5 py-0.5 rounded-full text-[10px] font-mono text-slate-400 bg-[#161824] border border-[#262A3C]">
-              Chuẩn 1:1 theo sách gốc & eidorii.com
+              Chuẩn 1:1 theo sách gốc &amp; eidorii.com
             </span>
+            <GDocButton 
+              type="categories" 
+              targetKey="creation" 
+              label="GDoc Tạo Nhân Vật" 
+              size="xs" 
+            />
           </div>
 
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">

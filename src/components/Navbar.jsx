@@ -33,6 +33,7 @@ import {
   User
 } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
+import GDocButton from './GDocButton';
 
 export default function Navbar({ 
   activeTab, 
@@ -487,6 +488,17 @@ export default function Navbar({
             </div>
           </div>
 
+          {/* Master Google Doc Link */}
+          <div className="pt-2">
+            <GDocButton 
+              url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit"
+              label="Tài liệu GDoc V.6 gốc" 
+              size="xs" 
+              variant="subtle" 
+              className="w-full justify-between" 
+            />
+          </div>
+
           {/* Version Note */}
           <div className="px-1 text-[10px] text-zinc-500 font-mono flex items-center justify-between">
             <span>D&amp;D 5E JJK System</span>
@@ -694,6 +706,17 @@ export default function Navbar({
                   );
                 })}
               </div>
+            </div>
+
+            {/* Mobile Master GDoc Link */}
+            <div className="pt-2">
+              <GDocButton 
+                url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit"
+                label="Tài liệu GDoc V.6 gốc" 
+                size="sm" 
+                variant="subtle" 
+                className="w-full justify-between" 
+              />
             </div>
 
           </div>

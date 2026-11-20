@@ -1,0 +1,1022 @@
+[
+  {
+    "headingId": "h.wd48z7wiaa3k",
+    "title": "Table of Contents"
+  },
+  {
+    "headingId": "h.hmxycjjr6o05",
+    "title": "Making a Character"
+  },
+  {
+    "headingId": "h.yhymalzb8bh4",
+    "title": "Setting Up a Character"
+  },
+  {
+    "headingId": "h.pwf0z46nxrx7",
+    "title": "1. Choosing Your Race"
+  },
+  {
+    "headingId": "h.suj00rr9328f",
+    "title": "2. Choosing Your Class"
+  },
+  {
+    "headingId": "h.sonxwbioa2t5",
+    "title": "3. Describing Your Character"
+  },
+  {
+    "headingId": "h.yf1mg3eonvi",
+    "title": "1st level and beyond"
+  },
+  {
+    "headingId": "h.vj04f4gs7w6v",
+    "title": "Races"
+  },
+  {
+    "headingId": "h.ctlbc6irsjfj",
+    "title": "Human Races"
+  },
+  {
+    "headingId": "h.blunsfdm4r2e",
+    "title": "Cursed Vessel"
+  },
+  {
+    "headingId": "h.hrrbgdym2yo3",
+    "title": "Cursed Corpses"
+  },
+  {
+    "headingId": "h.12uj9q2tkdi7",
+    "title": "Cursed Spirits"
+  },
+  {
+    "headingId": "h.6f3dzbggc47",
+    "title": "Classes"
+  },
+  {
+    "headingId": "h.21p6i99kjxns",
+    "title": "Juggernaut"
+  },
+  {
+    "headingId": "h.rqtbq2n8253z",
+    "title": "Scout"
+  },
+  {
+    "headingId": "h.ro8s10u0bxu1",
+    "title": "Strategist"
+  },
+  {
+    "headingId": "h.rkml5eacof2f",
+    "title": "Shikigami User"
+  },
+  {
+    "headingId": "h.jyvh9hy0wsa9",
+    "title": "Support Specialist"
+  },
+  {
+    "headingId": "h.42leaevz2i83",
+    "title": "Warrior"
+  },
+  {
+    "headingId": "h.an4sxk8s4732",
+    "title": "Innate Techniques"
+  },
+  {
+    "headingId": "h.6n9dkkr04bhf",
+    "title": "Antigravity System"
+  },
+  {
+    "headingId": "h.awlq0235eduy",
+    "title": "Auspicious Beast Summon"
+  },
+  {
+    "headingId": "h.ta4bwrtdd954",
+    "title": "Black Bird Manipulation"
+  },
+  {
+    "headingId": "h.mc469sjqimr8",
+    "title": "Black Box"
+  },
+  {
+    "headingId": "h.howliy9619f6",
+    "title": "Blazing Courage"
+  },
+  {
+    "headingId": "h.48rg5er967lc",
+    "title": "Blood Manipulation"
+  },
+  {
+    "headingId": "h.e85in9g95ons",
+    "title": "Boogie Woogie"
+  },
+  {
+    "headingId": "h.qbdvlyisbiuk",
+    "title": "Body Manipulation"
+  },
+  {
+    "headingId": "h.n4ctrww3jb3z",
+    "title": "Centipede Shroud"
+  },
+  {
+    "headingId": "h.vv7z66sl3a03",
+    "title": "Clone"
+  },
+  {
+    "headingId": "h.pkndbtf6kvgv",
+    "title": "Comedian"
+  },
+  {
+    "headingId": "h.nbcjcm21fyud",
+    "title": "Construction"
+  },
+  {
+    "headingId": "h.hijgddul448s",
+    "title": "Contractual Recreation"
+  },
+  {
+    "headingId": "h.cty7mhc1k3mv",
+    "title": "Cursed Cannon"
+  },
+  {
+    "headingId": "h.glevytn8kjyc",
+    "title": "Cursed Circuitry"
+  },
+  {
+    "headingId": "h.epe1a0zf3oga",
+    "title": "Cursed Corpse Creation"
+  },
+  {
+    "headingId": "h.5tf6uk7vedjh",
+    "title": "Cursed Speech"
+  },
+  {
+    "headingId": "h.fjkds4m6fy2e",
+    "title": "Cursed Spirit Manipulation"
+  },
+  {
+    "headingId": "h.qim1kdgvm388",
+    "title": "Cursed Transmutation"
+  },
+  {
+    "headingId": "h.u3gy1tsgspbh",
+    "title": "Dark Claw"
+  },
+  {
+    "headingId": "h.24re3k1tgqwt",
+    "title": "Deadly Sentencing"
+  },
+  {
+    "headingId": "h.459dlgyca5br",
+    "title": "Disaster Flames"
+  },
+  {
+    "headingId": "h.dfvwmqw54ort",
+    "title": "Disaster Storms"
+  },
+  {
+    "headingId": "h.7g1rngz5offl",
+    "title": "Disaster Tides"
+  },
+  {
+    "headingId": "h.aosvuk41gdmv",
+    "title": "Disaster Verdure"
+  },
+  {
+    "headingId": "h.yt3ry9qoc6",
+    "title": "Disaster Vermin"
+  },
+  {
+    "headingId": "h.msebfrccb4ep",
+    "title": "Dragon Vein"
+  },
+  {
+    "headingId": "h.yyqhnr7aaa44",
+    "title": "Divergent Fist"
+  },
+  {
+    "headingId": "h.w8r4mrerijei",
+    "title": "Earth Manipulation"
+  },
+  {
+    "headingId": "h.5v02yyu5l1lb",
+    "title": "Eight Heads"
+  },
+  {
+    "headingId": "h.u2iuips63sz1",
+    "title": "Esoteric Art"
+  },
+  {
+    "headingId": "h.ny8qyq86ancw",
+    "title": "Explosive Flesh"
+  },
+  {
+    "headingId": "h.f9gb4aqjiuf8",
+    "title": "Fa Jin"
+  },
+  {
+    "headingId": "h.br0pozdes177",
+    "title": "Faceless God"
+  },
+  {
+    "headingId": "h.b89oswf9ngzo",
+    "title": "Fate"
+  },
+  {
+    "headingId": "h.nbfgs9gb8b0i",
+    "title": "G Warstaff"
+  },
+  {
+    "headingId": "h.z8mu3ywasm2u",
+    "title": "Golden Hour"
+  },
+  {
+    "headingId": "h.mhy60935j2tg",
+    "title": "Hair Manipulation"
+  },
+  {
+    "headingId": "h.p52ypufvlhoy",
+    "title": "Heart Catch"
+  },
+  {
+    "headingId": "h.mmctznbjqpzw",
+    "title": "Ice Formation"
+  },
+  {
+    "headingId": "h.m9id5hortwxf",
+    "title": "Idle Transfiguration"
+  },
+  {
+    "headingId": "h.l6zksal4dcea",
+    "title": "Illusive Mirage"
+  },
+  {
+    "headingId": "h.9lsbmy3edctv",
+    "title": "Inverse"
+  },
+  {
+    "headingId": "h.ham6655kjzuy",
+    "title": "Laplace’s Demon"
+  },
+  {
+    "headingId": "h.a1922erz51bp",
+    "title": "Limitless"
+  },
+  {
+    "headingId": "h.6tjdkn8zvyt",
+    "title": "Love Rendezvous"
+  },
+  {
+    "headingId": "h.vhvu9n1isiqf",
+    "title": "Miracle"
+  },
+  {
+    "headingId": "h.e89c2tens30w",
+    "title": "Missile Fist"
+  },
+  {
+    "headingId": "h.5ercofhijqj7",
+    "title": "Moon Dregs"
+  },
+  {
+    "headingId": "h.iniha64dx9ea",
+    "title": "Mythical Beast Amber"
+  },
+  {
+    "headingId": "h.s3465gu0ji9",
+    "title": "New Shadow Style"
+  },
+  {
+    "headingId": "h.iyasjq47e09y",
+    "title": "Pachinko Fever"
+  },
+  {
+    "headingId": "h.fs3xpvpaje7g",
+    "title": "Pain Killer"
+  },
+  {
+    "headingId": "h.xghmfdjxahlt",
+    "title": "Paralyzing Gaze"
+  },
+  {
+    "headingId": "h.oxcvnd7nnfo0",
+    "title": "Prayer Song"
+  },
+  {
+    "headingId": "h.j1he8roxnjoe",
+    "title": "Projection Sorcery"
+  },
+  {
+    "headingId": "h.47qmpzshpwkj",
+    "title": "Puppet Manipulation"
+  },
+  {
+    "headingId": "h.2gyvt6x36ub4",
+    "title": "Ratio"
+  },
+  {
+    "headingId": "h.7z80w6r8x25h",
+    "title": "Regalia"
+  },
+  {
+    "headingId": "h.xqncoigflz7l",
+    "title": "Retrograde"
+  },
+  {
+    "headingId": "h.nzyxp57oco18",
+    "title": "Rockstar"
+  },
+  {
+    "headingId": "h.qq2ah0p0hrem",
+    "title": "Rot"
+  },
+  {
+    "headingId": "h.te9xuhg4e8ws",
+    "title": "Schrift X"
+  },
+  {
+    "headingId": "h.aodouyp94o27",
+    "title": "Seance"
+  },
+  {
+    "headingId": "h.1jkg68cr5cg",
+    "title": "Shadow Killer"
+  },
+  {
+    "headingId": "h.nicxazfghc59",
+    "title": "Shrine"
+  },
+  {
+    "headingId": "h.sf0mao1l4ymu",
+    "title": "Sky Manipulation"
+  },
+  {
+    "headingId": "h.bba9kwgvn09r",
+    "title": "Solo Forbidden Zone"
+  },
+  {
+    "headingId": "h.zdlus8sovrt4",
+    "title": "Star Dictator"
+  },
+  {
+    "headingId": "h.20zro6w31lmt",
+    "title": "Star Rage"
+  },
+  {
+    "headingId": "h.a3kp28dk0juu",
+    "title": "Starlight Symphony"
+  },
+  {
+    "headingId": "h.uli0obatcbmr",
+    "title": "Straw Doll Technique"
+  },
+  {
+    "headingId": "h.82rma8ecx1pw",
+    "title": "Technique Extermination"
+  },
+  {
+    "headingId": "h.o2f63kb2ewgf",
+    "title": "Teleportation"
+  },
+  {
+    "headingId": "h.1ubpt7hhcfy4",
+    "title": "Ten Shadows"
+  },
+  {
+    "headingId": "h.qbcdaelyfxx1",
+    "title": "Tool Manipulation"
+  },
+  {
+    "headingId": "h.2b5b5zg8l30r",
+    "title": "Triple Core"
+  },
+  {
+    "headingId": "h.c2cy98x5cqfp",
+    "title": "Vengeful Spirit Manipulation"
+  },
+  {
+    "headingId": "h.vk408fr80rr9",
+    "title": "Voracity"
+  },
+  {
+    "headingId": "h.mgu04dg581rk",
+    "title": "Heavenly Restriction"
+  },
+  {
+    "headingId": "h.2rpyo2dgynre",
+    "title": "Ideals"
+  },
+  {
+    "headingId": "h.g1o1shnkz5ha",
+    "title": "Prideful"
+  },
+  {
+    "headingId": "h.cjbrcpjhfss3",
+    "title": "Vengeful"
+  },
+  {
+    "headingId": "h.mknfmhjz44z8",
+    "title": "Body Improvements"
+  },
+  {
+    "headingId": "h.iwjo9x3c698b",
+    "title": "Strength Improvements"
+  },
+  {
+    "headingId": "h.px6849qyz04p",
+    "title": "Speed Improvements"
+  },
+  {
+    "headingId": "h.ydi0txszsswr",
+    "title": "Durability Improvements"
+  },
+  {
+    "headingId": "h.9ygvnga40kwa",
+    "title": "Mind Improvements"
+  },
+  {
+    "headingId": "h.7gnpbz2bgg2",
+    "title": "Background &amp; Mindset"
+  },
+  {
+    "headingId": "h.b8a66dqcjud0",
+    "title": "Backgrounds"
+  },
+  {
+    "headingId": "h.20uf5hw2mj2b",
+    "title": "Mindsets"
+  },
+  {
+    "headingId": "h.bgblnpr23sw4",
+    "title": "Equipment"
+  },
+  {
+    "headingId": "h.13jkq2rk07xu",
+    "title": "Wealth"
+  },
+  {
+    "headingId": "h.lqpm6t62d4ti",
+    "title": "Armor &amp; Shields"
+  },
+  {
+    "headingId": "h.9l9jc67jx8ll",
+    "title": "Weapons"
+  },
+  {
+    "headingId": "h.533l2oqyyo0k",
+    "title": "Adventuring Gear"
+  },
+  {
+    "headingId": "h.luoufs1rip0m",
+    "title": "4th Grade Tools"
+  },
+  {
+    "headingId": "h.w1uuvvtqi8av",
+    "title": "3rd Grade Tools"
+  },
+  {
+    "headingId": "h.jder70hk3qel",
+    "title": "2nd Grade Tools"
+  },
+  {
+    "headingId": "h.kfbqwul8jvmi",
+    "title": "1st Grade Tools"
+  },
+  {
+    "headingId": "h.7wqr8jkpmmit",
+    "title": "Special Grade Tools"
+  },
+  {
+    "headingId": "h.tswkf2a1l3gj",
+    "title": "Semi Cursed Tools"
+  },
+  {
+    "headingId": "h.9ll6s4ovmf9z",
+    "title": "Customization &amp; Feats"
+  },
+  {
+    "headingId": "h.3ijj9cn21yu3",
+    "title": "Multiclassing"
+  },
+  {
+    "headingId": "h.bjdievtq6l5q",
+    "title": "Feats"
+  },
+  {
+    "headingId": "h.xt40o0favw19",
+    "title": "Barrier Feats"
+  },
+  {
+    "headingId": "h.hu0x714d3nqm",
+    "title": "Cursed Energy Feats"
+  },
+  {
+    "headingId": "h.gd071six47sm",
+    "title": "Physical Feats"
+  },
+  {
+    "headingId": "h.mf54ui7n7pfh",
+    "title": "Reverse Cursed Technique Feats"
+  },
+  {
+    "headingId": "h.s3mvw442egpq",
+    "title": "Skill Feats"
+  },
+  {
+    "headingId": "h.sqe9f74kkmj7",
+    "title": "Innate Technique Feats"
+  },
+  {
+    "headingId": "h.s8bincwvmyc7",
+    "title": "Antigravity System"
+  },
+  {
+    "headingId": "h.i3c1t6e1rvin",
+    "title": "Auspicious Beast Summon"
+  },
+  {
+    "headingId": "h.l2m7uxqw5pmk",
+    "title": "Black Bird Manipulation"
+  },
+  {
+    "headingId": "h.h2dbdh6snv97",
+    "title": "Black Box"
+  },
+  {
+    "headingId": "h.sf178w203jcy",
+    "title": "Blazing Courage"
+  },
+  {
+    "headingId": "h.aelfuyncom1i",
+    "title": "Blood Manipulation"
+  },
+  {
+    "headingId": "h.llafna7qvi7f",
+    "title": "Boogie Woogie"
+  },
+  {
+    "headingId": "h.xku7vxnlzikd",
+    "title": "Body Manipulation"
+  },
+  {
+    "headingId": "h.mjk12wc2kg8m",
+    "title": "Centipede Shroud"
+  },
+  {
+    "headingId": "h.f2iuk4gkmctp",
+    "title": "Clone"
+  },
+  {
+    "headingId": "h.bm1ffd4wf40p",
+    "title": "Comedian"
+  },
+  {
+    "headingId": "h.fawkigqdpsnx",
+    "title": "Construction"
+  },
+  {
+    "headingId": "h.btqj6tmem2ej",
+    "title": "Contractual Recreation"
+  },
+  {
+    "headingId": "h.o03zzkgo1igw",
+    "title": "Cursed Cannon"
+  },
+  {
+    "headingId": "h.i8ggjeh5od5r",
+    "title": "Cursed Corpse Creation"
+  },
+  {
+    "headingId": "h.vhnxpmey2gx",
+    "title": "Cursed Circuitry"
+  },
+  {
+    "headingId": "h.ueh47yumls0m",
+    "title": "Cursed Speech"
+  },
+  {
+    "headingId": "h.ikmgnq6zk596",
+    "title": "Cursed Spirit Manipulation"
+  },
+  {
+    "headingId": "h.nm9j0wgzl35g",
+    "title": "Cursed Transmutation"
+  },
+  {
+    "headingId": "h.qirvfttdae1y",
+    "title": "Dark Claw"
+  },
+  {
+    "headingId": "h.go0jebn157dz",
+    "title": "Deadly Sentencing"
+  },
+  {
+    "headingId": "h.ropr41nwto7h",
+    "title": "Disaster Flames"
+  },
+  {
+    "headingId": "h.60n8h9o5y788",
+    "title": "Disaster Storms"
+  },
+  {
+    "headingId": "h.ao7pcm2g2seg",
+    "title": "Disaster Tides"
+  },
+  {
+    "headingId": "h.utnufp6521k9",
+    "title": "Disaster Verdure"
+  },
+  {
+    "headingId": "h.knsv8hfw3t96",
+    "title": "Disaster Vermin"
+  },
+  {
+    "headingId": "h.p5dvi6t7gebw",
+    "title": "Divergent Fist"
+  },
+  {
+    "headingId": "h.wl7t2grnikt6",
+    "title": "Dragon Vein"
+  },
+  {
+    "headingId": "h.ylon9hk2crs6",
+    "title": "Earth Manipulation"
+  },
+  {
+    "headingId": "h.kmjo60d9ew9r",
+    "title": "Eight Heads"
+  },
+  {
+    "headingId": "h.a32zwjymcb9l",
+    "title": "Esoteric Art"
+  },
+  {
+    "headingId": "h.aulnka6we7gu",
+    "title": "Explosive Flesh"
+  },
+  {
+    "headingId": "h.cbemabpi48i5",
+    "title": "Fa Jin"
+  },
+  {
+    "headingId": "h.bv6vhlv09fq7",
+    "title": "Faceless God"
+  },
+  {
+    "headingId": "h.1dfi83gpnccn",
+    "title": "Fate"
+  },
+  {
+    "headingId": "h.3ormau3q95m3",
+    "title": "G Warstaff"
+  },
+  {
+    "headingId": "h.74c40c252i8o",
+    "title": "Golden Hour"
+  },
+  {
+    "headingId": "h.whsvobcdi6em",
+    "title": "Hair Manipulation"
+  },
+  {
+    "headingId": "h.ac6fjoj1xqno",
+    "title": "Heart Catch"
+  },
+  {
+    "headingId": "h.g6qypelb3dzc",
+    "title": "Ice Formation"
+  },
+  {
+    "headingId": "h.g406iuo8xae5",
+    "title": "Idle Transfiguration"
+  },
+  {
+    "headingId": "h.qvz3bxknya3o",
+    "title": "Illusive Mirage"
+  },
+  {
+    "headingId": "h.ivbavn8ctakm",
+    "title": "Inverse"
+  },
+  {
+    "headingId": "h.hp3ul7k55kq7",
+    "title": "Laplace’s Demon"
+  },
+  {
+    "headingId": "h.z7wsqh4f8mo1",
+    "title": "Limitless"
+  },
+  {
+    "headingId": "h.4dcpcax184mc",
+    "title": "Love Rendezvous"
+  },
+  {
+    "headingId": "h.pyow76i9d63z",
+    "title": "Miracle"
+  },
+  {
+    "headingId": "h.88xc0ucwidhb",
+    "title": "Missile Fist"
+  },
+  {
+    "headingId": "h.dagszwg1fbdm",
+    "title": "Moon Dregs"
+  },
+  {
+    "headingId": "h.73al8yp3fkl3",
+    "title": "Mythical Beast Amber"
+  },
+  {
+    "headingId": "h.midsukbj8o0k",
+    "title": "New Shadow Style"
+  },
+  {
+    "headingId": "h.re196a7b5y3b",
+    "title": "Pachinko Fever"
+  },
+  {
+    "headingId": "h.u4dommeqaqwm",
+    "title": "Pain Killer"
+  },
+  {
+    "headingId": "h.x3j1h2526t9g",
+    "title": "Paralyzing Gaze"
+  },
+  {
+    "headingId": "h.epshjo3hcjfa",
+    "title": "Prayer Song"
+  },
+  {
+    "headingId": "h.obdhh0tl2q2n",
+    "title": "Projection Sorcery"
+  },
+  {
+    "headingId": "h.qlxztosxng4u",
+    "title": "Puppet Manipulation"
+  },
+  {
+    "headingId": "h.9v6pr4fvqndx",
+    "title": "Ratio"
+  },
+  {
+    "headingId": "h.qj1v1dy4vdyl",
+    "title": "Regalia"
+  },
+  {
+    "headingId": "h.ehwo2pmjou8c",
+    "title": "Retrograde"
+  },
+  {
+    "headingId": "h.f43q3x6ypuf",
+    "title": "Rockstar"
+  },
+  {
+    "headingId": "h.hrze0re50x7n",
+    "title": "Rot"
+  },
+  {
+    "headingId": "h.l5dewjb7vftt",
+    "title": "Schrift X"
+  },
+  {
+    "headingId": "h.27wvmtbz9shp",
+    "title": "Seance"
+  },
+  {
+    "headingId": "h.2wwufngapir",
+    "title": "Shadow Killer"
+  },
+  {
+    "headingId": "h.2h11z4rpjw48",
+    "title": "Shrine"
+  },
+  {
+    "headingId": "h.hbj74g4lcw3b",
+    "title": "Sky Manipulation"
+  },
+  {
+    "headingId": "h.5og73dmeovx5",
+    "title": "Solo Forbidden Zone"
+  },
+  {
+    "headingId": "h.cnifi9azyfec",
+    "title": "Star Dictator"
+  },
+  {
+    "headingId": "h.9bjaj3iugcmy",
+    "title": "Star Rage"
+  },
+  {
+    "headingId": "h.253jqbk3zjgk",
+    "title": "Starlight Symphony"
+  },
+  {
+    "headingId": "h.by5x04qe1i6o",
+    "title": "Straw Doll Technique"
+  },
+  {
+    "headingId": "h.zhnxlq1ol3j0",
+    "title": "Technique Extermination"
+  },
+  {
+    "headingId": "h.549jyeck6tvm",
+    "title": "Teleportation"
+  },
+  {
+    "headingId": "h.oea66mftz6hn",
+    "title": "Ten Shadows"
+  },
+  {
+    "headingId": "h.skr8fu3co48",
+    "title": "Tool Manipulation"
+  },
+  {
+    "headingId": "h.f0xx4ikgilw9",
+    "title": "Triple Core"
+  },
+  {
+    "headingId": "h.jxzon6a1147o",
+    "title": "Vengeful Spirit Manipulation"
+  },
+  {
+    "headingId": "h.wkt9g6qb8le3",
+    "title": "Voracity"
+  },
+  {
+    "headingId": "h.60rag38d7m7k",
+    "title": "Intricacies of Sorcery"
+  },
+  {
+    "headingId": "h.s4i0hvmlp8qf",
+    "title": "Cursed Energy"
+  },
+  {
+    "headingId": "h.ymgpvpr9p325",
+    "title": "Binding Vows"
+  },
+  {
+    "headingId": "h.x1qpajr7udx5",
+    "title": "Personal Vows"
+  },
+  {
+    "headingId": "h.buiny88z330u",
+    "title": "Solo Binding Vow Examples"
+  },
+  {
+    "headingId": "h.ylvtoduwikh8",
+    "title": "Multi Binding Vow Example"
+  },
+  {
+    "headingId": "h.8j2bz9o4iljp",
+    "title": "Making Your Own"
+  },
+  {
+    "headingId": "h.nkzv11u1nu3t",
+    "title": "Consequences of Breaking a Binding Vow"
+  },
+  {
+    "headingId": "h.ovuvo4t9jmb",
+    "title": "Breakthroughs"
+  },
+  {
+    "headingId": "h.9p77nvsl1ep3",
+    "title": "Black Flashes"
+  },
+  {
+    "headingId": "h.3rzvevllwdai",
+    "title": "Reverse Cursed Technique"
+  },
+  {
+    "headingId": "h.ahp4oufreadv",
+    "title": "Awakened Understanding"
+  },
+  {
+    "headingId": "h.e7r38eqhbt0z",
+    "title": "Cursed Physiology"
+  },
+  {
+    "headingId": "h.v2hqm5cjagxc",
+    "title": "Domain Expansion"
+  },
+  {
+    "headingId": "h.gi4uohu4d6ze",
+    "title": "Domain Basics"
+  },
+  {
+    "headingId": "h.u5f7wflxnm46",
+    "title": "Lethal Domains"
+  },
+  {
+    "headingId": "h.xomh6zf9hmv1",
+    "title": "Non-Lethal Domains"
+  },
+  {
+    "headingId": "h.radbtjrs8w38",
+    "title": "Domain Refinement"
+  },
+  {
+    "headingId": "h.3zq9ctqolcsj",
+    "title": "Weak Points"
+  },
+  {
+    "headingId": "h.gezbv1ynv5jm",
+    "title": "Domain Clashes"
+  },
+  {
+    "headingId": "h.9fsjuh2oec2z",
+    "title": "Barrierless Domain"
+  },
+  {
+    "headingId": "h.l7hoaxju4m1p",
+    "title": "Limb Damage Table"
+  },
+  {
+    "headingId": "h.267zvw4l3qd3",
+    "title": "Maximum Output"
+  },
+  {
+    "headingId": "h.4dn1ee1pldov",
+    "title": "Reduced Output"
+  },
+  {
+    "headingId": "h.lw32vyokgedv",
+    "title": "Soul Awareness"
+  },
+  {
+    "headingId": "h.76w929clk6dy",
+    "title": "Soul Awareness Levels"
+  },
+  {
+    "headingId": "h.biszdui2rom4",
+    "title": "The Zone"
+  },
+  {
+    "headingId": "h.tyymuck84gb8",
+    "title": "Rules of Thumb"
+  },
+  {
+    "headingId": "h.a2opaxiant9t",
+    "title": "Grading System"
+  },
+  {
+    "headingId": "h.xare48rjdld4",
+    "title": "Cursed Techniques"
+  },
+  {
+    "headingId": "h.r1wlnvjkumvz",
+    "title": "Technique Burnout"
+  },
+  {
+    "headingId": "h.rizq0tb7oass",
+    "title": "Cursed Spirits"
+  },
+  {
+    "headingId": "h.hhhlrrph35ai",
+    "title": "Shikigami"
+  },
+  {
+    "headingId": "h.q3y41mtwlr84",
+    "title": "Heavenly Restriction"
+  },
+  {
+    "headingId": "h.qut384wfztuj",
+    "title": "Falling"
+  },
+  {
+    "headingId": "h.nmv67op7j4a",
+    "title": "Action Economy"
+  },
+  {
+    "headingId": "h.j14xin3vb8o0",
+    "title": "Actions"
+  },
+  {
+    "headingId": "h.v6tm6zs8wf2b",
+    "title": "Barriers"
+  },
+  {
+    "headingId": "h.5l20xocsnge8",
+    "title": "Reincarnated"
+  },
+  {
+    "headingId": "h.pqlas8xxc5sx",
+    "title": "Domain Expansion"
+  },
+  {
+    "headingId": "h.n4h2qkk6zuyl",
+    "title": "Incomplete Domains"
+  },
+  {
+    "headingId": "h.gvglq1sstk0m",
+    "title": "Soul Damage"
+  },
+  {
+    "headingId": "h.rzplynwgmvc",
+    "title": "Original Innate Techniques"
+  },
+  {
+    "headingId": "h.yyk2vfcfxdug",
+    "title": "Optional Rules"
+  },
+  {
+    "headingId": "h.sc9zr0lokggp",
+    "title": "Credits"
+  }
+]

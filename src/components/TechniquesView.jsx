@@ -23,6 +23,7 @@ import {
 } from 'lucide-react';
 import techniquesData from '../data/techniques.json';
 import { useTheme } from '../context/ThemeContext';
+import GDocButton from './GDocButton';
 
 export default function TechniquesView({ 
   selectedTechniqueId, 
@@ -559,13 +560,22 @@ export default function TechniquesView({
                 </div>
               </div>
 
-              <button 
-                onClick={() => setActiveTechnique(null)}
-                className="p-1.5 text-zinc-400 hover:text-white rounded-lg bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 transition-colors"
-                title="Đóng (Esc)"
-              >
-                <X className="w-4 h-4" />
-              </button>
+              <div className="flex items-center space-x-2 shrink-0">
+                <GDocButton 
+                  type="techniques" 
+                  targetKey={activeTechnique.id} 
+                  label="GDoc Thuật Thức" 
+                  size="xs" 
+                />
+
+                <button 
+                  onClick={() => setActiveTechnique(null)}
+                  className="p-1.5 text-zinc-400 hover:text-white rounded-lg bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 transition-colors"
+                  title="Đóng (Esc)"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
             </div>
 
             {/* Internal Navigation Tabs Bar */}

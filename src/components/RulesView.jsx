@@ -31,6 +31,7 @@ import {
 } from 'lucide-react';
 import rulesData from '../data/rules.json';
 import { useTheme } from '../context/ThemeContext';
+import GDocButton from './GDocButton';
 
 export default function RulesView({ activeSection: propActiveSection, setActiveSection: propSetActiveSection }) {
   const [localActiveSection, setLocalActiveSection] = useState('cursed-energy');
@@ -96,19 +97,27 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
       </div>
 
       {/* Header */}
-      <div className="mb-8">
-        <div className="flex items-center space-x-2 mb-1">
-          <span className="px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold bg-purple-500/15 text-purple-300 border border-purple-500/30">
-            Chapter 7: Intricacies of Sorcery
-          </span>
-          <span className="text-[10px] font-mono text-slate-500">Chuẩn 1:1 theo sách gốc &amp; eidorii.com</span>
+      <div className="mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <div className="flex items-center space-x-2 mb-1">
+            <span className="px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold bg-purple-500/15 text-purple-300 border border-purple-500/30">
+              Chapter 7: Intricacies of Sorcery
+            </span>
+            <span className="text-[10px] font-mono text-slate-500">Chuẩn 1:1 theo sách gốc &amp; eidorii.com</span>
+          </div>
+          <h1 className="text-3xl sm:text-4xl font-black text-white font-display">
+            Intricacies of Sorcery
+          </h1>
+          <p className="text-xs sm:text-sm text-slate-400 mt-1 font-sans">
+            Cẩm nang quy tắc chú thuật chuyên sâu 10 chuyên đề: Chú Lực Căn Bản, Ràng Buộc, Đột Phá, Bành Trướng Lãnh Địa, Bảng Đứt Chi, Xuất Lực Cực Đại, Trạng Thái The Zone, Quy Tắc Chỉ Dẫn, Luật Tuỳ Chọn DM và Quy Tắc Đa Lớp Nhân Vật.
+          </p>
         </div>
-        <h1 className="text-3xl sm:text-4xl font-black text-white font-display">
-          Intricacies of Sorcery
-        </h1>
-        <p className="text-xs sm:text-sm text-slate-400 mt-1 font-sans">
-          Cẩm nang quy tắc chú thuật chuyên sâu 10 chuyên đề: Chú Lực Căn Bản, Ràng Buộc, Đột Phá, Bành Trướng Lãnh Địa, Bảng Đứt Chi, Xuất Lực Cực Đại, Trạng Thái The Zone, Quy Tắc Chỉ Dẫn, Luật Tuỳ Chọn DM và Quy Tắc Đa Lớp Nhân Vật.
-        </p>
+        <GDocButton 
+          type="rules" 
+          targetKey={activeSection} 
+          label={`GDoc ${currentSectionObj.title}`} 
+          size="sm" 
+        />
       </div>
 
         {/* Mobile Quick Section Switcher (< lg) */}

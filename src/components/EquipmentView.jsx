@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import equipmentData from '../data/equipment.json';
 import { useTheme } from '../context/ThemeContext';
+import GDocButton from './GDocButton';
 
 export default function EquipmentView({ activeTab: propTab, setActiveTab: propSetTab }) {
   const [internalTab, setInternalTab] = useState('cursed-tools');
@@ -75,38 +76,47 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
       </div>
 
       {/* Main Category Tabs */}
-      <div className="flex items-center space-x-2 border-b border-[#232636] pb-4 mb-8 overflow-x-auto no-scrollbar">
-        {[
-          { id: 'cursed-tools', label: 'Chú Cụ (Cursed Tools)', kanji: '呪具', icon: Flame, count: equipmentData.cursedTools.length },
-          { id: 'packs', label: 'Gói Khởi Đầu (Equipment Packs)', kanji: '装備', icon: Package, count: equipmentData.equipmentPacks?.length || 7 },
-          { id: 'semi-cursed', label: 'Rèn Bán Chú Cụ & Biến Thể', kanji: '鍛造', icon: Hammer, count: equipmentData.semiCursedRules?.table?.length || 4 },
-          { id: 'armor', label: 'Áo Giáp & Khiên', kanji: '防具', icon: Shield, count: equipmentData.armor.length ? equipmentData.armor.length - 1 : 0 },
-          { id: 'melee', label: 'Vũ Khí Cận Chiến', kanji: '近接', icon: Swords, count: equipmentData.weaponsMelee.length ? equipmentData.weaponsMelee.length - 1 : 0 },
-          { id: 'ranged', label: 'Vũ Khí Tầm Xa', kanji: '遠隔', icon: Crosshair, count: equipmentData.weaponsRanged.length ? equipmentData.weaponsRanged.length - 1 : 0 },
-          { id: 'wealth', label: 'Tiền Tệ & Định Giá', kanji: '通貨', icon: DollarSign, count: null },
-        ].map(tab => {
-          const Icon = tab.icon;
-          const isActive = activeTab === tab.id;
-          return (
-            <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
-              className={`flex items-center space-x-2 px-3.5 py-2 rounded-xl text-xs font-bold transition-colors shrink-0 ${
-                isActive
-                  ? `${currentTheme.bgAccent} ${currentTheme.accentClass} border ${currentTheme.borderAccent} ring-1 ring-white/10`
-                  : 'text-slate-400 hover:text-slate-200 bg-[#0D0E13] border border-white/[0.08] hover:bg-[#12141C]'
-              }`}
-            >
-              <Icon className="w-3.5 h-3.5" />
-              <span>{tab.label}</span>
-              {tab.count !== null && (
-                <span className="px-1.5 py-0.2 text-[10px] bg-[#08090C] text-slate-400 rounded-md font-mono border border-white/[0.06]">
-                  {tab.count}
-                </span>
-              )}
-            </button>
-          );
-        })}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-[#232636] pb-4 mb-8 gap-3">
+        <div className="flex items-center space-x-2 overflow-x-auto no-scrollbar">
+          {[
+            { id: 'cursed-tools', label: 'Chú Cụ (Cursed Tools)', kanji: '呪具', icon: Flame, count: equipmentData.cursedTools.length },
+            { id: 'packs', label: 'Gói Khởi Đầu (Equipment Packs)', kanji: '装備', icon: Package, count: equipmentData.equipmentPacks?.length || 7 },
+            { id: 'semi-cursed', label: 'Rèn Bán Chú Cụ & Biến Thể', kanji: '鍛造', icon: Hammer, count: equipmentData.semiCursedRules?.table?.length || 4 },
+            { id: 'armor', label: 'Áo Giáp & Khiên', kanji: '防具', icon: Shield, count: equipmentData.armor.length ? equipmentData.armor.length - 1 : 0 },
+            { id: 'melee', label: 'Vũ Khí Cận Chiến', kanji: '近接', icon: Swords, count: equipmentData.weaponsMelee.length ? equipmentData.weaponsMelee.length - 1 : 0 },
+            { id: 'ranged', label: 'Vũ Khí Tầm Xa', kanji: '遠隔', icon: Crosshair, count: equipmentData.weaponsRanged.length ? equipmentData.weaponsRanged.length - 1 : 0 },
+            { id: 'wealth', label: 'Tiền Tệ & Định Giá', kanji: '通貨', icon: DollarSign, count: null },
+          ].map(tab => {
+            const Icon = tab.icon;
+            const isActive = activeTab === tab.id;
+            return (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className={`flex items-center space-x-2 px-3.5 py-2 rounded-xl text-xs font-bold transition-colors shrink-0 ${
+                  isActive
+                    ? `${currentTheme.bgAccent} ${currentTheme.accentClass} border ${currentTheme.borderAccent} ring-1 ring-white/10`
+                    : 'text-slate-400 hover:text-slate-200 bg-[#0D0E13] border border-white/[0.08] hover:bg-[#12141C]'
+                }`}
+              >
+                <Icon className="w-3.5 h-3.5" />
+                <span>{tab.label}</span>
+                {tab.count !== null && (
+                  <span className="px-1.5 py-0.2 text-[10px] bg-[#08090C] text-slate-400 rounded-md font-mono border border-white/[0.06]">
+                    {tab.count}
+                  </span>
+                )}
+              </button>
+            );
+          })}
+        </div>
+
+        <GDocButton 
+          type="equipment" 
+          targetKey={activeTab} 
+          label="GDoc Trang Bị" 
+          size="sm" 
+        />
       </div>
 
       {/* Cursed Tools Tab */}

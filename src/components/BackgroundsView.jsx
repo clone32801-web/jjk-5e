@@ -22,6 +22,7 @@ import {
 } from 'lucide-react';
 import backgroundsData from '../data/backgrounds.json';
 import { useTheme } from '../context/ThemeContext';
+import GDocButton from './GDocButton';
 
 export default function BackgroundsView({ activeTab: propTab, setActiveTab: propSetTab }) {
   const { currentTheme } = useTheme();
@@ -96,36 +97,45 @@ export default function BackgroundsView({ activeTab: propTab, setActiveTab: prop
       </div>
 
       {/* Main Mode Tabs Switcher */}
-      <div className="flex items-center space-x-2 border-b border-white/[0.08] pb-4 mb-8 overflow-x-auto no-scrollbar">
-        <button
-          onClick={() => { setActiveTab('backgrounds'); setSearch(''); }}
-          className={`flex items-center space-x-2.5 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-colors shrink-0 ${
-            activeTab === 'backgrounds'
-              ? `${currentTheme.bgAccent} ${currentTheme.accentClass} border ${currentTheme.borderAccent} ring-1 ring-white/10`
-              : 'bg-[#0D0E13] border border-white/[0.08] text-slate-400 hover:text-slate-200 hover:bg-[#12141C]'
-          }`}
-        >
-          <BookOpen className="w-4 h-4" />
-          <span>Xuất Thân (Backgrounds)</span>
-          <span className="px-1.5 py-0.5 text-[10px] bg-[#08090C] text-slate-400 rounded-md font-mono border border-white/[0.06]">
-            {backgrounds.length}
-          </span>
-        </button>
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-white/[0.08] pb-4 mb-8 gap-3">
+        <div className="flex items-center space-x-2 overflow-x-auto no-scrollbar">
+          <button
+            onClick={() => { setActiveTab('backgrounds'); setSearch(''); }}
+            className={`flex items-center space-x-2.5 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-colors shrink-0 ${
+              activeTab === 'backgrounds'
+                ? `${currentTheme.bgAccent} ${currentTheme.accentClass} border ${currentTheme.borderAccent} ring-1 ring-white/10`
+                : 'bg-[#0D0E13] border border-white/[0.08] text-slate-400 hover:text-slate-200 hover:bg-[#12141C]'
+            }`}
+          >
+            <BookOpen className="w-4 h-4" />
+            <span>Xuất Thân (Backgrounds)</span>
+            <span className="px-1.5 py-0.5 text-[10px] bg-[#08090C] text-slate-400 rounded-md font-mono border border-white/[0.06]">
+              {backgrounds.length}
+            </span>
+          </button>
 
-        <button
-          onClick={() => { setActiveTab('mindsets'); setSearch(''); }}
-          className={`flex items-center space-x-2.5 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-colors shrink-0 ${
-            activeTab === 'mindsets'
-              ? `${currentTheme.bgAccent} ${currentTheme.accentClass} border ${currentTheme.borderAccent} ring-1 ring-white/10`
-              : 'bg-[#0D0E13] border border-white/[0.08] text-slate-400 hover:text-slate-200 hover:bg-[#12141C]'
-          }`}
-        >
-          <Compass className="w-4 h-4" />
-          <span>Tâm Thế Chú Thuật (Mindsets / Alignments)</span>
-          <span className="px-1.5 py-0.5 text-[10px] bg-[#08090C] text-slate-400 rounded-md font-mono border border-white/[0.06]">
-            {mindsets.length}
-          </span>
-        </button>
+          <button
+            onClick={() => { setActiveTab('mindsets'); setSearch(''); }}
+            className={`flex items-center space-x-2.5 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-colors shrink-0 ${
+              activeTab === 'mindsets'
+                ? `${currentTheme.bgAccent} ${currentTheme.accentClass} border ${currentTheme.borderAccent} ring-1 ring-white/10`
+                : 'bg-[#0D0E13] border border-white/[0.08] text-slate-400 hover:text-slate-200 hover:bg-[#12141C]'
+            }`}
+          >
+            <Compass className="w-4 h-4" />
+            <span>Tâm Thế Chú Thuật (Mindsets / Alignments)</span>
+            <span className="px-1.5 py-0.5 text-[10px] bg-[#08090C] text-slate-400 rounded-md font-mono border border-white/[0.06]">
+              {mindsets.length}
+            </span>
+          </button>
+        </div>
+
+        <GDocButton 
+          type="backgrounds" 
+          targetKey={activeTab} 
+          label={activeTab === 'backgrounds' ? "GDoc Xuất Thân" : "GDoc Tâm Thế"} 
+          size="sm" 
+        />
       </div>
 
       {/* Search Input Bar */}

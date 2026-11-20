@@ -20,6 +20,7 @@ import {
 import featsData from '../data/feats.json';
 import techniquesData from '../data/techniques.json';
 import { useTheme } from '../context/ThemeContext';
+import GDocButton from './GDocButton';
 
 export default function FeatsView({ activeCategory: propCategory, setActiveCategory: propSetCategory }) {
   const [internalCategory, setInternalCategory] = useState('Barrier Feats');
@@ -152,33 +153,42 @@ export default function FeatsView({ activeCategory: propCategory, setActiveCateg
       </div>
 
       {/* Category Tabs */}
-      <div className="flex items-center space-x-2 border-b border-white/[0.08] pb-4 mb-8 overflow-x-auto no-scrollbar">
-        {categories.map(cat => {
-          const info = catIcons[cat.id] || { icon: Scroll, kanji: '術' };
-          const Icon = info.icon;
-          const isActive = activeCategory === cat.id;
-          return (
-            <button
-              key={cat.id}
-              onClick={() => {
-                setActiveCategory(cat.id);
-                setSearch('');
-              }}
-              className={`flex items-center space-x-2 px-3.5 py-2 rounded-xl text-xs font-bold transition-colors shrink-0 ${
-                isActive
-                  ? `${currentTheme.bgAccent} ${currentTheme.accentClass} border ${currentTheme.borderAccent} ring-1 ring-white/10`
-                  : 'text-slate-400 hover:text-slate-200 bg-[#0D0E13] border border-white/[0.08] hover:bg-[#12141C]'
-              }`}
-            >
-              <Icon className="w-3.5 h-3.5" />
-              <span>{cat.label || cat.id}</span>
-              <span className="font-kanji text-[10px] opacity-40 hidden sm:inline">{info.kanji}</span>
-              <span className="px-1.5 py-0.2 text-[10px] bg-[#08090C] text-slate-400 rounded-md font-mono border border-white/[0.06]">
-                {cat.count}
-              </span>
-            </button>
-          );
-        })}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-white/[0.08] pb-4 mb-8 gap-3">
+        <div className="flex items-center space-x-2 overflow-x-auto no-scrollbar">
+          {categories.map(cat => {
+            const info = catIcons[cat.id] || { icon: Scroll, kanji: '術' };
+            const Icon = info.icon;
+            const isActive = activeCategory === cat.id;
+            return (
+              <button
+                key={cat.id}
+                onClick={() => {
+                  setActiveCategory(cat.id);
+                  setSearch('');
+                }}
+                className={`flex items-center space-x-2 px-3.5 py-2 rounded-xl text-xs font-bold transition-colors shrink-0 ${
+                  isActive
+                    ? `${currentTheme.bgAccent} ${currentTheme.accentClass} border ${currentTheme.borderAccent} ring-1 ring-white/10`
+                    : 'text-slate-400 hover:text-slate-200 bg-[#0D0E13] border border-white/[0.08] hover:bg-[#12141C]'
+                }`}
+              >
+                <Icon className="w-3.5 h-3.5" />
+                <span>{cat.label || cat.id}</span>
+                <span className="font-kanji text-[10px] opacity-40 hidden sm:inline">{info.kanji}</span>
+                <span className="px-1.5 py-0.2 text-[10px] bg-[#08090C] text-slate-400 rounded-md font-mono border border-white/[0.06]">
+                  {cat.count}
+                </span>
+              </button>
+            );
+          })}
+        </div>
+
+        <GDocButton 
+          type="feats" 
+          targetKey={activeCategory} 
+          label="GDoc Kỳ Tài" 
+          size="sm" 
+        />
       </div>
 
       {/* Technique Feats Filter Bar */}
