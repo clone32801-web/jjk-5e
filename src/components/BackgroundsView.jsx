@@ -336,19 +336,23 @@ export default function BackgroundsView({ activeTab: propTab, setActiveTab: prop
                     {ms.image && (
                       <div 
                         onClick={() => openLightbox(ms.image)}
-                        className="relative w-18 h-22 rounded-xl overflow-hidden bg-[#08090C] border border-white/[0.08] shrink-0 flex items-center justify-center cursor-pointer group"
+                        className="relative w-20 h-20 rounded-xl overflow-hidden bg-[#08090C] border border-white/[0.08] shrink-0 flex items-center justify-center cursor-pointer group/art"
+                        title="Nhấn để phóng to ảnh"
                       >
                         <img 
                           src={`/images/${ms.image}`} 
                           alt={ms.name}
-                          className="relative z-10 max-h-full max-w-full object-contain p-1"
+                          className="w-full h-full object-cover transition-transform duration-300 group-hover/art:scale-105"
                           onError={(e) => { e.target.style.display = 'none'; }}
                         />
+                        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover/art:opacity-100 transition-opacity flex items-center justify-center">
+                          <Maximize2 className="w-3.5 h-3.5 text-white drop-shadow" />
+                        </div>
                       </div>
                     )}
 
                     {/* Titles */}
-                    <div className="flex-1">
+                    <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between mb-1">
                         <span className="font-kanji font-bold text-xs text-amber-400/90 bg-amber-950/30 px-2 py-0.5 rounded border border-amber-900/30">
                           {ms.kanji}
