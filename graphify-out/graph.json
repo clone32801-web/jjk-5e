@@ -1,0 +1,896 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {
+    "name": "Jujutsu Kaisen 5E Compendium Knowledge Graph",
+    "version": "6.0.0",
+    "generatedAt": "2026-11-20T05:35:58.716Z",
+    "totalNodes": 28,
+    "totalEdges": 94,
+    "communities": [
+      "Core & Architecture",
+      "Views & Navigation",
+      "Data Repositories",
+      "Tactical Engines & Telemetry"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "App.jsx",
+      "label": "App.jsx",
+      "type": "component",
+      "community": "Core & Architecture",
+      "degree": 24,
+      "inDegree": 1,
+      "outDegree": 23,
+      "file": "src/App.jsx",
+      "desc": "Root component, router, layout frame, active tab state"
+    },
+    {
+      "id": "ThemeContext.jsx",
+      "label": "ThemeContext",
+      "type": "context",
+      "community": "Core & Architecture",
+      "degree": 13,
+      "inDegree": 13,
+      "outDegree": 0,
+      "file": "src/context/ThemeContext.jsx",
+      "desc": "Global theme state (Gojo, Sukuna, Megumi tokens)"
+    },
+    {
+      "id": "Navbar.jsx",
+      "label": "Navbar",
+      "type": "component",
+      "community": "Core & Architecture",
+      "degree": 13,
+      "inDegree": 2,
+      "outDegree": 11,
+      "file": "src/components/Navbar.jsx",
+      "desc": "Sidebar navigation, theme switcher, mobile header"
+    },
+    {
+      "id": "GlobalSearchModal.jsx",
+      "label": "GlobalSearchModal",
+      "type": "component",
+      "community": "Core & Architecture",
+      "degree": 13,
+      "inDegree": 3,
+      "outDegree": 10,
+      "file": "src/components/GlobalSearchModal.jsx",
+      "desc": "Global command palette and instant fuzzy search"
+    },
+    {
+      "id": "CharacterCreationView.jsx",
+      "label": "CharacterCreationView (Tạo Nhân Vật)",
+      "type": "view",
+      "community": "Views & Navigation",
+      "degree": 10,
+      "inDegree": 3,
+      "outDegree": 7,
+      "file": "src/components/CharacterCreationView.jsx",
+      "desc": "9-step creation guide and interactive character builder with live sheet"
+    },
+    {
+      "id": "Engine:GlobalSearch",
+      "label": "Omni-Search Indexer",
+      "type": "engine",
+      "community": "Core & Architecture",
+      "degree": 9,
+      "inDegree": 1,
+      "outDegree": 8,
+      "desc": "In-memory multi-table full-text search across all 8 compendiums"
+    },
+    {
+      "id": "ToolsView.jsx",
+      "label": "ToolsView (Tác Chiến)",
+      "type": "view",
+      "community": "Tactical Engines & Telemetry",
+      "degree": 8,
+      "inDegree": 3,
+      "outDegree": 5,
+      "file": "src/components/ToolsView.jsx",
+      "desc": "Tactical tools: CE Allocation, Domain Barrier Clash, Trauma Matrix"
+    },
+    {
+      "id": "FeatsView.jsx",
+      "label": "FeatsView (Kỳ Tài)",
+      "type": "view",
+      "community": "Views & Navigation",
+      "degree": 8,
+      "inDegree": 3,
+      "outDegree": 5,
+      "file": "src/components/FeatsView.jsx",
+      "desc": "Barrier, CE, RCT, Physical, Skill & Innate Technique Feats (245 feats)"
+    },
+    {
+      "id": "techniques.json",
+      "label": "techniques.json",
+      "type": "data",
+      "community": "Data Repositories",
+      "degree": 8,
+      "inDegree": 8,
+      "outDegree": 0,
+      "file": "src/data/techniques.json",
+      "desc": "79 Innate Techniques database (621 KB)",
+      "records": 79
+    },
+    {
+      "id": "classes.json",
+      "label": "classes.json",
+      "type": "data",
+      "community": "Data Repositories",
+      "degree": 7,
+      "inDegree": 7,
+      "outDegree": 0,
+      "file": "src/data/classes.json",
+      "desc": "10 Classes & Subclasses database (161 KB)",
+      "records": 10
+    },
+    {
+      "id": "TechniquesView.jsx",
+      "label": "TechniquesView (Thuật Thức)",
+      "type": "view",
+      "community": "Views & Navigation",
+      "degree": 6,
+      "inDegree": 3,
+      "outDegree": 3,
+      "file": "src/components/TechniquesView.jsx",
+      "desc": "79 Innate Techniques compendium, details modal, search & filter"
+    },
+    {
+      "id": "ClassesView.jsx",
+      "label": "ClassesView (Lớp Nhân Vật)",
+      "type": "view",
+      "community": "Views & Navigation",
+      "degree": 6,
+      "inDegree": 3,
+      "outDegree": 3,
+      "file": "src/components/ClassesView.jsx",
+      "desc": "10 Sorcerer classes, progression tables, subclasses, shikigami rules"
+    },
+    {
+      "id": "RacesView.jsx",
+      "label": "RacesView (Chủng Tộc)",
+      "type": "view",
+      "community": "Views & Navigation",
+      "degree": 6,
+      "inDegree": 3,
+      "outDegree": 3,
+      "file": "src/components/RacesView.jsx",
+      "desc": "Races & lineages (Human, Cursed Womb, Cursed Corpse, Heavenly)"
+    },
+    {
+      "id": "BackgroundsView.jsx",
+      "label": "BackgroundsView (Xuất Thân & Tâm Thế)",
+      "type": "view",
+      "community": "Views & Navigation",
+      "degree": 6,
+      "inDegree": 3,
+      "outDegree": 3,
+      "file": "src/components/BackgroundsView.jsx",
+      "desc": "5 Backgrounds and 16 Mindsets (Alignments/Inspiration)"
+    },
+    {
+      "id": "EquipmentView.jsx",
+      "label": "EquipmentView (Trang Bị & Chú Cụ)",
+      "type": "view",
+      "community": "Views & Navigation",
+      "degree": 6,
+      "inDegree": 3,
+      "outDegree": 3,
+      "file": "src/components/EquipmentView.jsx",
+      "desc": "Cursed tools, packs, armor, melee & ranged weapons, semi-cursed forging"
+    },
+    {
+      "id": "RulesView.jsx",
+      "label": "RulesView (Quy Tắc Chú Thuật)",
+      "type": "view",
+      "community": "Views & Navigation",
+      "degree": 6,
+      "inDegree": 3,
+      "outDegree": 3,
+      "file": "src/components/RulesView.jsx",
+      "desc": "10 System mechanics: Binding Vows, Black Flash, RCT, Clashes, Multiclass"
+    },
+    {
+      "id": "races.json",
+      "label": "races.json",
+      "type": "data",
+      "community": "Data Repositories",
+      "degree": 6,
+      "inDegree": 6,
+      "outDegree": 0,
+      "file": "src/data/races.json",
+      "desc": "Races & Subraces database (30 KB)",
+      "records": 4
+    },
+    {
+      "id": "backgrounds.json",
+      "label": "backgrounds.json",
+      "type": "data",
+      "community": "Data Repositories",
+      "degree": 6,
+      "inDegree": 6,
+      "outDegree": 0,
+      "file": "src/data/backgrounds.json",
+      "desc": "5 Backgrounds & 16 Mindsets database (30 KB)",
+      "records": 21
+    },
+    {
+      "id": "Engine:CharBuilder",
+      "label": "Interactive Character Builder",
+      "type": "engine",
+      "community": "Tactical Engines & Telemetry",
+      "degree": 5,
+      "inDegree": 1,
+      "outDegree": 4,
+      "desc": "Real-time ability modifier calculations, standard array distributor, text exporter"
+    },
+    {
+      "id": "equipment.json",
+      "label": "equipment.json",
+      "type": "data",
+      "community": "Data Repositories",
+      "degree": 4,
+      "inDegree": 4,
+      "outDegree": 0,
+      "file": "src/data/equipment.json",
+      "desc": "Equipment, Cursed Tools & Weapons database (51 KB)",
+      "records": 80
+    },
+    {
+      "id": "feats.json",
+      "label": "feats.json",
+      "type": "data",
+      "community": "Data Repositories",
+      "degree": 4,
+      "inDegree": 4,
+      "outDegree": 0,
+      "file": "src/data/feats.json",
+      "desc": "Core Feats database across 5 categories (107 KB)",
+      "records": 120
+    },
+    {
+      "id": "rules.json",
+      "label": "rules.json",
+      "type": "data",
+      "community": "Data Repositories",
+      "degree": 4,
+      "inDegree": 4,
+      "outDegree": 0,
+      "file": "src/data/rules.json",
+      "desc": "System Rules & D&D 5E JJK Rules Engine (185 KB)",
+      "records": 10
+    },
+    {
+      "id": "main.jsx",
+      "label": "main.jsx",
+      "type": "entry",
+      "community": "Core & Architecture",
+      "degree": 3,
+      "inDegree": 0,
+      "outDegree": 3,
+      "file": "src/main.jsx",
+      "desc": "Vite React application bootstrap entrypoint"
+    },
+    {
+      "id": "characterCreation.json",
+      "label": "characterCreation.json",
+      "type": "data",
+      "community": "Data Repositories",
+      "degree": 3,
+      "inDegree": 3,
+      "outDegree": 0,
+      "file": "src/data/characterCreation.json",
+      "desc": "Character Creation Guide & Steps (21 KB)",
+      "records": 9
+    },
+    {
+      "id": "index.css",
+      "label": "index.css",
+      "type": "style",
+      "community": "Core & Architecture",
+      "degree": 1,
+      "inDegree": 1,
+      "outDegree": 0,
+      "file": "src/index.css",
+      "desc": "Global styles, custom scrollbar, ring aura utility"
+    },
+    {
+      "id": "Engine:CEAllocation",
+      "label": "CE Telemetry Calculator",
+      "type": "engine",
+      "community": "Tactical Engines & Telemetry",
+      "degree": 1,
+      "inDegree": 1,
+      "outDegree": 0,
+      "desc": "Dynamic CE Pool allocation, Save DC & Attack Bonus formula generator"
+    },
+    {
+      "id": "Engine:DomainClash",
+      "label": "Barrier Clash Physics Engine",
+      "type": "engine",
+      "community": "Tactical Engines & Telemetry",
+      "degree": 1,
+      "inDegree": 1,
+      "outDegree": 0,
+      "desc": "Tug-of-War Vector Bar, Refinement delta computation, Round-to-collapse timeline"
+    },
+    {
+      "id": "Engine:TraumaMatrix",
+      "label": "Clinical Trauma Matrix Engine",
+      "type": "engine",
+      "community": "Tactical Engines & Telemetry",
+      "degree": 1,
+      "inDegree": 1,
+      "outDegree": 0,
+      "desc": "d6 lingering injury roll resolution, anatomical zone check, amputation penalties"
+    }
+  ],
+  "links": [
+    {
+      "source": "BackgroundsView.jsx",
+      "target": "backgrounds.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "BackgroundsView.jsx",
+      "target": "ThemeContext.jsx",
+      "relation": "consumes_context",
+      "weight": 1
+    },
+    {
+      "source": "CharacterCreationView.jsx",
+      "target": "ThemeContext.jsx",
+      "relation": "consumes_context",
+      "weight": 1
+    },
+    {
+      "source": "CharacterCreationView.jsx",
+      "target": "characterCreation.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "CharacterCreationView.jsx",
+      "target": "classes.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "CharacterCreationView.jsx",
+      "target": "techniques.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "CharacterCreationView.jsx",
+      "target": "races.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "CharacterCreationView.jsx",
+      "target": "backgrounds.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "ClassesView.jsx",
+      "target": "classes.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "ClassesView.jsx",
+      "target": "ThemeContext.jsx",
+      "relation": "consumes_context",
+      "weight": 1
+    },
+    {
+      "source": "EquipmentView.jsx",
+      "target": "equipment.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "EquipmentView.jsx",
+      "target": "ThemeContext.jsx",
+      "relation": "consumes_context",
+      "weight": 1
+    },
+    {
+      "source": "FeatsView.jsx",
+      "target": "feats.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "FeatsView.jsx",
+      "target": "techniques.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "FeatsView.jsx",
+      "target": "ThemeContext.jsx",
+      "relation": "consumes_context",
+      "weight": 1
+    },
+    {
+      "source": "GlobalSearchModal.jsx",
+      "target": "techniques.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "GlobalSearchModal.jsx",
+      "target": "classes.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "GlobalSearchModal.jsx",
+      "target": "races.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "GlobalSearchModal.jsx",
+      "target": "backgrounds.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "GlobalSearchModal.jsx",
+      "target": "equipment.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "GlobalSearchModal.jsx",
+      "target": "feats.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "GlobalSearchModal.jsx",
+      "target": "rules.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "GlobalSearchModal.jsx",
+      "target": "characterCreation.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "GlobalSearchModal.jsx",
+      "target": "ThemeContext.jsx",
+      "relation": "consumes_context",
+      "weight": 1
+    },
+    {
+      "source": "Navbar.jsx",
+      "target": "ThemeContext.jsx",
+      "relation": "consumes_context",
+      "weight": 1
+    },
+    {
+      "source": "RacesView.jsx",
+      "target": "races.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "RacesView.jsx",
+      "target": "ThemeContext.jsx",
+      "relation": "consumes_context",
+      "weight": 1
+    },
+    {
+      "source": "RulesView.jsx",
+      "target": "rules.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "RulesView.jsx",
+      "target": "ThemeContext.jsx",
+      "relation": "consumes_context",
+      "weight": 1
+    },
+    {
+      "source": "TechniquesView.jsx",
+      "target": "techniques.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "TechniquesView.jsx",
+      "target": "ThemeContext.jsx",
+      "relation": "consumes_context",
+      "weight": 1
+    },
+    {
+      "source": "ToolsView.jsx",
+      "target": "classes.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "ToolsView.jsx",
+      "target": "ThemeContext.jsx",
+      "relation": "consumes_context",
+      "weight": 1
+    },
+    {
+      "source": "App.jsx",
+      "target": "ThemeContext.jsx",
+      "relation": "consumes_context",
+      "weight": 1
+    },
+    {
+      "source": "App.jsx",
+      "target": "Navbar.jsx",
+      "relation": "renders",
+      "weight": 1
+    },
+    {
+      "source": "App.jsx",
+      "target": "GlobalSearchModal.jsx",
+      "relation": "renders",
+      "weight": 1
+    },
+    {
+      "source": "App.jsx",
+      "target": "TechniquesView.jsx",
+      "relation": "renders",
+      "weight": 1
+    },
+    {
+      "source": "App.jsx",
+      "target": "ClassesView.jsx",
+      "relation": "renders",
+      "weight": 1
+    },
+    {
+      "source": "App.jsx",
+      "target": "RacesView.jsx",
+      "relation": "renders",
+      "weight": 1
+    },
+    {
+      "source": "App.jsx",
+      "target": "EquipmentView.jsx",
+      "relation": "renders",
+      "weight": 1
+    },
+    {
+      "source": "App.jsx",
+      "target": "FeatsView.jsx",
+      "relation": "renders",
+      "weight": 1
+    },
+    {
+      "source": "App.jsx",
+      "target": "RulesView.jsx",
+      "relation": "renders",
+      "weight": 1
+    },
+    {
+      "source": "App.jsx",
+      "target": "ToolsView.jsx",
+      "relation": "renders",
+      "weight": 1
+    },
+    {
+      "source": "App.jsx",
+      "target": "BackgroundsView.jsx",
+      "relation": "renders",
+      "weight": 1
+    },
+    {
+      "source": "App.jsx",
+      "target": "CharacterCreationView.jsx",
+      "relation": "renders",
+      "weight": 1
+    },
+    {
+      "source": "ToolsView.jsx",
+      "target": "Engine:CEAllocation",
+      "relation": "implements",
+      "weight": 1
+    },
+    {
+      "source": "ToolsView.jsx",
+      "target": "Engine:DomainClash",
+      "relation": "implements",
+      "weight": 1
+    },
+    {
+      "source": "ToolsView.jsx",
+      "target": "Engine:TraumaMatrix",
+      "relation": "implements",
+      "weight": 1
+    },
+    {
+      "source": "CharacterCreationView.jsx",
+      "target": "Engine:CharBuilder",
+      "relation": "implements",
+      "weight": 1
+    },
+    {
+      "source": "GlobalSearchModal.jsx",
+      "target": "Engine:GlobalSearch",
+      "relation": "implements",
+      "weight": 1
+    },
+    {
+      "source": "Engine:GlobalSearch",
+      "target": "techniques.json",
+      "relation": "indexes",
+      "weight": 1
+    },
+    {
+      "source": "Engine:GlobalSearch",
+      "target": "classes.json",
+      "relation": "indexes",
+      "weight": 1
+    },
+    {
+      "source": "Engine:GlobalSearch",
+      "target": "races.json",
+      "relation": "indexes",
+      "weight": 1
+    },
+    {
+      "source": "Engine:GlobalSearch",
+      "target": "backgrounds.json",
+      "relation": "indexes",
+      "weight": 1
+    },
+    {
+      "source": "Engine:GlobalSearch",
+      "target": "equipment.json",
+      "relation": "indexes",
+      "weight": 1
+    },
+    {
+      "source": "Engine:GlobalSearch",
+      "target": "feats.json",
+      "relation": "indexes",
+      "weight": 1
+    },
+    {
+      "source": "Engine:GlobalSearch",
+      "target": "rules.json",
+      "relation": "indexes",
+      "weight": 1
+    },
+    {
+      "source": "Engine:GlobalSearch",
+      "target": "characterCreation.json",
+      "relation": "indexes",
+      "weight": 1
+    },
+    {
+      "source": "Engine:CharBuilder",
+      "target": "classes.json",
+      "relation": "references",
+      "weight": 1
+    },
+    {
+      "source": "Engine:CharBuilder",
+      "target": "races.json",
+      "relation": "references",
+      "weight": 1
+    },
+    {
+      "source": "Engine:CharBuilder",
+      "target": "backgrounds.json",
+      "relation": "references",
+      "weight": 1
+    },
+    {
+      "source": "Engine:CharBuilder",
+      "target": "techniques.json",
+      "relation": "references",
+      "weight": 1
+    },
+    {
+      "source": "FeatsView.jsx",
+      "target": "techniques.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "FeatsView.jsx",
+      "target": "feats.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "RulesView.jsx",
+      "target": "rules.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "ClassesView.jsx",
+      "target": "classes.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "TechniquesView.jsx",
+      "target": "techniques.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "RacesView.jsx",
+      "target": "races.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "BackgroundsView.jsx",
+      "target": "backgrounds.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "EquipmentView.jsx",
+      "target": "equipment.json",
+      "relation": "consumes_data",
+      "weight": 1
+    },
+    {
+      "source": "App.jsx",
+      "target": "Navbar.jsx",
+      "relation": "renders",
+      "weight": 1
+    },
+    {
+      "source": "App.jsx",
+      "target": "GlobalSearchModal.jsx",
+      "relation": "renders",
+      "weight": 1
+    },
+    {
+      "source": "Navbar.jsx",
+      "target": "GlobalSearchModal.jsx",
+      "relation": "navigates_to",
+      "weight": 1
+    },
+    {
+      "source": "App.jsx",
+      "target": "ClassesView.jsx",
+      "relation": "renders",
+      "weight": 1
+    },
+    {
+      "source": "Navbar.jsx",
+      "target": "ClassesView.jsx",
+      "relation": "navigates_to",
+      "weight": 1
+    },
+    {
+      "source": "App.jsx",
+      "target": "RacesView.jsx",
+      "relation": "renders",
+      "weight": 1
+    },
+    {
+      "source": "Navbar.jsx",
+      "target": "RacesView.jsx",
+      "relation": "navigates_to",
+      "weight": 1
+    },
+    {
+      "source": "App.jsx",
+      "target": "BackgroundsView.jsx",
+      "relation": "renders",
+      "weight": 1
+    },
+    {
+      "source": "Navbar.jsx",
+      "target": "BackgroundsView.jsx",
+      "relation": "navigates_to",
+      "weight": 1
+    },
+    {
+      "source": "App.jsx",
+      "target": "TechniquesView.jsx",
+      "relation": "renders",
+      "weight": 1
+    },
+    {
+      "source": "Navbar.jsx",
+      "target": "TechniquesView.jsx",
+      "relation": "navigates_to",
+      "weight": 1
+    },
+    {
+      "source": "App.jsx",
+      "target": "EquipmentView.jsx",
+      "relation": "renders",
+      "weight": 1
+    },
+    {
+      "source": "Navbar.jsx",
+      "target": "EquipmentView.jsx",
+      "relation": "navigates_to",
+      "weight": 1
+    },
+    {
+      "source": "App.jsx",
+      "target": "FeatsView.jsx",
+      "relation": "renders",
+      "weight": 1
+    },
+    {
+      "source": "Navbar.jsx",
+      "target": "FeatsView.jsx",
+      "relation": "navigates_to",
+      "weight": 1
+    },
+    {
+      "source": "App.jsx",
+      "target": "RulesView.jsx",
+      "relation": "renders",
+      "weight": 1
+    },
+    {
+      "source": "Navbar.jsx",
+      "target": "RulesView.jsx",
+      "relation": "navigates_to",
+      "weight": 1
+    },
+    {
+      "source": "App.jsx",
+      "target": "CharacterCreationView.jsx",
+      "relation": "renders",
+      "weight": 1
+    },
+    {
+      "source": "Navbar.jsx",
+      "target": "CharacterCreationView.jsx",
+      "relation": "navigates_to",
+      "weight": 1
+    },
+    {
+      "source": "App.jsx",
+      "target": "ToolsView.jsx",
+      "relation": "renders",
+      "weight": 1
+    },
+    {
+      "source": "Navbar.jsx",
+      "target": "ToolsView.jsx",
+      "relation": "navigates_to",
+      "weight": 1
+    },
+    {
+      "source": "main.jsx",
+      "target": "App.jsx",
+      "relation": "bootstraps",
+      "weight": 1
+    },
+    {
+      "source": "main.jsx",
+      "target": "ThemeContext.jsx",
+      "relation": "wraps",
+      "weight": 1
+    },
+    {
+      "source": "main.jsx",
+      "target": "index.css",
+      "relation": "applies_style",
+      "weight": 1
+    }
+  ]
+}
