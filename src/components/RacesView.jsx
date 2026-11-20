@@ -76,30 +76,30 @@ export default function RacesView({ selectedRaceId, onSelectRace }) {
       </div>
 
       {/* Race Selector Buttons */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-8">
         {racesData.map((race) => {
           const isActive = race.id === activeRaceId;
-          const badge = raceBadges[race.id] || { tag: 'Race', kanji: '種', icon: Users, color: 'text-purple-400' };
+          const badge = raceBadges[race.id] || { tag: 'Race', kanji: '種', icon: Users, color: 'text-zinc-400' };
           const Icon = badge.icon;
           return (
             <button
               key={race.id}
               onClick={() => handleSelectRace(race.id)}
-              className={`p-4 rounded-2xl border text-left transition-all ${
+              className={`p-3.5 rounded-xl border text-left transition-colors ${
                 isActive
-                  ? 'bg-[#181924] border-[#383D56] text-white shadow-lg ring-1 ring-white/10'
-                  : 'bg-[#12131A] border-[#232636] text-slate-400 hover:text-slate-200 hover:bg-[#151722]'
+                  ? 'bg-[#15161E] border-white/20 text-white ring-1 ring-white/10'
+                  : 'bg-[#0D0E13] border-white/[0.08] text-zinc-400 hover:text-white hover:bg-white/[0.03]'
               }`}
             >
               <div className="flex items-center justify-between mb-2">
                 <div className="flex items-center space-x-2">
-                  <Icon className={`w-4 h-4 ${badge.color}`} />
-                  <span className="text-[10px] font-mono text-slate-400 truncate">{badge.tag}</span>
+                  <Icon className={`w-3.5 h-3.5 ${badge.color}`} />
+                  <span className="text-[10px] font-mono text-zinc-500 truncate">{badge.tag}</span>
                 </div>
-                <span className="font-kanji text-xs text-slate-500 font-bold">{badge.kanji}</span>
+                <span className="font-kanji text-xs text-zinc-600 font-bold">{badge.kanji}</span>
               </div>
               <div className="text-sm font-bold font-display text-white">{race.vietnameseName || race.name}</div>
-              <div className="text-[11px] text-slate-400 font-mono mt-0.5 truncate">{race.name}</div>
+              <div className="text-[11px] text-zinc-500 font-mono mt-0.5 truncate">{race.name}</div>
             </button>
           );
         })}
@@ -109,7 +109,7 @@ export default function RacesView({ selectedRaceId, onSelectRace }) {
       <div className="space-y-6">
         
         {/* Banner with Character Artwork */}
-        <div className="rounded-3xl bg-gradient-to-br from-[#12131A] via-[#0E0F14] to-[#0A0A0C] border border-[#232636] p-6 sm:p-8 shadow-xl relative overflow-hidden">
+        <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-6 sm:p-8 relative overflow-hidden">
           
           {/* Subtle Ambient Background Watermark/Glow */}
           {currentArtwork && (
@@ -245,27 +245,27 @@ export default function RacesView({ selectedRaceId, onSelectRace }) {
 
         {/* Base Traits Section (if available) */}
         {currentRace.baseTraits?.length > 0 && (
-          <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 sm:p-8 shadow-xl">
-            <h3 className="text-base sm:text-lg font-bold text-white font-display mb-4 flex items-center space-x-2">
-              <ShieldCheck className="w-5 h-5 text-cyan-400" />
+          <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
+            <h3 className="text-sm sm:text-base font-bold text-white font-display mb-4 flex items-center space-x-2">
+              <ShieldCheck className="w-4 h-4 text-cyan-400" />
               <span>Đặc Tính Thể Chất Nền Tảng (Base Traits)</span>
             </h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {currentRace.baseTraits.map((trait, idx) => {
                 const colonIdx = trait.indexOf(':');
                 if (colonIdx > 0 && colonIdx < 50) {
                   const title = trait.substring(0, colonIdx);
                   const body = trait.substring(colonIdx + 1);
                   return (
-                    <div key={idx} className="p-3.5 rounded-xl bg-[#0A0A0C] border border-[#202332] text-xs leading-relaxed font-sans">
+                    <div key={idx} className="p-3 rounded-xl bg-[#0A0B0E] border border-white/[0.05] text-xs leading-relaxed font-sans">
                       <span className="font-bold text-cyan-300 font-display block sm:inline">{title}:</span>
                       <span className="text-slate-300">{body}</span>
                     </div>
                   );
                 }
                 return (
-                  <div key={idx} className="p-3.5 rounded-xl bg-[#0A0A0C] border border-[#202332] text-xs text-slate-300 leading-relaxed font-sans">
+                  <div key={idx} className="p-3 rounded-xl bg-[#0A0B0E] border border-white/[0.05] text-xs text-slate-300 leading-relaxed font-sans">
                     • {trait}
                   </div>
                 );
@@ -274,12 +274,12 @@ export default function RacesView({ selectedRaceId, onSelectRace }) {
 
             {/* Original English Base Traits Collapsible */}
             {currentRace.baseTraitsEn?.length > 0 && (
-              <details className="mt-4 group/orig border border-slate-800/80 rounded-xl bg-[#070709] p-3 text-xs">
+              <details className="mt-3.5 group/orig border border-white/[0.06] rounded-xl bg-[#08090C] p-3 text-xs">
                 <summary className="cursor-pointer text-slate-400 hover:text-slate-200 font-mono text-[11px] select-none flex items-center justify-between">
-                  <span>📄 Đặc tính gốc tiếng Anh (Original Base Traits)</span>
+                  <span>[ EN ] Đặc tính gốc tiếng Anh (Original Base Traits)</span>
                   <span className="text-[10px] text-slate-500">▼</span>
                 </summary>
-                <div className="mt-2.5 space-y-1.5 text-slate-300 font-mono text-[11px] leading-relaxed border-t border-slate-800/60 pt-2.5">
+                <div className="mt-2.5 space-y-1.5 text-slate-300 font-mono text-[11px] leading-relaxed border-t border-white/[0.06] pt-2.5">
                   {currentRace.baseTraitsEn.map((t, idx) => (
                     <div key={idx} className="flex items-start space-x-1.5">
                       <span className="text-cyan-400 shrink-0">•</span>
@@ -294,35 +294,35 @@ export default function RacesView({ selectedRaceId, onSelectRace }) {
 
         {/* Subraces / Lineage Variants Section */}
         {currentRace.subraces?.length > 0 && (
-          <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 sm:p-8 shadow-xl">
-            <div className="flex items-center justify-between pb-4 mb-6 border-b border-[#1E2130]">
+          <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
+            <div className="flex items-center justify-between pb-3.5 mb-5 border-b border-white/[0.06]">
               <div className="flex items-center space-x-2">
-                <Sparkles className={`w-5 h-5 ${currentTheme.accentClass}`} />
-                <h3 className="text-base sm:text-lg font-bold text-white font-display">
+                <Sparkles className={`w-4 h-4 ${currentTheme.accentClass}`} />
+                <h3 className="text-sm sm:text-base font-bold text-white font-display">
                   Các Phân Tộc Tiêu Biểu ({currentRace.subraces.length} Subraces)
                 </h3>
               </div>
-              <span className="text-xs font-mono text-slate-500">Lựa chọn nguồn gốc</span>
+              <span className="text-[11px] font-mono text-slate-500 uppercase tracking-wider">Lựa chọn nguồn gốc</span>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {currentRace.subraces.map((sub, sIdx) => (
                 <div 
                   key={sIdx}
-                  className="p-5 rounded-2xl bg-[#0A0A0C] border border-[#222638] hover:border-[#333852] transition-all flex flex-col justify-between shadow-lg"
+                  className="p-4 sm:p-5 rounded-xl bg-[#0A0B0E] border border-white/[0.06] hover:border-white/[0.12] transition-colors flex flex-col justify-between"
                 >
                   <div>
                     <div className="flex items-start justify-between gap-2 mb-2">
                       <div>
-                        <h4 className="text-base font-bold text-white font-display">
+                        <h4 className="text-sm sm:text-base font-bold text-white font-display">
                           {sub.vietnameseName || sub.name}
                         </h4>
-                        <div className="text-xs text-amber-300 font-mono font-medium mt-0.5">
+                        <div className="text-xs text-amber-300/90 font-mono font-medium mt-0.5">
                           {sub.name}
                         </div>
                       </div>
                       {sub.speed && (
-                        <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-[#161824] text-cyan-300 border border-cyan-800/40 shrink-0">
+                        <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-[#14151D] text-cyan-300 border border-cyan-800/40 shrink-0">
                           {sub.speed}
                         </span>
                       )}
@@ -333,17 +333,17 @@ export default function RacesView({ selectedRaceId, onSelectRace }) {
                     </p>
 
                     {sub.asi && (
-                      <div className="mb-3 p-2.5 rounded-xl bg-[#12141F] border border-white/5 text-xs text-amber-300 font-mono">
-                        <span className="text-slate-400 font-sans block text-[11px] mb-0.5 font-bold uppercase">Tăng Chỉ Số (ASI):</span>
+                      <div className="mb-3 p-2.5 rounded-lg bg-[#0E1017] border border-white/[0.06] text-xs text-amber-300/90 font-mono">
+                        <span className="text-slate-400 font-sans block text-[10px] mb-0.5 font-bold uppercase tracking-wider">Tăng Chỉ Số (ASI):</span>
                         {sub.asi}
                       </div>
                     )}
 
                     {sub.features?.length > 0 && (
                       <div className="space-y-2 text-xs text-slate-300 font-sans mt-3">
-                        <span className="text-slate-400 font-mono text-[10px] uppercase font-bold block">Đặc Quyền Phân Tộc:</span>
+                        <span className="text-slate-400 font-mono text-[10px] uppercase font-bold tracking-wider block">Đặc Quyền Phân Tộc:</span>
                         {sub.features.map((feat, fIdx) => (
-                          <div key={fIdx} className="p-2.5 rounded-xl bg-[#12131A] border border-[#202332]">
+                          <div key={fIdx} className="p-2.5 rounded-lg bg-[#0E1017] border border-white/[0.05]">
                             {typeof feat === 'object' ? (
                               <div>
                                 <div className="font-bold text-cyan-300 font-display mb-1 flex items-center space-x-1.5">
@@ -370,12 +370,12 @@ export default function RacesView({ selectedRaceId, onSelectRace }) {
 
                     {/* Original English Subrace Rules Collapsible */}
                     {sub.descriptionEn && (
-                      <details className="mt-4 group/orig border border-slate-800/80 rounded-xl bg-[#070709] p-2.5 text-xs">
+                      <details className="mt-3.5 group/orig border border-white/[0.06] rounded-lg bg-[#08090C] p-2.5 text-xs">
                         <summary className="cursor-pointer text-slate-400 hover:text-slate-200 font-mono text-[11px] select-none flex items-center justify-between">
-                          <span>📄 Văn bản gốc tiếng Anh (Original Rule)</span>
+                          <span>[ EN ] Văn bản gốc tiếng Anh (Original Rule)</span>
                           <span className="text-[10px] text-slate-500">▼</span>
                         </summary>
-                        <div className="mt-2 text-slate-300 font-mono text-[11px] leading-relaxed whitespace-pre-line border-t border-slate-800/60 pt-2">
+                        <div className="mt-2 text-slate-300 font-mono text-[11px] leading-relaxed whitespace-pre-line border-t border-white/[0.06] pt-2">
                           {sub.descriptionEn}
                         </div>
                       </details>
@@ -389,20 +389,20 @@ export default function RacesView({ selectedRaceId, onSelectRace }) {
 
         {/* Fallback to original traits if subraces not defined */}
         {(!currentRace.subraces || currentRace.subraces.length === 0) && currentRace.traits?.length > 0 && (
-          <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 sm:p-8 shadow-xl">
-            <h3 className="text-base sm:text-lg font-bold text-white font-display mb-6 flex items-center space-x-2">
-              <Sparkles className={`w-5 h-5 ${currentTheme.accentClass}`} />
+          <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
+            <h3 className="text-sm sm:text-base font-bold text-white font-display mb-4 flex items-center space-x-2">
+              <Sparkles className={`w-4 h-4 ${currentTheme.accentClass}`} />
               <span>Đặc Tính Chủng Tộc ({currentRace.traits.length} Traits)</span>
             </h3>
 
-            <div className="space-y-4">
+            <div className="space-y-3">
               {currentRace.traits.map((trait, tIdx) => (
                 <div 
                   key={tIdx}
-                  className="p-5 rounded-2xl bg-[#0A0A0C] border border-[#202332] hover:border-[#2C3146] transition-colors"
+                  className="p-4 sm:p-5 rounded-xl bg-[#0A0B0E] border border-white/[0.06] hover:border-white/[0.12] transition-colors"
                 >
                   <h4 className="text-sm font-bold text-purple-300 font-display mb-2 flex items-center space-x-2">
-                    <span className={`w-2 h-2 rounded-full ${currentTheme.bgAccent} border ${currentTheme.borderAccent} inline-block`} />
+                    <span className={`w-1.5 h-1.5 rounded-full ${currentTheme.bgAccent} border ${currentTheme.borderAccent} inline-block`} />
                     <span>{trait.name}</span>
                   </h4>
                   <p className="text-xs text-slate-300 leading-relaxed whitespace-pre-line font-sans">

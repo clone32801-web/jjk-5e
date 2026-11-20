@@ -164,10 +164,10 @@ export default function ClassesView({ selectedClassId, onSelectClass }) {
       </div>
 
       {/* Active Class Content */}
-      <div className="space-y-8">
+      <div className="space-y-6">
         
         {/* Banner with Overview, Background & Artwork */}
-        <div className="relative rounded-3xl bg-[#0E0F14] border border-[#232636] p-6 sm:p-8 overflow-hidden shadow-2xl">
+        <div className="relative rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-6 sm:p-8 overflow-hidden">
           
           {/* CINEMATIC BACKGROUND WALLPAPER (NỀN) */}
           {currentClass.backgroundImage ? (
@@ -176,9 +176,9 @@ export default function ClassesView({ selectedClassId, onSelectClass }) {
                 src={`/images/${currentClass.backgroundImage}`} 
                 alt="" 
                 aria-hidden="true"
-                className="w-full h-full object-cover object-center opacity-30 scale-105 filter brightness-95 contrast-125 transition-all duration-700"
+                className="w-full h-full object-cover object-center opacity-25 scale-105 filter brightness-95 contrast-125 transition-all duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0C] via-[#0A0A0C]/75 to-[#0A0A0C]/35" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0C] via-[#0A0A0C]/80 to-[#0A0A0C]/40" />
               <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0C] via-[#0A0A0C]/85 md:via-[#0A0A0C]/70 to-[#0A0A0C]/40" />
             </div>
           ) : (
@@ -201,17 +201,17 @@ export default function ClassesView({ selectedClassId, onSelectClass }) {
             {/* Left Column: Description & Lore */}
             <div className="max-w-3xl flex-1">
               <div className="flex flex-wrap items-center gap-2 mb-3">
-                <span className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-mono font-bold bg-[#171822]/90 backdrop-blur-md text-slate-300 border border-[#2E3347]">
-                  <span className={`w-2 h-2 rounded-full ${currentTheme.bgAccent}`} />
+                <span className="inline-flex items-center space-x-1.5 px-2.5 py-0.5 rounded bg-white/[0.06] border border-white/10 text-xs font-mono font-medium text-zinc-300">
+                  <span className={`w-1.5 h-1.5 rounded-full ${currentTheme.bgAccent}`} />
                   <span>{classBadges[currentClass.id]?.role}</span>
                 </span>
-                <span className="px-2.5 py-1 rounded-full text-xs font-kanji font-bold bg-[#171822]/90 backdrop-blur-md text-slate-400 border border-[#2E3347]">
+                <span className="px-2 py-0.5 rounded text-xs font-kanji font-bold bg-white/[0.06] border border-white/10 text-zinc-400">
                   {classBadges[currentClass.id]?.kanji}
                 </span>
 
                 {/* CE Formula Pill */}
                 {currentClass.ceFormula && (
-                  <span className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-[11px] font-mono font-semibold bg-cyan-950/40 text-cyan-300 border border-cyan-800/40">
+                  <span className="inline-flex items-center space-x-1.5 px-2.5 py-0.5 rounded text-[11px] font-mono font-medium bg-cyan-950/40 text-cyan-300 border border-cyan-800/40">
                     <Zap className="w-3 h-3 text-cyan-400" />
                     <span>Chú Lực: {currentClass.ceFormula}</span>
                   </span>
@@ -456,32 +456,32 @@ export default function ClassesView({ selectedClassId, onSelectClass }) {
 
         {/* 20-Level Progression Table */}
         {currentClass.table?.length > 0 && (
-          <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl overflow-hidden">
+          <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6 overflow-hidden">
             <div className="flex items-center space-x-2 mb-4">
-              <Layers className={`w-5 h-5 ${currentTheme.accentClass}`} />
-              <h3 className="text-base sm:text-lg font-bold text-white font-display">
+              <Layers className={`w-4 h-4 ${currentTheme.accentClass}`} />
+              <h3 className="text-sm sm:text-base font-bold text-white font-display">
                 Bảng Tiến Trình Cấp Độ (Progression Table: Levels 1 - 20)
               </h3>
             </div>
 
-            <div className="overflow-x-auto rounded-2xl border border-[#202332]">
+            <div className="overflow-x-auto rounded-xl border border-white/[0.08]">
               <table className="w-full text-left text-xs">
-                <thead className="bg-[#171822] text-white font-mono text-[10px] uppercase border-b border-[#232636]">
+                <thead className="bg-[#08090C] text-zinc-400 font-mono text-[10px] uppercase border-b border-white/[0.08]">
                   <tr>
                     {currentClass.table[0]?.map((col, i) => (
-                      <th key={i} className="px-4 py-3 font-semibold tracking-wider">{col}</th>
+                      <th key={i} className="px-3.5 py-2.5 font-semibold tracking-wider">{col}</th>
                     ))}
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-[#1C1E2B]">
+                <tbody className="divide-y divide-white/[0.04] bg-[#0A0B0E]">
                   {currentClass.table.slice(1).map((row, rIdx) => (
-                    <tr key={rIdx} className="hover:bg-slate-800/25 transition-colors">
+                    <tr key={rIdx} className="hover:bg-white/[0.02] transition-colors">
                       {row.map((cell, cIdx) => (
                         <td 
                           key={cIdx} 
-                          className={`px-4 py-2.5 font-mono text-xs ${
-                            cIdx === 0 ? 'font-bold text-purple-400' : 
-                            cIdx === 2 ? 'font-sans text-slate-200' : 'text-slate-400'
+                          className={`px-3.5 py-2 font-mono text-xs ${
+                            cIdx === 0 ? 'font-bold text-cyan-400' : 
+                            cIdx === 2 ? 'font-sans text-zinc-200' : 'text-zinc-400'
                           }`}
                         >
                           {cell}
@@ -499,51 +499,51 @@ export default function ClassesView({ selectedClassId, onSelectClass }) {
         {/* SPECIALIZED SECTION: SHIKIGAMI USER QUICK RULES */}
         {/* ========================================================================= */}
         {isShikigamiUser && (
-          <div className="rounded-3xl bg-gradient-to-r from-[#141522] via-[#0F1018] to-[#12131A] border border-indigo-900/40 p-6 shadow-xl">
-            <div className="flex items-center space-x-2.5 mb-4">
-              <Sparkle className="w-5 h-5 text-indigo-400" />
-              <h3 className="text-base sm:text-lg font-bold text-white font-display">
+          <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
+            <div className="flex items-center space-x-2 mb-4">
+              <Sparkle className="w-4 h-4 text-cyan-400" />
+              <h3 className="text-sm sm:text-base font-bold text-white font-display">
                 Cẩm Nang Triệu Hồi &amp; Điều Khiển Thức Thần (Shikigami Rules)
               </h3>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
-              <div className="p-4 rounded-xl bg-[#090A0E] border border-indigo-900/30">
-                <div className="font-mono font-bold text-indigo-300 uppercase mb-1">📍 Tầm Triệu Hồi</div>
-                <p className="text-slate-300 font-sans">Trong phạm vi 30 feet, tại một không gian trống chưa bị chiếm chỗ.</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
+              <div className="p-3.5 rounded-xl bg-[#08090C] border border-white/[0.06]">
+                <div className="font-mono text-[10px] font-bold text-cyan-300 uppercase mb-1">[ PHẠM VI ]</div>
+                <p className="text-zinc-300 font-sans leading-relaxed">Trong phạm vi 30 feet, tại một không gian trống chưa bị chiếm chỗ.</p>
               </div>
 
-              <div className="p-4 rounded-xl bg-[#090A0E] border border-indigo-900/30">
-                <div className="font-mono font-bold text-indigo-300 uppercase mb-1">💎 Chi Phí Triệu Hồi</div>
-                <p className="text-slate-300 font-sans">Miễn phí 1 lần mỗi lần Long Rest, các lần sau tốn 3 Chú Lực (CE).</p>
+              <div className="p-3.5 rounded-xl bg-[#08090C] border border-white/[0.06]">
+                <div className="font-mono text-[10px] font-bold text-cyan-300 uppercase mb-1">[ CHI PHÍ ]</div>
+                <p className="text-zinc-300 font-sans leading-relaxed">Miễn phí 1 lần mỗi lần Long Rest, các lần sau tốn 3 Chú Lực (CE).</p>
               </div>
 
-              <div className="p-4 rounded-xl bg-[#090A0E] border border-indigo-900/30">
-                <div className="font-mono font-bold text-indigo-300 uppercase mb-1">⚡ Lượt &amp; Ra Lệnh</div>
-                <p className="text-slate-300 font-sans">Dùng chung Initiative, đi ngay sau lượt bạn. Dùng Bonus Action để ra lệnh tấn công/dùng chiêu.</p>
+              <div className="p-3.5 rounded-xl bg-[#08090C] border border-white/[0.06]">
+                <div className="font-mono text-[10px] font-bold text-cyan-300 uppercase mb-1">[ HÀNH ĐỘNG ]</div>
+                <p className="text-zinc-300 font-sans leading-relaxed">Dùng chung Initiative, đi ngay sau lượt bạn. Dùng Bonus Action để ra lệnh tấn công/dùng chiêu.</p>
               </div>
 
-              <div className="p-4 rounded-xl bg-[#090A0E] border border-indigo-900/30">
-                <div className="font-mono font-bold text-indigo-300 uppercase mb-1">⏳ Thời Lượng</div>
-                <p className="text-slate-300 font-sans">Tồn tại vĩnh viễn đến khi bị giảm về 0 HP, bạn triệu hồi lại hoặc tử trận.</p>
+              <div className="p-3.5 rounded-xl bg-[#08090C] border border-white/[0.06]">
+                <div className="font-mono text-[10px] font-bold text-cyan-300 uppercase mb-1">[ THỜI LƯỢNG ]</div>
+                <p className="text-zinc-300 font-sans leading-relaxed">Tồn tại vĩnh viễn đến khi bị giảm về 0 HP, bạn triệu hồi lại hoặc tử trận.</p>
               </div>
             </div>
           </div>
         )}
 
-        {/* ========================================================================= */}
+        {/* ========================================================= */}
         {/* SPECIALIZED SECTION: STRATEGIST TECHNIQUE CREATIVITY (10 METAMAGICS) */}
-        {/* ========================================================================= */}
+        {/* ========================================================= */}
         {isStrategist && currentClass.techniqueCreativities && (
-          <div className="rounded-3xl bg-[#12131A] border border-blue-900/40 p-6 sm:p-8 shadow-xl">
-            <div className="flex flex-wrap items-center justify-between gap-3 mb-6 pb-4 border-b border-[#1E2130]">
-              <div className="flex items-center space-x-2.5">
-                <Wand2 className="w-5 h-5 text-blue-400" />
+          <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
+            <div className="flex flex-wrap items-center justify-between gap-3 mb-6 pb-4 border-b border-white/[0.06]">
+              <div className="flex items-center space-x-2">
+                <Wand2 className="w-4 h-4 text-cyan-400" />
                 <div>
-                  <h3 className="text-base sm:text-lg font-bold text-white font-display">
+                  <h3 className="text-sm sm:text-base font-bold text-white font-display">
                     10 Biến Hóa Thuật Thức (Technique Creativity — Mở khóa Cấp 2)
                   </h3>
-                  <p className="text-xs text-slate-400 font-sans mt-0.5">
+                  <p className="text-xs text-zinc-400 font-sans mt-0.5">
                     Chọn 2 tùy chọn tại Cấp 2, thêm 1 tùy chọn tại Cấp 10 và Cấp 17 để tùy biến uy lực chiêu thức.
                   </p>
                 </div>
@@ -588,7 +588,7 @@ export default function ClassesView({ selectedClassId, onSelectClass }) {
         {/* ========================================================================= */}
         {/* CLASS FEATURES BREAKDOWN (WITH TIER FILTER & ACTION BADGES) */}
         {/* ========================================================================= */}
-        <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 sm:p-8 shadow-xl">
+        <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
           <div className="flex flex-wrap items-center justify-between gap-4 mb-6 pb-4 border-b border-[#1E2130]">
             <div className="flex items-center space-x-2">
               <Zap className={`w-5 h-5 ${currentTheme.accentClass}`} />
@@ -728,7 +728,7 @@ export default function ClassesView({ selectedClassId, onSelectClass }) {
         {/* HEAVENLY RESTRICTION SPECIALIZED SECTION 2: IDEAL (SUBCLASSES) */}
         {/* ========================================================================= */}
         {isHeavenlyRestriction && currentClass.ideals && (
-          <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 sm:p-8 shadow-xl">
+          <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
             <div className="flex flex-wrap items-center justify-between gap-4 mb-4 pb-4 border-b border-[#1E2130]">
               <div className="flex items-center space-x-2.5">
                 <Crown className="w-5 h-5 text-amber-400" />
@@ -845,7 +845,7 @@ export default function ClassesView({ selectedClassId, onSelectClass }) {
         {/* HEAVENLY RESTRICTION SPECIALIZED SECTION 3: BODY IMPROVEMENTS CATALOG */}
         {/* ========================================================================= */}
         {isHeavenlyRestriction && currentClass.bodyImprovements && (
-          <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 sm:p-8 shadow-xl">
+          <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
             <div className="flex flex-wrap items-center justify-between gap-4 mb-6 pb-4 border-b border-[#1E2130]">
               <div className="flex items-center space-x-2.5">
                 <Dumbbell className="w-5 h-5 text-cyan-400" />

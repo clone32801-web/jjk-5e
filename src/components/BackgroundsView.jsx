@@ -96,40 +96,40 @@ export default function BackgroundsView({ activeTab: propTab, setActiveTab: prop
       </div>
 
       {/* Main Mode Tabs Switcher */}
-      <div className="flex items-center space-x-3 border-b border-[#232636] pb-4 mb-8 overflow-x-auto no-scrollbar">
+      <div className="flex items-center space-x-2 border-b border-white/[0.08] pb-4 mb-8 overflow-x-auto no-scrollbar">
         <button
           onClick={() => { setActiveTab('backgrounds'); setSearch(''); }}
-          className={`flex items-center space-x-2.5 px-5 py-3 rounded-2xl text-xs sm:text-sm font-bold transition-all shrink-0 ${
+          className={`flex items-center space-x-2.5 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-colors shrink-0 ${
             activeTab === 'backgrounds'
-              ? `${currentTheme.bgAccent} ${currentTheme.accentClass} border ${currentTheme.borderAccent} shadow-lg ring-1 ring-white/10`
-              : 'bg-[#12131A] border border-[#232636] text-slate-400 hover:text-slate-200 hover:bg-[#151722]'
+              ? `${currentTheme.bgAccent} ${currentTheme.accentClass} border ${currentTheme.borderAccent} ring-1 ring-white/10`
+              : 'bg-[#0D0E13] border border-white/[0.08] text-slate-400 hover:text-slate-200 hover:bg-[#12141C]'
           }`}
         >
           <BookOpen className="w-4 h-4" />
           <span>Xuất Thân (Backgrounds)</span>
-          <span className="px-2 py-0.5 text-[10px] bg-[#0A0A0C] text-slate-400 rounded-full font-mono border border-[#232636]">
+          <span className="px-1.5 py-0.5 text-[10px] bg-[#08090C] text-slate-400 rounded-md font-mono border border-white/[0.06]">
             {backgrounds.length}
           </span>
         </button>
 
         <button
           onClick={() => { setActiveTab('mindsets'); setSearch(''); }}
-          className={`flex items-center space-x-2.5 px-5 py-3 rounded-2xl text-xs sm:text-sm font-bold transition-all shrink-0 ${
+          className={`flex items-center space-x-2.5 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-colors shrink-0 ${
             activeTab === 'mindsets'
-              ? `${currentTheme.bgAccent} ${currentTheme.accentClass} border ${currentTheme.borderAccent} shadow-lg ring-1 ring-white/10`
-              : 'bg-[#12131A] border border-[#232636] text-slate-400 hover:text-slate-200 hover:bg-[#151722]'
+              ? `${currentTheme.bgAccent} ${currentTheme.accentClass} border ${currentTheme.borderAccent} ring-1 ring-white/10`
+              : 'bg-[#0D0E13] border border-white/[0.08] text-slate-400 hover:text-slate-200 hover:bg-[#12141C]'
           }`}
         >
           <Compass className="w-4 h-4" />
           <span>Tâm Thế Chú Thuật (Mindsets / Alignments)</span>
-          <span className="px-2 py-0.5 text-[10px] bg-[#0A0A0C] text-slate-400 rounded-full font-mono border border-[#232636]">
+          <span className="px-1.5 py-0.5 text-[10px] bg-[#08090C] text-slate-400 rounded-md font-mono border border-white/[0.06]">
             {mindsets.length}
           </span>
         </button>
       </div>
 
       {/* Search Input Bar */}
-      <div className="bg-[#12131A] border border-[#232636] rounded-2xl p-4 mb-8 shadow-xl flex items-center justify-between gap-4">
+      <div className="bg-[#0D0E13] border border-white/[0.08] rounded-xl p-3 sm:p-4 mb-8 flex items-center justify-between gap-4">
         <div className="relative w-full md:w-96">
           <Search className="w-4 h-4 text-slate-500 absolute left-3.5 top-1/2 -translate-y-1/2" />
           <input
@@ -137,7 +137,7 @@ export default function BackgroundsView({ activeTab: propTab, setActiveTab: prop
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder={activeTab === 'backgrounds' ? "Tìm xuất thân (Clan Sorcerer, Genius, Yuji...)..." : "Tìm tâm thế (Honored One, Cog, Gojo, Nanami...)..."}
-            className="w-full pl-10 pr-4 py-2 bg-[#0A0A0C] border border-[#232636] rounded-xl text-xs sm:text-sm text-white placeholder-slate-500 focus:outline-none focus:border-purple-500 font-sans"
+            className="w-full pl-10 pr-4 py-2 bg-[#08090C] border border-white/[0.08] rounded-lg text-xs sm:text-sm text-white placeholder-slate-500 focus:outline-none focus:border-white/20 font-sans"
           />
           {search && (
             <button onClick={() => setSearch('')} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-500 hover:text-white">
@@ -157,7 +157,7 @@ export default function BackgroundsView({ activeTab: propTab, setActiveTab: prop
         <div className="space-y-6">
           
           {/* Rule Callout Banner */}
-          <div className="p-4 sm:p-5 rounded-2xl bg-[#090A10] border border-purple-900/40 shadow-inner flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+          <div className="p-4 sm:p-5 rounded-2xl bg-[#0D0E13] border border-white/[0.08] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
             <div className="flex items-center space-x-3">
               <Scroll className="w-5 h-5 text-purple-400 shrink-0" />
               <p className="text-slate-300 font-sans">
@@ -167,11 +167,11 @@ export default function BackgroundsView({ activeTab: propTab, setActiveTab: prop
           </div>
 
           {/* Backgrounds Cards Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6">
             {filteredBackgrounds.map((bg) => (
               <div 
                 key={bg.id}
-                className="p-6 rounded-3xl bg-[#12131A] border border-[#232636] hover:border-[#383D56] transition-all flex flex-col justify-between shadow-xl relative overflow-hidden"
+                className="p-5 sm:p-6 rounded-2xl bg-[#0D0E13] border border-white/[0.08] hover:border-white/[0.14] transition-colors flex flex-col justify-between relative overflow-hidden"
               >
                 <div>
                   
@@ -181,22 +181,16 @@ export default function BackgroundsView({ activeTab: propTab, setActiveTab: prop
                     {bg.image && (
                       <div 
                         onClick={() => openLightbox(bg.image)}
-                        className="relative w-full sm:w-36 h-44 rounded-2xl overflow-hidden bg-[#070709] border border-[#282D3F] shrink-0 flex items-center justify-center cursor-pointer group shadow-md"
+                        className="relative w-full sm:w-36 h-44 rounded-xl overflow-hidden bg-[#08090C] border border-white/[0.08] shrink-0 flex items-center justify-center cursor-pointer group"
                       >
                         <img 
                           src={`/images/${bg.image}`} 
-                          alt="" 
-                          aria-hidden="true"
-                          className="absolute inset-0 w-full h-full object-cover blur-xl opacity-30 scale-125 pointer-events-none"
-                        />
-                        <img 
-                          src={`/images/${bg.image}`} 
                           alt={bg.name}
-                          className="relative z-10 max-h-full max-w-full object-contain p-2 transition-transform duration-300 group-hover:scale-105"
+                          className="relative z-10 max-h-full max-w-full object-contain p-2"
                           onError={(e) => { e.target.style.display = 'none'; }}
                         />
                         <button 
-                          className="absolute bottom-2 right-2 p-1.5 rounded-lg bg-black/75 hover:bg-black text-white border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity"
+                          className="absolute bottom-2 right-2 p-1.5 rounded-md bg-black/80 hover:bg-black text-white border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity"
                           title="Phóng to"
                         >
                           <Maximize2 className="w-3 h-3" />
@@ -206,15 +200,15 @@ export default function BackgroundsView({ activeTab: propTab, setActiveTab: prop
 
                     {/* Titles & Meta */}
                     <div className="flex-1">
-                      <div className="inline-flex items-center space-x-1 px-2.5 py-0.5 rounded-md bg-[#161824] border border-[#2A2E44] text-[10px] font-mono text-purple-300 mb-2">
+                      <div className="inline-flex items-center space-x-1 px-2.5 py-0.5 rounded-md bg-[#12141D] border border-white/[0.08] text-[10px] font-mono text-purple-300 mb-2">
                         <User className="w-2.5 h-2.5 text-purple-400" />
                         <span>Đại diện: {bg.character}</span>
                       </div>
 
-                      <h3 className="text-xl font-bold text-white font-display">
+                      <h3 className="text-lg sm:text-xl font-bold text-white font-display">
                         {bg.name}
                       </h3>
-                      <div className="text-xs text-amber-300 font-sans font-medium mb-2">
+                      <div className="text-xs text-amber-300/90 font-sans font-medium mb-2">
                         {bg.vietnameseName}
                       </div>
 
@@ -225,10 +219,10 @@ export default function BackgroundsView({ activeTab: propTab, setActiveTab: prop
                   </div>
 
                   {/* Feat Pill (Highlighted) */}
-                  <div className="p-3 rounded-xl bg-purple-950/30 border border-purple-800/40 text-xs text-purple-200 mb-3 flex items-start space-x-2">
+                  <div className="p-3 rounded-xl bg-[#12101B] border border-purple-500/20 text-xs text-purple-200 mb-3 flex items-start space-x-2">
                     <Award className="w-4 h-4 text-purple-400 shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-bold text-white block text-[11px] font-mono uppercase">Kỳ Tài Được Cấp (Granted Feat):</span>
+                      <span className="font-bold text-white block text-[10px] font-mono uppercase tracking-wider">Kỳ Tài Được Cấp (Granted Feat):</span>
                       <span className="text-purple-300 font-mono text-xs font-semibold">{bg.feat}</span>
                       {bg.featVi && (
                         <div className="text-[11px] text-purple-200/80 font-sans mt-0.5">{bg.featVi}</div>
@@ -238,27 +232,27 @@ export default function BackgroundsView({ activeTab: propTab, setActiveTab: prop
 
                   {/* Skills & Tools Specs */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs mb-3">
-                    <div className="p-2.5 rounded-xl bg-[#0A0A0C] border border-[#202332]">
-                      <span className="text-[10px] text-slate-500 font-mono uppercase block">Kỹ năng thành thạo:</span>
+                    <div className="p-2.5 rounded-lg bg-[#0A0B0E] border border-white/[0.05]">
+                      <span className="text-[10px] text-slate-500 font-mono uppercase tracking-wider block">Kỹ năng thành thạo:</span>
                       <span className="font-semibold text-slate-200 font-mono">{bg.skills}</span>
                     </div>
 
                     {bg.tools ? (
-                      <div className="p-2.5 rounded-xl bg-[#0A0A0C] border border-[#202332]">
-                        <span className="text-[10px] text-slate-500 font-mono uppercase block">Công cụ thành thạo:</span>
+                      <div className="p-2.5 rounded-lg bg-[#0A0B0E] border border-white/[0.05]">
+                        <span className="text-[10px] text-slate-500 font-mono uppercase tracking-wider block">Công cụ thành thạo:</span>
                         <span className="font-semibold text-slate-200 font-mono">{bg.tools}</span>
                       </div>
                     ) : (
-                      <div className="p-2.5 rounded-xl bg-[#0A0A0C] border border-[#202332]">
-                        <span className="text-[10px] text-slate-500 font-mono uppercase block">Công cụ thành thạo:</span>
+                      <div className="p-2.5 rounded-lg bg-[#0A0B0E] border border-white/[0.05]">
+                        <span className="text-[10px] text-slate-500 font-mono uppercase tracking-wider block">Công cụ thành thạo:</span>
                         <span className="text-slate-500 font-mono italic">Không có</span>
                       </div>
                     )}
                   </div>
 
                   {/* Starting Equipment */}
-                  <div className="p-3 rounded-xl bg-[#0A0A0C] border border-[#202332] text-xs text-slate-300 mb-3">
-                    <div className="flex items-center space-x-1.5 text-slate-400 font-mono text-[10px] uppercase font-bold mb-1">
+                  <div className="p-3 rounded-lg bg-[#0A0B0E] border border-white/[0.05] text-xs text-slate-300 mb-3">
+                    <div className="flex items-center space-x-1.5 text-slate-400 font-mono text-[10px] uppercase font-bold tracking-wider mb-1">
                       <Package className="w-3.5 h-3.5 text-amber-400" />
                       <span>Trang bị khởi đầu:</span>
                     </div>
@@ -266,7 +260,7 @@ export default function BackgroundsView({ activeTab: propTab, setActiveTab: prop
                   </div>
 
                   {/* Unique Background Feature */}
-                  <div className="p-3.5 rounded-xl bg-[#10121C] border border-cyan-900/30 text-xs">
+                  <div className="p-3 rounded-lg bg-[#0D1117] border border-cyan-500/20 text-xs">
                     <div className="font-bold text-cyan-300 font-display mb-1 flex items-center space-x-1.5">
                       <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
                       <span>Đặc Quyền: {bg.feature.name} {bg.feature.vietnameseName && `(${bg.feature.vietnameseName})`}</span>
@@ -276,14 +270,14 @@ export default function BackgroundsView({ activeTab: propTab, setActiveTab: prop
 
                   {/* Original English Background Rules Collapsible */}
                   {bg.descriptionEn && (
-                    <details className="mt-4 group/orig border border-slate-800/80 rounded-xl bg-[#070709] p-2.5 text-xs">
+                    <details className="mt-3.5 group/orig border border-white/[0.06] rounded-lg bg-[#08090C] p-2.5 text-xs">
                       <summary className="cursor-pointer text-slate-400 hover:text-slate-200 font-mono text-[11px] select-none flex items-center justify-between">
-                        <span>📄 Văn bản gốc tiếng Anh (Original Rule)</span>
+                        <span>[ EN ] Văn bản gốc tiếng Anh (Original Rule)</span>
                         <span className="text-[10px] text-slate-500">▼</span>
                       </summary>
-                      <div className="mt-2 text-slate-300 font-mono text-[11px] leading-relaxed border-t border-slate-800/60 pt-2 space-y-2">
+                      <div className="mt-2 text-slate-300 font-mono text-[11px] leading-relaxed border-t border-white/[0.06] pt-2 space-y-2">
                         <p className="whitespace-pre-line text-slate-300">{bg.descriptionEn}</p>
-                        <div className="pt-2 border-t border-slate-800/60 space-y-1 text-[10px]">
+                        <div className="pt-2 border-t border-white/[0.06] space-y-1 text-[10px]">
                           <div><span className="text-slate-400 font-bold">Feat:</span> {bg.feat}</div>
                           <div><span className="text-slate-400 font-bold">Skill Proficiencies:</span> {bg.skills}</div>
                           {bg.toolsEn && <div><span className="text-slate-400 font-bold">Tool Proficiency:</span> {bg.toolsEn}</div>}
@@ -312,7 +306,7 @@ export default function BackgroundsView({ activeTab: propTab, setActiveTab: prop
         <div className="space-y-6">
           
           {/* Mindsets Explanation Callout */}
-          <div className="p-5 sm:p-6 rounded-3xl bg-gradient-to-r from-amber-950/20 via-[#131219] to-[#0A0A0C] border border-amber-900/40 shadow-xl space-y-2 text-xs">
+          <div className="p-4 sm:p-5 rounded-2xl bg-[#0D0E13] border border-amber-500/20 space-y-2 text-xs">
             <div className="flex items-center space-x-2 text-amber-300 font-bold font-display text-sm">
               <Compass className="w-4 h-4 text-amber-400" />
               <span>Hệ Thống Tâm Thế Chú Thuật (Mindset Inspiration Mechanics)</span>
@@ -323,37 +317,31 @@ export default function BackgroundsView({ activeTab: propTab, setActiveTab: prop
           </div>
 
           {/* Mindsets Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
             {filteredMindsets.map((ms) => (
               <div 
                 key={ms.id}
-                className="p-6 rounded-3xl bg-[#12131A] border border-[#232636] hover:border-[#383D56] transition-all flex flex-col justify-between shadow-xl relative overflow-hidden group"
+                className="p-5 rounded-2xl bg-[#0D0E13] border border-white/[0.08] hover:border-white/[0.14] transition-colors flex flex-col justify-between relative overflow-hidden group"
               >
                 {/* Kanji Watermark */}
-                <div className="absolute right-3 top-2 font-kanji font-black text-7xl text-white/[0.03] pointer-events-none select-none">
+                <div className="absolute right-3 top-2 font-kanji font-black text-6xl text-white/[0.02] pointer-events-none select-none">
                   {ms.kanji}
                 </div>
 
                 <div>
                   
                   {/* Top Row with Artwork */}
-                  <div className="flex items-start gap-4 mb-4">
+                  <div className="flex items-start gap-3.5 mb-4">
                     {/* Artwork Container */}
                     {ms.image && (
                       <div 
                         onClick={() => openLightbox(ms.image)}
-                        className="relative w-20 h-24 rounded-2xl overflow-hidden bg-[#070709] border border-[#282D3F] shrink-0 flex items-center justify-center cursor-pointer group shadow-md"
+                        className="relative w-18 h-22 rounded-xl overflow-hidden bg-[#08090C] border border-white/[0.08] shrink-0 flex items-center justify-center cursor-pointer group"
                       >
                         <img 
                           src={`/images/${ms.image}`} 
-                          alt="" 
-                          aria-hidden="true"
-                          className="absolute inset-0 w-full h-full object-cover blur-md opacity-30 scale-125 pointer-events-none"
-                        />
-                        <img 
-                          src={`/images/${ms.image}`} 
                           alt={ms.name}
-                          className="relative z-10 max-h-full max-w-full object-contain p-1 transition-transform duration-300 group-hover:scale-105"
+                          className="relative z-10 max-h-full max-w-full object-contain p-1"
                           onError={(e) => { e.target.style.display = 'none'; }}
                         />
                       </div>
@@ -362,7 +350,7 @@ export default function BackgroundsView({ activeTab: propTab, setActiveTab: prop
                     {/* Titles */}
                     <div className="flex-1">
                       <div className="flex items-center justify-between mb-1">
-                        <span className="font-kanji font-bold text-xs text-amber-400 bg-amber-950/40 px-2 py-0.5 rounded border border-amber-900/40">
+                        <span className="font-kanji font-bold text-xs text-amber-400/90 bg-amber-950/30 px-2 py-0.5 rounded border border-amber-900/30">
                           {ms.kanji}
                         </span>
                       </div>
@@ -370,7 +358,7 @@ export default function BackgroundsView({ activeTab: propTab, setActiveTab: prop
                       <h3 className="text-base font-bold text-white font-display">
                         {ms.name}
                       </h3>
-                      <div className="text-[11px] text-amber-300 font-sans font-medium">
+                      <div className="text-[11px] text-amber-300/90 font-sans font-medium">
                         {ms.vietnameseName}
                       </div>
 
@@ -384,13 +372,13 @@ export default function BackgroundsView({ activeTab: propTab, setActiveTab: prop
                   </div>
 
                   {/* Lore Quote */}
-                  <blockquote className="mb-4 text-xs italic text-slate-400 border-l-2 border-[#33384D] pl-3 py-1 font-sans leading-relaxed">
+                  <blockquote className="mb-4 text-xs italic text-slate-400 border-l-2 border-white/20 pl-3 py-1 font-sans leading-relaxed">
                     "{ms.quote}"
                   </blockquote>
 
                   {/* Inspiration Mechanic Card */}
-                  <div className="p-3.5 rounded-2xl bg-[#090A10] border border-amber-900/40 shadow-inner">
-                    <div className="flex items-center space-x-1.5 text-amber-400 font-mono text-[10px] uppercase font-bold mb-1.5">
+                  <div className="p-3 rounded-xl bg-[#141009] border border-amber-500/20">
+                    <div className="flex items-center space-x-1.5 text-amber-400 font-mono text-[10px] uppercase font-bold tracking-wider mb-1.5">
                       <Flame className="w-3.5 h-3.5 text-amber-400" />
                       <span>Kích Hoạt Inspiration:</span>
                     </div>
@@ -401,12 +389,12 @@ export default function BackgroundsView({ activeTab: propTab, setActiveTab: prop
 
                   {/* Original English Mindset Collapsible */}
                   {(ms.quoteEn || ms.mechanicEn) && (
-                    <details className="mt-3 group/orig border border-slate-800/80 rounded-xl bg-[#070709] p-2.5 text-xs">
+                    <details className="mt-3 group/orig border border-white/[0.06] rounded-lg bg-[#08090C] p-2.5 text-xs">
                       <summary className="cursor-pointer text-slate-400 hover:text-slate-200 font-mono text-[11px] select-none flex items-center justify-between">
-                        <span>📄 Văn bản gốc tiếng Anh (Original Rule)</span>
+                        <span>[ EN ] Văn bản gốc tiếng Anh (Original Rule)</span>
                         <span className="text-[10px] text-slate-500">▼</span>
                       </summary>
-                      <div className="mt-2 text-slate-300 font-mono text-[11px] leading-relaxed border-t border-slate-800/60 pt-2 space-y-1.5">
+                      <div className="mt-2 text-slate-300 font-mono text-[11px] leading-relaxed border-t border-white/[0.06] pt-2 space-y-1.5">
                         {ms.quoteEn && (
                           <p className="italic text-slate-400">"{ms.quoteEn}"</p>
                         )}
@@ -437,17 +425,17 @@ export default function BackgroundsView({ activeTab: propTab, setActiveTab: prop
           >
             <button
               onClick={() => setIsLightboxOpen(false)}
-              className="absolute -top-12 right-0 p-2 text-slate-400 hover:text-white bg-[#171822] rounded-full border border-white/10 transition-colors"
+              className="absolute -top-12 right-0 p-2 text-slate-400 hover:text-white bg-[#14151D] rounded-full border border-white/10 transition-colors"
               title="Đóng (Esc)"
             >
               <X className="w-5 h-5" />
             </button>
 
-            <div className="relative w-full max-h-[78vh] flex items-center justify-center overflow-hidden rounded-2xl bg-[#070709] border border-[#282D3F] p-4 shadow-2xl">
+            <div className="relative w-full max-h-[78vh] flex items-center justify-center overflow-hidden rounded-xl bg-[#08090C] border border-white/[0.08] p-4">
               <img 
                 src={`/images/${lightboxImg}`} 
                 alt=""
-                className="max-h-[74vh] max-w-full object-contain rounded-lg drop-shadow-2xl"
+                className="max-h-[74vh] max-w-full object-contain rounded-lg"
               />
             </div>
           </div>

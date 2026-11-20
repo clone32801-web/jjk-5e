@@ -134,7 +134,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
           </button>
 
           {isMobileMenuOpen && (
-            <div className="mt-2 p-2 rounded-2xl bg-[#12131A] border border-[#232636] space-y-1 shadow-2xl">
+            <div className="mt-2 p-2 rounded-xl bg-[#0D0E13] border border-white/[0.08] space-y-1">
               {sections.map(sec => {
                 const Icon = sec.icon;
                 const isActive = activeSection === sec.id;
@@ -201,7 +201,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
           <div className="space-y-6">
             
             {/* Banner */}
-            <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-[#171824] via-[#101117] to-[#0A0A0C] border border-[#232636] relative overflow-hidden shadow-2xl">
+            <div className="p-5 sm:p-6 rounded-2xl bg-[#0D0E13] border border-white/[0.08] relative overflow-hidden">
               <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 mb-3 inline-block">
                 Nền Tảng Năng Lượng Tiêu Cực • 呪力基礎
               </span>
@@ -214,7 +214,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             </div>
 
             {/* Basic Cursed Energy Manipulation */}
-            <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl">
+            <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
               <h3 className="text-base sm:text-lg font-bold text-white font-display mb-4 flex items-center space-x-2">
                 <Flame className="w-5 h-5 text-amber-400" />
                 <span>Thao Túng Chú Lực Căn Bản</span>
@@ -225,7 +225,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
                 {rulesData.cursedEnergy.basicManipulation.map((bm, idx) => (
-                  <div key={idx} className="p-4 rounded-2xl bg-[#0E0F16] border border-[#202332] flex flex-col justify-between">
+                  <div key={idx} className="p-4 rounded-xl bg-[#0A0B0E] border border-white/[0.06] flex flex-col justify-between">
                     <div>
                       <div className="flex justify-between items-center mb-1">
                         <span className="font-bold text-amber-300 font-display text-sm">{bm.name}</span>
@@ -240,7 +240,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             </div>
 
             {/* Average Cursed Energy Table */}
-            <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl overflow-hidden">
+            <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6 overflow-hidden">
               <h3 className="text-base sm:text-lg font-bold text-cyan-300 font-display mb-2 flex items-center space-x-2">
                 <Zap className="w-5 h-5 text-cyan-400" />
                 <span>Bảng Lượng Chú Lực Trung Bình</span>
@@ -249,18 +249,18 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
                 Lượng Chú lực tổng thể của một cá nhân phụ thuộc vào thiên bẩm bẩm sinh đối với Chú thuật thay vì số lượng cảm xúc tiêu cực đơn thuần:
               </p>
 
-              <div className="overflow-x-auto rounded-2xl border border-[#202332]">
+              <div className="overflow-x-auto rounded-xl border border-white/[0.08]">
                 <table className="w-full text-left text-xs">
-                  <thead className="bg-[#171822] text-white font-mono text-[10px] uppercase border-b border-[#232636]">
+                  <thead className="bg-[#08090C] text-white font-mono text-[10px] uppercase tracking-wider border-b border-white/[0.08]">
                     <tr>
                       <th className="px-4 py-3 font-semibold w-64">Phân Loại Đối Tượng</th>
                       <th className="px-4 py-3 font-semibold w-28">Lượng CE</th>
                       <th className="px-4 py-3 font-semibold">Bối Cảnh &amp; Mức Độ Sức Mạnh</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#1C1E2B]">
+                  <tbody className="divide-y divide-white/[0.04] bg-[#0A0B0E]">
                     {rulesData.cursedEnergy.averageCE.map((row, idx) => (
-                      <tr key={idx} className="hover:bg-slate-800/20">
+                      <tr key={idx} className="hover:bg-white/[0.02]">
                         <td className="px-4 py-3 font-display text-white font-bold">{row.classification}</td>
                         <td className="px-4 py-3 font-mono text-cyan-300 font-bold text-sm">{row.ce}</td>
                         <td className="px-4 py-3 font-sans text-slate-300 leading-relaxed text-xs">{row.context}</td>
@@ -273,7 +273,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
 
             {/* Cursed Techniques Overview */}
             {rulesData.cursedEnergy.cursedTechniques && (
-              <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl space-y-4">
+              <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6 space-y-4">
                 <div className="flex items-center space-x-2">
                   <Brain className="w-5 h-5 text-purple-400" />
                   <h3 className="text-base sm:text-lg font-bold text-white font-display">
@@ -287,7 +287,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {rulesData.cursedEnergy.cursedTechniques.categories.map((cat, cIdx) => (
-                    <div key={cIdx} className="p-4 rounded-2xl bg-[#0E0F16] border border-[#202332] flex flex-col justify-between">
+                    <div key={cIdx} className="p-4 rounded-xl bg-[#0A0B0E] border border-white/[0.06] flex flex-col justify-between">
                       <div>
                         <span className="font-bold text-purple-300 font-display text-xs block mb-1.5">
                           {cat.name}
@@ -314,7 +314,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
           <div className="space-y-6">
             
             {/* Banner */}
-            <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-[#171A24] via-[#101217] to-[#0A0A0C] border border-cyan-900/40 relative overflow-hidden shadow-2xl">
+            <div className="p-5 sm:p-6 rounded-2xl bg-[#0D0E13] border border-white/[0.08] relative overflow-hidden">
               <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 mb-3 inline-block">
                 Khế Ước Trao Đổi Đồng Giá • 縛り
               </span>
@@ -327,7 +327,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             </div>
 
             {/* Solo Binding Vow Examples */}
-            <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl">
+            <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
               <h3 className="text-base sm:text-lg font-bold text-white font-display mb-4 flex items-center space-x-2">
                 <Zap className="w-5 h-5 text-amber-400" />
                 <span>Mẫu Ràng Buộc Cá Nhân Thực Chiến</span>
@@ -335,7 +335,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {rulesData.bindingVows.soloVows.map((vow, idx) => (
-                  <div key={idx} className="p-4 rounded-2xl bg-[#0E0F16] border border-[#232636] flex flex-col justify-between">
+                  <div key={idx} className="p-4 rounded-xl bg-[#0A0B0E] border border-white/[0.06] flex flex-col justify-between">
                     <div>
                       <div className="flex justify-between items-start gap-2 mb-1">
                         <h4 className="text-sm font-bold text-amber-300 font-display">{vow.name}</h4>
@@ -352,13 +352,13 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             </div>
 
             {/* Multi Binding Vows */}
-            <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl">
+            <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
               <h3 className="text-base sm:text-lg font-bold text-white font-display mb-3">
                 Ràng Buộc Tương Hỗ
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {rulesData.bindingVows.multiVows.map((mv, idx) => (
-                  <div key={idx} className="p-4 rounded-2xl bg-[#0E0F16] border border-[#232636]">
+                  <div key={idx} className="p-4 rounded-xl bg-[#0A0B0E] border border-white/[0.06]">
                     <div className="flex justify-between items-center mb-1.5">
                       <h4 className="text-sm font-bold text-cyan-300 font-display">{mv.name}</h4>
                       <span className="text-[10px] font-mono text-slate-400">{mv.req}</span>
@@ -370,7 +370,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             </div>
 
             {/* 9 DM Guidelines */}
-            <div className="rounded-3xl bg-[#12131A] border border-amber-900/30 p-6 shadow-xl">
+            <div className="rounded-2xl bg-[#0D0E13] border border-amber-500/20 p-5 sm:p-6">
               <h3 className="text-base sm:text-lg font-bold text-amber-300 font-display mb-2 flex items-center space-x-2">
                 <AlertTriangle className="w-5 h-5 text-amber-400" />
                 <span>9 Nguyên Tắc Cảnh Báo Cho DM Khi Duyệt Ràng Buộc Tự Tạo</span>
@@ -381,7 +381,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
                 {rulesData.bindingVows.dmGuidelines.map((g, idx) => (
-                  <div key={idx} className="p-3.5 rounded-xl bg-[#0A0A0C] border border-[#202332]">
+                  <div key={idx} className="p-3.5 rounded-lg bg-[#0A0B0E] border border-white/[0.05]">
                     <span className="font-bold text-white block mb-1">{g.rule}</span>
                     <span className="text-slate-400 text-[11px] font-sans leading-relaxed">{g.desc}</span>
                   </div>
@@ -390,7 +390,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             </div>
 
             {/* Misfortune Table */}
-            <div className="rounded-3xl bg-[#12131A] border border-rose-900/40 p-6 shadow-xl overflow-hidden">
+            <div className="rounded-2xl bg-[#0D0E13] border border-rose-500/20 p-5 sm:p-6 overflow-hidden">
               <div className="flex items-center space-x-2 text-rose-400 font-bold mb-2 font-display">
                 <AlertTriangle className="w-5 h-5" />
                 <span>Bảng Bất Hạnh Khi Phá Vỡ Ràng Buộc (1d6)</span>
@@ -401,13 +401,13 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
 
               <div className="overflow-x-auto rounded-2xl border border-rose-950/40">
                 <table className="w-full text-left text-xs">
-                  <thead className="bg-[#171822] text-rose-300 font-mono text-[10px] uppercase border-b border-[#232636]">
+                  <thead className="bg-[#08090C] text-rose-300 font-mono text-[10px] uppercase tracking-wider border-b border-rose-500/20">
                     <tr>
                       <th className="px-4 py-3 font-semibold w-24">1d6 Roll</th>
                       <th className="px-4 py-3 font-semibold">Hậu Quả Giáng Xuống Kẻ Phá Vỡ Ràng Buộc</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#1C1E2B]">
+                  <tbody className="divide-y divide-white/[0.04] bg-[#0A0B0E]">
                     {rulesData.bindingVows.misfortuneTable.slice(1).map((row, rIdx) => (
                       <tr key={rIdx} className="hover:bg-rose-950/20">
                         <td className="px-4 py-3 font-mono font-bold text-rose-400">{row[0]}</td>
@@ -430,7 +430,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
           <div className="space-y-6">
             
             {/* Banner */}
-            <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-[#20101C] via-[#150F18] to-[#0A0A0C] border border-red-900/40 relative overflow-hidden shadow-2xl">
+            <div className="p-5 sm:p-6 rounded-2xl bg-[#0D0E13] border border-white/[0.08] relative overflow-hidden">
               <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-red-500/20 text-red-300 border border-red-500/30 mb-3 inline-block">
                 Tia Chớp Đen &amp; Đột Phá • 黒閃
               </span>
@@ -443,7 +443,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             </div>
 
             {/* Black Flash Card */}
-            <div className="rounded-3xl bg-[#12131A] border border-red-500/40 p-6 shadow-xl">
+            <div className="rounded-2xl bg-[#0D0E13] border border-red-500/30 p-5 sm:p-6">
               <div className="flex items-center space-x-2 text-red-400 font-display font-bold text-lg mb-2">
                 <Flame className="w-5 h-5 text-red-500" />
                 <span>{rulesData.breakthroughs.blackFlash.title}</span>
@@ -459,7 +459,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             </div>
 
             {/* Reverse Cursed Technique (RCT) Card */}
-            <div className="rounded-3xl bg-[#12131A] border border-emerald-500/30 p-6 sm:p-8 shadow-xl">
+            <div className="rounded-2xl bg-[#0D0E13] border border-emerald-500/20 p-5 sm:p-6">
               <div className="flex items-center space-x-2.5 mb-3">
                 <Heart className="w-6 h-6 text-emerald-400" />
                 <h3 className="text-xl font-bold text-white font-display">
@@ -471,19 +471,19 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 text-xs">
-                <div className="p-3.5 rounded-2xl bg-[#0A0A0C] border border-[#202332]">
+                <div className="p-3.5 rounded-xl bg-[#0A0B0E] border border-white/[0.05]">
                   <span className="text-slate-400 font-mono block text-[10px] uppercase font-bold mb-1">Công Thức Bể Máu:</span>
                   <span className="text-emerald-300 font-bold font-mono">{rulesData.breakthroughs.rct.poolFormula}</span>
                 </div>
-                <div className="p-3.5 rounded-2xl bg-[#0A0A0C] border border-[#202332]">
+                <div className="p-3.5 rounded-xl bg-[#0A0B0E] border border-white/[0.05]">
                   <span className="text-slate-400 font-mono block text-[10px] uppercase font-bold mb-1">Tỷ Lệ Chuyển Đổi:</span>
                   <span className="text-cyan-300 font-bold font-mono">{rulesData.breakthroughs.rct.conversionRate}</span>
                 </div>
-                <div className="p-3.5 rounded-2xl bg-[#0A0A0C] border border-[#202332]">
+                <div className="p-3.5 rounded-xl bg-[#0A0B0E] border border-white/[0.05]">
                   <span className="text-slate-400 font-mono block text-[10px] uppercase font-bold mb-1">Hồi Phục Đứt Chi:</span>
                   <span className="text-amber-300 font-bold">{rulesData.breakthroughs.rct.injuryHealing}</span>
                 </div>
-                <div className="p-3.5 rounded-2xl bg-[#0A0A0C] border border-[#202332]">
+                <div className="p-3.5 rounded-xl bg-[#0A0B0E] border border-white/[0.05]">
                   <span className="text-slate-400 font-mono block text-[10px] uppercase font-bold mb-1">Tự Làm Đầy:</span>
                   <span className="text-purple-300 font-bold">{rulesData.breakthroughs.rct.recharge}</span>
                 </div>
@@ -491,7 +491,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             </div>
 
             {/* Awakened Understanding Progression */}
-            <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl">
+            <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
               <h3 className="text-base font-bold text-white font-display mb-4 flex items-center space-x-2">
                 <Award className="w-4 h-4 text-amber-400" />
                 <span>Tiến Trình Giác Ngộ Chú Lực Sau Đột Phá</span>
@@ -499,7 +499,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {rulesData.breakthroughs.awakenedProgression.map((stage, idx) => (
-                  <div key={idx} className="p-4 rounded-2xl bg-[#0E0F16] border border-[#232636] flex flex-col justify-between">
+                  <div key={idx} className="p-4 rounded-xl bg-[#0A0B0E] border border-white/[0.06] flex flex-col justify-between">
                     <div>
                       <div className="text-[10px] font-mono text-amber-300 uppercase font-bold mb-1">{stage.req}</div>
                       <h4 className="text-sm font-bold text-white font-display mb-2">{stage.stage}</h4>
@@ -513,7 +513,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             </div>
 
             {/* Class Specific Understandings */}
-            <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl">
+            <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
               <h3 className="text-base font-bold text-white font-display mb-3">
                 Giác Ngộ Độc Quyền Theo Lớp Nhân Vật
               </h3>
@@ -522,7 +522,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs">
                 {rulesData.breakthroughs.classUnderstandings.map((cu, idx) => (
-                  <div key={idx} className="p-3.5 rounded-xl bg-[#0A0A0C] border border-[#202332]">
+                  <div key={idx} className="p-3.5 rounded-lg bg-[#0A0B0E] border border-white/[0.05]">
                     <div className="flex justify-between items-center mb-1">
                       <span className="font-bold text-amber-300 font-display">{cu.cls}</span>
                       <span className="text-[10px] font-mono text-cyan-300">{cu.feature}</span>
@@ -534,7 +534,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             </div>
 
             {/* Cursed Physiology for Cursed Spirits */}
-            <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl">
+            <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
               <div className="flex items-center space-x-2.5 mb-2">
                 <Skull className="w-5 h-5 text-red-400" />
                 <h3 className="text-base sm:text-lg font-bold text-white font-display">
@@ -547,7 +547,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs">
                 {rulesData.breakthroughs.cursedPhysiology.attributes.map((att, idx) => (
-                  <div key={idx} className="p-3 rounded-xl bg-[#0A0A0C] border border-[#202332]">
+                  <div key={idx} className="p-3 rounded-lg bg-[#0A0B0E] border border-white/[0.05]">
                     <div className="flex justify-between items-center mb-1">
                       <span className="font-bold text-white font-sans">{att.name}</span>
                       <span className="px-1.5 py-0.5 rounded text-[9px] font-mono bg-red-950/40 text-red-300 border border-red-800/40">{att.cost}</span>
@@ -569,7 +569,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
           <div className="space-y-6">
             
             {/* Banner */}
-            <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-[#171824] via-[#101117] to-[#0A0A0C] border border-[#232636] relative overflow-hidden shadow-2xl">
+            <div className="p-5 sm:p-6 rounded-2xl bg-[#0D0E13] border border-white/[0.08] relative overflow-hidden">
               <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30 mb-3 inline-block">
                 Đỉnh Cao Chú Thuật • 領域展開
               </span>
@@ -582,19 +582,19 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
 
               {/* Core Domain Stats Grid */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-5 pt-5 border-t border-[#232636] text-xs">
-                <div className="p-3 rounded-xl bg-[#0A0A0C] border border-[#202332]">
+                <div className="p-3 rounded-lg bg-[#0A0B0E] border border-white/[0.05]">
                   <span className="text-[10px] font-mono text-slate-400 block uppercase font-bold">Chi Phí Chuẩn:</span>
                   <span className="text-cyan-300 font-bold font-mono">{rulesData.domainExpansion.basics.cost}</span>
                 </div>
-                <div className="p-3 rounded-xl bg-[#0A0A0C] border border-[#202332]">
+                <div className="p-3 rounded-lg bg-[#0A0B0E] border border-white/[0.05]">
                   <span className="text-[10px] font-mono text-slate-400 block uppercase font-bold">Thời Gian Thi Triển:</span>
                   <span className="text-amber-300 font-bold">{rulesData.domainExpansion.basics.action}</span>
                 </div>
-                <div className="p-3 rounded-xl bg-[#0A0A0C] border border-[#202332]">
+                <div className="p-3 rounded-lg bg-[#0A0B0E] border border-white/[0.05]">
                   <span className="text-[10px] font-mono text-slate-400 block uppercase font-bold">Quy Mô Kết Giới:</span>
                   <span className="text-slate-200 font-bold">{rulesData.domainExpansion.basics.radius}</span>
                 </div>
-                <div className="p-3 rounded-xl bg-[#0A0A0C] border border-[#202332]">
+                <div className="p-3 rounded-lg bg-[#0A0B0E] border border-white/[0.05]">
                   <span className="text-[10px] font-mono text-slate-400 block uppercase font-bold">Thời Gian Duy Trì:</span>
                   <span className="text-purple-300 font-bold">{rulesData.domainExpansion.basics.duration}</span>
                 </div>
@@ -603,7 +603,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
 
             {/* Barriers & Curtains Section */}
             {rulesData.domainExpansion.barriers && (
-              <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl">
+              <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="text-base sm:text-lg font-bold text-white font-display flex items-center space-x-2">
                     <Shield className="w-5 h-5 text-cyan-400" />
@@ -619,7 +619,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {rulesData.domainExpansion.barriers.types.map((b, bIdx) => (
-                    <div key={bIdx} className="p-4 rounded-2xl bg-[#0A0A0C] border border-[#202332] hover:border-cyan-500/30 transition-all flex flex-col justify-between">
+                    <div key={bIdx} className="p-4 rounded-xl bg-[#0A0B0E] border border-white/[0.06] hover:border-cyan-500/30 transition-all flex flex-col justify-between">
                       <div>
                         <div className="flex items-center justify-between mb-1.5">
                           <span className="font-bold text-cyan-300 font-display text-sm">{b.name}</span>
@@ -642,7 +642,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               
               {/* Burnout Card */}
-              <div className="rounded-3xl bg-[#12131A] border border-amber-900/30 p-6 shadow-xl flex flex-col justify-between">
+              <div className="rounded-2xl bg-[#0D0E13] border border-amber-500/20 p-5 sm:p-6 flex flex-col justify-between">
                 <div>
                   <h3 className="text-base font-bold text-amber-300 font-display mb-2 flex items-center space-x-2">
                     <Flame className="w-4 h-4 text-amber-400" />
@@ -664,7 +664,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
               </div>
 
               {/* Burnout Recovery via RCT */}
-              <div className="rounded-3xl bg-gradient-to-br from-[#151224] to-[#0A0A0E] border border-purple-500/40 p-6 shadow-xl flex flex-col justify-between">
+              <div className="rounded-2xl bg-[#0D0E13] border border-purple-500/25 p-5 sm:p-6 flex flex-col justify-between">
                 <div>
                   <div className="inline-flex items-center space-x-1.5 px-2.5 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30 text-[10px] font-mono font-bold mb-3">
                     <Sparkles className="w-3 h-3 text-purple-400" />
@@ -685,7 +685,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             </div>
 
             {/* Refinement Table (0 - 1000) */}
-            <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl overflow-hidden">
+            <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6 overflow-hidden">
               <h3 className="text-base sm:text-lg font-bold text-white font-display mb-2 flex items-center space-x-2">
                 <Flame className="w-5 h-5 text-amber-400" />
                 <span>Bảng Điểm Tinh Xảo Lãnh Địa (0 – 1000)</span>
@@ -694,18 +694,18 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
                 Điểm Tinh Xảo (1 đến 1000) là thước đo độ hoàn thiện kết giới. Càng đạt điểm cao, Lãnh địa càng mở khoá các cơ chế chiến đấu tối thượng:
               </p>
 
-              <div className="overflow-x-auto rounded-2xl border border-[#202332]">
+              <div className="overflow-x-auto rounded-xl border border-white/[0.08]">
                 <table className="w-full text-left text-xs">
-                  <thead className="bg-[#171822] text-white font-mono text-[10px] uppercase border-b border-[#232636]">
+                  <thead className="bg-[#08090C] text-white font-mono text-[10px] uppercase tracking-wider border-b border-white/[0.08]">
                     <tr>
                       <th className="px-4 py-3 font-semibold w-28">Refinement</th>
                       <th className="px-4 py-3 font-semibold w-52">Đặc Quyền (Perk)</th>
                       <th className="px-4 py-3 font-semibold">Mô Tả Chi Tiết</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#1C1E2B]">
+                  <tbody className="divide-y divide-white/[0.04] bg-[#0A0B0E]">
                     {rulesData.domainExpansion.refinementTable.slice(1).map((row, rIdx) => (
-                      <tr key={rIdx} className="hover:bg-slate-800/20">
+                      <tr key={rIdx} className="hover:bg-white/[0.02]">
                         <td className="px-4 py-3 font-mono font-bold text-amber-300">{row[0]}</td>
                         <td className="px-4 py-3 font-display font-bold text-white">{row[1]}</td>
                         <td className="px-4 py-3 font-sans text-slate-300 leading-relaxed">{row[2]}</td>
@@ -720,7 +720,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               
               {/* Domain Clashes */}
-              <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl">
+              <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
                 <h3 className="text-base font-bold text-white font-display mb-2 flex items-center space-x-2">
                   <Crosshair className="w-4 h-4 text-cyan-400" />
                   <span>Tranh Chấp Lãnh Địa (Domain Clash)</span>
@@ -729,17 +729,17 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
                   Khi hai lãnh địa mở cùng lúc, đòn tất trúng Sure-Hit của cả hai bị triệt tiêu lẫn nhau. Bên có điểm Refinement cao hơn sẽ dần áp đảo và phá huỷ lãnh địa đối phương theo số round dưới đây:
                 </p>
 
-                <div className="overflow-x-auto rounded-xl border border-[#202332]">
+                <div className="overflow-x-auto rounded-xl border border-white/[0.08]">
                   <table className="w-full text-left text-xs">
-                    <thead className="bg-[#171822] text-white font-mono text-[10px] uppercase border-b border-[#232636]">
+                    <thead className="bg-[#08090C] text-white font-mono text-[10px] uppercase tracking-wider border-b border-white/[0.08]">
                       <tr>
                         <th className="px-3 py-2 font-semibold">Độ Chênh Lệch Điểm</th>
                         <th className="px-3 py-2 font-semibold">Số Round Phá Huỷ</th>
                       </tr>
                     </thead>
-                    <tbody className="divide-y divide-[#1C1E2B]">
+                    <tbody className="divide-y divide-white/[0.04] bg-[#0A0B0E]">
                       {rulesData.domainExpansion.clashTable.slice(1).map((row, idx) => (
-                        <tr key={idx} className="hover:bg-slate-800/20">
+                        <tr key={idx} className="hover:bg-white/[0.02]">
                           <td className="px-3 py-2 font-mono text-cyan-300 font-bold">{row[0]}</td>
                           <td className="px-3 py-2 font-mono text-amber-300 font-bold">{row[1]}</td>
                         </tr>
@@ -750,7 +750,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
               </div>
 
               {/* Barrierless Domain */}
-              <div className="rounded-3xl bg-gradient-to-br from-[#1C1322] to-[#0A0A0C] border border-red-500/30 p-6 shadow-xl flex flex-col justify-between">
+              <div className="rounded-2xl bg-[#0D0E13] border border-red-500/25 p-5 sm:p-6 flex flex-col justify-between">
                 <div>
                   <div className="inline-flex items-center space-x-1.5 px-2.5 py-0.5 rounded-full bg-red-500/20 text-red-300 border border-red-500/30 text-[10px] font-mono font-bold mb-3">
                     <span>Thần Kỹ • 神技</span>
@@ -791,7 +791,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
           <div className="space-y-6">
             
             {/* Banner */}
-            <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-[#201014] via-[#150F11] to-[#0A0A0C] border border-red-900/40 relative overflow-hidden shadow-2xl">
+            <div className="p-5 sm:p-6 rounded-2xl bg-[#0D0E13] border border-white/[0.08] relative overflow-hidden">
               <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-red-500/20 text-red-300 border border-red-500/30 mb-3 inline-block">
                 Quy Tắc Tàn Khốc Thực Chiến • 部位欠損
               </span>
@@ -804,7 +804,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             </div>
 
             {/* Limb Damage Table */}
-            <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl overflow-hidden">
+            <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6 overflow-hidden">
               <h3 className="text-base sm:text-lg font-bold text-red-400 font-display mb-2 flex items-center space-x-2">
                 <Skull className="w-5 h-5 text-red-500" />
                 <span>Bảng Sát Thương Đứt Chi (1d6)</span>
@@ -813,9 +813,9 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
                 Chỉ áp dụng với các chiêu thức có hiệu ứng chặt chém/phá huỷ chi cụ thể. Để làm đứt lìa chi hoàn toàn đòi hỏi sát thương gấp đôi ngưỡng yêu cầu:
               </p>
 
-              <div className="overflow-x-auto rounded-2xl border border-[#202332]">
+              <div className="overflow-x-auto rounded-xl border border-white/[0.08]">
                 <table className="w-full text-left text-xs">
-                  <thead className="bg-[#171822] text-white font-mono text-[10px] uppercase border-b border-[#232636]">
+                  <thead className="bg-[#08090C] text-white font-mono text-[10px] uppercase tracking-wider border-b border-white/[0.08]">
                     <tr>
                       <th className="px-3 py-3 font-semibold w-16">1d6</th>
                       <th className="px-4 py-3 font-semibold w-32">Bộ Phận</th>
@@ -824,7 +824,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
                       <th className="px-4 py-3 font-semibold">Đứt Lìa Chi (Lost Limb)</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#1C1E2B]">
+                  <tbody className="divide-y divide-white/[0.04] bg-[#0A0B0E]">
                     {rulesData.combatAndLimbDamage.limbDamageTable.slice(1).map((row, rIdx) => (
                       <tr key={rIdx} className="hover:bg-red-950/20">
                         <td className="px-3 py-3 font-mono font-bold text-red-400">{row[0]}</td>
@@ -840,14 +840,14 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             </div>
 
             {/* Cursed Spirits Nature in Combat */}
-            <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl">
+            <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
               <h3 className="text-base font-bold text-white font-display mb-3 flex items-center space-x-2">
                 <Skull className="w-4 h-4 text-purple-400" />
                 <span>Đặc Tính Chiến Đấu Của Chú Linh</span>
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
                 {rulesData.combatAndLimbDamage.curseNature.map((cn, idx) => (
-                  <div key={idx} className="p-3.5 rounded-xl bg-[#0A0A0C] border border-[#202332]">
+                  <div key={idx} className="p-3.5 rounded-lg bg-[#0A0B0E] border border-white/[0.05]">
                     <span className="font-bold text-purple-300 block mb-1">{cn.trait}</span>
                     <span className="text-slate-300 font-sans leading-relaxed text-[11px]">{cn.desc}</span>
                   </div>
@@ -859,14 +859,14 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               
               {/* Shikigami Nature */}
-              <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl">
+              <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
                 <h3 className="text-base font-bold text-cyan-300 font-display mb-3 flex items-center space-x-2">
                   <Shield className="w-4 h-4 text-cyan-400" />
                   <span>Quy Tắc Thức Thần</span>
                 </h3>
                 <div className="space-y-2.5 text-xs">
                   {rulesData.combatAndLimbDamage.shikigamiNature.map((sn, idx) => (
-                    <div key={idx} className="p-3 rounded-xl bg-[#0A0A0C] border border-[#202332]">
+                    <div key={idx} className="p-3 rounded-lg bg-[#0A0B0E] border border-white/[0.05]">
                       <span className="font-bold text-white block mb-0.5">{sn.trait}</span>
                       <span className="text-slate-400 text-[11px] font-sans leading-relaxed">{sn.desc}</span>
                     </div>
@@ -875,14 +875,14 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
               </div>
 
               {/* Heavenly Restriction Combat */}
-              <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl">
+              <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
                 <h3 className="text-base font-bold text-amber-300 font-display mb-3 flex items-center space-x-2">
                   <Flame className="w-4 h-4 text-amber-400" />
                   <span>Chiến Đấu Của Thiên Dữ Chú Phược (Toji &amp; Maki)</span>
                 </h3>
                 <div className="space-y-2.5 text-xs">
                   {rulesData.combatAndLimbDamage.heavenlyRestriction.map((hr, idx) => (
-                    <div key={idx} className="p-3 rounded-xl bg-[#0A0A0C] border border-[#202332]">
+                    <div key={idx} className="p-3 rounded-lg bg-[#0A0B0E] border border-white/[0.05]">
                       <span className="font-bold text-white block mb-0.5">{hr.trait}</span>
                       <span className="text-slate-400 text-[11px] font-sans leading-relaxed">{hr.desc}</span>
                     </div>
@@ -893,23 +893,23 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             </div>
 
             {/* Fall Damage Table */}
-            <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl overflow-hidden">
+            <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6 overflow-hidden">
               <h3 className="text-base font-bold text-white font-display mb-2">Bảng Sát Thương Ngã Theo Kích Cỡ (Fall Damage Table)</h3>
               <p className="text-xs text-slate-400 font-sans mb-3">
                 Mỗi 10ft rơi tự do gây sát thương Bludgeoning tương ứng theo size category của sinh vật hoặc vật thể:
               </p>
-              <div className="overflow-x-auto rounded-xl border border-[#202332]">
+              <div className="overflow-x-auto rounded-xl border border-white/[0.08]">
                 <table className="w-full text-left text-xs">
-                  <thead className="bg-[#171822] text-white font-mono text-[10px] uppercase border-b border-[#232636]">
+                  <thead className="bg-[#08090C] text-white font-mono text-[10px] uppercase tracking-wider border-b border-white/[0.08]">
                     <tr>
                       {rulesData.combatAndLimbDamage.fallDamageTable[0].map((c, i) => (
                         <th key={i} className="px-4 py-2 font-semibold">{c}</th>
                       ))}
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#1C1E2B]">
+                  <tbody className="divide-y divide-white/[0.04] bg-[#0A0B0E]">
                     {rulesData.combatAndLimbDamage.fallDamageTable.slice(1).map((row, idx) => (
-                      <tr key={idx} className="hover:bg-slate-800/20">
+                      <tr key={idx} className="hover:bg-white/[0.02]">
                         <td className="px-4 py-2 font-display text-white font-bold">{row[0]}</td>
                         <td className="px-4 py-2 font-mono text-cyan-300 font-bold">{row[1]}</td>
                       </tr>
@@ -921,7 +921,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
 
             {/* JJK Special Status Conditions */}
             {rulesData.combatAndLimbDamage.conditions && (
-              <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl">
+              <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
                 <h3 className="text-base sm:text-lg font-bold text-white font-display mb-2 flex items-center space-x-2">
                   <Activity className="w-5 h-5 text-amber-400" />
                   <span>Bảng Tra Cứu Trạng Thái Đặc Thù Chú Thuật</span>
@@ -932,7 +932,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
                   {rulesData.combatAndLimbDamage.conditions.map((cond, idx) => (
-                    <div key={idx} className="p-3.5 rounded-xl bg-[#0A0A0C] border border-[#202332] flex flex-col justify-between">
+                    <div key={idx} className="p-3.5 rounded-lg bg-[#0A0B0E] border border-white/[0.05] flex flex-col justify-between">
                       <div>
                         <div className="flex justify-between items-start mb-1">
                           <span className="font-bold text-amber-300 font-display text-sm">{cond.name}</span>
@@ -956,7 +956,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
           <div className="space-y-6">
             
             {/* Banner */}
-            <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-[#171D24] via-[#101418] to-[#0A0A0C] border border-cyan-800/40 relative overflow-hidden shadow-2xl">
+            <div className="p-5 sm:p-6 rounded-2xl bg-[#0D0E13] border border-white/[0.08] relative overflow-hidden">
               <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 mb-3 inline-block">
                 Xuất Lực Cực Hạn • 極大出力
               </span>
@@ -969,7 +969,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             </div>
 
             {/* Maximum Output Activation Card */}
-            <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl">
+            <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
               <h3 className="text-base sm:text-lg font-bold text-cyan-300 font-display mb-2 flex items-center space-x-2">
                 <Zap className="w-5 h-5 text-cyan-400" />
                 <span>Kích Hoạt Maximum Output (Xuất Lực Cực Đại)</span>
@@ -985,7 +985,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs">
                 {rulesData.maximumOutput.activation.benefits.map((b, idx) => (
-                  <div key={idx} className="p-3.5 rounded-xl bg-[#0A0A0C] border border-[#202332] flex items-start space-x-2">
+                  <div key={idx} className="p-3.5 rounded-lg bg-[#0A0B0E] border border-white/[0.05] flex items-start space-x-2">
                     <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
                     <span className="text-slate-300 font-sans leading-relaxed">{b}</span>
                   </div>
@@ -994,7 +994,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             </div>
 
             {/* Reduced Output Table */}
-            <div className="rounded-3xl bg-[#12131A] border border-amber-900/30 p-6 shadow-xl overflow-hidden">
+            <div className="rounded-2xl bg-[#0D0E13] border border-amber-500/20 p-5 sm:p-6 overflow-hidden">
               <h3 className="text-base sm:text-lg font-bold text-amber-300 font-display mb-2 flex items-center space-x-2">
                 <AlertTriangle className="w-5 h-5 text-amber-400" />
                 <span>Bảng 9 Tầng Giảm Xuất Lực (Reduced Output)</span>
@@ -1003,16 +1003,16 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
                 Nếu dùng Maximum Output nhiều hơn 1 lần trong round hoặc khi đang duy trì chiêu Maximum Output khác, nhân vật phải đổ CE Check DC 15 (+2 DC mỗi tầng đang có). Thất bại sẽ nhận tầng Reduced Output:
               </p>
 
-              <div className="overflow-x-auto rounded-2xl border border-[#202332]">
+              <div className="overflow-x-auto rounded-xl border border-white/[0.08]">
                 <table className="w-full text-left text-xs">
-                  <thead className="bg-[#171822] text-white font-mono text-[10px] uppercase border-b border-[#232636]">
+                  <thead className="bg-[#08090C] text-white font-mono text-[10px] uppercase tracking-wider border-b border-white/[0.08]">
                     <tr>
                       <th className="px-4 py-3 font-semibold w-28">Tầng Quá Tải</th>
                       <th className="px-4 py-3 font-semibold w-36">Giảm Xuất Lực</th>
                       <th className="px-4 py-3 font-semibold">Hình Phạt Xúc Xắc / Bán Kính / Trần CE</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#1C1E2B]">
+                  <tbody className="divide-y divide-white/[0.04] bg-[#0A0B0E]">
                     {rulesData.maximumOutput.reducedOutputTable.slice(1).map((row, idx) => (
                       <tr key={idx} className="hover:bg-amber-950/20">
                         <td className="px-4 py-3 font-mono font-bold text-amber-400">{row[0]}</td>
@@ -1024,7 +1024,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
                 </table>
               </div>
 
-              <div className="mt-4 p-3.5 rounded-xl bg-[#0A0A0C] border border-[#202332] text-xs text-slate-300 font-sans flex items-center space-x-2">
+              <div className="mt-4 p-3.5 rounded-lg bg-[#0A0B0E] border border-white/[0.05] text-xs text-slate-300 font-sans flex items-center space-x-2">
                 <Info className="w-4 h-4 text-cyan-400 shrink-0" />
                 <span><strong className="text-white">Cách hoá giải Quá Tải:</strong> {rulesData.maximumOutput.recovery}</span>
               </div>
@@ -1041,7 +1041,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
           <div className="space-y-6">
             
             {/* Banner */}
-            <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-[#241334] via-[#170E24] to-[#0A0A0E] border border-purple-500/50 relative overflow-hidden shadow-2xl">
+            <div className="p-5 sm:p-6 rounded-2xl bg-[#0D0E13] border border-white/[0.08] relative overflow-hidden">
               <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-purple-500/20 text-purple-300 border border-purple-500/30 mb-3 inline-block">
                 Cảnh Giới Tuyệt Đối • 120% Tiềm Năng • ゾーン
               </span>
@@ -1054,7 +1054,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             </div>
 
             {/* Core Mechanics & Benefits */}
-            <div className="rounded-3xl bg-[#12131A] border border-purple-500/30 p-6 sm:p-8 shadow-xl">
+            <div className="rounded-2xl bg-[#0D0E13] border border-purple-500/20 p-5 sm:p-6">
               <div className="flex items-center space-x-2 text-purple-300 font-display font-bold text-base sm:text-lg mb-2">
                 <Sparkles className="w-5 h-5 text-purple-400" />
                 <span>6 Đặc Quyền Siêu Phàm Trong Trạng Thái The Zone</span>
@@ -1077,7 +1077,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
 
             {/* The Zone Lore & Connection Card */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="p-6 rounded-3xl bg-[#0E0F16] border border-[#232636]">
+              <div className="p-4 sm:p-5 rounded-xl bg-[#0A0B0E] border border-white/[0.06]">
                 <h4 className="text-sm font-bold text-amber-300 font-display mb-2 flex items-center space-x-2">
                   <Flame className="w-4 h-4 text-amber-400" />
                   <span>Kích Hoạt Liên Hoàn Hắc Thiểm</span>
@@ -1087,7 +1087,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
                 </p>
               </div>
 
-              <div className="p-6 rounded-3xl bg-[#0E0F16] border border-[#232636]">
+              <div className="p-4 sm:p-5 rounded-xl bg-[#0A0B0E] border border-white/[0.06]">
                 <h4 className="text-sm font-bold text-cyan-300 font-display mb-2 flex items-center space-x-2">
                   <Heart className="w-4 h-4 text-emerald-400" />
                   <span>Cứu Nguy Khẩn Cấp Bằng The Zone</span>
@@ -1109,7 +1109,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
           <div className="space-y-6">
             
             {/* Banner */}
-            <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-[#171824] via-[#101117] to-[#0A0A0C] border border-[#232636] relative overflow-hidden shadow-2xl">
+            <div className="p-5 sm:p-6 rounded-2xl bg-[#0D0E13] border border-white/[0.08] relative overflow-hidden">
               <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-purple-500/20 text-purple-300 border border-purple-500/30 mb-3 inline-block">
                 Quy Tắc Chỉ Dẫn Cốt Lõi • 基本指針
               </span>
@@ -1122,7 +1122,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             </div>
 
             {/* 14 Rules of Thumb Topics Index Bar */}
-            <div className="p-5 rounded-3xl bg-[#0E0F16] border border-[#232636]">
+            <div className="p-4 sm:p-5 rounded-xl bg-[#0A0B0E] border border-white/[0.06]">
               <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
                 <span className="text-xs font-bold text-white font-display flex items-center space-x-2">
                   <Award className="w-4 h-4 text-purple-400" />
@@ -1164,7 +1164,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             </div>
 
             {/* 1. Grading System Table */}
-            <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl overflow-hidden">
+            <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6 overflow-hidden">
               <h3 className="text-base sm:text-lg font-bold text-white font-display mb-2 flex items-center space-x-2">
                 <Award className="w-5 h-5 text-purple-400" />
                 <span>Thang Đo Tiêu Chuẩn Phân Cấp Chú Thuật</span>
@@ -1173,9 +1173,9 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
                 Thước đo chuẩn trong Jujutsu Kaisen để so sánh độ nguy hiểm của Chú linh và sức mạnh Chú thuật sư với các vũ khí quân sự quy ước:
               </p>
 
-              <div className="overflow-x-auto rounded-2xl border border-[#202332]">
+              <div className="overflow-x-auto rounded-xl border border-white/[0.08]">
                 <table className="w-full text-left text-xs">
-                  <thead className="bg-[#171822] text-white font-mono text-[10px] uppercase border-b border-[#232636]">
+                  <thead className="bg-[#08090C] text-white font-mono text-[10px] uppercase tracking-wider border-b border-white/[0.08]">
                     <tr>
                       <th className="px-4 py-3 font-semibold w-32">Cấp Bậc</th>
                       <th className="px-4 py-3 font-semibold">Mô Tả &amp; Đối Tượng</th>
@@ -1183,9 +1183,9 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
                       <th className="px-4 py-3 font-semibold w-64">Thước Đo Chuẩn (Benchmark)</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#1C1E2B]">
+                  <tbody className="divide-y divide-white/[0.04] bg-[#0A0B0E]">
                     {rulesData.gradingAndDMRules.gradingTable.slice(1).map((row, idx) => (
-                      <tr key={idx} className="hover:bg-slate-800/20">
+                      <tr key={idx} className="hover:bg-white/[0.02]">
                         <td className="px-4 py-3 font-mono font-bold text-purple-300">{row[0]}</td>
                         <td className="px-4 py-3 font-sans text-slate-300">{row[1]}</td>
                         <td className="px-4 py-3 font-mono text-cyan-300 font-bold">{row[2]}</td>
@@ -1199,7 +1199,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
 
             {/* 2. Promotion System Card */}
             {rulesData.gradingAndDMRules.promotionSystem && (
-              <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl">
+              <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
                 <h3 className="text-base sm:text-lg font-bold text-white font-display mb-2 flex items-center space-x-2">
                   <TrendingUp className="w-5 h-5 text-purple-400" />
                   <span>{rulesData.gradingAndDMRules.promotionSystem.title}</span>
@@ -1209,7 +1209,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {rulesData.gradingAndDMRules.promotionSystem.steps.map((st, sIdx) => (
-                    <div key={sIdx} className="p-4 rounded-2xl bg-[#0E0F16] border border-[#202332] flex flex-col justify-between">
+                    <div key={sIdx} className="p-4 rounded-xl bg-[#0A0B0E] border border-white/[0.06] flex flex-col justify-between">
                       <div>
                         <span className="font-bold text-purple-300 font-display text-xs block mb-1.5">
                           {st.stage}
@@ -1225,14 +1225,14 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             )}
 
             {/* 3. Cursed Tool Pricing Table */}
-            <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl overflow-hidden">
+            <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6 overflow-hidden">
               <h3 className="text-base font-bold text-amber-300 font-display mb-3 flex items-center space-x-2">
                 <Coins className="w-4 h-4 text-amber-400" />
                 <span>Định Giá &amp; Phân Cấp Chú Cụ (Cursed Tool Pricing &amp; Rarity)</span>
               </h3>
-              <div className="overflow-x-auto rounded-xl border border-[#202332]">
+              <div className="overflow-x-auto rounded-xl border border-white/[0.08]">
                 <table className="w-full text-left text-xs">
-                  <thead className="bg-[#171822] text-white font-mono text-[10px] uppercase border-b border-[#232636]">
+                  <thead className="bg-[#08090C] text-white font-mono text-[10px] uppercase tracking-wider border-b border-white/[0.08]">
                     <tr>
                       <th className="px-3 py-2 font-semibold">Phân Cấp</th>
                       <th className="px-3 py-2 font-semibold">Độ Hiếm</th>
@@ -1240,9 +1240,9 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
                       <th className="px-3 py-2 font-semibold">Khung Giá ($ USD)</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#1C1E2B]">
+                  <tbody className="divide-y divide-white/[0.04] bg-[#0A0B0E]">
                     {rulesData.gradingAndDMRules.cursedToolPricing.slice(1).map((row, idx) => (
-                      <tr key={idx} className="hover:bg-slate-800/20">
+                      <tr key={idx} className="hover:bg-white/[0.02]">
                         <td className="px-3 py-2 font-mono font-bold text-white">{row[0]}</td>
                         <td className="px-3 py-2 font-mono text-slate-400">{row[1]}</td>
                         <td className="px-3 py-2 font-sans text-slate-300 text-xs">{row[2]}</td>
@@ -1256,7 +1256,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
 
             {/* 4. Mission Payouts Table */}
             {rulesData.gradingAndDMRules.missionPayouts && (
-              <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl overflow-hidden">
+              <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6 overflow-hidden">
                 <h3 className="text-base font-bold text-emerald-300 font-display mb-2 flex items-center space-x-2">
                   <Coins className="w-4 h-4 text-emerald-400" />
                   <span>Bảng Thù Lao Nhiệm Vụ Diệt Trừ</span>
@@ -1264,18 +1264,18 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
                 <p className="text-xs text-slate-400 font-sans mb-3">
                   Mức thù lao tài chính chính thức chi trả cho Chú thuật sư sau khi hoàn thành nhiệm vụ thanh trừng theo từng cấp bậc:
                 </p>
-                <div className="overflow-x-auto rounded-xl border border-[#202332]">
+                <div className="overflow-x-auto rounded-xl border border-white/[0.08]">
                   <table className="w-full text-left text-xs">
-                    <thead className="bg-[#171822] text-white font-mono text-[10px] uppercase border-b border-[#232636]">
+                    <thead className="bg-[#08090C] text-white font-mono text-[10px] uppercase tracking-wider border-b border-white/[0.08]">
                       <tr>
                         <th className="px-3 py-2 font-semibold w-40">Cấp Bậc Nhiệm Vụ</th>
                         <th className="px-3 py-2 font-semibold w-48 text-emerald-300">Khung Thù Lao ($ USD)</th>
                         <th className="px-3 py-2 font-semibold">Tính Chất &amp; Quy Mô Nhiệm Vụ</th>
                       </tr>
                     </thead>
-                    <tbody className="divide-y divide-[#1C1E2B]">
+                    <tbody className="divide-y divide-white/[0.04] bg-[#0A0B0E]">
                       {rulesData.gradingAndDMRules.missionPayouts.map((mp, mIdx) => (
-                        <tr key={mIdx} className="hover:bg-slate-800/20">
+                        <tr key={mIdx} className="hover:bg-white/[0.02]">
                           <td className="px-3 py-2 font-mono font-bold text-purple-300">{mp.grade}</td>
                           <td className="px-3 py-2 font-mono font-bold text-emerald-300">{mp.payout}</td>
                           <td className="px-3 py-2 font-sans text-slate-300 text-xs">{mp.notes}</td>
@@ -1289,7 +1289,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
 
             {/* 5. Cursed Spirits & Shikigami Section */}
             {rulesData.gradingAndDMRules.cursedSpiritsAndShikigami && (
-              <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl space-y-6">
+              <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6 space-y-6">
                 <div>
                   <h3 className="text-base sm:text-lg font-bold text-white font-display flex items-center space-x-2">
                     <Ghost className="w-5 h-5 text-indigo-400" />
@@ -1355,7 +1355,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             )}
 
             {/* 6. Soul Awareness & Soul Damage */}
-            <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl overflow-hidden">
+            <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6 overflow-hidden">
               <h3 className="text-base sm:text-lg font-bold text-purple-300 font-display mb-2 flex items-center space-x-2">
                 <Eye className="w-5 h-5 text-purple-400" />
                 <span>Nhận Thức Linh Hồn &amp; Sát Thương Linh Hồn (Soul Awareness &amp; Damage)</span>
@@ -1364,16 +1364,16 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
                 {rulesData.soulAwareness.soulDamageRules || 'Sát thương Linh Hồn (Soul Damage) trừ trực tiếp vào Max HP và vô hiệu hoá RCT.'}
               </p>
 
-              <div className="overflow-x-auto rounded-2xl border border-[#202332]">
+              <div className="overflow-x-auto rounded-xl border border-white/[0.08]">
                 <table className="w-full text-left text-xs">
-                  <thead className="bg-[#171822] text-white font-mono text-[10px] uppercase border-b border-[#232636]">
+                  <thead className="bg-[#08090C] text-white font-mono text-[10px] uppercase tracking-wider border-b border-white/[0.08]">
                     <tr>
                       <th className="px-4 py-3 font-semibold w-24">Cấp Độ</th>
                       <th className="px-4 py-3 font-semibold w-52">Kỹ Năng Linh Hồn</th>
                       <th className="px-4 py-3 font-semibold">Hiệu Quả Chiến Đấu Thực Tế</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#1C1E2B]">
+                  <tbody className="divide-y divide-white/[0.04] bg-[#0A0B0E]">
                     {rulesData.soulAwareness.levels.slice(1).map((row, idx) => (
                       <tr key={idx} className="hover:bg-purple-950/20">
                         <td className="px-4 py-3 font-mono font-bold text-purple-400">{row[0]}</td>
@@ -1388,7 +1388,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
 
             {/* 7. Reincarnated Soul Contest */}
             {rulesData.soulAwareness.reincarnatedRules && (
-              <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl">
+              <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
                 <h3 className="text-base font-bold text-purple-300 font-display mb-2 flex items-center space-x-2">
                   <User className="w-5 h-5 text-purple-400" />
                   <span>{rulesData.soulAwareness.reincarnatedRules.title}</span>
@@ -1398,7 +1398,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {rulesData.soulAwareness.reincarnatedRules.rules.map((rr, rIdx) => (
-                    <div key={rIdx} className="p-4 rounded-2xl bg-[#0E0F16] border border-[#202332]">
+                    <div key={rIdx} className="p-4 rounded-xl bg-[#0A0B0E] border border-white/[0.06]">
                       <span className="font-bold text-cyan-300 font-display text-xs block mb-1.5">
                         {rr.name}
                       </span>
@@ -1412,22 +1412,22 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             )}
 
             {/* 8. Object Soul Awareness Table (Maki & Toji) */}
-            <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl overflow-hidden">
+            <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6 overflow-hidden">
               <h3 className="text-base font-bold text-cyan-300 font-display mb-2">
                 Nhận Thức Linh Hồn Đồ Vật Vô Cơ (Object Soul Awareness — Maki &amp; Toji)
               </h3>
-              <div className="overflow-x-auto rounded-xl border border-[#202332]">
+              <div className="overflow-x-auto rounded-xl border border-white/[0.08]">
                 <table className="w-full text-left text-xs">
-                  <thead className="bg-[#171822] text-white font-mono text-[10px] uppercase border-b border-[#232636]">
+                  <thead className="bg-[#08090C] text-white font-mono text-[10px] uppercase tracking-wider border-b border-white/[0.08]">
                     <tr>
                       <th className="px-4 py-2.5 font-semibold w-24">Cấp Độ</th>
                       <th className="px-4 py-2.5 font-semibold w-60">Kỹ Năng Đồ Vật</th>
                       <th className="px-4 py-2.5 font-semibold">Hiệu Quả</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#1C1E2B]">
+                  <tbody className="divide-y divide-white/[0.04] bg-[#0A0B0E]">
                     {rulesData.soulAwareness.objectSoulLevels.slice(1).map((row, idx) => (
-                      <tr key={idx} className="hover:bg-slate-800/20">
+                      <tr key={idx} className="hover:bg-white/[0.02]">
                         <td className="px-4 py-2.5 font-mono font-bold text-cyan-400">{row[0]}</td>
                         <td className="px-4 py-2.5 font-display font-bold text-white">{row[1]}</td>
                         <td className="px-4 py-2.5 font-sans text-slate-300 leading-relaxed">{row[2]}</td>
@@ -1440,7 +1440,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
 
             {/* 9. Heavenly Restriction (Thiên Dữ Chú Phược) */}
             {rulesData.combatAndLimbDamage.heavenlyRestriction && (
-              <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl">
+              <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
                 <h3 className="text-base sm:text-lg font-bold text-amber-300 font-display mb-2 flex items-center space-x-2">
                   <Shield className="w-5 h-5 text-amber-400" />
                   <span>Thiên Dữ Chú Phược (Heavenly Restriction • 天与呪縛)</span>
@@ -1450,7 +1450,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {rulesData.combatAndLimbDamage.heavenlyRestriction.map((hr, hIdx) => (
-                    <div key={hIdx} className="p-4 rounded-2xl bg-[#0E0F16] border border-[#202332] flex flex-col justify-between">
+                    <div key={hIdx} className="p-4 rounded-xl bg-[#0A0B0E] border border-white/[0.06] flex flex-col justify-between">
                       <div>
                         <span className="font-bold text-amber-300 font-display text-xs block mb-1.5">
                           {hr.trait}
@@ -1476,7 +1476,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
           <div className="space-y-6">
             
             {/* Banner */}
-            <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-[#171824] via-[#101117] to-[#0A0A0C] border border-[#232636] relative overflow-hidden shadow-2xl">
+            <div className="p-5 sm:p-6 rounded-2xl bg-[#0D0E13] border border-white/[0.08] relative overflow-hidden">
               <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30 mb-3 inline-block">
                 Hệ Thống Chiến Đấu • 戦闘行動
               </span>
@@ -1490,7 +1490,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
 
             {/* 1. Action Economy Overview */}
             {rulesData.gradingAndDMRules.actionEconomy && (
-              <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl">
+              <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
                 <h3 className="text-base sm:text-lg font-bold text-white font-display mb-2 flex items-center space-x-2">
                   <Activity className="w-5 h-5 text-amber-400" />
                   <span>{rulesData.gradingAndDMRules.actionEconomy.title}</span>
@@ -1500,7 +1500,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
                   {rulesData.gradingAndDMRules.actionEconomy.components.map((ac, aIdx) => (
-                    <div key={aIdx} className="p-4 rounded-2xl bg-[#0E0F16] border border-[#202332] flex flex-col justify-between">
+                    <div key={aIdx} className="p-4 rounded-xl bg-[#0A0B0E] border border-white/[0.06] flex flex-col justify-between">
                       <div>
                         <span className="font-bold text-amber-300 font-display text-xs block mb-1">
                           {ac.type}
@@ -1517,7 +1517,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
 
             {/* 2. Special Combat Actions */}
             {rulesData.gradingAndDMRules.combatActions && (
-              <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl">
+              <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
                 <h3 className="text-base sm:text-lg font-bold text-white font-display mb-2 flex items-center space-x-2">
                   <Swords className="w-5 h-5 text-cyan-400" />
                   <span>Danh Mục Hành Động Chiến Đấu Đặc Thù</span>
@@ -1527,7 +1527,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {rulesData.gradingAndDMRules.combatActions.map((ca, cIdx) => (
-                    <div key={cIdx} className="p-4 rounded-2xl bg-[#0E0F16] border border-[#202332] flex flex-col justify-between">
+                    <div key={cIdx} className="p-4 rounded-xl bg-[#0A0B0E] border border-white/[0.06] flex flex-col justify-between">
                       <div>
                         <div className="flex items-center justify-between mb-1.5">
                           <span className="font-bold text-cyan-300 font-display text-xs">{ca.name}</span>
@@ -1543,7 +1543,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
 
             {/* 3. Falling & Collision Rules */}
             {rulesData.gradingAndDMRules.fallingRules && (
-              <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl overflow-hidden space-y-4">
+              <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6 overflow-hidden space-y-4">
                 <div>
                   <h3 className="text-base sm:text-lg font-bold text-rose-300 font-display flex items-center space-x-2 mb-1">
                     <ArrowDown className="w-5 h-5 text-rose-400" />
@@ -1554,18 +1554,18 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
                   </p>
                 </div>
 
-                <div className="overflow-x-auto rounded-xl border border-[#202332]">
+                <div className="overflow-x-auto rounded-xl border border-white/[0.08]">
                   <table className="w-full text-left text-xs">
-                    <thead className="bg-[#171822] text-white font-mono text-[10px] uppercase border-b border-[#232636]">
+                    <thead className="bg-[#08090C] text-white font-mono text-[10px] uppercase tracking-wider border-b border-white/[0.08]">
                       <tr>
                         <th className="px-3 py-2 font-semibold">Kích Cỡ Sinh Vật</th>
                         <th className="px-3 py-2 font-semibold text-rose-300">Sát Thương / 10 ft Rơi</th>
                         <th className="px-3 py-2 font-semibold text-amber-300">Sát Thương Tối Đa (200 ft)</th>
                       </tr>
                     </thead>
-                    <tbody className="divide-y divide-[#1C1E2B]">
+                    <tbody className="divide-y divide-white/[0.04] bg-[#0A0B0E]">
                       {rulesData.gradingAndDMRules.fallingRules.damageTable.slice(1).map((fr, fIdx) => (
-                        <tr key={fIdx} className="hover:bg-slate-800/20">
+                        <tr key={fIdx} className="hover:bg-white/[0.02]">
                           <td className="px-3 py-2 font-mono font-bold text-white">{fr[0]}</td>
                           <td className="px-3 py-2 font-mono font-bold text-rose-300">{fr[1]}</td>
                           <td className="px-3 py-2 font-mono text-amber-300">{fr[2]}</td>
@@ -1575,7 +1575,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
                   </table>
                 </div>
 
-                <div className="p-3.5 rounded-xl bg-[#0A0A0C] border border-[#202332] text-xs font-sans text-slate-300 leading-relaxed">
+                <div className="p-3.5 rounded-lg bg-[#0A0B0E] border border-white/[0.05] text-xs font-sans text-slate-300 leading-relaxed">
                   <strong className="text-cyan-300 block mb-1">Va Chạm Đè Người (Fall Collision):</strong>
                   {rulesData.gradingAndDMRules.fallingRules.collisionRule}
                 </div>
@@ -1583,7 +1583,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             )}
 
             {/* 4. DM House Rules */}
-            <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl">
+            <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
               <h3 className="text-base sm:text-lg font-bold text-white font-display mb-2 flex items-center space-x-2">
                 <HelpCircle className="w-5 h-5 text-cyan-400" />
                 <span>Các Cơ Chế Chiến Đấu Bổ Trợ Của DM</span>
@@ -1594,7 +1594,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-xs">
                 {rulesData.gradingAndDMRules.dmOptionalRules.map((op, idx) => (
-                  <div key={idx} className="p-4 rounded-2xl bg-[#0E0F16] border border-[#202332] flex flex-col justify-between">
+                  <div key={idx} className="p-4 rounded-xl bg-[#0A0B0E] border border-white/[0.06] flex flex-col justify-between">
                     <div>
                       <span className="font-bold text-cyan-300 block mb-1 font-display text-sm">{op.name}</span>
                       <span className="text-slate-300 text-xs font-sans leading-relaxed">{op.desc}</span>
@@ -1614,7 +1614,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
           <div className="space-y-6">
             
             {/* Banner */}
-            <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-[#171824] via-[#101117] to-[#0A0A0C] border border-[#232636] relative overflow-hidden shadow-2xl">
+            <div className="p-5 sm:p-6 rounded-2xl bg-[#0D0E13] border border-white/[0.08] relative overflow-hidden">
               <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 mb-3 inline-block">
                 Tiến Trình Kết Hợp • 複業規則
               </span>
@@ -1627,7 +1627,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
             </div>
 
             {/* Prerequisites Table */}
-            <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl overflow-hidden">
+            <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6 overflow-hidden">
               <h3 className="text-base sm:text-lg font-bold text-white font-display mb-2 flex items-center space-x-2">
                 <Layers className="w-5 h-5 text-cyan-400" />
                 <span>Bảng Điều Kiện Chỉ Số Tối Thiểu (Stat Prerequisites: 13+)</span>
@@ -1645,9 +1645,9 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
                       <th className="px-4 py-3">Định Vị &amp; Vai Trò</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#1C1E2B]">
+                  <tbody className="divide-y divide-white/[0.04] bg-[#0A0B0E]">
                     {rulesData.multiclassing?.prerequisites?.map((row, rIdx) => (
-                      <tr key={rIdx} className="hover:bg-slate-800/20">
+                      <tr key={rIdx} className="hover:bg-white/[0.02]">
                         <td className="px-4 py-3 font-bold text-white font-display">{row.class}</td>
                         <td className="px-4 py-3 font-mono text-cyan-300 font-bold">{row.stat}</td>
                         <td className="px-4 py-3 font-sans text-slate-300">{row.role}</td>
@@ -1680,7 +1680,7 @@ export default function RulesView({ activeSection: propActiveSection, setActiveS
 
         {/* Dynamic Single Original English Rulebook Text Toggle */}
         {activeRawEnglish && (
-          <details className="mt-8 rounded-3xl bg-[#0E0F16] border border-[#232636] p-5 group/orig shadow-xl">
+          <details className="mt-8 rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 group/orig">
             <summary className="text-xs font-mono text-purple-400 hover:text-purple-300 cursor-pointer list-none flex items-center justify-between transition-colors">
               <div className="flex items-center space-x-2">
                 <span className="text-[10px] text-purple-400 group-open/orig:rotate-90 transition-transform">▶</span>

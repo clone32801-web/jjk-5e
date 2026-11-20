@@ -152,7 +152,7 @@ export default function FeatsView({ activeCategory: propCategory, setActiveCateg
       </div>
 
       {/* Category Tabs */}
-      <div className="flex items-center space-x-2 border-b border-[#232636] pb-4 mb-8 overflow-x-auto no-scrollbar">
+      <div className="flex items-center space-x-2 border-b border-white/[0.08] pb-4 mb-8 overflow-x-auto no-scrollbar">
         {categories.map(cat => {
           const info = catIcons[cat.id] || { icon: Scroll, kanji: '術' };
           const Icon = info.icon;
@@ -164,16 +164,16 @@ export default function FeatsView({ activeCategory: propCategory, setActiveCateg
                 setActiveCategory(cat.id);
                 setSearch('');
               }}
-              className={`flex items-center space-x-2 px-4 py-2.5 rounded-xl text-xs font-bold transition-all shrink-0 ${
+              className={`flex items-center space-x-2 px-3.5 py-2 rounded-xl text-xs font-bold transition-colors shrink-0 ${
                 isActive
-                  ? `${currentTheme.bgAccent} ${currentTheme.accentClass} border ${currentTheme.borderAccent} shadow-sm`
-                  : 'text-slate-400 hover:text-slate-200 hover:bg-[#12131A]'
+                  ? `${currentTheme.bgAccent} ${currentTheme.accentClass} border ${currentTheme.borderAccent} ring-1 ring-white/10`
+                  : 'text-slate-400 hover:text-slate-200 bg-[#0D0E13] border border-white/[0.08] hover:bg-[#12141C]'
               }`}
             >
               <Icon className="w-3.5 h-3.5" />
               <span>{cat.label || cat.id}</span>
               <span className="font-kanji text-[10px] opacity-40 hidden sm:inline">{info.kanji}</span>
-              <span className="px-1.5 py-0.2 text-[10px] bg-[#0A0A0C] text-slate-400 rounded-full font-mono border border-[#232636]">
+              <span className="px-1.5 py-0.2 text-[10px] bg-[#08090C] text-slate-400 rounded-md font-mono border border-white/[0.06]">
                 {cat.count}
               </span>
             </button>
@@ -183,7 +183,7 @@ export default function FeatsView({ activeCategory: propCategory, setActiveCateg
 
       {/* Technique Feats Filter Bar */}
       {activeCategory === 'Technique Feats' ? (
-            <div className="bg-[#12131A] border border-[#232636] rounded-2xl p-4 sm:p-5 mb-6 shadow-xl space-y-4">
+            <div className="bg-[#0D0E13] border border-white/[0.08] rounded-xl p-4 mb-6 space-y-4">
               
               {/* Row 1: Technique Dropdown + Search + Clear */}
               <div className="flex flex-col md:flex-row gap-3 items-stretch md:items-center justify-between">
@@ -198,10 +198,10 @@ export default function FeatsView({ activeCategory: propCategory, setActiveCateg
                     <select
                       value={selectedTechnique}
                       onChange={(e) => setSelectedTechnique(e.target.value)}
-                      className="w-full appearance-none bg-[#0A0A0C] border border-[#282B3E] hover:border-purple-500/60 focus:border-purple-500 rounded-xl px-3.5 py-2 pr-9 text-xs font-sans text-white focus:outline-none transition-all shadow-inner cursor-pointer"
+                      className="w-full appearance-none bg-[#08090C] border border-white/[0.08] hover:border-white/20 focus:border-white/30 rounded-lg px-3.5 py-2 pr-9 text-xs font-sans text-white focus:outline-none transition-colors cursor-pointer"
                     >
                       <option value="all">
-                        ⚡ Tất cả thuật thức (79 thuật thức — 245 Feats)
+                        Tất cả thuật thức (79 thuật thức — 245 Feats)
                       </option>
                       
                       <optgroup label="⭐ Thuật Thức Tiêu Biểu">
@@ -235,7 +235,7 @@ export default function FeatsView({ activeCategory: propCategory, setActiveCateg
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                     placeholder="Tìm tên feat, điều kiện, nhân vật..."
-                    className="w-full pl-9 pr-8 py-2 bg-[#0A0A0C] border border-[#282B3E] focus:border-purple-500 rounded-xl text-xs text-white placeholder-slate-500 focus:outline-none font-sans"
+                    className="w-full pl-9 pr-8 py-2 bg-[#08090C] border border-white/[0.08] focus:border-white/30 rounded-lg text-xs text-white placeholder-slate-500 focus:outline-none font-sans"
                   />
                   {search && (
                     <button 
@@ -249,7 +249,7 @@ export default function FeatsView({ activeCategory: propCategory, setActiveCateg
 
                 {/* Counter & Reset */}
                 <div className="flex items-center space-x-2 shrink-0">
-                  <span className="text-xs text-purple-300/90 font-mono bg-purple-950/40 border border-purple-800/40 px-2.5 py-1.5 rounded-xl">
+                  <span className="text-xs text-purple-300/90 font-mono bg-[#12101B] border border-purple-500/20 px-2.5 py-1.5 rounded-lg">
                     {currentList.length} Feats
                   </span>
                   {(selectedTechnique !== 'all' || search) && (
@@ -258,7 +258,7 @@ export default function FeatsView({ activeCategory: propCategory, setActiveCateg
                         setSelectedTechnique('all');
                         setSearch('');
                       }}
-                      className="px-2.5 py-1.5 rounded-xl bg-slate-800/60 hover:bg-slate-700 text-slate-300 hover:text-white text-xs font-mono flex items-center space-x-1 border border-slate-700 transition-colors"
+                      className="px-2.5 py-1.5 rounded-lg bg-[#0E1017] hover:bg-[#161822] text-slate-300 hover:text-white text-xs font-mono flex items-center space-x-1 border border-white/[0.08] transition-colors"
                       title="Bỏ lọc và xem toàn bộ"
                     >
                       <X className="w-3 h-3" />
@@ -270,19 +270,19 @@ export default function FeatsView({ activeCategory: propCategory, setActiveCateg
               </div>
 
               {/* Row 2: Popular Techniques Quick Filter Pills */}
-              <div className="pt-2 border-t border-[#1C1F2D]">
+              <div className="pt-2 border-t border-white/[0.06]">
                 <div className="flex items-center space-x-1.5 overflow-x-auto no-scrollbar pb-1">
-                  <span className="text-[10px] uppercase font-mono font-bold text-slate-500 shrink-0 mr-1 flex items-center space-x-1">
+                  <span className="text-[10px] uppercase font-mono font-bold tracking-wider text-slate-500 shrink-0 mr-1 flex items-center space-x-1">
                     <Sparkles className="w-3 h-3 text-amber-400" />
                     <span>Lọc nhanh:</span>
                   </span>
 
                   <button
                     onClick={() => setSelectedTechnique('all')}
-                    className={`px-2.5 py-1 rounded-lg text-[11px] font-mono transition-all shrink-0 ${
+                    className={`px-2.5 py-1 rounded-md text-[11px] font-mono transition-colors shrink-0 ${
                       selectedTechnique === 'all'
-                        ? 'bg-purple-600 text-white font-bold shadow-sm shadow-purple-600/30'
-                        : 'bg-[#0A0A0C] text-slate-400 hover:text-slate-200 border border-[#232636]'
+                        ? 'bg-[#181924] text-white font-bold border border-white/20'
+                        : 'bg-[#08090C] text-slate-400 hover:text-slate-200 border border-white/[0.06]'
                     }`}
                   >
                     Tất cả (79)
@@ -294,14 +294,14 @@ export default function FeatsView({ activeCategory: propCategory, setActiveCateg
                       <button
                         key={p.name}
                         onClick={() => setSelectedTechnique(p.name)}
-                        className={`px-2.5 py-1 rounded-lg text-[11px] font-sans transition-all shrink-0 ${
+                        className={`px-2.5 py-1 rounded-md text-[11px] font-sans transition-colors shrink-0 ${
                           isSelected
-                            ? 'bg-purple-600 text-white font-bold shadow-sm shadow-purple-600/30 border border-purple-400'
-                            : 'bg-[#0A0A0C] text-slate-300 hover:text-white hover:bg-[#161824] border border-[#232636]'
+                            ? 'bg-[#181924] text-white font-bold border border-white/20'
+                            : 'bg-[#08090C] text-slate-300 hover:text-white hover:bg-[#12141C] border border-white/[0.06]'
                         }`}
                       >
                         <span>{p.name}</span>
-                        <span className="text-[10px] text-slate-400 ml-1">({p.vi})</span>
+                        <span className="text-[10px] text-slate-500 ml-1">({p.vi})</span>
                       </button>
                     );
                   })}
@@ -311,7 +311,7 @@ export default function FeatsView({ activeCategory: propCategory, setActiveCateg
             </div>
           ) : (
             /* Standard Search Input for other categories */
-            <div className="bg-[#12131A] border border-[#232636] rounded-2xl p-4 mb-6 shadow-xl flex items-center justify-between">
+            <div className="bg-[#0D0E13] border border-white/[0.08] rounded-xl p-3 sm:p-4 mb-6 flex items-center justify-between">
               <div className="relative w-full md:w-96">
                 <Search className="w-4 h-4 text-slate-500 absolute left-3 top-1/2 -translate-y-1/2" />
                 <input
@@ -319,7 +319,7 @@ export default function FeatsView({ activeCategory: propCategory, setActiveCateg
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
                   placeholder={`Tìm trong ${activeCategory}...`}
-                  className="w-full pl-9 pr-3 py-1.5 bg-[#0A0A0C] border border-[#232636] rounded-xl text-xs text-white placeholder-slate-500 focus:outline-none focus:border-purple-500 font-sans"
+                  className="w-full pl-9 pr-3 py-1.5 bg-[#08090C] border border-white/[0.08] rounded-lg text-xs text-white placeholder-slate-500 focus:outline-none focus:border-white/30 font-sans"
                 />
               </div>
               <span className="text-xs text-slate-500 font-mono hidden sm:inline">
@@ -330,7 +330,7 @@ export default function FeatsView({ activeCategory: propCategory, setActiveCateg
 
           {/* Active Technique Banner (Shown when a specific technique is selected) */}
           {activeCategory === 'Technique Feats' && activeTechniqueInfo && (
-            <div className="rounded-2xl bg-gradient-to-r from-purple-950/30 via-[#131522] to-[#0D0E16] border border-purple-500/30 p-4 sm:p-5 mb-6 shadow-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div className="rounded-xl bg-[#0D0E13] border border-purple-500/20 p-4 mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div className="space-y-1">
                 <div className="flex items-center space-x-2">
                   <Scroll className="w-4 h-4 text-amber-400" />
@@ -338,7 +338,7 @@ export default function FeatsView({ activeCategory: propCategory, setActiveCateg
                     {activeTechniqueInfo.name}
                   </h3>
                   {activeTechniqueInfo.vietnameseName && (
-                    <span className="text-xs font-semibold text-amber-300 font-sans">
+                    <span className="text-xs font-semibold text-amber-300/90 font-sans">
                       • {activeTechniqueInfo.vietnameseName}
                     </span>
                   )}
@@ -350,7 +350,7 @@ export default function FeatsView({ activeCategory: propCategory, setActiveCateg
                 </div>
                 <div className="flex flex-wrap items-center gap-2 pt-1 text-xs">
                   {activeTechniqueInfo.character && (
-                    <span className="inline-flex items-center space-x-1 px-2 py-0.5 rounded-md bg-[#1B1D2C] border border-[#2D3148] text-purple-300 font-mono text-[11px]">
+                    <span className="inline-flex items-center space-x-1 px-2 py-0.5 rounded-md bg-[#12141D] border border-white/[0.08] text-purple-300 font-mono text-[11px]">
                       <User className="w-3 h-3 text-purple-400" />
                       <span>Đại diện: {activeTechniqueInfo.character}</span>
                     </span>
@@ -363,7 +363,7 @@ export default function FeatsView({ activeCategory: propCategory, setActiveCateg
 
               <button
                 onClick={() => setSelectedTechnique('all')}
-                className="px-3 py-1.5 rounded-xl bg-purple-900/40 hover:bg-purple-800/60 border border-purple-700/50 text-purple-200 text-xs font-mono flex items-center space-x-1.5 transition-colors self-end sm:self-center"
+                className="px-3 py-1.5 rounded-lg bg-[#14151D] hover:bg-[#1A1C28] border border-white/[0.08] text-slate-200 text-xs font-mono flex items-center space-x-1.5 transition-colors self-end sm:self-center"
               >
                 <X className="w-3.5 h-3.5" />
                 <span>Xem tất cả thuật thức</span>
@@ -373,7 +373,7 @@ export default function FeatsView({ activeCategory: propCategory, setActiveCateg
 
           {/* Grid of Feats */}
           {currentList.length === 0 ? (
-            <div className="rounded-2xl bg-[#12131A] border border-[#232636] p-12 text-center text-slate-400 space-y-2">
+            <div className="rounded-xl bg-[#0D0E13] border border-white/[0.08] p-10 text-center text-slate-400 space-y-2">
               <Search className="w-8 h-8 mx-auto text-slate-600 mb-2" />
               <div className="text-sm font-bold text-white">Không tìm thấy feat nào</div>
               <p className="text-xs text-slate-500">
@@ -384,26 +384,26 @@ export default function FeatsView({ activeCategory: propCategory, setActiveCateg
                   setSelectedTechnique('all');
                   setSearch('');
                 }}
-                className="mt-3 px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold transition-all inline-block"
+                className="mt-3 px-3.5 py-1.5 rounded-lg bg-[#181924] border border-white/20 text-white text-xs font-bold transition-colors inline-block"
               >
                 Hiển thị tất cả
               </button>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
               {currentList.map((feat, idx) => (
                 <div 
                   key={idx}
-                  className="p-5 rounded-2xl bg-[#12131A] border border-[#232636] hover:border-[#383C54] shadow-lg flex flex-col justify-between transition-all group"
+                  className="p-4 sm:p-5 rounded-xl bg-[#0D0E13] border border-white/[0.08] hover:border-white/[0.14] flex flex-col justify-between transition-colors group"
                 >
                   <div>
                     <div className="flex items-start justify-between gap-2 mb-2">
                       <div>
-                        <h3 className="text-sm font-bold text-white font-display group-hover:text-amber-200 transition-colors">
+                        <h3 className="text-sm font-bold text-white font-display">
                           {feat.name}
                         </h3>
                         {feat.vietnameseName && (
-                          <div className="text-[11px] text-amber-300 font-sans font-medium mt-0.5">
+                          <div className="text-[11px] text-amber-300/90 font-sans font-medium mt-0.5">
                             {feat.vietnameseName}
                           </div>
                         )}
@@ -413,7 +413,7 @@ export default function FeatsView({ activeCategory: propCategory, setActiveCateg
                       {feat.techniqueName && (
                         <button
                           onClick={() => setSelectedTechnique(feat.techniqueName)}
-                          className="px-2 py-0.5 rounded-md text-[9px] font-mono bg-[#1B1D2A] text-purple-300 border border-purple-500/30 hover:bg-purple-900/40 hover:border-purple-400 hover:text-white transition-all shrink-0 flex items-center space-x-1"
+                          className="px-2 py-0.5 rounded-md text-[9px] font-mono bg-[#14151D] text-purple-300 border border-purple-500/20 hover:bg-[#1A1C28] hover:text-white transition-colors shrink-0 flex items-center space-x-1"
                           title={`Lọc riêng thuật thức: ${feat.techniqueName}`}
                         >
                           <Scroll className="w-2.5 h-2.5 text-purple-400" />
@@ -424,7 +424,7 @@ export default function FeatsView({ activeCategory: propCategory, setActiveCateg
 
                     {/* Character representation */}
                     {(feat.character || feat.techniqueCharacter) && (
-                      <div className="inline-flex items-center space-x-1.5 px-2 py-0.5 rounded-md bg-[#161824] border border-[#2A2E44] text-[10px] font-mono text-purple-300 mb-2.5">
+                      <div className="inline-flex items-center space-x-1.5 px-2 py-0.5 rounded-md bg-[#12141D] border border-white/[0.08] text-[10px] font-mono text-purple-300 mb-2.5">
                         <User className="w-2.5 h-2.5 text-purple-400" />
                         <span>Đại diện: {feat.character || feat.techniqueCharacter}</span>
                       </div>
@@ -432,7 +432,7 @@ export default function FeatsView({ activeCategory: propCategory, setActiveCateg
 
                     {/* Prerequisite */}
                     {feat.prerequisite && (
-                      <div className="text-[10px] font-mono text-purple-400/90 mb-3 bg-[#171822] px-2.5 py-1 rounded-lg border border-[#232738]">
+                      <div className="text-[10px] font-mono text-amber-300/80 mb-3 bg-[#0A0B0E] px-2.5 py-1 rounded-md border border-white/[0.05]">
                         {feat.prerequisite}
                       </div>
                     )}
@@ -446,12 +446,12 @@ export default function FeatsView({ activeCategory: propCategory, setActiveCateg
                     {feat.descriptionEn && (
                       <details className="mt-3 group/orig">
                         <summary className="text-[11px] font-mono text-slate-500 hover:text-slate-300 cursor-pointer list-none flex items-center gap-1.5 transition-colors">
-                          <span className="text-[10px] text-purple-400 group-open/orig:rotate-90 transition-transform">▶</span>
-                          <span>📄 Văn bản gốc tiếng Anh (Original Rule)</span>
+                          <span className="text-[10px] text-slate-400 group-open/orig:rotate-90 transition-transform">▶</span>
+                          <span>[ EN ] Văn bản gốc tiếng Anh (Original Rule)</span>
                         </summary>
-                        <div className="mt-2 p-2.5 rounded-lg bg-black/40 border border-white/5 text-[11px] text-slate-400 font-sans leading-relaxed whitespace-pre-line">
+                        <div className="mt-2 p-2.5 rounded-lg bg-[#08090C] border border-white/[0.06] text-[11px] text-slate-400 font-mono leading-relaxed whitespace-pre-line">
                           {feat.prerequisiteEn && (
-                            <div className="text-[10px] font-mono text-purple-300/80 mb-1.5 pb-1 border-b border-white/5">
+                            <div className="text-[10px] font-mono text-amber-300/80 mb-1.5 pb-1 border-b border-white/[0.05]">
                               {feat.prerequisiteEn}
                             </div>
                           )}

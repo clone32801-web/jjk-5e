@@ -278,17 +278,17 @@ Thưởng Đòn Đánh Chú Thuật (CE Attack Bonus): ${ceAttackBonus}
           {characterCreationData.steps.filter(st => st.id === activeStepId).map((stepItem) => (
             <div 
               key={stepItem.id} 
-              className="p-6 sm:p-8 rounded-3xl bg-[#12131A] border border-[#202332] shadow-2xl relative overflow-hidden space-y-6"
+              className="p-5 sm:p-6 rounded-2xl bg-[#0D0E13] border border-white/[0.08] relative overflow-hidden space-y-5"
             >
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[#1E2130]">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-white/[0.06]">
                 <div>
                   <div className="flex items-center space-x-2 mb-1">
-                    <span className="px-2.5 py-0.5 rounded-md text-[10px] font-mono font-bold bg-purple-950/70 text-purple-300 border border-purple-800/40">
+                    <span className="px-2.5 py-0.5 rounded-md text-[10px] font-mono font-bold bg-[#12101B] text-purple-300 border border-purple-500/20">
                       BƯỚC {stepItem.step} TRÊN 9
                     </span>
                     <span className="text-xs font-mono text-slate-500 uppercase">{stepItem.id}</span>
                   </div>
-                  <h2 className="text-xl sm:text-2xl font-bold text-white font-display">
+                  <h2 className="text-lg sm:text-xl font-bold text-white font-display">
                     {stepItem.title}
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-400 mt-1 font-sans">
@@ -299,7 +299,7 @@ Thưởng Đòn Đánh Chú Thuật (CE Attack Bonus): ${ceAttackBonus}
                 {stepItem.linkTab && onNavigateTab && (
                   <button
                     onClick={() => onNavigateTab(stepItem.linkTab)}
-                    className="flex items-center space-x-1.5 px-4 py-2 rounded-xl text-xs font-mono font-bold bg-purple-600/20 text-purple-300 border border-purple-500/40 hover:bg-purple-600/30 hover:border-purple-400 transition-all self-start sm:self-auto shrink-0"
+                    className="flex items-center space-x-1.5 px-3.5 py-1.5 rounded-lg text-xs font-mono font-bold bg-[#14151D] text-slate-200 border border-white/[0.08] hover:bg-[#1A1C28] transition-colors self-start sm:self-auto shrink-0"
                   >
                     <span>Mở Tab {stepItem.title.split('(')[0].trim()}</span>
                     <ExternalLink className="w-3.5 h-3.5" />
@@ -316,7 +316,7 @@ Thưởng Đòn Đánh Chú Thuật (CE Attack Bonus): ${ceAttackBonus}
               {stepItem.keyAspects && (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2">
                   {stepItem.keyAspects.map((aspect, idx) => (
-                    <div key={idx} className="p-4 rounded-2xl bg-[#0D0E14] border border-[#1E2130] space-y-1">
+                    <div key={idx} className="p-3.5 rounded-xl bg-[#0A0B0E] border border-white/[0.05] space-y-1">
                       <span className="text-xs font-bold text-purple-300 font-display flex items-center space-x-1.5">
                         <span className="w-1.5 h-1.5 rounded-full bg-purple-400 inline-block" />
                         <span>{aspect.label}</span>
@@ -538,42 +538,42 @@ Thưởng Đòn Đánh Chú Thuật (CE Attack Bonus): ${ceAttackBonus}
       {/* MODE 2: INTERACTIVE CHARACTER BUILDER */}
       {/* ========================================================================= */}
       {viewMode === 'builder' && (
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start">
           
           {/* Left / Top Controls Pane (Inputs) */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="p-6 rounded-3xl bg-[#12131A] border border-[#202332] shadow-xl space-y-5">
-              <div className="flex items-center justify-between pb-3 border-b border-[#1E2130]">
+            <div className="p-5 sm:p-6 rounded-2xl bg-[#0D0E13] border border-white/[0.08] space-y-5">
+              <div className="flex items-center justify-between pb-3 border-b border-white/[0.06]">
                 <h3 className="text-base font-bold text-white font-display flex items-center space-x-2">
                   <User className="w-4 h-4 text-purple-400" />
                   <span>1. Thông Tin & Danh Tính</span>
                 </h3>
                 <button
                   onClick={applyStandardArray}
-                  className="px-3 py-1 rounded-lg text-[10px] font-mono font-bold bg-[#1C1E2B] text-slate-300 hover:text-white border border-[#2C3146] transition-colors"
+                  className="px-2.5 py-1 rounded-md text-[10px] font-mono font-bold bg-[#14151D] text-slate-300 hover:text-white border border-white/[0.08] transition-colors"
                 >
-                  ⚡ Điền Standard Array
+                  Điền Standard Array
                 </button>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="text-[11px] font-mono text-slate-400 uppercase block mb-1">Tên Nhân Vật</label>
+                  <label className="text-[10px] font-mono text-slate-400 uppercase tracking-wider block mb-1">Tên Nhân Vật</label>
                   <input
                     type="text"
                     value={charName}
                     onChange={(e) => setCharName(e.target.value)}
-                    className="w-full px-3.5 py-2 rounded-xl bg-[#0A0A0C] border border-[#232636] text-sm text-white focus:outline-none focus:border-purple-500 font-sans"
+                    className="w-full px-3.5 py-2 rounded-lg bg-[#08090C] border border-white/[0.08] text-sm text-white focus:outline-none focus:border-white/20 font-sans"
                     placeholder="Nhập tên nhân vật..."
                   />
                 </div>
 
                 <div>
-                  <label className="text-[11px] font-mono text-slate-400 uppercase block mb-1">Xuất Thân (Background)</label>
+                  <label className="text-[10px] font-mono text-slate-400 uppercase tracking-wider block mb-1">Xuất Thân (Background)</label>
                   <select
                     value={selectedBackgroundId}
                     onChange={(e) => setSelectedBackgroundId(e.target.value)}
-                    className="w-full px-3.5 py-2 rounded-xl bg-[#0A0A0C] border border-[#232636] text-xs sm:text-sm text-white focus:outline-none focus:border-purple-500 font-sans"
+                    className="w-full px-3.5 py-2 rounded-lg bg-[#08090C] border border-white/[0.08] text-xs sm:text-sm text-white focus:outline-none focus:border-white/20 font-sans"
                   >
                     {backgroundsData.backgrounds?.map((bg) => (
                       <option key={bg.id} value={bg.id}>{bg.name}</option>
@@ -583,12 +583,12 @@ Thưởng Đòn Đánh Chú Thuật (CE Attack Bonus): ${ceAttackBonus}
               </div>
 
               <div>
-                <label className="text-[11px] font-mono text-slate-400 uppercase block mb-1">Khái Niệm / Động Lực</label>
+                <label className="text-[10px] font-mono text-slate-400 uppercase tracking-wider block mb-1">Khái Niệm / Động Lực</label>
                 <input
                   type="text"
                   value={charConcept}
                   onChange={(e) => setCharConcept(e.target.value)}
-                  className="w-full px-3.5 py-2 rounded-xl bg-[#0A0A0C] border border-[#232636] text-xs text-white focus:outline-none focus:border-purple-500 font-sans"
+                  className="w-full px-3.5 py-2 rounded-lg bg-[#08090C] border border-white/[0.08] text-xs text-white focus:outline-none focus:border-white/20 font-sans"
                   placeholder="Mô tả ngắn lý tưởng chiến đấu..."
                 />
               </div>
@@ -596,7 +596,7 @@ Thưởng Đòn Đánh Chú Thuật (CE Attack Bonus): ${ceAttackBonus}
               {/* Race & Subrace */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 <div>
-                  <label className="text-[11px] font-mono text-slate-400 uppercase block mb-1">Chủng Tộc</label>
+                  <label className="text-[10px] font-mono text-slate-400 uppercase tracking-wider block mb-1">Chủng Tộc</label>
                   <select
                     value={selectedRaceId}
                     onChange={(e) => {
@@ -604,7 +604,7 @@ Thưởng Đòn Đánh Chú Thuật (CE Attack Bonus): ${ceAttackBonus}
                       const rc = racesData.find(r => r.id === e.target.value);
                       if (rc?.subraces?.[0]) setSelectedSubrace(rc.subraces[0].name);
                     }}
-                    className="w-full px-3.5 py-2 rounded-xl bg-[#0A0A0C] border border-[#232636] text-xs sm:text-sm text-white focus:outline-none focus:border-purple-500 font-sans"
+                    className="w-full px-3.5 py-2 rounded-lg bg-[#08090C] border border-white/[0.08] text-xs sm:text-sm text-white focus:outline-none focus:border-white/20 font-sans"
                   >
                     {racesData.map((r) => (
                       <option key={r.id} value={r.id}>{r.name}</option>
@@ -613,11 +613,11 @@ Thưởng Đòn Đánh Chú Thuật (CE Attack Bonus): ${ceAttackBonus}
                 </div>
 
                 <div>
-                  <label className="text-[11px] font-mono text-slate-400 uppercase block mb-1">Nhánh Phụ (Subrace)</label>
+                  <label className="text-[10px] font-mono text-slate-400 uppercase tracking-wider block mb-1">Nhánh Phụ (Subrace)</label>
                   <select
                     value={selectedSubrace}
                     onChange={(e) => setSelectedSubrace(e.target.value)}
-                    className="w-full px-3.5 py-2 rounded-xl bg-[#0A0A0C] border border-[#232636] text-xs sm:text-sm text-white focus:outline-none focus:border-purple-500 font-sans"
+                    className="w-full px-3.5 py-2 rounded-lg bg-[#08090C] border border-white/[0.08] text-xs sm:text-sm text-white focus:outline-none focus:border-white/20 font-sans"
                   >
                     {currentRace.subraces?.map((sr, idx) => (
                       <option key={idx} value={sr.name}>{sr.name}</option>
@@ -629,11 +629,11 @@ Thưởng Đòn Đánh Chú Thuật (CE Attack Bonus): ${ceAttackBonus}
               {/* Class & Cursed Ability */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 <div>
-                  <label className="text-[11px] font-mono text-slate-400 uppercase block mb-1">Lớp Nhân Vật (Class)</label>
+                  <label className="text-[10px] font-mono text-slate-400 uppercase tracking-wider block mb-1">Lớp Nhân Vật (Class)</label>
                   <select
                     value={selectedClassId}
                     onChange={(e) => setSelectedClassId(e.target.value)}
-                    className="w-full px-3.5 py-2 rounded-xl bg-[#0A0A0C] border border-[#232636] text-xs sm:text-sm text-white focus:outline-none focus:border-purple-500 font-sans"
+                    className="w-full px-3.5 py-2 rounded-lg bg-[#08090C] border border-white/[0.08] text-xs sm:text-sm text-white focus:outline-none focus:border-white/20 font-sans"
                   >
                     {classesData.map((c) => (
                       <option key={c.id} value={c.id}>
@@ -644,11 +644,11 @@ Thưởng Đòn Đánh Chú Thuật (CE Attack Bonus): ${ceAttackBonus}
                 </div>
 
                 <div>
-                  <label className="text-[11px] font-mono text-slate-400 uppercase block mb-1">Thuộc Tính Chú Lực (CE Modifier)</label>
+                  <label className="text-[10px] font-mono text-slate-400 uppercase tracking-wider block mb-1">Thuộc Tính Chú Lực (CE Modifier)</label>
                   <select
                     value={cursedAbility}
                     onChange={(e) => setCursedAbility(e.target.value)}
-                    className="w-full px-3.5 py-2 rounded-xl bg-[#0A0A0C] border border-[#232636] text-xs sm:text-sm text-white focus:outline-none focus:border-purple-500 font-sans"
+                    className="w-full px-3.5 py-2 rounded-lg bg-[#08090C] border border-white/[0.08] text-xs sm:text-sm text-white focus:outline-none focus:border-white/20 font-sans"
                   >
                     <option value="WIS">Thông Thái (WIS) - Trực giác & Ý chí</option>
                     <option value="CHA">Sức Hút (CHA) - Cường độ cảm xúc</option>
@@ -659,11 +659,11 @@ Thưởng Đòn Đánh Chú Thuật (CE Attack Bonus): ${ceAttackBonus}
 
               {/* Technique Dropdown */}
               <div>
-                <label className="text-[11px] font-mono text-slate-400 uppercase block mb-1">Thuật Thức Bẩm Sinh (Innate Technique)</label>
+                <label className="text-[10px] font-mono text-slate-400 uppercase tracking-wider block mb-1">Thuật Thức Bẩm Sinh (Innate Technique)</label>
                 <select
                   value={selectedTechniqueId}
                   onChange={(e) => setSelectedTechniqueId(e.target.value)}
-                  className="w-full px-3.5 py-2 rounded-xl bg-[#0A0A0C] border border-[#232636] text-xs sm:text-sm text-white focus:outline-none focus:border-purple-500 font-sans"
+                  className="w-full px-3.5 py-2 rounded-lg bg-[#08090C] border border-white/[0.08] text-xs sm:text-sm text-white focus:outline-none focus:border-white/20 font-sans"
                 >
                   {techniquesData.map((t) => (
                     <option key={t.id} value={t.id}>
@@ -675,8 +675,8 @@ Thưởng Đòn Đánh Chú Thuật (CE Attack Bonus): ${ceAttackBonus}
             </div>
 
             {/* Ability Scores Inputs */}
-            <div className="p-6 rounded-3xl bg-[#12131A] border border-[#202332] shadow-xl space-y-4">
-              <div className="flex items-center justify-between pb-2 border-b border-[#1E2130]">
+            <div className="p-5 sm:p-6 rounded-2xl bg-[#0D0E13] border border-white/[0.08] space-y-4">
+              <div className="flex items-center justify-between pb-2 border-b border-white/[0.06]">
                 <h3 className="text-base font-bold text-white font-display flex items-center space-x-2">
                   <Brain className="w-4 h-4 text-cyan-400" />
                   <span>2. Chỉ Số Thuộc Tính (6 Ability Scores)</span>
@@ -689,19 +689,19 @@ Thưởng Đòn Đánh Chú Thuật (CE Attack Bonus): ${ceAttackBonus}
                   const val = scores[statKey];
                   const mod = getMod(val);
                   return (
-                    <div key={statKey} className="p-3.5 rounded-2xl bg-[#0A0A0C] border border-[#232636] text-center space-y-1.5">
+                    <div key={statKey} className="p-3 rounded-xl bg-[#08090C] border border-white/[0.06] text-center space-y-1.5">
                       <div className="text-[10px] font-mono uppercase text-slate-400 font-bold tracking-widest">{statKey}</div>
                       <div className="flex items-center justify-center space-x-2">
                         <button
                           onClick={() => setScores(prev => ({ ...prev, [statKey]: Math.max(3, prev[statKey] - 1) }))}
-                          className="w-7 h-7 rounded-lg bg-[#171924] text-slate-300 hover:text-white font-mono font-bold flex items-center justify-center text-xs"
+                          className="w-7 h-7 rounded-lg bg-[#14151D] border border-white/[0.08] text-slate-300 hover:text-white font-mono font-bold flex items-center justify-center text-xs transition-colors"
                         >
                           -
                         </button>
-                        <span className="text-lg font-bold text-white font-display w-8 text-center">{val}</span>
+                        <span className="text-base sm:text-lg font-bold text-white font-display w-8 text-center">{val}</span>
                         <button
                           onClick={() => setScores(prev => ({ ...prev, [statKey]: Math.min(20, prev[statKey] + 1) }))}
-                          className="w-7 h-7 rounded-lg bg-[#171924] text-slate-300 hover:text-white font-mono font-bold flex items-center justify-center text-xs"
+                          className="w-7 h-7 rounded-lg bg-[#14151D] border border-white/[0.08] text-slate-300 hover:text-white font-mono font-bold flex items-center justify-center text-xs transition-colors"
                         >
                           +
                         </button>
@@ -718,19 +718,19 @@ Thưởng Đòn Đánh Chú Thuật (CE Attack Bonus): ${ceAttackBonus}
 
           {/* Right Pane: Live Character Sheet Card */}
           <div className="lg:col-span-5 sticky top-20 space-y-5">
-            <div className="p-6 sm:p-7 rounded-3xl bg-gradient-to-br from-[#161824] via-[#10121A] to-[#0A0A0C] border-2 border-purple-500/40 shadow-2xl relative overflow-hidden">
+            <div className="p-5 sm:p-6 rounded-2xl bg-[#0D0E13] border border-white/[0.12] relative overflow-hidden">
               
               {/* Header Badge */}
-              <div className="flex items-center justify-between pb-3 border-b border-purple-500/20 mb-4">
+              <div className="flex items-center justify-between pb-3 border-b border-white/[0.06] mb-4">
                 <div>
                   <span className="text-[10px] font-mono uppercase tracking-widest text-purple-400 font-bold block">
                     JUJUTSU KAISEN 5E • CHARACTER SHEET
                   </span>
-                  <h2 className="text-xl sm:text-2xl font-black text-white font-display truncate">
+                  <h2 className="text-lg sm:text-xl font-bold text-white font-display truncate">
                     {charName || 'Vô Danh'}
                   </h2>
                 </div>
-                <span className="px-2.5 py-1 rounded-xl text-xs font-mono font-bold bg-purple-600/20 text-purple-300 border border-purple-500/40">
+                <span className="px-2.5 py-0.5 rounded-md text-xs font-mono font-bold bg-[#12101B] text-purple-300 border border-purple-500/30">
                   CẤP 1
                 </span>
               </div>
@@ -747,35 +747,35 @@ Thưởng Đòn Đánh Chú Thuật (CE Attack Bonus): ${ceAttackBonus}
 
               {/* Key Combat Stats Grid */}
               <div className="grid grid-cols-4 gap-2 mb-5">
-                <div className="p-3 rounded-2xl bg-[#0D0E15] border border-white/5 text-center">
+                <div className="p-2.5 rounded-xl bg-[#08090C] border border-white/[0.06] text-center">
                   <div className="text-[9px] font-mono uppercase text-slate-500">Máu (HP)</div>
-                  <div className="text-lg font-black text-rose-400 font-display">{maxHp}</div>
+                  <div className="text-base sm:text-lg font-black text-rose-400 font-display">{maxHp}</div>
                   <div className="text-[9px] font-mono text-slate-500">d{hitDieMax} + {conMod}</div>
                 </div>
 
-                <div className="p-3 rounded-2xl bg-[#0D0E15] border border-white/5 text-center">
+                <div className="p-2.5 rounded-xl bg-[#08090C] border border-white/[0.06] text-center">
                   <div className="text-[9px] font-mono uppercase text-slate-500">Giáp (AC)</div>
-                  <div className="text-lg font-black text-blue-400 font-display">{calculatedAc}</div>
+                  <div className="text-base sm:text-lg font-black text-blue-400 font-display">{calculatedAc}</div>
                   <div className="text-[9px] font-mono text-slate-500">Cơ bản</div>
                 </div>
 
-                <div className="p-3 rounded-2xl bg-[#0D0E15] border border-white/5 text-center">
+                <div className="p-2.5 rounded-xl bg-[#08090C] border border-white/[0.06] text-center">
                   <div className="text-[9px] font-mono uppercase text-slate-500">Sáng Kiến</div>
-                  <div className="text-lg font-black text-amber-400 font-display">{formatMod(initiative)}</div>
+                  <div className="text-base sm:text-lg font-black text-amber-400 font-display">{formatMod(initiative)}</div>
                   <div className="text-[9px] font-mono text-slate-500">DEX Mod</div>
                 </div>
 
-                <div className="p-3 rounded-2xl bg-[#0D0E15] border border-white/5 text-center">
+                <div className="p-2.5 rounded-xl bg-[#08090C] border border-white/[0.06] text-center">
                   <div className="text-[9px] font-mono uppercase text-slate-500">Thành Thạo</div>
-                  <div className="text-lg font-black text-purple-400 font-display">+{pb}</div>
+                  <div className="text-base sm:text-lg font-black text-purple-400 font-display">+{pb}</div>
                   <div className="text-[9px] font-mono text-slate-500">Cấp 1</div>
                 </div>
               </div>
 
               {/* Cursed Energy Stats Banner */}
-              <div className="p-4 rounded-2xl bg-gradient-to-r from-purple-950/40 via-[#151422] to-amber-950/30 border border-purple-500/30 mb-5 space-y-2">
+              <div className="p-3.5 rounded-xl bg-[#08090C] border border-white/[0.08] mb-5 space-y-2">
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center space-x-1.5 text-xs font-bold text-amber-300 font-display">
+                  <div className="flex items-center space-x-1.5 text-xs font-bold text-amber-300/90 font-display">
                     <Zap className="w-3.5 h-3.5 text-amber-400" />
                     <span>Năng Lực Chú Thuật</span>
                   </div>
@@ -785,28 +785,28 @@ Thưởng Đòn Đánh Chú Thuật (CE Attack Bonus): ${ceAttackBonus}
                 </div>
 
                 <div className="grid grid-cols-3 gap-2 text-center pt-1">
-                  <div className="p-2 rounded-xl bg-black/40 border border-white/5">
+                  <div className="p-2 rounded-lg bg-[#0E1017] border border-white/[0.05]">
                     <div className="text-[9px] font-mono text-slate-400 uppercase">Bể CE</div>
-                    <div className="text-base font-black text-white font-display">
+                    <div className="text-base font-bold text-white font-display">
                       {selectedClassId === 'heavenly-restriction' ? '0 CE' : `${cePool} CE`}
                     </div>
                   </div>
 
-                  <div className="p-2 rounded-xl bg-black/40 border border-white/5">
+                  <div className="p-2 rounded-lg bg-[#0E1017] border border-white/[0.05]">
                     <div className="text-[9px] font-mono text-slate-400 uppercase">Save DC</div>
-                    <div className="text-base font-black text-amber-300 font-display">{ceSaveDc}</div>
+                    <div className="text-base font-bold text-amber-300 font-display">{ceSaveDc}</div>
                   </div>
 
-                  <div className="p-2 rounded-xl bg-black/40 border border-white/5">
+                  <div className="p-2 rounded-lg bg-[#0E1017] border border-white/[0.05]">
                     <div className="text-[9px] font-mono text-slate-400 uppercase">Đòn Đánh</div>
-                    <div className="text-base font-black text-cyan-300 font-display">{ceAttackBonus}</div>
+                    <div className="text-base font-bold text-cyan-300 font-display">{ceAttackBonus}</div>
                   </div>
                 </div>
               </div>
 
               {/* Innate Technique & Domain */}
-              <div className="p-4 rounded-2xl bg-[#0D0E15] border border-white/5 mb-5 space-y-2">
-                <div className="text-[10px] font-mono uppercase text-slate-400">Thuật Thức Bẩm Sinh</div>
+              <div className="p-3.5 rounded-xl bg-[#08090C] border border-white/[0.06] mb-5 space-y-2">
+                <div className="text-[10px] font-mono uppercase text-slate-400 tracking-wider">Thuật Thức Bẩm Sinh</div>
                 <div className="text-sm font-bold text-white font-display">
                   {currentTechnique.vietnameseName || currentTechnique.name}
                 </div>
@@ -815,8 +815,8 @@ Thưởng Đòn Đánh Chú Thuật (CE Attack Bonus): ${ceAttackBonus}
                 </div>
 
                 {currentTechnique.domain && (
-                  <div className="pt-2 border-t border-white/5 flex items-center justify-between text-xs">
-                    <span className="text-[11px] text-amber-300 flex items-center space-x-1">
+                  <div className="pt-2 border-t border-white/[0.05] flex items-center justify-between text-xs">
+                    <span className="text-[11px] text-amber-300/90 flex items-center space-x-1">
                       <Flame className="w-3 h-3 text-amber-400" />
                       <span>{currentTechnique.domain.vietnameseName || currentTechnique.domain.name}</span>
                     </span>
@@ -828,7 +828,7 @@ Thưởng Đòn Đánh Chú Thuật (CE Attack Bonus): ${ceAttackBonus}
               {/* Copy Character Sheet Button */}
               <button
                 onClick={handleCopySummary}
-                className="w-full py-3 rounded-2xl bg-purple-600 hover:bg-purple-500 text-white font-mono font-bold text-xs flex items-center justify-center space-x-2 shadow-lg shadow-purple-600/30 transition-all"
+                className="w-full py-2.5 rounded-xl bg-[#181924] hover:bg-[#202230] border border-white/20 text-white font-mono font-bold text-xs flex items-center justify-center space-x-2 transition-colors"
               >
                 {copied ? (
                   <>

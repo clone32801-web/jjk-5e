@@ -138,51 +138,46 @@ export default function TechniquesView({
       </div>
 
       {/* Hero Banner with JJK Atmosphere */}
-      <div className="relative rounded-3xl bg-gradient-to-br from-[#12131A] via-[#0E0F14] to-[#0A0A0C] border border-[#232636] p-6 sm:p-10 mb-8 overflow-hidden shadow-2xl">
-        <div 
-          className="absolute -right-20 -top-20 w-80 h-80 rounded-full blur-3xl pointer-events-none opacity-20"
-          style={{ backgroundColor: currentTheme.accent }}
-        />
-        
+      <div className="relative rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-6 sm:p-8 mb-8 overflow-hidden">
         <div className="relative z-10 max-w-3xl">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#171822] border border-[#2E3347] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
+          <div className="inline-flex items-center space-x-2 px-2.5 py-0.5 rounded bg-white/[0.05] border border-white/10 text-xs font-mono font-medium uppercase tracking-wider mb-3">
             <Sparkles className={`w-3.5 h-3.5 ${currentTheme.accentClass}`} />
-            <span className="text-slate-300">Innate Techniques • 生得術式</span>
+            <span className="text-zinc-300">Innate Techniques • 生得術式</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl font-black text-white font-display tracking-tight flex items-center gap-3">
+          <h1 className="text-2xl sm:text-4xl font-black text-white font-display tracking-tight flex items-center gap-3">
             <span>Thuật Thức Bẩm Sinh</span>
-            <span className="text-xs font-kanji text-slate-600 font-normal hidden sm:inline">
+            <span className="text-xs font-kanji text-zinc-600 font-normal hidden sm:inline">
               [{techniquesData.length} 術式]
             </span>
           </h1>
 
-          <p className="mt-3 text-slate-400 text-xs sm:text-sm leading-relaxed max-w-2xl font-sans">
-            Kho lưu trữ 79 thuật thức bẩm sinh được khắc sâu trong thùy trán của Chú thuật sư. Tra cứu tên Hán Việt, nhân vật đại diện, tiến trình mở khóa kỹ năng và Bành trướng Lãnh địa (*Domain Expansion*).
+          <p className="mt-2 text-zinc-400 text-xs sm:text-sm leading-relaxed max-w-2xl font-sans">
+            Kho lưu trữ 79 thuật thức bẩm sinh được khắc sâu trong não bộ của Chú thuật sư. Tra cứu tên Hán Việt, nhân vật đại diện, tiến trình mở khóa kỹ năng và Bành trướng Lãnh địa (*Domain Expansion*).
           </p>
         </div>
       </div>
 
       {/* Filter and Search Controls Bar */}
-      <div className="bg-[#12131A] border border-[#232636] rounded-2xl p-4 sm:p-5 mb-8 space-y-4 shadow-xl">
+      <div className="bg-[#0D0E13] border border-white/[0.08] rounded-xl p-4 sm:p-5 mb-8 space-y-4">
         
         {/* Top Row: Search & View Toggle */}
-        <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
+        <div className="flex flex-col md:flex-row gap-3 items-center justify-between">
           
           {/* Search Input */}
           <div className="relative w-full md:w-96">
-            <Search className="w-4 h-4 text-slate-500 absolute left-3.5 top-1/2 -translate-y-1/2" />
+            <Search className="w-4 h-4 text-zinc-500 absolute left-3.5 top-1/2 -translate-y-1/2" />
             <input
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Tìm theo tên, Hán Việt, nhân vật (Gojo, Sukuna, Vô Hạ Hạn...)..."
-              className="w-full pl-10 pr-4 py-2.5 bg-[#0A0A0C] border border-[#232636] rounded-xl text-xs sm:text-sm text-white placeholder-slate-500 focus:outline-none focus:border-purple-500 transition-colors font-sans"
+              className="w-full pl-10 pr-4 py-2 bg-[#08090C] border border-white/10 rounded-lg text-xs sm:text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-cyan-500/60 transition-colors font-sans"
             />
             {search && (
               <button 
                 onClick={() => setSearch('')} 
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-500 hover:text-white"
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-white"
               >
                 <X className="w-3.5 h-3.5" />
               </button>
@@ -190,19 +185,19 @@ export default function TechniquesView({
           </div>
 
           {/* Right Group: Level Filter & View Mode Toggle */}
-          <div className="flex items-center gap-3 w-full md:w-auto justify-between md:justify-end">
+          <div className="flex items-center gap-2.5 w-full md:w-auto justify-between md:justify-end">
             
             {/* Level selection */}
-            <div className="flex items-center space-x-1 bg-[#0A0A0C] border border-[#232636] p-1 rounded-xl">
-              <span className="text-[10px] text-slate-500 px-2 font-mono">Cấp:</span>
+            <div className="flex items-center space-x-1 bg-[#08090C] border border-white/10 p-1 rounded-lg">
+              <span className="text-[10px] text-zinc-500 px-1.5 font-mono">Cấp:</span>
               {['all', '1', '3', '6', '11', '18'].map((lvl) => (
                 <button
                   key={lvl}
                   onClick={() => setSelectedLevel(lvl)}
-                  className={`px-2.5 py-1 rounded-lg text-xs font-mono font-semibold transition-all ${
+                  className={`px-2 py-0.5 rounded text-xs font-mono font-medium transition-colors ${
                     selectedLevel === lvl
-                      ? currentTheme.btnActive
-                      : 'text-slate-400 hover:text-slate-200 hover:bg-[#1A1B24]'
+                      ? 'bg-white/15 text-white font-bold'
+                      : 'text-zinc-400 hover:text-white hover:bg-white/[0.04]'
                   }`}
                 >
                   {lvl === 'all' ? 'Tất cả' : `Lv ${lvl}`}
@@ -211,29 +206,29 @@ export default function TechniquesView({
             </div>
 
             {/* View Mode Switcher: Grid vs Table */}
-            <div className="flex items-center p-1 bg-[#0A0A0C] border border-[#232636] rounded-xl">
+            <div className="flex items-center p-1 bg-[#08090C] border border-white/10 rounded-lg">
               <button
                 onClick={() => setViewMode('grid')}
-                className={`p-1.5 rounded-lg transition-all flex items-center space-x-1.5 text-xs font-mono ${
+                className={`p-1.5 rounded transition-colors flex items-center space-x-1 text-xs font-mono ${
                   viewMode === 'grid' 
-                    ? 'bg-[#1E2130] text-white font-bold shadow' 
-                    : 'text-slate-400 hover:text-white'
+                    ? 'bg-white/15 text-white font-bold' 
+                    : 'text-zinc-400 hover:text-white'
                 }`}
                 title="Dạng Lưới Thẻ Bài"
               >
-                <LayoutGrid className="w-4 h-4" />
+                <LayoutGrid className="w-3.5 h-3.5" />
                 <span className="hidden sm:inline">Lưới</span>
               </button>
               <button
                 onClick={() => setViewMode('table')}
-                className={`p-1.5 rounded-lg transition-all flex items-center space-x-1.5 text-xs font-mono ${
+                className={`p-1.5 rounded transition-colors flex items-center space-x-1 text-xs font-mono ${
                   viewMode === 'table' 
-                    ? 'bg-[#1E2130] text-white font-bold shadow' 
-                    : 'text-slate-400 hover:text-white'
+                    ? 'bg-white/15 text-white font-bold' 
+                    : 'text-zinc-400 hover:text-white'
                 }`}
                 title="Dạng Bảng Tra Cứu Nhanh"
               >
-                <List className="w-4 h-4" />
+                <List className="w-3.5 h-3.5" />
                 <span className="hidden sm:inline">Bảng</span>
               </button>
             </div>
@@ -243,7 +238,7 @@ export default function TechniquesView({
         </div>
 
         {/* Category Chips Bar */}
-        <div className="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar pt-1 border-t border-[#1C1E2B]">
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar pt-2 border-t border-white/[0.06]">
           {categories.map((cat) => {
             const Icon = cat.icon;
             const isActive = selectedCategory === cat.id;
@@ -251,10 +246,10 @@ export default function TechniquesView({
               <button
                 key={cat.id}
                 onClick={() => setSelectedCategory(cat.id)}
-                className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap border transition-all ${
+                className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap border transition-colors ${
                   isActive
-                    ? `${currentTheme.btnActive} shadow-md ring-1 ring-white/10`
-                    : 'bg-[#0A0A0C] border-[#232636] text-slate-400 hover:text-slate-200 hover:bg-[#151722]'
+                    ? 'bg-white/15 text-white border-white/20 font-bold'
+                    : 'bg-[#08090C] border-white/[0.08] text-zinc-400 hover:text-white hover:bg-white/[0.04]'
                 }`}
               >
                 <Icon className={`w-3.5 h-3.5 ${isActive ? 'text-white' : cat.color}`} />
@@ -265,9 +260,9 @@ export default function TechniquesView({
         </div>
 
         {/* Results Counter & Reset Action */}
-        <div className="flex items-center justify-between text-xs text-slate-500 pt-2 border-t border-[#1C1E2B] font-mono">
+        <div className="flex items-center justify-between text-xs text-zinc-500 pt-2 border-t border-white/[0.06] font-mono">
           <span>
-            Hiển thị <span className={`font-bold ${currentTheme.accentClass}`}>{filteredTechniques.length}</span> / {techniquesData.length} Thuật Thức
+            Hiển thị <span className="font-bold text-white">{filteredTechniques.length}</span> / {techniquesData.length} Thuật Thức
           </span>
           {(search || selectedCategory !== 'all' || selectedLevel !== 'all') && (
             <button 
@@ -295,66 +290,66 @@ export default function TechniquesView({
               <div
                 key={tech.id}
                 onClick={() => setActiveTechnique(tech)}
-                className="group relative bg-[#12131A] hover:bg-[#151722] border border-[#232636] hover:border-[#383C54] rounded-2xl overflow-hidden transition-all duration-200 cursor-pointer flex flex-col justify-between shadow-lg talisman-corner"
+                className="group relative bg-[#0D0E13] hover:bg-[#111218] border border-white/[0.08] hover:border-white/20 rounded-xl overflow-hidden transition-colors cursor-pointer flex flex-col justify-between"
               >
                 <div>
-                  {/* PROPER ASPECT-RATIO CARD IMAGE CONTAINER */}
+                  {/* Aspect-ratio card image container */}
                   {coverImg ? (
-                    <div className="relative w-full h-52 bg-[#070709] border-b border-[#1E2130] overflow-hidden flex items-center justify-center">
+                    <div className="relative w-full h-52 bg-[#070709] border-b border-white/[0.06] overflow-hidden flex items-center justify-center">
                       {/* Ambient blurred backdrop to fill aspect ratio cleanly */}
                       <img 
                         src={`/images/${coverImg}`} 
                         alt="" 
                         aria-hidden="true"
-                        className="absolute inset-0 w-full h-full object-cover blur-xl opacity-30 scale-125 pointer-events-none"
+                        className="absolute inset-0 w-full h-full object-cover blur-xl opacity-25 scale-125 pointer-events-none"
                       />
                       
                       {/* Full uncropped image matching true dimensions */}
                       <img 
                         src={`/images/${coverImg}`} 
                         alt={tech.name} 
-                        className="relative z-10 max-h-full max-w-full object-contain p-2.5 transition-transform duration-300 group-hover:scale-105"
+                        className="relative z-10 max-h-full max-w-full object-contain p-2.5 transition-transform duration-200 group-hover:scale-102"
                         loading="lazy"
                         onError={(e) => { e.target.style.display = 'none'; }}
                       />
                       
-                      {/* Subtle bottom vignette gradient */}
-                      <div className="absolute inset-x-0 bottom-0 h-8 bg-gradient-to-t from-[#12131A] to-transparent z-10 pointer-events-none" />
+                      {/* Subtle bottom vignette */}
+                      <div className="absolute inset-x-0 bottom-0 h-8 bg-gradient-to-t from-[#0D0E13] to-transparent z-10 pointer-events-none" />
 
                       {/* Image count badge if multiple images */}
                       {tech.images?.length > 1 && (
-                        <span className="absolute top-2.5 right-2.5 z-20 px-2 py-0.5 rounded-md text-[9px] font-mono font-bold bg-[#070709]/80 backdrop-blur-md text-slate-300 border border-white/10">
+                        <span className="absolute top-2.5 right-2.5 z-20 px-1.5 py-0.5 rounded text-[9px] font-mono font-bold bg-[#070709]/90 text-zinc-300 border border-white/10">
                           {tech.images.length} ảnh
                         </span>
                       )}
 
                       {/* Category tag on image top left */}
                       {catBadge && (
-                        <span className={`absolute top-2.5 left-2.5 z-20 px-2 py-0.5 rounded-md text-[9px] font-mono font-bold border backdrop-blur-md ${catBadge.color}`}>
+                        <span className={`absolute top-2.5 left-2.5 z-20 px-2 py-0.5 rounded text-[9px] font-mono font-semibold border ${catBadge.color}`}>
                           {catBadge.name}
                         </span>
                       )}
                     </div>
                   ) : (
-                    <div className="w-full h-24 bg-[#0A0A0C] border-b border-[#1E2130] flex items-center justify-center">
-                      <Sparkles className="w-8 h-8 text-slate-700" />
+                    <div className="w-full h-24 bg-[#08090C] border-b border-white/[0.06] flex items-center justify-center">
+                      <Sparkles className="w-6 h-6 text-zinc-700" />
                     </div>
                   )}
 
                   {/* Card Content */}
-                  <div className="p-5">
+                  <div className="p-4 sm:p-5">
                     
                     {/* Character representative pill */}
                     {tech.character && (
-                      <div className="inline-flex items-center space-x-1.5 px-2 py-0.5 rounded-md bg-[#161824] border border-[#262A3C] text-[10px] font-mono text-purple-300 mb-2">
-                        <User className="w-2.5 h-2.5 text-purple-400" />
+                      <div className="inline-flex items-center space-x-1.5 px-2 py-0.5 rounded bg-white/[0.04] border border-white/[0.08] text-[10px] font-mono text-zinc-300 mb-2">
+                        <User className="w-2.5 h-2.5 text-zinc-400" />
                         <span className="truncate max-w-[180px]">{tech.character}</span>
                       </div>
                     )}
 
                     {/* Technique Names: English & Vietnamese */}
                     <div className="mb-2">
-                      <h3 className="text-base font-bold text-white group-hover:text-purple-300 transition-colors font-display">
+                      <h3 className="text-base font-bold text-white group-hover:text-cyan-300 transition-colors font-display">
                         {tech.name}
                       </h3>
                       {tech.vietnameseName && tech.vietnameseName !== tech.name && (
@@ -364,20 +359,20 @@ export default function TechniquesView({
                       )}
                     </div>
 
-                    <p className="text-[11px] text-slate-500 font-mono mb-2.5">
+                    <p className="text-[11px] text-zinc-500 font-mono mb-2">
                       {tech.features.length} Kỹ năng • {tech.feats?.length || 0} Feats
                     </p>
 
-                    <p className="text-xs text-slate-400 line-clamp-2 leading-relaxed font-sans mb-1">
+                    <p className="text-xs text-zinc-400 line-clamp-2 leading-relaxed font-sans">
                       {tech.description || 'Thuật thức bẩm sinh đặc biệt được khắc sâu trong não bộ chú thuật sư.'}
                     </p>
                   </div>
                 </div>
 
                 {/* Badges footer */}
-                <div className="px-5 py-3 border-t border-[#1C1E2B] bg-[#0E0F15] flex items-center justify-between text-xs">
+                <div className="px-4 sm:px-5 py-2.5 border-t border-white/[0.06] bg-[#090A0E] flex items-center justify-between text-xs">
                   {tech.domain ? (
-                    <span className="inline-flex items-center space-x-1 px-2 py-0.5 rounded-lg bg-amber-500/15 text-amber-300 border border-amber-500/30 font-semibold text-[10px]">
+                    <span className="inline-flex items-center space-x-1 px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/20 font-medium text-[10px]">
                       <Flame className="w-3 h-3 text-amber-400 shrink-0" />
                       <span className="truncate max-w-[140px]">
                         {tech.domain.vietnameseName 
@@ -525,22 +520,22 @@ export default function TechniquesView({
         >
           {/* Modal Container */}
           <div 
-            className="relative w-full max-w-4xl bg-[#0C0D12] border border-[#282D3F] rounded-3xl shadow-domain overflow-hidden max-h-[92vh] flex flex-col animate-domain-open"
+            className="relative w-full max-w-4xl bg-[#0C0D12] border border-white/10 rounded-2xl shadow-2xl overflow-hidden max-h-[92vh] flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Modal Header */}
-            <div className="relative px-6 py-5 bg-gradient-to-r from-[#171822] via-[#101117] to-[#0A0A0C] border-b border-[#232738] flex items-center justify-between shrink-0">
+            <div className="relative px-6 py-4 bg-[#090A0E] border-b border-white/[0.08] flex items-center justify-between shrink-0">
               
-              <div className="absolute right-16 top-1 text-5xl font-kanji font-black text-white/[0.03] pointer-events-none select-none">
+              <div className="absolute right-16 top-1 text-5xl font-kanji font-black text-white/[0.02] pointer-events-none select-none">
                 領域展開
               </div>
 
               <div>
                 <div className="flex flex-wrap items-center gap-2">
-                  <h2 className="text-2xl font-black text-white font-display">
+                  <h2 className="text-xl sm:text-2xl font-black text-white font-display">
                     {activeTechnique.name}
                   </h2>
-                  <span className="font-kanji text-xs text-slate-500 font-bold">生得術式</span>
+                  <span className="font-kanji text-xs text-zinc-600 font-bold">生得術式</span>
 
                   {categoryLabels[activeTechnique.category] && (
                     <span className={`px-2 py-0.5 rounded text-[10px] font-mono font-semibold border ${categoryLabels[activeTechnique.category].color}`}>
@@ -551,14 +546,14 @@ export default function TechniquesView({
 
                 <div className="flex flex-wrap items-center gap-2 mt-1 text-xs">
                   {activeTechnique.vietnameseName && (
-                    <span className="text-amber-300 font-medium">
+                    <span className="text-amber-300/90 font-medium">
                       {activeTechnique.vietnameseName}
                     </span>
                   )}
                   {activeTechnique.character && (
-                    <span className="text-slate-400 font-mono flex items-center space-x-1">
+                    <span className="text-zinc-500 font-mono flex items-center space-x-1">
                       <span>• Đại diện:</span>
-                      <span className="text-purple-300 font-semibold">{activeTechnique.character}</span>
+                      <span className="text-zinc-300 font-medium">{activeTechnique.character}</span>
                     </span>
                   )}
                 </div>
@@ -566,21 +561,21 @@ export default function TechniquesView({
 
               <button 
                 onClick={() => setActiveTechnique(null)}
-                className="p-2 text-slate-400 hover:text-white rounded-xl bg-[#171822] hover:bg-[#202330] border border-[#282D3F] transition-colors"
+                className="p-1.5 text-zinc-400 hover:text-white rounded-lg bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 transition-colors"
                 title="Đóng (Esc)"
               >
-                <X className="w-5 h-5" />
+                <X className="w-4 h-4" />
               </button>
             </div>
 
             {/* Internal Navigation Tabs Bar */}
-            <div className="px-6 py-2.5 bg-[#090A0E] border-b border-[#1E2130] flex items-center gap-2 overflow-x-auto no-scrollbar shrink-0">
+            <div className="px-6 py-2 bg-[#060709] border-b border-white/[0.06] flex items-center gap-1.5 overflow-x-auto no-scrollbar shrink-0">
               <button
                 onClick={() => setActiveModalTab('overview')}
-                className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-xl text-xs font-mono font-bold transition-all whitespace-nowrap ${
+                className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition-colors whitespace-nowrap border ${
                   activeModalTab === 'overview'
-                    ? currentTheme.btnActive
-                    : 'text-slate-400 hover:text-white hover:bg-[#141620]'
+                    ? 'bg-white/15 text-white border-white/20 font-bold'
+                    : 'bg-transparent border-transparent text-zinc-400 hover:text-white hover:bg-white/[0.04]'
                 }`}
               >
                 <Eye className="w-3.5 h-3.5" />
@@ -844,39 +839,39 @@ export default function TechniquesView({
               {activeModalTab === 'domain' && (
                 <div className="space-y-4">
                   {activeTechnique.domain ? (
-                    <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-amber-950/25 via-[#141217] to-[#0A0A0C] border-2 border-amber-500/50 shadow-2xl relative overflow-hidden">
+                    <div className="p-5 sm:p-6 rounded-xl bg-[#08090C] border border-amber-500/30 relative overflow-hidden">
                       {/* Giant Kanji Watermark */}
-                      <div className="absolute right-4 bottom-2 font-kanji font-black text-8xl text-white/[0.03] pointer-events-none select-none">
+                      <div className="absolute right-4 bottom-2 font-kanji font-black text-8xl text-white/[0.02] pointer-events-none select-none">
                         領域展開
                       </div>
 
                       <div className="relative z-10">
-                        <div className="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-amber-500/20">
+                        <div className="flex flex-wrap items-center justify-between gap-3 mb-3 pb-3 border-b border-amber-500/20">
                           <div className="flex items-center space-x-3">
-                            <div className="w-10 h-10 rounded-xl bg-amber-500/20 flex items-center justify-center border border-amber-500/50 shadow-inner">
-                              <Flame className="w-6 h-6 text-amber-400" />
+                            <div className="w-9 h-9 rounded-lg bg-amber-500/10 flex items-center justify-center border border-amber-500/30">
+                              <Flame className="w-5 h-5 text-amber-400" />
                             </div>
                             <div>
-                              <span className="text-[10px] font-mono uppercase tracking-widest text-amber-400 font-bold block">
+                              <span className="text-[10px] font-mono uppercase tracking-wider text-amber-400/90 font-bold block">
                                 Đỉnh Cao Chú Thuật • 領域展開
                               </span>
-                              <h3 className="text-xl sm:text-2xl font-black text-white font-display">
+                              <h3 className="text-lg sm:text-xl font-bold text-white font-display">
                                 {activeTechnique.domain.vietnameseName || activeTechnique.domain.name}
                               </h3>
                               {activeTechnique.domain.vietnameseName && (
-                                <span className="text-xs font-mono text-slate-400 block mt-0.5">
+                                <span className="text-[11px] font-mono text-zinc-400 block mt-0.5">
                                   {activeTechnique.domain.name}
                                 </span>
                               )}
                             </div>
                           </div>
 
-                          <span className="px-3 py-1.5 text-xs font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/50 rounded-xl shadow">
+                          <span className="px-2.5 py-1 text-xs font-mono font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30 rounded-lg">
                             {activeTechnique.domain.cost}
                           </span>
                         </div>
 
-                        <p className="text-xs sm:text-sm text-slate-200 leading-relaxed whitespace-pre-line font-sans drop-shadow-sm">
+                        <p className="text-xs sm:text-sm text-zinc-200 leading-relaxed whitespace-pre-line font-sans">
                           {activeTechnique.domain.description}
                         </p>
                       </div>

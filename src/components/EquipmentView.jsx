@@ -91,16 +91,16 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`flex items-center space-x-2 px-4 py-2.5 rounded-xl text-xs font-bold transition-all shrink-0 ${
+              className={`flex items-center space-x-2 px-3.5 py-2 rounded-xl text-xs font-bold transition-colors shrink-0 ${
                 isActive
-                  ? `${currentTheme.bgAccent} ${currentTheme.accentClass} border ${currentTheme.borderAccent} shadow-sm`
-                  : 'text-slate-400 hover:text-slate-200 hover:bg-[#12131A]'
+                  ? `${currentTheme.bgAccent} ${currentTheme.accentClass} border ${currentTheme.borderAccent} ring-1 ring-white/10`
+                  : 'text-slate-400 hover:text-slate-200 bg-[#0D0E13] border border-white/[0.08] hover:bg-[#12141C]'
               }`}
             >
               <Icon className="w-3.5 h-3.5" />
               <span>{tab.label}</span>
               {tab.count !== null && (
-                <span className="px-1.5 py-0.2 text-[10px] bg-[#0A0A0C] text-slate-400 rounded-full font-mono border border-[#232636]">
+                <span className="px-1.5 py-0.2 text-[10px] bg-[#08090C] text-slate-400 rounded-md font-mono border border-white/[0.06]">
                   {tab.count}
                 </span>
               )}
@@ -114,7 +114,7 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
         <div className="space-y-6">
           
           {/* Filter Bar */}
-          <div className="bg-[#12131A] border border-[#232636] rounded-2xl p-4 flex flex-col md:flex-row gap-4 items-center justify-between shadow-xl">
+          <div className="bg-[#0D0E13] border border-white/[0.08] rounded-xl p-3 sm:p-4 flex flex-col md:flex-row gap-4 items-center justify-between">
             <div className="relative w-full md:w-80">
               <Search className="w-4 h-4 text-slate-500 absolute left-3 top-1/2 -translate-y-1/2" />
               <input
@@ -122,7 +122,7 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 placeholder="Tìm chú cụ (Playful Cloud, Inverted Spear, Maki, Toji...)..."
-                className="w-full pl-9 pr-3 py-1.5 bg-[#0A0A0C] border border-[#232636] rounded-xl text-xs text-white placeholder-slate-500 focus:outline-none focus:border-purple-500 font-sans"
+                className="w-full pl-9 pr-3 py-1.5 bg-[#08090C] border border-white/[0.08] rounded-lg text-xs text-white placeholder-slate-500 focus:outline-none focus:border-white/20 font-sans"
               />
             </div>
 
@@ -131,10 +131,10 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
                 <button
                   key={g.id}
                   onClick={() => setSelectedGrade(g.id)}
-                  className={`px-3 py-1 rounded-lg text-xs font-mono font-semibold transition-all ${
+                  className={`px-3 py-1 rounded-lg text-xs font-mono font-semibold transition-colors ${
                     selectedGrade === g.id
                       ? currentTheme.btnActive
-                      : 'text-slate-400 hover:text-slate-200 bg-[#0A0A0C] border border-[#232636]'
+                      : 'text-slate-400 hover:text-slate-200 bg-[#08090C] border border-white/[0.08]'
                   }`}
                 >
                   {g.label}
@@ -144,59 +144,53 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
           </div>
 
           {/* Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
             {filteredTools.map((tool, idx) => {
               const badgeStyle = gradeColors[tool.grade] || 'bg-slate-500/15 text-slate-300 border-slate-500/30';
               return (
                 <div 
                   key={idx}
-                  className="rounded-2xl bg-[#12131A] border border-[#232636] hover:border-[#383C54] overflow-hidden shadow-lg flex flex-col justify-between transition-all"
+                  className="rounded-xl bg-[#0D0E13] border border-white/[0.08] hover:border-white/[0.14] overflow-hidden flex flex-col justify-between transition-colors"
                 >
                   <div>
                     {/* PROPER ASPECT RATIO IMAGE FRAME */}
                     {tool.images?.length > 0 && (
-                      <div className="relative w-full h-44 bg-[#070709] border-b border-[#1E2130] overflow-hidden flex items-center justify-center">
-                        <img 
-                          src={`/images/${tool.images[0]}`} 
-                          alt="" 
-                          aria-hidden="true"
-                          className="absolute inset-0 w-full h-full object-cover blur-xl opacity-25 scale-125 pointer-events-none"
-                        />
+                      <div className="relative w-full h-44 bg-[#08090C] border-b border-white/[0.06] overflow-hidden flex items-center justify-center">
                         <img 
                           src={`/images/${tool.images[0]}`} 
                           alt={tool.name} 
-                          className="relative z-10 max-h-full max-w-full object-contain p-2 hover:scale-105 transition-transform"
+                          className="relative z-10 max-h-full max-w-full object-contain p-2"
                           onError={(e) => { e.target.style.display = 'none'; }}
                         />
                       </div>
                     )}
 
-                    <div className="p-5">
+                    <div className="p-4 sm:p-5">
                       <div className="flex items-start justify-between gap-2 mb-2">
                         <div>
                           <h3 className="text-base font-bold text-white font-display">
                             {tool.name}
                           </h3>
                           {tool.vietnameseName && (
-                            <div className="text-xs text-amber-300 font-sans font-medium mt-0.5">
+                            <div className="text-xs text-amber-300/90 font-sans font-medium mt-0.5">
                               {tool.vietnameseName}
                             </div>
                           )}
                         </div>
-                        <span className={`px-2 py-0.5 rounded-lg text-[9px] font-mono border uppercase tracking-wider font-bold shrink-0 ${badgeStyle}`}>
+                        <span className={`px-2 py-0.5 rounded-md text-[9px] font-mono border uppercase tracking-wider font-bold shrink-0 ${badgeStyle}`}>
                           {tool.grade.replace(' Tools', '')}
                         </span>
                       </div>
 
                       {tool.character && (
-                        <div className="inline-flex items-center space-x-1.5 px-2 py-0.5 rounded-md bg-[#161824] border border-[#2A2E44] text-[10px] font-mono text-purple-300 mb-2.5">
+                        <div className="inline-flex items-center space-x-1.5 px-2 py-0.5 rounded-md bg-[#12141D] border border-white/[0.08] text-[10px] font-mono text-purple-300 mb-2.5">
                           <User className="w-2.5 h-2.5 text-purple-400" />
                           <span>Đại diện: {tool.character}</span>
                         </div>
                       )}
 
                       {tool.highlightEffect && (
-                        <div className="p-2.5 rounded-xl bg-amber-950/20 border border-amber-800/30 text-[11px] text-amber-200/90 font-sans mb-3 flex items-start space-x-1.5 leading-relaxed">
+                        <div className="p-2.5 rounded-lg bg-[#141009] border border-amber-500/20 text-[11px] text-amber-200/90 font-sans mb-3 flex items-start space-x-1.5 leading-relaxed">
                           <Zap className="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5" />
                           <span>{tool.highlightEffect}</span>
                         </div>
@@ -208,12 +202,12 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
 
                       {/* Original English Cursed Tool Rules Collapsible */}
                       {tool.descriptionEn && (
-                        <details className="mt-3 group/orig border border-slate-800/80 rounded-xl bg-[#070709] p-2.5 text-xs">
+                        <details className="mt-3 group/orig border border-white/[0.06] rounded-lg bg-[#08090C] p-2 text-xs">
                           <summary className="cursor-pointer text-slate-400 hover:text-slate-200 font-mono text-[11px] select-none flex items-center justify-between">
-                            <span>📄 Văn bản gốc tiếng Anh (Original Rule)</span>
+                            <span>[ EN ] Văn bản gốc tiếng Anh (Original Rule)</span>
                             <span className="text-[10px] text-slate-500">▼</span>
                           </summary>
-                          <div className="mt-2 text-slate-300 font-mono text-[11px] leading-relaxed whitespace-pre-line border-t border-slate-800/60 pt-2">
+                          <div className="mt-2 text-slate-300 font-mono text-[11px] leading-relaxed whitespace-pre-line border-t border-white/[0.06] pt-2">
                             {tool.descriptionEn}
                           </div>
                         </details>
@@ -231,10 +225,10 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
       {/* Equipment Packs Tab */}
       {activeTab === 'packs' && (
         <div className="space-y-6">
-          <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 sm:p-8 shadow-xl">
+          <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
             <div className="flex items-center space-x-3 mb-3">
-              <Package className="w-6 h-6 text-cyan-400" />
-              <h2 className="text-xl sm:text-2xl font-bold text-white font-display">
+              <Package className="w-5 h-5 text-cyan-400" />
+              <h2 className="text-lg sm:text-xl font-bold text-white font-display">
                 Gói Trang Bị Khởi Đầu Của Chú Thuật Sư (Equipment Packs)
               </h2>
             </div>
@@ -243,19 +237,19 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
             {equipmentData.equipmentPacks?.map((pack, pIdx) => (
               <div 
                 key={pIdx}
-                className="rounded-2xl bg-[#0E0F16] border border-[#232636] hover:border-[#383D58] p-6 shadow-xl flex flex-col justify-between transition-all"
+                className="rounded-xl bg-[#0A0B0E] border border-white/[0.06] hover:border-white/[0.12] p-5 flex flex-col justify-between transition-colors"
               >
                 <div>
                   <div className="flex items-start justify-between gap-2 mb-2">
                     <div>
-                      <h3 className="text-lg font-bold text-white font-display">{pack.name}</h3>
+                      <h3 className="text-base font-bold text-white font-display">{pack.name}</h3>
                       <div className="text-xs text-cyan-300 font-sans font-semibold mt-0.5">{pack.vietnameseName}</div>
                     </div>
-                    <span className="px-3 py-1 rounded-xl text-xs font-mono font-bold bg-amber-950/60 text-amber-300 border border-amber-800/50 shrink-0">
+                    <span className="px-2.5 py-0.5 rounded-lg text-xs font-mono font-bold bg-[#141009] text-amber-300 border border-amber-500/30 shrink-0">
                       {pack.cost}
                     </span>
                   </div>
@@ -266,7 +260,7 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
 
                   {/* Contents list */}
                   <div className="mb-4">
-                    <div className="text-[11px] font-mono uppercase text-slate-400 font-bold mb-2 flex items-center space-x-1.5">
+                    <div className="text-[10px] font-mono uppercase tracking-wider text-slate-400 font-bold mb-2 flex items-center space-x-1.5">
                       <span>Vật dụng bao gồm:</span>
                     </div>
                     <ul className="space-y-1.5 text-xs text-slate-300 font-sans">
@@ -282,8 +276,8 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
 
                 {/* Exclusive Cursed Tool Included */}
                 {pack.cursedToolIncluded && (
-                  <div className="mt-4 pt-3 border-t border-[#1F2334]">
-                    <div className="p-3 rounded-xl bg-[#141724] border border-purple-500/30 shadow-inner">
+                  <div className="mt-4 pt-3 border-t border-white/[0.06]">
+                    <div className="p-3 rounded-lg bg-[#0E1017] border border-purple-500/20">
                       <div className="flex items-center justify-between gap-1 mb-1">
                         <div className="flex items-center space-x-1.5">
                           <Flame className="w-3.5 h-3.5 text-purple-400" />
@@ -291,7 +285,7 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
                             {pack.cursedToolIncluded.name}
                           </span>
                         </div>
-                        <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-purple-950/80 text-purple-300 border border-purple-800/40 shrink-0">
+                        <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-purple-950/60 text-purple-300 border border-purple-800/40 shrink-0">
                           {pack.cursedToolIncluded.grade}
                         </span>
                       </div>
@@ -304,12 +298,12 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
 
                 {/* Original English Pack Rules Collapsible */}
                 {pack.descriptionEn && (
-                  <details className="mt-3 group/orig border border-slate-800/80 rounded-xl bg-[#070709] p-2.5 text-xs">
+                  <details className="mt-3 group/orig border border-white/[0.06] rounded-lg bg-[#08090C] p-2 text-xs">
                     <summary className="cursor-pointer text-slate-400 hover:text-slate-200 font-mono text-[11px] select-none flex items-center justify-between">
-                      <span>📄 Văn bản gốc tiếng Anh (Original Rule)</span>
+                      <span>[ EN ] Văn bản gốc tiếng Anh (Original Rule)</span>
                       <span className="text-[10px] text-slate-500">▼</span>
                     </summary>
-                    <div className="mt-2 text-slate-300 font-mono text-[11px] leading-relaxed whitespace-pre-line border-t border-slate-800/60 pt-2">
+                    <div className="mt-2 text-slate-300 font-mono text-[11px] leading-relaxed whitespace-pre-line border-t border-white/[0.06] pt-2">
                       {pack.descriptionEn}
                     </div>
                   </details>
@@ -323,12 +317,12 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
       {/* Semi Cursed Tools & Creation Rules Tab */}
       {activeTab === 'semi-cursed' && (
         <div className="space-y-6">
-          <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 sm:p-8 shadow-xl">
+          <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
             <div className="flex flex-col md:flex-row gap-6 items-start justify-between">
               <div className="flex-1 min-w-0">
                 <div className="flex items-center space-x-3 mb-3">
-                  <Hammer className="w-6 h-6 text-amber-400" />
-                  <h2 className="text-xl sm:text-2xl font-bold text-white font-display">
+                  <Hammer className="w-5 h-5 text-amber-400" />
+                  <h2 className="text-lg sm:text-xl font-bold text-white font-display">
                     {equipmentData.semiCursedRules?.title || 'Quy Tắc Rèn Bán Chú Cụ (Semi Cursed Tools)'}
                   </h2>
                 </div>
@@ -336,32 +330,32 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
                   {equipmentData.semiCursedRules?.description}
                 </p>
 
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 border-t border-[#1F2334] text-xs">
-                  <div className="p-3 rounded-xl bg-[#0A0A0C] border border-[#202332]">
-                    <span className="text-slate-400 font-mono block text-[10px] uppercase font-bold mb-1">Yêu cầu tiên quyết:</span>
-                    <span className="text-amber-300 font-sans">{equipmentData.semiCursedRules?.requirements}</span>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 border-t border-white/[0.06] text-xs">
+                  <div className="p-3 rounded-lg bg-[#08090C] border border-white/[0.05]">
+                    <span className="text-slate-400 font-mono block text-[10px] uppercase font-bold tracking-wider mb-1">Yêu cầu tiên quyết:</span>
+                    <span className="text-amber-300/90 font-sans">{equipmentData.semiCursedRules?.requirements}</span>
                   </div>
-                  <div className="p-3 rounded-xl bg-[#0A0A0C] border border-[#202332]">
-                    <span className="text-slate-400 font-mono block text-[10px] uppercase font-bold mb-1">Cách thức rèn:</span>
+                  <div className="p-3 rounded-lg bg-[#08090C] border border-white/[0.05]">
+                    <span className="text-slate-400 font-mono block text-[10px] uppercase font-bold tracking-wider mb-1">Cách thức rèn:</span>
                     <span className="text-slate-300 font-sans">Truyền CE tích lũy HOẶC mang vào thực chiến hàng ngày.</span>
                   </div>
-                  <div className="p-3 rounded-xl bg-[#0A0A0C] border border-[#202332]">
-                    <span className="text-slate-400 font-mono block text-[10px] uppercase font-bold mb-1">Đặc quyền Tool Maker:</span>
+                  <div className="p-3 rounded-lg bg-[#08090C] border border-white/[0.05]">
+                    <span className="text-slate-400 font-mono block text-[10px] uppercase font-bold tracking-wider mb-1">Đặc quyền Tool Maker:</span>
                     <span className="text-cyan-300 font-sans">{equipmentData.semiCursedRules?.specialPerk}</span>
                   </div>
                 </div>
               </div>
 
               {equipmentData.semiCursedRules?.image && (
-                <div className="w-full md:w-56 shrink-0 rounded-2xl bg-[#070709] border border-[#232636] p-2 flex flex-col items-center shadow-lg">
-                  <div className="relative w-full h-48 overflow-hidden rounded-xl flex items-center justify-center">
+                <div className="w-full md:w-56 shrink-0 rounded-xl bg-[#08090C] border border-white/[0.08] p-2 flex flex-col items-center">
+                  <div className="relative w-full h-44 overflow-hidden rounded-lg flex items-center justify-center">
                     <img 
                       src={`/images/${equipmentData.semiCursedRules.image}`}
                       alt="Yuta forging cursed tool"
                       className="max-h-full max-w-full object-contain"
                     />
                   </div>
-                  <span className="text-[10px] font-mono text-slate-400 text-center mt-1.5">
+                  <span className="text-[10px] font-mono text-slate-500 text-center mt-1.5">
                     Yuta rèn katana bằng Chú lực
                   </span>
                 </div>
@@ -370,15 +364,15 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
           </div>
 
           {/* Creation Table */}
-          <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl overflow-hidden">
-            <h3 className="text-base sm:text-lg font-bold text-white font-display mb-4 flex items-center space-x-2">
-              <Sparkles className="w-5 h-5 text-amber-400" />
+          <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6 overflow-hidden">
+            <h3 className="text-sm sm:text-base font-bold text-white font-display mb-4 flex items-center space-x-2">
+              <Sparkles className="w-4 h-4 text-amber-400" />
               <span>Tiến Trình Rèn Bán Chú Cụ 4 Cấp Độ</span>
             </h3>
             
-            <div className="overflow-x-auto rounded-2xl border border-[#202332]">
+            <div className="overflow-x-auto rounded-xl border border-white/[0.08]">
               <table className="w-full text-left text-xs">
-                <thead className="bg-[#171822] text-white font-mono text-[10px] uppercase border-b border-[#232636]">
+                <thead className="bg-[#08090C] text-white font-mono text-[10px] uppercase tracking-wider border-b border-white/[0.08]">
                   <tr>
                     <th className="px-4 py-3 font-semibold">Cấp Bậc Bán Chú Cụ</th>
                     <th className="px-4 py-3 font-semibold">Lượng CE Cần Truyền</th>
@@ -386,13 +380,13 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
                     <th className="px-4 py-3 font-semibold">Hiệu Quả Đạt Được</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-[#1C1E2B]">
+                <tbody className="divide-y divide-white/[0.04] bg-[#0A0B0E]">
                   {equipmentData.semiCursedRules?.table?.map((row, rIdx) => (
-                    <tr key={rIdx} className="hover:bg-slate-800/20">
-                      <td className="px-4 py-3.5 font-bold text-amber-300 font-mono">{row.grade}</td>
-                      <td className="px-4 py-3.5 font-mono text-cyan-300">{row.ce}</td>
-                      <td className="px-4 py-3.5 font-mono text-slate-300">{row.time}</td>
-                      <td className="px-4 py-3.5 font-sans text-slate-200">{row.effect}</td>
+                    <tr key={rIdx} className="hover:bg-white/[0.02]">
+                      <td className="px-4 py-3 font-bold text-amber-300/90 font-mono">{row.grade}</td>
+                      <td className="px-4 py-3 font-mono text-cyan-300">{row.ce}</td>
+                      <td className="px-4 py-3 font-mono text-slate-300">{row.time}</td>
+                      <td className="px-4 py-3 font-sans text-slate-200">{row.effect}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -402,10 +396,10 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
 
           {/* Variant Rule Card */}
           {equipmentData.semiCursedRules?.variantRule && (
-            <div className="rounded-3xl bg-gradient-to-br from-[#141522] via-[#0F101A] to-[#0A0A0E] border border-purple-900/40 p-6 sm:p-8 shadow-xl">
+            <div className="rounded-2xl bg-[#0D0E13] border border-purple-500/20 p-5 sm:p-6">
               <div className="flex items-center space-x-2.5 mb-3">
-                <Zap className="w-5 h-5 text-purple-400" />
-                <h3 className="text-lg font-bold text-white font-display">
+                <Zap className="w-4 h-4 text-purple-400" />
+                <h3 className="text-base font-bold text-white font-display">
                   {equipmentData.semiCursedRules.variantRule.title}
                 </h3>
               </div>
@@ -414,12 +408,12 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
               </p>
 
               {equipmentData.semiCursedRules.variantRule.descriptionEn && (
-                <details className="mt-4 group/orig border border-slate-800/80 rounded-xl bg-[#070709] p-3 text-xs">
+                <details className="mt-3.5 group/orig border border-white/[0.06] rounded-lg bg-[#08090C] p-2.5 text-xs">
                   <summary className="cursor-pointer text-slate-400 hover:text-slate-200 font-mono text-[11px] select-none flex items-center justify-between">
-                    <span>📄 Văn bản gốc tiếng Anh (Original Rule)</span>
+                    <span>[ EN ] Văn bản gốc tiếng Anh (Original Rule)</span>
                     <span className="text-[10px] text-slate-500">▼</span>
                   </summary>
-                  <div className="mt-2 text-slate-300 font-mono text-[11px] leading-relaxed whitespace-pre-line border-t border-slate-800/60 pt-2">
+                  <div className="mt-2 text-slate-300 font-mono text-[11px] leading-relaxed whitespace-pre-line border-t border-white/[0.06] pt-2">
                     {equipmentData.semiCursedRules.variantRule.descriptionEn}
                   </div>
                 </details>
@@ -432,33 +426,33 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
       {/* Armor Tab */}
       {activeTab === 'armor' && (
         <div className="space-y-6">
-          <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl overflow-hidden">
-            <h3 className="text-base sm:text-lg font-bold text-white font-display mb-4">Bảng Áo Giáp &amp; Khiên Bảo Hộ</h3>
-            <div className="overflow-x-auto rounded-2xl border border-[#202332]">
+          <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6 overflow-hidden">
+            <h3 className="text-sm sm:text-base font-bold text-white font-display mb-4">Bảng Áo Giáp &amp; Khiên Bảo Hộ</h3>
+            <div className="overflow-x-auto rounded-xl border border-white/[0.08]">
               <table className="w-full text-left text-xs">
-                <thead className="bg-[#171822] text-white font-mono text-[10px] uppercase border-b border-[#232636]">
+                <thead className="bg-[#08090C] text-white font-mono text-[10px] uppercase tracking-wider border-b border-white/[0.08]">
                   <tr>
                     {equipmentData.armor[0]?.map((col, i) => (
                       <th key={i} className="px-4 py-3 font-semibold">{col}</th>
                     ))}
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-[#1C1E2B]">
+                <tbody className="divide-y divide-white/[0.04] bg-[#0A0B0E]">
                   {equipmentData.armor.slice(1).map((row, rIdx) => {
                     const isHeaderRow = !row[1] && !row[2];
                     if (isHeaderRow) {
                       return (
-                        <tr key={rIdx} className="bg-[#161826]">
-                          <td colSpan={3} className="px-4 py-2 font-display font-bold text-amber-300 text-xs uppercase tracking-wider">
+                        <tr key={rIdx} className="bg-[#10121A]">
+                          <td colSpan={3} className="px-4 py-2 font-display font-bold text-amber-300/90 text-xs uppercase tracking-wider">
                             {row[0]}
                           </td>
                         </tr>
                       );
                     }
                     return (
-                      <tr key={rIdx} className="hover:bg-slate-800/20">
+                      <tr key={rIdx} className="hover:bg-white/[0.02]">
                         {row.map((cell, cIdx) => (
-                          <td key={cIdx} className="px-4 py-3 font-mono text-xs text-slate-300">{cell}</td>
+                          <td key={cIdx} className="px-4 py-2.5 font-mono text-xs text-slate-300">{cell}</td>
                         ))}
                       </tr>
                     );
@@ -470,19 +464,19 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
 
           {/* Armor Rules */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="p-4 rounded-2xl bg-[#0E0F16] border border-[#232636]">
+            <div className="p-4 rounded-xl bg-[#0A0B0E] border border-white/[0.06]">
               <span className="text-xs font-bold text-white font-display block mb-1">Thành Thạo Giáp (Proficiency)</span>
               <p className="text-[11px] text-slate-400 font-sans leading-relaxed">
                 Bất kỳ ai cũng có thể mặc giáp. Tuy nhiên chỉ những người có Armor Proficiency của lớp nhân vật mới không bị Disadvantage trong các đòn tấn công, đòn cứu nguy STR/DEX và duy trì kiểm soát Chú lực.
               </p>
             </div>
-            <div className="p-4 rounded-2xl bg-[#0E0F16] border border-[#232636]">
+            <div className="p-4 rounded-xl bg-[#0A0B0E] border border-white/[0.06]">
               <span className="text-xs font-bold text-white font-display block mb-1">Ẩn Nấp (Stealth Disadvantage)</span>
               <p className="text-[11px] text-slate-400 font-sans leading-relaxed">
                 Các loại áo khoác dày, giáp xích hoặc giáp sắt nặng sẽ khiến người mặc chịu Disadvantage trong các bài kiểm tra Dexterity (Stealth).
               </p>
             </div>
-            <div className="p-4 rounded-2xl bg-[#0E0F16] border border-[#232636]">
+            <div className="p-4 rounded-xl bg-[#0A0B0E] border border-white/[0.06]">
               <span className="text-xs font-bold text-white font-display block mb-1">Khiên (Shields)</span>
               <p className="text-[11px] text-slate-400 font-sans leading-relaxed">
                 Được chế tạo từ gỗ, kim loại hoặc sợi cường lực. Khiên tăng thêm +2 vào Armor Class (AC) của bạn và đòi hỏi cầm bằng một tay trống.
@@ -495,31 +489,31 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
       {/* Melee Weapons Tab */}
       {activeTab === 'melee' && (
         <div className="space-y-6">
-          <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl overflow-hidden">
-            <h3 className="text-base sm:text-lg font-bold text-white font-display mb-4">Vũ Khí Cận Chiến (Melee Weapons - 39 Loại)</h3>
-            <div className="overflow-x-auto rounded-2xl border border-[#202332]">
+          <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6 overflow-hidden">
+            <h3 className="text-sm sm:text-base font-bold text-white font-display mb-4">Vũ Khí Cận Chiến (Melee Weapons - 39 Loại)</h3>
+            <div className="overflow-x-auto rounded-xl border border-white/[0.08]">
               <table className="w-full text-left text-xs">
-                <thead className="bg-[#171822] text-white font-mono text-[10px] uppercase border-b border-[#232636]">
+                <thead className="bg-[#08090C] text-white font-mono text-[10px] uppercase tracking-wider border-b border-white/[0.08]">
                   <tr>
                     {equipmentData.weaponsMelee[1]?.map((col, i) => (
                       <th key={i} className="px-4 py-3 font-semibold">{col}</th>
                     ))}
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-[#1C1E2B]">
+                <tbody className="divide-y divide-white/[0.04] bg-[#0A0B0E]">
                   {equipmentData.weaponsMelee.slice(2).map((row, rIdx) => {
                     const isHeaderRow = !row[1] && !row[2];
                     if (isHeaderRow) {
                       return (
-                        <tr key={rIdx} className="bg-[#161826]">
-                          <td colSpan={5} className="px-4 py-2 font-display font-bold text-amber-300 text-xs uppercase tracking-wider">
+                        <tr key={rIdx} className="bg-[#10121A]">
+                          <td colSpan={5} className="px-4 py-2 font-display font-bold text-amber-300/90 text-xs uppercase tracking-wider">
                             {row[0]}
                           </td>
                         </tr>
                       );
                     }
                     return (
-                      <tr key={rIdx} className="hover:bg-slate-800/20">
+                      <tr key={rIdx} className="hover:bg-white/[0.02]">
                         {row.map((cell, cIdx) => (
                           <td key={cIdx} className="px-4 py-2.5 font-mono text-xs text-slate-300">{cell}</td>
                         ))}
@@ -533,14 +527,14 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
 
           {/* Special Weapon Properties */}
           {equipmentData.specialWeaponProperties?.length > 0 && (
-            <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl">
-              <h3 className="text-base font-bold text-white font-display mb-3 flex items-center space-x-2">
+            <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6">
+              <h3 className="text-sm sm:text-base font-bold text-white font-display mb-3 flex items-center space-x-2">
                 <Info className="w-4 h-4 text-cyan-400" />
                 <span>Thuộc Tính Vũ Khí Đặc Biệt (Special Weapon Properties)</span>
               </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {equipmentData.specialWeaponProperties.map((prop, idx) => (
-                  <div key={idx} className="p-4 rounded-xl bg-[#0A0A0C] border border-[#202332] text-xs flex flex-col justify-between">
+                  <div key={idx} className="p-3.5 rounded-xl bg-[#0A0B0E] border border-white/[0.06] text-xs flex flex-col justify-between">
                     <div>
                       <div className="font-bold text-cyan-300 font-display mb-1 flex items-center space-x-1.5">
                         <span>{prop.property}</span>
@@ -551,12 +545,12 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
                       <div className="text-slate-300 font-sans leading-relaxed">{prop.effect}</div>
                     </div>
                     {prop.effectEn && (
-                      <details className="mt-2.5 group/orig border border-slate-800/80 rounded-xl bg-[#070709] p-2 text-[11px]">
+                      <details className="mt-2.5 group/orig border border-white/[0.06] rounded-lg bg-[#08090C] p-2 text-[11px]">
                         <summary className="cursor-pointer text-slate-400 hover:text-slate-200 font-mono text-[10px] select-none flex items-center justify-between">
-                          <span>📄 Văn bản gốc tiếng Anh</span>
+                          <span>[ EN ] Văn bản gốc tiếng Anh</span>
                           <span className="text-[9px] text-slate-500">▼</span>
                         </summary>
-                        <div className="mt-1.5 text-slate-400 font-mono text-[10px] leading-relaxed border-t border-slate-800/60 pt-1.5">
+                        <div className="mt-1.5 text-slate-400 font-mono text-[10px] leading-relaxed border-t border-white/[0.06] pt-1.5">
                           {prop.effectEn}
                         </div>
                       </details>
@@ -571,31 +565,31 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
 
       {/* Ranged Weapons Tab */}
       {activeTab === 'ranged' && (
-        <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 shadow-xl overflow-hidden">
-          <h3 className="text-base sm:text-lg font-bold text-white font-display mb-4">Vũ Khí Tầm Xa &amp; Súng Hiện Đại (Ranged Weapons)</h3>
-          <div className="overflow-x-auto rounded-2xl border border-[#202332]">
+        <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6 overflow-hidden">
+          <h3 className="text-sm sm:text-base font-bold text-white font-display mb-4">Vũ Khí Tầm Xa &amp; Súng Hiện Đại (Ranged Weapons)</h3>
+          <div className="overflow-x-auto rounded-xl border border-white/[0.08]">
             <table className="w-full text-left text-xs">
-              <thead className="bg-[#171822] text-white font-mono text-[10px] uppercase border-b border-[#232636]">
+              <thead className="bg-[#08090C] text-white font-mono text-[10px] uppercase tracking-wider border-b border-white/[0.08]">
                 <tr>
                   {equipmentData.weaponsRanged[0]?.map((col, i) => (
                     <th key={i} className="px-4 py-3 font-semibold">{col}</th>
                   ))}
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#1C1E2B]">
+              <tbody className="divide-y divide-white/[0.04] bg-[#0A0B0E]">
                 {equipmentData.weaponsRanged.slice(1).map((row, rIdx) => {
                   const isHeaderRow = !row[1] && !row[2];
                   if (isHeaderRow) {
                     return (
-                      <tr key={rIdx} className="bg-[#161826]">
-                        <td colSpan={5} className="px-4 py-2 font-display font-bold text-amber-300 text-xs uppercase tracking-wider">
+                      <tr key={rIdx} className="bg-[#10121A]">
+                        <td colSpan={5} className="px-4 py-2 font-display font-bold text-amber-300/90 text-xs uppercase tracking-wider">
                           {row[0]}
                         </td>
                       </tr>
                     );
                   }
                   return (
-                    <tr key={rIdx} className="hover:bg-slate-800/20">
+                    <tr key={rIdx} className="hover:bg-white/[0.02]">
                       {row.map((cell, cIdx) => (
                         <td key={cIdx} className="px-4 py-2.5 font-mono text-xs text-slate-300">{cell}</td>
                       ))}
@@ -610,24 +604,24 @@ export default function EquipmentView({ activeTab: propTab, setActiveTab: propSe
 
       {/* Wealth Tab */}
       {activeTab === 'wealth' && (
-        <div className="rounded-3xl bg-[#12131A] border border-[#232636] p-6 sm:p-8 shadow-xl max-w-3xl">
-          <h3 className="text-base sm:text-lg font-bold text-white font-display mb-4">Quy Đổi Tiền Tệ &amp; Định Giá Hiện Đại</h3>
+        <div className="rounded-2xl bg-[#0D0E13] border border-white/[0.08] p-5 sm:p-6 max-w-3xl">
+          <h3 className="text-sm sm:text-base font-bold text-white font-display mb-4">Quy Đổi Tiền Tệ &amp; Định Giá Hiện Đại</h3>
           <p className="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line mb-6 font-sans">
             Trong thế giới Jujutsu Kaisen hiện đại, hệ thống kinh tế hoạt động hoàn toàn bằng Đô La Mỹ ($) hoặc Yên Nhật thay thế cho các đồng tiền cổ điển của D&amp;D 5e. Mọi giao dịch từ vũ khí, đạn dược đến thiết bị công nghệ đều quy đổi theo tỷ giá chuẩn dưới đây:
           </p>
 
-          <div className="p-4 rounded-2xl bg-[#0A0A0C] border border-[#232636] text-xs font-mono space-y-2.5 text-slate-300">
-            <div className="flex justify-between items-center py-1 border-b border-white/5">
+          <div className="p-4 rounded-xl bg-[#08090C] border border-white/[0.06] text-xs font-mono space-y-2 text-slate-300">
+            <div className="flex justify-between items-center py-1 border-b border-white/[0.04]">
               <span>• 1 Đồng Đồng (1 Copper Piece - CP):</span>
-              <span className="text-amber-300 font-bold">$1.00 USD</span>
+              <span className="text-amber-300/90 font-bold">$1.00 USD</span>
             </div>
-            <div className="flex justify-between items-center py-1 border-b border-white/5">
+            <div className="flex justify-between items-center py-1 border-b border-white/[0.04]">
               <span>• 1 Đồng Bạc (1 Silver Piece - SP):</span>
               <span className="text-slate-200 font-bold">$10.00 USD</span>
             </div>
-            <div className="flex justify-between items-center py-1 border-b border-white/5">
+            <div className="flex justify-between items-center py-1 border-b border-white/[0.04]">
               <span>• 1 Đồng Vàng (1 Gold Piece - GP):</span>
-              <span className="text-amber-400 font-bold">$100.00 USD</span>
+              <span className="text-amber-400/90 font-bold">$100.00 USD</span>
             </div>
             <div className="flex justify-between items-center py-1">
               <span>• 1 Điện thoại thông minh (Cellphone):</span>
